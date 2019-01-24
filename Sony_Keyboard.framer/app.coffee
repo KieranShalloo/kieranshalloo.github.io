@@ -363,24 +363,25 @@ buttonSpaceText = new TextLayer
 	y: 482
 #icons
 		
+	
 IconSymbol = new Layer
 	width: 39
 	height: 19
-	image: "images/_@%23.png"
+	image: "images/symbol.png"
 	x: 88
 	y: 435
 
 IconLeft = new Layer
 	width: 21
 	height: 15
-	image: "images/Shape%201%20copy%204.png"
+	image: "images/left.png"
 	x: 792
 	y: 437
 
 IconRight = new Layer
 	width: 21
 	height: 15
-	image: "images/Shape%201%20copy%205.png" 
+	image: "images/right.png"
 	x: 883
 	y: 437
 #arrays 
