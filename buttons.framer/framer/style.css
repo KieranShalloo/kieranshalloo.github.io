@@ -7,7 +7,7 @@
 }
 
 body {
-	background-color: #fff;
+	background-color: black;
 	font: 28px/1em "Helvetica";
 	color: gray;
 	overflow: hidden;
@@ -16,7 +16,9 @@ body {
 a {
 	color: gray;
 }
-
+p {
+	z-index: 1000000;
+}
 body {
 	cursor: url('images/cursor.png') 32 32, auto;
 	cursor: -webkit-image-set(
