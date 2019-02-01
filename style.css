@@ -30,7 +30,7 @@ p, li {
 
 /* Header/logo Title */
 .header {
-  padding: 60px;
+  padding: 40px;
   text-align: center;
 
 }
@@ -47,6 +47,7 @@ p, li {
   flex: 30%;
   background-color: white;
   padding: 20px;
+  text-align: center;
 }
 
 
@@ -54,6 +55,7 @@ p, li {
   flex: 70%;
   background-color: white;
   padding: 20px;
+  text-align: center;
 }
 
 
@@ -64,12 +66,38 @@ p, li {
   }
 }
 .button {
-  background-color: #4CAF50; /* Green */
-  border: none;
-  color: white;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
+  color: #292d31;
+  border-radius: 30px;
+  font-size: 18px;
+  padding: 15px 40px;
   display: inline-block;
-  font-size: 16px;
+  text-transform: uppercase;
+  border: #009999 1px solid; /* Kieran Colour */
+  outline: none
+}
+
+.button {
+  -webkit-transition-duration: 0.350s;
+  transition-duration: 0.4s;
+}
+
+.button:hover {
+  background-color: #009999; /* Kieran Colour */
+  color: white;
+  box-shadow: 0 2px 6px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+.column1 {
+  border-bottom: #eee solid 1px;
+  padding-bottom: 100px;
+  padding-top: 100px;
+}
+.column2 {
+  border-bottom: #eee solid 1px;
+  padding-bottom: 100px;
+  padding-top: 100px;
+}
+.column3 {
+  border-bottom: #eee solid 1px;
+  padding-bottom: 100px;
+  padding-top: 100px;
 }
