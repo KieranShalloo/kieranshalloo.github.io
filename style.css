@@ -47,7 +47,7 @@ p, li {
   flex: 30%;
   background-color: white;
   padding: 20px;
-  text-align: center;
+  justify-content: center
 }
 
 
@@ -84,7 +84,7 @@ p, li {
 .button:hover {
   background-color: #009999; /* Kieran Colour */
   color: white;
-  box-shadow: 0 2px 6px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
 }
 .column1 {
   border-bottom: #eee solid 1px;
