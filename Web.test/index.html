@@ -22,31 +22,48 @@ body {
 }
 
 /* Create four equal columns that sits next to each other */
-.column {
+.bigcolumn {
+  flex: 66%;
+  max-width: 66%;
+  padding: 0 4px;
+}
+
+.bigcolumn img {
+  margin-top: 8px;
+  vertical-align: middle;
+}
+.smallcolumn {
   flex: 33%;
   max-width: 33%;
   padding: 0 4px;
 }
 
-.column img {
+.smallcolumn img {
   margin-top: 8px;
   vertical-align: middle;
 }
 
 /* Responsive layout - makes a two column-layout instead of four columns */
 @media (max-width: 800px) {
-  .column {
-    flex: 50%;
-    max-width: 50%;
+  .bigcolumn {
+    flex: 66%;
+    max-width: 66%;
   }
+  .smallcolumn {
+      flex: 33%;
+      max-width: 33%;
+    }
 }
 
 /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
 @media (max-width: 600px) {
-  .column {
+  .bigcolumn {
     flex: 100%;
     max-width: 100%;
   }
+  .smallcolumn {
+    flex: 100%;
+    max-width: 100%;
 }
 </style>
 <head>
@@ -71,13 +88,13 @@ body {
 
 <!-- Photo Grid -->
 <div class="row">
-  <div class="column">
+  <div class="bigcolumn">
     <img src="Tile1.jpg" style="width:100%">
     <img src="Tile4.jpg" style="width:100%">
     <img src="Tile7.jpg" style="width:100%">
   </div>
 
-  <div class="column">
+  <div class="smallcolumn">
     <img src="Tile2.jpg" style="width:100%">
     <img src="Tile5.jpg" style="width:100%">
     <img src="Tile8.jpg" style="width:100%">
