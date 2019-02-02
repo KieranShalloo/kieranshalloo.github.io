@@ -1,6 +1,6 @@
 html {
   font-family: 'Open Sans', sans-serif;
-  margin: auto;
+
 }
 
 .hero{
@@ -12,37 +12,37 @@ html {
   margin-right: auto;
 }
 
+.body {
+  margin: 0px;
+}
+/* Header/logo Title */
+.header {
+  padding: 3%;
+  text-align: center;
+}
 h1 {
   font-size: 60px;
-
 }
-
 p, li {
   font-size: 18px;
   line-height: 2;
-
 }
 
 
 * {
   box-sizing: border-box;
-  padding-left: 10px;
-  padding-right: 10px;
-}
-
-
-/* Header/logo Title */
-.header {
-  padding: 40px;
-  text-align: center;
 
 }
+
+
+
 
 /* Column container */
 .row {
   display: flex;
   flex-wrap: wrap;
-  align-items:center;
+  justify-content: center;
+  align-items: center;
 }
 
 
@@ -50,28 +50,46 @@ p, li {
   flex: 30%;
   background-color: white;
   padding: 20px;
-  justify-content: center
+  text-align: left;
+
 }
-
-
+.column {
+  border-bottom: #eee solid 1px;
+  padding-bottom: 100px;
+  padding-top: 100px;
+  padding-left: 3%;
+  padding-right: 3%;
+  /*margin: auto;*/
+}
 .main {
   flex: 70%;
   background-color: white;
   padding: 20px;
+  text-align: left;
 
 }
 
 
-/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 700px) {
+/* Responsive layout - when the screen is less than 450px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 450px) {
   .row, .navbar {
     flex-direction: column;
+  }
+  h1  {
+    font-size: 40px;
+  }
+  .main {
+    order: 1;
+    padding: 0px;
+  }
+  .side{
+    order: 2;
   }
 }
 
 .button {
   -webkit-transition-duration: 0.350s;
-  transition-duration: 0.4s;
+
 }
 
 .button {
@@ -82,29 +100,32 @@ p, li {
   display: inline-block;
   text-transform: uppercase;
   border: #009999 1px solid; /* Kieran Colour */
-  outline: none
+  outline: none;
+
 }
 
 
 .button:hover {
   background-color: #009999; /* Kieran Colour */
   color: white;
-  box-shadow: 0 0px 020px 0 rgba(0,0,0,0.3);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
+.footer {
+    width:100%;
+    height:30%;   // the desired height
+    position:absolute;
+    bottom:0;
+    left:0;
+   background:#ebebeb;
+   color: #009999;
+   text-align: center;
+}
 
-.column1 {
-  border-bottom: #eee solid 1px;
-  padding-bottom: 100px;
-  padding-top: 100px;
+a:link {
+  color: red;
 }
-.column2 {
-  border-bottom: #eee solid 1px;
-  padding-bottom: 100px;
-  padding-top: 100px;
-}
-.column3 {
-  border-bottom: #eee solid 1px;
-  padding-bottom: 100px;
-  padding-top: 100px;
-}
+
+/* visited link */
+a:visited {
+  color: #009999;
