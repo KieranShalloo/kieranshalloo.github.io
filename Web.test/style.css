@@ -1,0 +1,183 @@
+html {
+  font-family: 'Open Sans', sans-serif;
+}
+
+.logo {
+  width: 80px;
+  height: 80px;
+  background-image: url(_img/Logo.svg);
+  background-size: cover;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 10px;
+}
+
+.navbar {
+  overflow: hidden;
+  /* Hide overflow */
+  background-color: #333;
+  /* Dark background color */
+  justify-content: space-evenly;
+  display: flex;
+}
+
+/* Style the navigation bar links */
+.navbar a {
+  float: left;
+  /* Make sure that the links stay side-by-side */
+  display: block;
+  /* Change the display to block, for responsive reasons (see below) */
+  color: white;
+  /* White text color */
+  text-align: center;
+  /* Center the text */
+  padding: 14px 20px;
+  /* Add some padding */
+  text-decoration: none;
+  /* Remove underline */
+}
+
+/* Right-aligned link */
+.navbar a.right {
+  float: right;
+  /* Float a link to the right */
+}
+
+/* Change color on hover/mouse-over */
+.navbar a:hover {
+  background-color: #ebebeb;
+  /* Grey background color */
+  color: black;
+  /* Black text color */
+}
+
+body {
+  margin: 0;
+}
+
+/* Header/logo Title */
+.header {
+  padding: 10px 16px;
+  background: #555;
+  color: #f1f1f1;
+}
+
+h1 {
+  font-size: 60px;
+}
+
+p, li {
+  font-size: 18px;
+  line-height: 2;
+}
+
+* {}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+  flex: 30%;
+  max-width: 33%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+}
+
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media (max-width: 800px) {
+  .column {
+    flex: 48%;
+    max-width: 50%;
+    flex-wrap: wrap;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media (max-width: 500px) {
+  .column, .navbar {
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+
+/* Responsive layout - when the screen is less than 450px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 450px) {
+  .row, {
+    flex-direction: column;
+  }
+
+  h1 {
+    font-size: 40px;
+  }
+}
+
+.button {
+  -webkit-transition-duration: 0.350s;
+}
+
+.footer {
+  width: 100%;
+  height: 30%; // the desired height
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background: #ebebeb;
+  color: #009999;
+  text-align: center;
+}
+
+a:link {
+  color: #009999;
+}
+
+/* visited link */
+a:visited {
+  color: #009999;
+}
+
+.hero-image {
+  /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
+background-image:url("_img/Tile8.jpg");
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+/* Place text in the middle of the image */
+.hero-text {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+main {
+  height: 100%; width: 100%; margin: 0;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #008CBA;
+}
+.column:hover .overlay {
+  opacity: 1;}
