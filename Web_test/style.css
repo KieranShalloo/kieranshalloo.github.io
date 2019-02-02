@@ -86,7 +86,15 @@ p, li {
     box-sizing: border-box;
   }
 
+.images{
+  width: 30%;
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  margin: 50px;
+  vertical-align: middle;
 
+}
 .container-colour{
   background-color: #00a6ff;
 }
