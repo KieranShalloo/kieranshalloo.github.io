@@ -15,11 +15,11 @@ body, html {
 
 .navbar {
   overflow: hidden;
-  /* Hide overflow */
-  background-color: #333;
+vertical-align: baseline;
   /* Dark background color */
   justify-content: space-evenly;
   display: flex;
+  margin-left: auto;
 }
 
 /* Style the navigation bar links */
@@ -38,11 +38,7 @@ body, html {
   /* Remove underline */
 }
 
-/* Right-aligned link */
-.navbar a.right {
-  float: right;
-  /* Float a link to the right */
-}
+
 
 /* Change color on hover/mouse-over */
 .navbar a:hover {
@@ -58,11 +54,13 @@ body, html {
   background: #555;
   color: #f1f1f1;
 }
-span{
+
+span {
   font-size: 18px;
   line-height: 2;
   color: white;
 }
+
 h1 {
   font-size: 60px;
 }
@@ -76,50 +74,62 @@ h2 {
   font-style: normal;
 }
 
+h6 {
+  font-size: 14px;
+}
+
 p, li {
   font-size: 18px;
   line-height: 2;
 }
 
 * {}
-  * {
-    box-sizing: border-box;
-  }
 
-.images{
-  width: 30%;
-  max-width: 100%;
+* {
+  box-sizing: border-box;
+}
+
+.imagegrid {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  max-width: 1024px;
+  flex-wrap: wrap;
+
+}
+
+.images {
+  display: flex;
   margin-left: auto;
   margin-right: auto;
   margin: 50px;
-  vertical-align: middle;
-
+  flex-wrap: wrap;
 }
-.container-colour{
+
+.container-colour {
   background-color: #00a6ff;
 }
-.container{
+
+.container {
   max-width: 1280px;
   margin-left: auto;
   margin-right: auto;
 }
 
+/* Create two unequal columns that sits next to each other */
+/* Sidebar/left column */
+.side {
+  flex: 30%;
+  padding: 20px;
+  align-self: center;
+}
 
-  /* Create two unequal columns that sits next to each other */
-  /* Sidebar/left column */
-  .side {
-    flex: 30%;
-
-    padding: 20px;
-    align-self: center;
-  }
-
-  /* Main column */
-  .main {
-    flex: 70%;
-
-    padding: 20px;
-  }
+/* Main column */
+.main {
+  flex: 70%;
+  padding: 20px;
+}
 
 .row {
   display: flex;
@@ -132,13 +142,13 @@ p, li {
   flex: 30%;
   max-width: 33%;
   padding: 0 4px;
+  /* flex-wrap: wrap; */
 }
 
 .column img {
   margin-top: 8px;
   vertical-align: middle;
 }
-
 
 /* Responsive layout - makes a two column-layout instead of four columns */
 @media (max-width: 800px) {
@@ -174,7 +184,7 @@ p, li {
 
 .footer {
   width: 100%;
-  height: 30%; // the desired height
+  height: 50px; // the desired height
   position: absolute;
   bottom: 0;
   left: 0;
