@@ -12,10 +12,33 @@ body, html {
   margin-right: auto;
   margin-bottom: 10px;
 }
+#bgcontain{
+  width: 100%;
+  height: 100%;
+position: top;}
 
+
+#bg {
+  position: fixed;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+}
+
+#bg img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  min-width: 50%;
+  min-height: 50%;
+}
 .navbar {
   overflow: hidden;
-vertical-align: baseline;
+  vertical-align: baseline;
   /* Dark background color */
   justify-content: space-evenly;
   display: flex;
@@ -37,8 +60,6 @@ vertical-align: baseline;
   text-decoration: none;
   /* Remove underline */
 }
-
-
 
 /* Change color on hover/mouse-over */
 .navbar a:hover {
@@ -83,7 +104,6 @@ p, li {
   line-height: 2;
 }
 
-* {}
 
 * {
   box-sizing: border-box;
@@ -96,7 +116,6 @@ p, li {
   position: relative;
   max-width: 1024px;
   flex-wrap: wrap;
-
 }
 
 .images {
@@ -142,7 +161,7 @@ p, li {
   flex: 30%;
   max-width: 33%;
   padding: 0 4px;
-  /* flex-wrap: wrap; */
+  flex-wrap: wrap;
 }
 
 .column img {
@@ -170,6 +189,7 @@ p, li {
 /* Responsive layout - when the screen is less than 450px wide, make the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 450px) {
   .row, {
+    flex: 100%;
     flex-direction: column;
   }
 
@@ -178,9 +198,7 @@ p, li {
   }
 }
 
-.button {
-  -webkit-transition-duration: 0.350s;
-}
+.button {}
 
 .footer {
   width: 100%;
@@ -189,15 +207,31 @@ p, li {
   bottom: 0;
   left: 0;
   background: #ebebeb;
-  color: #009999;
+  /* color: #009999; */
   text-align: center;
 }
 
 a:link {
-  color: #009999;
+  color: "black";
 }
 
-/* visited link */
 a:visited {
-  color: #009999;
+  color: 'red';
 }
+
+/* #c1:hover .overlay {
+  opacity: 1
+} */
+
+/* .overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #008CBA;
+} */
