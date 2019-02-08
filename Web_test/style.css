@@ -17,7 +17,11 @@ body, html {
   overflow: hidden;
   vertical-align: baseline;
   /* Dark background color */
-  justify-content: space-evenly;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   margin: 0 auto 0 auto;
   width: 50%;
@@ -62,7 +66,9 @@ span {
 .portfolioheaderimage h1{
 
   text-align: center;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   color: white;
   margin: 0 auto 0 auto;
   vertical-align: middle;
@@ -70,10 +76,16 @@ span {
 .portfolioheaderimage{
   width:100vw;
       height: 100vh;
+      background: -webkit-gradient(linear,left top, left bottom,from(rgba(0, 0,0,.2)),to(rgba(0,0,0,.5))), url('https://kieranshalloodesign.com/wp-content/uploads/2018/10/Mobile-Hero.png');
       background: linear-gradient(rgba(0, 0,0,.2),rgba(0,0,0,.5)), url('https://kieranshalloodesign.com/wp-content/uploads/2018/10/Mobile-Hero.png');
       background-size: cover;
       background-position: center center;
+      -webkit-transition: background 0.3s, border 0.3s, border-radius 0.3s, -webkit-box-shadow 0.3s;
+      transition: background 0.3s, border 0.3s, border-radius 0.3s, -webkit-box-shadow 0.3s;
       transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
+      transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s, -webkit-box-shadow 0.3s;
+display: -webkit-box;
+display: -ms-flexbox;
 display: flex;
 vertical-align: middle;
 }
@@ -100,21 +112,27 @@ h6 {
 }
 
 p, li {
-  font-size: 18px;
-  line-height: 2;
-}
+  font-size: 18px;line-height: 2;}
 
 
 * {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 .imagegrid {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-justify-content: center;
+-webkit-box-pack: center;
+    -ms-flex-pack: center;
+        justify-content: center;
   max-width: 80%;
   margin: 0 auto 0 auto;
-  flex-direction: row
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row
 
 }
 
@@ -138,29 +156,40 @@ justify-content: center;
 /* Create two unequal portfolio-items that sits next to each other */
 /* Sidebar/left portfolio-item */
 .side {
-  flex: 30%;
+  -webkit-box-flex: 30%;
+      -ms-flex: 30%;
+          flex: 30%;
   padding: 20px;
-  align-self: center;
+  -ms-flex-item-align: center;
+      align-self: center;
 }
 
 /* Main portfolio-item */
 .main {
-  flex: 70%;
+  -webkit-box-flex: 70%;
+      -ms-flex: 70%;
+          flex: 70%;
   padding: 20px;
 }
 
 .row {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   padding: 0 4px;
 }
 
 /* Create four equal portfolio-items that sits next to each other */
 .portfolio-item {
-  flex: 30%;
+  -webkit-box-flex: 30%;
+      -ms-flex: 30%;
+          flex: 30%;
   max-width: 33%;
   padding: 0 4px;
-  flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .portfolio-item img {
@@ -171,16 +200,21 @@ justify-content: center;
 /* Responsive layout - makes a two portfolio-item-layout instead of four portfolio-items */
 @media (max-width: 800px) {
   .portfolio-item {
-    flex: 48%;
+    -webkit-box-flex: 48%;
+        -ms-flex: 48%;
+            flex: 48%;
     max-width: 50%;
-    flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
   }
 }
 
 /* Responsive layout - makes the two portfolio-items stack on top of each other instead of next to each other */
 @media (max-width: 500px) {
   .portfolio-item, .navbar {
-    flex: 100%;
+    -webkit-box-flex: 100%;
+        -ms-flex: 100%;
+            flex: 100%;
     max-width: 100%;
   }
 }
@@ -188,8 +222,13 @@ justify-content: center;
 /* Responsive layout - when the screen is less than 450px wide, make the two portfolio-items stack on top of each other instead of next to each other */
 @media screen and (max-width: 450px) {
   .row, {
-    flex: 100%;
-    flex-direction: column;
+    -webkit-box-flex: 100%;
+        -ms-flex: 100%;
+            flex: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
 
   h1 {
@@ -221,6 +260,7 @@ a:visited {
  #c1:hover {
   opacity: 1;
   z-index: 200;
+  -webkit-transition: .5s ease;
   transition: .5s ease;
   background-color: #008CBA;
 }
