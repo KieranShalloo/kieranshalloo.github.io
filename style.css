@@ -32,8 +32,7 @@ p, li {
 
 
 * {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 
 }
 
@@ -42,24 +41,15 @@ p, li {
 
 /* Column container */
 .row {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
 }
 
 
 .side {
-  -webkit-box-flex: 30%;
-      -ms-flex: 30%;
-          flex: 30%;
+  flex: 30%;
   background-color: white;
   padding: 20px;
   text-align: left;
@@ -74,9 +64,7 @@ p, li {
   /*margin: auto;*/
 }
 .main {
-  -webkit-box-flex: 70%;
-      -ms-flex: 70%;
-          flex: 70%;
+  flex: 70%;
   background-color: white;
   padding: 20px;
   text-align: left;
@@ -87,24 +75,17 @@ p, li {
 /* Responsive layout - when the screen is less than 450px wide, make the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 450px) {
   .row, .navbar {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
   }
   h1  {
     font-size: 40px;
   }
   .main {
-    -webkit-box-ordinal-group: 2;
-        -ms-flex-order: 1;
-            order: 1;
+    order: 1;
     padding: 0px;
   }
   .side{
-    -webkit-box-ordinal-group: 3;
-        -ms-flex-order: 2;
-            order: 2;
+    order: 2;
   }
 }
 
@@ -129,8 +110,7 @@ p, li {
 .button:hover {
   background-color: #009999; /* Kieran Colour */
   color: white;
-  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .footer {
@@ -151,4 +131,3 @@ a:link {
 /* visited link */
 a:visited {
   color: #009999;
-}
