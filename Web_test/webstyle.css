@@ -1,0 +1,272 @@
+body, html {
+  height: 100%;
+  font-family: 'Open Sans', sans-serif;
+  margin: 0;
+}
+
+.logo {
+  width: 80px;
+  height: 80px;
+  background-image: url(images/Logo.svg);
+  background-size: cover;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 10px;
+}
+.navbar {
+  overflow: hidden;
+  vertical-align: baseline;
+  /* Dark background color */
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 auto 0 auto;
+  width: 50%;
+}
+
+/* Style the navigation bar links */
+.navbar a {
+  float: left;
+  /* Make sure that the links stay side-by-side */
+  display: block;
+  /* Change the display to block, for responsive reasons (see below) */
+  color: white;
+  /* White text color */
+  text-align: center;
+  /* Center the text */
+  padding: 14px 20px;
+  /* Add some padding */
+  text-decoration: none;
+  /* Remove underline */
+}
+
+/* Change color on hover/mouse-over */
+.navbar a:hover {
+  background-color: #ebebeb;
+  /* Grey background color */
+  color: black;
+  /* Black text color */
+}
+
+/* Header/logo Title */
+.header {
+  padding: 10px 0;
+  background: #555;
+  color: #f1f1f1;
+}
+
+span {
+  font-size: 18px;
+  line-height: 2;
+  color: white;
+}
+.portfolioheaderimage h1{
+
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: white;
+  margin: 0 auto 0 auto;
+  vertical-align: middle;
+}
+.portfolioheaderimage{
+  width:100vw;
+      height: 100vh;
+      background: -webkit-gradient(linear,left top, left bottom,from(rgba(0, 0,0,.2)),to(rgba(0,0,0,.5))), url('https://kieranshalloodesign.com/wp-content/uploads/2018/10/Mobile-Hero.png');
+      background: linear-gradient(rgba(0, 0,0,.2),rgba(0,0,0,.5)), url('https://kieranshalloodesign.com/wp-content/uploads/2018/10/Mobile-Hero.png');
+      background-size: cover;
+      background-position: center center;
+      -webkit-transition: background 0.3s, border 0.3s, border-radius 0.3s, -webkit-box-shadow 0.3s;
+      transition: background 0.3s, border 0.3s, border-radius 0.3s, -webkit-box-shadow 0.3s;
+      transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
+      transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s, -webkit-box-shadow 0.3s;
+display: -webkit-box;
+display: -ms-flexbox;
+display: flex;
+vertical-align: middle;
+padding: 0;
+margin: 0;
+}
+
+#accessibilityheader{
+  background: -webkit-gradient(linear,left top, left bottom,from(rgba(0, 0,0,.2)),to(rgba(0,0,0,.5))), url("\images\accessibility\YV_HC_Hero.png");}
+
+.portfolioheadercontent {
+  height: 400px;
+  margin: 0 auto 0 auto;
+
+}
+h1 {
+  font-size: 60px;
+}
+
+h2 {
+  font-size: 40px;
+  line-height: 1.23;
+  text-align: left;
+  font-family: PT Sans;
+  font-weight: 400;
+  font-style: normal;
+}
+
+h6 {
+  font-size: 14px;
+}
+
+p, li {
+  font-size: 18px;line-height: 2;}
+
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.imagegrid {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+-webkit-box-pack: center;
+    -ms-flex-pack: center;
+        justify-content: center;
+  max-width: 80%;
+  margin: 0 auto 0 auto;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row
+
+}
+
+.imagegrid img {
+  padding: 20px;
+  height: 100%;
+
+}
+
+
+.container-colour {
+  background-color: #00a6ff;
+}
+
+.container {
+  max-width: 1280px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Create two unequal portfolio-items that sits next to each other */
+/* Sidebar/left portfolio-item */
+.side {
+  -webkit-box-flex: 30%;
+      -ms-flex: 30%;
+          flex: 30%;
+  padding: 20px;
+  -ms-flex-item-align: center;
+      align-self: center;
+}
+
+/* Main portfolio-item */
+.main {
+  -webkit-box-flex: 70%;
+      -ms-flex: 70%;
+          flex: 70%;
+
+}
+
+.row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+
+}
+
+/* Create four equal portfolio-items that sits next to each other */
+.portfolio-item {
+  -webkit-box-flex: 30%;
+      -ms-flex: 30%;
+          flex: 30%;
+  max-width: 33%;
+  padding: 0 4px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.portfolio-item img {
+  margin-top: 8px;
+  vertical-align: middle;
+}
+
+/* Responsive layout - makes a two portfolio-item-layout instead of four portfolio-items */
+@media (max-width: 800px) {
+  .portfolio-item {
+    -webkit-box-flex: 48%;
+        -ms-flex: 48%;
+            flex: 48%;
+    max-width: 50%;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
+/* Responsive layout - makes the two portfolio-items stack on top of each other instead of next to each other */
+@media (max-width: 500px) {
+  .portfolio-item, .navbar {
+    -webkit-box-flex: 100%;
+        -ms-flex: 100%;
+            flex: 100%;
+    max-width: 100%;
+  }
+}
+
+/* Responsive layout - when the screen is less than 450px wide, make the two portfolio-items stack on top of each other instead of next to each other */
+@media screen and (max-width: 450px) {
+  .row, {
+    -webkit-box-flex: 100%;
+        -ms-flex: 100%;
+            flex: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  h1 {
+    font-size: 40px;
+  }
+}
+
+
+
+.footer {
+  width: 100%;
+  height: 50px; // the desired height
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background: #ebebeb;
+  /* color: #009999; */
+  text-align: center;
+}
+
+a:link {
+  color: "black";
+}
+
+a:visited {
+  color: 'red';
+}
+
+ #c1:hover {
+  opacity: 1;
+  z-index: 200;
+  -webkit-transition: .5s ease;
+  transition: .5s ease;
+  background-color: #008CBA;
+}
