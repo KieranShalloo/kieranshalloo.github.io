@@ -93,8 +93,10 @@ margin: 0;
 }
 
 #accessibilityheader{
-  background: -webkit-gradient(linear,left top, left bottom,from(rgba(0, 0,0,.2)),to(rgba(0,0,0,.5))), url("\images\accessibility\YV_HC_Hero.png");}
-
+  background: -webkit-gradient(linear,left top, left bottom,from(rgba(0, 0,0,.2)),to(rgba(0,0,0,.5))), url("/webtest/images/accessibility/YV_HC_Hero.png");
+  background-size: cover;
+  background-position: center center;
+}
 .portfolioheadercontent {
   height: 400px;
   margin: 0 auto 0 auto;
@@ -166,8 +168,8 @@ p, li {
       -ms-flex: 30%;
           flex: 30%;
   padding: 20px;
-  -ms-flex-item-align: center;
-      align-self: center;
+  align: top;
+
 }
 
 /* Main portfolio-item */
