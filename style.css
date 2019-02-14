@@ -3,7 +3,7 @@ html {
 
 }
 #bm {
-    height: 400px;
+    height: 300px;
 }
 .hero{
   width: 80px;
@@ -21,7 +21,7 @@ picture > *{
 }
 /* Header/logo Title */
 .header {
-  padding: 3%;
+  padding: 0%;
   text-align: center;
 }
 h1 {
