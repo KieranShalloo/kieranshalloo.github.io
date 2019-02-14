@@ -11,14 +11,14 @@
 
 
 <body>
-<div id="bm">
 
-</div>
 
 
   <div class="header">
     <div class="hero" onclick=" window.open('https://kieranshalloodesign.com','_blank')"></div>
-    <h1>Framer Interactive Prototypes</h1>
+    <div id="framer_animation_text">
+
+    </div>
     <p>A set of Prototypes that I have created as part of my work at YouView TV Ltd. <br>These Prototypes are examples of concepts and ideas put to user testing and not every project was released</p>
   </div>
 
@@ -29,7 +29,7 @@
         <picture>
           <source srcset="/img/SonyPrototype.webp" type="image/webp">
           <source srcset="/img/SonyPrototype.png" type="image/png">
-          <img src="/_img/SonyPrototype.png" alt="Sony Keyboard Prototype!">
+          <img src="/img/SonyPrototype.png" alt="Sony Keyboard Prototype!">
 
         </picture>
       </div>
@@ -91,7 +91,7 @@
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.4.3/lottie_svg.min.js">  </script>
 <script>lottie.loadAnimation({
-    container: document.getElementById('bm'),
+    container: document.getElementById('framer_animation_text'),
     renderer: 'svg',
     loop: false,
     autoplay: true,

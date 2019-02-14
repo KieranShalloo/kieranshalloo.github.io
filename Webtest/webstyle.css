@@ -74,6 +74,10 @@ span {
   margin: 0 auto 0 auto;
   vertical-align: middle;
 }
+#accessibilityheader{
+  background-image: url('/images/accessibility/parallax-bg.png');
+   height: 300px;
+}
 .portfolioheaderimage{
   width:100vw;
       height: 100vh;
