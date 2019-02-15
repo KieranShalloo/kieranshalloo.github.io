@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+
+
+<head>
+  <title>Kieran Shalloo Prototype Page</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="A page showing all of Kieran Shalloo Prototypes on a seperate page">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+
+<body>
+
+
+
+  <div class="header">
+    <div class="hero" onclick=" window.open('https://kieranshalloodesign.com','_blank')"></div>
+    <div id="framer_animation_text">
+
+    </div>
+    <p>A set of Prototypes that I have created as part of my work at YouView TV Ltd. <br>These Prototypes are examples of concepts and ideas put to user testing and not every project was released</p>
+  </div>
+
+
+  <div class="column">
+    <div class="row">
+      <div class="main">
+        <picture>
+          <source srcset="/img/SonyPrototype.webp" type="image/webp">
+          <source srcset="/img/SonyPrototype.png" type="image/png">
+          <img src="/img/SonyPrototype.png" alt="Sony Keyboard Prototype!">
+
+        </picture>
+      </div>
+      <div class="side">
+        <h1> Sony keyboard</h1>
+        <h2>To Control:</h2>
+        <p> <br>Press Left/Right/Up/Down to move the highlight state of the keyboard </p>
+        <button class='button' onclick=" window.open('https://kieranshalloo.github.io/Sony_Keyboard.framer/','_blank')">Try Me</button>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="column">
+    <div class="row">
+      <div class="side">
+        <h1> Speed Check Setting</h1>
+        <h2>To Control:</h2>
+        <p> <br>Click 'Check Speed' or to see the error state click 'Check Error' </p>
+        <button class='button' onclick=" window.open('https://kieranshalloo.github.io/speed_checker.framer/','_blank')">Try Me</button>
+      </div>
+      <div class="main">
+        <picture>
+          <source srcset="/img/SpeedCheckPrototype.webp" type="image/webp">
+          <source srcset="/img/SpeedCheckPrototype.png" type="image/png">
+          <img src="/_img/SpeedCheckPrototype.png" alt="Speed Check Prototype!">
+
+        </picture>
+      </div>
+    </div>
+  </div>
+  <footer class="footer">
+    Kieran Prototypes
+
+
+    -
+
+
+    <a href="https://kieranshalloo.github.io/">Home</a>
+
+
+    -
+
+    <a href="https://kieranshalloo.github.io/Help_case_study.framer/">Help</a>
+
+    -
+
+    <a href="https://KieranShalloo.github.io/buttons.framer/">Buttons</a>
+
+    -
+
+    <a href="https://KieranShalloo.github.io/speed_checker.framer/">Speed Checker</a>
+
+    -
+
+    <a href="https://kieranshalloo.github.io/webtest/index.html">Web Page</a>
+
+  </footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.4.3/lottie_svg.min.js">  </script>
+<script>lottie.loadAnimation({
+    container: document.getElementById('framer_animation_text'),
+    renderer: 'svg',
+    loop: false,
+    autoplay: true,
+    path: 'lottie/box.json'
+  })
+  </script>
+
+
+</body>
+
+
+</html>
