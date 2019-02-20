@@ -4,17 +4,7 @@ body, html {
   margin: 0;
 }
 
-/* .logo {
-  width: 40px;
-  height: 40px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 10px;
-} */
 
-/* #mylogo {
-  height: 80px;
-} */
 .navbar > *{box-sizing: content-box;}
 
 .navbar {
@@ -27,7 +17,7 @@ body, html {
   display: -ms-flexbox;
   display: flex;
   margin: 0 auto 0 auto;
-  width: 50%;
+
 }
 
 /* Style the navigation bar links */
@@ -48,10 +38,12 @@ body, html {
   border-bottom: 2px solid #009999;
   color: #009999;
   padding: 12px 20px;
-  margin-top: 2px
+  margin-top: 2px;
 
 
 }
+
+
 
 /* Header/logo Title */
 .header {
@@ -60,7 +52,7 @@ body, html {
   color: #686868;
   position: fixed;
   width: 100vw;
-  border: 1px solid;
+
  padding: 10px;
  box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
 
@@ -138,10 +130,7 @@ p, li {
   line-height: 2;
 }
 
-* {
-box-sizing: content-box;
 
-}
 
 .imagegrid {
   display: -webkit-box;
@@ -273,13 +262,6 @@ box-sizing: content-box;
   text-align: center;
 }
 
-a:link {
-  color: "black";
-}
-
-a:visited {
-  color: 'red';
-}
 
 #c1:hover {
   opacity: 1;

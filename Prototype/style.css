@@ -1,10 +1,9 @@
-html {
+body, html {
+  height: 100%;
   font-family: 'Open Sans', sans-serif;
+  margin: 0;
+}
 
-}
-#framer_animation_text {
-    height: 300px;
-}
 .hero{
   width: 80px;
   height: 80px;
@@ -16,14 +15,58 @@ html {
 picture > *{
   width: 80%;
 }
-.body {
-  margin: 0px;
+
+/* Header/logo Title */
+.navbar > * {box-sizing: content-box;}
+
+.navbar {
+  overflow: hidden;
+  vertical-align: baseline;
+  -webkit-box-pack: space-evenly;
+  -ms-flex-pack: space-evenly;
+  justify-content: space-evenly;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 auto 0 auto;
+
 }
+
+/* Style the navigation bar links */
+.navbar a {
+  float: left;
+  display: block;
+  color: #686868;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+  box-sizing: content-box;
+
+}
+
+/* Change color on hover/mouse-over */
+.navbar a:hover {
+
+  border-bottom: 2px solid #009999;
+  color: #009999;
+  padding: 12px 20px;
+  margin-top: 2px
+
+
+}
+
 /* Header/logo Title */
 .header {
-  padding: 0%;
-  text-align: center;
-}
+  padding: 12px ;
+  background: #ebebeb;
+  color: #686868;
+  position: fixed;
+  width: 100vw;
+
+ padding: 10px;
+ box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
+
+  }
 h1 {
   font-size: 60px;
 }
@@ -33,10 +76,7 @@ p, li {
 }
 
 
-* {
-  box-sizing: border-box;
 
-}
 
 
 
@@ -44,17 +84,21 @@ p, li {
 /* Column container */
 .row {
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap:nowrap;
   justify-content: center;
-  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  flex-direction:row;
 }
 
 
 .side {
-  flex: 30%;
+    display: flex;
+  flex: 28%;
   background-color: white;
   padding: 20px;
   text-align: left;
+  flex-direction: column;
 
 }
 .column {
@@ -66,10 +110,12 @@ p, li {
   /*margin: auto;*/
 }
 .main {
-  flex: 70%;
+    display: flex;
+  flex: 72%;
   background-color: white;
   padding: 20px;
   text-align: left;
+  fle
 
 }
 
@@ -91,10 +137,6 @@ p, li {
   }
 }
 
-.button {
-  -webkit-transition-duration: 0.350s;
-
-}
 
 .button {
   color: #292d31;
@@ -105,6 +147,7 @@ p, li {
   text-transform: uppercase;
   border: #009999 1px solid; /* Kieran Colour */
   outline: none;
+    -webkit-transition-duration: 0.350s;
 
 }
 
@@ -125,11 +168,3 @@ p, li {
    color: #009999;
    text-align: center;
 }
-
-a:link {
-  color: red;
-}
-
-/* visited link */
-a:visited {
-  color: #009999;
