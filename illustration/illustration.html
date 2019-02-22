@@ -5,29 +5,32 @@
   <title>Kieran Shalloo Prototype Page</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="A page showing all of Kieran Shalloo Prototypes on a seperate page">
-  <!-- <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet"> -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="illustration.css">
-</head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
 
 <body>
-  <div class="header">
-    <!-- <div class="logo" id="mylogo" onclick=" window.open('https://kieranshalloodesign.com','_blank')">
-    </div> -->
-    <div class="navbar">
-      <div>
-        <a href="index.html">Design Portfolio</a>
+  <div class="header" id="myTopnav">
+      <div class="navbar">
+      <div id="navlinks">
+        <a href="\index.html">Design Portfolio</a>
         <a href="\Prototype\prototype.html">Prototypes</a>
-        <a href="\illustration.html">Illustation Portfolio</a>
+        <a href="\illustration\illustration.html">Illustation Portfolio</a>
         <a href="#">About Me</a>
         <a href="#">Blog</a>
         <a href="#">Store</a>
-      </div><a href="#" style="border-bottom: 0px;">contact@kieranshalloodesign.com</a>
+      </div>
 
+      <a href="#" style="border-bottom: 0px;" id="headeremail">contact@kieranshalloodesign.com</a>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+      </a>
     </div>
 
   </div>
   <main>
-    <div class="row" style="padding-top:76px">
+    <div class="row" >
 
 
 <div class="portfolio-item">
@@ -149,16 +152,14 @@
     <a href="/Help_case_study.framer">Help</a>
   </footer>
 
-  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.4.3/lottie_svg.min.js"> </script>
-  <script>
-    lottie.loadAnimation({
-      container: document.getElementById('mylogo'),
-      renderer: 'svg',
-      loop: true,
-      autoplay: true,
-      path: 'lottie/logo.json'
-    })
-  </script> -->
-</body>
 
+</body>
+<script>function myFunction() {
+var x = document.getElementById("myTopnav");
+if (x.className === "header") {
+  x.className += "responsive";
+} else {
+  x.className = "header";
+}
+}</script>
 </html>

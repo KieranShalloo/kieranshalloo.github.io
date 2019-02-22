@@ -2,27 +2,35 @@
 <html class="no-js">
 
 <head>
-  <title>Kieran Shalloo Prototype Page</title>
+  <title>Kieran Shalloo Product Designer - Sony Android TV </title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="A page showing all of Kieran Shalloo Prototypes on a seperate page">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
-  <link rel="stylesheet" type="text/css" href="webstyle.css">
-</head>
+  <link rel="stylesheet" type="text/css" href="/webstyle.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
 
 
 </head>
 
 <body>
-  <div class="header" id="myHeader">
-    <div class="logo" onclick=" window.open('https://kieranshalloodesign.com','_blank')">
+  <div class="header" id="myTopnav">
+      <div class="navbar">
+      <div>
+        <a href="\index.html">Design Portfolio</a>
+        <a href="\Prototype\prototype.html">Prototypes</a>
+        <a href="\illustration\illustration.html">Illustation Portfolio</a>
+        <a href="#">About Me</a>
+        <a href="#">Blog</a>
+        <a href="#">Store</a>
+      </div>
+
+      <a href="#" style="border-bottom: 0px;" id="headeremail">contact@kieranshalloodesign.com</a>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+      </a>
     </div>
-    <div class="navbar">
-      <a href="index.html">Design Portfolio</a>
-      <a href="#">Illustation Portfolio</a>
-      <a href="#">About Me</a>
-      <a href="#">Blog</a>
-      <a href="#">Store</a>
-    </div>
+
   </div>
 
 <div class='portfolioheaderimage'><h1>Mobile App</h1>  </div>
@@ -201,6 +209,14 @@ Constant high usage by a high portion of the YouView user-base
 
 
 
+<script>function myFunction() {
+var x = document.getElementById("myTopnav");
+if (x.className === "header") {
+  x.className += "responsive";
+} else {
+  x.className = "header";
+}
+}</script>
 
 
 </html>
