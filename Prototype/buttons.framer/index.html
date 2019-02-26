@@ -3,18 +3,19 @@
 
 <head>
 	<meta charset="utf-8">
-
 	<meta name="format-detection" content="telephone=no">
 	<meta name="apple-mobile-web-app-capable" content="yes">
 	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 
 	<script type="text/javascript">
 		// This automatically sets the right viewport scale on mobile devices
-		(function () {
+		(function() {
 			var scale = 1 / window.devicePixelRatio
 			var viewport = "width=device-width, height=device-height, initial-scale=" + scale + ", maximum-scale=" + scale + ", user-scalable=no, viewport-fit=cover"
 			var iOS = /iPad|iPhone|iPod/.test(navigator.platform)
-			if (iOS) { viewport += ", shrink-to-fit=no" }
+			if (iOS) {
+				viewport += ", shrink-to-fit=no"
+			}
 			document.write("<meta name=\"viewport\" content=\"" + viewport + "\">")
 		})()
 	</script>
@@ -36,10 +37,28 @@
 	<script src="framer/framer.init.js"></script>
 
 </head>
+<div class="header" id="myTopnav">
+	<div class="navbar">
+		<div>
+			<a href="\index.html">Design Portfolio</a>
+			<a href="\Prototype\prototype.html">Prototypes</a>
+			<a href="\illustration\illustration.html">Illustation Portfolio</a>
+			<a href="\aboutme\aboutme.html">About Me</a>
+			<!-- <a href="#">Blog</a>
+			<a href="#">Store</a> -->
+		</div>
+
+		<a href="#" style="border-bottom: 0px;" id="headeremail">contact@kieranshalloodesign.com</a>
+		<a href="javascript:void(0);" class="icon" onclick="myFunction()">
+			<i class="fa fa-bars"></i>
+		</a>
+	</div>
+
+</div>
 
 <body>
-<p> Hello
-</p>
+	<p> Hello
+	</p>
 
 </body>
 
