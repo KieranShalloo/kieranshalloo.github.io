@@ -90,11 +90,11 @@ p, li {
 
 .row {
   display: flex;
-  flex-wrap:nowrap;
+
   flex-direction:row;
   padding-top: 76px;
-  height:100vh;
-   flex-basis: 1280px;
+  /* height:100vh; */
+
 }
 
 .side {
@@ -107,8 +107,8 @@ p, li {
 .main {
 flex:70%;
 /* flex-shrink: 1; */
-background-size: contain;
- background-repeat: no-repeat;
+/* background-size: contain;
+ background-repeat: no-repeat; */
 
 /* min-width: 100v; */
 
@@ -150,7 +150,7 @@ background-size: contain;
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
-      padding-top: 76px;
+      /* padding-top: 76px; */
       /* min-width: 100vw; */
     }
   .portfolioheaderimage {
@@ -215,7 +215,7 @@ background-size: contain;
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
-      padding-top: 76px;
+      /* padding-top: 76px; */
     }
 
   #headeremail {
