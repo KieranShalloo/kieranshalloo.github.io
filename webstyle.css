@@ -141,9 +141,10 @@ p, li {
   flex-direction: row
 }
 
-.imagegrid picture {
+.imagegrid img {
   padding: 20px;
-  max-width: 600px;
+  max-width: 95%;
+
 }
 
 
