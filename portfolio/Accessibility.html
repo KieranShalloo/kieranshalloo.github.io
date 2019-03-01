@@ -2,24 +2,34 @@
 <html class="no-js">
 
 <head>
-  <title>Kieran Shalloo Product Designer - YouView High Contrast Mode</title>
+  <title>Kieran Shalloo Product Designer - YouView Mobile App</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="A page showing all of Kieran Shalloo Prototypes on a seperate page">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="/webstyle.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-28629869-2"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-28629869-2');
+</script>
+
 </head>
 
 
 
 <body>
   <div class="header" id="myTopnav">
-      <div class="navbar">
+    <div class="navbar">
       <div>
-        <a href="\index.html">Design Portfolio</a>
-        <a href="\Prototype\prototype.html">Prototypes</a>
-        <a href="\illustration\illustration.html">Illustation Portfolio</a>
-        <a href="\aboutme\aboutme.html">About Me</a>
+        <a href="/">Design Portfolio</a>
+        <a href="/Prototype/prototype.html">Prototypes</a>
+        <a href="/illustration/illustration.html">Illustation Portfolio</a>
+        <a href="/aboutme/aboutme.html">About Me</a>
         <!-- <a href="#">Blog</a>
         <a href="#">Store</a> -->
       </div>
@@ -32,28 +42,32 @@
 
   </div>
 
-  <div class='portfolioheaderimage' id="accessibilityheader">
-    <h1>YouView High Contrast Mode</h1>
+  <div class='portfolioheaderimage' style="background-image: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .8)), url('/images/accessibility/accessibility-hero.png')">
+    <div class='portfolioherotext'>
+      <h1>Mobile App</h1>
+      <h2> YouView Remote Record App</h2>
+    </div>
   </div>
 
   <!-- The flexible grid (content) -->
-  <div class="container-colour" style="padding-top: 50px; padding-bottom: 50px">
-    <div class="container">
-      <div class="row">
-        <div class="side">
-          <h2 style="color: #ffffff;">The Goal</h2>
-        </div>
-        <div class="main">
-          <span>The goal of the YouView High Contrast Mode was to enable users with a wide range of visual issues to be able to use the YouView product at the same level as people with no visual problems. As the BBC was a founding member of the
-            YouView product, it is essential that the company followed the BBC Trust guidelines for accessibility. With this in mind, the approach to acceptance criteria for the YouView High Contrast mode was much higher than it would be at other
-            companies. My experience working on the accessibility mode of the previous YouView UI made me a prime candidate to lead the project and I took it on with the goal of making a great user experience.
-          </span>
 
-        </div>
+  <div class="container" style="width: 100vw; background-color:#00a6ff">
+    <div class="row">
+      <div class="side">
+        <h2 style="color: #ffffff;">The Goal</h2>
+      </div>
+      <div class="main">
+        <span>The goal of the YouView High Contrast Mode was to enable users with a wide range of visual issues to be able to use the YouView product at the same level as people with no visual problems. As the BBC was a founding member of the
+          YouView product, it is essential that the company followed the BBC Trust guidelines for accessibility. With this in mind, the approach to acceptance criteria for the YouView High Contrast mode was much higher than it would be at other
+          companies. My experience working on the accessibility mode of the previous YouView UI made me a prime candidate to lead the project and I took it on with the goal of making a great user experience.
+
+        </span>
+
       </div>
     </div>
   </div>
-  <div class="container" style="padding-top: 50px; padding-bottom: 50px">
+
+  <div class="container">
     <div class="row">
       <div class="side">
         <h2>User Research</h2>
@@ -68,13 +82,20 @@
           <br><br>
 
           We also spent time conducting competitive research in both the TV industry and wider, trying to get a sense of where the competition put their focus on helping disabled customers. By looking at rivals we could see where the gap in the
-          market stood and how we could use our expertise to create a bespoke experience that solved the brief and created the best solutions</p>
-
+          market stood and how we could use our expertise to create a bespoke experience that solved the brief and created the best solutions
+        </p>
       </div>
     </div>
-
+    <div class="imagegrid">
+      <picture>
+        <source srcset="/images/mobile/mobile-hero.webp" type="image/webp">
+        <source srcset="/images/mobile/mobile-hero.jpg" type="image/jpeg">
+        <img src="/images/mobile/mobile-hero.jpg" alt="youview app hero image">
+      </picture>
+    </div>
   </div>
-  <div class="container" style="padding-top: 50px; padding-bottom: 50px">
+
+  <div class="container">
     <div class="row">
       <div class="side">
         <h2>Design Process</h2>
@@ -90,41 +111,115 @@
           nearby text completely unreadable.
         </p>
 
-
       </div>
-      <img src="/images\accessibility\HC_details.png" width="100%" align="middle" style="margin-bottom: 50px">
-      <p>Specs and assets shared with development teams</p>
+    </div>
+    <img src="/images/accessibility/accessibility-details.png" width="70%" align="middle">
+    <p align=middle style="margin-bottom:50px"> Specs and assets shared with development teams</p>
+  </div>
+  <!-- <div style="width:80%; align: middle; margin-bottom:50px;">
+  <picture>
+    <source srcset="/images/mobile/mobile_pairing_flow.webp" type="image/webp">
+    <source srcset="/images/mobile/mobile_pairing_flow.png" type="image/png">
+    <img src="/images/mobile/mobile_pairing_flow.png" alt="youview app hero image">
+</picture>
+</div> -->
 
-      </p>
+
+
+  <div class="container" style="background:#032230">
+    <div class="row">
+      <div class="side">
+        <h2 style="color:#ffffff">Presenting Concepts & Feedback</h2>
+      </div>
+      <div class="main">
+        <p style="color:#ffffff">
+
+
+
+
+
+
+
+          We wanted to present two concepts that worked to solve the original brief. Using the evidence and information we gathered from our user-research as well as our deep look at the competition we presented two different concepts to
+          stakeholders. Both had gone through vigorous prototyping and testing in the team and we were looking for final feedback before we took the project into our agile backlog.
+
+          <br><br> </p>
+      </div>
+      <div style="margin-left:auto; margin-right:auto; ">
+
+        <picture>
+          <source srcset="/images/accessibility/accessibility-concepts.webp" type="image/webp">
+          <source srcset="images/accessibility/accessibility-concepts.png" type="image/png">
+          <img src="/images/accessibility/accessibility-concepts.png" style="margin-left:auto; margin-right:auto;" alt="youview app hero image">
+        </picture>
+      </div>
+
+      <div class="side">
+        <h2 style="color:#ffffff"> </h2>
+      </div>
+      <div class="main">
+        <p style="color:#ffffff">
+          The feedback we received from our concepts shaped the final stages of design and altered some of our directions as we moved into development. We were given the green light to progress with the black version of the UI and started to
+          create assets and specifications for the developers
+
+        </p>
+      </div>
+    </div>
+
+    <div id=accessibilityheader >
+
+
+        <div class="row">
+          <div class="side">
+            <h2>Subtle Design Touches</h2>
+          </div>
+          <div class="main">
+            <p> As we took the design to its later stages we wanted to ensure that the YouView UI kept its delightful little touches that made it such an attractive design in the first place for customers. I ensured that these touches remained even
+              when the user wanted the High Contrast option turned on.
+            </p>
+          </div>
+        </div>
+
+    </div>
+
+
+
+
+    <div class="imagegrid">
+      <picture>
+        <source srcset="/images/mobile/mobile-discover-wireframe.webp" type="image/webp">
+        <source srcset="/images/mobile/mobile-discover-wireframe.jpg" type="image/jpeg">
+        <img src="/images/mobile/mobile-discover-wireframe.jpg" alt="youview app hero image">
+      </picture>
+      <picture>
+        <source srcset="/images/mobile/mobile-discovergenre-wireframe.webp" type="image/webp">
+        <source srcset="/images/mobile/mobile-discovergenre-wireframe.jpg" type="image/jpeg">
+        <img src="/images/mobile/mobile-discovergenre-wireframe.jpg" alt="youview app hero image">
+      </picture>
+
+
+    </div>
+    <div class="imagegrid"><img src="https://kieranshalloodesign.com/wp-content/uploads/2019/01/mobile-discovery.gif" style="padding-top:50px">
     </div>
   </div>
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="side">
+        <h2>Designing for multiple screens</h2>
+      </div>
+      <div class="main">
+        <p> As the app gained popularity inside our user base, there was a business decision to push the app further with the introduction of a tablet mode,initially with the iPad and then as the opportunity arose moving onto android tablets
+          <br><br>
+          A key point with making a project for second screen devices was using the screen estate in the correct way and when creating the application with the larger tablet form in mind we wanted to ensure that we could create a more lean-back
+          experience. The goal was to create a bespoke experience for a tablets to allow us to show more on screen at one time utilizing the bigger screen size
+        </p>
 
-  <div class="container-colour" style="background:#032230; padding-top: 50px; padding-bottom: 50px">
-    <div class="container" ;>
-      <div class="row">
-        <div class="side">
-          <h2 style="color:#ffffff">Presenting Concepts & Feedback</h2>
-        </div>
-        <div class="main">
-          <p style="color:#ffffff">
-
-
-
-            We wanted to present two concepts that worked to solve the original brief. Using the evidence and information we gathered from our user-research as well as our deep look at the competition we presented two different concepts to
-            stakeholders. Both had gone through vigorous prototyping and testing in the team and we were looking for final feedback before we took the project into our agile backlog.
-
-            <br><br> <img src="\images\accessibility\high contrast concepts.png" width="100%" align="middle" style="margin-bottom: 50px">
-            The feedback we received from our concepts shaped the final stages of design and altered some of our directions as we moved into development. We were given the green light to progress with the black version of the UI and started to
-            create assets and specifications for the developers
-
-          </p>
-        </div>
 
       </div>
-
     </div>
-  </div>
 
+  </div>
   <div id=accessibilityheader>
 
     <div class="container" style="padding-top: 50px; padding-bottom: 50px">
@@ -140,38 +235,68 @@
       </div>
     </div>
   </div>
-
-
-
-
-  <div class="container" style="padding-top: 50px; padding-bottom: 50px">
-    <div class="row">
-      <div class="side">
-        <h2>Design Solution</h2>
-      </div>
-      <div class="main">
-        <p>
-
-          The final high contrast version incorporated the client feedback and we made adjustments to the highlight state to increase the contrast levels of text.
-          Shown below is a range of the final visual design implemented by our development team, as well as a way to compare the high contrast UI with the standard version.
-
-        </p>
-
-
-      </div>
+  ="container" style="padding-top: 50px; padding-bottom: 50px">
+  <div class="row">
+    <div class="side">
+      <h2>Design Solution</h2>
     </div>
+    <div class="main">
+      <p>
+
+        The final high contrast version incorporated the client feedback and we made adjustments to the highlight state to increase the contrast levels of text.
+        Shown below is a range of the final visual design implemented by our development team, as well as a way to compare the high contrast UI with the standard version.
+
+      </p>
+
+
+    </div>
+  </div>
 
 
   </div>
-  <div class="imagegrid"><img src="\images\accessibility\YV_HC_2.png">
-    <img src="\images\accessibility\YV_HC_1.png">
-    <img src="\images\accessibility\YV_HC_3.png">
+
+  <div>
+    <div class="imagegrid">
+
+      <picture>
+        <source srcset="/images/accessibility/accessibility-screen1.webp" type="image/webp">
+        <source srcset="/images/accessibility/accessibility-screen1.png" type="image/png">
+        <img src="/images/accessibility/accessibility-screen1.png" alt="youview app hero image">
+      </picture>
+
+      <picture>
+        <source srcset="/images/accessibility/accessibility-screen2.webp" type="image/webp">
+        <source srcset="/images/accessibility/accessibility-screen2.png" type="image/png">
+        <img src="/images/accessibility/accessibility-screen2.png" alt="youview app hero image">
+      </picture>
+
+    </div>
   </div>
+
 
   <div class="imagegrid">
-    <img src="\images\accessibility\YV_HC_4.png">
-    <img src="\images\accessibility\YV_HC_5.png">
-    <img src="\images\accessibility\YV_HC_6.png">
+    <picture>
+      <source srcset="/images/accessibility/accessibility-screen3.webp" type="image/webp">
+      <source srcset="/images/accessibility/accessibility-screen3.png" type="image/png">
+      <img src="/images/accessibility/accessibility-screen3.png" alt="youview app hero image">
+    </picture>
+    <picture>
+      <source srcset="/images/accessibility/accessibility-screen4.webp" type="image/webp">
+      <source srcset="/images/accessibility/accessibility-screen4.png" type="image/png">
+      <img src="/images/accessibility/accessibility-screen4.png" alt="youview app hero image">
+    </picture>
+  </div>
+  <div class="imagegrid">
+    <picture>
+      <source srcset="/images/accessibility/accessibility-screen5.webp" type="image/webp">
+      <source srcset="/images/accessibility/accessibility-screen5.png" type="image/png">
+      <img src="/images/accessibility/accessibility-screen5.png" alt="youview app hero image">
+    </picture>
+    <picture>
+      <source srcset="/images/accessibility/accessibility-screen6.webp" type="image/webp">
+      <source srcset="/images/accessibility/accessibility-screen6.png" type="image/png">
+      <img src="/images/accessibility/accessibility-screen6.png" alt="youview app hero image">
+    </picture>
   </div>
 
 
@@ -198,34 +323,37 @@
       </div>
     </div>
   </div>
+
   <footer class="footer">
     Kieran Prototypes
 
-    <a href="https://kieranshalloo.github.io/">Home</a>
+    <a href="/index.html/">Home</a>
 
     -
 
-    <a href="https://kieranshalloo.github.io/Help_case_study.framer/">Help</a>
+    <a href="/Prototype/prototype.html">Prototypes</a>
 
     -
 
-    <a href="https://KieranShalloo.github.io/buttons.framer/">Buttons</a>
+    <a href="/illustration/illustration.html">illustration</a>
 
     -
 
-    <a href="/peed_checker.framer/index.html">Speed Checker</a>
+    <a href="/aboutme/">About Me</a>
   </footer>
 </body>
-<script>function myFunction() {
-var x = document.getElementById("myTopnav");
-if (x.className === "header") {
-  x.className += "responsive";
-} else {
-  x.className = "header";
-}
-}</script>
 
 
+<script>
+  function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "header") {
+      x.className += "responsive";
+    } else {
+      x.className = "header";
+    }
+  }
+</script>
 
 
 </html>
