@@ -1,5 +1,5 @@
 body, html {
-  height: 100%;
+  /* height: 100%; */
   font-family: 'Open Sans', sans-serif;
   margin: 0;
 }
@@ -133,7 +133,8 @@ p, li {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
-  max-width: 80%;
+  max-width: 95%;
+  height: auto;
   margin: 0 auto 0 auto;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
@@ -144,7 +145,7 @@ p, li {
 .imagegrid img {
   padding: 20px;
   max-width: 95%;
-
+  height: auto;
 }
 
 
@@ -153,8 +154,8 @@ p, li {
   /* max-width: 1280px; */
   margin-left: auto;
   margin-right: auto;
-  padding-top: 150px;
-  padding-bottom: 150px;
+  padding-top: 3%;
+  padding-bottom: 3%;
 }
 
 /* Create two unequal portfolio-items that sits next to each other */
@@ -254,16 +255,29 @@ p, li {
     display: none;
   }
 
-  .imagegrid picture {
+  .imagegrid {
+
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto 0 auto;
+
+    flex-direction: column;
+  }
+
+  .imagegrid img {
     padding: 0px;
-    width: 100vw;
-    display:flex
+    width: 100%;
+    height: auto;
+
   }
 }
 
 /* Responsive layout - makes the two portfolio-items stack on top of each other instead of next to each other */
-@media (max-width: 450px) {
-  .portfolio-item, .navbar {
+@media screen and (max-width: 450px) {
+  .portfolio-item, .navbar,   {
     max-width: 100%;
     flex-direction: column;
   }
@@ -274,11 +288,11 @@ p, li {
 
   .portfolioheaderimage {
     background-attachment: scroll;
+  height: 100vh;
   }
+.side{
+  flex:100%;
 }
-
-/* Responsive layout - when the screen is less than 450px wide, make the two portfolio-items stack on top of each other instead of next to each other */
-@media screen and (max-width: 360px) {
   .row, {
     -webkit-box-flex: 100%;
     -ms-flex: 100%;
@@ -288,7 +302,20 @@ p, li {
     -ms-flex-direction: column;
     flex-direction: column;
   }
+  .imagegrid  {
+width:100vw;}
 
+  .imagegrid img {
+    padding: 0px;
+    width: 95%;
+    height: auto;
+
+  }  .imagegrid picture {
+      padding: 0px;
+      width: 95%;
+      height: auto;
+
+    }
   h1 {
     font-size: 40px;
   }
