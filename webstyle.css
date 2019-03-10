@@ -3,6 +3,34 @@ body, html {
   font-family: 'Open Sans', sans-serif;
   margin: 0;
 }
+.prototypebutton{
+
+margin-left: auto;
+margin-right: auto;
+border: 2px solid #fff;
+font-size: 1.2em;
+background: transparent;
+padding: 12px 24px;
+align-self: center;
+border-radius: 3px;
+color: #fff;
+text-align: center;
+
+}
+.prototypebutton:hover {
+
+margin-left: auto;
+margin-right: auto;
+border: 2px solid #009999;
+background: transparent;
+padding: 12px 24px;
+
+border-radius: 3px;
+
+text-align: center;
+
+}
+
 
 .navbar>* {
   box-sizing: content-box;
@@ -65,7 +93,28 @@ span {
   margin: auto;
   vertical-align: middle;
 }
+.prototypelink{
 
+    width: 100vw;
+    background: #032230;
+
+     text-decoration: none;
+}
+#textframer:not(:hover){
+  color:#ffffff;
+  text-align:center;
+  transition: 0.35s;
+   transition-timing-function: ease-in-out;
+}
+
+#textframer:hover{
+  color:#ffffff;
+  text-align:center;
+
+  transform: scale(1.12);
+  transition: 0.35s;
+   transition-timing-function: ease-in-out;
+}
 .portfolioherotext h1 {
   color: white;
   text-decoration: underline;
@@ -83,10 +132,8 @@ padding: 6em 0em 6em 0em;;
 }
 
 .portfolioheaderimage {
-  width: 100vw;
+  width: 100%;
    height: 100vh;
-  /* background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .8)); */
-
   background-size: cover;
   background-position: center center;
   background-attachment: fixed;
@@ -133,7 +180,7 @@ p, li {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
-  max-width: 95%;
+  max-width: 100%;
   height: auto;
   margin: 0 auto 0 auto;
   -webkit-box-orient: horizontal;
@@ -144,7 +191,7 @@ p, li {
 
 .imagegrid img {
   padding: 20px;
-  max-width: 95%;
+    max-width:768px;
   height: auto;
 }
 
@@ -202,6 +249,7 @@ p, li {
 .portfolio-item picture {
   margin-top: 8px;
   vertical-align: middle;
+
 }
 
 /* Responsive layout - makes a two portfolio-item-layout instead of four portfolio-items */
@@ -307,12 +355,12 @@ width:100vw;}
 
   .imagegrid img {
     padding: 0px;
-    width: 95%;
+    /* width: 95%; */
     height: auto;
 
   }  .imagegrid picture {
-      padding: 0px;
-      width: 95%;
+      padding-bottom: 2%;
+      /* width: 95%; */
       height: auto;
 
     }
