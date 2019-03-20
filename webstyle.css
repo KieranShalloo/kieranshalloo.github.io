@@ -376,7 +376,16 @@ width:100vw;}
   /* bottom: 0; */
   overflow: hidden;
   /* left: 0; */
-  background: #ebebeb;
-  /* color: #009999; */
+  background: #009999;
+
   text-align: center;
+}
+
+.footer a{  width: 100%;
+
+
+
+  text-align: center;
+    color: #fff;
+    justify-content: middle;
 }

@@ -257,7 +257,12 @@ flex:70%;
   /* bottom: 0; */
   overflow: hidden;
   /* left: 0; */
-  background: #ebebeb;
-  /* color: #009999; */
+  background: #009999;
+
   text-align: center;
+}
+
+.footer a{
+    color: #fff;
+    justify-content: middle;
 }

@@ -20,7 +20,7 @@
 </head>
 
 <body>
-  <div class="header" id="myTopnav">
+  <div class="header">
     <div class="navbar">
       <div>
         <a href="\index.html">Design Portfolio</a>
@@ -31,14 +31,13 @@
         <a href="#">Store</a> -->
       </div>
 
-      <a href="#" style="border-bottom: 0px;" id="headeremail">contact@kieranshalloodesign.com</a>
+      <a href="#" style="border-bottom: 0px;" id="headeremail">contact@kieranShalloodesign.com</a>
       <a href="javascript:void(0);" class="icon" onclick="myFunction()">
         <i class="fa fa-bars"></i>
       </a>
     </div>
 
   </div>
-
 
 
   <div class="row" style="background-image: linear-gradient(250deg, #009999 0%, #009999 52%);">
@@ -51,14 +50,14 @@
 
   <div class="container">
     <div style="max-width:1000px; display:flex;margin-left: auto;margin-right: auto;">
-      <a href="http://www.facebook.com/kieranshalloodesign">
+      <a href="http://www.facebook.com/kieranShalloodesign">
         <div class="aboutcontain">
           <h3>Facebook</h3>
 
           <p>Click to see my Facebook page, which contains freelance illustration work and posts.</p>
         </div>
       </a>
-      <a href="http://www.instagram.com/kieranshalloodesign">
+      <a href="http://www.instagram.com/kieranShalloodesign">
         <div class="aboutcontain">
           <h3>Instagram</h3>
 
@@ -87,43 +86,49 @@
   </div>
 
   <div class="imagegrid">
-    <img src="https://kieranshalloodesign.com/wp-content/uploads/2018/10/About_Sony.png" alt="Sony Logo">
-    <img src="https://kieranshalloodesign.com/wp-content/uploads/2018/10/About_NF.png" alt="Netflix Logo">
-    <img src="https://kieranshalloodesign.com/wp-content/uploads/2018/10/About_And.png" alt="Android TV Logo">
+    <img src="https://kieranShalloodesign.com/wp-content/uploads/2018/10/About_Sony.png" alt="Sony Logo">
+    <img src="https://kieranShalloodesign.com/wp-content/uploads/2018/10/About_NF.png" alt="Netflix Logo">
+    <img src="https://kieranShalloodesign.com/wp-content/uploads/2018/10/About_And.png" alt="Android TV Logo">
   </div>
 
   <div class="imagegrid">
-    <img src="https://kieranshalloodesign.com/wp-content/uploads/2018/10/About_BT.png" alt="BT Logo">
-    <img src="https://kieranshalloodesign.com/wp-content/uploads/2018/10/About_SS.png" alt="SingStar Logo">
-    <img src="https://kieranshalloodesign.com/wp-content/uploads/2018/10/About_TT.png" alt="TalkTalk Logo"> </div>
-  <footer class="footer">
+    <img src="https://kieranShalloodesign.com/wp-content/uploads/2018/10/About_BT.png" alt="BT Logo">
+    <img src="https://kieranShalloodesign.com/wp-content/uploads/2018/10/About_SS.png" alt="SingStar Logo">
+    <img src="https://kieranShalloodesign.com/wp-content/uploads/2018/10/About_TT.png" alt="TalkTalk Logo"> </div>
 
 
+    <footer class="footer">
+      <p>
+        Kieran Shalloo Design
+      </p>
 
-    <a href="\index.html">Home</a>
+      <a href="/index.html/">Home</a>
 
-    -
+      -
 
-    <a href="\Prototype\index.html">Prototypes</a>
+      <a href="/Prototype/prototype.html">Prototypes</a>
 
-    -
+      -
 
-    <a href="\Sony_Keyboard.framer">Keyboard</a>
+      <a href="/illustration/illustration.html">illustration</a>
 
-    -
+      -
 
-    <a href="/buttons.framer/">Buttons</a>
+      <a href="/aboutme/">About Me</a>
+    </footer>
 
-    -
+    </body>
 
-    <a href="/speed_checker.framer/">Speed Checker</a>
+    <script>
+      function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "header") {
+          x.className += "responsive";
+        } else {
+          x.className = "header";
+        }
+      }
+    </script>
 
-    -
 
-    <a href="/Help_case_study.framer">Help</a>
-  </footer>
-
-
-</body>
-
-</html>
+    </html>
