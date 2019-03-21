@@ -3,34 +3,29 @@ body, html {
   font-family: 'Open Sans', sans-serif;
   margin: 0;
 }
-.prototypebutton{
 
-margin-left: auto;
-margin-right: auto;
-border: 2px solid #fff;
-font-size: 1.2em;
-background: transparent;
-padding: 12px 24px;
-align-self: center;
-border-radius: 3px;
-color: #fff;
-text-align: center;
-
+.prototypebutton {
+  margin-left: auto;
+  margin-right: auto;
+  border: 2px solid #fff;
+  font-size: 1.2em;
+  background: transparent;
+  padding: 12px 24px;
+  align-self: center;
+  border-radius: 3px;
+  color: #fff;
+  text-align: center;
 }
+
 .prototypebutton:hover {
-
-margin-left: auto;
-margin-right: auto;
-border: 2px solid #009999;
-background: transparent;
-padding: 12px 24px;
-
-border-radius: 3px;
-
-text-align: center;
-
+  margin-left: auto;
+  margin-right: auto;
+  border: 2px solid #009999;
+  background: transparent;
+  padding: 12px 24px;
+  border-radius: 3px;
+  text-align: center;
 }
-
 
 .navbar>* {
   box-sizing: content-box;
@@ -93,28 +88,28 @@ span {
   margin: auto;
   vertical-align: middle;
 }
-.prototypelink{
 
-    width: 100vw;
-    background: #032230;
-
-     text-decoration: none;
+.prototypelink {
+  width: 100vw;
+  background: #032230;
+  text-decoration: none;
 }
-#textframer:not(:hover){
-  color:#ffffff;
-  text-align:center;
+
+#textframer:not(:hover) {
+  color: #ffffff;
+  text-align: center;
   transition: 0.35s;
-   transition-timing-function: ease-in-out;
+  transition-timing-function: ease-in-out;
 }
 
-#textframer:hover{
-  color:#ffffff;
-  text-align:center;
-
+#textframer:hover {
+  color: #ffffff;
+  text-align: center;
   transform: scale(1.12);
   transition: 0.35s;
-   transition-timing-function: ease-in-out;
+  transition-timing-function: ease-in-out;
 }
+
 .portfolioherotext h1 {
   color: white;
   text-decoration: underline;
@@ -125,15 +120,16 @@ span {
 }
 
 #accessibilityheader {
- background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .7)), url('/images/accessibility/accessibility-container-background.png');
-padding: 6em 0em 6em 0em;;
+  background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .7)), url('/images/accessibility/accessibility-container-background.png');
+  padding: 6em 0em 6em 0em;
+  ;
   background-size: cover;
   background-position: center center;
 }
 
 .portfolioheaderimage {
   width: 100%;
-   height: 100vh;
+  height: 100vh;
   background-size: cover;
   background-position: center center;
   background-attachment: fixed;
@@ -143,7 +139,6 @@ padding: 6em 0em 6em 0em;;
   padding: 0;
   margin: 0;
 }
-
 
 .portfolioheadercontent {
   height: 400px;
@@ -191,11 +186,9 @@ p, li {
 
 .imagegrid img {
   padding: 20px;
-    max-width:768px;
+  max-width: 768px;
   height: auto;
 }
-
-
 
 .container {
   /* max-width: 1280px; */
@@ -230,8 +223,8 @@ p, li {
   padding-top: 76px;
   padding-left: 3%;
   padding-right: 3%;
-  margin-right: auto ;
-    margin-left: auto ;
+  margin-right: auto;
+  margin-left: auto;
   max-width: 1280px;
 }
 
@@ -249,11 +242,69 @@ p, li {
 .portfolio-item picture {
   margin-top: 8px;
   vertical-align: middle;
+}
 
+@media (max-width: 450px) and (min-width: 1px) {
+  .portfolio-item {
+    -webkit-box-flex: 48%;
+    -ms-flex: 48%;
+    flex: 48%;
+    max-width: 100%;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+  }
+
+  .navbar, {
+    max-width: 100%;
+    flex-direction: column;
+  }
+
+  #headeremail {
+    display: none;
+  }
+
+  .portfolioheaderimage {
+    background-attachment: scroll;
+    height: 100vh;
+  }
+
+  .side {
+    flex: 100%;
+  }
+
+  .row, {
+    -webkit-box-flex: 100%;
+    -ms-flex: 100%;
+    flex: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+
+  .imagegrid {
+    width: 100%;
+  }
+
+  .imagegrid img {
+    padding: 0px;
+    /* width: 95%; */
+    height: auto;
+  }
+
+  .imagegrid picture {
+    padding-bottom: 2%;
+    /* width: 95%; */
+    height: auto;
+  }
+
+  h1 {
+    font-size: 40px;
+  }
 }
 
 /* Responsive layout - makes a two portfolio-item-layout instead of four portfolio-items */
-@media (max-width: 800px) {
+@media (max-width: 960px) and (min-width: 450px) {
   .portfolio-item {
     -webkit-box-flex: 48%;
     -ms-flex: 48%;
@@ -262,10 +313,12 @@ p, li {
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
   }
+
   .navbar {
     max-width: 100%;
     flex-direction: column;
   }
+
   .portfolioheaderimage {
     background-attachment: scroll;
   }
@@ -304,14 +357,12 @@ p, li {
   }
 
   .imagegrid {
-
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
     max-width: 100%;
     height: auto;
     margin: 0 auto 0 auto;
-
     flex-direction: column;
   }
 
@@ -319,53 +370,6 @@ p, li {
     padding: 0px;
     width: 100%;
     height: auto;
-
-  }
-}
-
-/* Responsive layout - makes the two portfolio-items stack on top of each other instead of next to each other */
-@media screen and (max-width: 450px) {
-  .portfolio-item, .navbar,   {
-    max-width: 100%;
-    flex-direction: column;
-  }
-
-  #headeremail {
-    display: none;
-  }
-
-  .portfolioheaderimage {
-    background-attachment: scroll;
-  height: 100vh;
-  }
-.side{
-  flex:100%;
-}
-  .row, {
-    -webkit-box-flex: 100%;
-    -ms-flex: 100%;
-    flex: 100%;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-  }
-  .imagegrid  {
-width:100vw;}
-
-  .imagegrid img {
-    padding: 0px;
-    /* width: 95%; */
-    height: auto;
-
-  }  .imagegrid picture {
-      padding-bottom: 2%;
-      /* width: 95%; */
-      height: auto;
-
-    }
-  h1 {
-    font-size: 40px;
   }
 }
 
@@ -377,15 +381,12 @@ width:100vw;}
   overflow: hidden;
   /* left: 0; */
   background: #009999;
-
   text-align: center;
 }
 
-.footer a{  width: 100%;
-
-
-
+.footer a {
+  width: 100%;
   text-align: center;
-    color: #fff;
-    justify-content: middle;
+  color: #fff;
+  justify-content: middle;
 }
