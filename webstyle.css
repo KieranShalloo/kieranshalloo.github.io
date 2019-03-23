@@ -301,6 +301,10 @@ p, li {
   h1 {
     font-size: 40px;
   }
+
+  p {
+    margin: 1em;
+  }
 }
 
 /* Responsive layout - makes a two portfolio-item-layout instead of four portfolio-items */

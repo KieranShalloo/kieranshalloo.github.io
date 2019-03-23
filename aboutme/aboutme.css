@@ -3,22 +3,7 @@ body, html {
   font-family: 'Open Sans', sans-serif;
   margin: 0;
 }
-.footer {
-  width: 100%;
-  height: 50px;
-  position: absolute;
-  /* bottom: 0; */
-  overflow: hidden;
-  /* left: 0; */
-  background: #009999;
 
-  text-align: center;
-}
-
-.footer a{
-    color: #fff;
-    justify-content: middle;
-}
 .imagegrid {
   display: flex;
   justify-content: center;
@@ -143,7 +128,12 @@ p, li {
   margin-left: auto;
   margin-right: auto;
 }
-
+.aboutboxcontainer{
+  max-width:1000px;
+  display:flex;
+  margin-left: auto;
+  margin-right: auto;
+}
 .aboutcontain {
   padding: 40px 40px 0 40px;
   background-color: #ffffff;
@@ -170,52 +160,42 @@ p, li {
   /* padding-top: 76px; */
 }
 
-/* Responsive layout - makes a two portfolio-item-layout instead of four portfolio-items */
-@media (max-width: 800px) {
+
+@media (max-width: 450px) and (min-width: 1px) {
   .portfolio-item {
     -webkit-box-flex: 48%;
     -ms-flex: 48%;
     flex: 48%;
-    max-width: 50%;
+    max-width: 100%;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
   }
 
-  .portfolioheaderimage {
-    background-attachment: scroll;
-  }
+.aboutboxcontainer{
+  padding: 20px;
+  flex-direction: column;
+  display: block;
 
-  .imagegrid {
-    display: flex;
-    flex: 48%;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin: 0 auto 0 auto;
-    flex-direction: row;
-    z-index: 4;
-  }
-
-  .imagegrid img {
-    padding: 30px;
-    height: 100%;
-    opacity: 0.6;
-  }
 }
 
-/* Responsive layout - makes the two portfolio-items stack on top of each other instead of next to each other */
-@media screen and (max-width: 350px) {
-  .portfolio-item, .navbar {
-    -webkit-box-flex: 100%;
-    -ms-flex: 100%;
-    flex: 100%;
+  .navbar, {
     max-width: 100%;
+    flex-direction: column;
+  }
+
+  #headeremail {
+    display: none;
   }
 
   .portfolioheaderimage {
     background-attachment: scroll;
+    height: 100vh;
   }
 
-  /* Responsive layout - when the screen is less than 450px wide, make the two portfolio-items stack on top of each other instead of next to each other */
+  .side {
+    flex: 100%;
+  }
+
   .row, {
     -webkit-box-flex: 100%;
     -ms-flex: 100%;
@@ -227,26 +207,98 @@ p, li {
   }
 
   .imagegrid {
-    /*
-      display: flex; */
-    justify-content: center;
-    margin: 0 auto 0 auto;
-    flex-direction: column;
-    z-index: 4;
+    width: 100%;
   }
 
   .imagegrid img {
-    padding: 20px;
-    height: 100%;
-    opacity: 0.6;
+    padding: 0px;
+    width: 95%;
+    height: auto;
   }
-}
+
+  .imagegrid picture {
+    padding-bottom: 2%;
+    width: 95%;
+    height: auto;
+  }
+.aboutcontain{
+  flex-direction: column;}
 
 h1 {
-  font-size: 40px;
-}
+    font-size: 40px;
+  }
+  p{margin: 1em;}
 }
 
+/* Responsive layout - makes a two portfolio-item-layout instead of four portfolio-items */
+@media (max-width: 960px) and (min-width: 450px) {
+  .portfolio-item {
+    -webkit-box-flex: 48%;
+    -ms-flex: 48%;
+    flex: 48%;
+    max-width: 50%;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+  }
+
+  .navbar {
+    max-width: 100%;
+    flex-direction: column;
+  }
+
+  .portfolioheaderimage {
+    background-attachment: scroll;
+  }
+
+  #headeremail {
+    display: none;
+  }
+
+  .header a:not(:only-child) {
+    display: none;
+  }
+
+  .header a.icon {
+    float: inherit;
+    display: block;
+  }
+
+  .topnav.responsive {
+    position: fixed;
+  }
+
+  .topnav.responsive a.icon {
+    position: fixed;
+    right: 0;
+    top: 0;
+  }
+
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: center;
+  }
+
+  #headeremail {
+    display: none;
+  }
+
+  .imagegrid {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto 0 auto;
+    flex-direction: column;
+  }
+
+  .imagegrid img {
+    padding: 0px;
+    width: 100%;
+    height: auto;
+  }
+}
 
 
 
@@ -257,4 +309,21 @@ h1 {
   -webkit-transition: .5s ease;
   transition: .5s ease;
   background-color: #008CBA;
+}
+.footer {
+  width: 100%;
+  height: 50px;
+  position: absolute;
+  /* bottom: 0; */
+  overflow: hidden;
+  /* left: 0; */
+  background: #009999;
+  text-align: center;
+}
+
+.footer a {
+  width: 100%;
+  text-align: center;
+  color: #fff;
+  justify-content: middle;
 }
