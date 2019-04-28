@@ -336,7 +336,10 @@ p, li {
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
   }
-
+  .side {
+    flex: 100%;
+  }
+3
   .navbar {
     max-width: 100%;
     flex-direction: column;
