@@ -177,6 +177,22 @@ h2 {
   padding-right: 5%;
 }
 
+h3 {
+  font-size: 32px;
+  line-height: 1.23;
+  text-align: left;
+  font-weight: 600;
+  font-style: normal;
+  padding-right: 5%;
+}
+h4 {
+  font-size: 20px;
+  line-height: 1.23;
+  text-align: left;
+  font-weight: 900;
+  font-style: normal;
+  padding-right: 5%;
+}
 h6 {
   font-size: 14px;
 }
