@@ -28,10 +28,7 @@ videoLayer1 = new VideoLayer({
   width: 45,
   height: 22,
   video: "images/toggle.mp4",
-  x: 310
-});
-
-({
+  x: 310,
   y: 85,
   parent: artboard
 });
@@ -40,10 +37,7 @@ videoLayer2 = new VideoLayer({
   width: 45,
   height: 22,
   video: "images/toggle.mp4",
-  x: 310
-});
-
-({
+  x: 310,
   y: 137,
   parent: artboard
 });
