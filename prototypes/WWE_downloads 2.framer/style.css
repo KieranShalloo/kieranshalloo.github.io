@@ -1,0 +1,42 @@
+.artboard {
+  position: relative;
+  width: 100%;
+  max-width: 375px;
+}
+.container {
+  position: relative;
+  width: 100%;
+  max-width: 375px;
+}
+
+
+.artboard .btn {
+  position: absolute;
+  top: 190px;
+  right: 0;
+  background-color: #009999;
+  opacity: 0.2;
+  padding: 22px;
+  cursor: pointer;
+}
+
+.artboard .btn2 {
+  position: absolute;
+  bottom: 10px;
+  left: 0%;
+  width: 100%;
+  background-color: #009999;
+  opacity: 0.2;
+  height: 68px;
+  cursor: pointer;
+}
+.artboard .btn3 {
+  position: absolute;
+  bottom: 80px;
+  left: 0%;
+  width: 100%;
+  background-color: #fff;
+  opacity: 0.2;
+  height: 68px;
+  cursor: pointer;
+}

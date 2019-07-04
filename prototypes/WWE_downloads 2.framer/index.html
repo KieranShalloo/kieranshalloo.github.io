@@ -1,0 +1,52 @@
+ <html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	  <link rel="stylesheet" type="text/css" href="style.css">
+
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('#button').click( function () {
+                $('#png').hide();
+                $('#video-player-div').show();
+								$('#video1').get(0).play();
+            });
+
+        });
+				$(document).ready(function(){
+            $('#button2').click( function () {
+                $('#png').hide();
+								$('#video-player-div').hide();
+                $('#video-player-div2').show();
+								$('#video2').get(0).play();
+            });
+
+        });
+    </script>
+
+</head>
+
+
+<body>
+	<div class="artboard">
+		<div id="png" class="container">
+		  <img src="images/framer_bg.png">
+		</div>
+		<div>
+			<button id="button" class="btn"></button>
+			<button id="button2" class="btn2"></button>
+			<button id="button3" class="btn3"></button>
+		</div>
+		<div id="video-player-div" style="display:none;" >
+				<video id="video1" >
+						<source src="images/framer_render1.mp4" type="video/mp4">
+				</video>
+		</div>
+		<div id="video-player-div2" style="display:none;" >
+				<video id="video2" >
+						<source src="images/framer_render2.mp4" type="video/mp4">
+				</video>
+		</div>
+	</div>
+</body>
+</html>
