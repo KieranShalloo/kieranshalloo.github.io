@@ -1,42 +1,40 @@
-.artboard {
-  position: relative;
-  width: 100%;
-  max-width: 375px;
-}
+
 .container {
   position: relative;
-  width: 100%;
-  max-width: 375px;
+  width: 375px;
+  height: 667px;
 }
 
 
-.artboard .btn {
+
+#button1 {
   position: absolute;
   top: 190px;
-  right: 0;
+  left: 330px;
   background-color: #009999;
-  opacity: 0.2;
+  opacity: 0.5;
   padding: 22px;
   cursor: pointer;
 }
 
-.artboard .btn2 {
+#button2 {
   position: absolute;
-  bottom: 10px;
-  left: 0%;
-  width: 100%;
+  top: 595px;
+
+  left: 0;
+  width: 375px;
   background-color: #009999;
-  opacity: 0.2;
+  opacity: 0.5;
   height: 68px;
   cursor: pointer;
 }
-.artboard .btn3 {
+#button3 {
   position: absolute;
-  bottom: 80px;
-  left: 0%;
-  width: 100%;
-  background-color: #fff;
-  opacity: 0.2;
+    top: 525px;
+  left: 0;
+  width: 375px;
+  background-color: #009999;
+  opacity: 0.5;
   height: 68px;
   cursor: pointer;
 }
