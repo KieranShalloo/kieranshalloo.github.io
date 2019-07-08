@@ -12,7 +12,7 @@
   top: 190px;
   left: 330px;
   background-color: #009999;
-  opacity: 0.5;
+  opacity: 0;
   padding: 22px;
   cursor: pointer;
 }
@@ -24,7 +24,7 @@
   left: 0;
   width: 375px;
   background-color: #009999;
-  opacity: 0.5;
+  opacity: 0;
   height: 68px;
   cursor: pointer;
 }
@@ -34,7 +34,7 @@
   left: 0;
   width: 375px;
   background-color: #009999;
-  opacity: 0.5;
+  opacity: 0;
   height: 68px;
   cursor: pointer;
 }
