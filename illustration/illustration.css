@@ -3,6 +3,16 @@ body, html {
   font-family: 'Open Sans', sans-serif;
   margin: 0;
 }
+.extended {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+
+
+
+
 
 .navbar>* {
   box-sizing: content-box;
@@ -164,7 +174,9 @@ p, li {
   color: #a5b3c1;
 }
 
-
+.extended {
+    min-height: calc(100vh - 59px);
+  }
 .row {
   display: flex;
 
@@ -229,6 +241,9 @@ flex:70%;
     flex-direction: column;
       /* padding-top: 76px; */
       /* min-width: 100vw; */
+    }
+  .extended {
+      min-height: calc(50vh - 59px);
     }
   .portfolioheaderimage {
     background-attachment: scroll;

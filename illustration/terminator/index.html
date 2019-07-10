@@ -37,38 +37,49 @@
       </a>
     </div>
 
-  </div>
+
+    </div>
+
+
+
+
+
 
   <div class="row">
     <div class="main" >
       <picture>
-        <source srcset="/images/illustration/nemo.webp" type="image/webp">
-        <source srcset="/images/illustration/nemo.jpg" type="image/jpg">
-        <img src="/images/illustration/nemo.jpg" alt="Youview Mobile app tile" style="width:100%;">
+        <source srcset="/images/illustration/terminator.webp" type="image/webp">
+        <source srcset="/images/illustration/terminator.jpg" type="image/jpg">
+        <img src="/images/illustration/terminator.jpg" alt="Youview Mobile app tile" style="width:100%;">
       </picture>
-      <picture>
-        <source srcset="/images/illustration/nemo2.webp" type="image/webp">
-        <source srcset="/images/illustration/nemo2.jpg" type="image/jpg">
-        <img src="/images/illustration/nemo2.jpg" alt="Youview Mobile app tile" style="width:100%;">
-      </picture>
+
     </div>
     <div class="side">
-      <h2 style="color:#009999">Nemo</h2>
+      <h2 style="color:#009999">T-800</h2>
       <p>
-        Inspired by the film Finding Nemo
-      </p><h4>EDITION SIZE: </h4>  <p>  50 </p>
-      <h4>SIZE: </h4>  <p> 21 x 42 cm </p>
+        Inspired by the Terminator saga
+      </p>
     </div>
 
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
 
+      <!-- The Close Button -->
+      <span class="close">&times;</span>
 
+      <!-- Modal Content (The Image) -->
+      <img class="modal-content" id="img01">
+
+      <!-- Modal Caption (Image Text) -->
+      <div id="caption"></div>
+    </div>
   </div>
+  <h4>EDITION SIZE: </h4>  <p>  50 </p>
+  <h4>SIZE: </h4>  <p> 21 x 42 cm </p>
 
-
-  <div class="extended" style="background-position: right; background-image:url(/images/illustration/nemo-big.jpg")>
-    <!-- <p>hello</p> -->
+  <div class="extended" style="background-image:url(/images/illustration/terminator-big.jpg");>
+    <p>hello</p>
   </div>
-
 
 
 
@@ -95,6 +106,27 @@
 
 
 </body>
+<script>// Get the modal
+var modal = document.getElementById('myModal');
+
+// Get the image and insert it inside the modal - use its "alt" text as a caption
+var img = document.getElementById('myImg');
+var modalImg = document.getElementById("img01");
+var captionText = document.getElementById("caption");
+img.onclick = function(){
+  modal.style.display = "block";
+  modalImg.src = this.src;
+  captionText.innerHTML = this.alt;
+}
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}</script>
+
 <script>
   function myFunction() {
     var x = document.getElementById("myTopnav");
