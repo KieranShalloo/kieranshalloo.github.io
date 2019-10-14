@@ -207,9 +207,9 @@ flex:70%;
 
 /* Create four equal portfolio-items that sits next to each other */
 .portfolio-item {
-  -webkit-box-flex: 19%;
-  -ms-flex: 19%;
-  flex: 19%;
+  -webkit-box-flex: 20%;
+  -ms-flex: 20%;
+  flex: 20%;
   /* max-width: 33%; */
   padding: 0 4px;
   -ms-flex-wrap: wrap;
@@ -222,9 +222,9 @@ flex:70%;
 }
 
 /* Responsive layout - makes a two portfolio-item-layout instead of four portfolio-items */
-@media (max-width: 800px) {
+@media (max-width: 600px) {
   .portfolio-item {
-    -webkit-box-flex: 48%;
+    -webkit-box-flex: 40%;
     -ms-flex: 48%;
     flex: 48%;
     max-width: 100%;
