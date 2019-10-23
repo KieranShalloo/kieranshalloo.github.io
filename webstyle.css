@@ -305,6 +305,7 @@ p, li {
 
   .side {
     flex: 100%;
+    max-width: 100%;
   }
 
   .row, {
@@ -354,6 +355,7 @@ p, li {
   }
   .side {
     flex: 100%;
+    max-width: 100%;
   }
 3
   .navbar {
