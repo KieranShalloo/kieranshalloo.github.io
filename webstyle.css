@@ -5,24 +5,6 @@ html, body {
 margin:0;
 }
 
-#toc_container {
-    background: #f9f9f9 none repeat scroll 0 0;
-    border: 1px solid #aaa;
-    display: table;
-    font-size: 95%;
-    margin-bottom: 1em;
-    padding: 0 auto 0 auto
-    /* width: 100vw; */
-}
-
-.toc_title {
-    font-weight: 700;
-    text-align: center;
-}
-
-#toc_container li, #toc_container ul, #toc_container ul li{
-    list-style: outside none none !important;
-}
 .prototypebutton {
   margin-left: auto;
   margin-right: auto;
@@ -279,7 +261,7 @@ p, li {
   vertical-align: middle;
 }
 
-@media (max-width: 450px) and (min-width: 1px) {
+@media (max-width: 451px) and (min-width: 1px) {
   .portfolio-item {
     -webkit-box-flex: 48%;
     -ms-flex: 48%;
