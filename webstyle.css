@@ -5,12 +5,46 @@ html, body {
 margin:0;
 }
 
-/* Make the image fully responsive */
-  .carousel-inner img {
-      width: 100%;
-      height: 50%;
+
+/* Header Parallax Element Style*/
+.paral {
+min-height: 400px;
+background-attachment: fixed;
+background-size: cover;
+background-position: 50% 50%;
+}
+
+  /* Paragraph for Parallax Section */
+  .paral p {
+  font-size: 24px;
+  color:#f5f5f5;
+  text-align: center;
+  line-height: 60px;
   }
 
+  /* Heading for Parallax Section */
+  .paral h1 {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 60px;
+  text-align: center;
+  padding-top: 60px;
+  line-height: 100px;
+  }
+
+  /* Image for Parallax Section */
+  .paralsec {
+  background-image: url("/images/wwe/RW-app-tilesANGLE.jpg");
+  }
+
+  .paralsec1 {
+  background-image: url("/images/netflix/netflix-006.jpg");}
+
+
+
+  /* Add more images for more sections */
+
+/* Remove Bottom Margin from Jumbotron */
+.jumbotron{margin-bottom: 0;}
 
   /*------------------------------------
   - COLOR ksd
@@ -31,7 +65,7 @@ margin:0;
 
   .badge-ksd {
       color: #fff;
-      background-color: 009999;
+      background-color: #009999;
   }
 
   .badge-ksd[href]:hover, .badge-ksd[href]:focus {
@@ -40,7 +74,7 @@ margin:0;
   }
 
   .bg-ksd {
-      background-color: 009999 !important;
+      background-color: #009999 !important;
   }
 
   a.bg-ksd:hover, a.bg-ksd:focus,
@@ -50,13 +84,13 @@ margin:0;
   }
 
   .border-ksd {
-      border-color: 009999 !important;
+      border-color: #009999 !important;
   }
 
   .btn-ksd {
       color: #fff;
-      background-color: 009999;
-      border-color: 009999;
+      background-color: #009999;
+      border-color: #009999;
   }
 
   .btn-ksd:hover {
@@ -71,8 +105,8 @@ margin:0;
 
   .btn-ksd.disabled, .btn-ksd:disabled {
       color: #fff;
-      background-color: 009999;
-      border-color: 009999;
+      background-color: #009999;
+      border-color: #009999;
   }
 
   .btn-ksd:not(:disabled):not(.disabled):active, .btn-ksd:not(:disabled):not(.disabled).active, .show > .btn-ksd.dropdown-toggle {
@@ -86,15 +120,15 @@ margin:0;
   }
 
   .btn-outline-ksd {
-      color: 009999;
+      color: #009999;
       background-color: transparent;
-      border-color: 009999;
+      border-color: #009999;
   }
 
   .btn-outline-ksd:hover {
       color: #fff;
-      background-color: 009999;
-      border-color: 009999;
+      background-color: #009999;
+      border-color: #009999;
   }
 
   .btn-outline-ksd:focus, .btn-outline-ksd.focus {
@@ -102,14 +136,14 @@ margin:0;
   }
 
   .btn-outline-ksd.disabled, .btn-outline-ksd:disabled {
-      color: 009999;
+      color: #009999;
       background-color: transparent;
   }
 
   .btn-outline-ksd:not(:disabled):not(.disabled):active, .btn-outline-ksd:not(:disabled):not(.disabled).active, .show > .btn-outline-ksd.dropdown-toggle {
       color: #fff;
-      background-color: 009999;
-      border-color: 009999;
+      background-color: #009999;
+      border-color: #009999;
   }
 
   .btn-outline-ksd:not(:disabled):not(.disabled):active:focus, .btn-outline-ksd:not(:disabled):not(.disabled).active:focus, .show > .btn-outline-ksd.dropdown-toggle:focus {
@@ -148,7 +182,7 @@ margin:0;
   }
 
   .text-ksd {
-      color: 009999 !important;
+      color: #009999 !important;
   }
 
   a.text-ksd:hover, a.text-ksd:focus {

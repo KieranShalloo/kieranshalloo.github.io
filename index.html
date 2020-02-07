@@ -14,8 +14,8 @@
 
   <!-- Local CSS -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
-  <link rel="stylesheet" type="text/css" href="/webstyle.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="webstyle.css">
+
 
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-28629869-2"></script>
@@ -35,60 +35,110 @@
 
 
 <body>
+  <nav class="navbar navbar-expand-sm bg-light justify-content-center">
 
-  <nav class="navbar justify-content-center navbar-expand-sm  navbar-dark fixed-top bg-ksd">
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-  <div class="collapse navbar-collapse" id="collapsibleNavbar">
+    <!-- Links -->
     <ul class="navbar-nav">
       <li class="nav-item">
-        <a class="nav-link" href="/">Home</a>
+        <a class="nav-link text-dark" href="/">Home</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="/portfolio">Design Work</a>
+        <a class="nav-link text-dark" href="/portfolio">Design Work</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="/illustration">Illustration Work</a>
+        <a class="nav-link text-dark" href="/illustration">Illustration Work</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="/aboutme">About Us</a>
+        <a class="nav-link text-dark" href="/aboutme">About Us</a>
       </li>
     </ul>
+
+  </nav>
+
+
+  <!-- First Parallax Section -->
+  <div class="jumbotron paral paralsec">
+  <h1 class="display-3">Here is a heading 1</h1>
+  <p class="lead">Here is a short description 1</p>
+  <p class="lead">
+  <a class="btn btn-info btn-lg btn-md" href="#" role="button">Here is a button 1</a>
+  </p>
   </div>
 
+  <!-- Second Parallax Section -->
+  <div class="jumbotron paral paralsec1">
+  <h1 class="display-3">Here is a heading 2</h1>
+  <p class="lead">Here is a short description 2</p>
+  <p class="lead">
+  <a class="btn btn-warning btn-lg btn-md" href="widgets.html" role="button">Here is a button 2</a>
+  </p>
+  </div>
 
-</nav>
+  <!-- Third Parallax Section -->
+  <div class="jumbotron paral paralsec2">
+  <h1 class="display-3">Here is a heading 3</h1>
+  <p class="lead">Here is a short description 2</p>
+  <p class="lead">
+  <a class="btn btn-primary btn-lg btn-md" href="themes.html" role="button">Here is a button 3</a>
+  </p>
+  </div>
+
+  <!-- Add More Parallax Sections Here -->
 
 
-
-  <div class="containerfluid bg-primary pt-3">
-    <div class=" container">
-      <h1 class="text-center display-1">Kieran Shalloo Design </h1>
-
+  <!-- Full screen row -->
+  <div class="containerfluid bg-ksd row align-items-center" style="height: 100vh">
+    <div class="container col-10">
+      <h1 class="text-center display-1  text-white" >Kieran Shalloo Design </h1>
       <h2 class="text-center">Helping to design the best user experiences</h2>
-
-      <p class="text-center">
+      <p class="text-center col-sm">
         We are an agency with over a decade experience of crafting award winning user experiences. We specialise in unique and bespoke design services across a range of diciplines.
 
         We help to bring experiences to life to further your connection with the end user.
       </p>
-
     </div>
   </div>
 
 
-  <!-- Client row -->
-  <div class="container-fluid">
+
+  <!-- Client Images -->
+  <div class="containerfluid pt-3">
     <div class="row">
-      <div class="col-sm" style="background-color:yellow;">25%</div>
-      <div class="col-sm" style="background-color:orange;">25%</div>
-      <div class="col-sm" style="background-color:yellow;">25%</div>
-      <div class="col-sm" style="background-color:orange;">25%</div>
+      <div class="container">
+        <h1>Recent Work</h1>
+      </div>
+      <div class="col-md-6" >
+        <div class="thumbnail">
+          <a href="https://www.kieranshalloodesign.com/portfolio/wwe/" target="_blank">
+            <picture>
+              <!-- <source srcset="/images/home/tile-wwe.webp" type="image/webp"> -->
+              <source srcset="/images/wwe/RW-app-tilesANGLE.jpg" type="image/jpeg">
+              <img style="width:100%" src="/images/wwe/RW-app-tilesANGLE.jpg" alt="Alt Text!">
+            </picture>
+            <div class="caption">
+              <h4 class="text-center">WWE network refresh.</h4>
+            </div>
+          </a>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="thumbnail">
+          <a href="/images/home/tile-alexa.jpg" target="_blank">
+            <picture>
+              <source srcset="/images/home/tile-alexa.webp" type="image/webp">
+              <source srcset="/images/home/tile-alexa.jpg" type="image/jpeg">
+              <img style="width:100%" src="/images/home/tile-alexa.jpg" alt="Alt Text!">
+            </picture>
+            <div class="caption">
+              <h4 class="text-center">Alexa Voice Search.</h4>
+            </div>
+          </a>
+        </div>
+      </div>
+
+
     </div>
   </div>
-
-
 
 
 
