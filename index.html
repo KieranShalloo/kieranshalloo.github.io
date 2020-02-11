@@ -35,23 +35,22 @@
 
 
 <body>
-  <nav class="navbar navbar-expand-sm bg-light justify-content-center">
 
-    <!-- Links -->
-    <ul class="navbar-nav">
-      <li class="nav-item">
-        <a class="nav-link text-dark" href="/">Home</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link text-dark" href="/portfolio">Design Work</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link text-dark" href="/illustration">Illustration Work</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link text-dark" href="/aboutme">About Us</a>
-      </li>
-    </ul>
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav">
+        <a class="nav-item nav-link active" style="padding-right: 2rem" href="/">Home </a>
+        <a class="nav-item nav-link" style="padding-right: 2rem" href="/portfolio">Design Work</a>
+        <a class="nav-item nav-link" style="padding-right: 2rem" href="/illustration">Illustration Work</a>
+        <a class="nav-item nav-link" style="padding-right: 2rem" href="/aboutme">About Us</a>
+      </div>
+    </div>
+    <a class="navbar-text" style="padding-right: 2rem" a href="mailto:contact@kieranshalloodesign.com">contact@kieranshalloodesign.com</a>
 
   </nav>
 
@@ -118,10 +117,10 @@
 
   <div class="container pt-4">
 
-      <div class="container">
-        <h1>Clients we have worked with</h1>
-      </div>
-  <div class="row">
+    <div class="container">
+      <h1>Clients we have worked with</h1>
+    </div>
+    <div class="row">
       <div class="col-md-4">
         <picture>
           <source srcset="/images/about/about-wwe.webp" type="image/webp">
@@ -139,7 +138,7 @@
       </div>
 
       <div class="col-md-4">
-        <picture class="mx-auto" >
+        <picture class="mx-auto">
           <source srcset="/images/about/about-playstation.webp" type="image/webp">
           <source srcset="/images/about/about-playstation.png" type="image/png">
           <img src="/images/about/about-playstation.png" alt="Playstation logo">
@@ -189,24 +188,17 @@
 
 
   <footer class="footer">
-    <a href="/index.html/">Home</a>
-
-    -
-
-    <a href="/portfolio/index.html/">Home</a>
-
-    -
-
-    <a href="/prototypes">Prototypes</a>
-
-    -
-
-    <a href="/illustration.html">illustration</a>
-
-    -
-
-    <a href="/aboutme/">About Me</a>
+    <div class="container">
+      <div class="row justify-content-center">
+        <a class="text-muted" href="/">Home</a>
+        <a class="text-muted" href="/portfolio/">Portfolio</a>
+        <a class="text-muted" href="/prototypes">Prototypes</a>
+        <a class="text-muted" href="/illustration.html">illustration</a>
+        <a class="text-muted" href="/aboutme/">About Us</a>
+      </div>
+    </div>
   </footer>
+
 
   <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
