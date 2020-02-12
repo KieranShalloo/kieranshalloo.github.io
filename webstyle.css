@@ -1,18 +1,31 @@
 html, body {
-
   overflow-x: hidden;
   font-family: 'Open Sans', sans-serif;
-  margin:0;
+  margin: 0;
 }
 
 .navbar {
-  padding: .5rem  3rem .5rem 5rem;
+  padding: .5rem 3rem .5rem 5rem;
 }
 
-.customJumboBg{
-background-image: url("/images/accessibility/accessibility-hero.png");
-background-image: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .8))
+.customJumboBg {
+  background-image: url("/images/accessibility/accessibility-hero.png");
+}
 
+.img-gradient {
+  position: relative;
+  display: inline-block;
+}
+
+.img-gradient:after {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  display: inline-block;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8) 100%)
 }
 
 /*------------------------------------
@@ -78,13 +91,13 @@ button.bg-ksd:focus {
   border-color: #009999;
 }
 
-.btn-ksd:not(:disabled):not(.disabled):active, .btn-ksd:not(:disabled):not(.disabled).active, .show > .btn-ksd.dropdown-toggle {
+.btn-ksd:not(:disabled):not(.disabled):active, .btn-ksd:not(:disabled):not(.disabled).active, .show>.btn-ksd.dropdown-toggle {
   color: #fff;
   background-color: #006565;
   border-color: #005656;
 }
 
-.btn-ksd:not(:disabled):not(.disabled):active:focus, .btn-ksd:not(:disabled):not(.disabled).active:focus, .show > .btn-ksd.dropdown-toggle:focus {
+.btn-ksd:not(:disabled):not(.disabled):active:focus, .btn-ksd:not(:disabled):not(.disabled).active:focus, .show>.btn-ksd.dropdown-toggle:focus {
   box-shadow: 0 0 0 0.2rem rgba(0, 153, 153, 0.5);
 }
 
@@ -109,13 +122,13 @@ button.bg-ksd:focus {
   background-color: transparent;
 }
 
-.btn-outline-ksd:not(:disabled):not(.disabled):active, .btn-outline-ksd:not(:disabled):not(.disabled).active, .show > .btn-outline-ksd.dropdown-toggle {
+.btn-outline-ksd:not(:disabled):not(.disabled):active, .btn-outline-ksd:not(:disabled):not(.disabled).active, .show>.btn-outline-ksd.dropdown-toggle {
   color: #fff;
   background-color: #009999;
   border-color: #009999;
 }
 
-.btn-outline-ksd:not(:disabled):not(.disabled):active:focus, .btn-outline-ksd:not(:disabled):not(.disabled).active:focus, .show > .btn-outline-ksd.dropdown-toggle:focus {
+.btn-outline-ksd:not(:disabled):not(.disabled):active:focus, .btn-outline-ksd:not(:disabled):not(.disabled).active:focus, .show>.btn-outline-ksd.dropdown-toggle:focus {
   box-shadow: 0 0 0 0.2rem rgba(0, 153, 153, 0.5);
 }
 
@@ -136,8 +149,8 @@ button.bg-ksd:focus {
 }
 
 .table-ksd,
-.table-ksd > th,
-.table-ksd > td {
+.table-ksd>th,
+.table-ksd>td {
   background-color: #51ffff;
 }
 
@@ -145,8 +158,8 @@ button.bg-ksd:focus {
   background-color: #38ffff;
 }
 
-.table-hover .table-ksd:hover > td,
-.table-hover .table-ksd:hover > th {
+.table-hover .table-ksd:hover>td,
+.table-hover .table-ksd:hover>th {
   background-color: #38ffff;
 }
 
