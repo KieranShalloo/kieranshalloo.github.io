@@ -57,17 +57,20 @@
 
   <!-- Jumbotron -->
 
-  <div class="jumbotron customJumboBg" style="height: 100vh; background: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8) 100%);}">
-    <div class="alert alert-danger">
+  <div class="jumbotron jumbotron-fluid cover" style="background-image: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .8)), url('/images/accessibility/accessibility-hero.png')">
+    <div class=" alert alert-danger">
       <strong>Danger!</strong> <a href="#" class="alert-link">Work In progress</a>.
     </div>
-    <h1 class="display-3" style="COLOR: white">High Contrast Mode</h1>
+    <div class="container">
 
-    <hr class="my-4">
-    <h2 style="COLOR: white">YouView accessibility features.</h2>
-    <p class="lead">
-      <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
-    </p>
+      <div class="row align-items-center">
+        <div class="col-md-8 offset-md-2 ">
+          <h1 class="display-3 text-center" style="COLOR: white">Android TV Case Study</h1>
+          <hr class="my-4">
+          <h2 class=" text-center" style="COLOR: white">YouView On Sony TV</h2>
+        </div>
+      </div>
+    </div>
   </div>
 
 
@@ -221,13 +224,17 @@
             create assets and specifications for the developers
           </p>
         </div>
+        <div class="row">
+          <div class="col">
+            <source srcset="/images/accessibility/accessibility-concepts.webp" type="image/webp">
+            <source srcset="images/accessibility/accessibility-concepts.png" type="image/png">
+            <img class="img-fluid" src="/images/accessibility/accessibility-concepts.png">
+          </div>
+        </div>
       </div>
+
     </div>
-    <div class="col">
-      <source srcset="/images/accessibility/accessibility-concepts.webp" type="image/webp">
-      <source srcset="images/accessibility/accessibility-concepts.png" type="image/png">
-      <img class="img-fluid" src="/images/accessibility/accessibility-concepts.png">
-    </div>
+  </div>
   </div>
 
 
@@ -248,7 +255,7 @@
     </div>
   </div>
 
-  <div class="containerfluid" style=" background-image: linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, .8)), url('/images/accessibility/accessibility-container-background.png'); padding: 6rem 0em 6rem 0em; height: 50vh">
+  <div class="containerfluid" style=" background-image: linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, .8)), url('/images/accessibility/accessibility-container-background.png'); padding: 6rem 0em 6rem 0em;">
     <div class="container">
       <div class="row">
         <div class="col">
@@ -361,12 +368,33 @@
   <!-- Footer-->
   <footer class="footer">
     <div class="container">
-      <div class="row justify-content-center">
-        <a class="text-muted" href="/">Home</a>
-        <a class="text-muted" href="/portfolio/">Portfolio</a>
-        <a class="text-muted" href="/prototypes">Prototypes</a>
-        <a class="text-muted" href="/illustration.html">illustration</a>
-        <a class="text-muted" href="/aboutme/">About Us</a>
+      <div class="row">
+        <div class="col-sm-6 col-lg-3">
+          <ul class="list-unstyled">
+            <h5>Pages</h5>
+            <li> <a class="text-muted" href="/">Home</a>
+            <li> <a class="text-muted" href="/portfolio/">Design Work</a>
+            <li> <a class="text-muted" href="/prototypes">Illustration Work</a>
+            <li> <a class="text-muted" href="/aboutme/">About Us</a>
+          </ul>
+        </div>
+        <div class="col-sm-6 col-lg-3">
+          <ul class="list-unstyled">
+            <h5>Social Media</h5>
+            <li> <a class="text-muted" href="https://www.instagram.com/kieranshalloodesign/">Instagram</a>
+            <li> <a class="text-muted" href="/prototypes">Twitch</a>
+            <li> <a class="text-muted" href="https://twitter.com/KieranShalloo">Twitter</a>
+
+            <li> <a class="text-muted" href="/illustration.html">Youtube</a>
+            <li> </a>
+          </ul>
+        </div>
+        <div class="col-sm-6 col-lg-2 offset-lg-4">
+          <img src="/Logo.svg" class="img-fluid pull-xs-left" style="width:50%">
+          <p class="text-muted" style="font-size: 12px">
+            © 2020 Kieran Shalloo Design Ltd
+          </p>
+        </div>
       </div>
     </div>
   </footer>
