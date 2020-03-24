@@ -1,13 +1,22 @@
 <!DOCTYPE html>
-<html class="no-js" lang = "en">
+<html lang="en">
 
 <head>
   <title>Kieran Shalloo Product Designer - YouView Mobile App</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="description" content="A portfolio page showing the creation and evolution of the YouView Mobile companion app on Android and iOS">
+
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+  <!-- Local CSS -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="/webstyle.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-28629869-2"></script>
   <script>
@@ -26,103 +35,159 @@
 
 
 <body>
-  <div class="header" id="myTopnav">
-    <div class="navbar">
-      <div>
-        <a href="/">Design Portfolio</a>
-        <a href="/prototypes">Prototypes</a>
-        <a href="/illustration">Illustration Portfolio</a>
-        <a href="/aboutme">About Me</a>
-        <!-- <a href="#">Blog</a>
-        <a href="#">Store</a> -->
+
+  <!-- Nav -->
+  <nav class="navbar shadow fixed-top navbar-expand-lg navbar-light bg-light">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav">
+        <a class="nav-item nav-link active" style="padding-right: 2rem" href="/">Home </a>
+        <a class="nav-item nav-link" style="padding-right: 2rem" href="/portfolio">Design Work</a>
+        <a class="nav-item nav-link" style="padding-right: 2rem" href="/illustration">Illustration Work</a>
+
       </div>
-
-      <a href="mailto:Contact@KieranShallooDesign.com" style="border-bottom: 0px;" id="headeremail">Contact@KieranShallooDesign.com</a>
-      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-        <i class="fa fa-bars"></i>
-      </a>
     </div>
+    <a class="navbar-text" style="padding-right: 2rem" a href="mailto:contact@kieranshalloodesign.com">contact@kieranshalloodesign.com</a>
+  </nav>
 
+
+
+
+  <!-- Jumbotron -->
+
+  <div class="jumbotron jumbotron-fluid cover" style="background-image: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .8)), url('/images/mobile/mobile-hero.jpg')">
+    
+    <div class="container">
+
+      <div class="row align-items-center">
+        <div class="col-md-8 overlaytext">
+          <h1 class="display-3 text-center" style="COLOR: white">YouView Remote App</h1>
+          <hr class="my-4">
+          <h2 class=" text-center" style="COLOR: white">YouView Remote Record App</h2>
+        </div>
+      </div>
+    </div>
   </div>
 
-  <div class='portfolioheaderimage' style="background-image: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .8)), url('/images/mobile/mobile-hero.jpg')">
-    <div class='portfolioherotext'>
-      <h1>Mobile App</h1>
-      <h2 style="padding:0"> YouView Remote Record App</h2>
-    </div>
-  </div>
 
-  <!-- The flexible grid (content) -->
-
-  <div class="container" style="width: 100vw; background-color:#00a6ff">
+  <!-- Project Header-->
+  <div class="container">
     <div class="row">
-      <div class="side">
-        <h2 style="color: #ffffff;">The Goal</h2>
+      <div class="col-8">
+        <h6>Brief</h6>
+        <p>Create an accessible version of the YouView UI, taking into account various
+          sight-related disabilities to make the platform easy to use by all</p>
       </div>
-      <div class="main">
-        <p style="color: #fff" n>As it expanded its reach into the UK television market, YouView wanted to give their customers a way to remotely record the TV shows and Films they enjoy on the go. A feature much requested by existing users this app
-          would be the
-          first
-          step into pushing the product to a much wider audience and being able to take the YouView experience out of the home.
-        </p>
 
+      <div class="col">
+        <h6>Client</h6>
+        <p>YouView TV Ltd</p>
       </div>
     </div>
   </div>
 
   <div class="container">
     <div class="row">
-      <div class="side">
-        <h2>User Research</h2>
+      <div class="col-8">
+        <h6>Target Audience</h6>
+        <p>Customers who currently use the service but may have difficulty using the product due to sight-related issues. Customers who wish to have a more accessible TV service</p>
       </div>
-      <div class="main">
-        <p>Work started with the YouView mobile app with the use of personas, we adjusted a few variables in relation to taking the product onto the small screen in the form of mobile phones and tablets. These new personas were created with the help
-          of external agencies who we also outsourced our initial user research too. This company were brought in various times throughout the project to relay feedback and to help shape our vision of the product.</p>
 
+      <div class="col">
+        <h6>Project Date</h6>
+        <p>2018</p>
       </div>
-    </div>
-    <div class="imagegrid">
-      <picture>
-        <source srcset="/images/mobile/mobile-hero.webp" type="image/webp">
-        <source srcset="/images/mobile/mobile-hero.jpg" type="image/jpeg">
-        <img src="/images/mobile/mobile-hero.jpg" alt="youview app hero image">
-      </picture>
     </div>
   </div>
+
   <div class="container">
     <div class="row">
-      <div class="side">
-        <h2>Design Process</h2>
+      <div class="col-8">
+        <h6>Focus</h6>
+        <p>As I was the design owner of the accessibility release on the first generation of the YouView service it made sense for me to take the project over for the relaunch of the service. With communication and feedback from the RNIB, SCOPE as
+          well as partially sighted consumers in user testing allowed the team to create a bespoke UI skin to help everyone use the service</p>
       </div>
-      <div class="main">
-        <p>
 
-          The first step in our thinking was how best to replicate the journeys the users had been accustomed to when using the product in the home.
-          <br><br>
-          We wanted a consistent pattern in both platforms whilst also taking both the apple and android guidelines and creating consistency with the overall branding and UI of our existing work.
-          <br><br>
-          The information architecture of the app was decided early, creating a strong foundation of hierarchy and a user centred approach to delivering the right information at the right time in order to benefit our users. Working alongside the
-          Lead Interaction Designer we collaborated on various aspects of the the app, bouncing ideas with each other and using an agile approach to the workflow, creating a dynamic working relationship leading to furthering ideas and concepts.
-        </p>
-
-
+      <div class="col">
+        <h6>Role</h6>
+        <p> Product Designer</p>
       </div>
     </div>
   </div>
-  <!-- <div style="width:80%; align: middle; margin-bottom:50px;">
-  <picture>
-    <source srcset="/images/mobile/mobile_pairing_flow.webp" type="image/webp">
-    <source srcset="/images/mobile/mobile_pairing_flow.png" type="image/png">
-    <img src="/images/mobile/mobile_pairing_flow.png" alt="youview app hero image">
-</picture>
-</div> -->
-  <div class="container-colour" style="width: 100vw;background:#032230">
+
+  <!-- Image comparisons-->
+
+
+  <!-- Main Content -->
+
+  <div class="containerfluid" style="background-color: #00a6ff">
     <div class="container">
       <div class="row">
-        <div class="side">
+        <div class="col">
+          <h2 style="color: #fff;">The Goal</h2>
+        </div>
+        <div class="col-md-8">
+          <p style="color:#fff;">As it expanded its reach into the UK television market, YouView wanted to give their customers a way to remotely record the TV shows and Films they enjoy on the go. A feature much requested by existing users this app
+            would be the
+            first
+            step into pushing the product to a much wider audience and being able to take the YouView experience out of the home.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="containerfluid">
+    <div class=" container">
+      <div class="row">
+        <div class="col">
+          <h2>User Research</h2>
+        </div>
+        <div class="col-md-8">
+          <p>Work started with the YouView mobile app with the use of personas, we adjusted a few variables in relation to taking the product onto the small screen in the form of mobile phones and tablets. These new personas were created with the
+            help
+            of external agencies who we also outsourced our initial user research too. This company were brought in various times throughout the project to relay feedback and to help shape our vision of the product.</p>
+        </div>
+      </div>
+      <source srcset="/images/mobile/mobile-hero.webp" type="image/webp">
+      <source srcset="/images/mobile/mobile-hero.jpg" type="image/jpeg">
+      <img class="img-fluid" src="/images/mobile/mobile-hero.jpg" alt="University of Cambridge Inclusive dedsign toolkit">
+
+    </div>
+  </div>
+
+
+  <div class="containerfluid">
+    <div class=" container">
+      <div class="row">
+        <div class="col">
+          <h2>Design Process</h2>
+        </div>
+        <div class="col-md-8">
+          <p>
+
+            The first step in our thinking was how best to replicate the journeys the users had been accustomed to when using the product in the home.
+            <br><br>
+            We wanted a consistent pattern in both platforms whilst also taking both the apple and android guidelines and creating consistency with the overall branding and UI of our existing work.
+            <br><br>
+            The information architecture of the app was decided early, creating a strong foundation of hierarchy and a user centred approach to delivering the right information at the right time in order to benefit our users. Working alongside the
+            Lead Interaction Designer we collaborated on various aspects of the the app, bouncing ideas with each other and using an agile approach to the workflow, creating a dynamic working relationship leading to furthering ideas and concepts.
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="containerfluid" style="background:#032230">
+    <div class=" container">
+      <div class="row">
+        <div class="col">
           <h2 style="color:#ffffff">Discovery of content</h2>
         </div>
-        <div class="main">
+        <div class="col-md-8">
           <p style="color:#ffffff">
 
 
@@ -137,155 +202,207 @@
             The concept came from concept of allowing the user to scroll leisurely through the content available to them at anytime, with a actions available on a long press of the content. I also wanted to ensure that the user wasn’t overwhelmed
             with choice and so we limited the carousels to 10 items with a SEE ALL call to action. This also improved page loading on the app as the back end service didn’t have to request so many images at once </p>
         </div>
+        <div class="row">
+          <div class="col-md-4">
+            <source srcset="/images/mobile/mobile-discover-wireframe.webp" type="image/webp">
+            <source srcset="/images/mobile/mobile-discover-wireframe.jpg" type="image/jpeg">
+            <img class="img-fluid" src="/images/mobile/mobile-discover-wireframe.jpg" alt="youview app hero image">
+          </div>
 
+
+
+          <div class="col-md-4">
+
+            <img class="img-fluid" src="/images/mobile/mobile-discovery.gif" alt="youview app hero image">
+          </div>
+          <div class="col-md-4">
+            <source srcset="/images/mobile/mobile-discovergenre-wireframe.webp" type="image/webp">
+            <source srcset="/images/mobile/mobile-discovergenre-wireframe.jpg" type="image/jpeg">
+            <img class="img-fluid" src="/images/mobile/mobile-discovergenre-wireframe.jpg" alt="youview app hero image">
+          </div>
+        </div>
       </div>
+    </div>
 
-      <div class="imagegrid">
-        <picture>
-          <source srcset="/images/mobile/mobile-discover-wireframe.webp" type="image/webp">
-          <source srcset="/images/mobile/mobile-discover-wireframe.jpg" type="image/jpeg">
-          <img src="/images/mobile/mobile-discover-wireframe.jpg" alt="youview app hero image" style="max-height:640px; max-width:320px">
-        </picture>
-        <picture>
-          <source srcset="/images/mobile/mobile-discovergenre-wireframe.webp" type="image/webp">
-          <source srcset="/images/mobile/mobile-discovergenre-wireframe.jpg" type="image/jpeg">
-          <img src="/images/mobile/mobile-discovergenre-wireframe.jpg" alt="youview app hero image" style="max-height:640px; max-width:320px">
-        </picture>
+  </div>
 
 
+
+  <div class="containerfluid">
+    <div class=" container">
+      <div class="row">
+        <div class="col">
+          <h2>Designing for multiple screens</h2>
+        </div>
+        <div class="col-md-8">
+          <p> As the app gained popularity inside our user base, there was a business decision to push the app further with the introduction of a tablet mode,initially with the iPad and then as the opportunity arose moving onto android tablets
+            <br><br>
+            A key point with making a project for second screen devices was using the screen estate in the correct way and when creating the application with the larger tablet form in mind we wanted to ensure that we could create a more lean-back
+            experience. The goal was to create a bespoke experience for a tablets to allow us to show more on screen at one time utilizing the bigger screen size
+          </p>
+        </div>
       </div>
-      <div class="imagegrid"><img src="/images/mobile/mobile-discovery.gif" style="padding-top:50px; max-height:640px; max-width:320px">
+      <div class="col-12">
+
+        <img class="img-fluid" src="/images/mobile/mobile-tablet-wireframe.gif" alt="youview app hero image">
       </div>
     </div>
   </div>
+
+  <!-- <div class="containerfluid" style=" background-image: linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, .8)), url('/images/accessibility/accessibility-container-background.png'); padding: 6rem 0em 6rem 0em;">
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <h2 style="color: #fff">Subtle Design Touches</h2>
+        </div>
+        <div class="col-md-8">
+          <p style="color: #fff"> As we took the design to its later stages we wanted to ensure that the YouView UI kept its delightful little touches that made it such an attractive design in the first place for customers. <br><br>I ensured that
+            these touches remained even
+            when the user wanted the High Contrast option turned on.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div> -->
+
+  <div class="containerfluid">
+    <div class=" container">
+      <div class="row">
+        <div class="col">
+          <h2>Design Solution</h2>
+        </div>
+        <div class="col-md-8">
+          <p> The final visuals for the app were constantly adjusted with each new feature and release that was available to customers so there may be some variations depending on the release version of the app available currently.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Image section-->
+
   <div class="container">
     <div class="row">
-      <div class="side">
-        <h2>Designing for multiple screens</h2>
+      <div class="col">
+        <img class="img-fluid" src="/images/mobile/selection.gif" alt="youview app hero image">
       </div>
-      <div class="main">
-        <p> As the app gained popularity inside our user base, there was a business decision to push the app further with the introduction of a tablet mode,initially with the iPad and then as the opportunity arose moving onto android tablets
-          <br><br>
-          A key point with making a project for second screen devices was using the screen estate in the correct way and when creating the application with the larger tablet form in mind we wanted to ensure that we could create a more lean-back
-          experience. The goal was to create a bespoke experience for a tablets to allow us to show more on screen at one time utilizing the bigger screen size
-        </p>
 
-
+      <div class="col">
+        <img class="img-fluid" src="/images/mobile/selection2.gif" alt="youview app hero image">
       </div>
     </div>
-    <div class="imagegrid"><img src="/images/mobile/mobile-tablet-wireframe.gif">
-    </div>
-  </div>
-
-  <div class="container">
     <div class="row">
-      <div class="side">
-        <h2>Design Solution</h2>
+      <div class="col-md-4">
+        <source srcset="/images/mobile/mobile-launch-animation-visual.webp" type="image/webp">
+        <source srcset="/images/mobile/mobile-launch-animation-visual.jpg" type="image/jpeg">
+        <img class="img-fluid" src="/images/mobile/mobile-launch-animation-visual.jpg" alt="youview app hero image">
       </div>
-      <div class="main">
-        <p>
 
-          The final visuals for the app were constantly adjusted with each new feature and release that was available to customers so there may be some variations depending on the release version of the app available currently.
+      <div class="col-md-4">
+        <source srcset="/images/mobile/mobile-guide-visual.webp" type="image/webp">
+        <source srcset="/images/mobile/mobile-guide-visual.jpg" type="image/jpeg">
+        <img class="img-fluid" src="/images/mobile/mobile-guide-visual.jpg" alt="youview app hero image">
+      </div>
 
-        </p>
+      <div class="col-md-4">
+        <source srcset="/images/mobile/mobile-mainmenu-visual.webp" type="image/webp">
+        <source srcset="/images/mobile/mobile-mainmenu-visual.jpg" type="image/jpeg">
+        <img class="img-fluid" src="/images/mobile/mobile-mainmenu-visual.jpg" alt="youview app hero image">
+      </div>
 
+      <div class="col-md-4">
+        <source srcset="/images/mobile/mobile-pdv-visual.webp" type="image/webp">
+        <source srcset="/images/mobile/mobile-pdv-visual.jpg" type="image/jpeg">
+        <img class="img-fluid" src="/images/mobile/mobile-pdv-visual.jpg" alt="youview app hero image">
+      </div>
 
+      <div class="col-md-4">
+        <source srcset="/images/mobile/mobile-setup-visual.webp" type="image/webp">
+        <source srcset="/images/mobile/mobile-setup-visual.jpg" type="image/jpeg">
+        <img class="img-fluid" src="/images/mobile/mobile-setup-visual.jpg" alt="youview app hero image">
+      </div>
+
+      <div class="col-md-4">
+        <source srcset="/images/mobile/mobile-discover-visual.webp" type="image/webp">
+        <source srcset="/images/mobile/mobile-discover-visual.jpg" type="image/jpeg">
+        <img class="img-fluid" src="/images/mobile/mobile-discover-visual.jpg" alt="youview app hero image">
       </div>
     </div>
-
-  </div>
-
-
-  <div class="imagegrid">
-    <div style="display:block; margin: 0 auto 0 auto"><img src="/images/mobile/selection.gif"><img src="/images/mobile/selection2.gif">
-    </div>
-    <picture>
-      <source srcset="/images/mobile/mobile-launch-animation-visual.webp" type="image/webp">
-      <source srcset="/images/mobile/mobile-launch-animation-visual.jpg" type="image/jpeg">
-      <img style="max-height:640px; max-width:320px" src="/images/mobile/mobile-launch-animation-visual.jpg" alt="youview app hero image">
-    </picture>
-
-    <picture>
-      <source srcset="/images/mobile/mobile-guide-visual.webp" type="image/webp">
-      <source srcset="/images/mobile/mobile-guide-visual.jpg" type="image/jpeg">
-      <img style="max-height:640px; max-width:320px" src="/images/mobile/mobile-guide-visual.jpg" alt="youview app hero image">
-    </picture>
-    <picture>
-      <source srcset="/images/mobile/mobile-mainmenu-visual.webp" type="image/webp">
-      <source srcset="/images/mobile/mobile-mainmenu-visual.jpg" type="image/jpeg">
-      <img style="max-height:640px; max-width:320px" src="/images/mobile/mobile-mainmenu-visual.jpg" alt="youview app hero image">
-    </picture>
-  </div>
-
-
-  <div class="imagegrid">
-
-    <picture>
-      <source srcset="/images/mobile/mobile-pdv-visual.webp" type="image/webp">
-      <source srcset="/images/mobile/mobile-pdv-visual.jpg" type="image/jpeg">
-      <img style="max-height:640px; max-width:320px" src="/images/mobile/mobile-pdv-visual.jpg" alt="youview app hero image">
-    </picture>
-
-    <picture>
-      <source srcset="/images/mobile/mobile-setup-visual.webp" type="image/webp">
-      <source srcset="/images/mobile/mobile-setup-visual.jpg" type="image/jpeg">
-      <img style="max-height:640px; max-width:320px" src="/images/mobile/mobile-setup-visual.jpg" alt="youview app hero image">
-    </picture>
-    <picture>
-      <source srcset="/images/mobile/mobile-discover-visual.webp" type="image/webp">
-      <source srcset="/images/mobile/mobile-discover-visual.jpg" type="image/jpeg">
-      <img style="max-height:640px; max-width:320px" src="/images/mobile/mobile-discover-visual.jpg" alt="youview app hero image">
-    </picture>
   </div>
 
 
 
-  <div class="container" style="width: 100vw; background-color:#00a6ff">
-    <div class="row">
-      <div class="side">
-        <h2 style="color: #ffffff;">Results & Learnings</h2>
-      </div>
-      <div class="main">
-        <p style="color: #fff">
+  <div class="containerfluid" style="background:#00a6ff">
+    <div class=" container">
+      <div class="row">
+        <div class="col">
+          <h2 style="color:#ffffff">Results & Learnings</h2>
+        </div>
+        <div class="col-md-8">
+          <p style="color: #fff">
 
-          Combined app downloads of over 1,000,000 across both Android and iOS
-          <br><br>
-          Constant high usage by a high portion of the YouView user-base
-          <br><br>
+            Combined app downloads of over 1,000,000 across both Android and iOS
+            <br><br>
+            Constant high usage by a high portion of the YouView user-base
+            <br><br>
 
-          “YouView’s Remote Record app is a definite saviour for those days when you’re stuck at work, late on public transport, or something else just happens to crop up”
+            “YouView’s Remote Record app is a definite saviour for those days when you’re stuck at work, late on public transport, or something else just happens to crop up”
 
-        </p>
-        <h6 style="color: #fff">pocket-lint</h6>
+          </p>
+          <h6 style="color: #fff">pocket-lint</h6>
+
+        </div>
 
       </div>
     </div>
   </div>
 
+
+
+
+  <!-- Footer-->
   <footer class="footer">
-    <!-- <p>
-      Kieran Shalloo Design
-    </p> -->
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-6 col-lg-3">
+          <ul class="list-unstyled">
+            <h5>Pages</h5>
+            <li> <a class="text-muted" href="/">Home</a>
+            <li> <a class="text-muted" href="/portfolio/">Design Work</a>
+            <li> <a class="text-muted" href="/illustration">Illustration Work</a>
 
-    <a href="/index.html/">Home</a>
+          </ul>
+        </div>
+        <div class="col-sm-6 col-lg-3">
+          <ul class="list-unstyled">
+            <h5>Social Media</h5>
+            <li> <a class="text-muted" href="https://www.instagram.com/kieranshalloodesign/">Instagram</a>
+            <li> <a class="text-muted" href="/prototypes">Twitch</a>
+            <li> <a class="text-muted" href="https://twitter.com/KieranShalloo">Twitter</a>
 
-    -
-
-    <a href="/prototypes">Prototypes</a>
-
-    -
-
-    <a href="/illustration.html">illustration</a>
-
-    -
-
-    <a href="/aboutme/">About Me</a>
+            <li> <a class="text-muted" href="/illustration.html">Youtube</a>
+            <li> </a>
+          </ul>
+        </div>
+        <div class="col-sm-6 col-lg-2 offset-lg-4">
+          <img src="/Logo.svg" class="img-fluid pull-xs-left" style="width:50%">
+          <p class="text-muted" style="font-size: 12px">
+            © 2020 Kieran Shalloo Design Ltd
+          </p>
+        </div>
+      </div>
+    </div>
   </footer>
 
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"> </script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 </body>
 
 
-<script src="responsive_topnav.js"></script>
 
 
 </html>
