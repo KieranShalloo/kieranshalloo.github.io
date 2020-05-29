@@ -1,7 +1,7 @@
-638928076820 html, body {
+html,
+body {
   overflow-x: hidden;
   font-family: 'Open Sans', sans-serif;
-  margin: 0;
 }
 
 #portfolioimage:hover .overlay {
@@ -21,6 +21,11 @@
 #top-alert {
   margin-bottom: 0;
   border-radius: 0;
+}
+
+.row {
+  margin: 0;
+  padding: 0
 }
 
 .overlay {
