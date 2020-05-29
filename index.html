@@ -69,7 +69,7 @@
   <!-- Full screen row -->
 
 
-  <div class="jumbotronfluid   animate-pop-in cover  row align-items-center" style="min-height: 60; background: linear-gradient(rgba(0, 153, 153, 0.95), rgba(0, 153, 153, 0.9)), url('/images/wwe/hero.jpg')">
+  <div class="jumbotronfluid   animate-pop-in cover  row align-items-center" style="min-height: 60vh; width: auto; background: linear-gradient(rgba(0, 153, 153, 0.95), rgba(0, 153, 153, 0.9)), url('/images/wwe/hero.jpg')">
     <div class="container">
 
 
@@ -83,52 +83,43 @@
     </div>
   </div>
 
-  <div class="jumbotron animate-pop-in pt-4">
+  <div class="jumbotron animate-pop-in">
     <div class="container">
       <h4>Some of our client friends</h4>
 
       <div class="row" style="margin-top:60px">
-        <div class="col-sm-6 col-lg-3">
-          <source srcset="/images/about/about-wwe.webp" type="image/webp">
-          <source srcset="/images/about/about-wwe.png" type="image/png">
-          <img style="width:80%" class="img-fluid" src="/images/about/about-wwe.png" alt="WWE logo">
-        </div>
-        <div class="col-sm-6 col-lg-3">
-          <source srcset="/images/about/about-youview.webp" type="image/webp">
-          <source srcset="/images/about/about-youview.png" type="image/png">
-          <img style="width:80%" class="img-fluid" src="/images/about/about-youview.png" alt="YouView logo">
+
+
+        <div id="about-image" class="col-sm-6 col-lg-3">
+          <a href="http://www.network.wwe.com" target="_blank">
+            <img style="width:100%; padding:2em;" class="img-fluid" src="/images/about/about-wwe.svg" alt="WWE logo">
+          </a></div>
+
+
+        <div id="about-image" class="col-sm-6 col-lg-3">
+          <a href="https://www.youview.com" target="_blank">
+            <img style="width:100%; padding:2em;" class="img-fluid" src="/images/about/about-youview.svg" alt="YouView logo"></a>
         </div>
 
-        <div class="col-sm-6 col-lg-3">
-          <source srcset="/images/about/about-android.webp" type="image/webp">
-          <source srcset="/images/about/about-android.png" type="image/png">
-          <img style="width:80%" class="img-fluid" class="img-fluid" src="/images/about/about-android.png" alt="Android logo">
+        <div id="about-image" class="col-sm-6 col-lg-3">
+          <a href="https://android.com/tv/" target="_blank"> <img style="width:100%; padding:2em;" class="img-fluid" class="img-fluid" src="/images/about/about-android.svg" alt="Android logo"></a>
         </div>
-        <div class="col-sm-6 col-lg-3">
-          <source srcset="/images/about/about-playstation.webp" type="image/webp">
-          <source srcset="/images/about/about-playstation.png" type="image/png">
-          <img style="width:80%" class="img-fluid" src="/images/about/about-playstation.png" alt="Playstation logo">
+        <div id="about-image" class="col-sm-6 col-lg-3">
+          <a href="https://playstationlondonstudio.com/" target="_blank"> <img style="width:100%; padding:2em;" class="img-fluid" src="/images/about/about-playstation.svg" alt="Playstation logo"></a>
         </div>
-        <div class="col-sm-6 col-lg-3">
-          <source srcset="/images/about/about-bt.webp" type="image/webp">
-          <source srcset="/images/about/about-bt.png" type="image/png">
-          <img style="width:80%" class="img-fluid" src="/images/about/about-bt.png" alt="Netflix logo">
+        <div id="about-image" class="col-sm-6 col-lg-3">
+          <a href="https://www.bt.com/tv" target="_blank">
+            <img style="width:100%; padding:2em;" class="img-fluid" src="/images/about/about-bt.svg" alt="Netflix logo"></a>
         </div>
-        <div class="col-sm-6 col-lg-3">
-          <source srcset="/images/about/about-sony.webp" type="image/webp">
-          <source srcset="/images/about/about-sony.png" type="image/png">
-          <img style="width:80%" class="img-fluid" class="img-fluid" src="/images/about/about-sony.png" alt="Sony logo">
+        <div id="about-image" class="col-sm-6 col-lg-3">
+          <a href="https://www.sony.co.uk" target="_blank"><img style="width:100%; padding:2em;" class="img-fluid" src="/images/about/about-sony.svg" alt="Sony logo"></a>
         </div>
-        <div class="col-sm-6 col-lg-3">
-          <source srcset="/images/about/about-netflix.webp" type="image/webp">
-          <source srcset="/images/about/about-netflix.png" type="image/png">
-          <img style="width:80%" class="img-fluid" class="img-fluid" src="/images/about/about-netflix.png" alt="Netflix logo">
+        <div id="about-image" class="col-sm-6 col-lg-3">
+          <a href="https://www.netflix.com/gb/" target="_blank"><img style="width:100%; padding:2em;" class="img-fluid" src="/images/about/about-netflix.svg" alt="Netflix logo"></a>
         </div>
 
-        <div class="col-sm-6 col-lg-3">
-          <source srcset="/images/about/about-picturehouse.webp" type="image/webp">
-          <source srcset="/images/about/about-picturehouse.png" type="image/png">
-          <img style="width:80%" class="img-fluid" src="/images/about/about-picturehouse.png" alt="Netflix logo">
+        <div id="about-image" class="col-sm-6 col-lg-3">
+          <a href="https://www.picturehouses.com/" target="_blank"> <img style="width:100%; padding:2em;" class="img-fluid" src="/images/about/about-picturehouse.svg" alt="PictureHouse Cinema logo"></a>
         </div>
       </div>
     </div>
@@ -146,42 +137,44 @@
 
     <div class="container ">
 
-      <div class="row min-vh-30 align-items-center ">
+      <div class="row min-vh-30 align-items-center " style="margin-top:60px">
 
 
 
-        <div class="col-md-8 show-on-scroll container-animation-left ">
+        <div class="col-md-7 show-on-scroll container-animation-left ">
           <source srcset="/images/illustration/danielbryan.webp" type="image/webp">
           <source srcset="/images/illustration/danielbryan.jpg" type="image/jpg">
           <img style="width:100%" class="img-fluid" src="/images/illustration/danielbryan.jpg" alt="WWE Network live content image"></div>
-        <div class="col-md-4 text-center">
+        <div class="col-md-5 text-center">
           <h2>Daniel Bryan Illustration</h2>
           <p class="text-left"> A commissioned illustration showing the WWE Wrestler Daniel Bryan celebrating a victory.</p>
-          <a href=" /illustration/danielbryan/" target="_blank"><button type="button" class="btn btn-block btn-ksd">View Project</button></a>
+          <a href=" /illustration/danielbryan/">
+            <button type="button" style="margin-top: 2em" class="btn btn-block btn-outline-dark" style="border-color: #BB50CF">View Project</button></a>
         </div>
       </div>
     </div>
+  </div>
 
 
 
 
-
+  <div class="containerfluid" style="background-color: #00a6ff; margin-bottom: 0;">
 
     <div class=" container">
 
       <div class="row min-vh-30 align-items-center ">
 
 
-        <div class="col-md-8 order-md-last show-on-scroll container-animation-right">
+        <div class="col-md-7 order-md-last show-on-scroll container-animation-right">
           <source srcset="/images/nextgen/youview-discover.webp" type="image/webp">
           <source srcset="/images/nextgen/youview-discover.png" type="image/png">
           <img style="width:100%" class="img-fluid " src="/images/nextgen/youview-discover.png" alt="WWE Network live content image"></div>
 
-        <div class="col-md-4 text-center">
-          <h2>YouView TV </h2>
-          <h4 style="font-weight: 100;">powering BT TV & TalkTalk TV</h4>
-          <p class="text-left"> Senior product designer leading various agile workflows</p>
-          <a href=" /portfolio/nextgen" target="_blank"><button type="button" class="btn btn-block btn-ksd">View Project</button></a>
+        <div class="col-md-5 text-center">
+          <h2 style="color:#fff">Next Generation YouView Interface</h2>
+          <h4 style="color:#fff">powering BT & TalkTalk TV</h4>
+
+          <a href=" /portfolio/nextgen"><button type="button" style="margin-top: 2em" class="btn btn-block btn-outline-light">View Project</button></a>
         </div>
 
 
