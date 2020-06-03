@@ -1,11 +1,8 @@
-
 .container {
   position: relative;
-  width: 375px;
-  height: 667px;
+  width: 414px;
+  height: 736px;
 }
-
-
 
 #button1 {
   position: absolute;
@@ -20,7 +17,6 @@
 #button2 {
   position: absolute;
   top: 595px;
-
   left: 0;
   width: 375px;
   background-color: #009999;
@@ -28,9 +24,10 @@
   height: 68px;
   cursor: pointer;
 }
+
 #button3 {
   position: absolute;
-    top: 525px;
+  top: 525px;
   left: 0;
   width: 375px;
   background-color: #009999;
