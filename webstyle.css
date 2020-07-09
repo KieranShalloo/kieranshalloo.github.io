@@ -2,7 +2,11 @@ html,
 body {
   overflow-x: hidden;
 <<<<<<< HEAD
+<<<<<<< HEAD
 font-family: 'Muli', sans-serif;
+=======
+  font-family: 'Open Sans', sans-serif;
+>>>>>>> parent of 381d350... Adding more alt tags, and font weights
 =======
   font-family: 'Open Sans', sans-serif;
 >>>>>>> parent of 381d350... Adding more alt tags, and font weights
@@ -294,6 +298,7 @@ h4 {
   line-height: 1.23;
   text-align: left;
 <<<<<<< HEAD
+<<<<<<< HEAD
   font-weight: 400;
   font-style: normal;
 }
@@ -310,11 +315,18 @@ h5 {
 }
 
 >>>>>>> parent of 381d350... Adding more alt tags, and font weights
+=======
+  font-weight: 900;
+  font-style: normal;
+}
+
+>>>>>>> parent of 381d350... Adding more alt tags, and font weights
 h6 {
   font-family: 'Catamaran', sans-serif;
   font-size: 1.2rem;
 }
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 p{
 
@@ -334,6 +346,11 @@ li {
   font-size: 1rem;
   line-height: 1.4rem;
   font-weight: 500;
+=======
+p, li {
+  font-size: 1.25rem;
+  line-height: 1.6rem;
+>>>>>>> parent of 381d350... Adding more alt tags, and font weights
 }
 
 /*------------------------------------
