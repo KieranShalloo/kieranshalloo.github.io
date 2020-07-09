@@ -1,19 +1,7 @@
 html,
 body {
   overflow-x: hidden;
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-font-family: 'Muli', sans-serif;
-=======
-  font-family: 'Open Sans', sans-serif;
->>>>>>> parent of 381d350... Adding more alt tags, and font weights
-=======
-  font-family: 'Open Sans', sans-serif;
->>>>>>> parent of 381d350... Adding more alt tags, and font weights
-=======
   font-family: 'Open Sans', Arial, Helvetica, sans-serif;
->>>>>>> parent of 68bce05... BEGINNING work
 }
 
 #portfolioimage:hover .overlay {
@@ -30,7 +18,10 @@ font-family: 'Muli', sans-serif;
   transform: scaleX(1.15) scaleY(1.15);
 }
 
-
+#top-alert {
+  margin-bottom: 0;
+  border-radius: 0;
+}
 
 .row {
   margin: 0;
@@ -53,7 +44,7 @@ font-family: 'Muli', sans-serif;
 }
 
 .overlaytext {
-  position:fixed;
+  position: absolute;
   top: 50%;
   left: 50%;
   color: white;
@@ -273,20 +264,11 @@ ul.social-network li {
 }
 
 h1 {
-<<<<<<< HEAD
-  font-family: 'Exo', sans-serif;
-  font-size: 4rem;
-=======
   font-size: 5rem;
->>>>>>> parent of 68bce05... BEGINNING work
   font-weight: 600;
 }
 
 h2 {
-<<<<<<< HEAD
-  font-family: 'Exo', sans-serif;
-=======
->>>>>>> parent of 68bce05... BEGINNING work
   font-size: 3rem;
   line-height: 1.23;
   text-align: left;
@@ -295,12 +277,7 @@ h2 {
 }
 
 h3 {
-<<<<<<< HEAD
-  font-family: 'Catamaran', sans-serif;
-  font-size: 2.25rem;
-=======
   font-size: 2rem;
->>>>>>> parent of 68bce05... BEGINNING work
   line-height: 1.23;
   text-align: left;
   font-weight: 600;
@@ -308,80 +285,27 @@ h3 {
 }
 
 h4 {
-  font-family: 'Catamaran', sans-serif;
   font-size: 1.5rem;
   line-height: 1.23;
   text-align: left;
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-  font-weight: 400;
-=======
   font-weight: 600;
->>>>>>> parent of 68bce05... BEGINNING work
   font-style: normal;
 }
 
 h5 {
-<<<<<<< HEAD
-  font-family: 'Catamaran', sans-serif;
-  font-size: 1.125rem;
-  font-weight: 400;
-=======
   font-size: 1.2rem;
   font-weight: 600;
->>>>>>> parent of 68bce05... BEGINNING work
 }
 
-=======
-  font-weight: 900;
-  font-style: normal;
-}
-
->>>>>>> parent of 381d350... Adding more alt tags, and font weights
-=======
-  font-weight: 900;
-  font-style: normal;
-}
-
->>>>>>> parent of 381d350... Adding more alt tags, and font weights
 h6 {
-  font-family: 'Catamaran', sans-serif;
   font-size: 1.2rem;
+  font-weight: 300;
 }
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-p{
-
-  font-size: 1rem;
-  line-height: 1.4rem;
-  font-weight: 400;
-=======
-p, li {
-  font-size: 1.25rem;
-  line-height: 1.6rem;
->>>>>>> parent of 381d350... Adding more alt tags, and font weights
-}
-
-
-li {
-  font-family: 'Muli', sans-serif;
-  font-size: 1rem;
-  line-height: 1.4rem;
-  font-weight: 500;
-=======
-p, li {
-  font-size: 1.25rem;
-  line-height: 1.6rem;
->>>>>>> parent of 381d350... Adding more alt tags, and font weights
-=======
 p, li {
   font-size: 1rem;
   line-height: 1.4rem;
   font-weight: 400;
->>>>>>> parent of 68bce05... BEGINNING work
 }
 
 /*------------------------------------
