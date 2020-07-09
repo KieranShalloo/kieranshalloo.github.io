@@ -41,7 +41,7 @@ font-family: 'Muli', sans-serif;
 }
 
 .overlaytext {
-  position: absolute;
+  position:fixed;
   top: 50%;
   left: 50%;
   color: white;
