@@ -1,8 +1,7 @@
 html,
 body {
   overflow-x: hidden;
-  font-family: 'Montserrat', sans-serif;
-  font-family: 'Open Sans', sans-serif;
+font-family: 'Muli', sans-serif;
 }
 
 #portfolioimage:hover .overlay {
@@ -19,10 +18,7 @@ body {
   transform: scaleX(1.15) scaleY(1.15);
 }
 
-#top-alert {
-  margin-bottom: 0;
-  border-radius: 0;
-}
+
 
 .row {
   margin: 0;
@@ -265,13 +261,13 @@ ul.social-network li {
 }
 
 h1 {
-  font-family: 'Montserrat', Arial, sans-serif;
+  font-family: 'Exo', sans-serif;
   font-size: 4rem;
   font-weight: 600;
 }
 
 h2 {
-  font-family: 'Montserrat', Arial, sans-serif;
+  font-family: 'Exo', sans-serif;
   font-size: 3rem;
   line-height: 1.23;
   text-align: left;
@@ -280,7 +276,7 @@ h2 {
 }
 
 h3 {
-  font-family: 'Montserrat', Arial, sans-serif;
+  font-family: 'Catamaran', sans-serif;
   font-size: 2.25rem;
   line-height: 1.23;
   text-align: left;
@@ -289,6 +285,7 @@ h3 {
 }
 
 h4 {
+  font-family: 'Catamaran', sans-serif;
   font-size: 1.5rem;
   line-height: 1.23;
   text-align: left;
@@ -297,20 +294,30 @@ h4 {
 }
 
 h5 {
+  font-family: 'Catamaran', sans-serif;
   font-size: 1.125rem;
   font-weight: 400;
 }
 
 h6 {
+  font-family: 'Catamaran', sans-serif;
   font-size: 1.2rem;
   font-weight: 300;
 }
 
-p,
-li {
+p{
+
   font-size: 1rem;
   line-height: 1.4rem;
-  font-weight: 300;
+  font-weight: 400;
+}
+
+
+li {
+  font-family: 'Muli', sans-serif;
+  font-size: 1rem;
+  line-height: 1.4rem;
+  font-weight: 500;
 }
 
 /*------------------------------------
