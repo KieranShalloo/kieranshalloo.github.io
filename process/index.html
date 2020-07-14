@@ -9,7 +9,7 @@
     <meta name="description" content="Next Generation YouView portfolio case study">
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
 
     <!-- Local CSS -->
@@ -48,17 +48,6 @@
       gtag('config', 'UA-28629869-2');
     </script>
 
-    <script>
-      var divs = $('#title');
-      $(window).scroll(function () {
-        if ($(window).scrollTop() < 10) {
-          divs.stop(true, true).fadeIn("fast");
-        } else {
-          divs.stop(true, true).fadeOut("fast");
-        }
-      });
-    </script>
-
   </head>
 
   <body>
@@ -69,8 +58,7 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
         <div class="navbar-nav">
-          <a class="nav-item nav-link active" style="padding-right: 2rem" href="/">Home
-          </a>
+          <a class="nav-item nav-link active" style="padding-right: 2rem" href="/">Home</a>
           <a class="nav-item nav-link" style="padding-right: 2rem" a="a" href="/#project">Design Projects</a>
           <a class="nav-item nav-link" style="padding-right: 2rem" a="a" href="/portfolio">Design Work</a>
           <a class="nav-item nav-link" style="padding-right: 2rem" a="a" href="/process">Process</a>
@@ -88,8 +76,7 @@
 
         <div class="row align-items-center">
           <div id="title" class="col-md-10 overlaytext">
-            <h1 class="d-none d-sm-block text-center header-title animate-pop-in" style="COLOR: white">Our Process</h1>
-            <h1 class="d-block d-sm-none text-center header-title animate-pop-in" style="font-size:3rem; font-weight:900;COLOR: white">Next Generation YouView</h1>
+            <h1 class="text-center header-title animate-pop-in" style="COLOR: white">Our Process</h1>
             <hr class="my-4">
             <h4 class=" text-center header-subtitle animate-pop-in" style="COLOR: white; font-weight: 400;">Rethink, Redesign, Rebuild</h4>
           </div>
@@ -98,74 +85,47 @@
     </div>
 
     <!-- Section 1 -->
-    <div class="jumbotron " style="margin-bottom:0;background-image: linear-gradient(rgba(255, 255, 0, .9), rgba(255, 255, 0, .8))">
+    <div class="jumbotron " style=" margin-bottom:0;background-image: linear-gradient(rgba(255, 255, 0, .9), rgba(255, 255, 0, .8))">
       <div class="container">
-        <div class="row">
-          <div class="col">
-            <h3>Research</h2>
-          </div>
-          <div class="col-md-8">
-            <h4>Analytics</h5>
-            <p>
-              Using analytics to understand the behaviour of users allows us to investigate existing user flows to find areas of improvement.
-            </p>
-            <h4>Data Tracking</h5>
-            <p>
-              Dashboards allow us to manage trends and user behaviour over a long time, allowing us to tweak and adjust to user patterns
-            </p>
-            <h4>Users Interviews</h5>
-            <p>
-              By talking directly to customers we can identify pain points of the existing experience with evidence to present to stakeholders.
-            </p>
-            <h4>Competitor Reviews</h5>
-            <p>
-              As members of a fast-moving industry, we ensure to stay aware of competitors and the work they are producing.
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- Section 2 -->
-    <div class="jumbotron" style="margin-bottom:0;background-image: linear-gradient(rgba(0, 255, 255, .9), rgba(0, 255, 255, .8))">
-      <div class="container">
+
         <div class="col" style="margin-bottom: 5%;">
-          <h2 class="text-center">Testing</h2>
+          <h2 class="text-center">Research</h2>
         </div>
         <!-- Large screen -->
-        <div class="d-none d-md-block">
+        <div class="d-none d-md-block align-items-center">
           <div class="row">
             <div class="col-md-3 ">
-              <h4 style="margin-bottom: 2rem;">A/B Testing</h5>
+              <h4 class="text-center" style="margin-bottom: 2rem;">Analytics</h5>
             </div>
             <div class="col-md-3">
-              <h4 style="margin-bottom: 2rem;">Guerilla Testing</h5>
+              <h4 class="text-center" style="margin-bottom: 2rem;">Data Tracking</h5>
             </div>
             <div class="col-md-3">
-              <h4 style="margin-bottom: 2rem;">Iterative Design</h5>
+              <h4 class="text-center" style="margin-bottom: 2rem;">Users Interviews</h5>
             </div>
             <div class="col-md-3">
-              <h4 style="margin-bottom: 2rem;">Task Based Tests</h5>
+              <h4 class="text-center" style="margin-bottom: 2rem;">Competitor Reviews</h5>
             </div>
           </div>
           <div class="row">
             <div class="col-md-3">
-              <p>
-                Getting users to directly test designs allows us to see any pain points as early as possible.
+              <p class="text-center">
+                Using analytics to understand the behaviour of users allows us to investigate existing user flows to find areas of improvement.
               </p>
             </div>
             <div class="col-md-3">
-              <p>
-                For quick design decisions, we take our testing to an informal real-life setting to quickly gather feedback from customers.
+              <p class="text-center">
+                Dashboards allow us to manage trends and user behaviour over a long time, allowing us to tweak and adjust to user patterns
               </p>
             </div>
             <div class="col-md-3">
-              <p>
-                ENTER TEXT
+              <p class="text-center">
+                By talking directly to customers we can identify pain points of the existing experience with evidence to present to stakeholders.
               </p>
             </div>
             <div class="col-md-3">
-              <p>
-                ENTER TEXT 2
+              <p class="text-center">
+                As members of a fast-moving industry, we ensure to stay aware of competitors and the work they are producing.
               </p>
             </div>
           </div>
@@ -174,139 +134,341 @@
         <div class="d-block d-md-none">
           <div class="row">
             <div class="col-12">
-              <h4 >A/B Testing</h5>
-              <p>
-                Getting users to directly test designs allows us to see any pain points as early as possible.
+              <h4 class="text-center">Analytics</h5>
+              <p class="text-center">
+                Using analytics to understand the behaviour of users allows us to investigate existing user flows to find areas of improvement.
               </p>
             </div>
             <div class="col-12">
-              <h4 >Guerilla Testing</h5>
-              <p>
-                For quick design decisions, we take our testing to an informal real-life setting to quickly gather feedback from customers.
+              <h4 class="text-center">Data Tracking</h5>
+              <p class="text-center">
+                Dashboards allow us to manage trends and user behaviour over a long time, allowing us to tweak and adjust to user patterns
               </p>
             </div>
             <div class="col-12">
-              <h4 >Iterative Design</h5>
-              <p>
-                ENTER TEXT
+              <h4 class="text-center">Users Interviews</h5>
+              <p class="text-center">
+                By talking directly to customers we can identify pain points of the existing experience with evidence to present to stakeholders.
               </p>
             </div>
             <div class="col-12">
-              <h4 >Task Based Tests</h5>
-              <p>
-                ENTER TEXT 2
+              <h4 class="text-center">Competitor Reviews</h5>
+              <p class="text-center">
+                As members of a fast-moving industry, we ensure to stay aware of competitors and the work they are producing.
               </p>
             </div>
           </div>
 
         </div>
       </div>
-    </div>
-    <!-- Section 3 -->
-    <div class="jumbotron" style="margin-bottom:0;background-image: linear-gradient(rgba(0, 255, 0, .9), rgba(0, 255, 0, .8))">
-      <div class="container">
-        <div class="row">
-          <div class="col">
-            <h2>Design</h2>
-          </div>
-          <div class="col-md-8">
-            <p>
-              Nam nec ante. Sed lacinia, urna non tincidunt mattis, tortor neque adipiscing diam, a cursus ipsum ante quis turpis. Nulla facilisi. Ut fringilla. Suspendisse potenti. Nunc feugiat mi a tellus consequat imperdiet. Vestibulum sapien. Proin quam. Etiam
-              ultrices. Suspendisse in justo eu magna luctus suscipit. Sed lectus. Integer euismod lacus luctus magna. Quisque cursus, metus vitae pharetra auctor, sem massa mattis sem, at interdum magna augue eget diam. Vestibulum ante ipsum primis in faucibus
-              orci luctus et ultrices posuere cubilia Curae; Morbi lacinia molestie dui. Praesent blandit dolor. Sed non quam. In vel mi sit amet augue congue elementum. Morbi in ipsum sit amet pede facilisis laoreet. Donec lacus nunc, viverra nec, blandit vel,
-              egestas et, augue. Vestibulum tincidunt malesuada tellus. Ut ultrices ultrices enim. Curabitur sit amet mauris. Morbi in dui quis est pulvinar ullamcorper. Nulla facilisi. Integer lacinia sollicitudin massa. Cras metus. Sed aliquet risus a tortor.
 
+    </div>
+  </div>
+  <!-- Section 2 -->
+  <div class="jumbotron" style="margin-bottom:0;background-image: linear-gradient(rgba(0, 255, 255, .9), rgba(0, 255, 255, .8))">
+    <div class="container">
+      <div class="col" style="margin-bottom: 5%;">
+        <h2 class="text-center">Testing</h2>
+      </div>
+      <!-- Large screen -->
+      <div class="d-none d-md-block">
+        <div class="row">
+          <div class="col-md-3 ">
+            <h4 class="text-center" style="margin-bottom: 2rem;">A/B Testing</h5>
+          </div>
+          <div class="col-md-3">
+            <h4 class="text-center" style="margin-bottom: 2rem;">Guerilla Testing</h5>
+          </div>
+          <div class="col-md-3">
+            <h4 class="text-center" style="margin-bottom: 2rem;">Iterative Design</h5>
+          </div>
+          <div class="col-md-3">
+            <h4 class="text-center" style="margin-bottom: 2rem;">Task Based Tests</h5>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-3">
+            <p class="text-center">
+              Getting users to directly test designs allows us to see any pain points as early as possible.
+            </p>
+          </div>
+          <div class="col-md-3">
+            <p class="text-center">
+              For quick design decisions, we take our testing to an informal real-life setting to quickly gather feedback from customers.
+            </p>
+          </div>
+          <div class="col-md-3">
+            <p class="text-center">
+              ENTER TEXT
+            </p>
+          </div>
+          <div class="col-md-3">
+            <p class="text-center">
+              ENTER TEXT 2
             </p>
           </div>
         </div>
       </div>
-    </div>
-    <!-- Section 4 -->
-    <div class="jumbotron" style="margin-bottom:0;background-image: linear-gradient(rgba(0, 150, 255, .9), rgba(0, 150, 255, .8))">
-      <div class="container">
+      <!-- Small screen -->
+      <div class="d-block d-md-none">
         <div class="row">
-
-          <div class="col-md-8">
-            <p>Integer id quam. Morbi mi. Quisque nisl felis, venenatis tristique, dignissim in, ultrices sit amet, augue. Proin sodales libero eget ante. Nulla quam. Aenean laoreet. Vestibulum nisi lectus, commodo ac, facilisis ac, ultricies eu, pede. Ut orci
-              risus, accumsan porttitor, cursus quis, aliquet eget, justo. Sed pretium blandit orci. Ut eu diam at pede suscipit sodales. Aenean lectus elit, fermentum non, convallis id, sagittis at, neque. Nullam mauris orci, aliquet et, iaculis et, viverra
-              vitae, ligula. Nulla ut felis in purus aliquam imperdiet.
-
+          <div class="col-12">
+            <h4 class="text-center">A/B Testing</h5>
+            <p class="text-center">
+              Getting users to directly test designs allows us to see any pain points as early as possible.
             </p>
           </div>
-          <div class="col">
-            <h2>Hand Off</h2>
+          <div class="col-12">
+            <h4 class="text-center">Guerilla Testing</h5>
+            <p class="text-center">
+              For quick design decisions, we take our testing to an informal real-life setting to quickly gather feedback from customers.
+            </p>
+          </div>
+          <div class="col-12">
+            <h4 class="text-center">Iterative Design</h5>
+            <p class="text-center">
+              ENTER TEXT
+            </p>
+          </div>
+          <div class="col-12">
+            <h4 class="text-center">Task Based Tests</h5>
+            <p class="text-center">
+              ENTER TEXT 2
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <!-- Section 3 -->
+  <div class="jumbotron" style="margin-bottom:0;background-image: linear-gradient(rgba(0, 255, 0, .9), rgba(0, 255, 0, .8))">
+    <div class="container">
+      <div class="col" style="margin-bottom: 5%;">
+        <h2 class="text-center">Design</h2>
+      </div>
+      <!-- Large screen -->
+      <div class="d-none d-md-block">
+        <div class="row">
+          <div class="col-md-3 ">
+            <h4 class="text-center" style="margin-bottom: 2rem;">Animation</h5>
+          </div>
+          <div class="col-md-3">
+            <h4 class="text-center" style="margin-bottom: 2rem;">Wireframes</h5>
+          </div>
+          <div class="col-md-3">
+            <h4 class="text-center" style="margin-bottom: 2rem;">Prototypes</h5>
+          </div>
+          <div class="col-md-3">
+            <h4 class="text-center" style="margin-bottom: 2rem;">Visual Design</h5>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-3">
+            <p class="text-center">
+              Getting users to directly test designs allows us to see any pain points as early as possible.
+            </p>
+          </div>
+          <div class="col-md-3">
+            <p class="text-center">
+              For quick design decisions, we take our testing to an informal real-life setting to quickly gather feedback from customers.
+            </p>
+          </div>
+          <div class="col-md-3">
+            <p class="text-center">
+              ENTER TEXT
+            </p>
+          </div>
+          <div class="col-md-3">
+            <p class="text-center">
+              ENTER TEXT 2
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- Small screen -->
+      <div class="d-block d-md-none">
+        <div class="row">
+          <div class="col-12">
+            <h4 class="text-center">Animation</h5>
+            <p class="text-center">
+              Getting users to directly test designs allows us to see any pain points as early as possible.
+            </p>
+          </div>
+          <div class="col-12">
+            <h4 class="text-center">Wireframes</h5>
+            <p class="text-center">
+              For quick design decisions, we take our testing to an informal real-life setting to quickly gather feedback from customers.
+            </p>
+          </div>
+          <div class="col-12">
+            <h4 class="text-center">Prototypes</h5>
+            <p class="text-center">
+              ENTER TEXT
+            </p>
+          </div>
+          <div class="col-12">
+            <h4 class="text-center">Visual Design</h5>
+            <p class="text-center">
+              ENTER TEXT 2
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <!-- Section 4 -->
+  <div class="jumbotron" style="margin-bottom:0;background-image: linear-gradient(rgba(120, 80, 230, .9), rgba(120, 80,230, .8))">
+    <div class="container">
+      <div class="col-12" style="margin-bottom: 5%;">
+        <h2 class="text-center">Hand Off</h2>
+      </div>
+      <div class="col-md-4 offset-md-4">
+        <picture>
+
+          <img class="img-fluid" src="https://via.placeholder.com/300"></picture>
+      </div>
+
+      <!-- Large screen -->
+      <div class="d-none d-md-block">
+        <div class="row">
+          <div class="col-md-3 ">
+            <h4 class="text-center" style="margin-bottom: 2rem;">Presentations</h5>
+          </div>
+          <div class="col-md-3">
+            <h4 class="text-center" style="margin-bottom: 2rem;">QA</h5>
+          </div>
+          <div class="col-md-3">
+            <h4 class="text-center" style="margin-bottom: 2rem;">Developer Checks</h5>
+          </div>
+          <div class="col-md-3">
+            <h4 class="text-center" style="margin-bottom: 2rem;">User Acceptence Testing</h5>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-3">
+            <p class="text-center">
+              Getting users to directly test designs allows us to see any pain points as early as possible.
+            </p>
+          </div>
+          <div class="col-md-3">
+            <p class="text-center">
+              For quick design decisions, we take our testing to an informal real-life setting to quickly gather feedback from customers.
+            </p>
+          </div>
+          <div class="col-md-3">
+            <p class="text-center">
+              ENTER TEXT
+            </p>
+          </div>
+          <div class="col-md-3">
+            <p class="text-center">
+              ENTER TEXT 2
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- Small screen -->
+      <div class="d-block d-md-none">
+        <div class="row">
+          <div class="col-12">
+            <h4 class="text-center">Presentations</h5>
+            <p class="text-center">
+              Getting users to directly test designs allows us to see any pain points as early as possible.
+            </p>
+          </div>
+          <div class="col-12">
+            <h4 class="text-center">QA</h5>
+            <p class="text-center">
+              For quick design decisions, we take our testing to an informal real-life setting to quickly gather feedback from customers.
+            </p>
+          </div>
+          <div class="col-12">
+            <h4 class="text-center">Developer Checks</h5>
+            <p class="text-center">
+              ENTER TEXT
+            </p>
+          </div>
+          <div class="col-12">
+            <h4 class="text-center">User Acceptence Testing</h5>
+            <p class="text-center">
+              ENTER TEXT 2
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+
+  <footer class="mainfooter shadow" role="contentinfo">
+    <div class="footer-middle">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4 col-sm-6">
+            <!--Column1-->
+            <div>
+              <p style="color:#6c757d">Pages</p>
+              <ul class="list-unstyled">
+                <li>
+                  <a href="/">Home</a>
+                <li>
+                  <a href="/portfolio/">Design Work</a>
+                <li>
+                  <a href="/illustration">Illustration Work</a>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-md-4 col-sm-6">
+            <p style="color:#6c757d">Social Media</p>
+            <div>
+              <ul class="social-network social-circle ">
+                <li>
+                  <a href="https://www.instagram.com/kieranshalloodesign/" class="icoInstagram" title="">
+                    <i class="fa fa-instagram"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="https://uk.linkedin.com/in/kieranshalloo" class="icoLinkedin" title="Linkedin">
+                    <i class="fa fa-linkedin"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="https://www.twitch.tv/kieranshalloodesign" class="icoTwitch" title="Twitch">
+                    <i class="fa fa-twitch"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="https://twitter.com/KieranShalloo" class="icoTwitter" title="Twitter">
+                    <i class="fa fa-twitter"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="https://www.youtube.com/channel/UCh7nbnnKY9cUaxcZ-alLCXw" class="icoYoutube" title="Youtube">
+                    <i class="fa fa-youtube"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-2 col-sm-12 offset-md-2 "><img src="/Logo.svg" class="img-fluid d-none d-md-block pull-xs-left" style="width:50%">
+            <p class="text-muted " style="font-size: 12px">Kieran Shalloo Design Ltd.
+              <br/>&copy; 2020 All rights reserved.</p>
           </div>
         </div>
       </div>
     </div>
+  </footer>
 
-    <!-- Footer -->
-
-    <footer class="mainfooter shadow" role="contentinfo">
-      <div class="footer-middle">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-4 col-sm-6">
-              <!--Column1-->
-              <div>
-                <p style="color:#6c757d">Pages</p>
-                <ul class="list-unstyled">
-                  <li>
-                    <a href="/">Home</a>
-                  <li>
-                    <a href="/portfolio/">Design Work</a>
-                  <li>
-                    <a href="/illustration">Illustration Work</a>
-                </ul>
-              </div>
-            </div>
-
-            <div class="col-md-4 col-sm-6">
-              <p style="color:#6c757d">Social Media</p>
-              <div>
-                <ul class="social-network social-circle ">
-                  <li>
-                    <a href="https://www.instagram.com/kieranshalloodesign/" class="icoInstagram" title="">
-                      <i class="fa fa-instagram"></i>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="https://uk.linkedin.com/in/kieranshalloo" class="icoLinkedin" title="Linkedin">
-                      <i class="fa fa-linkedin"></i>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="https://www.twitch.tv/kieranshalloodesign" class="icoTwitch" title="Twitch">
-                      <i class="fa fa-twitch"></i>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="https://twitter.com/KieranShalloo" class="icoTwitter" title="Twitter">
-                      <i class="fa fa-twitter"></i>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="https://www.youtube.com/channel/UCh7nbnnKY9cUaxcZ-alLCXw" class="icoYoutube" title="Youtube">
-                      <i class="fa fa-youtube"></i>
-                    </a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-            <div class="col-md-2 col-sm-12 offset-md-2 "><img src="/Logo.svg" class="img-fluid d-none d-md-block pull-xs-left" style="width:50%">
-              <p class="text-muted " style="font-size: 12px">Kieran Shalloo Design Ltd.
-                <br/>&copy; 2020 All rights reserved.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </footer>
-
-    <!-- Optional JavaScript -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
-    <script src="/js/show-on-scroll.js"></script>
-  </body>
+  <!-- Optional JavaScript -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+  <script src="/js/show-on-scroll.js"></script>
+</body>
 
 </html>
