@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-<html lang="en">
 
 <head>
   <title>Kieran Shalloo Design Ltd</title>
@@ -14,39 +13,28 @@
 
   <!-- Local CSS -->
   <link href="https://fonts.googleapis.com/css2?family=Catamaran:wght@300;400;500&family=Exo:wght@500;700;900&family=Muli:wght@400;500&display=swap" rel="stylesheet">
-  <link rel="stylesheet" type="text/css" href="/webstyle.css">
-
-  <!-- Hotjar Tracking Code for www.kieranshalloodesign.com -->
+  <link rel="stylesheet" type="text/css" href="theme.css">
   <script>
-    (function(h, o, t, j, a, r) {
-      h.hj = h.hj || function() {
-        (h.hj.q = h.hj.q || []).push(arguments)
-      };
-      h._hjSettings = {
-        hjid: 1841559,
-        hjsv: 6
-      };
-      a = o.getElementsByTagName('head')[0];
-      r = o.createElement('script');
-      r.async = 1;
-      r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
-      a.appendChild(r);
-    })(window, document, 'https://static.hotjar.com/c/hotjar-', '.js?sv=');
-  </script>
-
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async="async" src="https://www.googletagmanager.com/gtag/js?id=UA-28629869-2"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-
-    function gtag() {
-      dataLayer.push(arguments);
+    function applyTheme(theme) {
+      document.body.classList.remove("theme-auto", "theme-light", "theme-dark");
+      document.body.classList.add(`theme-${theme}`);
     }
-    gtag('js', new Date());
 
-    gtag('config', 'UA-28629869-2');
+    document.addEventListener("DOMContentLoaded", () => {
+      const savedTheme = localStorage.getItem("theme") || "auto";
+
+      applyTheme(savedTheme);
+
+      for (const optionElement of document.querySelectorAll("#selTheme option")) {
+        optionElement.selected = savedTheme === optionElement.value;
+      }
+
+      document.querySelector("#selTheme").addEventListener("change", function() {
+        localStorage.setItem("theme", this.value);
+        applyTheme(this.value);
+      });
+    });
   </script>
-
 </head>
 
 <body>
@@ -68,21 +56,26 @@
     <a href="mailto:contact@kieranshalloodesign.com" class="btn btn-outline-ksd" role="button">Get In Touch</a>
   </nav>
 
-  <!-- Full screen row -->
+  <select class="select__input" id="selTheme">
+    <option value="auto">Auto</option>
+    <option value="light">Light</option>
+    <option value="dark">Dark</option>
+  </select>
+
 
   <div class="jumbotron jumbotron-fluid   cover  row align-items-center" style="height: 90vh;width:100vw; background: linear-gradient(rgba(0, 153, 153, 0.95), rgba(0, 153, 153, 0.9)), url('/images/wwe/hero.jpg')">
     <div class="container">
 
       <div class="row animate-pop-in" style="animation-delay: .25s;">
         <div class="col-md-8  mx-auto">
-          <h1 style="font-size: 5rem" class="text-center header-title  mx-auto text-white">Shalloo Design</h1>
+          <h1 style="font-size: 5rem" class="text-center header-title  mx-auto ">Shalloo Design</h1>
         </div>
       </div>
       <div class="row animate-pop-in" style="animation-delay: .4s;">
         <div class="col-md-10  mx-auto">
-          <h3 class="text-center header-subtitle  text-white " style="padding-top:2em;">
+          <h3 class="text-center header-subtitle " style="padding-top:2em;">
             User Experience design & Illustration crafted remotely in London, England.</h3>
-          <h4 class="text-center header-subtitle text-white " style="padding-top:2em;">
+          <h4 class="text-center header-subtitle " style="padding-top:2em;">
             10 years of experience working with national and international clients and brands on award-winning projects across the world.</h4>
         </div>
       </div>
