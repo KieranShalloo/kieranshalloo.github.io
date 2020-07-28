@@ -19,6 +19,22 @@
     href="https://fonts.googleapis.com/css2?family=Catamaran:wght@300;400;500&family=Exo:wght@500;700;900&family=Muli:wght@400;500&display=swap"
     rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="/webstyle.css">
+  <script>
+    function deferVideo() {
+
+      //defer html5 video loading
+      $("video source").each(function () {
+        var sourceFile = $(this).attr("data-src");
+        $(this).attr("src", sourceFile);
+        var video = this.parentElement;
+        video.load();
+        // uncomment if video is not autoplay
+        //video.play();
+      });
+
+    }
+    window.onload = deferVideo;
+  </script>
 
 
 
@@ -82,8 +98,10 @@
 
 
 
+
   <div class="jumbotron jumbotron-fluid   cover  row align-items-center"
     style="height: 90vh;width:100vw; background: linear-gradient(rgba(0, 153, 153, 0.95), rgba(0, 153, 153, 0.9)), url('/images/wwe/hero.jpg')">
+
     <div class="container">
 
       <div class="row animate-pop-in" style="animation-delay: .25s;">
@@ -104,7 +122,10 @@
     </div>
   </div>
   <div class=" right  header-slant"></div>
-  </div>
+
+
+
+
 
 
 
@@ -261,7 +282,7 @@
               <ul class="list-unstyled">
                 <li> <a href="/">Home</a>
                 <li> <a href="/portfolio/">Design Work</a>
-                  <li> <a href="/process/">Process</a>
+                <li> <a href="/process/">Process</a>
                 <li> <a href="/illustration">Illustration Work</a>
               </ul>
             </div>
@@ -325,6 +346,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
   <script src="/js/show-on-scroll.js"></script>
+
 </body>
 
 </html>
