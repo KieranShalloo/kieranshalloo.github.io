@@ -30,10 +30,10 @@ a:hover {
 
 }
 
-#portfolioimage:hover {
+/* #portfolioimage:hover {
   transition: transform 3s ease-in-out;
   transform: scale(1.0125);
-}
+} */
 
 #portfolioframe {
   overflow: hidden;
@@ -55,27 +55,29 @@ a:hover {
 }
 
 .slant.header-slant {
-    position: relative;
-    z-index: 200;
-    width: 0;
-    height: 0;
-    pointer-events: none;
-  }
-.right.header-slant {
-    margin-top: calc(-10vw + 1px);
-    border-top: 10vw solid transparent;
+  position: relative;
+  z-index: 200;
+  width: 0;
+  height: 0;
+  pointer-events: none;
+}
 
-    border-right: 100vw solid white;
+.right.header-slant {
+  margin-top: calc(-10vw + 1px);
+  border-top: 10vw solid transparent;
+
+  border-right: 100vw solid white;
 
 }
+
 .row {
   margin: 0;
   padding: 0
 }
 
 
-#underline{
-    fill:#009999;
+#underline {
+  fill: #009999;
 
 }
 
@@ -188,8 +190,6 @@ a:hover {
 }
 
 .containerfluid {
-  margin-top: 2em;
-  margin-bottom: 2em;
   padding-top: 4em;
   padding-bottom: 4em;
 }
