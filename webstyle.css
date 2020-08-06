@@ -4,10 +4,36 @@ body {
   font-family: 'Muli', sans-serif;
 }
 
-#portfolioimage:hover {
+
+.slant.header-slant {
+  position: relative;
+  z-index: 200;
+  width: 0;
+  height: 0;
+  pointer-events: none;
+}
+
+.right.header-slant {
+  margin-top: calc(-10vw + 1px);
+  border-top: 10vw solid transparent;
+
+  border-right: 100vw solid white;
+
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+#underline {
+  fill: #009999;
+
+}
+
+/* #portfolioimage:hover {
   transition: transform 3s ease-in-out;
   transform: scale(1.0125);
-}
+} */
 
 #portfolioframe {
   overflow: hidden;
@@ -23,13 +49,36 @@ body {
   transform: scaleX(1.15) scaleY(1.15);
 }
 
-a:hover {
-  text-decoration: none;
+#top-alert {
+  margin-bottom: 0;
+  border-radius: 0;
+}
+
+.slant.header-slant {
+  position: relative;
+  z-index: 200;
+  width: 0;
+  height: 0;
+  pointer-events: none;
+}
+
+.right.header-slant {
+  margin-top: calc(-10vw + 1px);
+  border-top: 10vw solid transparent;
+
+  border-right: 100vw solid white;
+
 }
 
 .row {
   margin: 0;
   padding: 0
+}
+
+
+#underline {
+  fill: #009999;
+
 }
 
 /* .overlay {
@@ -47,7 +96,7 @@ a:hover {
   background-color: rgba(0, 0, 0, 0.85);
 } */
 .overlaytext {
-  position: fixed;
+  position: absolute;
   top: 50%;
   left: 50%;
   color: white;
@@ -60,9 +109,11 @@ a:hover {
   padding: 0 !important;
 }
 
+
+
 .cover {
   width: 100vw;
-  height: 100vh;
+  height: 107vh;
   background-size: cover;
   background-position: center center;
   background-attachment: fixed;
@@ -139,8 +190,6 @@ a:hover {
 }
 
 .containerfluid {
-  margin-top: 2em;
-  margin-bottom: 2em;
   padding-top: 4em;
   padding-bottom: 4em;
 }
@@ -268,7 +317,7 @@ ul.social-network li {
 
 h1 {
   font-family: 'Exo', sans-serif;
-  font-size: 4rem;
+  font-size: 5rem;
   font-weight: 600;
 }
 
@@ -283,7 +332,7 @@ h2 {
 
 h3 {
   font-family: 'Catamaran', sans-serif;
-  font-size: 2.25rem;
+  font-size: 2.5rem;
   line-height: 1.23;
   text-align: left;
   font-weight: 400;
@@ -292,8 +341,8 @@ h3 {
 
 h4 {
   font-family: 'Catamaran', sans-serif;
-  font-size: 1.5rem;
-  line-height: 1.23;
+  font-size: 2rem;
+  line-height: 2rem;
   text-align: left;
   font-weight: 400;
   font-style: normal;
@@ -301,7 +350,7 @@ h4 {
 
 h5 {
   font-family: 'Catamaran', sans-serif;
-  font-size: 1.125rem;
+  font-size: 1.5rem;
   font-weight: 400;
 }
 
@@ -312,8 +361,9 @@ h6 {
 }
 
 p {
-  font-size: 1rem;
-  line-height: 1.4rem;
+  font-family: 'Muli', sans-serif;
+  font-size: 1.2rem;
+  line-height: 1.6rem;
   font-weight: 400;
 }
 
