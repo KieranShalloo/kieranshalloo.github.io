@@ -16,9 +16,10 @@
 
   <!-- Local CSS -->
   <link
-    href="https://fonts.googleapis.com/css2?family=Catamaran:wght@300;400;500&family=Exo:wght@500;700;900&family=Muli:wght@400;500&display=swap"
+    href="//fonts.googleapis.com/css2?family=Catamaran:wght@300;400;500&family=Exo:wght@500;700;900&family=Muli:wght@400;500&display=swap"
     rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="/webstyle.css">
+  <link rel="stylesheet" href="/images/dist/devices.min.css">
 
   <!-- Hotjar Tracking Code for www.kieranshalloodesign.com -->
   <script>
@@ -75,14 +76,14 @@
   <!-- Jumbotron -->
 
   <div class="jumbotron jumbotron-fluid cover"
-    style="background-image: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .8)), url('/images/wwe/RW-app-tilesANGLE.jpg')">
+    style="background-image: linear-gradient(rgba(0, 0, 0, .2), rgba(0, 0, 0, .6)), url('/images/wwe/wweHeader.jpg')">
 
     <div class="container">
 
       <div class="row">
         <div class="col-md-8 overlaytext">
           <h1 class="header-title animate-pop-in text-center" style="COLOR: white">WWE Network</h1>
-          <hr class="my-4">
+          
           <h4 class="header-subtitle animate-pop-in text-center" style="COLOR: white">Rebuilt from the ground up</h4>
         </div>
       </div>
@@ -107,7 +108,7 @@
       <div class="col">
 
         <h6 class="text-muted">Agency</h6>
-        <p>Massive Interactive</p>
+        <p>Massive Interactive / Deltatre</p>
         <h6 class="text-muted">Client</h6>
         <p>
           World Wrestling Entertainment</p>
@@ -122,16 +123,17 @@
   </div>
 
   <!-- Image comparisons-->
-  <div class="containerfluid" style="padding-bottom: 0px;">
-    <picture >
+  <div class="containerfluid" style="margin:0; padding-bottom: 0px;">
+    <picture>
       <source srcset="/images/wwe/featured.webp" type="image/webp">
       <source srcset="/images/wwe/featured.jpg" type="image/jpg">
-      <img class="img-fluid" src="/images/wwe/featured.jpg"  alt="WWE Live TV" style="padding-bottom: 0;" ></picture>
+      <img class="img-fluid" src="/images/wwe/featured.jpg" alt="WWE Live TV"
+        style="margin-bottom:0;padding-bottom: 0px;"></picture>
   </div>
   <!-- Main Content -->
 
   <div class="containerfluid d-none d-lg-block"
-    style=" margin-bottom: 0 ;background-repeat: no-repeat;background-position: bottom right; background-image:linear-gradient( rgba(0, 0, 0, 0) , rgba(0, 0, 0, 0.6)),  url('/images/wwe/wwe-live-content.png'),linear-gradient( rgba(208, 2, 27, 1) , rgba(208, 2, 27, 1))">
+    style="margin:0; background-repeat: no-repeat;background-position: bottom right; background-image:linear-gradient( rgba(0, 0, 0, 0) , rgba(0, 0, 0, 0.6)),  url('/images/wwe/wwe-live-content.png'),linear-gradient( rgba(208, 2, 27, 1) , rgba(208, 2, 27, 1))">
     <div class=" container">
       <div class="row">
         <div class="col-lg-4 ">
@@ -156,40 +158,10 @@
   </div>
 
 
-  <div class="containerfluid" style="background-color: black;">
-    <div class=" container">
-      <div class="row">
-        <div class="col-md-8 offset-md-2">
-          <h2 style="color: whitesmoke;text-align: center; ">Atomic Design System</h2>
 
-          <p style="text-align: center; color: whitesmoke;">
-            Working alongside the Director of Experience and Design on the WWE side, we
-            started the work of creating an atomic design system to accelerate the speed of design and increase the consistency of the overall project
-            <br /><br />
-            The design system inherets the already established framework of the project and the specific required platform components in Android and iOS, whilst allowing more accurate definitions of typography, spacing, colour and motion<br /><br />
 
-            With the use of third-party tools such as Zeplin and
-            Abstract, we harnessed the instant sharing capabilities to allow developers to quickly and easily see the specifications of the selected components whilst
-            retaining version history.
-         
-          </p>
 
-        </div>
-      
-      </div>
 
-    </div>
-  </div>
-
-  <div>
-    <picture>
-
-      <source srcset="/images/wwe/WWEStyleGuide.webp" type="image/webp">
-      <source srcset="/images/wwe/WWEStyleGuide.jpg" type="image/jpg">
-      <img style="width:100vw; padding-bottom: 0px;" class="img-fluid" img src="/images/wwe/WWEStyleGuide.webp"
-        onerror="this.onerror=null; this.src='/images/wwe/WWEStyleGuide.jpg'" alt="Styleguide for WWE
-      Network"></picture>
-  </div>
   <div class="containerfluid d-block d-lg-none" style=" background-color: #D0021B;">
     <div class=" container">
       <div class="row">
@@ -209,7 +181,7 @@
           </p>
           <div class="col">
             <picture>
-              <source srcset="/images/wwe/wwe-live-content.webp" type="image/webp">
+              <!-- <source srcset="/images/wwe/wwe-live-content.webp" type="image/webp"> -->
               <source srcset="/images/wwe/wwe-live-content.png" type="image/png">
               <img style="width:100% " class="show-on-scroll image-animation img-fluid"
                 src="/images/wwe/wwe-live-content.png" alt="WWE Live TV"></picture>
@@ -220,32 +192,59 @@
     </div>
   </div>
 
+
+
+  <div class="containerfluid" style="margin:0;  background-color: black;">
+    <div class=" container">
+      <div class="row">
+        <div class="col-md-8 offset-md-2">
+          <h2 style="color: whitesmoke;text-align: center; ">Atomic Design System</h2>
+
+          <p style="text-align: center; color: whitesmoke;">
+            Working alongside the Director of Experience and Design on the WWE side, we
+            started the work of creating an atomic design system to accelerate the speed of design and increase the
+            consistency of the overall project
+            <br /><br />
+            The design system inherets the already established framework of the project and the specific required
+            platform components in Android and iOS, whilst allowing more accurate definitions of typography, spacing,
+            colour and motion<br /><br />
+
+            With the use of third-party tools such as Zeplin and
+            Abstract, we harnessed the instant sharing capabilities to allow developers to quickly and easily see the
+            specifications of the selected components whilst
+            retaining version history.
+
+          </p>
+
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+
+  <div>
+    <picture>
+
+      <source srcset="/images/wwe/WWEStyleGuide.webp" type="image/webp">
+      <source srcset="/images/wwe/WWEStyleGuide.jpg" type="image/jpg">
+      <img style="width:100vw; padding-bottom: 0px;" class="img-fluid" img src="/images/wwe/WWEStyleGuide.webp"
+        onerror="this.onerror=null; this.src='/images/wwe/WWEStyleGuide.jpg'" alt="Styleguide for WWE
+      Network"></picture>
+  </div>
+
+
   <div class="containerfluid" style="margin-top: 0; background-color: #fff;">
 
     <div class=" container">
       <div class="row">
-        <div class="col-md-8">
-          <div style="padding-top:3em"
-            class="d-block d-lg-none show-on-scroll image-animation embed-responsive embed-responsive-16by9">
-            <video autoplay="autoplay" loop="loop" muted="muted" class="embed-responsive-item">
-              <source src="/images/wwe/videos/vid_main_focus.mp4" type="video/mp4">
-              Sorry, your browser doesn't support embedded videos.</video>
-            <figcaption class="figure-caption text-center">Hover highlight.</figcaption>
-          </div>
 
-          <div
-            class="d-none d-lg-block offset-md-2 show-on-scroll image-animation embed-responsive embed-responsive-16by9"
-            style="width:60%; padding-top:3em">
-            <video autoplay="autoplay" loop="loop" muted="muted" class="embed-responsive-item">
-              <source src="/images/wwe/videos/vid_main_focus.mp4" type="video/mp4">
-              Sorry, your browser doesn't support embedded videos.</video>
-            <figcaption class="figure-caption text-center">Hover highlight.</figcaption>
-          </div>
-        </div>
 
-        <div class="col-md-4">
-          <h2>Making Motion Matter</h2>
-          <p>When looking at the project as a whole, the redesign felt very static. I wanted to bring some motion into
+        <div class="col-md-8 offset-md-2">
+          <h2 style="text-align: center; ">Making Motion Matter</h2>
+
+          <p style="text-align: center; ">When looking at the project as a whole, the redesign felt very static. I
+            wanted to bring some motion into
             effect and luckily the client agreed with me.<br><br>
             By auditing the designs we found several key areas we could start to integrate transition effects and
             explored with a variety.<br><br>Some concepts would cause too much development time so had to be put aside,
@@ -255,10 +254,25 @@
         </div>
 
       </div>
+      <div class="col-md-8 offset-md-2">
+        <div style="padding-top:3em" class="d-block d-lg-none   embed-responsive embed-responsive-16by9">
+          <video autoplay="autoplay" loop="loop" muted="muted" class="embed-responsive-item">
+            <source src="/images/wwe/videos/vid_main_focus.mp4" type="video/mp4">
+            Sorry, your browser doesn't support embedded videos.</video>
+          <figcaption class="figure-caption text-center">Hover highlight.</figcaption>
+        </div>
 
+        <div class="d-none d-lg-block offset-md-2  embed-responsive embed-responsive-16by9"
+          style="width:60%; padding-top:3em">
+          <video autoplay="autoplay" loop="loop" muted="muted" class="embed-responsive-item">
+            <source src="/images/wwe/videos/vid_main_focus.mp4" type="video/mp4">
+            Sorry, your browser doesn't support embedded videos.</video>
+          <figcaption class="figure-caption text-center">Hover highlight.</figcaption>
+        </div>
+      </div>
       <div class="row">
         <div class="col-md-6">
-          <div class="show-on-scroll image-animation embed-responsive embed-responsive-16by9">
+          <div class="embed-responsive embed-responsive-16by9">
             <video autoplay="autoplay" loop="loop" muted="muted" class="embed-responsive-item">
               <source src="/images/wwe/videos/tile_b.mp4" type="video/mp4">
               Sorry, your browser doesn't support embedded videos.</video>
@@ -266,7 +280,7 @@
           </div>
         </div>
         <div class="col-md-6">
-          <div class="show-on-scroll image-animation embed-responsive embed-responsive-16by9">
+          <div class="embed-responsive embed-responsive-16by9">
             <video autoplay="autoplay" loop="loop" muted="muted" class="embed-responsive-item">
               <source src="/images/wwe/videos/tile_a.mp4" type="video/mp4">
               Sorry, your browser doesn't support embedded videos.</video>
@@ -277,8 +291,18 @@
     </div>
   </div>
 
+
+
+
+
+
+
+
+
+
+
   <div class="containerfluid cover"
-    style="z-index: 0; margin-bottom: 0; height: auto; background-size: cover;     background-position: 100% 100%; background-image: linear-gradient(rgba(0, 0, 0, .3), rgba(0, 0, 0, .6)), url('/images/wwe/3large.jpg')">
+    style=" margin-bottom: 0; height: auto; background-size: cover;     background-position: 100% 100%; background-image: linear-gradient(rgba(0, 0, 0, .3), rgba(0, 0, 0, .6)), url('/images/wwe/3large.jpg')">
     <div class="container">
       <div class="row" style="display: flex; align-items: center;">
 
@@ -300,36 +324,46 @@
     </div>
   </div>
 
-  
 
+  <div style="margin:0; padding: 0 ;">
+    <picture>
+      <!-- <source srcset="/images/wwe/featured.webp" type="image/webp"> -->
+      <source srcset="/images/wwe/RW-app-tilesANGLE.jpg" type="image/jpg">
+      <img class="img-fluid" src="/images/wwe/RW-app-tilesANGLE.jpg" alt="WWE Live TV"
+        style="margin-bottom:0;padding-bottom: 0px;"></picture>
+  </div>
 
 
   <div class="containerfluid" style="background:#c5c5c5; margin-bottom: 0; margin-top: 0;">
 
     <div class=" container">
 
-      <div class="row">
+      <div class="row mx-auto">
 
-        <div class="col">
+        <div class="col-md-4 ">
           <picture>
             <source srcset="/images/wwe/SSPhone.webp" type="image/webp">
-            <source srcset="/images/wwe/SSPhone.png" type="image/png">
-            <img style="width:100%;" class="show-on-scroll image-animation img-fluid" src="/images/wwe/SSPhone.png"
-              alt="WWE Superstars screen in phone"></picture>
+            <source srcset="/images/wwe/SSPhone.jpg" type="image/jpg">
+            <img class="img-fluid" src="/images/wwe/SSPhone.jpg" alt="WWE Superstars screen in phone"></picture>
         </div>
-        <div class="col-md-4 offset-md-3">
+        <div class="col-md-4  d-none d-md-block">
+          <picture>
+            <source srcset="/images/wwe/SSPhoneExtended.webp" type="image/webp">
+            <source srcset="/images/wwe/SSPhoneExtended.jpg" type="image/jpg">
+            <img class="img-fluid" src="/images/wwe/SSPhoneExtended.jpg" alt="WWE Superstars screen in phone"></picture>
+        </div>
+        <div class="col-md-4 ">
           <h2>Bringing the fans closer</h2>
 
           <p>
             The fans are the central focus of the WWE Network redesign and there was extensive user research into
             exactly what the fans wanted from the service.
-            <br /><br />
-            One such factor that appeared was that the wrestlers themselves are one of the most intriguing piece of the
+            </br></br>
+            One such factor that appeared was that the wrestlers themselves are one of the most intriguing pieces of the
             whole product. WWE decided that a section of the app should be based on the superstars themselves, giving
-            users clear and easy access to
-            information about their stars as well as easy access to career-defining moments and
-            achievements.<br /><br />
-            Alongside this we also set to work on creating journies to content such as Bioggraphies, Champions and
+            users clear and easy access to information about their stars as well as easy access to career-defining
+            moments and achievements.</br></br>
+            Alongside this, we also set to work on creating journies to content such as Biographies, Champions and
             timelines of championships as well as extended views of the WWE Superstars careers</p>
         </div>
 
@@ -383,8 +417,7 @@
 
   </div>
 
-  <div class="containerfluid d-none d-md-block"
-    style="background-image: linear-gradient(rgba(197, 197, 197, 1),rgba(197, 197, 197, 1), rgba(131, 60, 236, 1)); padding:0;margin: 0;">
+  <div class="containerfluid d-none d-md-block" style="background:#C5C5C5; padding:0;margin: 0;">
     <div class="embed-responsive embed-responsive-16by9">
       <video loop="loop" autoplay="autoplay" muted="muted" class="embed-responsive-item">
         <source src="/images/wwe/videos/tv.mp4" type="video/mp4">
