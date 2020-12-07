@@ -40,7 +40,7 @@ a:hover {
 }
 
 #about-image {
-  filter: brightness(84%) contrast(0%);
+  filter: saturate(0%) contrast(0%)
 }
 
 #about-image:hover {
