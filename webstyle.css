@@ -322,14 +322,14 @@ ul.social-network li {
 
 h1 {
   font-family: 'Exo', sans-serif;
-  font-size: clamp(3rem, 2.4194rem + 2.5806vw, 5rem);
+  font-size: clamp(2.5rem, 2.4194rem + 2.5806vw, 5rem);
 
   font-weight: 600;
 }
 
 h2 {
   font-family: 'Exo', sans-serif;
-  font-size: clamp(2.5rem, 1.7097rem + 1.2903vw, 3rem);
+  font-size: clamp(2rem, 1.7097rem + 1.2903vw, 3rem);
   line-height: 1.23;
   text-align: left;
   font-weight: 500;
@@ -347,7 +347,7 @@ h3 {
 
 h4 {
   font-family: 'Catamaran', sans-serif;
-  font-size: clamp(1.8rem, 0.9677rem + 1.0323vw, 2.2rem);
+  font-size: clamp(1.5rem, 0.9677rem + 1.0323vw, 2.2rem);
   line-height: 2rem;
   text-align: left;
   font-weight: 400;
