@@ -328,8 +328,8 @@ h1 {
 }
 
 h2 {
-  font-family: 'Exo', sans-serif;
-  font-size: clamp(2rem, 1.7097rem + 1.2903vw, 3rem);
+  font-family: 'Catamaran', sans-serif;
+  font-size: clamp(2.2rem, 1.7097rem + 1.2903vw, 3rem);
   line-height: 1.23;
   text-align: left;
   font-weight: 500;
