@@ -76,10 +76,10 @@ a:hover {
 
 }
 
-.row {
+/* .row {
   margin: 0;
   padding: 0
-}
+} */
 
 
 #underline {
@@ -216,11 +216,11 @@ footer a:hover {
   text-decoration: none;
 }
 
-.copy {
+/* .copy {
   font-size: 12px;
   padding: 10px;
   border-top: 1px solid #FFFFFF;
-}
+} */
 
 .footer-middle {
   padding-top: 2em;
