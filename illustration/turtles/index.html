@@ -10,21 +10,18 @@
 
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
 
     <!-- Local CSS -->
-    <link
-        href="https://fonts.googleapis.com/css2?family=Catamaran:wght@300;400;500&family=Exo:wght@500;700;900&family=Muli:wght@400;500&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Catamaran:wght@300;400;500&family=Exo:wght@500;700;900&family=Muli:wght@400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="/webstyle.css">
 
 
     <!-- Hotjar Tracking Code for www.kieranshalloodesign.com -->
     <script>
-        (function (h, o, t, j, a, r) {
-            h.hj = h.hj || function () {
+        (function(h, o, t, j, a, r) {
+            h.hj = h.hj || function() {
                 (h.hj.q = h.hj.q || []).push(arguments)
             };
             h._hjSettings = {
@@ -60,22 +57,43 @@
 <body>
 
     <!-- Nav -->
-    <nav class="navbar shadow fixed-top navbar-expand-lg navbar-light bg-light">
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
-            aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-            <div class="navbar-nav">
-                <a class="nav-item nav-link active" style="padding-right: 2rem" href="/">Home</a>
-                <a class="nav-item nav-link" style="padding-right: 2rem" a="a" href="/portfolio">Design Work</a>
-                <a class="nav-item nav-link" style="padding-right: 2rem" a="a" href="/process">Process</a>
-                <a class="nav-item nav-link" style="padding-right: 2rem" href="/illustration">Illustration Work</a>
-                <a class="nav-item nav-link" style="padding-right: 2rem" href="/about">About</a>
+    <nav class="navbar shadow navbar-expand-md navbar-light fixed-top bg-light">
+        <div class="container">
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse justify-content-cente" id="navbarCollapse">
+                <div class=" col-md-10 offset-md-2">
+                    <ul class="navbar-nav me-auto mb-2 mb-md-0">
+                        <li class="nav-item" style="margin: 0 1rem;">
+                            <a class="nav-link" style="text-align: center;" aria-current="page" href="/">Home</a>
+                        </li>
+                        <li class="nav-item" style="margin: 0 1rem;">
+                            <a class="nav-link" style="text-align: center;" href="/portfolio">Design Work</a>
+                        </li>
+                        <li class="nav-item active" style="margin: 0 1rem;">
+                            <a class="nav-link" style="text-align: center;" href="/illustration/">Illustration Work</a>
+                        </li>
+                        <li class="nav-item" style="margin: 0 1rem;">
+                            <a class="nav-link" style="text-align: center;" href="/process">Process</a>
+                        </li>
+
+                        <li class="nav-item" style="margin: 0 1rem;">
+                            <a class="nav-link disabled" style="text-align: center;" href="#" aria-disabled="true">About</a>
+                        </li>
+                        <li class="nav-item text-center" style="margin: 0 1rem;">
+                            <a href="mailto:contact@kieranshalloodesign.com"><button type="button"
+                                    class="btn  btn-outline-ksd">Get
+                                    in
+                                    Touch</button></a>
+                        </li>
+                    </ul>
+
+                </div>
             </div>
         </div>
-        <a href="mailto:contact@kieranshalloodesign.com" class="float-right btn btn-outline-dark" role="button">Get In
-            Touch</a>
     </nav>
 
 
@@ -95,43 +113,43 @@
                     <h4>Teenage Mutant Ninja Turtles</h4>
                 </div>
                 <div class="col-md-8 offset-md-2 ">
-                    <p>This art print Inspired by the TV show 'Teenage Mutant Ninja Turtles' this digitally printed
-                        piece brought together hand inked characters with digital colouring and block shading and a
-                        watercoloured textured background</p>
+                    <p>This art print Inspired by the TV show 'Teenage Mutant Ninja Turtles' this digitally printed piece brought together hand inked characters with digital colouring and block shading and a watercoloured textured background</p>
                 </div>
 
             </div>
 
         </div>
-        <div class="col-md-8 px-0  offset-md-2">
-            <picture>
-                <source srcset="/images/illustration/turtles.webp" type="image/webp">
-                <source srcset="/images/illustration/turtles.jpg" type="image/jpg">
-                <img src="/images/illustration/turtles.jpg" class="shadow my-3 m-md-5 img-fluid">
-            </picture>
+        <div class=" container">
+            <div class="text-center">
+                <picture>
+                    <source srcset="/images/illustration/turtles.webp" type="image/webp">
+                    <source srcset="/images/illustration/turtles.jpg" type="image/jpg">
+                    <img src="/images/illustration/turtles.jpg" " class=" shadow p-md-3 img-fluid ">
+                </picture>
 
+            </div>
         </div>
+       
     </div>
 
 
 
 
 
-    <div class=" container  d-block d-sm-none mb-5">
-        <div class="row">
-            <div class=" col-4 " style="text-align: center;">
-                <a href="/illustration\gremlins\">
-                    <i class="btn-outline-ksd fa fa-arrow-left" style="font-size: 24px;"></i>
+    <div class=" container d-block d-sm-none mb-5 ">
+        <div class=" row ">
+            <div class=" col-4 " style=" text-align: center; ">
+                <a href="/illustration\theworldsend\ ">
+                    <i class=" btn-outline-ksd fa fa-arrow-left " style=" font-size: 24px; "></i>
                 </a>
             </div>
-            <div class=" col-4 " style="text-align: center;">
-                <a href="/illustration\index.html">
-                    <i class="btn-outline-ksd fa fa-th-large" style="font-size: 24px;"></i>
+            <div class=" col-4 " style=" text-align: center; ">
+                <a href="/illustration\index.html ">
+                    <i class=" btn-outline-ksd fa fa-th-large " style=" font-size: 24px; "></i>
                 </a>
             </div>
-            <div class=" col-4 " style="text-align: center;">
-                <a href="/illustration\finding-nemo\"> <i class=" fa fa-arrow-right btn-outline-ksd"
-                        style="font-size: 24px;"></i></a>
+            <div class=" col-4 " style=" text-align: center; ">
+                <a href="/illustration\gemma\ "> <i class=" fa fa-arrow-right btn-outline-ksd " style=" font-size: 24px; "></i></a>
             </div>
         </div>
     </div>
@@ -141,7 +159,7 @@
 
 
     <!-- Grid for illustration -->
-    <div class=" containerfluid py-0">
+    <div class=" containerfluid py-0 d-none d-sm-block ">
         <div class=" row ">
 
             <div class=" col-sm-4 col-lg-3 gridimage ">
@@ -151,8 +169,7 @@
                     <picture>
                         <source srcset="/images/illustration/thumbs/danielbryan-thumb.webp " type=" image/webp ">
                         <source srcset="/images/illustration/thumbs/danielbryan-thumb.jpg " type=" image/jpeg ">
-                        <img style=" width:100% " src=" images/illustration/thumbs/danielbryan-thumb.jpg "
-                            alt=" Alt Text! ">
+                        <img style=" width:100% " src=" images/illustration/thumbs/danielbryan-thumb.jpg " alt=" Alt Text! ">
                     </picture>
                 </a>
             </div>
@@ -165,8 +182,7 @@
                     <picture>
                         <source srcset="/images/illustration/thumbs/starwarslightside-thumb.webp " type=" image/webp ">
                         <source srcset="/images/illustration/thumbs/starwarslightside-thumb.jpg " type=" image/jpeg ">
-                        <img style=" width:100% " src=" images/illustration/thumbs/starwarslightside-thumb.jpg "
-                            alt=" Alt Text! ">
+                        <img style=" width:100% " src=" images/illustration/thumbs/starwarslightside-thumb.jpg " alt=" Alt Text! ">
                     </picture>
                 </a>
             </div>
@@ -179,8 +195,7 @@
                     <picture>
                         <source srcset="/images/illustration/thumbs/nightmare-thumb.webp " type=" image/webp ">
                         <source srcset="/images/illustration/thumbs/nightmare-thumb.jpg " type=" image/jpeg ">
-                        <img style=" width:100% " src=" images/illustration/thumbs/nightmare-thumb.jpg "
-                            alt=" Alt Text! ">
+                        <img style=" width:100% " src=" images/illustration/thumbs/nightmare-thumb.jpg " alt=" Alt Text! ">
                     </picture>
                 </a>
             </div>
@@ -207,8 +222,7 @@
                     <picture>
                         <source srcset="/images/illustration/thumbs/starwarsdarkside-thumb.webp " type=" image/webp ">
                         <source srcset="/images/illustration/thumbs/starwarsdarkside-thumb.jpg " type=" image/jpeg ">
-                        <img style=" width:100% " src=" images/illustration/thumbs/starwarsdarkside-thumb.jpg "
-                            alt=" Alt Text! ">
+                        <img style=" width:100% " src=" images/illustration/thumbs/starwarsdarkside-thumb.jpg " alt=" Alt Text! ">
                     </picture>
                 </a>
             </div>
@@ -258,8 +272,7 @@
                     <picture>
                         <source srcset="/images/illustration/thumbs/fallout-thumb.webp " type=" image/webp ">
                         <source srcset="/images/illustration/thumbs/fallout-thumb.jpg " type=" image/jpeg ">
-                        <img style=" width:100% " src=" images/illustration/thumbs/fallout-thumb.jpg "
-                            alt=" Alt Text! ">
+                        <img style=" width:100% " src=" images/illustration/thumbs/fallout-thumb.jpg " alt=" Alt Text! ">
                     </picture>
                 </a>
             </div>
@@ -271,8 +284,7 @@
                     <picture>
                         <source srcset="/images/illustration/thumbs/gremlins-thumb.webp " type=" image/webp ">
                         <source srcset="/images/illustration/thumbs/gremlins-thumb.jpg " type=" image/jpeg ">
-                        <img style=" width:100% " src=" images/illustration/thumbs/gremlins-thumb.jpg "
-                            alt=" Alt Text! ">
+                        <img style=" width:100% " src=" images/illustration/thumbs/gremlins-thumb.jpg " alt=" Alt Text! ">
                     </picture>
                 </a>
             </div>
@@ -365,8 +377,7 @@
                     <picture>
                         <source srcset="/images/illustration/thumbs/speeder-thumb.webp " type=" image/webp ">
                         <source srcset="/images/illustration/thumbs/speeder-thumb.jpg " type=" image/jpeg ">
-                        <img style=" width:100% " src=" images/illustration/thumbs/speeder-thumb.jpg "
-                            alt=" Alt Text! ">
+                        <img style=" width:100% " src=" images/illustration/thumbs/speeder-thumb.jpg " alt=" Alt Text! ">
                     </picture>
                 </a>
             </div>
@@ -379,8 +390,7 @@
                     <picture>
                         <source srcset="/images/illustration/thumbs/deadpool-thumb.webp " type=" image/webp ">
                         <source srcset="/images/illustration/thumbs/deadpool-thumb.jpg " type=" image/jpeg ">
-                        <img style=" width:100% " src=" images/illustration/thumbs/deadpool-thumb.jpg "
-                            alt=" Alt Text! ">
+                        <img style=" width:100% " src=" images/illustration/thumbs/deadpool-thumb.jpg " alt=" Alt Text! ">
                     </picture>
                 </a>
             </div>
@@ -413,8 +423,7 @@
                     <picture>
                         <source srcset="/images/illustration/thumbs/spiderman-thumb.webp " type=" image/webp ">
                         <source srcset="/images/illustration/thumbs/spiderman-thumb.jpg " type=" image/jpeg ">
-                        <img style=" width:100% " src=" images/illustration/thumbs/spiderman-thumb.jpg "
-                            alt=" Alt Text! ">
+                        <img style=" width:100% " src=" images/illustration/thumbs/spiderman-thumb.jpg " alt=" Alt Text! ">
                     </picture>
                 </a>
             </div>
@@ -429,8 +438,7 @@
                     <picture>
                         <source srcset="/images/illustration/thumbs/terminator-thumb.webp " type=" image/webp ">
                         <source srcset="/images/illustration/thumbs/terminator-thumb.jpg " type=" image/jpeg ">
-                        <img style=" width:100% " src=" images/illustration/thumbs/terminator-thumb.jpg "
-                            alt=" Alt Text! ">
+                        <img style=" width:100% " src=" images/illustration/thumbs/terminator-thumb.jpg " alt=" Alt Text! ">
                     </picture>
                 </a>
             </div>
@@ -442,8 +450,7 @@
                     <picture>
                         <source srcset="/images/illustration/thumbs/daryldixon-thumb.webp " type=" image/webp ">
                         <source srcset="/images/illustration/thumbs/daryldixon-thumb.jpg " type=" image/jpeg ">
-                        <img style=" width:100% " src=" images/illustration/thumbs/daryldixon-thumb.jpg "
-                            alt=" Alt Text! ">
+                        <img style=" width:100% " src=" images/illustration/thumbs/daryldixon-thumb.jpg " alt=" Alt Text! ">
                     </picture>
                 </a>
             </div>
@@ -455,8 +462,7 @@
                     <picture>
                         <source srcset="/images/illustration/thumbs/gameofthrones-thumb.webp " type=" image/webp ">
                         <source srcset="/images/illustration/thumbs/gameofthrones-thumb.jpg " type=" image/jpeg ">
-                        <img style=" width:100% " src=" images/illustration/thumbs/gameofthrones-thumb.jpg "
-                            alt=" Alt Text! ">
+                        <img style=" width:100% " src=" images/illustration/thumbs/gameofthrones-thumb.jpg " alt=" Alt Text! ">
                     </picture>
                 </a>
             </div>
@@ -487,8 +493,7 @@
                     <picture>
                         <source srcset="/images/illustration/thumbs/turtles-thumb.webp " type=" image/webp ">
                         <source srcset="/images/illustration/thumbs/turtles-thumb.jpg " type=" image/jpeg ">
-                        <img style=" width:100% " src=" images/illustration/thumbs/turtles-thumb.jpg "
-                            alt=" Alt Text! ">
+                        <img style=" width:100% " src=" images/illustration/thumbs/turtles-thumb.jpg " alt=" Alt Text! ">
                     </picture>
                 </a>
             </div>
@@ -517,8 +522,7 @@
                     <picture>
                         <source srcset="/images/illustration/thumbs/rick-morty-thumb.webp " type=" image/webp ">
                         <source srcset="/images/illustration/thumbs/rick-morty-thumb.jpg " type=" image/jpeg ">
-                        <img style=" width:100% " src=" images/illustration/thumbs/rick-morty-thumb.jpg "
-                            alt=" Alt Text! ">
+                        <img style=" width:100% " src=" images/illustration/thumbs/rick-morty-thumb.jpg " alt=" Alt Text! ">
                     </picture>
                 </a>
             </div>
@@ -528,60 +532,56 @@
     </div>
 
     <!-- Footer-->
-    <footer class="mainfooter shadow" role="contentinfo">
-        <div class="footer-middle">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-4 col-sm-6">
+    <footer class=" mainfooter shadow " role=" contentinfo ">
+        <div class=" footer-middle ">
+            <div class=" container ">
+                <div class=" row ">
+                    <div class=" col-md-4 col-sm-6 ">
                         <!--Column1-->
                         <div>
-                            <p style="color:#6c757d">Pages</p>
-                            <ul class="list-unstyled">
-                                <li> <a href="/">Home</a>
-                                <li> <a href="/portfolio/">Design Work</a>
-                                <li> <a href="/process/">Process</a>
-                                <li> <a href="/illustration">Illustration Work</a>
-                                <li> <a href="/about">About</a>
+                            <p style=" color:#6c757d ">Pages</p>
+                            <ul class=" list-unstyled ">
+                                <li> <a href="/ ">Home</a>
+                                    <li> <a href="/portfolio/ ">Design Work</a>
+                                        <li> <a href="/process/ ">Process</a>
+                                            <li> <a href="/illustration ">Illustration Work</a>
+                                                <li> <a href="/about ">About</a>
                             </ul>
                         </div>
                     </div>
 
 
-                    <div class="col-md-4 col-sm-6">
-                        <p style="color:#6c757d">Social Media</p>
+                    <div class=" col-md-4 col-sm-6 ">
+                        <p style=" color:#6c757d ">Social Media</p>
                         <div>
-                            <ul class="social-network social-circle ">
+                            <ul class=" social-network social-circle ">
 
                                 <li>
-                                    <a href="https://www.instagram.com/kieranshalloodesign/" class="icoInstagram"
-                                        title="">
-                                        <i class="fa fa-instagram"></i>
+                                    <a href=" https://www.instagram.com/kieranshalloodesign/ " class=" icoInstagram " title=" ">
+                                        <i class=" fa fa-instagram "></i>
                                     </a>
                                 </li>
 
                                 <li>
-                                    <a href="https://uk.linkedin.com/in/kieranshalloo" class="icoLinkedin"
-                                        title="Linkedin">
-                                        <i class="fa fa-linkedin"></i>
+                                    <a href=" https://uk.linkedin.com/in/kieranshalloo " class=" icoLinkedin " title=" Linkedin ">
+                                        <i class=" fa fa-linkedin "></i>
                                     </a>
                                 </li>
 
                                 <li>
-                                    <a href="https://www.twitch.tv/kieranshalloodesign" class="icoTwitch"
-                                        title="Twitch">
-                                        <i class="fa fa-twitch"></i>
+                                    <a href=" https://www.twitch.tv/kieranshalloodesign " class=" icoTwitch " title=" Twitch ">
+                                        <i class=" fa fa-twitch "></i>
                                     </a>
                                 </li>
 
                                 <li>
-                                    <a href="https://twitter.com/KieranShalloo" class="icoTwitter" title="Twitter"><i
-                                            class="fa fa-twitter"></i>
+                                    <a href=" https://twitter.com/KieranShalloo " class=" icoTwitter " title=" Twitter "><i
+                                            class=" fa fa-twitter "></i>
                                     </a>
                                 </li>
 
                                 <li>
-                                    <a href="https://www.youtube.com/channel/UCh7nbnnKY9cUaxcZ-alLCXw"
-                                        class="icoYoutube" title="Youtube"><i class="fa fa-youtube"></i>
+                                    <a href=" https://www.youtube.com/channel/UCh7nbnnKY9cUaxcZ-alLCXw " class=" icoYoutube " title=" Youtube "><i class=" fa fa-youtube "></i>
                                     </a>
                                 </li>
 
@@ -589,10 +589,8 @@
 
                         </div>
                     </div>
-                    <div class="col-md-2 col-sm-12 offset-md-2 "><img src="/Logo.svg"
-                            class="img-fluid d-none d-md-block pull-xs-left" style="width:50%">
-                        <p class="text-muted " style="font-size: 12px">Kieran Shalloo Design Ltd. <br />&copy; 2021 All
-                            rights reserved.
+                    <div class=" col-md-2 col-sm-12 offset-md-2 "><img src="/Logo.svg " class=" img-fluid d-none d-md-block pull-xs-left " style=" width:50% ">
+                        <p class=" text-muted " style=" font-size: 12px ">Kieran Shalloo Design Ltd. <br />&copy; 2021 All rights reserved.
                         </p>
                     </div>
                 </div>
@@ -606,15 +604,12 @@
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
+    <script src=" https://code.jquery.com/jquery-3.4.1.slim.min.js " integrity=" sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n " crossorigin=" anonymous ">
     </script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+    <script src=" https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js " integrity=" sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo " crossorigin=" anonymous ">
     </script>
 
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+    <script src=" https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js " integrity=" sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6 " crossorigin=" anonymous ">
     </script>
 </body>
 

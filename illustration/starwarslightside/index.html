@@ -10,12 +10,13 @@
 
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
 
     <!-- Local CSS -->
     <link href="https://fonts.googleapis.com/css2?family=Catamaran:wght@300;400;500&family=Exo:wght@500;700;900&family=Muli:wght@400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="/webstyle.css">
+
 
 
     <!-- Hotjar Tracking Code for www.kieranshalloodesign.com -->
@@ -57,23 +58,44 @@
 <body>
 
     <!-- Nav -->
-    <nav class="navbar shadow fixed-top navbar-expand-lg navbar-light bg-light">
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-            <div class="navbar-nav">
-                <a class="nav-item nav-link active" style="padding-right: 2rem" href="/">Home</a>
-                <a class="nav-item nav-link" style="padding-right: 2rem" a="a" href="/portfolio">Design Work</a>
-                <a class="nav-item nav-link" style="padding-right: 2rem" a="a" href="/process">Process</a>
-                <a class="nav-item nav-link" style="padding-right: 2rem" href="/illustration">Illustration Work</a>
-                <a class="nav-item nav-link" style="padding-right: 2rem" href="/about">About</a>
+    <nav class="navbar shadow navbar-expand-md navbar-light fixed-top bg-light">
+        <div class="container">
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse justify-content-cente" id="navbarCollapse">
+                <div class=" col-md-10 offset-md-2">
+                    <ul class="navbar-nav me-auto mb-2 mb-md-0">
+                        <li class="nav-item" style="margin: 0 1rem;">
+                            <a class="nav-link" style="text-align: center;" aria-current="page" href="/">Home</a>
+                        </li>
+                        <li class="nav-item" style="margin: 0 1rem;">
+                            <a class="nav-link" style="text-align: center;" href="/portfolio">Design Work</a>
+                        </li>
+                        <li class="nav-item active" style="margin: 0 1rem;">
+                            <a class="nav-link" style="text-align: center;" href="/illustration/">Illustration Work</a>
+                        </li>
+                        <li class="nav-item" style="margin: 0 1rem;">
+                            <a class="nav-link" style="text-align: center;" href="/process">Process</a>
+                        </li>
+
+                        <li class="nav-item" style="margin: 0 1rem;">
+                            <a class="nav-link disabled" style="text-align: center;" href="#" aria-disabled="true">About</a>
+                        </li>
+                        <li class="nav-item text-center" style="margin: 0 1rem;">
+                            <a href="mailto:contact@kieranshalloodesign.com"><button type="button"
+                                    class="btn  btn-outline-ksd">Get
+                                    in
+                                    Touch</button></a>
+                        </li>
+                    </ul>
+
+                </div>
             </div>
         </div>
-        <a href="mailto:contact@kieranshalloodesign.com" class="float-right btn btn-outline-dark" role="button">Get In
-            Touch</a>
     </nav>
-
 
 
 
@@ -82,28 +104,6 @@
 
 
 
-    <!-- Project Header-->
-    <div class="containerfluid">
-        <div class="row">
-            <div class="col-md-8">
-                <picture>
-                    <source srcset="/images/illustration/starwarslightside.webp" type="image/webp">
-                    <source srcset="/images/illustration/starwarslightside.jpg" type="image/jpg">
-                    <img src="/images/illustration/starwarslightside.jpg" alt="YouView Mobile app tile" class="img-fluid">
-                </picture>
-            </div>
-            <div class="col-md-3" style="margin-left:15px">
-                <h2 style="color:#009999">The Light Side</h2>
-                <p>An illustrated poster showing the Light Side characteres inspired by the original Star Wars Trilogy
-                </p>
-                <h4>Edition Size</h4>
-                <p>50</p>
-                <h4>Size</h4>
-                <p>21 x 42 cm</p>
-            </div>
-        </div>
-    </div>
-    </div>
 
 
 
@@ -123,9 +123,9 @@
         </div>
         <div class="col-md-6 offset-md-3">
             <picture>
-                <source srcset="/images/illustration/hulk.webp" type="image/webp">
-                <source srcset="/images/illustration/hulk.jpg" type="image/jpg">
-                <img src="/images/illustration/hulk.jpg" class=" p-md-5 img-fluid ">
+                <source srcset="/images/illustration/starwarslightside.webp" type="image/webp">
+                <source srcset="/images/illustration/starwarslightside.jpg" type="image/jpg">
+                <img src="/images/illustration/starwarslightside.jpg" class="shadow p-md-3 img-fluid">
             </picture>
 
         </div>
