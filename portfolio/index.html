@@ -50,6 +50,7 @@
 </head>
 
 
+<!-- Nav -->
 <nav class="navbar shadow navbar-expand-md navbar-light fixed-top bg-light">
     <div class="container">
 
@@ -62,29 +63,16 @@
 
 
             <ul class="navbar-nav mx-auto">
-                <ul class="navbar-nav  ">
-                    <li class="nav-item text-center" style="padding: 0 1rem;">
-                        <a class="nav-link active" style="text-align: center;" aria-current="page" href="/">Home</a>
-                    </li>
-                    <li class="nav-item text-center" style="padding: 0 1rem;"> <a class="nav-link"
-                            style="text-align: center;" href="/portfolio">Design Work</a>
-                    </li>
-                    <li class="nav-item text-center" style="padding: 0 1rem;"> <a class="nav-link"
-                            style="text-align: center;" href="/illustration/">Illustration Work</a>
-                    </li>
-                    <li class="nav-item text-center" style="padding: 0 1rem;"> <a class="nav-link"
-                            style="text-align: center;" href="/process">Process</a>
-                    </li>
+                <ul class="navbar-nav">
 
-                    <li class="nav-item text-center" style="padding: 0 1rem;"> <a class="nav-link disabled"
-                            style="text-align: center;" href="#" aria-disabled="true">About</a>
-                    </li>
-                    <li class="nav-item text-center" style="padding: 0 1rem;"> <a
-                            href="mailto:contact@kieranshalloodesign.com"><button type="button"
-                                class="btn  btn-outline-ksd">Get
-                                in
-                                Touch</button></a>
-                    </li>
+                    <a class="nav-link text-center mx-3" href="/">Home</a>
+                    <a class="nav-link text-center mx-3  active" href="/portfolio">Design Work</a>
+                    <a class="nav-link text-center mx-3" aria-current="page" href="/illustration/">Illustration Work</a>
+                    <a class="nav-link text-center mx-3" href="/process">Process</a>
+                    <a class="nav-link text-center mx-3" href="#" aria-disabled="true">About</a>
+                    <a class="text-center mx-3" href="mailto:contact@kieranshalloodesign.com"><button type="button"
+                            class="btn btn-outline-ksd">Get in Touch</button></a>
+
                 </ul>
 
         </div>
@@ -92,167 +80,93 @@
     </div>
 </nav>
 
+
 <div class="containerfluid" style="margin: 0;
 padding-top: 2em;">
     <div class="row">
 
-        <!-- <div class="animate-pop-in col-sm-6 col-md-4" id="portfolioimage" style="padding: 0"> <a href="/portfolio/onscreenkeyboard/" > <div class="overlay"> <div class="overlaytext"> <h3 style="COLOR: white" class="text-center">On Screen Keyboard</h3>
-      <p class="text-muted text-center">Powering BT TV & TalkTalk TV</p> </div> </div> <picture> <source srcset="/images/home/tile-nextgen.webp" type="image/webp"> <source srcset="/images/keyboard/bg.jpg" type="image/jpeg"> <img style="height:360px;
-      width:100%" src="/images/keyboard/bg.jpg" alt="Alt Text!"> </picture> </a> </div> -->
 
-        <div class="animate-pop-in col-sm-6 col-md-4" id="portfolioimage" style="padding: 0">
-            <a href="/portfolio/wwe/">
-                <div class="overlay">
-                    <div class="overlaytext">
-                        <h3 style="COLOR: white" class="text-center">WWE Network</h3>
-                        <p class="text-muted text-center">Redesigning the Network</p>
-                    </div>
-                </div>
+        <div class="col-sm-6 col-md-4" style="padding: 0" id="portfolioframe">
+            <a href="portfolio/wwe">
                 <picture>
                     <source srcset="/images/home/tile-wwe.webp" type="image/webp">
-                    <source srcset="/images/home/tile-wwe.jpg" type="image/jpeg">
-                    <img style="width:100%" src="/images/home/tile-wwe.jpg" alt="WWE project tile">
-                </picture>
+                    <img class="img-fluid lazyload" style="width: 100%;" id="portfolioimage"
+                        src="/images/home/tile-wwe.jpg"></picture>
             </a>
         </div>
 
-        <div class="animate-pop-in col-sm-6 col-md-4" id="portfolioimage" style="padding: 0">
-            <a href="/portfolio/nextgen/">
-                <div class="overlay">
-                    <div class="overlaytext">
-                        <h3 style="COLOR: white" class="text-center">Next Generation YouView</h3>
-                        <p class="text-muted text-center">Powering BT TV & TalkTalk TV</p>
-                    </div>
-                </div>
+        <div class="col-sm-6 col-md-4" style="padding: 0" id="portfolioframe">
+            <a href="portfolio/wwe">
                 <picture>
                     <source srcset="/images/home/tile-nextgen.webp" type="image/webp">
-                    <source srcset="/images/home/tile-nextgen.jpg" type="image/jpeg">
-                    <img style="width:100%" src="/images/home/tile-nextgen.jpg" alt="Youview project tile">
-                </picture>
+                    <img class="img-fluid lazyload" id="portfolioimage" src="/images/home/tile-nextgen.jpg"></picture>
             </a>
         </div>
-
-        <div class="animate-pop-in col-sm-6 col-md-4" id="portfolioframe" style="padding: 0">
-
-            <a href="/portfolio/mobileapp/">
-
+        <div class="col-sm-6 col-md-4" style="padding: 0" id="portfolioframe">
+            <a href="portfolio/wwe">
                 <picture>
                     <source srcset="/images/home/tile-app.webp" type="image/webp">
-                    <source srcset="/images/home/tile-app.jpg" type="image/jpeg">
-                    <img id="portfolioimage" style="width:100%" src="/images/home/tile-app.jpg"
-                        alt="Youview mobile project tile">
-                </picture>
+                    <img class="img-fluid lazyload" id="portfolioimage" src="/images/home/tile-app.jpg"></picture>
             </a>
         </div>
-
-        <div class="animate-pop-in col-sm-6 col-md-4" id="portfolioimage" style="padding: 0">
-
-            <a href="/portfolio/help/">
-                <div class="overlay">
-                    <div class="overlaytext">
-                        <h3 style="COLOR: white" class="text-center">Help Mode</h3>
-                        <p class="text-muted text-center">Help and support for BT and TalkTalk customers on YouView</p>
-                    </div>
-                </div>
+        <div class="col-sm-6 col-md-4" style="padding: 0" id="portfolioframe">
+            <a href="portfolio/wwe">
                 <picture>
                     <source srcset="/images/home/tile-help.webp" type="image/webp">
-                    <source srcset="/images/home/tile-help.jpg" type="image/jpeg">
-                    <img style="width:100%" src="/images/home/tile-help.jpg" alt="BT & TalkTalk Help mode project tile">
-                </picture>
+                    <img class="img-fluid lazyload" id="portfolioimage" src="/images/home/tile-help.jpg"></picture>
             </a>
         </div>
-
-        <div class="animate-pop-in col-sm-6 col-md-4" id="portfolioimage" style="padding: 0">
-
-            <a href="/portfolio/sonyandroid/">
-                <div class="overlay">
-                    <div class="overlaytext">
-                        <h3 style="COLOR: white" class="text-center">YouView on Android</h3>
-                        <p class="text-muted text-center">Becoming the default Sony TV Package</p>
-                    </div>
-
-                </div>
+        <div class="col-sm-6 col-md-4" style="padding: 0" id="portfolioframe">
+            <a href="portfolio/wwe">
                 <picture>
                     <source srcset="/images/home/tile-sony.webp" type="image/webp">
-                    <source srcset="/images/home/tile-sony.jpg" type="image/jpeg">
-                    <img style="width:100%" src="/images/home/tile-sony.jpg" alt="Android TV project tile">
-                </picture>
+                    <img class="img-fluid lazyload" id="portfolioimage" src="/images/home/tile-sony.jpg"></picture>
             </a>
         </div>
 
-        <div class="animate-pop-in col-sm-6 col-md-4" id="portfolioimage" style="padding: 0">
-            <a href="/portfolio/bookofspells/">
-                <div class="overlay">
-                    <div class="overlaytext">
-                        <h3 style="COLOR: white" class="text-center">J. K. Rowling's Book of Spells</h3>
-                        <p class="text-muted text-center">Harry Potter based augmented reality video-game</p>
-                    </div>
-                </div>
+        <div class="col-sm-6 col-md-4" style="padding: 0" id="portfolioframe">
+            <a href="portfolio/wwe">
                 <picture>
-                    <source srcset="/images/home/tile-bos.webp" type="image/webp">
-                    <source srcset="/images/home/tile-bos.jpg" type="image/jpeg">
-                    <img style="width:100%" src="/images/home/tile-bos.jpg" alt="Book of Spells project tile">
-                </picture>
+                    <source srcset="/images/home/tile-singstar.webp" type="image/webp">
+                    <img class="img-fluid lazyload" id="portfolioimage" src="/images/home/tile-singstar.jpg"></picture>
             </a>
         </div>
-
-        <!-- <div class="animate-pop-in col-sm-6 col-md-4" id="portfolioimage" style="padding: 0"> <a href="/portfolio/singstar/index.html" > <div class="overlay "> <div class="overlaytext"> <h3 style="COLOR: white" class="text-center">Singstar</h3> <p
-      class="text-muted text-center">Music video-game series</p> </div> </div> <picture> <source srcset="/images/home/tile-singstar.webp" type="image/webp"> <source srcset="/images/home/tile-singstar.jpg" type="image/jpeg"> <img style="width:100%"
-      src="/images/home/tile-singstar.jpg" alt="Alt Text!"> </picture> </a> </div> -->
-        <div class="animate-pop-in col-sm-6 col-md-4" id="portfolioimage" style="padding: 0">
-            <a href="/portfolio/netflix/">
-                <div class="overlay">
-                    <div class="overlaytext">
-                        <h3 style="COLOR: white" class="text-center">Netflix Launch</h3>
-                        <p class="text-muted text-center">Christmas Advertising Campaign</p>
-                    </div>
-                </div>
+        <div class="col-sm-6 col-md-4" style="padding: 0" id="portfolioframe">
+            <a href="portfolio/wwe">
                 <picture>
                     <source srcset="/images/home/tile-netflix.webp" type="image/webp">
-                    <source srcset="/images/home/tile-netflix.jpg" type="image/jpeg">
-                    <img style="width:100%" src="/images/home/tile-netflix.jpg"
-                        alt="Netflix christmas advert project tile">
-                </picture>
+                    <img class="img-fluid lazyload" id="portfolioimage" src="/images/home/tile-netflix.jpg"></picture>
             </a>
         </div>
-
-        <div class="animate-pop-in col-sm-6 col-md-4" id="portfolioimage" style="padding: 0">
-            <a href="/portfolio/accessibility/">
-                <div class="overlay">
-                    <div class="overlaytext">
-                        <h3 style="COLOR: white" class="text-center">YouView Accessibility Features</h3>
-                        <p class="text-muted text-center">High Contrast mode for the partially sighted</p>
-                    </div>
-                </div>
+        <div class="col-sm-6 col-md-4" style="padding: 0" id="portfolioframe">
+            <a href="portfolio/wwe">
+                <picture>
+                    <!-- <source srcset="/images/home/tile-dancestar.webp" type="image/webp"> -->
+                    <img class="img-fluid lazyload" id="portfolioimage" src="/images/home/tile-dancestar.jpg"></picture>
+            </a>
+        </div>
+        <div class="col-sm-6 col-md-4" style="padding: 0" id="portfolioframe">
+            <a href="portfolio/wwe">
+                <picture>
+                    <source srcset="/images/home/tile-bos.webp" type="image/webp">
+                    <img class="img-fluid lazyload" id="portfolioimage" src="/images/home/tile-bos.jpg"></picture>
+            </a>
+        </div>
+        <div class="col-sm-6 col-md-4" style="padding: 0" id="portfolioframe">
+            <a href="portfolio/wwe">
+                <picture>
+                    <source srcset="/images/home/tile-alexa.webp" type="image/webp">
+                    <img class="img-fluid lazyload" id="portfolioimage" src="/images/home/tile-alexa.jpg"></picture>
+            </a>
+        </div>
+        <div class="col-sm-6 col-md-4" style="padding: 0" id="portfolioframe">
+            <a href="portfolio/wwe">
                 <picture>
                     <source srcset="/images/home/tile-accessibility.webp" type="image/webp">
-                    <source srcset="/images/home/tile-accessibility.jpg" type="image/jpeg">
-                    <img style="width:100%" src="/images/home/tile-accessibility.jpg"
-                        alt="YouView accessibility project tile">
+                    <img class="img-fluid lazyload" id="portfolioimage" src="/images/home/tile-accessibility.jpg">
                 </picture>
             </a>
         </div>
-
-        <!-- <div class="col-sm-6 col-md-4" id="portfolioimage" style="padding: 0"> <a href="/portfolio/pressadverts/" > <div class="overlay"> </div> <picture> <source srcset="/images/home/tile-press.webp" type="image/webp"> <source
-      srcset="/images/home/tile-press.jpg" type="image/jpeg"> <img style="width:100%" src="/images/home/tile-press.jpg" alt="Alt Text!"> </picture> </a> </div> -->
-
-        <div class="animate-pop-in col-sm-6 col-md-4" id="portfolioimage" style="padding: 0">
-
-            <a href="/portfolio/dancestar-party/">
-                <div class="overlay">
-                    <div class="overlaytext">
-                        <h3 style="COLOR: white" class="text-center">Everybody Dance</h3>
-                        <p class="text-muted text-center">Competitive rhythm video-game</p>
-                    </div>
-                </div>
-                <picture>
-                    <source srcset="/images/home/tile-dancestar.webp" type="image/webp">
-                    <source srcset="/images/home/tile-dancestar.jpg" type="image/jpeg">
-                    <img style="width:100%" src="/images/home/tile-dancestar.jpg" alt="Dancestar project tile">
-                </picture>
-            </a>
-        </div>
-
     </div>
 </div>
 
@@ -319,7 +233,7 @@ padding-top: 2em;">
                     </div>
                 </div>
                 <div class="col-md-2 col-sm-12 offset-md-2 "><img src="/Logo.svg"
-                        class="img-fluid d-none d-md-block pull-xs-left" style="width:50%">
+                        class="lazyload img-fluid d-none d-md-block pull-xs-left" style="width:50%">
                     <p class="text-muted " style="font-size: 12px">Kieran Shalloo Design Ltd.
                         <br />&copy; 2021 All rights reserved.</p>
                 </div>
