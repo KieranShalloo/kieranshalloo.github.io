@@ -116,7 +116,7 @@ a:hover {
     }
 }
 
-. {
+.animate-pop-in {
     animation: pop-in .6s cubic-bezier(0, 0.9, 0.3, 1.2) forwards;
     opacity: 0;
 }
@@ -127,6 +127,7 @@ a:hover {
 
 .header-subtitle {
     animation-delay: 1s;
+
 }
 
 .image-animation {
@@ -317,7 +318,7 @@ h3 {
     font-size: clamp(1.5rem, 1.1250rem + 1.6667vw, 2rem);
     line-height: 1.23;
     text-align: left;
-    font-weight: 300;
+    font-weight: 500;
 
 }
 
@@ -338,7 +339,7 @@ h5 {
 
 h6 {
     font-family: 'Rubik', sans-serif;
-    font-size: clamp(1.125rem, 1.0313rem + 0.4167vw, 1.25rem);
+    font-size: clamp(1rem, 1.0313rem + 0.4167vw, 1.25rem);
     font-weight: 700;
 }
 
