@@ -1,7 +1,7 @@
 html,
 body {
     overflow-x: hidden;
-    font-family: 'Muli', sans-serif;
+    font-family: 'Open-sans, sans-serif';
 }
 
 
@@ -116,7 +116,7 @@ a:hover {
     }
 }
 
-.  {
+. {
     animation: pop-in .6s cubic-bezier(0, 0.9, 0.3, 1.2) forwards;
     opacity: 0;
 }
@@ -298,59 +298,59 @@ ul.social-network li {
 ------------------------------------*/
 
 h1 {
-    font-family: 'Exo', sans-serif;
-    font-size: clamp(2.5rem, 2.4194rem + 2.5806vw, 5rem);
-    font-weight: 600;
+    font-family: 'Rubik', sans-serif;
+    font-size: clamp(4rem, 2.5000rem + 6.6667vw, 6rem);
+    font-weight: 700;
 }
 
 h2 {
-    font-family: 'Catamaran', sans-serif;
-    font-size: clamp(2.2rem, 1.7097rem + 1.2903vw, 3rem);
+    font-family: 'Rubik', sans-serif;
+    font-size: clamp(2rem, 1.4375rem + 2.5000vw, 2.75rem);
     line-height: 1.23;
     text-align: left;
-    font-weight: 500;
-    font-style: normal;
+    font-weight: 300;
+
 }
 
 h3 {
-    font-family: 'Catamaran', sans-serif;
-    font-size: clamp(2rem, 1.2097rem + 1.2903vw, 2.8rem);
+    font-family: 'Rubik', sans-serif;
+    font-size: clamp(1.5rem, 1.1250rem + 1.6667vw, 2rem);
     line-height: 1.23;
     text-align: left;
-    font-weight: 400;
-    font-style: normal;
+    font-weight: 300;
+
 }
 
 h4 {
-    font-family: 'Catamaran', sans-serif;
-    font-size: clamp(1.5rem, 0.9677rem + 1.0323vw, 2.2rem);
+    font-family: 'Rubik', sans-serif;
+    font-size: clamp(1.375rem, 1.0938rem + 1.2500vw, 1.75rem);
     line-height: 2rem;
     text-align: left;
-    font-weight: 400;
-    font-style: normal;
+    font-weight: 500;
+
 }
 
 h5 {
-    font-family: 'Catamaran', sans-serif;
-    font-size: clamp(1.5rem, 0.8548rem + 0.6452vw, 1.8rem);
-    font-weight: 400;
+    font-family: 'Rubik', sans-serif;
+    font-size: clamp(1.25rem, 1.0625rem + 0.8333vw, 1.5rem);
+    font-weight: 500;
 }
 
 h6 {
-    font-family: 'Catamaran', sans-serif;
-    font-size: clamp(1.2rem, 0.9419rem + 0.2581vw, 1.5rem);
-    font-weight: 300;
+    font-family: 'Rubik', sans-serif;
+    font-size: clamp(1.125rem, 1.0313rem + 0.4167vw, 1.25rem);
+    font-weight: 700;
 }
 
 p {
-    font-family: 'Muli', sans-serif;
-    font-size: clamp(1rem, 0.9419rem + 0.2581vw, 1.2rem);
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1rem;
     line-height: 1.6rem;
     font-weight: 400;
 }
 
 li {
-    font-family: 'Muli', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     font-size: 1rem;
     line-height: 1.4rem;
     font-weight: 500;
