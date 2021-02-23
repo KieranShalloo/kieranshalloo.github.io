@@ -5,6 +5,7 @@
     <title>Kieran Shalloo Design Ltd</title>
 
     <!-- Required meta tags -->
+     <link rel="icon" type="image/svg+xml" href="/Logo.svg">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description"
@@ -17,8 +18,9 @@
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
 
     <!-- Local CSS -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
     <link
-        href="https://fonts.googleapis.com/css2?family=Catamaran:wght@300;400;500&family=Exo:wght@500;700;900&family=Muli:wght@400;500&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Rubik:wght@300;500;700&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="/webstyle.css">
 
@@ -86,10 +88,10 @@
         </div>
     </nav>
 
-
+    <!-- 
     <div class="containerfluid " style="background-color: rgba(0, 153, 153,1);">
 
-        <div class="container" style="margin: 5% auto; padding: 3% 0;">
+        <div class="container" style="margin: 5% auto; padding: 5% auto;">
 
             <div>
                 <div class="row  " style="animation-delay: .25s;">
@@ -110,8 +112,29 @@
             </div>
         </div>
     </div>
-    <div class=" right  header-slant"></div>
+    <div class=" right  header-slant"></div> -->
 
+
+    <div class="containerfluid containerfluid-fluid  bg-ksd"
+        style="height:107vh;margin-bottom:0;z-index: -1; position: sticky;">
+
+        <div class="container">
+
+            <div class="row align-items-center">
+                <div id="title" class="col-md-10 overlaytext">
+                    <h1 class="text-center header-title text-white ">Shalloo Design</h1>
+
+                    <h4 class=" text-center header-subtitle text-white "> User Experience
+                        design & Illustration crafted remotely in London, England.</h4>
+                    <h5 class="text-center header-subtitle text-white " style="padding-top:2em;">
+                        10 years of experience working with national and international clients<br> and brands on
+                        award-winning projects across the world.
+                    </h5>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class=" right  header-slant"></div>
     <!-- Clients -->
 
     <div class="containerfluid" style="margin: auto 2%;">
@@ -207,12 +230,19 @@
     <div class="containerfluid" style="padding-bottom: 0%;">
 
         <!-- WWE Project -->
-        <div class="col-12 ">
 
 
-            <div id="portfolioframe">
-                <a href="portfolio/wwe">
-                    <img class="img-fluid " style="margin: 0;" id="portfolioimage" src="\images\wwe\wweHeader.jpg">
+
+
+
+        <div>
+            <div class="col" style="padding: 0" id="portfolioframe">
+                <a href="/portfolio/wwe">
+                    <picture>
+                        <!-- <source srcset="/images/wwe/wweHeader.webp" type="image/webp"> -->
+                        <source srcset="/images/wwe/wweHeader.jpg" type="image/jpg">
+                        <img class="img-fluid lazyload" style="width: 100%;" style="width: 100%;" id="portfolioimage"
+                            src="/images/wwe/wweHeader.jpg"></picture>
                 </a>
             </div>
             <div class="container" style="vertical-align: baseline; margin-top: 1%; margin-bottom:5%;">
@@ -225,102 +255,144 @@
                 </div>
             </div>
         </div>
-    </div>
 
+        <!-- YouView Project -->
 
-    <!-- YouView Project -->
-    <div class="col-12 ">
-
-
-        <div id="portfolioframe">
-            <a href="portfolio/nextgen">
-                <img class="img-fluid " style="margin: 0;" id="portfolioimage" src="/images/home/NGYV.jpg">
-            </a>
-        </div>
-        <div class="container" style="vertical-align: baseline; margin-top: 1%; margin-bottom:5%;">
-            <div class="row">
-                <div class="col">
-                    <h2 class="text-center">Next Generation YouView</h2>
-                    <h5 class="text-center">Powering BT and TalkTalk TV Platforms</h5>
-
-                </div>
+        <div>
+            <div class="col" style="padding: 0" id="portfolioframe">
+                <a href="/portfolio/wwe">
+                    <picture>
+                        <source srcset="/images/home/NGYV.webp" type="image/webp">
+                        <source srcset="/images/home/NGYV.jpg" type="image/jpg">
+                        <img class="img-fluid lazyload" style="width: 100%;" style="width: 100%;" id="portfolioimage"
+                            src="/images/home/NGYV.jpg
+                            "></picture>
+                </a>
             </div>
-        </div>
-    </div>
-    </div>
-
-
-
-
-
-    <!-- VM Project -->
-    <div class="col-12 ">
-
-
-        <div id="portfolioframe">
-            <a href="portfolio/virgin">
-                <img class="img-fluid " style="background-color: rgba(95, 40, 120, 1); margin: 0;" id="portfolioimage"
-                    src="/images\home\VM.jpg">
-            </a>
-        </div>
-        <div class="container" style="vertical-align: baseline; margin-top: 1%; margin-bottom:5%;">
-            <div class="row">
-                <div class="col">
-                    <h2 class="text-center">Virgin Media</h2>
-                    <h5 class="text-center">Creating digital care solutions for the user</h5>
-
-                </div>
-            </div>
-        </div>
-    </div>
-    </div>
-
-
-
-    <div class="containerfluid" style="padding-top: 0%;">
-        <Div class="row">
-
-            <div class="col-lg-6 ">
-
-
-                <div id="portfolioframe">
-                    <a href="portfolio/sonyandroid">
-                        <img class="img-fluid " style="width: 100vw; margin: 0;" id="portfolioimage"
-                            src="/images\home\tile-sony.jpg">
-                    </a>
-                </div>
-                <div class="container" style="vertical-align: baseline; margin-top: 1%; margin-bottom:5%;">
-
-                    <div class="col">
-                        <h2 class="text-center">Sony Android</h2>
-                        <h5 class="text-center">The TV home on Sony for the UK</h5>
-
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-lg-6 ">
-
-
-                <div id="portfolioframe">
-                    <a href="portfolio/netflix">
-                        <img class="img-fluid" style="width: 100vw; margin: 0;" id="portfolioimage"
-                            src="/images\home\tile-netflix.jpg">
-                    </a>
-                </div>
-                <div class=" container" style="vertical-align: baseline; margin-top: 1%; margin-bottom:5%;">
-
+            <div class="container" style="vertical-align: baseline; margin-top: 1%; margin-bottom:5%;">
+                <div class="row">
                     <div class="col">
                         <h2 class="text-center">Next Generation YouView</h2>
-                        <h5 class="text-center">Senior Product Designer</h5>
+                        <h5 class="text-center">Powering BT and TalkTalk TV Platforms</h5>
 
                     </div>
                 </div>
             </div>
-
-
         </div>
-    </div>
+
+
+
+
+
+        <!-- VM Project -->
+
+        <div>
+            <div class="col" style="padding: 0" id="portfolioframe">
+                <a href="portfolio/virgin">
+                    <picture>
+                        <!-- <source srcset="/images/home/VM.webp" type="image/webp"> -->
+                        <source srcset="/images/home/VM.jpg" type="image/jpg">
+                        <img class="img-fluid lazyload" style="width: 100%;" style="width: 100%;" id="portfolioimage"
+                            src="/images/home/VM.jpg"></picture>
+                </a>
+            </div>
+            <div class="container" style="vertical-align: baseline; margin-top: 1%; margin-bottom:5%;">
+                <div class="row">
+                    <div class="col">
+                        <h2 class="text-center">Virgin Media</h2>
+                        <h5 class="text-center">Creating digital care solutions for the user</h5>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+        <div class="containerfluid" style="padding-top: 0%;">
+            <Div class="row">
+
+                <div class="col-md-6 ">
+
+
+
+                    <div>
+                        <div class="col" style="padding: 0" id="portfolioframe">
+                            <a href="portfolio/sonyandroid">
+                                <picture>
+                                    <source srcset="/images/home/tile-sony.webp" type="image/webp">
+                                    <source srcset="/images/home/tile-sony.jpg" type="image/jpg">
+                                    <img class="img-fluid lazyload" style="width: 100%;" style="width: 100%;"
+                                        id="portfolioimage" src="/images/home/tile-sony.jpg"></picture>
+                            </a>
+                        </div>
+                        <div class="container" style="vertical-align: baseline; margin-top: 1%; margin-bottom:5%;">
+                            <div class="row">
+                                <div class="col">
+                                    <h2 class="text-center">Sony Android</h2>
+                                    <h5 class="text-center">The TV home on Sony for the UK</h5>
+
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 ">
+
+
+
+                    <div>
+                        <div class="col" style="padding: 0" id="portfolioframe">
+                            <a href="portfolio/netflix">
+                                <picture>
+                                    <source srcset="/images/home/tile-netflix.webp" type="image/webp">
+                                    <source srcset="/images/home/tile-netflix.jpg" type="image/jpg">
+                                    <img class="img-fluid lazyload" style="width: 100%;" style="width: 100%;"
+                                        id="portfolioimage" src="/images/home/tile-netflix.jpg"></picture>
+                            </a>
+                        </div>
+                        <div class="container" style="vertical-align: baseline; margin-top: 1%; margin-bottom:5%;">
+                            <div class="row">
+                                <div class="col">
+                                    <h2 class="text-center">Sony Android</h2>
+                                    <h5 class="text-center">The TV home on Sony for the UK</h5>
+
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+                <div class="col-md-6 ">
+
+
+                    <div id="portfolioframe">
+                        <a href="portfolio/netflix">
+                            <img class="img-fluid" style="width: 100vw; margin: 0;" id="portfolioimage"
+                                src="/images/home/tile-netflix.jpg">
+                        </a>
+                    </div>
+                    <div class=" container" style="vertical-align: baseline; margin-top: 1%; margin-bottom:5%;">
+
+                        <div class="col">
+                            <h2 class="text-center">Next Generation YouView</h2>
+                            <h5 class="text-center">Senior Product Designer</h5>
+
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
     </div>
 
 
