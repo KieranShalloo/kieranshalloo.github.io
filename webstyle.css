@@ -13,14 +13,12 @@ a:hover {
     padding: 0 !important;
 }
 
-.containerfluid {
-    padding-top: 4em;
-    padding-bottom: 4em;
-}
+
 
 .fullwidthimage {
     padding: 0 !important;
     margin: 0 !important;
+    width: 100vw;
 }
 
 .cover {
