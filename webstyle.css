@@ -1,7 +1,7 @@
 html,
 body {
     overflow-x: hidden;
-    font-family: 'Open-sans, sans-serif';
+    font-family: 'Open Sans', sans-serif;
 }
 
 
@@ -13,7 +13,9 @@ a:hover {
     padding: 0 !important;
 }
 
-
+.containerfluid {
+    margin: 3rem 0;
+}
 
 .fullwidthimage {
     padding: 0 !important;
@@ -364,43 +366,6 @@ li {
     background-color: #009999 !important;
 }
 
-.btn-ksd {
-    color: #fff;
-    background-color: #009999;
-    border-color: #009999;
-}
-
-.btn-ksd:hover {
-    color: #fff;
-    background-color: #007575;
-    border-color: #006565;
-}
-
-.btn-ksd:focus,
-.btn-ksd.focus {
-    box-shadow: 0 0 0 0.2rem rgba(0, 153, 153, 0.5);
-}
-
-.btn-ksd.disabled,
-.btn-ksd:disabled {
-    color: #fff;
-    background-color: #009999;
-    border-color: #009999;
-}
-
-.btn-ksd:not(:disabled):not(.disabled):active,
-.btn-ksd:not(:disabled):not(.disabled).active,
-.show>.btn-ksd.dropdown-toggle {
-    color: #fff;
-    background-color: #006565;
-    border-color: #005656;
-}
-
-.btn-ksd:not(:disabled):not(.disabled):active:focus,
-.btn-ksd:not(:disabled):not(.disabled).active:focus,
-.show>.btn-ksd.dropdown-toggle:focus {
-    box-shadow: 0 0 0 0.2rem rgba(0, 153, 153, 0.5);
-}
 
 .btn-outline-ksd {
     color: #009999;
@@ -437,13 +402,4 @@ li {
 .btn-outline-ksd:not(:disabled):not(.disabled).active:focus,
 .show>.btn-outline-ksd.dropdown-toggle:focus {
     box-shadow: 0 0 0 0.2rem rgba(0, 153, 153, 0.5);
-}
-
-.text-ksd {
-    color: #009999 !important;
-}
-
-a.text-ksd:hover,
-a.text-ksd:focus {
-    color: #006565 !important;
 }

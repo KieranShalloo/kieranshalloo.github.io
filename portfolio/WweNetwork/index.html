@@ -14,10 +14,9 @@
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
-    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
 
     <!-- Local CSS -->
-    <link rel="preload" as="image" href="/images/wwe/wweheader1920.jpg">
+    <link rel="preload" as="image" href="/images/wwe/wweheader768.jpg">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Rubik:wght@300;500;700&display=swap"
         rel="stylesheet">
@@ -25,22 +24,7 @@
 
 
     <!-- Hotjar Tracking Code for www.kieranshalloodesign.com -->
-    <script>
-        (function (h, o, t, j, a, r) {
-            h.hj = h.hj || function () {
-                (h.hj.q = h.hj.q || []).push(arguments)
-            };
-            h._hjSettings = {
-                hjid: 1841559,
-                hjsv: 6
-            };
-            a = o.getElementsByTagName('head')[0];
-            r = o.createElement('script');
-            r.async = 1;
-            r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
-            a.appendChild(r);
-        })(window, document, 'https://static.hotjar.com/c/hotjar-', '.js?sv=');
-    </script>
+
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async="async" src="https://www.googletagmanager.com/gtag/js?id=UA-28629869-2"></script>
@@ -113,6 +97,10 @@
         </div>
     </div>
 
+
+
+
+
     <!-- Project Header-->
     <div class="containerfluid">
         <div class="container">
@@ -154,20 +142,23 @@
     </div>
 
     <!-- Image comparisons-->
-    <div class="containerfluid ">
+    <div class="containerfluid fullwidthimage">
         <picture>
-            <!-- <source srcset="/images/wwe/featured.webp" type="image/webp"> -->
             <source
-                srcset="/images/wwe/featured414.jpg 414w, /images/wwe/featured768.jpg 768w, /images/wwe/featured1920.jpg 1920w,"
+                srcset="/images/wwe/featured375.webp 375w, /images/wwe/featured768.webp 768w, /images/wwe/featured1920.webp 1920w,"
+                type="image/webp">
+            <source
+                srcset="/images/wwe/featured375.jpg 375w, /images/wwe/featured768.jpg 768w, /images/wwe/featured1920.jpg 1920w,"
                 type="image/jpg ">
-            <img decoding="async" class="img-fluid fullwidthimage" loading="lazy" src="/images/wwe/featured414.jpg"
-                alt="WWE Live TV"></picture>
+            <img decoding="async" class="img-fluid " loading="lazy" src="/images/wwe/featured375.webp"
+                alt="WWE Live TV">
+        </picture>
     </div>
 
 
     <!-- Main Content -->
     <!-- Exclusive Content -->
-    <div class="containerfluid d-none d-lg-block" style=" background-color: #D0021B;">
+    <div class="containerfluid py-5 my-0 d-none d-lg-block" style=" background-color: #D0021B;">
         <div class=" container">
             <div class="row">
                 <div class="col-md-8 offset-md-2">
@@ -203,7 +194,7 @@
         </div>
     </div>
 
-    <div class="containerfluid d-block d-lg-none" style=" background-color: #D0021B;">
+    <div class="containerfluid py-5 my-0  d-block d-lg-none" style=" background-color: #D0021B;">
         <div class=" container">
 
 
@@ -275,11 +266,16 @@
         </div>
         <div>
             <picture>
-                <source srcset="/images/wwe/WWEStyleGuide.webp" type="image/webp">
-                <source srcset="/images/wwe/WWEStyleGuide.jpg" type="image/jpg">
-                <img decoding="async" class="img-fluid fullwidthimage" loading="lazy"
-                    src="/images/wwe/WWEStyleGuide.webp" alt="Styleguide for WWE Network">
+                <source media="(max-width: 414px)" srcset="/images/wwe/WWEStyleGuide375.webp 375w," type="image/webp">
+                <source media="(max-width: 1024px)" srcset="/images/wwe/WWEStyleGuide768.webp 768w," type="image/webp">
+                <source media="(min-width: 1025px)" srcset="/images/wwe/WWEStyleGuide1920.webp 1920w,"
+                    type="image/webp">
+                <source media="(max-width: 414px)" srcset="/images/wwe/WWEStyleGuide375.jpg 375w," type="image/jpg">
+                <source media="(max-width: 1024px)" srcset="/images/wwe/WWEStyleGuide768.jpg 768w," type="image/jpg">
+                <source media="(min-width: 1025px)" srcset="/images/wwe/WWEStyleGuide1920.jpg 1920w," type="image/jpg">
+                <img decoding="async" class="img-fluid " loading="lazy" src="/images/wwe/WWEStyleGuide768.jpg">
             </picture>
+
         </div>
     </div>
 
@@ -386,11 +382,13 @@
     <div class="containerfluid" style="background:#c5c5c5;">
         <div>
             <picture>
-                <source
-                    srcset="/images/wwe/tileAngle414.jpg 414w, /images/wwe/tileAngle768.jpg 768w, /images/wwe/tileAngle1920.jpg 1920w,"
-                    type="image/jpg">
-                <img decoding="async" class="img-fluid fullwidthimage" loading="lazy"
-                    src="/images/wwe/tileAngle414.jpg">
+                <source media="(max-width: 414px)" srcset="/images/wwe/tile375.webp 375w," type="image/webp">
+                <source media="(max-width: 1024px)" srcset="/images/wwe/tile768.webp 768w," type="image/webp">
+                <source media="(min-width: 1025px)" srcset="/images/wwe/tile1920.webp 1920w," type="image/webp">
+                <source media="(max-width: 414px)" srcset="/images/wwe/tile375.jpg 375w," type="image/jpg">
+                <source media="(max-width: 1024px)" srcset="/images/wwe/tile768.jpg 768w," type="image/jpg">
+                <source media="(min-width: 1025px)" srcset="/images/wwe/tile1920.jpg 1920w," type="image/jpg">
+                <img decoding="async" class="img-fluid " loading="lazy" src="/images/wwe/tile768.jpg">
             </picture>
         </div>
 
@@ -616,7 +614,6 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous">
     </script>
-    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
 </body>
 
 </html>
