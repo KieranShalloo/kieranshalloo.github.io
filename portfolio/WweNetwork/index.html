@@ -146,15 +146,16 @@
 
     <!-- Image comparisons-->
     <div class="containerfluid fullwidthimage">
+
+
         <picture>
-            <source
-                srcset="/images/wwe/featured375.webp 375w, /images/wwe/featured768.webp 768w, /images/wwe/featured1920.webp 1920w,"
-                type="image/webp">
-            <source
-                srcset="/images/wwe/featured375.jpg 375w, /images/wwe/featured768.jpg 768w, /images/wwe/featured1920.jpg 1920w,"
-                type="image/jpg ">
-            <img decoding="async" class="img-fluid " loading="lazy" src="/images/wwe/featured375.webp"
-                alt="WWE Live TV">
+            <source media="(max-width: 414px)" srcset="/images/wwe/featured375.webp 375w," type="image/webp">
+            <source media="(max-width: 1024px)" srcset="/images/wwe/featured768.webp 768w," type="image/webp">
+            <source media="(min-width: 1025px)" srcset="/images/wwe/featured1920.webp 1920w," type="image/webp">
+            <source media="(max-width: 414px)" srcset="/images/wwe/featured375.jpg 375w," type="image/jpg">
+            <source media="(max-width: 1024px)" srcset="/images/wwe/featured768.jpg 768w," type="image/jpg">
+            <source media="(min-width: 1025px)" srcset="/images/wwe/featured1920.jpg 1920w," type="image/jpg">
+            <img decoding="async" class="img-fluid " loading="lazy" src="/images/wwe/featured768.jpg">
         </picture>
     </div>
 
