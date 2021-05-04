@@ -25,6 +25,7 @@
         rel="stylesheet">
 
     <link rel="preload" href="/webstyle.css" as="style">
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
     <link rel="stylesheet" type="text/css" href="/webstyle.css">
     <!-- Hotjar Tracking Code for www.kieranshalloodesign.com -->
 
@@ -327,8 +328,9 @@
 
             <div class="row">
                 <div class="col-md-6">
-                    <div class="embed-responsive embed-responsive-16by9">
-                        <video loop="loop" muted="muted" class="embed-responsive-item">
+                    <div class="embed-responsive embed-responsive-16by" style="max-width:inherit;">
+                        <video autoplay loop="loop" muted="muted" class="embed-responsive-item"
+                            style="max-width:inherit;">
                             <source src="/images/wwe/videos/tile_b.mp4" type="video/mp4">
                             Sorry, your browser doesn't support embedded videos.</video>
                         <figcaption class="figure-caption text-center">Zoom image on highlight.</figcaption>
@@ -336,14 +338,19 @@
                 </div>
 
                 <div class="col-md-6">
-                    <lottie-player src="https://assets2.lottiefiles.com/private_files/lf30_tddhibt9.json"
-                        background="transparent" speed="1" loop="loop"></lottie-player>
+                    <lottie-player src="https://assets5.lottiefiles.com/private_files/lf30_tddhibt9.json"
+                        background="transparent" speed="1" loop="loop" autoplay="autoplay"></lottie-player>
+                </div>
+                <div class="col-md-6">
+                    <lottie-player src="https://assets2.lottiefiles.com/private_files/lf30_bxvnt7dp.json"
+                        background="transparent" speed="1" loop="loop" autoplay="autoplay"></lottie-player>
                 </div>
 
 
                 <div class="col-md-6">
-                    <div class="embed-responsive embed-responsive-16by9">
-                        <video loop="loop" muted="muted" class="embed-responsive-item">
+                    <div class="embed-responsive embed-responsive-16by" style="max-width:inherit;">
+                        <video autoplay loop="loop" muted="muted" class="embed-responsive-item"
+                            style="max-width:inherit;">
                             <source src="/images/wwe/videos/tile_a.mp4" type="video/mp4">
                             Sorry, your browser doesn't support embedded videos.</video>
                         <figcaption class="figure-caption text-center">Static image on highlight.</figcaption>
@@ -355,7 +362,7 @@
 
     <!-- Unified Experience -->
     <div class="containerfluid cover"
-        style="height: auto; background-size: cover;     background-position: 100% 100%; background-image: linear-gradient(rgba(0, 0, 0, .3), rgba(0, 0, 0, .6)), url('/images/wwe/phonetile1920.jpg')">
+        style="height: auto; background-size: cover;     background-position: 100% 100%; background-image: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .8)), url('/images/wwe/phonetile1920.jpg')">
         <div class="container py-5">
             <div class="row">
                 <div class="col-md-8 offset-md-2">
@@ -427,11 +434,12 @@
                 <div class="col-md-4 offset-md-2">
                     <picture>
                         <source srcset="/images/wwe/SSPhone.webp" type="image/webp">
-                        <source srcset="/images/wwe/SSP hone.jpg" type="image/jpg">
-                        <img decoding="async" cloading="lazy" src="/images/wwe/SSPhone.jpg"
+                        <source srcset="/images/wwe/SSPhone.jpg" type="image/jpg">
+                        <img decoding="async" class="img-fluid mb-3" loading="lazy" src="/images/wwe/SSPhone.jpg"
                             alt="WWE Superstars screen in phone"></picture>
                     <h5 style="text-align: center">WWE Superstar screen</h5>
                 </div>
+
                 <div class="col-md-4 ">
                     <picture>
                         <source srcset="/images/wwe/SSPhoneExtended.webp" type="image/webp">
@@ -494,15 +502,16 @@
     </div>
 
     <!-- Video -->
-    <div class="containerfluid d-none d-md-block" style="background-color: #833CEC">
-        <div class="embed-responsive embed-responsive-16by9">
-            <video style="width:100vw" loop="loop" autoplay="none" muted="muted" class="embed-responsive-item">
-                <source src="/images/wwe/videos/tv.webm" type="video/webm">
-                <source src="/images/wwe/videos/tv.mp4" type="video/mp4">
 
-                Sorry, your browser doesn't support embedded videos.</video>
-        </div>
+
+    USED EVERNOTE PASSWORD FOR VIMEO
+
+    <div class="video-container">
+        <iframe
+            src="https://player.vimeo.com/video/544983119?title=0&amp;byline=0&amp;portrait=0&amp;autoplay=1&amp;loop=1&amp;autopause=0&amp;color=009999"
+            frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
     </div>
+
 
     <!-- Awards -->
     <div class="containerfluid" style="background-color: #833CEC">
@@ -618,6 +627,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous">
     </script>
+
 </body>
 
 </html>
