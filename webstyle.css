@@ -5,6 +5,43 @@ body {
 }
 
 
+/*------------------------------------- Header images ------------------------------------*/
+
+.vmheader {
+
+    background-image: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .8)), url("/images/home/VMheader414.jpg");
+}
+
+
+.wweheader {
+
+    background-image: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .8)), url("/images/home/wweheader414.webp"), url("/images/home/wweheader414.jpg");
+}
+
+
+
+
+@media (min-width: 25.875em) {
+    .vmheader {
+        background-image: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .8)), url("/images/home/VMheader768.jpg");
+    }
+
+    .wweheader {
+        background-image: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .8)), url("/images/home/wweheader768.webp"), url("/images/home/wweheader768.jpg");
+    }
+}
+
+@media (min-width: 80em) {
+    .vmheader {
+        background-image: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .8)), url("/images/home/VMheader1920.jpg");
+    }
+
+    .wweheader {
+        background-image: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .8)), url("/images/home/wweheader1920.webp"), url("/images/home/wweheader1920.jpg");
+    }
+}
+
+
 /*------------------------------------
 - Font sizes
 ------------------------------------*/
