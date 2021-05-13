@@ -9,7 +9,7 @@ body {
 
 .vmheader {
 
-    background-image: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .8)), url("/images/home/VMheader414.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .8)), url("/images/home/VMheader414.webp"), url("/images/home/VMheader414.jpg");
 }
 
 
@@ -19,25 +19,37 @@ body {
 }
 
 
+.sonyheader {
+
+    background-image: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .8)), url("/images/home/sonyheader414.webp"), url("/images/home/sonyheader414.jpg");
+}
 
 
 @media (min-width: 25.875em) {
     .vmheader {
-        background-image: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .8)), url("/images/home/VMheader768.jpg");
+        background-image: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .8)), url("/images/home/VMheader768.webp"), url("/images/home/VMheader768.jpg");
     }
 
     .wweheader {
         background-image: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .8)), url("/images/home/wweheader768.webp"), url("/images/home/wweheader768.jpg");
     }
+
+    .sonyheader {
+        background-image: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .8)), url("/images/home/sonyheader768.webp"), url("/images/home/sonyheader768.jpg");
+    }
 }
 
 @media (min-width: 80em) {
     .vmheader {
-        background-image: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .8)), url("/images/home/VMheader1920.jpg");
+        background-image: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .8)), url("/images/home/VMheader1920.webp"), url("/images/home/VMheader1920.jpg");
     }
 
     .wweheader {
         background-image: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .8)), url("/images/home/wweheader1920.webp"), url("/images/home/wweheader1920.jpg");
+    }
+
+    .sonyheader {
+        background-image: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .8)), url("/images/home/sonyheader1920.webp"), url("/images/home/sonyheader1920.jpg");
     }
 }
 
