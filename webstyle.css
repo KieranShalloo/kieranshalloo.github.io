@@ -24,6 +24,30 @@ body {
     background-image: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .8)), url("/images/home/sonyheader414.webp"), url("/images/home/sonyheader414.jpg");
 }
 
+.YVappheader {
+
+    background-image: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .8)), url("/images/home/YVappheader414.webp"), url("/images/home/YVAppheader414.jpg");
+}
+
+.YVheader {
+
+    background-image: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .8)), url("/images/home/YVheader414.webp"), url("/images/home/YVheader414.jpg");
+}
+
+.Creatureheader {
+
+    background-image: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .8)), url("/images/home/Creatureheader414.webp"), url("/images/home/Creatureheader414.jpg");
+}
+
+.Netflixheader {
+
+    background-image: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .8)), url("/images/home/Netflixheader414.webp"), url("/images/home/Netflixheader414.jpg");
+}
+
+.YVHCheader {
+
+    background-image: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .8)), url("/images/home/Netflixheader414.webp"), url("/images/home/Netflixheader414.jpg");
+}
 
 @media (min-width: 25.875em) {
     .vmheader {
@@ -36,6 +60,21 @@ body {
 
     .sonyheader {
         background-image: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .8)), url("/images/home/sonyheader768.webp"), url("/images/home/sonyheader768.jpg");
+    }
+
+    .YVappheader {
+
+        background-image: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .8)), url("/images/home/YVappheader768.webp"), url("/images/home/YVAppheader768.jpg");
+    }
+
+    .YVheader {
+
+        background-image: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .8)), url("/images/home/YVheader768.webp"), url("/images/home/YVheader768.jpg");
+    }
+
+    .Netflixheader {
+
+        background-image: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .8)), url("/images/home/Netflixheader768.webp"), url("/images/home/Netflixheader768.jpg");
     }
 }
 
@@ -51,7 +90,23 @@ body {
     .sonyheader {
         background-image: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .8)), url("/images/home/sonyheader1920.webp"), url("/images/home/sonyheader1920.jpg");
     }
+
+    .YVappheader {
+
+        background-image: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .8)), url("/images/home/YVappheader1920.webp"), url("/images/home/YVAppheader1920.jpg");
+    }
+
+    .YVheader {
+
+        background-image: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .8)), url("/images/home/YVheader1920.webp"), url("/images/home/YVheader1920.jpg");
+    }
+
+    .Netflixheader {
+
+        background-image: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .8)), url("/images/home/Netflixheader1920.webp"), url("/images/home/Netflixheader1920.jpg");
+    }
 }
+
 
 
 /*------------------------------------
@@ -156,6 +211,34 @@ a:hover {
     padding: 0;
 }
 
+/* #indeximage:hover .imageoverlay {
+    opacity: 1;
+}
+
+.imageoverlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    margin-left: auto;
+    margin-right: auto;
+    height: auto;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: .25s ease;
+    background-color: rgba(0, 0, 0, 0.85);
+}
+
+.imageoverlaytext {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    color: white;
+    width: 80%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+} */
 
 
 
