@@ -76,6 +76,11 @@ body {
 
         background-image: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .8)), url("/images/home/Netflixheader768.webp"), url("/images/home/Netflixheader768.jpg");
     }
+
+    .Creatureheader {
+
+        background-image: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .8)), url("/images/home/Creatureheader768.webp"), url("/images/home/Creatureheader768.jpg");
+    }
 }
 
 @media (min-width: 80em) {
@@ -104,6 +109,11 @@ body {
     .Netflixheader {
 
         background-image: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .8)), url("/images/home/Netflixheader1920.webp"), url("/images/home/Netflixheader1920.jpg");
+    }
+
+    .Creatureheader {
+
+        background-image: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .8)), url("/images/home/Creatureheader1920.webp"), url("/images/home/Creatureheader1920.jpg");
     }
 }
 
