@@ -12,6 +12,9 @@ body {
     background-image: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .8)), url("/images/home/VMheader414.webp"), url("/images/home/VMheader414.jpg");
 }
 
+.keyboardheader {
+    background-image: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .8)), url("/images/keyboard/Youview-onscreenkeyboard-hero-1920.jpg");
+}
 
 .wweheader {
 
@@ -50,6 +53,10 @@ body {
 }
 
 @media (min-width: 25.875em) {
+    .keyboardheader {
+        background-image: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .8)), url("/images/keyboard/Youview-onscreenkeyboard-hero-1920.jpg");
+    }
+
     .vmheader {
         background-image: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .8)), url("/images/home/VMheader768.webp"), url("/images/home/VMheader768.jpg");
     }
@@ -84,6 +91,10 @@ body {
 }
 
 @media (min-width: 80em) {
+    .keyboardheader {
+        background-image: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .8)), url("/images/keyboard/Youview-onscreenkeyboard-hero-1920.jpg");
+    }
+
     .vmheader {
         background-image: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .8)), url("/images/home/VMheader1920.webp"), url("/images/home/VMheader1920.jpg");
     }
@@ -375,7 +386,7 @@ a:hover {
 
 
 /*------------------------------------
-- Footer 
+- Footer
 ------------------------------------*/
 
 footer {
