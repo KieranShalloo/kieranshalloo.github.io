@@ -447,6 +447,10 @@ ul.social-network li {
     margin: 0 5px;
 }
 
+.list-unstyled
+{
+    text-decoration:none
+}
 
 /* footer social icons */
 
