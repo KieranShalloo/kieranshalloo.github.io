@@ -215,10 +215,7 @@ li {
 /*------------------------------------
 - Elements
 ------------------------------------*/
-a:hover {
-    color: #009999;
-    text-decoration: none;
-}
+
 
 .nopadding {
     padding: 0 !important;
@@ -457,6 +454,10 @@ ul.social-network li {
 
 /* footer social icons */
 
+.navbar .a:hover{
+    color:red
+}
+
 .social-network a.icoInstagram:hover {
     background-color: #3B5998;
 }
@@ -540,6 +541,10 @@ ul.social-network li {
 /*------------------------------------
 - COLOR ksd
 ------------------------------------*/
+
+.colorksd{
+    color: #009999;
+}
 
 .bg-ksd {
     background-color: #009999 !important;
