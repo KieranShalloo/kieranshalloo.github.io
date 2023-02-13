@@ -200,7 +200,7 @@ p {
     line-height: 1.4rem;
     font-weight: 300;
     margin-bottom: 1.5rem;
-   
+
 }
 
 li {
@@ -411,7 +411,7 @@ footer {
 }
 
 footer a {
-    color: #6c757d;
+    color: #343434;
     font-size: 14px;
     transition-duration: 0.2s;
     text-decoration: none;
@@ -454,9 +454,7 @@ ul.social-network li {
 
 /* footer social icons */
 
-.navbar .a:hover{
-    color:red
-}
+
 
 .social-network a.icoInstagram:hover {
     background-color: #3B5998;
@@ -536,7 +534,16 @@ ul.social-network li {
     background-color: #F9F9F9;
 }
 
+.navbar{
+    background-color:#343434
+}
 
+.navbar-light .navbar-nav .nav-link{
+    color:#c4c4c4;
+}
+.navbar-light .navbar-nav .nav-link:hover{
+    color:#fff
+}
 
 /*------------------------------------
 - COLOR ksd
@@ -552,15 +559,15 @@ ul.social-network li {
 
 
 .btn-outline-ksd {
-    color: #46EBE1;
+    color: #c4c4c4;
     background-color: transparent;
-    border-color: #46EBE1;
+    border-color: #c4c4c4;
 }
 
 .btn-outline-ksd:hover {
-    color: #fff;
-    background-color: #46EBE1;
-    border-color: #46EBE1;
+    color: #343434;
+    background-color: #c4c4c4;
+    border-color: #c4c4c4;
 }
 
 .btn-outline-ksd:focus,
@@ -587,7 +594,17 @@ ul.social-network li {
 .show>.btn-outline-ksd.dropdown-toggle:focus {
     box-shadow: 0 0 0 0.2rem rgba(0, 153, 153, 0.5);
 }
+.navbar-light  .navbar-toggler{
+    border:  #46EBE1;
+}
+.navbar-toggler:focus{
+    text-decoration: none;
+    box-shadow: none;
 
+}
+.navbar-light .navbar-toggler-icon{
+   background-image:  url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
 
 /*------------------------------------
 - Video
