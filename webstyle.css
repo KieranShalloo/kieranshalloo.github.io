@@ -241,7 +241,7 @@ li {
 }
 
 #underline {
-    fill: #5FEEAA;
+    fill: #46EBE1;
 }
 
 .gridimage {
@@ -418,7 +418,7 @@ footer a {
 }
 
 footer a:hover {
-    color: #5FEEAA;
+    color: #46EBE1;
     text-decoration: none;
 }
 
@@ -543,24 +543,24 @@ ul.social-network li {
 ------------------------------------*/
 
 .colorksd{
-    color: #5FEEAA;
+    color: #46EBE1;
 }
 
 .bg-ksd {
-    background-color: #5FEEAA !important;
+    background-color: #46EBE1 !important;
 }
 
 
 .btn-outline-ksd {
-    color: #5FEEAA;
+    color: #46EBE1;
     background-color: transparent;
-    border-color: #5FEEAA;
+    border-color: #46EBE1;
 }
 
 .btn-outline-ksd:hover {
     color: #fff;
-    background-color: #5FEEAA;
-    border-color: #5FEEAA;
+    background-color: #46EBE1;
+    border-color: #46EBE1;
 }
 
 .btn-outline-ksd:focus,
@@ -570,7 +570,7 @@ ul.social-network li {
 
 .btn-outline-ksd.disabled,
 .btn-outline-ksd:disabled {
-    color: #5FEEAA;
+    color: #46EBE1;
     background-color: transparent;
 }
 
@@ -578,8 +578,8 @@ ul.social-network li {
 .btn-outline-ksd:not(:disabled):not(.disabled).active,
 .show>.btn-outline-ksd.dropdown-toggle {
     color: #fff;
-    background-color: #5FEEAA;
-    border-color: #5FEEAA;
+    background-color: #46EBE1;
+    border-color: #46EBE1;
 }
 
 .btn-outline-ksd:not(:disabled):not(.disabled):active:focus,
