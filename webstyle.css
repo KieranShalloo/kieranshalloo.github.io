@@ -9,7 +9,7 @@ body {
     overflow-x: hidden;
     font-family: 'Outfit', sans-serif;
    color: var(--light);
-   background-color: var(--dark);
+
 }
 
 .img-fluid {
@@ -231,6 +231,8 @@ li {
 
 .containerfluid {
     padding: 5rem 0;
+    background-color: var(--dark);
+    color: var(--light);
 }
 
 .fullwidthimage {
@@ -328,7 +330,7 @@ li {
 .right.header-slant {
     margin-top: calc(-10vw + 1px);
     border-top: 10vw solid transparent;
-    border-right: 100vw solid white;
+    border-right: 100vw solid var(--dark);
 }
 
 .overlaytext {
