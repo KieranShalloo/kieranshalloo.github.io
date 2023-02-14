@@ -1,14 +1,23 @@
 :root{
     --dark: #343434;
     --accent: #46EBE1;
-    --light: #e2e2e2;
+    --light: #fff7ee;
+    --white: #ebebeb;
+
+    /* brand colours */
+        --youview: #00A6FF;
+        --wwe: #BF011A;
+        --virgin: #5f2878;
+        --sony: #3DDB86;
+        --creature: #49DE8C;
+        --channel4: #AAEB89;
 }
 
 html,
 body {
     overflow-x: hidden;
     font-family: 'Outfit', sans-serif;
-   color: var(--light);
+font-size: 16px;
 
 }
 
@@ -204,10 +213,10 @@ h6 {
 
 p {
     font-family: 'Outfit', sans-serif;
-    font-size: 1.1rem;
-    line-height: 1.4rem;
+    font-size: clamp(1rem, 1.0313rem + 0.4167vw, 1.25rem);
+    line-height: 1.5em;
     font-weight: 300;
-    margin-bottom: 1.5rem;
+    /* margin-bottom: 1.5rem; */
 
 }
 
@@ -231,8 +240,7 @@ li {
 
 .containerfluid {
     padding: 5rem 0;
-    background-color: var(--dark);
-    color: var(--light);
+
 }
 
 .fullwidthimage {
@@ -330,7 +338,7 @@ li {
 .right.header-slant {
     margin-top: calc(-10vw + 1px);
     border-top: 10vw solid transparent;
-    border-right: 100vw solid var(--dark);
+    border-right: 100vw solid white;
 }
 
 .overlaytext {
@@ -552,7 +560,7 @@ ul.social-network li {
     color: var(--light)
 }
 .navbar-light .navbar-nav .nav-link:hover{
-    color:#fff
+    color:var(--accent)
 }
 
 /*------------------------------------
@@ -577,15 +585,15 @@ ul.social-network li {
 
 
 .btn-outline-ksd {
-    color: #c4c4c4;
-    background-color: transparent;
-    border-color: #c4c4c4;
+    color: var(--light);
+    background-color: var(--dark);
+    border-color: var(--light);
 }
 
 .btn-outline-ksd:hover {
-    color: var(--dark);
-    background-color: #c4c4c4;
-    border-color: #c4c4c4;
+    color: var(--accent);
+    background-color: var(--dark);
+    border-color: var(--light);
 }
 
 .btn-outline-ksd:focus,
@@ -602,7 +610,7 @@ ul.social-network li {
 .btn-outline-ksd:not(:disabled):not(.disabled):active,
 .btn-outline-ksd:not(:disabled):not(.disabled).active,
 .show>.btn-outline-ksd.dropdown-toggle {
-    color: #fff;
+    color: var(--white);
     background-color: var(--accent);
     border-color: var(--accent);
 }

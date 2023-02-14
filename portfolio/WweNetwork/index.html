@@ -97,12 +97,12 @@
     </div>
 
     <!-- Project Header-->
-    <div class="containerfluid bg-dark">
+    <div class="containerfluid" style="background-color: var(--dark);">
       <div class="container">
         <div class="row">
           <div class="col-md-6 offset-md-2">
-            <h6 style="color: var(--light)">Brief</h6>
-            <p style="color: var(--light)">
+            <h6 style="color: var(--wwe)">Brief</h6>
+            <p style="color: var(--wwe)">
               WWE relaunched it’s On Demand video service in Q2 of 2019. The app
               showcases live wrestling events as well as the whole past
               catalogue of WWE shows, Original content related to Sports
@@ -118,14 +118,14 @@
           </div>
 
           <div class="col">
-            <h6 style="color: var(--light)">Agency</h6>
-            <p style="color: var(--light)" >Massive Interactive / Deltatre</p>
-            <h6 style="color: var(--light)">Client</h6>
-            <p style="color: var(--light)">World Wrestling Entertainment</p>
-            <h6 style="color: var(--light)">Project Date</h6>
-            <p style="color: var(--light)">2020</p>
-            <h6 style="color: var(--light)">Role</h6>
-            <p style="color: var(--light)">Senior UX/UI Designer (contractor)</p>
+            <h6 style="color: var(--dark)">Agency</h6>
+            <p style="color: var(--dark)" >Massive Interactive / Deltatre</p>
+            <h6 style="color: var(--dark)">Client</h6>
+            <p style="color: var(--dark)">World Wrestling Entertainment</p>
+            <h6 style="color: var(--dark)">Project Date</h6>
+            <p style="color: var(--dark)">2020</p>
+            <h6 style="color: var(--dark)">Role</h6>
+            <p style="color: var(--dark)">Senior UX/UI Designer (contractor)</p>
           </div>
         </div>
       </div>
@@ -181,7 +181,7 @@
       <div class="container">
         <div class="row">
           <div class="col-md-8 offset-md-1">
-            <h2 style="color: var(--light)">Redesign</h2>
+            <h2 style="color: var(--wwe)">Redesign</h2>
           </div>
           <div class="col-md-8 offset-md-2">
             <p style="color: var(--light)">
@@ -265,45 +265,92 @@
             loading="lazy"
             src="/images/wwe/wwe-network-styleguide-768.jpg"
           />
-        </picture> <div class="containerfluid pb-0 bg-dark">
+        </picture>
 
-          <div class="container">
-            <div class="row pb-5">
-        <div class="row">
-          <div class="col-md-4 pb-5">
+            <!-- Large screen -->
+    <div class=" containerfluid">
+      <div class=" container d-none d-md-block  align-items-center">
+          <div class="row pt-5">
+              <div class="col-md-4 text-center" style="padding-bottom: 2rem;">
+                <h4 class="text-center" style="color: var(--light)">Symbols</h4>
+                      <svg width="100" height="8">
+                          <rect style="fill: var(--wwe)" id="underline" rx="4" x="0" y="0" width="100" height="4" />
+                      </svg>
+              </div>
+              <div class="col-md-4 text-center" style="padding-bottom: 2rem;">
+                <h4 class="text-center" style="color: var(--light)">Buttons</h4>
+                      <svg width="100" height="8">
+                        <rect style="fill: var(--wwe)" rx="4" x="0" y="0" width="100" height="4" />
+                      </svg>
+              </div>
+              <div class="col-md-4 text-center" style="padding-bottom: 2rem;">
+                <h4 class="text-center" style="color: var(--light)">Devices</h4>
+                      <svg width="100" height="8">
+                        <rect style="fill: var(--wwe)" id="underline" rx="4" x="0" y="0" width="100" height="4" />
+                      </svg>
+              </div>
+
+          </div>
+
+          <div class="row">
+              <div class="col-md-4">
+                <p class="text-center" style="color: var(--light)">
+                  By creating reoccurring component-based design system we could
+                  simplify the work across projects as well as devices. We ensured
+                  that the components related directly to the same components used
+                  on the developer side to keep the project simple and the naming
+                  conventions consistent
+              </div>
+              <div class="col-md-4">
+                <p class="text-center" style="color: var(--light)">
+                  Across the UI the buttons for the experience were recreated to be
+                  easier to use and to work across devices. By using expanding
+                  buttons we could create one component which covered every use case
+                  without remaking the design each time
+                  </p>
+              </div>
+              <div class="col-md-4">
+                <p class="text-center" style="color: var(--light)">
+                  With an On Demand service the primary action is usually to play
+                  content. I spent a big chunk of time trying to make the playback
+                  experience consistent across edvices. The user should always be
+                  able to face a common UX experience regardless of where they are
+                  watching content.
+                  </p>
+              </div>
+
+          </div>
+      </div>
+  </div>
+
+  <!-- Small screen -->
+  <!-- <div class="d-block d-md-none">
+      <div class="row">
+          <div class="col-12" style="padding-bottom:2em">
             <h4 class="text-center" style="color: var(--light)">Symbols</h4>
-            <p class="text-center" style="color: var(--light)">
-              By creating reoccurring component-based design system we could
-              simplify the work across projects as well as devices. We ensured
-              that the components related directly to the same components used
-              on the developer side to keep the project simple and the naming
-              conventions consistent
-            </p>
+                  <p style="color: #00a6ff;" class="text-center">
+                      Every box since release had to support the next generation project </p>
           </div>
-          <div class="col-md-4 pb-5">
-            <h4 class="text-center" style="color: var(--light)">Buttons</h4>
-            <p class="text-center" style="color: var(--light)">
-              Across the UI the buttons for the experience were recreated to be
-              easier to use and to work across devices. By using expanding
-              buttons we could create one component which covered every use case
-              without remaking the design each time
-            </p>
+          <div class="col-12" style="padding-bottom:2em">
+              <h3 style="color: #00a6ff;" class="text-center">Good, Better, Best</h5>
+                  <p style="color: #00a6ff;" class="text-center">
+                      A philosophy that different hardware could have different levels of software to enable
+                      the higher end devices to have a more robust feature set
+                  </p>
           </div>
-          <div class="col-md-4 pb-5">
-            <h4 class="text-center" style="color: var(--light)">Player across devices</h4>
-            <p class="text-center" style="color: var(--light)">
-              With an On Demand service the primary action is usually to play
-              content. I spent a big chunk of time trying to make the playback
-              experience consistent across edvices. The user should always be
-              able to face a common UX experience regardless of where they are
-              watching content.
-            </p>
+          <div class="col-12" style="padding-bottom:2em">
+              <h3 style="color: #00a6ff;" class="text-center">Powered By The Cloud</h5>
+                  <p style="color: #00a6ff;" class="text-center">
+                      The whole project would be rewritten from Flash into the more recent HTML5 to allow easy
+                      in updating the software for fast iterative changes
+                  </p>
           </div>
-        </div>
+
       </div>
 
+  </div> -->
 
-    </div>  <svg class="col-md-8 offset-md-2" style="height: 2px; margin-top:calc(30px*2); margin-bottom:calc(30px*2)">
+        <svg class="col-md-8 offset-md-2" style="height: 2px; margin-top:calc(30px*2); margin-bottom:calc(30px*2)">
 
       <line x1="0" x2="1800" style="stroke:rgb(255,255,255);  stroke-width:2; opacity:0.15" /></svg>
     <div class="containerfluid  bg-dark">
@@ -311,7 +358,7 @@
         <div class="row">
           <div class="col-md-8 offset-md-1">
 
-            <h2 style="color: var(--light)">Bringing the fans closer</h2>
+            <h2 style="color: var(--wwe)">Bringing the fans closer</h2>
           </div>
           <div class="col-md-8 offset-md-2">
             <p style="color: var(--light)">
@@ -829,7 +876,7 @@
         <div class="row">
           <div class="col">
             <div class="col-md-8 offset-md-1">
-              <h2 style="color: var(--light)">Awards</h2>
+              <h2 style="color: var(--wwe)">Awards</h2>
             </div>
           </div>
         </div>
