@@ -1,7 +1,15 @@
+:root{
+    --dark: #343434;
+    --accent: #46EBE1;
+    --light: #e2e2e2;
+}
+
 html,
 body {
     overflow-x: hidden;
     font-family: 'Outfit', sans-serif;
+   color: var(--light);
+   background-color: var(--dark);
 }
 
 .img-fluid {
@@ -171,7 +179,7 @@ h3 {
     line-height: 1.23;
     text-align: left;
     font-weight: 200;
-
+    color: var(--light)"
 }
 
 h4 {
@@ -241,7 +249,7 @@ li {
 }
 
 #underline {
-    fill: #46EBE1;
+    fill: var(--accent);
 }
 
 .gridimage {
@@ -327,7 +335,7 @@ li {
     position: absolute;
     top: 50%;
     left: 50%;
-    color: white;
+    color: var(--light);
     /* width: 80%; */
     transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
@@ -406,25 +414,25 @@ li {
 ------------------------------------*/
 
 footer {
-    background: #FAFBFB;
-    color: white;
+    background: var(--dark);
+
 }
 
 footer a {
-    color: #343434;
+    color: var(--light);
     font-size: 14px;
     transition-duration: 0.2s;
     text-decoration: none;
 }
 
 footer a:hover {
-    color: #46EBE1;
+    color: var(--accent);
     text-decoration: none;
 }
 
 .footer-middle {
     padding-top: 2em;
-    color: white;
+    color: var(--light);
 }
 
 
@@ -486,7 +494,7 @@ ul.social-network li {
 
 .social-network a.socialIcon:hover,
 .socialHoverClass {
-    color: #44BCDD;
+    color: var(--accent);
 }
 
 .social-circle li a {
@@ -522,7 +530,7 @@ ul.social-network li {
 }
 
 .social-circle i {
-    color: #595959;
+    color: var(--light);
     -webkit-transition: all 0.8s;
     -moz-transition: all 0.8s;
     -o-transition: all 0.8s;
@@ -531,15 +539,15 @@ ul.social-network li {
 }
 
 .social-network a {
-    background-color: #F9F9F9;
+    background-color: var(--dark);
 }
 
 .navbar{
-    background-color:#343434
+    background-color: var(--dark);
 }
 
 .navbar-light .navbar-nav .nav-link{
-    color:#c4c4c4;
+    color: var(--light)
 }
 .navbar-light .navbar-nav .nav-link:hover{
     color:#fff
@@ -549,12 +557,20 @@ ul.social-network li {
 - COLOR ksd
 ------------------------------------*/
 
+
+.dark {
+    color: var(--dark);
+}
+.bg-dark {
+    background-color: var(--dark);
+}
+
 .colorksd{
-    color: #46EBE1;
+    color: var(--accent)
 }
 
 .bg-ksd {
-    background-color: #46EBE1 !important;
+    background-color: var(--accent) !important;
 }
 
 
@@ -565,7 +581,7 @@ ul.social-network li {
 }
 
 .btn-outline-ksd:hover {
-    color: #343434;
+    color: var(--dark);
     background-color: #c4c4c4;
     border-color: #c4c4c4;
 }
@@ -577,7 +593,7 @@ ul.social-network li {
 
 .btn-outline-ksd.disabled,
 .btn-outline-ksd:disabled {
-    color: #46EBE1;
+    color: var(--accent);
     background-color: transparent;
 }
 
@@ -585,8 +601,8 @@ ul.social-network li {
 .btn-outline-ksd:not(:disabled):not(.disabled).active,
 .show>.btn-outline-ksd.dropdown-toggle {
     color: #fff;
-    background-color: #46EBE1;
-    border-color: #46EBE1;
+    background-color: var(--accent);
+    border-color: var(--accent);
 }
 
 .btn-outline-ksd:not(:disabled):not(.disabled):active:focus,
@@ -595,7 +611,7 @@ ul.social-network li {
     box-shadow: 0 0 0 0.2rem rgba(0, 153, 153, 0.5);
 }
 .navbar-light  .navbar-toggler{
-    border:  #46EBE1;
+    border:  var(--accent);
 }
 .navbar-toggler:focus{
     text-decoration: none;
