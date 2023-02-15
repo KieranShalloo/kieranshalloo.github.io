@@ -1,4 +1,5 @@
 {
-    "telemetry.enableCrashReporter": false,
-    "telemetry.enableTelemetry": false
+  "telemetry.enableCrashReporter": false,
+  "telemetry.enableTelemetry": false,
+  "prettier.jsxSingleQuote": false
 }
