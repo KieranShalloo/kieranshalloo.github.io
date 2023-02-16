@@ -17,8 +17,8 @@
 
 .icon {
     background: var(--accent);
-    -webkit-mask-image: url(https://www.kieranshalloodesign.com/Logo.svg);
-    mask-image: url(https://www.kieranshalloodesign.com/Logo.svg);
+    -webkit-mask-image: url(images/Logo.svg);
+    mask-image: url(images/Logo.svg);
   }
 
 
@@ -37,11 +37,15 @@ font-size: 16px;
     height: auto;}
 
     .containerfluid {
-        padding-top: 1rem;
+        padding: 1rem  ;
+
+    }
+    .container {
+        padding: 0.8rem 0;
 
     }
     .row {
-        padding-top: 0.8rem;
+        padding: 1rem 0;
 
     }
 /*------------------------------------- Header images ------------------------------------*/
@@ -140,11 +144,10 @@ font-size: 16px;
 @media (min-width: 80em) {
 
     .containerfluid {
-        padding-top: 5rem;
-
+        padding: 2rem
+        ;
     }
-    .row {
-        padding-bottom: 1rem;
+
 
     }
 
@@ -187,7 +190,7 @@ font-size: 16px;
 
         background-image: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .8)), url("/images/home/Creatureheader1920.webp"), url("/images/home/Creatureheader1920.jpg");
     }
-}
+
 
 
 
@@ -619,7 +622,7 @@ ul.social-network li {
 .btn-outline-ksd:hover {
     color: var(--accent);
     background-color: var(--dark);
-    border-color: var(--light);
+    border-color: var(--accent);
 }
 
 .btn-outline-ksd:focus,
