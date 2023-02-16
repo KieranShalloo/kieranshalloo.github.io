@@ -33,7 +33,10 @@ font-size: 16px;
         padding-top: 1rem;
 
     }
+    .row {
+        padding-top: 0.8rem;
 
+    }
 /*------------------------------------- Header images ------------------------------------*/
 .c4header {
 
@@ -131,6 +134,10 @@ font-size: 16px;
 
     .containerfluid {
         padding-top: 5rem;
+
+    }
+    .row {
+        padding-bottom: 1rem;
 
     }
 
