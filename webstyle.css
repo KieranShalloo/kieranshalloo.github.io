@@ -29,6 +29,11 @@ font-size: 16px;
     width: 100%;
     height: auto;}
 
+    .containerfluid {
+        padding-top: 1rem;
+
+    }
+
 /*------------------------------------- Header images ------------------------------------*/
 .c4header {
 
@@ -82,7 +87,7 @@ font-size: 16px;
 
 @media (min-width: 25.875em) {
     .keyboardheader {
-        background-image: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .8)), url("/images/keyboard/Youview-onscreenkeyboard-hero-1920.jpg");
+        background-image: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .8)), url("/images/keyboard/Youview-onscreenkeyboard-hero-768.jpg");
     }
 
     .vmheader {
@@ -123,6 +128,11 @@ font-size: 16px;
 }
 
 @media (min-width: 80em) {
+
+    .containerfluid {
+        padding-top: 5rem;
+
+    }
 
     .keyboardheader {
         background-image: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .8)), url("/images/keyboard/Youview-onscreenkeyboard-hero-1920.jpg");
@@ -242,10 +252,7 @@ li {
     padding: 0 !important;
 }
 
-.containerfluid {
-    padding: 5rem 0;
 
-}
 
 .fullwidthimage {
     padding: 0 !important;
