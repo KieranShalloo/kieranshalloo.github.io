@@ -15,6 +15,14 @@
 }
 
 
+.icon {
+    background: var(--accent);
+    -webkit-mask-image: url(https://www.kieranshalloodesign.com/Logo.svg);
+    mask-image: url(https://www.kieranshalloodesign.com/Logo.svg);
+  }
+
+
+
 
 html,
 body {
