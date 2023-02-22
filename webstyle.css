@@ -593,6 +593,13 @@
         color:var(--accent)
     }
 
+#icon {
+        color: var(--dark);
+    }
+     #icon:hover {
+        color: var(--accent);
+    }
+
     /*------------------------------------
     - COLOR ksd
     ------------------------------------*/
@@ -601,6 +608,11 @@
     .dark {
         color: var(--dark);
     }
+
+     /* .dark:hover {
+        color: var(--accent);
+    } */
+
     .bg-dark {
         background-color: var(--dark);
     }
