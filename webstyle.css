@@ -97,7 +97,7 @@
 
     .YVHCheader {
 
-        background-image: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .8)), url("/images/home/Netflixheader414.webp"), url("/images/home/Netflixheader414.jpg");
+        background-image: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .8)), url("/images/home/Netflixheader414.jpg");
     }
 
     @media (min-width: 25.875em) {
@@ -133,7 +133,7 @@
 
         .Netflixheader {
 
-            background-image: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .8)), url("/images/home/Netflixheader768.webp"), url("/images/home/Netflixheader768.jpg");
+            background-image: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .8)), url("/images/home/Netflixheader768.jpg");
         }
 
         .Creatureheader {
