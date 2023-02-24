@@ -52,6 +52,46 @@
 
         }
 
+          .nopadding {
+        padding: 0 !important;
+    }
+
+
+
+    .fullwidthimage {
+        padding: 0 !important;
+        margin: 0 !important;
+        width: 100vw;
+    }
+
+    .cover {
+        width: 100vw;
+        height: 107vh;
+        background-size: cover;
+        background-position: center center;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+    }
+
+    #underline {
+        fill: var(--accent);
+    }
+
+    .gridimage {
+        padding: 0;
+    }
+
+
+    #portfolioimage:hover {
+        transition: transform 0.3s cubic-bezier(.17,.67,.83,.67) 0s;
+        transform: scale(1.025);
+        z-index: 1;
+    }
+
+    #portfolioframe {
+        overflow: hidden;
+    }
+
     /*------------------------------------- Header images ------------------------------------*/
     .c4header {
 
@@ -104,10 +144,10 @@
 
     .YVHCheader {
 
-        background-image: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .8)), url("/images/home/Netflixheader414.jpg");
+        background-image: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .8)), url("/images/home/Netflixheader414.webp"), url("/images/home/Netflixheader414.jpg");
     }
 
-    @media (min-width: 30em) {
+    @media (min-width: 25.875em) {
         .keyboardheader {
             background-image: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .8)), url("/images/keyboard/Youview-onscreenkeyboard-hero-768.jpg");
         }
@@ -144,7 +184,7 @@
 
         .Netflixheader {
 
-            background-image: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .8)), url("/images/home/Netflixheader768.jpg");
+            background-image: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .8)), url("/images/home/Netflixheader768.webp"), url("/images/home/Netflixheader768.jpg");
         }
 
         .Creatureheader {
@@ -159,7 +199,6 @@
             padding: 2rem 0
             ;
         }
-
 
 
 
@@ -207,7 +246,7 @@
             background-image: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .8)), url("/images/home/Creatureheader1920.webp"), url("/images/home/Creatureheader1920.jpg");
         }
 
- }
+    }
 
 
     /*------------------------------------
@@ -535,13 +574,6 @@
         color:var(--accent)
     }
 
-#icon {
-        color: var(--dark);
-    }
-     #icon:hover {
-        color: var(--accent);
-    }
-
     /*------------------------------------
     - COLOR ksd
     ------------------------------------*/
@@ -550,11 +582,6 @@
     .dark {
         color: var(--dark);
     }
-
-     /* .dark:hover {
-        color: var(--accent);
-    } */
-
     .bg-dark {
         background-color: var(--dark);
     }
