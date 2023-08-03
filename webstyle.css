@@ -117,9 +117,9 @@
     }
 
 
-    .sonyheader {
+    .Sonyheader {
 
-        background-image: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .8)), url("/images/home/sonyheader414.webp"), url("/images/home/sonyheader414.jpg");
+        background-image: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .8)), url("/images/home/Sonyheader414.webp"), url("/images/home/Sonyheader414.jpg");
     }
 
     .YVappheader {
@@ -168,8 +168,8 @@
             background-image: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .8)), url("/images/home/wweheader768.webp"), url("/images/home/wweheader768.jpg");
         }
 
-        .sonyheader {
-            background-image: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .8)), url("/images/home/sonyheader768.webp"), url("/images/home/sonyheader768.jpg");
+        .Sonyheader {
+            background-image: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .8)), url("/images/home/Sonyheader768.webp"), url("/images/home/Sonyheader768.jpg");
         }
 
         .YVappheader {
@@ -222,8 +222,8 @@
             background-image: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .8)), url("/images/home/wweheader1920.webp"), url("/images/home/wweheader1920.jpg");
         }
 
-        .sonyheader {
-            background-image: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .8)), url("/images/home/sonyheader1920.webp"), url("/images/home/sonyheader1920.jpg");
+        .Sonyheader {
+            background-image: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .8)), url("/images/home/Sonyheader1920.webp"), url("/images/home/Sonyheader1920.jpg");
         }
 
         .YVappheader {
