@@ -97,7 +97,7 @@
 
         background-image: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .8)), url("/images/home/C4header414.webp"), url("/images/home/C4header414.jpg");
     }
-.c4rebrandheader {
+.4rebrandheader {
 
         background-image: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .8)), url("/images/home/4rebrandheader414.webp"), url("/images/home/4rebrandheader414.jpg");
     }
@@ -160,7 +160,7 @@
             background-image: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .8)), url("/images/home/C4header768.webp"), url("/images/home/C4header768.jpg");
         }
 
-        .c4rebrandheader {
+        .4rebrandheader {
             background-image: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .8)), url("/images/home/4rebrandheader768.webp"), url("/images/home/4rebrandheader768.jpg");
         }
 
@@ -214,7 +214,7 @@
             background-image: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .8)), url("/images/home/C4header1920.webp"), url("/images/home/C4header1920.jpg");
         }
 
-        .c4rebrandheader {
+        .4rebrandheader {
             background-image: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .8)), url("/images/home/4rebrandheader1920.webp"), url("/images/home/4rebrandheader1920.jpg");
         }
 
