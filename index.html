@@ -195,9 +195,13 @@
                 <a href="/portfolio/4rebrand/">
                     <picture>
                         <!-- <source srcset="/images/home/4rebrandheader1920.webp" type="image/webp"> -->
-                        <source srcset="/images/home/4rebrandheader1920.jpg" type="image/jpg">
-                        <img class="img-fluid lazyload" style="width: 100%;" style="width: 100%;" id="portfolioimage"
-                            src="/images/home/4rebrandheader1920.jpg">
+                        <source media="(max-width: 414px)" srcset="/images/home/4rebrandheader414.jpg 414w"
+                            type="image/jpg" />
+                        <source media="(max-width: 1024px)" srcset="/images/home/4rebrandheader768.jpg 768w"
+                            type="image/jpg" />
+                        <source media="(min-width: 1025px)" srcset="/images/home/4rebrandheader1920.jpg 1920w"
+                            type="image/jpg" />
+                        <img class="img-fluid lazyload" id=" portfolioimage">
                     </picture>
                 </a>
             </div>
