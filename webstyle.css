@@ -119,6 +119,10 @@
         background-image: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .8)), url("/images/home/wweheader414.webp"), url("/images/home/wweheader414.jpg");
     }
 
+   .wwescrolling {
+
+        background-image: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .8)), url("/images/wwe/wwe-network-phone-tile-414.webp"), url("/images/wwe/wwe-network-phone-tile-414.jpg");
+    }
 
     .Sonyheader {
 
@@ -171,6 +175,10 @@
             background-image: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .8)), url("/images/home/wweheader768.webp"), url("/images/home/wweheader768.jpg");
         }
 
+         .wwescrolling {
+
+        background-image: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .8)), url("/images/wwe/wwe-network-phone-tile-768.webp"), url("/images/wwe/wwe-network-phone-tile-768.jpg");
+    }
         .Sonyheader {
             background-image: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .8)), url("/images/home/Sonyheader768.webp"), url("/images/home/Sonyheader768.jpg");
         }
@@ -224,7 +232,10 @@
         .wweheader {
             background-image: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .8)), url("/images/home/wweheader1920.webp"), url("/images/home/wweheader1920.jpg");
         }
+ .wwescrolling {
 
+        background-image: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .8)), url("/images/wwe/wwe-network-phone-tile-1920.webp"), url("/images/wwe/wwe-network-phone-tile-1920.jpg");
+    }
         .Sonyheader {
             background-image: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .8)), url("/images/home/Sonyheader1920.webp"), url("/images/home/Sonyheader1920.jpg");
         }

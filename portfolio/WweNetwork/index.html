@@ -139,7 +139,7 @@
           type="image/jpg" />
         <source media="(min-width: 1025px)" srcset="/images/wwe/wwe-network-screen-tile-1920.jpg 1920w"
           type="image/jpg" />
-        <img decoding="async" class="img-fluid" loading="lazy" src="/images/wwe/wwe-network-screen-tile-768.jpg" />
+        <img decoding="async" class="img-fluid" loading="lazy" />
       </picture>
     </div>
   </div>
@@ -442,15 +442,11 @@
       </div>
     </div>
   </div>
-  <div class="containerfluid cover" style="
+  <div class="containerfluid cover wwescrolling" style="
           height: auto;
           background-size: cover;
           background-position: 100% 100%;
-          background-image: linear-gradient(
-              rgba(0, 0, 0, 0.5),
-              rgba(0, 0, 0, 0.8)
-            ),
-            url('/images/wwe/wwe-network-phone-tile-1920.jpg');
+
         ">
     <div class="container py-5">
       <div class="row">
@@ -505,9 +501,9 @@
       </div>
     </div>
   </div>
-  <div class="containerfluid">
+  <div class="containerfluid" style="background-color: var(--light);">
     <div class="row">
-      <div class="col-2 offset-md-1">
+      <div class="col-6 col-md-2 offset-md-1">
         <picture>
           <source srcset="/images/wwe/wwe-network-superstar.webp" type="image/webp" />
           <source srcset="/images/wwe/wwe-network-superstar.jpg" type="image/jpg" />
@@ -516,7 +512,7 @@
         <h6 class="pt-3" style="text-align: center">WWE Superstar screen</h6>
       </div>
 
-      <div class="col-8">
+      <div class="col-md-8">
         <picture>
           <!-- <source srcset="/images/wwe/TV.webp" type="image/webp" /> -->
           <source srcset="/images/wwe/tv.jpg" type="image/jpg" />
@@ -527,8 +523,7 @@
         </picture>
       </div>
     </div>
-  </div>
-  <div class="containerfluid">
+
     <div class="container">
       <div class="row" style="align-items: center">
         <div class="col">
