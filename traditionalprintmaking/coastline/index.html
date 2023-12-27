@@ -28,16 +28,44 @@
   <link rel="preload" href="/webstyle.css" as="style">
   <link rel="stylesheet" type="text/css" href="/webstyle.css">
 
+  <script
+    src="https://www.paypal.com/sdk/js?client-id=AeITVx6TUi2l30hWCKzaX7eEdm8giBeyNf7jnd7oMcV18hBPIGsLvSx8BmLK8xBi6kIfKVrLQKSKSSWH&currency=GBP">
+      // Required. Replace SB_CLIENT_ID with your sandbox client ID.
+    </script>
 
-
+  <script>
+    paypal.Buttons({
+      createOrder: function (data, actions) {
+        // This function sets up the details of the transaction, including the amount and line item details.
+        return actions.order.create({
+          purchase_units: [{
+            reference_id: "PUHF",
+            description: "Kubo & The Two Strings Print",
+            amount: {
+              currency_code: 'GBP',
+              value: '1'
+            }
+          }]
+        });
+      },
+      onApprove: function (data, actions) {
+        // This function captures the funds from the transaction.
+        return actions.order.capture().then(function (details) {
+          // This function shows a transaction success message to your buyer.
+          alert('Transaction completed by ' + details.payer.name.given_name);
+        });
+      }
+    }).render('#paypal-button-container');
+    //This function displays Smart Payment Buttons on your web page.
+  </script>
 
 </head>
 
 
 <body>
   <!--Navigation bar-->
-  <nav class="navbar shadow navbar-expand-md navbar-light fixed-top p-0">
-    <div class="p-2 container">
+  <nav class="navbar shadow navbar-expand-md navbar-light fixed-top">
+    <div class="p-1 container">
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01"
         aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -47,16 +75,23 @@
 
         <ul class="navbar-nav mx-auto">
           <ul class="align-items-center navbar-nav">
-            <a class="nav-link text-center mx-3" href="/portfolio">Design
+            <a class="nav-link text-center mx-3 " href="/portfolio">Design
               Work</a>
             <a class="nav-link text-center mx-3" href="/process">The Process</a>
-            <a class="d-none d-md-block  navbar-brand mx-5 p-0" href=" /">
-              <img class="logolight" src="/Logotype.svg" alt="" width="70" height="70">
+            <a class="d-none d-md-block  navbar-brand mx-5 " href=" /">
+              <img class="logolight" src="/Logo.svg" alt="" width="80" height="80">
             </a>
             <a class="d-md-none nav-link text-center mx-3" href="/">Home</a>
             <a class="nav-link text-center mx-3" href="/illustration/">Illustration </a>
-            <a style="color:var(--accent);" class=" aria-current=true nav-link text-center mx-3 active "
+            <a style="color:var(--accent);" class=" aria-current=true nav-link text-center mx-3 active"
               href="/traditionalprintmaking/">Printmaking</a>
+
+
+
+            <!-- </li><a class=" text-center mx-3" href="mailto:contact@kieranshalloodesign.com"><button
+                                    type="button" class="btn  btn-outline-ksd">Get
+                                    in
+                                    Touch</button></a> -->
           </ul>
 
       </div>
@@ -104,25 +139,26 @@
                   details due
                   to the handmade printing process.</p>
 
-                <div class="py-auto">
-                  <a class=" btn btn-outline-ksd p-3" href="   https://buy.stripe.com/eVa5mE7EFa0f02k5kl"
-                    style="margin-right: 1em;" role="button"><i class="bi bi-shop"></i>
-                    Buy now
-                  </a>
 
-
-                  <a class=" btn btn-outline-ksd p-3"
+                <div class="d-grid">
+                  <a class=" btn btn-outline-ksd py-3"
                     href="http://www.shalloodesign.etsy.com/uk/listing/1445291427/original-linocut-print-the-coastline"
-                    role="button"><i class="bi bi-basket"></i>
+                    role="button"><i class="bi bi-shop"></i>
                     Buy on Etsy
                   </a>
+
+                  <div class="d-grid">
+                    <script async src="https://js.stripe.com/v3/buy-button.js">
+                    </script>
+
+                    <stripe-buy-button buy-button-id="buy_btn_1OPT63KtphtY4OQQ6V1YUdyJ"
+                      publishable-key="pk_live_51OPRBnKtphtY4OQQi4YJs74hrUNacioWUw7bjmChQJCXIHcs90W8UYFPJav3ZbMRIM6NSYgJpxzEz891BX2sDoBQ00iIus11He">
+                    </stripe-buy-button>
+                  </div>
+
+
                 </div>
         </div>
-
-
-
-
-
         <div class="col-md-8">
           <!-- <source srcset="/images/illustration/kubo.webp" type="image/webp"> -->
           <div class="p-3">
@@ -213,8 +249,7 @@
           </div>
           <div class="col-md-2  offset-md-2 ">
 
-            <div style="height: 100px;  width: 100px;" class="d-none d-md-block "><img src="/Logo.svg">
-            </div>
+            <div style="height: 100px;  width: 100px;" class="d-none d-md-block icon"></div>
 
             <p style="color: var(--light); padding-top: 2rem; font-size: 12px ">Kieran Shalloo Design
               Ltd.
