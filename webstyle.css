@@ -1,6 +1,6 @@
     :root{
         --dark: #343434;
-        --accent: rgb(103, 198, 176);
+        --accent: #67C6B0;
         --light: #e6e6e6;
         --white: #ecfaff;
 
@@ -14,7 +14,11 @@
             --channel4: #AAEB89;
             --all4: #10ebc3;
     }
+.logolight{
+filter: invert(83%) sepia(23%) saturate(0%) hue-rotate(321deg) brightness(130%) contrast(101%);
+}
 
+.logogreen{filter: invert(72%) sepia(55%) saturate(288%) hue-rotate(116deg) brightness(87%) contrast(94%);}
 
     .icon {
         background: var(--accent);
@@ -93,9 +97,9 @@
     }
 
     /*------------------------------------- Header images ------------------------------------*/
-    .c4header {
+   .channel4header {
 
-        background-image: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .8)), url("/images/home/C4header414.webp"), url("/images/home/C4header414.jpg");
+        background-image: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .8)), url("/images/home/4header414.webp"), url("/images/home/4header414.jpg");
     }
 
     .C4rebrandheader {
@@ -119,6 +123,10 @@
         background-image: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .8)), url("/images/home/wweheader414.webp"), url("/images/home/wweheader414.jpg");
     }
 
+   .wwescrolling {
+
+        background-image: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .8)), url("/images/wwe/wwe-network-phone-tile-414.webp"), url("/images/wwe/wwe-network-phone-tile-414.jpg");
+    }
 
     .Sonyheader {
 
@@ -159,8 +167,8 @@
             background-image: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .8)), url("/images/home/VMheader768.webp"), url("/images/home/VMheader768.jpg");
         }
 
-        .c4header {
-            background-image: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .8)), url("/images/home/C4header768.webp"), url("/images/home/C4header768.jpg");
+       .channel4header {
+            background-image: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .8)), url("/images/home/4header768.webp"), url("/images/home/4header768.jpg");
         }
 
         .C4rebrandheader {
@@ -171,6 +179,10 @@
             background-image: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .8)), url("/images/home/wweheader768.webp"), url("/images/home/wweheader768.jpg");
         }
 
+         .wwescrolling {
+
+        background-image: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .8)), url("/images/wwe/wwe-network-phone-tile-768.webp"), url("/images/wwe/wwe-network-phone-tile-768.jpg");
+    }
         .Sonyheader {
             background-image: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .8)), url("/images/home/Sonyheader768.webp"), url("/images/home/Sonyheader768.jpg");
         }
@@ -213,8 +225,8 @@
             background-image: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .8)), url("/images/home/VMheader1920.webp"), url("/images/home/VMheader1920.jpg");
         }
 
-        .c4header {
-            background-image: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .8)), url("/images/home/C4header1920.webp"), url("/images/home/C4header1920.jpg");
+       .channel4header {
+            background-image: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .8)), url("/images/home/4header1920.webp"), url("/images/home/4header1920.jpg");
         }
 
         .C4rebrandheader {
@@ -224,7 +236,10 @@
         .wweheader {
             background-image: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .8)), url("/images/home/wweheader1920.webp"), url("/images/home/wweheader1920.jpg");
         }
+ .wwescrolling {
 
+        background-image: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .8)), url("/images/wwe/wwe-network-phone-tile-1920.webp"), url("/images/wwe/wwe-network-phone-tile-1920.jpg");
+    }
         .Sonyheader {
             background-image: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .8)), url("/images/home/Sonyheader1920.webp"), url("/images/home/Sonyheader1920.jpg");
         }
@@ -497,7 +512,7 @@
     }
 
     .social-network a.icoYoutube:hover {
-        background-color: #FF0000;
+        background-color: #F1641E;
     }
 
     .social-network a.icoTwitter:hover {
@@ -599,15 +614,15 @@
 
 
     .btn-outline-ksd {
-        color: var(--light);
-        background-color: var(--dark);
-        border-color: var(--light);
+        color: var(--dark);
+        /* background-color: var(--dark); */
+        border-color: var(--dark);
     }
 
     .btn-outline-ksd:hover {
-        color: var(--accent);
-        background-color: var(--dark);
-        border-color: var(--accent);
+        color: var(--dark);
+       border-color: var(--dark);
+      background-color: var(--accent);
     }
 
     .btn-outline-ksd:focus,
