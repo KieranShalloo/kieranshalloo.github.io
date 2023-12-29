@@ -226,7 +226,7 @@ filter: invert(83%) sepia(23%) saturate(0%) hue-rotate(321deg) brightness(130%) 
         }
 
        .channel4header {
-            background-image: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .8)), url("/images/home/4header1920.webp"), url("/images/home/4header1920.jpg");
+            background-image: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .8)), url("/images/home/4header1920.jpg");
         }
 
         .C4rebrandheader {
