@@ -2,11 +2,9 @@
 <html lang="en">
 
 <head><!-- Bootstrap CSS -->
-    <script src=" https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js "></script>
-    <link href=" https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css " rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css"
-        integrity="sha384-b6lVK+yci+bfDmaY1u0zE8YYJt0TZxLEAFyYSLHId4xoVvsrQu3INevFKo+Xir8e" crossorigin="anonymous">
 
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="noindex, nofollow">
 
     <!-- Local CSS -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -16,8 +14,7 @@
     <link rel="preload" href="/webstyle.css" as="style">
     <link rel="stylesheet" type="text/css" href="/webstyle.css">
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="robots" content="noindex, nofollow">
+
     <title>Password Protected Page</title>
     <style>
         html,
@@ -29,7 +26,7 @@
         }
 
         #dialogText {
-            color: var(--light);
+            color: var(--accent);
             background-color: var(--dark);
         }
 
@@ -47,6 +44,7 @@
             display: table-cell;
             text-align: center;
             vertical-align: middle;
+            background-color: var(--accent);
         }
 
         #mainDialog {
@@ -54,7 +52,7 @@
             margin: 5px;
             border: var(--light) 1px;
             border-radius: 10px;
-            box-shadow: 3px 3px 5px 3px var(--light);
+            box-shadow: 3px 3px 5px 3px var(--dark);
             margin-left: auto;
             margin-right: auto;
             background-color: var(--light);
@@ -102,7 +100,8 @@
         #submitPass {
             font-size: 20px;
             border-radius: 5px;
-            background-color: #E7E7E7;
+            background-color: var(--light);
+            ;
             border: solid gray 1px;
             float: right;
             cursor: pointer;
