@@ -11,7 +11,6 @@
 	--sony: #3ddb86;
 	--creature: #49de8c;
 	--channel4: #aaeb89;
-
 }
 .logolight {
 	filter: invert(83%) sepia(23%) saturate(0%) hue-rotate(321deg)
@@ -99,6 +98,12 @@ body {
 .channel4header {
 	background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)),
 		url("/images/home/4header414.webp"), url("/images/home/4header414.jpg");
+}
+
+.yvhelpheader {
+	background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)),
+		url("/images/home/YVhelpheader768.webp"),
+		url("/images/home/YVhelpheader768.jpg");
 }
 
 .C4rebrandheader {
@@ -322,7 +327,7 @@ h3 {
 h4 {
 	font-family: "Outfit", sans-serif;
 	font-size: clamp(1.375rem, 1.0938rem + 1.25vw, 1.75rem);
-	line-height: 1.4rem;
+	line-height: 2rem;
 
 	font-weight: 300;
 }
