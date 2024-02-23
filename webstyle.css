@@ -14,8 +14,7 @@
 }
 
 .logolight {
-	filter: invert(83%) sepia(23%) saturate(0%) hue-rotate(321deg)
-		brightness(130%) contrast(101%);
+	filter: saturate(0%);
 }
 
 .logogreen {
@@ -25,8 +24,8 @@
 
 .icon {
 	background: var(--accent);
-	-webkit-mask-image: url(images/Logo.svg);
-	mask-image: url(images/Logo.svg);
+	-webkit-mask-image: url(/Logo.svg);
+	mask-image: url(/Logo.svg);
 }
 
 html,
