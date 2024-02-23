@@ -103,12 +103,13 @@ body {
 
 .yvhelpheader {
 	background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)),
-		url("/images/home/YVhelpheader768.webp"),
-		url("/images/home/YVhelpheader768.jpg");
+		url("/images/home/YVhelpheader414.webp"),
+		url("/images/home/YVhelpheader414.jpg");
 }
 
 .C4rebrandheader {
 	background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)),
+		url("/images/home/4rebrandheader414.webp"),
 		url("/images/home/4rebrandheader414.jpg");
 }
 
@@ -173,7 +174,11 @@ body {
 		background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)),
 			url("/images/keyboard/Youview-onscreenkeyboard-hero-768.jpg");
 	}
-
+	.yvhelpheader {
+		background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)),
+			url("/images/home/YVhelpheader768.webp"),
+			url("/images/home/YVhelpheader768.jpg");
+	}
 	.vmheader {
 		background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)),
 			url("/images/home/VMheader768.webp"), url("/images/home/VMheader768.jpg");
@@ -245,10 +250,14 @@ body {
 			url("/images/home/VMheader1920.webp"),
 			url("/images/home/VMheader1920.jpg");
 	}
-
+	.yvhelpheader {
+		background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)),
+			url("/images/home/YVhelpheader1920.webp"),
+			url("/images/home/YVhelpheader1920.jpg");
+	}
 	.channel4header {
 		background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)),
-			url("/images/home/4header1920.jpg");
+			url("/images/home/4header1920.webp"), url("/images/home/4header1920.jpg");
 	}
 
 	.C4rebrandheader {
