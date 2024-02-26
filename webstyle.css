@@ -14,7 +14,7 @@
 }
 
 .logolight {
-	filter: saturate(0%);
+	filter: saturate(0%) brightness(.8);
 }
 
 .logogreen {
