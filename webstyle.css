@@ -14,7 +14,7 @@
 }
 
 .logolight {
-	filter: saturate(0%) brightness(.8);
+	filter: saturate(0%) brightness(0.8);
 }
 
 .logogreen {
@@ -94,7 +94,7 @@ body {
 		url("/images/channel4/1920/jpg/scrubbingscolling.jpg");
 }
 
-/*------------------------------------- Header images ------------------------------------*/
+/*------------------------------------- 414 Header images ------------------------------------*/
 .channel4header {
 	background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)),
 		url("/images/home/4header414.webp"), url("/images/home/4header414.jpg");
@@ -168,6 +168,11 @@ body {
 		url("/images/home/Netflixheader414.jpg");
 }
 
+.bosheader {
+	background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)),
+		url("/images/home/tile-bos.webp"), url("/images/home/tile-bos.jpg");
+}
+/*------------------------------------- 768 Header images ------------------------------------*/
 @media (min-width: 30em) {
 	.keyboardheader {
 		background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)),
@@ -195,8 +200,8 @@ body {
 
 	.wweheader {
 		background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)),
-			url("/images/home/wweheader768.webp"),
-			url("/images/home/wweheader768.jpg");
+			/* url("/images/home/wweheader768.webp"), */
+				url("/images/home/wweheader768.jpg");
 	}
 
 	.wwescrolling {
@@ -232,8 +237,13 @@ body {
 			url("/images/home/Creatureheader768.webp"),
 			url("/images/home/Creatureheader768.jpg");
 	}
+	.bosheader {
+		background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)),
+			url("/images/home/tile-bos.webp"), url("/images/home/tile-bos.jpg");
+	}
 }
 
+/*------------------------------------- 1920 Header images ------------------------------------*/
 @media (min-width: 62em) {
 	.containerfluid {
 		padding: 2rem 0;
@@ -303,6 +313,10 @@ body {
 		background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)),
 			url("/images/home/Creatureheader1920.webp"),
 			url("/images/home/Creatureheader1920.jpg");
+	}
+	.bosheader {
+		background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)),
+			url("/images/home/tile-bos.webp"), url("/images/home/tile-bos.jpg");
 	}
 }
 
