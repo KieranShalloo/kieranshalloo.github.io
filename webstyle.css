@@ -254,6 +254,11 @@ body {
 			url("/images/keyboard/Youview-onscreenkeyboard-hero-1920.jpg");
 	}
 
+	.bopheader {
+		background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)),
+			url("/images/home/bopheader1920.jpg");
+	}
+
 	.vmheader {
 		background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)),
 			url("/images/home/VMheader1920.webp"),
@@ -316,7 +321,8 @@ body {
 	}
 	.bosheader {
 		background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)),
-			url("/images/home/tile-bos.webp"), url("/images/home/tile-bos.jpg");
+			/* url("/images/home/bosheader1920.webp"), */
+				url("/images/home/bosheader1920.jpg");
 	}
 }
 
