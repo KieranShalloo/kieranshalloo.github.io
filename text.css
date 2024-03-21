@@ -50,7 +50,6 @@ p {
 	font-size: clamp(1rem, 1.0313rem + 0.4167vw, 1.25rem);
 	line-height: 1.5em;
 	font-weight: 300;
-	/* margin-bottom: 1.5rem; */
 }
 
 li {
