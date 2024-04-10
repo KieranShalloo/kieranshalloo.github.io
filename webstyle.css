@@ -96,6 +96,11 @@ body {
 }
 
 /*------------------------------------- 414 Header images ------------------------------------*/
+.singstarheader {
+	background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)),
+		url("/images/home/singstarheader414.webp"),
+		url("/images/home/singstarheader414.jpg");
+}
 .channel4header {
 	background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)),
 		url("/images/home/4header414.webp"), url("/images/home/4header414.jpg");
@@ -181,6 +186,11 @@ body {
 }
 /*------------------------------------- 768 Header images ------------------------------------*/
 @media (min-width: 30em) {
+	.dancestarheader {
+		background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)),
+			url("/images/home/dancestarheader768.webp"),
+			url("/images/home/dancestarheader768.jpg");
+	}
 	.trainlineheader {
 		background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)),
 			url("/images/home/trainlineheader768.webp"),
@@ -260,6 +270,17 @@ body {
 @media (min-width: 62em) {
 	.containerfluid {
 		padding: 2rem 0;
+	}
+	.dancestarheader {
+		background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)),
+			url("/images/home/dancestarheader1920.webp"),
+			url("/images/home/dancestarheader1920.jpg");
+	}
+
+	.singstarheader {
+		background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)),
+			url("/images/home/singstarheader1920.webp"),
+			url("/images/home/singstarheader1920.jpg");
 	}
 	.trainlineheader {
 		background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)),
