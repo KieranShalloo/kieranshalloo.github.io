@@ -12,11 +12,11 @@
 	--creature: #49de8c;
 	--channel4: #aaeb89;
 	--trainline: #a0dfd1;
-	--google: #F4B400;
+	--google: #f4b400;
 }
 
 .logolight {
-	filter: saturate(0%) brightness(0.8);
+	filter: saturate(100%) brightness(04);
 }
 
 .logogreen {
@@ -286,7 +286,7 @@ body {
 	.trainlineheader {
 		background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)),
 			/* url("/images/home/trainlineheader1920.webp"), */
-			url("/images/home/trainlineheader1920.jpg");
+				url("/images/home/trainlineheader1920.jpg");
 	}
 
 	.keyboardheader {
