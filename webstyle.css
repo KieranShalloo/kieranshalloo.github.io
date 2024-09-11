@@ -11,8 +11,8 @@
 	--sony: #3ddb86;
 	--creature: #49de8c;
 	--channel4: #aaeb89;
-	--trainline: #a0dfd1;
-	--google: #f4b400;
+	--trainline: #00a88f;
+	--google: #4285f4;
 }
 
 .logolight {
@@ -26,7 +26,7 @@
 
 .icon {
 	background: var(--accent);
-	-webkit-mask-image: url(/Logo.svg);
+	webkit-mask-image: url(/Logo.svg);
 	mask-image: url(/Logo.svg);
 }
 
