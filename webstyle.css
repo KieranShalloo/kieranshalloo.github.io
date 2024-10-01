@@ -411,7 +411,7 @@ body {
 
 .overlaytext {
 	position: absolute;
-	top: 50%;
+	top: 40%;
 	left: 50%;
 	color: var(--light);
 	/* width: 80%; */
