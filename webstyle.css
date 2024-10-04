@@ -11,8 +11,8 @@
 	--sony: #3ddb86;
 	--creature: #49de8c;
 	--channel4: #aaeb89;
-	--trainline: #a0dfd1;
-	--google: #f4b400;
+	--trainline: #00a88f;
+	--google: #4285f4;
 }
 
 .logolight {
@@ -185,6 +185,11 @@ body {
 	background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)),
 		url("/images/home/tile-bos.webp"), url("/images/home/tile-bos.jpg");
 }
+.engagementheader {
+	background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)),
+		/* url("/images/home/engagementheader768.webp"), */
+			url("/images/home/engagementheader414.jpg");
+}
 /*------------------------------------- 768 Header images ------------------------------------*/
 @media (min-width: 30em) {
 	.engagementheader {
@@ -271,6 +276,11 @@ body {
 @media (min-width: 62em) {
 	.containerfluid {
 		padding: 2rem 0;
+	}
+	.engagementheader {
+		background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)),
+			/* url("/images/home/engagementheader768.webp"), */
+				url("/images/home/engagementheader1920.jpg");
 	}
 	.dancestarheader {
 		background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)),
@@ -401,7 +411,7 @@ body {
 
 .overlaytext {
 	position: absolute;
-	top: 50%;
+	top: 40%;
 	left: 50%;
 	color: var(--light);
 	/* width: 80%; */
