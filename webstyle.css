@@ -395,17 +395,17 @@ body {
     - Slant
     ------------------------------------*/
 
-.slant.header-slant {
+.header-slant {
 	position: relative;
 	z-index: 200;
-	width: 0;
+	width: 100%;
 	height: 0;
 	pointer-events: none;
 }
 
-.right.header-slant {
-	margin-top: calc(-10vw + 1px);
-	border-top: 10vw solid transparent;
+.header-slant.right {
+	margin-top: calc(-5vw + 1px);
+	border-top: 5vw solid transparent;
 	border-right: 100vw solid white;
 }
 
