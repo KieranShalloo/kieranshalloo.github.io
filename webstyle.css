@@ -533,6 +533,16 @@ ul.social-network li {
 }
 
 /* footer social icons */
+.bi-bluesky::before {
+	content: "";
+	background-color: currentColor;
+	-webkit-mask: url("../images/about/bsky.svg") no-repeat 50% 50%;
+	mask: url("../images/about/bsky.svg") no-repeat 50% 50%;
+	-webkit-mask-size: cover;
+	mask-size: cover;
+	height: 24px;
+	width: 24px;
+}
 
 .social-network a.icoInstagram:hover {
 	background-color: #3b5998;
@@ -546,8 +556,8 @@ ul.social-network li {
 	background-color: #f1641e;
 }
 
-.social-network a.icoTwitter:hover {
-	background-color: #00aced;
+.social-network a.icoBsky:hover {
+	background-color: #0085ff;
 }
 
 .social-network a.icoTwitch:hover {
@@ -555,7 +565,7 @@ ul.social-network li {
 }
 
 .social-network a.icoTwitch:hover i,
-.social-network a.icoTwitter:hover i,
+.social-network a.icoBsky:hover i,
 .social-network a.icoYoutube:hover i,
 .social-network a.icoInstagram:hover i,
 .social-network a.icoLinkedin:hover i {
@@ -575,14 +585,14 @@ ul.social-network li {
 	-webkit-border-radius: 50%;
 	border-radius: 50%;
 	text-align: center;
-	width: 30px;
-	height: 30px;
-	font-size: 15px;
+	width: 42px;
+	height: 42px;
+	font-size: 24px;
 }
 
 .social-circle li i {
 	margin: 0;
-	line-height: 30px;
+	line-height: 42px;
 	text-align: center;
 }
 
