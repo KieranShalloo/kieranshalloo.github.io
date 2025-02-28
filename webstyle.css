@@ -26,8 +26,8 @@
 
 .icon {
 	background: var(--accent);
-	-webkit-mask-image: url(/Logo.svg);
-	mask-image: url(/Logo.svg);
+	-webkit-mask-image: url(/logo.svg);
+	mask-image: url(/logo.svg);
 }
 
 html,
