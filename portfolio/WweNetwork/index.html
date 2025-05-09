@@ -124,7 +124,25 @@
   <!-- Image comparisons-->
   <div class="containerfluid fullwidthimage">
     <div>
-      <picture>
+
+      <figure class="figure">
+        <picture>
+          <!-- Modern formats first (no media queries) -->
+          <!-- <source srcset="/images/wwe/wwe-network-screen-tile-1920.avif" type="image/avif"> -->
+          <!-- <source srcset="/images/wwe/wwe-network-screen-tile-1920.webp" type="image/webp"> -->
+
+          <!-- Single responsive JPG fallback -->
+          <img src="/images/wwe/wwe-network-screen-tile-1920.jpg" srcset="/images/wwe/wwe-network-screen-tile-414.jpg 414w,
+                 /images/wwe/wwe-network-screen-tile-768.jpg 768w,
+                 /images/wwe/wwe-network-screen-tile-1920.jpg 1080w" sizes="(max-width: 414px) 414px,
+                (max-width: 768px) 768px,
+                1080px" class="figure-img img-fluid rounded" loading="lazy" decoding="async"
+            alt="Railcard savings illustration">
+        </picture>
+        <figcaption class="figure-caption text-center">Comparing railcard discounts</figcaption>
+      </figure>
+
+      <!-- <picture>
         <source media="(max-width: 414px)" srcset="/images/wwe/wwe-network-screen-tile-414.webp 375w"
           type="image/webp" />
         <source media="(max-width: 1024px)" srcset="/images/wwe/wwe-network-screen-tile-768.webp 768w"
@@ -137,7 +155,7 @@
         <source media="(min-width: 1025px)" srcset="/images/wwe/wwe-network-screen-tile-1920.jpg 1920w"
           type="image/jpg" />
         <img decoding="async" class="img-fluid" loading="lazy" alt="WWE network redesign colelction of screens" />
-      </picture>
+      </picture> -->
     </div>
   </div>
 
@@ -274,7 +292,13 @@
         </div>
 
     </div> -->
+
+
   </div>
+
+{% include responsive-image.html name="wwe/wwe-network-styleguide" alt="WWE Styleguide" caption="Styleguide layout" %}
+
+
   <picture>
     <source media="(max-width: 414px)" srcset="/images/wwe/wwe-network-styleguide-375.webp 375w" type="image/webp" />
     <source media="(max-width: 1024px)" srcset="/images/wwe/wwe-network-styleguide-768.webp 768w" type="image/webp" />

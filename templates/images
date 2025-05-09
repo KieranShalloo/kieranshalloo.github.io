@@ -16,3 +16,11 @@
     </picture>
     <figcaption class="figure-caption text-center">Copy for the caption if needed.</figcaption>
 </figure>
+
+
+<picture>
+    <source srcset="image.avif" type="image/avif">
+    <img src="image-1440.jpg" srcset="image-720.jpg 720w,
+               image-1440.jpg 1440w" sizes="(max-width: 800px) 100vw, 1440px" class="portfolio-img" loading="lazy"
+        alt="UI design case study" width="1440">
+</picture>
