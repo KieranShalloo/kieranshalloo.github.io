@@ -1,1 +1,32 @@
+### Jekyll ###
+_site/
+.jekyll-cache/
+.jekyll-metadata
+*.gem
+*.gemfile.lock
+
+### macOS ###
 **/.DS_Store
+**/.AppleDouble
+**/.LSOverride
+**/.Spotlight-V100
+**/.Trashes
+**/.fseventsd
+
+### Ruby ###
+/.bundle/
+/vendor/bundle/
+*.gem
+.ruby-version
+
+### VS Code ###
+.vscode/
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+*.code-workspace
+
+### Temporary files ###
+*.swp
+*.swo
+*~

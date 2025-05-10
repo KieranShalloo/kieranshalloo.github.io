@@ -485,152 +485,90 @@ body {
 	transform: translateX(0);
 }
 
-/*------------------------------------
-    - Footer
-    ------------------------------------*/
-
+/*/*------------------------------------
+  Footer
+------------------------------------*/
 footer {
-	background: var(--dark);
+	background-color: var(--dark);
+	padding: 2rem 0;
+	color: var(--light);
+	text-align: center;
 }
 
 footer a {
 	color: var(--light);
-	font-size: 14px;
-	transition-duration: 0.2s;
+	font-size: 0.875rem;
+	transition: color 0.2s ease-in-out;
 	text-decoration: none;
 }
 
-footer a:hover {
+footer a:hover,
+footer a:focus {
 	color: var(--accent);
-	text-decoration: none;
-}
-
-.footer-middle {
-	padding-top: 2em;
-	color: var(--light);
 }
 
 /*------------------------------------
-    - Social Icons
-    ------------------------------------*/
-
-/* footer social icons */
-
+  Social Icons
+------------------------------------*/
 ul.social-network {
 	list-style: none;
-	display: inline;
-	margin-left: 0 !important;
 	padding: 0;
+	margin: 1rem 0 0;
+	display: flex;
+	justify-content: center;
+	gap: 0.5rem;
 }
 
-ul.social-network li {
-	display: inline;
-	margin: 0 5px;
+ul.social-network li a {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	width: 42px;
+	height: 42px;
+	border-radius: 50%;
+	background-color: var(--dark);
+	font-size: 1.25rem;
+	transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
-.li {
-	text-decoration: none;
+ul.social-network li a:hover {
+	transform: scale(1.1);
 }
 
-/* footer social icons */
-.bi-bluesky::before {
-	content: "";
-	background-color: currentColor;
-	-webkit-mask: url("../images/about/bsky.svg") no-repeat 50% 50%;
-	mask: url("../images/about/bsky.svg") no-repeat 50% 50%;
-	-webkit-mask-size: cover;
-	mask-size: cover;
-	height: 24px;
-	width: 24px;
+ul.social-network li a i {
+	color: var(--light);
+	transition: color 0.3s ease;
 }
 
-.social-network a.icoInstagram:hover {
-	background-color: #3b5998;
+ul.social-network li a.icoInstagram:hover i {
+	background-color: #e4405f;
+	color: #fff;
 }
-
-.social-network a.icoLinkedin:hover {
+ul.social-network li a.icoLinkedin:hover i {
 	background-color: #007bb7;
+	color: #fff;
 }
-
-.social-network a.icoYoutube:hover {
-	background-color: #f1641e;
+ul.social-network li a.icoYoutube:hover i {
+	background-color: #ff0000;
+	color: #fff;
 }
-
-.social-network a.icoBsky:hover {
+ul.social-network li a.icoBsky:hover i {
 	background-color: #0085ff;
+	color: #fff;
 }
-
-.social-network a.icoTwitch:hover {
+ul.social-network li a.icoTwitch:hover i {
 	background-color: #6441a5;
-}
-
-.social-network a.icoTwitch:hover i,
-.social-network a.icoBsky:hover i,
-.social-network a.icoYoutube:hover i,
-.social-network a.icoInstagram:hover i,
-.social-network a.icoLinkedin:hover i {
 	color: #fff;
 }
 
-.social-network a.socialIcon:hover,
-.socialHoverClass {
-	color: var(--accent);
-}
-
-.social-circle li a {
+.bi-bluesky::before {
+	content: "";
+	background-color: currentColor;
+	-webkit-mask: url("../images/about/bsky.svg") no-repeat center / cover;
+	mask: url("../images/about/bsky.svg") no-repeat center / cover;
 	display: inline-block;
-	position: relative;
-	margin: 0 auto 0 auto;
-	-moz-border-radius: 50%;
-	-webkit-border-radius: 50%;
-	border-radius: 50%;
-	text-align: center;
-	width: 42px;
-	height: 42px;
-	font-size: 24px;
-}
-
-.social-circle li i {
-	margin: 0;
-	line-height: 42px;
-	text-align: center;
-}
-
-.social-circle li a:hover i,
-.triggeredHover {
-	-moz-transform: rotate(360deg);
-	-webkit-transform: rotate(360deg);
-	-ms--transform: rotate(360deg);
-	transform: rotate(360deg);
-	-webkit-transition: all 0.2s;
-	-moz-transition: all 0.2s;
-	-o-transition: all 0.2s;
-	-ms-transition: all 0.2s;
-	transition: all 0.2s;
-}
-
-.social-circle i {
-	color: var(--light);
-	-webkit-transition: all 0.8s;
-	-moz-transition: all 0.8s;
-	-o-transition: all 0.8s;
-	-ms-transition: all 0.8s;
-	transition: all 0.8s;
-}
-
-.social-network a {
-	background-color: var(--dark);
-}
-
-.navbar {
-	background-color: var(--dark);
-}
-
-.navbar-light .navbar-nav .nav-link {
-	color: var(--light);
-}
-.navbar-light .navbar-nav .nav-link:hover {
-	color: var(--accent);
+	width: 24px;
+	height: 24px;
 }
 
 /*------------------------------------
