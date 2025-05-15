@@ -1,11 +1,12 @@
 ---
 layout: default
 title: Portfolio
-description: A showcase of UX/UI design work including WWE Network
+
+description: A showcase of WWE Network UX/UI design work
 ---
 
 
-<!-- Nav -->
+
 
 
 
@@ -59,43 +60,14 @@ description: A showcase of UX/UI design work including WWE Network
   </div>
 </div>
 
+
+
 <!-- Image comparisons-->
-<div class="containerfluid fullwidthimage">
 
+{% include responsive-image.html name="wwe/wwe-network-screen-tile"
+alt="WWE Styleguide"
 
-  <figure class="figure">
-    <picture>
-      <!-- Modern formats first (no media queries) -->
-      <!-- <source srcset="/images/wwe/wwe-network-screen-tile-1920.avif" type="image/avif"> -->
-      <!-- <source srcset="/images/wwe/wwe-network-screen-tile-1920.webp" type="image/webp"> -->
-
-      <!-- Single responsive JPG fallback -->
-      <img src="/images/wwe/wwe-network-screen-tile-1920.jpg" srcset="/images/wwe/wwe-network-screen-tile-414.jpg 414w,
-                 /images/wwe/wwe-network-screen-tile-768.jpg 768w,
-                 /images/wwe/wwe-network-screen-tile-1920.jpg 1080w" sizes="(max-width: 414px) 414px,
-                (max-width: 768px) 768px,
-                1920px" class="figure-img img-fluid rounded" loading="lazy" decoding="async"
-        alt="Railcard savings illustration">
-    </picture>
-
-  </figure>
-
-  <!-- <picture>
-        <source media="(max-width: 414px)" srcset="/images/wwe/wwe-network-screen-tile-414.webp 375w"
-          type="image/webp" />
-        <source media="(max-width: 1024px)" srcset="/images/wwe/wwe-network-screen-tile-768.webp 768w"
-          type="image/webp" />
-        <source media="(min-width: 1025px)" srcset="/images/wwe/wwe-network-screen-tile-1920.webp 1920w"
-          type="image/webp" />
-        <source media="(max-width: 414px)" srcset="/images/wwe/wwe-network-screen-tile-414.jpg 375w" type="image/jpg" />
-        <source media="(max-width: 1024px)" srcset="/images/wwe/wwe-network-screen-tile-768.jpg 768w"
-          type="image/jpg" />
-        <source media="(min-width: 1025px)" srcset="/images/wwe/wwe-network-screen-tile-1920.jpg 1920w"
-          type="image/jpg" />
-        <img decoding="async" class="img-fluid" loading="lazy" alt="WWE network redesign colelction of screens" />
-      </picture> -->
-</div>
-</div>
+%}
 
 <!-- Main Content -->
 <!-- Exclusive Content -->
@@ -233,9 +205,9 @@ description: A showcase of UX/UI design work including WWE Network
 
 
 </div>
-<div class="containerfluid">
-  {% include responsive-image.html name="wwe/wwe-network-styleguide" alt="WWE Styleguide" caption="Styleguide layout"
-  %}</div>
+
+{% include responsive-image.html name="wwe/wwe-network-styleguide" alt="WWE Styleguide" caption="Styleguide layout"
+%}
 
 
 <!-- <picture>
@@ -248,7 +220,7 @@ description: A showcase of UX/UI design work including WWE Network
     <img decoding="async" class="img-fluid" loading="lazy" src="/images/wwe/wwe-network-styleguide-768.jpg" />
   </picture> -->
 
-<div class="containerfluid   ">
+<div class="containerfluid  cl ">
   <div class="container">
     <div class="row">
       <div class="col-md-8 offset-md-1">
@@ -298,10 +270,9 @@ description: A showcase of UX/UI design work including WWE Network
       </div>
       <div class="col-12 col-md-4 pt-3">
         <picture>
+          <source srcset="/images/wwe/wwe-network-downloading.avif 375w" type="image/avif" />
           <source srcset="/images/wwe/wwe-network-downloading.webp 375w" type="image/webp" />
-
           <source srcset="/images/wwe/wwe-network-downloads.jpg 375w" type="image/jpg" />
-
           <img decoding="async" class="img-fluid" loading="lazy" />
         </picture>
       </div>
@@ -309,8 +280,8 @@ description: A showcase of UX/UI design work including WWE Network
 
       <div class="col-12 col-md-4 pt-3">
         <picture>
+          <source srcset="/images/wwe/wwe-network-downloads-375.avif 375w" type="image/avif" />
           <source srcset="/images/wwe/wwe-network-downloads-375.webp 375w" type="image/webp" />
-
           <source srcset="/images/wwe/wwe-network-downloads-375.jpg 375w" type="image/jpg" />
 
           <img decoding="async" class="img-fluid" loading="lazy" />
@@ -323,16 +294,10 @@ description: A showcase of UX/UI design work including WWE Network
   </div>
 </div>
 
-<picture>
-  <source media="(max-width: 414px)" srcset="/images/wwe/wwe-network-downloads-375.webp 375w" type="image/webp" />
-  <source media="(max-width: 1024px)" srcset="/images/wwe/wwe-network-downloads-768.webp 768w" type="image/webp" />
-  <source media="(min-width: 1025px)" srcset="/images/wwe/wwe-network-downloads-1920.webp 1920w" type="image/webp" />
-  <source media="(max-width: 414px)" srcset="/images/wwe/wwe-network-downloads-375.jpg 375w" type="image/jpg" />
 
-  <source media="(max-width: 1024px)" srcset="/images/wwe/wwe-network-downloads-768.jpg 768w" type="image/jpg" />
-  <source media="(min-width: 1025px)" srcset="/images/wwe/wwe-network-downloads-1920.jpg 1920w" type="image/jpg" />
-  <img decoding="async" class="img-fluid" loading="lazy" />
-</picture>
+{% include responsive-image.html name="wwe/wwe-network-downloads" alt="WWE Styleguide" caption="test"
+%}
+
 
 
 <div class="container">
