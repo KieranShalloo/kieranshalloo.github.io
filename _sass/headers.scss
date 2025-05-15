@@ -1,0 +1,167 @@
+[class$="header"],
+[class$="scrolling"] {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8));
+}
+
+    {
+    % for header in site.data.headers %
+}
+
+. {
+        {
+        header.name
+    }
+}
+
+header {
+
+    /* Base/mobile (414px) */
+        {
+        % assign base=header.sizes | where: "width", 414 | first %
+    }
+
+        {
+        % if base.avif or base.webp or base.jpg %
+    }
+
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)) {
+        % if base.avif %
+    }
+
+    ,
+    url("{{ base.avif }}") {
+        % endif %
+    }
+
+        {
+        % if base.webp %
+    }
+
+    ,
+    url("{{ base.webp }}") {
+        % endif %
+    }
+
+        {
+        % if base.jpg %
+    }
+
+    ,
+    url("{{ base.jpg }}") {
+        % endif %
+    }
+
+    ;
+
+        {
+        % endif %
+    }
+
+    /* Tablet (768px) */
+        {
+        % assign tablet=header.sizes | where: "width", 768 | first %
+    }
+
+        {
+        % if tablet.avif or tablet.webp or tablet.jpg %
+    }
+
+    @media (min-width: 30em) {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)) {
+            % if tablet.avif %
+        }
+
+        ,
+        url("{{ tablet.avif }}") {
+            % endif %
+        }
+
+            {
+            % if tablet.webp %
+        }
+
+        ,
+        url("{{ tablet.webp }}") {
+            % endif %
+        }
+
+            {
+            % if tablet.jpg %
+        }
+
+        ,
+        url("{{ tablet.jpg }}") {
+            % endif %
+        }
+
+        ;
+    }
+
+        {
+        % endif %
+    }
+
+    /* Desktop (1920px) */
+        {
+        % assign desktop=header.sizes | where: "width", 1920 | first %
+    }
+
+        {
+        % if desktop.avif or desktop.webp or desktop.jpg %
+    }
+
+    @media (min-width: 62em) {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)) {
+            % if desktop.avif %
+        }
+
+        ,
+        url("{{ desktop.avif }}") {
+            % endif %
+        }
+
+            {
+            % if desktop.webp %
+        }
+
+        ,
+        url("{{ desktop.webp }}") {
+            % endif %
+        }
+
+            {
+            % if desktop.jpg %
+        }
+
+        ,
+        url("{{ desktop.jpg }}") {
+            % endif %
+        }
+
+        ;
+    }
+
+        {
+        % endif %
+    }
+}
+
+    {
+    % endfor %
+}
+
+/* Special cases */
+.keyboardheader {
+    @media (min-width: 30em) {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)),
+            url("/images/keyboard/Youview-onscreenkeyboard-hero-768.jpg");
+    }
+
+    @media (min-width: 62em) {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)),
+            url("/images/keyboard/Youview-onscreenkeyboard-hero-1920.jpg");
+    }
+}
