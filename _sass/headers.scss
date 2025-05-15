@@ -1,4 +1,4 @@
-[class$="header"],
+<style>[class$="header"],
 [class$="scrolling"] {
     background-size: cover;
     background-position: center;
@@ -21,10 +21,6 @@ header {
     /* Base/mobile (414px) */
         {
         % assign base=header.sizes | where: "width", 414 | first %
-    }
-
-        {
-        % if base.avif or base.webp or base.jpg %
     }
 
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)) {
@@ -56,17 +52,9 @@ header {
 
     ;
 
-        {
-        % endif %
-    }
-
     /* Tablet (768px) */
         {
         % assign tablet=header.sizes | where: "width", 768 | first %
-    }
-
-        {
-        % if tablet.avif or tablet.webp or tablet.jpg %
     }
 
     @media (min-width: 30em) {
@@ -100,17 +88,9 @@ header {
         ;
     }
 
-        {
-        % endif %
-    }
-
     /* Desktop (1920px) */
         {
         % assign desktop=header.sizes | where: "width", 1920 | first %
-    }
-
-        {
-        % if desktop.avif or desktop.webp or desktop.jpg %
     }
 
     @media (min-width: 62em) {
@@ -143,10 +123,6 @@ header {
 
         ;
     }
-
-        {
-        % endif %
-    }
 }
 
     {
@@ -165,3 +141,5 @@ header {
             url("/images/keyboard/Youview-onscreenkeyboard-hero-1920.jpg");
     }
 }
+
+</style>

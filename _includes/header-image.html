@@ -1,0 +1,16 @@
+{% assign header = site.data.headers | where: "name", include.name | first %}
+
+<div class="header-image position-relative" style="
+  height: {{ include.height | default: '100vh' }};
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)), url('{{ header.sizes[0].jpg }}');
+  background-size: cover;
+  background-position: center;
+  margin-top: -56px;
+  padding-top: 56px;
+">
+    {% if include.overlay %}
+    <div class="position-absolute top-50 start-50 translate-middle text-center text-white w-75">
+        {{ include.overlay }}
+    </div>
+    {% endif %}
+</div>
