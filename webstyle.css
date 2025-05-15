@@ -485,6 +485,18 @@ body {
 	transform: translateX(0);
 }
 
+.figure {
+	width: 100%;
+	margin: 0;
+}
+
+.figure > picture,
+.figure > picture > img {
+	display: block;
+	width: 100%;
+	height: auto;
+}
+
 /*/*------------------------------------
   Footer
 ------------------------------------*/
@@ -626,14 +638,14 @@ ul.social-network li a.icoTwitch:hover i {
 .show > .btn-outline-ksd.dropdown-toggle:focus {
 	box-shadow: 0 0 0 0.2rem rgba(0, 153, 153, 0.5);
 }
-.navbar-light .navbar-toggler {
+.nav-light .navbar-toggler {
 	border: var(--accent);
 }
-.navbar-toggler:focus {
+.nav-toggler:focus {
 	text-decoration: none;
 	box-shadow: none;
 }
-.navbar-light .navbar-toggler-icon {
+.nav-light .navbar-toggler-icon {
 	background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
 }
 

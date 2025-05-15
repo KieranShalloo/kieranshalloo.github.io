@@ -1,0 +1,61 @@
+<nav class="navbar navbar-expand-md navbar-light bg-light shadow fixed-top p-0">
+    <div class="container p-2">
+        <a class="navbar-brand d-md-none" href="/">
+            <img src="/Logotype.svg" alt="Home" width="50" height="50">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive"
+            aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse justify-content-center" id="navbarResponsive">
+            <ul class="navbar-nav align-items-center">
+                {% assign url_parts = page.url | split: '/' %}
+                {% assign base_path = page.url | remove_first: '/' | split: '/' | first %}
+
+
+                <li class="nav-item">
+                    <a class="nav-link {% if base_path == 'portfolio' %}active{% endif %}" href="/portfolio" {% if
+                        base_path=='portfolio' %}aria-current="page" {% endif %}>
+                        Design Work
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link {% if base_path == 'process' %}active{% endif %}" href="/process" {% if
+                        base_path=='process' %}aria-current="page" {% endif %}>
+                        The Process
+                    </a>
+                </li>
+
+                <li class="nav-item d-none d-md-block mx-4">
+                    <a class="navbar-brand p-0" href="/">
+                        <img src="/Logotype.svg" alt="Home" width="70" height="70">
+                    </a>
+                </li>
+
+                <li class="nav-item d-md-none">
+                    <a class="nav-link {% if page.url == '/' %}active{% endif %}" href="/" {% if page.url=='/'
+                        %}aria-current="page" {% endif %}>
+                        Home
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link {% if base_path == 'illustration' %}active{% endif %}" href="/illustration" {% if
+                        base_path=='illustration' %}aria-current="page" {% endif %}>
+                        Illustration
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link {% if base_path == 'traditionalprintmaking' %}active{% endif %}"
+                        href="/traditionalprintmaking" {% if base_path=='traditionalprintmaking' %}aria-current="page"
+                        {% endif %}>
+                        Printmaking
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>

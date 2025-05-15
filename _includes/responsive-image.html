@@ -1,28 +1,28 @@
 <figure class="figure">
-    <picture>
-        <source type="image/avif" srcset="
+  <picture>
+    <source type="image/avif" srcset="
       {{ '/images/' | append: include.name | append: '-414.avif' }} 414w,
       {{ '/images/' | append: include.name | append: '-768.avif' }} 768w,
       {{ '/images/' | append: include.name | append: '-1440.avif' }} 1440w,
       {{ '/images/' | append: include.name | append: '-1920.avif' }} 1920w
     " sizes="(max-width: 414px) 414px, (max-width: 1024px) 768px, (max-width: 1919px) 1440px, 1920px">
 
-        <source type="image/webp" srcset="
+    <source type="image/webp" srcset="
       {{ '/images/' | append: include.name | append: '-414.webp' }} 414w,
       {{ '/images/' | append: include.name | append: '-768.webp' }} 768w,
       {{ '/images/' | append: include.name | append: '-1440.webp' }} 1440w,
       {{ '/images/' | append: include.name | append: '-1920.webp' }} 1920w
     " sizes="(max-width: 414px) 414px, (max-width: 1024px) 768px, (max-width: 1919px) 1440px, 1920px">
 
-        <img src="{{ '/images/' | append: include.name | append: '-768.jpg' }}" srcset="
+    <img src="{{ '/images/' | append: include.name | append: '-768.jpg' }}" srcset="
         {{ '/images/' | append: include.name | append: '-414.jpg' }} 414w,
         {{ '/images/' | append: include.name | append: '-768.jpg' }} 768w,
         {{ '/images/' | append: include.name | append: '-1440.jpg' }} 1440w,
         {{ '/images/' | append: include.name | append: '-1920.jpg' }} 1920w
       " sizes="(max-width: 414px) 414px, (max-width: 1024px) 768px, (max-width: 1919px) 1440px, 1920px"
-            decoding="async" loading="lazy" class="img-fluid" alt="{{ include.alt }}">
-    </picture>
-    {% if include.caption %}
-    <figcaption class="figure-caption text-center">{{ include.caption }}</figcaption>
-    {% endif %}
+      decoding="async" loading="lazy" class="img-fluid" alt="{{ include.alt }}">
+  </picture>
+  {% if include.caption %}
+  <figcaption class="figure-caption text-center">{{ include.caption }}</figcaption>
+  {% endif %}
 </figure>
