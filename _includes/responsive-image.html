@@ -20,7 +20,7 @@
         {{ '/images/' | append: include.name | append: '-1440.jpg' }} 1440w,
         {{ '/images/' | append: include.name | append: '-1920.jpg' }} 1920w
       " sizes="(max-width: 414px) 414px, (max-width: 1024px) 768px, (max-width: 1919px) 1440px, 1920px"
-      decoding="async" loading="lazy" class="img-fluid" alt="{{ include.alt }}">
+      decoding="async" loading="lazy" class="figure-img img-fluid" alt="{{ include.alt }}">
   </picture>
   {% if include.caption %}
   <figcaption class="figure-caption text-center">{{ include.caption }}</figcaption>
