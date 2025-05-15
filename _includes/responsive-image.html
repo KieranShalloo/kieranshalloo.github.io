@@ -1,33 +1,34 @@
-<figure class="figure portfolio-image">
+<figure class="portfolio-image">
   <picture>
-    <!-- AVIF (Best Quality) -->
+    <!-- AVIF Format (Modern Browsers) -->
     <source type="image/avif" srcset="
       {{ '/images/' | append: include.name | append: '-414.avif' }} 414w,
       {{ '/images/' | append: include.name | append: '-768.avif' }} 768w,
       {{ '/images/' | append: include.name | append: '-1920.avif' }} 1920w
     " sizes="
-      (max-width: 480px) 414px,  <!-- Mobile -->
-      (max-width: 1024px) 768px, <!-- Tablet -->
-      1920px                     <!-- Desktop -->
+      (max-width: 414px) 414px,
+      (max-width: 1024px) 768px,
+      1920px
     ">
 
-    <!-- WebP (Wider Support) -->
+    <!-- WebP Format (Wider Support) -->
     <source type="image/webp" srcset="
       {{ '/images/' | append: include.name | append: '-414.webp' }} 414w,
       {{ '/images/' | append: include.name | append: '-768.webp' }} 768w,
       {{ '/images/' | append: include.name | append: '-1920.webp' }} 1920w
     " sizes="
-      (max-width: 480px) 375px,
+      (max-width: 414px) 414px,
       (max-width: 1024px) 768px,
       1920px
     ">
 
     <!-- JPEG Fallback -->
-    <img src="{{ '/images/' | append: include.name | append: '-1920.jpg' }}" srcset="
+    <img src="{{ '/images/' | append: include.name | append: '-768.jpg' }}" srcset="
            {{ '/images/' | append: include.name | append: '-414.jpg' }} 414w,
-           {{ '/images/' | append: include.name | append: '-768.jpg' }} 768w
+           {{ '/images/' | append: include.name | append: '-768.jpg' }} 768w,
+           {{ '/images/' | append: include.name | append: '-1920.jpg' }} 1920w
          " sizes="
-           (max-width: 480px) 414px,
+           (max-width: 414px) 414px,
            (max-width: 1024px) 768px,
            1920px
          " width="1920" height="auto" decoding="async" loading="lazy" class="img-fluid"
