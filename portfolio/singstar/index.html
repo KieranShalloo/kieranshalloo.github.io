@@ -1,270 +1,107 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <title>Kieran Shalloo Product Designer - Singstar</title>
-    <!-- Required meta tags -->
-    <link rel="icon" type="image/svg+xml" href="/Logo.svg">
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1 ">
-    <meta name="description"
-        content="A portfolio page showing the Book of Spells game on PS3 that I worked as a designer on">
-
-
-
-    <!-- Bootstrap CSS -->
-
-    <link href=" https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css " rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css"
-        integrity="sha384-b6lVK+yci+bfDmaY1u0zE8YYJt0TZxLEAFyYSLHId4xoVvsrQu3INevFKo+Xir8e" crossorigin="anonymous">
-
-
-    <!-- Local CSS -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@200;300;700&display=swap" rel="stylesheet">
-
-    <link rel="preload" href="/webstyle.css" as="style">
-    <link rel="preload" href="/text.css" as="style">
-    <link rel="stylesheet" type="text/css" href="/webstyle.css">
-    <link rel="stylesheet" type="text/css" href="/text.css">
-
-
-
-
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-28629869-2"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-
-        function gtag() {
-            dataLayer.push(arguments);
-        }
-        gtag('js', new Date());
-
-        gtag('config', 'UA-28629869-2');
-    </script>
-
-</head>
-
-
-
-<body>
-
-    <nav class="navbar shadow navbar-expand-md navbar-light fixed-top p-0">
-        <div class="p-2 container">
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01"
-                aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse justify-content-center" id="navbarTogglerDemo01">
-
-
-                <ul class="navbar-nav mx-auto">
-                    <ul class="align-items-center navbar-nav">
-                        <a style="color:var(--accent);" class=" aria-current=true nav-link text-center mx-3 active "
-                            href="/portfolio">Design
-                            Work</a>
-                        <a class="nav-link text-center mx-3" href="/process">The Process</a>
-                        <a class="d-none d-md-block  navbar-brand mx-5 p-0" href=" /">
-                            <img class="logolight" src="/Logotype.svg" alt="" width="70" height="70">
-                        </a>
-                        <a class="d-md-none nav-link text-center mx-3" href="/">Home</a>
-                        <a class="nav-link text-center mx-3" href="/illustration/">Illustration </a>
-                        <a class="nav-link text-center mx-3" href="/traditionalprintmaking/">Printmaking</a>
-                    </ul>
-
-            </div>
-        </div>
-
-    </nav>
-    <!-- Jumbotron -->
-    <div class="jumbotron jumbotron-fluid cover singstarheader">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-8 overlaytext">
-                    <h1 class="header-title   text-center" style="color: var(--light);">Singstar</h1>
-                    <h3 class="header-subtitle   text-center" style="color: var(--light);">The PlayStation Music
-                        Videogame
-                    </h3>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Project Header-->
-    <div class="containerfluid">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6 offset-md-2">
-                    <h6 class="text-muted">Brief</h6>
-                    <p>I collaborated with the senior design team to help conceptualise future design patterns and
-                        in-game assets, in turn
-                        taking responsibility for designing production ready components.<br><br> I also worked closely
-                        with the
-                        motion graphics teams,
-                        assisting with the storyboarding of concepts and also making Lo-Fi mock ups to take further into
-                        the animatic stage. </p>
-                </div>
-
-
-                <div class="col">
-
-                    <h6 class="text-muted"> Client</h6>
-                    <p>Sony London Studio</p>
-                    <h6 class="text-muted">Project Date</h6>
-                    <p>2012</p>
-                    <h6 class="text-muted">
-                        Role</h6>
-                    <p>Graphic Designer (Contract)</p>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <picture>
-        <!-- <source srcset="/images/book-of-spells/boSHero.webp" type="image/webp"> -->
-        <!-- <source srcset="/images/book-of-spells/boSHero.jpg" type="image/jpg"> -->
-        <img class="img-fluid" src="/images/singstar/singstarHero.jpg" alt="Book of spells UI Image">
-    </picture>
-    <!-- Image comparisons-->
-
-    <div class="containerfluid">
+---
+layout: default
+title: Portfolio
+description: A UI/UX portfolio page showing work for Singstar by Kieran Shalloo
+---
+<!-- Jumbotron -->
+<div class="jumbotron jumbotron-fluid cover singstarheader">
+    <div class="container">
         <div class="row">
-
-
-            <div class="col-12 col-md-6 pt-3">
-                <picture>
-                    <!-- <source srcset="/images/book-of-spells/bos02.webp" type="image/webp"> -->
-                    <source srcset="/images/singstar/singstarpromo.jpg" type="image/jpg">
-                    <img class="img-fluid" src="/images/singstar/singstarpromo.jpg" alt="Book of spells UI Image">
-                </picture>
+            <div class="col-md-8 overlaytext">
+                <h1 class="header-title   text-center" style="color: var(--light);">Singstar</h1>
+                <h3 class="header-subtitle   text-center" style="color: var(--light);">The PlayStation Music
+                    Videogame
+                </h3>
             </div>
-            <div class="col-12 col-md-6 pt-3">
-                <picture>
-                    <!-- <source srcset="/images/book-of-spells/bos02.webp" type="image/webp"> -->
-                    <source srcset="/images/singstar/singstarMG3.jpg" type="image/jpg">
-                    <img class="img-fluid" src="/images/singstar/singstarMG3.jpg" alt="Book of spells UI Image">
-                </picture>
-            </div>
-            <div class="col-12 col-md-6 pt-3">
-                <picture>
-                    <!-- <source srcset="/images/book-of-spells/bos02.webp" type="image/webp"> -->
-                    <source srcset="/images/singstar/singstar80s.jpg" type="image/jpg">
-                    <img class="img-fluid" src="/images/singstar/singstar80s.jpg" alt="Book of spells UI Image">
-                </picture>
-            </div>
-            <div class="col-12 col-md-6 pt-3">
-                <picture>
-                    <!-- <source srcset="/images/book-of-spells/bos02.webp" type="image/webp"> -->
-                    <source srcset="/images/singstar/singstarMG2.jpg" type="image/jpg">
-                    <img class="img-fluid" src="/images/singstar/singstarMG2.jpg" alt="Book of spells UI Image">
-                </picture>
-            </div>
-            <div class="col-12 col-md-6 pt-3">
-                <picture>
-                    <!-- <source srcset="/images/book-of-spells/bos02.webp" type="image/webp"> -->
-                    <source srcset="/images/singstar/singstarMG.jpg" type="image/jpg">
-                    <img class="img-fluid" src="/images/singstar/singstarMG.jpg" alt="Book of spells UI Image">
-                </picture>
-            </div>
-            <div class="col-12 col-md-6 pt-3">
-                <picture>
-                    <!-- <source srcset="/images/book-of-spells/bos02.webp" type="image/webp"> -->
-                    <source srcset="/images/singstar/singstarHome.jpg" type="image/jpg">
-                    <img class="img-fluid" src="/images/singstar/singstarHome.jpg" alt="Book of spells UI Image">
-                </picture>
-            </div>
-
         </div>
     </div>
+</div>
 
-    <!-- Main Content -->
-
-
-
-
-    <!-- Footer-->
-    <footer class="mainfooter shadow " role="contentinfo ">
-        <div class="footer-middle ">
-            <div class="container ">
-                <div class="row ">
-                    <div class="col-md-4 col ">
-                        <!--Column1-->
-                        <div>
-                            <p style="color: var(--light)">Pages</p>
-                            <ul class="list-unstyled ">
-                                <li> <a href="/ ">Home</a>
-                                <li> <a href="/portfolio/ ">Design Work</a>
-                                <li> <a href="/process/ ">Process</a>
-                                <li> <a href="/illustration ">Illustration Work</a>
-                                <li> <a href="/traditionalprintmaking/">Printmaking</a>
-                            </ul>
-                        </div>
-                    </div>
+<!-- Project Header-->
+<div class="containerfluid">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 offset-md-2">
+                <h6 class="text-muted">Brief</h6>
+                <p>I collaborated with the senior design team to help conceptualise future design patterns and
+                    in-game assets, in turn
+                    taking responsibility for designing production ready components.<br><br> I also worked closely
+                    with the
+                    motion graphics teams,
+                    assisting with the storyboarding of concepts and also making Lo-Fi mock ups to take further into
+                    the animatic stage. </p>
+            </div>
 
 
-                    <div class="col-md-4 col ">
-                        <p style="color: var(--light)">Social Media</p>
-                        <div>
-                            <ul class="social-network social-circle ">
+            <div class="col">
 
-                                <li>
-                                    <a href="https://www.instagram.com/kieranshalloodesign/ " class="icoInstagram "
-                                        title=" ">
-                                        <i class="bi bi-instagram "></i>
-                                    </a>
-                                </li>
-
-                                <li>
-                                    <a href="https://uk.linkedin.com/in/kieranshalloo " class="icoLinkedin "
-                                        title="Linkedin ">
-                                        <i class="bi bi-linkedin "></i>
-                                    </a>
-                                </li>
-
-                                <li>
-                                    <a href="https://www.twitch.tv/kieranshalloodesign " class="icoTwitch "
-                                        title="Twitch ">
-                                        <i class="bi bi-twitch "></i>
-                                    </a>
-                                </li>
-
-                                <li>
-                                    <a href="https://twitter.com/KieranShalloo " class="icoTwitter " title="Twitter "><i
-                                            class="bi bi-twitter "></i>
-                                    </a>
-                                </li>
-
-                                <li>
-                                    <a href="https://www.youtube.com/channel/UCh7nbnnKY9cUaxcZ-alLCXw "
-                                        class="icoYoutube " title="Youtube "><i class="bi bi-youtube "></i>
-                                    </a>
-                                </li>
-
-                            </ul>
-
-                        </div>
-                    </div>
-                    <div class="col-md-2  offset-md-2 ">
-
-                        <div style="height: 100px;  width: 100px;" class="d-none d-md-block "><img src="/Logo.svg">
-                        </div>
-
-                        <p style="color: var(--light); padding-top: 2rem; font-size: 12px ">Kieran Shalloo Design Ltd.
-                            <br />&copy; 2025
-                            All
-                            rights reserved.
-                        </p>
-                    </div>
-                </div>
-
-
+                <h6 class="text-muted"> Client</h6>
+                <p>Sony London Studio</p>
+                <h6 class="text-muted">Project Date</h6>
+                <p>2012</p>
+                <h6 class="text-muted">
+                    Role</h6>
+                <p>Graphic Designer (Contract)</p>
             </div>
         </div>
-    </footer>
-    <script src=" https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js "></script>
+    </div>
+</div>
 
-</body>
+<picture>
+    <!-- <source srcset="/images/book-of-spells/boSHero.webp" type="image/webp"> -->
+    <!-- <source srcset="/images/book-of-spells/boSHero.jpg" type="image/jpg"> -->
+    <img class="img-fluid" src="/images/singstar/singstarHero.jpg" alt="Book of spells UI Image">
+</picture>
+<!-- Image comparisons-->
 
-</html>
+<div class="containerfluid">
+    <div class="row">
+
+
+        <div class="col-12 col-md-6 pt-3">
+            <picture>
+                <!-- <source srcset="/images/book-of-spells/bos02.webp" type="image/webp"> -->
+                <source srcset="/images/singstar/singstarpromo.jpg" type="image/jpg">
+                <img class="img-fluid" src="/images/singstar/singstarpromo.jpg" alt="Book of spells UI Image">
+            </picture>
+        </div>
+        <div class="col-12 col-md-6 pt-3">
+            <picture>
+                <!-- <source srcset="/images/book-of-spells/bos02.webp" type="image/webp"> -->
+                <source srcset="/images/singstar/singstarMG3.jpg" type="image/jpg">
+                <img class="img-fluid" src="/images/singstar/singstarMG3.jpg" alt="Book of spells UI Image">
+            </picture>
+        </div>
+        <div class="col-12 col-md-6 pt-3">
+            <picture>
+                <!-- <source srcset="/images/book-of-spells/bos02.webp" type="image/webp"> -->
+                <source srcset="/images/singstar/singstar80s.jpg" type="image/jpg">
+                <img class="img-fluid" src="/images/singstar/singstar80s.jpg" alt="Book of spells UI Image">
+            </picture>
+        </div>
+        <div class="col-12 col-md-6 pt-3">
+            <picture>
+                <!-- <source srcset="/images/book-of-spells/bos02.webp" type="image/webp"> -->
+                <source srcset="/images/singstar/singstarMG2.jpg" type="image/jpg">
+                <img class="img-fluid" src="/images/singstar/singstarMG2.jpg" alt="Book of spells UI Image">
+            </picture>
+        </div>
+        <div class="col-12 col-md-6 pt-3">
+            <picture>
+                <!-- <source srcset="/images/book-of-spells/bos02.webp" type="image/webp"> -->
+                <source srcset="/images/singstar/singstarMG.jpg" type="image/jpg">
+                <img class="img-fluid" src="/images/singstar/singstarMG.jpg" alt="Book of spells UI Image">
+            </picture>
+        </div>
+        <div class="col-12 col-md-6 pt-3">
+            <picture>
+                <!-- <source srcset="/images/book-of-spells/bos02.webp" type="image/webp"> -->
+                <source srcset="/images/singstar/singstarHome.jpg" type="image/jpg">
+                <img class="img-fluid" src="/images/singstar/singstarHome.jpg" alt="Book of spells UI Image">
+            </picture>
+        </div>
+
+    </div>
+</div>
+
+<!-- Main Content -->

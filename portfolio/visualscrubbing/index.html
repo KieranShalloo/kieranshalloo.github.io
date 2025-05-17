@@ -1,513 +1,445 @@
-<!DOCTYPE html>
-<!-- <html lang=”en”> -->
-<html lang=”en” data-bs-theme="dark">
-
-<head>
-    <title>Kieran Shalloo Product Designer - Channel 4</title>
-    <!-- Required meta tags -->
-    <link rel="icon" type="image/svg+xml" href="/Logo.svg">
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="description"
-        content="A product design portfolio page showing work for Channel4 streaming service for by Kieran Shalloo">
-    <!-- Bootstrap CSS -->
-    <script src=" https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js "></script>
-    <link href=" https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css " rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css"
-        integrity="sha384-b6lVK+yci+bfDmaY1u0zE8YYJt0TZxLEAFyYSLHId4xoVvsrQu3INevFKo+Xir8e" crossorigin="anonymous">
-    <!-- Local CSS -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@200;300;700&display=swap" rel="stylesheet">
-    <link rel="preload" href="/webstyle.css" as="style">
-    <link rel="preload" href="/text.css" as="style">
-    <link rel="stylesheet" type="text/css" href="/webstyle.css">
-    <link rel="stylesheet" type="text/css" href="/text.css">
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async="async" src="https://www.googletagmanager.com/gtag/js?id=UA-28629869-2"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() {
-            dataLayer.push(arguments);
-        }
-        gtag('js', new Date());
-        gtag('config', 'UA-28629869-2');
-    </script>
-
-
-</head>
-
-<body>
-    <!-- Nav -->
-    <nav class="navbar shadow navbar-expand-md navbar-light fixed-top p-0">
-        <div class="p-2 container">
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01"
-                aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse justify-content-center" id="navbarTogglerDemo01">
-
-
-                <ul class="navbar-nav mx-auto">
-                    <ul class="align-items-center navbar-nav">
-                        <a style="color:var(--accent);" class=" aria-current=true nav-link text-center mx-3 active "
-                            href="/portfolio">Design
-                            Work</a>
-                        <a class="nav-link text-center mx-3" href="/process">The Process</a>
-                        <a class="d-none d-md-block  navbar-brand mx-5 p-0" href=" /">
-                            <img class="logolight" src="/Logotype.svg" alt="" width="70" height="70">
-                        </a>
-                        <a class="d-md-none nav-link text-center mx-3" href="/">Home</a>
-                        <a class="nav-link text-center mx-3" href="/illustration/">Illustration </a>
-                        <a class="nav-link text-center mx-3" href="/traditionalprintmaking/">Printmaking</a>
-                    </ul>
-
+---
+layout: default
+title: Portfolio
+description: A UI/UX portfolio page showing work for Channel 4 TV app by Kieran Shalloo
+---
+<!-- Jumbotron -->
+<div class="jumbotron jumbotron-fluid cover channel4header">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 overlaytext">
+                <h1 class="header-title   text-center" style="color: var(--light);">Channel 4</h1>
+                <h3 class="header-subtitle   text-center" style="color: var(--light);">A new way to navigate
+                </h3>
             </div>
         </div>
+    </div>
+</div>
 
-    </nav>
-    <!-- Jumbotron -->
-    <div class="jumbotron jumbotron-fluid cover channel4header">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-8 overlaytext">
-                    <h1 class="header-title   text-center" style="color: var(--light);">Channel 4</h1>
-                    <h3 class="header-subtitle   text-center" style="color: var(--light);">A new way to navigate
-                    </h3>
-                </div>
+<!-- Project Header-->
+<div class="containerfluid">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 offset-md-2">
+                <h6 class="text-muted">Brief</h6>
+                <p>
+                    I worked with Channel4 throughout various projects, bringing my TV experience to their design
+                    team as an external
+                    contractor.<br><br>
+                    I was able to bring an outside perspective to the problems of the business whilst working with
+                    the internal design teams
+                    as well as a third-party technology supplier.
+                    <br><br>
+
+                    One brief I worked on in my time there was the introduction of the Visual Scrubbing feature.
+
+
+                </p>
+            </div>
+            <div class="col">
+                <h6 class="text-muted">Client</h6>
+                <p>Channel 4</p>
+                <h6 class="text-muted">Project Date</h6>
+                <p>2023 - 2024</p>
+                <h6 class="text-muted">
+                    Role</h6>
+                <p>
+                    Senior UX/UI Designer (contractor)</p>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Visual Scrubbing -->
+<div class="containerfluid pb-0">
+    <div class=" container">
+        <div class="row">
+            <div class="col-md-8 offset-md-1">
+                <h2 style="color: var( --channel4)">Visual Scrubbing</h2>
+            </div>
+            <div class="col-md-8 offset-md-2">
+                <p style="color: var(--light);">
+                    Channel 4 app was limited in its ability to rewind and fast forward, with customer feedback
+                    saying this was especially
+                    noticeable when the user was dropped into the incorrect placement of an episode on the continue
+                    watching area.
+                    <br><br>
+                    We wanted to create an easy way for users to be able to find the position in playback that they
+                    wanted to achieve.
+                    We took a lot of time to inspect how other companies in the industry were providing this ability
+                    to their users. We
+                    noticed a consistent pattern in other apps, but no real industry standards
+                    <br><br>
+                    We knew we wanted to create a visual style that would fit in with the current on-screen designs
+                    that users have been
+                    exposed to over the last few years. We didn't want this feature to feel too different to the
+                    experience so we approached
+                    the design elements with a clear userbase in mind.
+                </p>
             </div>
         </div>
     </div>
 
-    <!-- Project Header-->
-    <div class="containerfluid">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6 offset-md-2">
-                    <h6 class="text-muted">Brief</h6>
-                    <p>
-                        I worked with Channel4 throughout various projects, bringing my TV experience to their design
-                        team as an external
-                        contractor.<br><br>
-                        I was able to bring an outside perspective to the problems of the business whilst working with
-                        the internal design teams
-                        as well as a third-party technology supplier.
-                        <br><br>
-
-                        One brief I worked on in my time there was the introduction of the Visual Scrubbing feature.
 
 
-                    </p>
-                </div>
-                <div class="col">
-                    <h6 class="text-muted">Client</h6>
-                    <p>Channel 4</p>
-                    <h6 class="text-muted">Project Date</h6>
-                    <p>2023 - 2024</p>
-                    <h6 class="text-muted">
-                        Role</h6>
-                    <p>
-                        Senior UX/UI Designer (contractor)</p>
-                </div>
+    <picture>
+        <source srcset="/images/channel4/1920/webp/visualScrubbingInDevice.webp" type="image/webp" />
+        <source srcset="/images/channel4/1920/jpg/visualScrubbingInDevice.jpg" type="image/jpg" />
+        <img decoding="async" class="img-fluid" loading="lazy"
+            src="/images/channel4/1920/jpg/visualScrubbingInDevice.jpg"
+            alt="Mogs Christmas in a TV showing the rewind feature" />
+    </picture>
+
+</div>
+
+
+
+
+<!-- Design Stage -->
+<div class="containerfluid">
+    <div class=" container">
+        <div class="row">
+            <div class="col-md-8 offset-md-1">
+                <h2 style="color: var( --channel4)">
+                    The Design Process</h2>
+            </div>
+            <div class="col-md-8 offset-md-2">
+                <p style="color: var(--light);">There were a few different concepts we had been looking at for these
+                    conceptual pieces. By looking at competitors in
+                    research we narrowed down our thought process to three different interaction patterns and put
+                    them in front of users.
+                </p>
             </div>
         </div>
-    </div>
-    <!-- Visual Scrubbing -->
-    <div class="containerfluid pb-0">
-        <div class=" container">
+        <div class="pt-5">
             <div class="row">
-                <div class="col-md-8 offset-md-1">
-                    <h2 style="color: var( --channel4)">Visual Scrubbing</h2>
-                </div>
                 <div class="col-md-8 offset-md-2">
-                    <p style="color: var(--light);">
-                        Channel 4 app was limited in its ability to rewind and fast forward, with customer feedback
-                        saying this was especially
-                        noticeable when the user was dropped into the incorrect placement of an episode on the continue
-                        watching area.
-                        <br><br>
-                        We wanted to create an easy way for users to be able to find the position in playback that they
-                        wanted to achieve.
-                        We took a lot of time to inspect how other companies in the industry were providing this ability
-                        to their users. We
-                        noticed a consistent pattern in other apps, but no real industry standards
-                        <br><br>
-                        We knew we wanted to create a visual style that would fit in with the current on-screen designs
-                        that users have been
-                        exposed to over the last few years. We didn't want this feature to feel too different to the
-                        experience so we approached
-                        the design elements with a clear userbase in mind.
+                    <h3 style="color: var(--light);">5 Tile Version</h3>
+                    <p style="color: var(--light);">The first concept brought 5 tiles to the user as they were
+                        interacting with the scrubbing element of the screen. We had
+                        a lot of positive feedback but also came to a few issues concerning where the focus sat on
+                        the screen in relation to
+                        playback. It felt that a central navigation fought with the playback area when a user wasn't
+                        in the rough middle of the
+                        programme. If they were at the beginning or end of the show the expectation was a tile
+                        around the area of the progress
+                        in the show.
                     </p>
                 </div>
             </div>
-        </div>
 
-
-
-        <picture>
-            <source srcset="/images/channel4/1920/webp/visualScrubbingInDevice.webp" type="image/webp" />
-            <source srcset="/images/channel4/1920/jpg/visualScrubbingInDevice.jpg" type="image/jpg" />
-            <img decoding="async" class="img-fluid" loading="lazy"
-                src="/images/channel4/1920/jpg/visualScrubbingInDevice.jpg"
-                alt="Mogs Christmas in a TV showing the rewind feature" />
-        </picture>
-
-    </div>
-
-
-
-
-    <!-- Design Stage -->
-    <div class="containerfluid">
-        <div class=" container">
             <div class="row">
-                <div class="col-md-8 offset-md-1">
-                    <h2 style="color: var( --channel4)">
-                        The Design Process</h2>
-                </div>
-                <div class="col-md-8 offset-md-2">
-                    <p style="color: var(--light);">There were a few different concepts we had been looking at for these
-                        conceptual pieces. By looking at competitors in
-                        research we narrowed down our thought process to three different interaction patterns and put
-                        them in front of users.
-                    </p>
-                </div>
-            </div>
-            <div class="pt-5">
-                <div class="row">
-                    <div class="col-md-8 offset-md-2">
-                        <h3 style="color: var(--light);">5 Tile Version</h3>
-                        <p style="color: var(--light);">The first concept brought 5 tiles to the user as they were
-                            interacting with the scrubbing element of the screen. We had
-                            a lot of positive feedback but also came to a few issues concerning where the focus sat on
-                            the screen in relation to
-                            playback. It felt that a central navigation fought with the playback area when a user wasn't
-                            in the rough middle of the
-                            programme. If they were at the beginning or end of the show the expectation was a tile
-                            around the area of the progress
-                            in the show.
-                        </p>
-                    </div>
-                </div>
 
-                <div class="row">
-
-                    <div class="col-md-6">
-                        <picture>
-                            <source srcset="/images/channel4/1920/webp/visualScrubingwireframe2.webp"
-                                type="image/webp" />
-                            <source srcset="/images/channel4/1920/jpg/visualScrubingwireframe2.jpg" type="image/jpg" />
-                            <img decoding="async" class="img-fluid mb-3" loading="lazy"
-                                alt="Channel 4 Visual scrubbing wireframe version 2" />
-                        </picture>
-                    </div>
-                    <div class="col">
-                        <picture>
-                            <source srcset="/images/channel4/1920/webp/visualScrubingwireframe3.webp"
-                                type="image/webp" />
-                            <source srcset="/images/channel4/1920/jpg/visualScrubingwireframe3.jpg" type="image/jpg" />
-                            <img decoding="async" class="img-fluid mb-3" loading="lazy"
-                                alt="Channel 4 Visual scrubbing wireframe version 3" />
-                        </picture>
-                    </div>
-
-                </div>
-                <div class="row">
-                    <div class="col-md-6">
-                        <h4 style="color: var(--light);">Pros</h4><svg width="100" height="8">
-                            <rect style="fill: var(--channel4)" id="underline" rx="4" x="0" y="0" width="100"
-                                height="4" />
-                        </svg>
-                        <p style="color: var(--light);">&#x2022 Users could see more of the show they were watching<br>
-                            &#x2022 Easier to recognise parts of a show you have already watched<br>
-                            &#x2022 More tiles made content easier to skim</p>
-                    </div>
-                    <div class="col-md-6">
-                        <h4 style=" color: var(--light);">Cons</h4><svg width="100" height="8">
-                            <rect style="fill: var(--channel4)" id="underline" rx="4" x="0" y="0" width="100"
-                                height="4" />
-                        </svg>
-                        <p style="color: var(--light);">&#x2022 Possible spoilers<br>
-                            &#x2022 Lots of movement could cause accessibility issues<br>
-                            &#x2022 Expensive tech resource</p>
-                        </p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="pt-5">
-                <div class="row">
-                    <div class="col-md-8 offset-md-2">
-                        <h3 style="color: var(--light);">3 Tile Version</h3>
-                        <p style="color: var(--light);">We also looked at a middle ground of three tiles to reduce the
-                            amount of content on the screen from the 5 tiles design
-                            but give more context to where the user was in the programme. With more than one tile on
-                            screen, we did have to start
-                            thinking about moments that could spoil a show for a user. Maybe a contestant was voted off
-                            the show before they had got
-                            there and they saw on a tile
-                        </p>
-                    </div>
-                </div>
-                <div class="row">
-
-                    <div class="col-md-6"">
-                        <picture>
-                             <source srcset=" /images/channel4/1920/webp/visualScrubingwireframe12.webp"
-                        type="image/webp" />
-                    <source srcset="/images/channel4/1920/jpg/visualScrubingwireframe12.jpg" type="image/jpg" />
-                    <img decoding="async" class="img-fluid mb-3" loading="lazy" alt="WWE Superstars screen in phone" />
+                <div class="col-md-6">
+                    <picture>
+                        <source srcset="/images/channel4/1920/webp/visualScrubingwireframe2.webp" type="image/webp" />
+                        <source srcset="/images/channel4/1920/jpg/visualScrubingwireframe2.jpg" type="image/jpg" />
+                        <img decoding="async" class="img-fluid mb-3" loading="lazy"
+                            alt="Channel 4 Visual scrubbing wireframe version 2" />
                     </picture>
                 </div>
                 <div class="col">
                     <picture>
-                        <source srcset="/images/channel4/1920/webp/visualScrubingwireframe13.webp" type="image/webp" />
-                        <source srcset="/images/channel4/1920/jpg/visualScrubingwireframe13.jpg" type="image/jpg" />
+                        <source srcset="/images/channel4/1920/webp/visualScrubingwireframe3.webp" type="image/webp" />
+                        <source srcset="/images/channel4/1920/jpg/visualScrubingwireframe3.jpg" type="image/jpg" />
                         <img decoding="async" class="img-fluid mb-3" loading="lazy"
-                            alt="Channel 4 Visual scrubbing wireframe version 13" />
+                            alt="Channel 4 Visual scrubbing wireframe version 3" />
                     </picture>
                 </div>
 
             </div>
             <div class="row">
-                <div class="col-md-6 ">
+                <div class="col-md-6">
                     <h4 style="color: var(--light);">Pros</h4><svg width="100" height="8">
                         <rect style="fill: var(--channel4)" id="underline" rx="4" x="0" y="0" width="100" height="4" />
                     </svg>
-                    <p style="color: var(--light);">&#x2022 Balanced approach between too much and too little<br>
-
-                    </p>
+                    <p style="color: var(--light);">&#x2022 Users could see more of the show they were watching<br>
+                        &#x2022 Easier to recognise parts of a show you have already watched<br>
+                        &#x2022 More tiles made content easier to skim</p>
                 </div>
-                <div class="col-md-6 ">
-                    <h4 style="color: var(--light);">Cons</h4><svg width="100" height="8">
+                <div class="col-md-6">
+                    <h4 style=" color: var(--light);">Cons</h4><svg width="100" height="8">
                         <rect style="fill: var(--channel4)" id="underline" rx="4" x="0" y="0" width="100" height="4" />
                     </svg>
                     <p style="color: var(--light);">&#x2022 Possible spoilers<br>
-                        &#x2022 The center of the screen is not where the users' eyes are focused<br>
+                        &#x2022 Lots of movement could cause accessibility issues<br>
                         &#x2022 Expensive tech resource</p>
                     </p>
                 </div>
             </div>
         </div>
 
-
         <div class="pt-5">
             <div class="row">
                 <div class="col-md-8 offset-md-2">
-                    <h3 style="color: var(--light);">1 Tile Version</h3>
-                    <p style="color: var(--light);">
-                        This led to using a one-tile design which would follow the user playhead throughout the
-                        programme. This could be invoked
-                        at the precise area the user was currently looking at when they decided they wanted to either
-                        rewind or fast forward.
-
-                        .
+                    <h3 style="color: var(--light);">3 Tile Version</h3>
+                    <p style="color: var(--light);">We also looked at a middle ground of three tiles to reduce the
+                        amount of content on the screen from the 5 tiles design
+                        but give more context to where the user was in the programme. With more than one tile on
+                        screen, we did have to start
+                        thinking about moments that could spoil a show for a user. Maybe a contestant was voted off
+                        the show before they had got
+                        there and they saw on a tile
                     </p>
                 </div>
             </div>
             <div class="row">
 
-                <div class="col-md-6">
-                    <picture>
-                        <source srcset="/images/channel4/1920/webp/visualScrubingwireframe7.webp" type="image/webp" />
-                        <source srcset="/images/channel4/1920/jpg/visualScrubingwireframe7.jpg" type="image/jpg" />
-                        <img decoding="async" class="img-fluid mb-3" loading="lazy"
-                            alt="WWE Superstars screen in phone" />
-                    </picture>
-                </div>
-                <div class="col">
-                    <picture>
-                        <source srcset="/images/channel4/1920/webp/visualScrubingwireframe8.webp" type="image/webp" />
-                        <source srcset="/images/channel4/1920/jpg/visualScrubingwireframe8.jpg" type="image/jpg" />
-                        <img decoding="async" class="img-fluid mb-3" loading="lazy"
-                            alt="Channel 4 Visual scrubbing wireframe version 8" />
-                    </picture>
-                </div>
-
+                <div class="col-md-6"">
+                        <picture>
+                             <source srcset=" /images/channel4/1920/webp/visualScrubingwireframe12.webp"
+                    type="image/webp" />
+                <source srcset="/images/channel4/1920/jpg/visualScrubingwireframe12.jpg" type="image/jpg" />
+                <img decoding="async" class="img-fluid mb-3" loading="lazy" alt="WWE Superstars screen in phone" />
+                </picture>
             </div>
-            <div class="row">
-                <div class="col-md-6">
-                    <h4 style="color: var(--light);">Pros</h4><svg width="100" height="8">
-                        <rect style="fill: var(--channel4)" id="underline" rx="4" x="0" y="0" width="100" height="4" />
-                    </svg>
-                    <p style="color: var(--light);">&#x2022 Easier for the tech teams to create<br>
-                        &#x2022 No risk of spoilers<br>
-                        &#x2022 Can be used as a focal area</p>
-                </div>
-                <div class="col-md-6">
-                    <h4 style="color: var(--light);">Cons</h4><svg width="100" height="8">
-                        <rect style="fill: var(--channel4)" id="underline" rx="4" x="0" y="0" width="100" height="4" />
-                    </svg>
-                    <p style="color: var(--light);">&#x2022 Not as much to work out where in the show you were<br>
-                        &#x2022 Movement across the screen<br>
-                        &#x2022 Not as obvious to the user</p>
-                    </p>
-                </div>
+            <div class="col">
+                <picture>
+                    <source srcset="/images/channel4/1920/webp/visualScrubingwireframe13.webp" type="image/webp" />
+                    <source srcset="/images/channel4/1920/jpg/visualScrubingwireframe13.jpg" type="image/jpg" />
+                    <img decoding="async" class="img-fluid mb-3" loading="lazy"
+                        alt="Channel 4 Visual scrubbing wireframe version 13" />
+                </picture>
             </div>
-
-
 
         </div>
+        <div class="row">
+            <div class="col-md-6 ">
+                <h4 style="color: var(--light);">Pros</h4><svg width="100" height="8">
+                    <rect style="fill: var(--channel4)" id="underline" rx="4" x="0" y="0" width="100" height="4" />
+                </svg>
+                <p style="color: var(--light);">&#x2022 Balanced approach between too much and too little<br>
+
+                </p>
+            </div>
+            <div class="col-md-6 ">
+                <h4 style="color: var(--light);">Cons</h4><svg width="100" height="8">
+                    <rect style="fill: var(--channel4)" id="underline" rx="4" x="0" y="0" width="100" height="4" />
+                </svg>
+                <p style="color: var(--light);">&#x2022 Possible spoilers<br>
+                    &#x2022 The center of the screen is not where the users' eyes are focused<br>
+                    &#x2022 Expensive tech resource</p>
+                </p>
+            </div>
+        </div>
     </div>
-    </div>
 
-    <div class="containerfluid">
-        <div class="container py-5">
-            <div class="row">
-                <div class="col-md-8 offset-md-2">
-                    <h2 style="color: var(--light);">Further Explorations</h2>
-                </div>
-                <div class="col-md-8 offset-md-2">
-                    <p style="color: var(--light);">
-                        As we were testing these different versions of the feature, we were also starting to wireframe
-                        different variants of the
-                        three concepts. <br><br>
-                        We used this time to fully explore how the visual scrubbing tiles would
-                        look, taking time to think about
-                        placement on screen, movement opacity and position.
-                        We had some discussions about where a user would naturally be looking whilst controlling their
-                        programmes and how the
-                        visual scrubbing tiles should be placed in conjunction with the playback bar. <br><br></p>
-                </div>
+
+    <div class="pt-5">
+        <div class="row">
+            <div class="col-md-8 offset-md-2">
+                <h3 style="color: var(--light);">1 Tile Version</h3>
+                <p style="color: var(--light);">
+                    This led to using a one-tile design which would follow the user playhead throughout the
+                    programme. This could be invoked
+                    at the precise area the user was currently looking at when they decided they wanted to either
+                    rewind or fast forward.
+
+                    .
+                </p>
             </div>
-            <div class="row">
-                <div class="col-md-6">
-                    <picture>
-                        <source srcset="/images/channel4/1920/webp/visualScrubingwireframe9.webp" type="image/webp" />
-                        <source srcset="/images/channel4/1920/jpg/visualScrubingwireframe9.jpg" type="image/jpg" />
-                        <img decoding="async" class="img-fluid mb-3" loading="lazy"
-                            alt="Channel 4 Visual scrubbing wireframe version 9 " />
-                    </picture>
+        </div>
+        <div class="row">
 
-                </div>
-                <div class="col-md-6">
-
-
-
-                    <picture>
-                        <source srcset="/images/channel4/1920/webp/visualScrubingwireframe10.webp" type="image/webp" />
-                        <source srcset="/images/channel4/1920/jpg/visualScrubingwireframe10.jpg" type="image/jpg" />
-                        <img decoding="async" class="img-fluid mb-3" loading="lazy"
-                            alt="Channel 4 Visual scrubbing wireframe version 10" />
-                    </picture>
-                </div>
-
-                <div class="col-md-6 offset-md-3">
-                    <picture>
-                        <source srcset="/images/channel4/1920/webp/visualScrubingwireframe11.webp" type="image/webp" />
-                        <source srcset="/images/channel4/1920/jpg/visualScrubingwireframe11.jpg" type="image/jpg" />
-                        <img decoding="async" class="img-fluid mb-3" loading="lazy"
-                            alt="Channel 4 Visual scrubbing wireframe version 11" />
-                    </picture>
-
-
-                </div>
+            <div class="col-md-6">
+                <picture>
+                    <source srcset="/images/channel4/1920/webp/visualScrubingwireframe7.webp" type="image/webp" />
+                    <source srcset="/images/channel4/1920/jpg/visualScrubingwireframe7.jpg" type="image/jpg" />
+                    <img decoding="async" class="img-fluid mb-3" loading="lazy" alt="WWE Superstars screen in phone" />
+                </picture>
             </div>
-            <div class="row">
-
-                <div class="col-md-8 offset-md-2">
-                    <p style="color: var(--light);">One
-                        concern that was aired was the
-                        separation between the tile in focus and the playhead on the progress bar which could be at the
-                        far end of the screen
-                        and disconnected.
-
-                    </p>
-                </div>
+            <div class="col">
+                <picture>
+                    <source srcset="/images/channel4/1920/webp/visualScrubingwireframe8.webp" type="image/webp" />
+                    <source srcset="/images/channel4/1920/jpg/visualScrubingwireframe8.jpg" type="image/jpg" />
+                    <img decoding="async" class="img-fluid mb-3" loading="lazy"
+                        alt="Channel 4 Visual scrubbing wireframe version 8" />
+                </picture>
             </div>
-
 
         </div>
-        <!-- Final Designs -->
-        <div class="containerfluid cover scrubbingscrolling" style="
+        <div class="row">
+            <div class="col-md-6">
+                <h4 style="color: var(--light);">Pros</h4><svg width="100" height="8">
+                    <rect style="fill: var(--channel4)" id="underline" rx="4" x="0" y="0" width="100" height="4" />
+                </svg>
+                <p style="color: var(--light);">&#x2022 Easier for the tech teams to create<br>
+                    &#x2022 No risk of spoilers<br>
+                    &#x2022 Can be used as a focal area</p>
+            </div>
+            <div class="col-md-6">
+                <h4 style="color: var(--light);">Cons</h4><svg width="100" height="8">
+                    <rect style="fill: var(--channel4)" id="underline" rx="4" x="0" y="0" width="100" height="4" />
+                </svg>
+                <p style="color: var(--light);">&#x2022 Not as much to work out where in the show you were<br>
+                    &#x2022 Movement across the screen<br>
+                    &#x2022 Not as obvious to the user</p>
+                </p>
+            </div>
+        </div>
+
+
+
+    </div>
+</div>
+</div>
+
+<div class="containerfluid">
+    <div class="container py-5">
+        <div class="row">
+            <div class="col-md-8 offset-md-2">
+                <h2 style="color: var(--light);">Further Explorations</h2>
+            </div>
+            <div class="col-md-8 offset-md-2">
+                <p style="color: var(--light);">
+                    As we were testing these different versions of the feature, we were also starting to wireframe
+                    different variants of the
+                    three concepts. <br><br>
+                    We used this time to fully explore how the visual scrubbing tiles would
+                    look, taking time to think about
+                    placement on screen, movement opacity and position.
+                    We had some discussions about where a user would naturally be looking whilst controlling their
+                    programmes and how the
+                    visual scrubbing tiles should be placed in conjunction with the playback bar. <br><br></p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <picture>
+                    <source srcset="/images/channel4/1920/webp/visualScrubingwireframe9.webp" type="image/webp" />
+                    <source srcset="/images/channel4/1920/jpg/visualScrubingwireframe9.jpg" type="image/jpg" />
+                    <img decoding="async" class="img-fluid mb-3" loading="lazy"
+                        alt="Channel 4 Visual scrubbing wireframe version 9 " />
+                </picture>
+
+            </div>
+            <div class="col-md-6">
+
+
+
+                <picture>
+                    <source srcset="/images/channel4/1920/webp/visualScrubingwireframe10.webp" type="image/webp" />
+                    <source srcset="/images/channel4/1920/jpg/visualScrubingwireframe10.jpg" type="image/jpg" />
+                    <img decoding="async" class="img-fluid mb-3" loading="lazy"
+                        alt="Channel 4 Visual scrubbing wireframe version 10" />
+                </picture>
+            </div>
+
+            <div class="col-md-6 offset-md-3">
+                <picture>
+                    <source srcset="/images/channel4/1920/webp/visualScrubingwireframe11.webp" type="image/webp" />
+                    <source srcset="/images/channel4/1920/jpg/visualScrubingwireframe11.jpg" type="image/jpg" />
+                    <img decoding="async" class="img-fluid mb-3" loading="lazy"
+                        alt="Channel 4 Visual scrubbing wireframe version 11" />
+                </picture>
+
+
+            </div>
+        </div>
+        <div class="row">
+
+            <div class="col-md-8 offset-md-2">
+                <p style="color: var(--light);">One
+                    concern that was aired was the
+                    separation between the tile in focus and the playhead on the progress bar which could be at the
+                    far end of the screen
+                    and disconnected.
+
+                </p>
+            </div>
+        </div>
+
+
+    </div>
+    <!-- Final Designs -->
+    <div class="containerfluid cover scrubbingscrolling" style="
                       height: 50vh;
                       background-size: cover;
                       background-position: 100% 100%;
 
                     ">
 
-        </div>
+    </div>
 
 
-        <div class=" container">
-            <div class="row">
-                <div class="col-md-8 offset-md-2">
-                    <h3 style="color: var(--light);">Final Designs</h3>
-                    <p style="color: var(--light);">After exploring these different designs we settled on the 1 tile
-                        approach for the final design.
-                        Taking the pros and cons of the different designs and the result of prototyping, the
-                        one-tile
-                        version testing the best
-                        for usability for the end user.
-                        <br><br>
-
-                        Once we had the final concept locked down, it was time to start looking at the design
-                        holistically, starting to ask
-                        ourselves how it would fit in with the current user experience and whether it would run
-                        alongside existing features that
-                        users have become acclimated to in a TV market.
-                        <br><br>
-                        We broke the design down into smaller elements, spending time adjusting and tweaking the
-                        layout
-                        until we got to the very
-                        final design.
-
-                    </p>
-                </div>
-            </div>
-
-        </div>
-
+    <div class=" container">
         <div class="row">
-            <div class="col-md-6 mt-3">
-                <picture>
-                    <!-- <source media="(max-width: 414px)" srcset="/images/wwe/wwe-network-styleguide-375.webp 375w"
+            <div class="col-md-8 offset-md-2">
+                <h3 style="color: var(--light);">Final Designs</h3>
+                <p style="color: var(--light);">After exploring these different designs we settled on the 1 tile
+                    approach for the final design.
+                    Taking the pros and cons of the different designs and the result of prototyping, the
+                    one-tile
+                    version testing the best
+                    for usability for the end user.
+                    <br><br>
+
+                    Once we had the final concept locked down, it was time to start looking at the design
+                    holistically, starting to ask
+                    ourselves how it would fit in with the current user experience and whether it would run
+                    alongside existing features that
+                    users have become acclimated to in a TV market.
+                    <br><br>
+                    We broke the design down into smaller elements, spending time adjusting and tweaking the
+                    layout
+                    until we got to the very
+                    final design.
+
+                </p>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="row">
+        <div class="col-md-6 mt-3">
+            <picture>
+                <!-- <source media="(max-width: 414px)" srcset="/images/wwe/wwe-network-styleguide-375.webp 375w"
                                                     type="image/webp" />
                                                 <source media="(max-width: 1024px)" srcset="/images/wwe/wwe-network-styleguide-768.webp 768w"
                                                     type="image/webp" />
                                               -->
-                    <source media="(min-width: 1025px)" srcset="/images/channel4/1920/webp/visualScrubbing1.webp 1920w"
-                        type="image/webp" />
-                    <source media="(max-width: 414px)" srcset="/images/channel4/414/jpg/visualScrubbing1.jpg 375w"
-                        type="image/jpg" />
-                    <source media="(max-width: 1024px)" srcset="/images/channel4/768/jpg/visualScrubbing1.jpg 768w"
-                        type="image/jpg" />
-                    <source media="(min-width: 1025px)" srcset="/images/channel4/1920/jpg/visualScrubbing1.jpg 1920w"
-                        type="image/jpg" />
-                    <img decoding="async" class="shadow img-fluid" loading="lazy"
-                        src="/images/channel4/768/jpg/visualScrubbing1.jpg" />
+                <source media="(min-width: 1025px)" srcset="/images/channel4/1920/webp/visualScrubbing1.webp 1920w"
+                    type="image/webp" />
+                <source media="(max-width: 414px)" srcset="/images/channel4/414/jpg/visualScrubbing1.jpg 375w"
+                    type="image/jpg" />
+                <source media="(max-width: 1024px)" srcset="/images/channel4/768/jpg/visualScrubbing1.jpg 768w"
+                    type="image/jpg" />
+                <source media="(min-width: 1025px)" srcset="/images/channel4/1920/jpg/visualScrubbing1.jpg 1920w"
+                    type="image/jpg" />
+                <img decoding="async" class="shadow img-fluid" loading="lazy"
+                    src="/images/channel4/768/jpg/visualScrubbing1.jpg" />
 
-                </picture>
-            </div>
-            <div class="col pt-3">
-                <picture>
-                    <!-- <source media="(max-width: 414px)" srcset="/images/wwe/wwe-network-styleguide-375.webp 375w"
+            </picture>
+        </div>
+        <div class="col pt-3">
+            <picture>
+                <!-- <source media="(max-width: 414px)" srcset="/images/wwe/wwe-network-styleguide-375.webp 375w"
                                                     type="image/webp" />
                                                 <source media="(max-width: 1024px)" srcset="/images/wwe/wwe-network-styleguide-768.webp 768w"
                                                     type="image/webp" />
                                                 <source media="(min-width: 1025px)" srcset="/images/wwe/wwe-network-styleguide-1920.webp 1920w"
                                                     type="image/webp" /> -->
-                    <source media="(min-width: 1025px)" srcset="/images/channel4/1920/webp/visualScrubbing2.webp 1920w"
-                        type="image/webp" />
-                    <source media="(max-width: 414px)" srcset="/images/channel4/414/jpg/visualScrubbing2.jpg 375w"
-                        type="image/jpg" />
-                    <source media="(max-width: 1024px)" srcset="/images/channel4/768/jpg/visualScrubbing2.jpg 768w"
-                        type="image/jpg" />
-                    <source media="(min-width: 1025px)" srcset="/images/channel4/1920/jpg/visualScrubbing2.jpg 1920w"
-                        type="image/jpg" />
-                    <img decoding="async" class="shadow img-fluid" loading="lazy"
-                        src="/images/channel4/768/jpg/visualScrubbing2.jpg" />
+                <source media="(min-width: 1025px)" srcset="/images/channel4/1920/webp/visualScrubbing2.webp 1920w"
+                    type="image/webp" />
+                <source media="(max-width: 414px)" srcset="/images/channel4/414/jpg/visualScrubbing2.jpg 375w"
+                    type="image/jpg" />
+                <source media="(max-width: 1024px)" srcset="/images/channel4/768/jpg/visualScrubbing2.jpg 768w"
+                    type="image/jpg" />
+                <source media="(min-width: 1025px)" srcset="/images/channel4/1920/jpg/visualScrubbing2.jpg 1920w"
+                    type="image/jpg" />
+                <img decoding="async" class="shadow img-fluid" loading="lazy"
+                    src="/images/channel4/768/jpg/visualScrubbing2.jpg" />
 
-                </picture>
-            </div>
+            </picture>
         </div>
     </div>
+</div>
 
-    <div class="containerfluid">
-        <div class=" container">
-            <div class="row">
-                <div class="col-md-8 offset-md-2">
-                    <h3 ">Motion Design</h3>
+<div class="containerfluid">
+    <div class=" container">
+        <div class="row">
+            <div class="col-md-8 offset-md-2">
+                <h3 ">Motion Design</h3>
                 <p >It was also here that I started to add the final animation and motion design to hand over to developers. I knew this
                 would be the final touch to a successful feature launch. I had been creating Motion design throughout the whole
                 conception phase so it was an easy step into the final production motion.
@@ -515,299 +447,204 @@
             </div>
             <picture>
                 <!-- <source media=" (max-width: 414px)" srcset="/images/wwe/wwe-network-styleguide-375.webp 375w"
-                        type="image/webp" />
-                    <source media="(max-width: 1024px)" srcset="/images/wwe/wwe-network-styleguide-768.webp 768w"
-                        type="image/webp" />
-                    -->
-                    <source media="(min-width: 1025px)" srcset="/images/channel4/1920/webp/vsSpec.webp 1920w"
-                        type="image/webp" />
-                    <source media="(max-width: 414px)" srcset="/images/channel4/414/jpg/vsSpec.jpg 375w"
-                        type="image/jpg" />
-                    <source media="(max-width: 1024px)" srcset="/images/channel4/768/jpg/vsSpec.jpg 768w"
-                        type="image/jpg" />
-                    <source media="(min-width: 1025px)" srcset="/images/channel4/1920/jpg/vsSpec.jpg 1920w"
-                        type="image/jpg" />
-                    <img decoding="async" class="shadow img-fluid" loading="lazy"
-                        src="/images/channel4/768/jpg/vsSpec.jpg"" />
+                    type="image/webp" />
+                <source media="(max-width: 1024px)" srcset="/images/wwe/wwe-network-styleguide-768.webp 768w"
+                    type="image/webp" />
+                -->
+                <source media="(min-width: 1025px)" srcset="/images/channel4/1920/webp/vsSpec.webp 1920w"
+                    type="image/webp" />
+                <source media="(max-width: 414px)" srcset="/images/channel4/414/jpg/vsSpec.jpg 375w" type="image/jpg" />
+                <source media="(max-width: 1024px)" srcset="/images/channel4/768/jpg/vsSpec.jpg 768w"
+                    type="image/jpg" />
+                <source media="(min-width: 1025px)" srcset="/images/channel4/1920/jpg/vsSpec.jpg 1920w"
+                    type="image/jpg" />
+                <img decoding="async" class="shadow img-fluid" loading="lazy" src="/images/channel4/768/jpg/vsSpec.jpg"" />
 
                 </picture>
             </div>
 <div class=" row">
-                    <div class="col-md-8 offset-md-2"> <video embed-responsive loop muted style="width:100%"
-                            poster="\images/channel4/vsVideoPoster.jpg"
-                            onclick="if (this.paused ? this.play() : this.pause());" />
-                        <source src="/images/channel4/singleTile.webm" type="video/webm">
-                        <source src="/images/channel4/singleTile.mp4" type="video/mp4">
-                        Sorry, your browser doesn't support embedded videos.
-                        <img decoding="async" class="img-fluid" loading="lazy"
-                            alt="video showing the difference in the channel 4 app before and after the rebrand" />
-                        </video>
-                    </div>
+                <div class="col-md-8 offset-md-2"> <video embed-responsive loop muted style="width:100%"
+                        poster="\images/channel4/vsVideoPoster.jpg"
+                        onclick="if (this.paused ? this.play() : this.pause());" />
+                    <source src="/images/channel4/singleTile.webm" type="video/webm">
+                    <source src="/images/channel4/singleTile.mp4" type="video/mp4">
+                    Sorry, your browser doesn't support embedded videos.
+                    <img decoding="async" class="img-fluid" loading="lazy"
+                        alt="video showing the difference in the channel 4 app before and after the rebrand" />
+                    </video>
                 </div>
             </div>
         </div>
+    </div>
 
 
 
-        <!-- Scenrios -->
-        <div class=" containerfluid">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-8 offset-md-1">
-                        <h2 style="color: var( --channel4)">Product Scenarios and Edge Cases</h2>
-                    </div>
-                    <div class="col-md-8 offset-md-2">
-
-                        <p>Once we had approval for the one-tile approach I started working closer with the
-                            developmental and product team to flesh
-                            out certain scenarios as well as some more obscure edge cases
-                        </p>
-                    </div>
+    <!-- Scenrios -->
+    <div class=" containerfluid">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 offset-md-1">
+                    <h2 style="color: var( --channel4)">Product Scenarios and Edge Cases</h2>
                 </div>
+                <div class="col-md-8 offset-md-2">
 
-                <div class="row">
-                    <div class="col-md-8 offset-md-2">
-                        <h3>Advert Breaks</h3>
-                        <p>Advert breaks were a big element of the design in visual scrubbing. Certain questions
-                            were
-                            raised around feedback for
-                            the user when crossing advertisement breaks. Would the scrubbing stop to play the
-                            advert?
-                            How would the user know an
-                            advert break was going to be invoked after playback is started?</p>
-                    </div>
-                </div>
-                <div class="row">
-
-                    <picture>
-                        <source srcset="/images/channel4/1920/webp/visualScrubingflow.webp" type="image/webp" />
-                        <source srcset="/images/channel4/1920/jpg/visualScrubingflow.jpg" type="image/jpg" />
-                        <img decoding="async" class="img-fluid mb-3" loading="lazy" alt="visual scrubbing user flow" />
-                    </picture>
-                </div>
-                <div class="row">
-                    <div class="col-md-8 offset-md-2">
-                        <h3>Back Journeys</h3>
-                        <p>Back journeys are an often overlooked element of the user journey so we ensured we
-                            spent
-                            a
-                            lot of time to focus on how a
-                            user would be able to navigate throughout the journey.</p>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-8 offset-md-2">
-                        <h3>End of Playback</h3>
-                        <p>Channel 4 has a feature which will allow the user to watch the next episode without
-                            any
-                            interaction needed. This feature
-                            became something we had to think about concerning visual scrubbing as suddenly we
-                            had an
-                            interaction design clash. We
-                            had to explore user expectations when they had scrubbed to the end of a show, or
-                            also
-                            the
-                            opposite of the end user had
-                            used the rewind function to go back to the start of content. What would be the
-                            expected
-                            behaviour and how would our
-                            interaction model relate to this?</p>
-                    </div>
+                    <p>Once we had approval for the one-tile approach I started working closer with the
+                        developmental and product team to flesh
+                        out certain scenarios as well as some more obscure edge cases
+                    </p>
                 </div>
             </div>
-        </div>
 
-
-        <!-- Roku-->
-        <div class="containerfluid">
-            <div class=" container">
-
-                <div class="row">
-                    <div class="col-md-8 offset-md-1">
-                        <h2 style="color: var( --channel4)">Desiging for Roku</h2>
-                    </div>
-                    <div class="col-md-8 offset-md-2">
-
-                        <p>Although we had our preferred design on the product, Roku had a version of visual
-                            scrubbing
-                            built into the product
-                            already. .<br><br>This led to discussions about how we would proceed on Roku. was
-                            the
-                            right
-                            approach to keep consistency with the
-                            rest of the designs on TV platforms, or to create less friction to release to the
-                            public.
-                            After some high-level
-                            consultation, it was decided to make the development team life easier by using the
-                            built-in
-                            features. .<br><br>This reduced
-                            resources needed as well as allowing roku users to have a familiar pattern that they
-                            would
-                            have used on different
-                            platforms on their device.</p>
-                    </div>
+            <div class="row">
+                <div class="col-md-8 offset-md-2">
+                    <h3>Advert Breaks</h3>
+                    <p>Advert breaks were a big element of the design in visual scrubbing. Certain questions
+                        were
+                        raised around feedback for
+                        the user when crossing advertisement breaks. Would the scrubbing stop to play the
+                        advert?
+                        How would the user know an
+                        advert break was going to be invoked after playback is started?</p>
                 </div>
+            </div>
+            <div class="row">
+
                 <picture>
-                    <!-- <source media="(max-width: 414px)" srcset="/images/wwe/wwe-network-styleguide-375.webp 375w"
+                    <source srcset="/images/channel4/1920/webp/visualScrubingflow.webp" type="image/webp" />
+                    <source srcset="/images/channel4/1920/jpg/visualScrubingflow.jpg" type="image/jpg" />
+                    <img decoding="async" class="img-fluid mb-3" loading="lazy" alt="visual scrubbing user flow" />
+                </picture>
+            </div>
+            <div class="row">
+                <div class="col-md-8 offset-md-2">
+                    <h3>Back Journeys</h3>
+                    <p>Back journeys are an often overlooked element of the user journey so we ensured we
+                        spent
+                        a
+                        lot of time to focus on how a
+                        user would be able to navigate throughout the journey.</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-8 offset-md-2">
+                    <h3>End of Playback</h3>
+                    <p>Channel 4 has a feature which will allow the user to watch the next episode without
+                        any
+                        interaction needed. This feature
+                        became something we had to think about concerning visual scrubbing as suddenly we
+                        had an
+                        interaction design clash. We
+                        had to explore user expectations when they had scrubbed to the end of a show, or
+                        also
+                        the
+                        opposite of the end user had
+                        used the rewind function to go back to the start of content. What would be the
+                        expected
+                        behaviour and how would our
+                        interaction model relate to this?</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Roku-->
+    <div class="containerfluid">
+        <div class=" container">
+
+            <div class="row">
+                <div class="col-md-8 offset-md-1">
+                    <h2 style="color: var( --channel4)">Desiging for Roku</h2>
+                </div>
+                <div class="col-md-8 offset-md-2">
+
+                    <p>Although we had our preferred design on the product, Roku had a version of visual
+                        scrubbing
+                        built into the product
+                        already. .<br><br>This led to discussions about how we would proceed on Roku. was
+                        the
+                        right
+                        approach to keep consistency with the
+                        rest of the designs on TV platforms, or to create less friction to release to the
+                        public.
+                        After some high-level
+                        consultation, it was decided to make the development team life easier by using the
+                        built-in
+                        features. .<br><br>This reduced
+                        resources needed as well as allowing roku users to have a familiar pattern that they
+                        would
+                        have used on different
+                        platforms on their device.</p>
+                </div>
+            </div>
+            <picture>
+                <!-- <source media="(max-width: 414px)" srcset="/images/wwe/wwe-network-styleguide-375.webp 375w"
                                                                         type="image/webp" />
                                                                     <source media="(max-width: 1024px)" srcset="/images/wwe/wwe-network-styleguide-768.webp 768w"
                                                                         type="image/webp" />
                                                                     <source media="(min-width: 1025px)" srcset="/images/wwe/wwe-network-styleguide-1920.webp 1920w"
                                                                         type="image/webp" /> -->
-                    <source srcset="/images/channel4/1920/webp/visualScrubingRoku1.webp 1920w" type="image/webp" />
-                    <source srcset="/images/channel4/1920/jpg/visualScrubingRoku1.jpg 1920w" type="image/jpg" />
-                    <img decoding="async" class="shadow img-fluid" loading="lazy" />
+                <source srcset="/images/channel4/1920/webp/visualScrubingRoku1.webp 1920w" type="image/webp" />
+                <source srcset="/images/channel4/1920/jpg/visualScrubingRoku1.jpg 1920w" type="image/jpg" />
+                <img decoding="async" class="shadow img-fluid" loading="lazy" />
 
-                </picture>
-                <div class="row">
-                    <div class="col-md-8">
-                        <picture>
+            </picture>
+            <div class="row">
+                <div class="col-md-8">
+                    <picture>
 
-                            <source media="(max-width: 414px)" srcset="/images/channel4/414/jpg/vsrokuSpec414.jpg 414w"
-                                type="image/jpg" />
-                            <source media="(min-width: 1025px)"
-                                srcset="/images/channel4/1920/jpg/vsrokuSpec1920.jpg  768w" type="image/jpg" />
-                            <source srcset="/images/channel4/1920/jpg/vsrokuSpec1920.jpg 1920w" type="image/jpg" />
-                            <img decoding="async" class="shadow img-fluid" loading="lazy" />
+                        <source media="(max-width: 414px)" srcset="/images/channel4/414/jpg/vsrokuSpec414.jpg 414w"
+                            type="image/jpg" />
+                        <source media="(min-width: 1025px)" srcset="/images/channel4/1920/jpg/vsrokuSpec1920.jpg  768w"
+                            type="image/jpg" />
+                        <source srcset="/images/channel4/1920/jpg/vsrokuSpec1920.jpg 1920w" type="image/jpg" />
+                        <img decoding="async" class="shadow img-fluid" loading="lazy" />
 
-                        </picture>
-                    </div>
-                    <div class="col">
+                    </picture>
+                </div>
+                <div class="col">
 
-                        <p style="color: var(--light);">By using existing Roku patterns, we could create an experience
-                            which existing users of the platform would be familiar with, whilst ensuring it matched the
-                            ethos of the design on HTML5 platforms</p>
-                    </div>
+                    <p style="color: var(--light);">By using existing Roku patterns, we could create an experience
+                        which existing users of the platform would be familiar with, whilst ensuring it matched the
+                        ethos of the design on HTML5 platforms</p>
                 </div>
             </div>
         </div>
-        <!-- Learnings -->
-        <div class="containerfluid">
-            <div class=" container">
+    </div>
+    <!-- Learnings -->
+    <div class="containerfluid">
+        <div class=" container">
 
-                <div class="row">
-                    <div class="col-md-8 offset-md-1">
-                        <h2 style="color: var( --channel4)">Learnings</h2>
-                    </div>
-                    <div class="col-md-8 offset-md-2">
+            <div class="row">
+                <div class="col-md-8 offset-md-1">
+                    <h2 style="color: var( --channel4)">Learnings</h2>
+                </div>
+                <div class="col-md-8 offset-md-2">
 
-                        <p>Positive user feedback accompanied the release, with customers happy that the platform has a
-                            fundamental feature with
-                            improved UX and UI.
-                            No users across the platforms noted any issues with the feature and Roku users were
-                            delighted that we followed the
-                            platform guidelines rather than using the same designs across all Channel 4 apps.
-                            <br><br>
-                            Some personal learning was for me in the design process trying to narrow down the different
-                            concepts. Being able to
-                            articulate design decisions to non-designer stakeholders and backing my opinions with data
-                            and facts.
-                            <br><br>
-                            As always including the developmental team early gave us a wonderful opportunity to tweak
-                            work on the fly, especially
-                            the speed of content rewinding and fast-forwarding with each press of the remote control.
-                            With the developers building
-                            an easy customisable attribute we could test different speeds instantly.<br><br>
-                            The benefit of always getting builds sent to a TV device was obvious with this project.
-                            Sometimes with Figma and After
-                            Effects, we can get too obsessed with the designs and being able to use a remote control in
-                            a hands-on testing session
-                            can reveal many more conditions that we need to design for.
-                        </p>
-                    </div>
+                    <p>Positive user feedback accompanied the release, with customers happy that the platform has a
+                        fundamental feature with
+                        improved UX and UI.
+                        No users across the platforms noted any issues with the feature and Roku users were
+                        delighted that we followed the
+                        platform guidelines rather than using the same designs across all Channel 4 apps.
+                        <br><br>
+                        Some personal learning was for me in the design process trying to narrow down the different
+                        concepts. Being able to
+                        articulate design decisions to non-designer stakeholders and backing my opinions with data
+                        and facts.
+                        <br><br>
+                        As always including the developmental team early gave us a wonderful opportunity to tweak
+                        work on the fly, especially
+                        the speed of content rewinding and fast-forwarding with each press of the remote control.
+                        With the developers building
+                        an easy customisable attribute we could test different speeds instantly.<br><br>
+                        The benefit of always getting builds sent to a TV device was obvious with this project.
+                        Sometimes with Figma and After
+                        Effects, we can get too obsessed with the designs and being able to use a remote control in
+                        a hands-on testing session
+                        can reveal many more conditions that we need to design for.
+                    </p>
                 </div>
             </div>
         </div>
-
-        <!-- Footer-->
-        <footer class="mainfooter shadow " role="contentinfo ">
-            <div class="footer-middle ">
-                <div class="container ">
-                    <div class="row ">
-                        <div class="col-md-4 col ">
-                            <!--Column1-->
-                            <div>
-                                <p style="color: var(--light)">Pages</p>
-                                <ul class="list-unstyled ">
-                                    <li> <a href="/ ">Home</a>
-                                    <li> <a href="/portfolio/ ">Design Work</a>
-                                    <li> <a href="/process/ ">Process</a>
-                                    <li> <a href="/illustration ">Illustration Work</a>
-                                    <li> <a href="/about ">About</a>
-                                </ul>
-                            </div>
-                        </div>
-
-
-                        <div class="col-md-4 col ">
-                            <p style="color: var(--light)">Social Media</p>
-                            <div>
-                                <ul class="social-network social-circle ">
-
-                                    <li>
-                                        <a href="https://shalloodesign.bsky.social" target="_blank" class="icoBsky"
-                                            title=" ">
-                                            <i class="bi bi-bluesky"></i>
-                                        </a>
-                                    </li>
-
-                                    <li>
-                                        <a href="https://uk.linkedin.com/in/kieranshalloo " target="_blank"
-                                            class="icoLinkedin " title="Linkedin ">
-                                            <i class="bi bi-linkedin "></i>
-                                        </a>
-                                    </li>
-
-                                    <li>
-                                        <a href="https://www.twitch.tv/kieranshalloodesign " target="_blank"
-                                            class="icoTwitch " title="Twitch ">
-                                            <i class="bi bi-twitch "></i>
-                                        </a>
-                                    </li>
-
-
-
-                                    <li>
-                                        <a href="https://www.youtube.com/channel/UCh7nbnnKY9cUaxcZ-alLCXw "
-                                            class="icoYoutube " target="_blank" title="Youtube "><i
-                                                class="bi bi-youtube "></i>
-                                        </a>
-                                    </li>
-
-                                </ul>
-
-                            </div>
-                        </div>
-                        <div class="col-md-2  offset-md-2 ">
-
-                            <div style="height: 100px;  width: 100px;" class="d-none d-md-block "><img src="/Logo.svg">
-                            </div>
-
-                            <p style="color: var(--light); padding-top: 2rem; font-size: 12px ">Kieran Shalloo Design
-                                Ltd.
-                                <br />&copy; 2025
-                                All
-                                rights reserved.
-                            </p>
-                        </div>
-                    </div>
-
-
-                </div>
-            </div>
-        </footer>
-
-        <!-- <script>; (function () {
-            const htmlElement = document.querySelector("html")
-            if (htmlElement.getAttribute("data-bs-theme") === 'auto') {
-                function updateTheme() {
-                    document.querySelector("html").setAttribute("data-bs-theme",
-                        window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light")
-                }
-                window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', updateTheme)
-                updateTheme()
-            }
-        })()</script> -->
-</body>
-
-</html>
+    </div>

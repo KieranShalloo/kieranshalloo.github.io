@@ -5,6 +5,15 @@ _site/
 *.gem
 *.gemfile.lock
 
+plugins:
+  - jekyll-critical-css
+  - jekyll-minifier     # If using minifier
+  - jekyll-seo-tag
+
+critical_css:
+  paths: ["/", "/work/*"]  # Target key pages
+  ignore: [".bi-", ".nav-"] # Skip icons/nav (already fast)
+
 ### macOS ###
 **/.DS_Store
 **/.AppleDouble
