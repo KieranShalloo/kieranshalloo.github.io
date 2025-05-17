@@ -1,0 +1,45 @@
+<!-- _includes/illustration-grid.html -->
+
+<!-- Navigation Row -->
+<div class="row mb-4">
+    <div class="col-4 text-center">
+        {% if page.previous_slug %}
+        <a href="/illustration/{{ page.previous_slug }}">
+            <i class="bi bi-arrow-left-circle dark" style="font-size: 24px;"></i>
+        </a>
+        {% endif %}
+    </div>
+    <div class="col-4 text-center">
+        <a href="/illustration/">
+            <i class="bi bi-grid-fill dark" style="font-size: 24px;"></i>
+        </a>
+    </div>
+    <div class="col-4 text-center">
+        {% if page.next_slug %}
+        <a href="/illustration/{{ page.next_slug }}">
+            <i class="bi bi-arrow-right-circle dark" style="font-size: 24px;"></i>
+        </a>
+        {% endif %}
+    </div>
+</div>
+
+<!-- Grid Row -->
+<div class="row">
+    {% for item in site.data.illustrations %}
+    <div class="col-6 col-lg-3 p-0 portfolio-frame">
+        <a href="/illustration/{{ item.slug }}">
+            <picture>
+                <source srcset="{{ item.webp_thumb }}" type="image/webp">
+                <source srcset="{{ item.thumb }}" type="image/jpg">
+                <img decoding="async" class="img-fluid portfolio-image" loading="lazy" src="{{ item.thumb }}"
+                    alt="{{ item.title }}">
+            </picture>
+        </a>
+    </div>
+    {% endfor %}
+</div>
+
+<!-- Repeat Navigation at Bottom -->
+<div class="row mt-4">
+    <!-- Same navigation as above -->
+</div>

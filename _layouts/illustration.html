@@ -2,75 +2,43 @@
 layout: default
 ---
 
-<article class="illustration-page">
-    <header class="illustration-header container py-5">
-        <div class="row justify-content-center">
-            <div class="col-lg-8">
-                <h1 class="display-4">{{ page.title }}</h1>
-                <p class="lead">{{ page.description }}</p>
-            </div>
+{% comment %} Calculate previous/next slugs {% endcomment %}
+{% assign items = site.data.illustrations %}
+{% for item in items %}
+{% if item.slug == page.slug %}
+{% assign current_index = forloop.index0 %}
+{% assign previous_index = current_index | minus: 1 %}
+{% assign next_index = current_index | plus: 1 %}
+
+{% if previous_index >= 0 %}
+{% assign previous_slug = items[previous_index].slug %}
+{% assign previous_title = items[previous_index].title %}
+{% endif %}
+
+{% if next_index < items.size %} {% assign next_slug=items[next_index].slug %} {% assign
+    next_title=items[next_index].title %} {% endif %} {% endif %} {% endfor %} {% include nav.html %} <div
+    class="container mt-4">
+    <!-- Project Title and Description -->
+    <div class="row mb-4">
+        <div class="col-md-8 offset-md-2">
+            <h1>{{ page.title }}</h1>
+            {% if page.description %}
+            <p class="lead">{{ page.description }}</p>
+            {% endif %}
         </div>
-    </header>
+    </div>
 
-    <section class="illustration-main container mb-5">
-        <div class="row justify-content-center">
-            <div class="col-lg-8">
-                <picture>
-                    <source srcset="{{ page.image | replace: '.jpg', '.webp' }}" type="image/webp">
-                    <source srcset="{{ page.image }}" type="image/jpeg">
-                    <img src="{{ page.image }}" alt="{{ page.title }} illustration" class="img-fluid shadow-lg rounded"
-                        loading="eager" width="1200" height="800">
-                </picture>
-            </div>
+    <!-- Featured Image -->
+    <div class="row mb-5">
+        <div class="col-md-10 offset-md-1">
+            <picture>
+                <source srcset="/images/illustration/{{ page.slug }}.webp" type="image/webp">
+                <source srcset="/images/illustration/{{ page.slug }}.jpg" type="image/jpg">
+                <img src="/images/illustration/{{ page.slug }}.jpg" class="img-fluid rounded shadow"
+                    alt="{{ page.title }}">
+            </picture>
         </div>
-    </section>
+    </div>
+    {% include illustration-nav.html %}
 
-    <section class="illustration-navigation container py-4">
-        <div class="row">
-            <div class="col-12 d-flex justify-content-center">
-                <div class="btn-group" role="group" aria-label="Illustration navigation">
-                    {% assign prev = page.previous %}
-                    <a href="{{ prev.url | default: '#' }}"
-                        class="btn btn-outline-secondary {% unless prev.url %}disabled{% endunless %}"
-                        aria-label="Previous illustration: {{ prev.title | default: 'None' }}">
-                        <i class="bi bi-arrow-left-circle"></i>
-                    </a>
-
-                    <a href="/illustration/" class="btn btn-outline-secondary" aria-label="View all illustrations">
-                        <i class="bi bi-grid-fill"></i>
-                    </a>
-
-                    {% assign next = page.next %}
-                    <a href="{{ next.url | default: '#' }}"
-                        class="btn btn-outline-secondary {% unless next.url %}disabled{% endunless %}"
-                        aria-label="Next illustration: {{ next.title | default: 'None' }}">
-                        <i class="bi bi-arrow-right-circle"></i>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="illustration-grid container-fluid py-5 bg-light">
-        <div class="container">
-            <h2 class="text-center mb-5">More Illustration Work</h2>
-            <div class="row g-3">
-                {% for item in site.data.illustrations limit:8 %}
-                <div class="col-6 col-md-4 col-lg-3">
-                    <a href="{{ item.url }}" class="portfolio-card" aria-label="View {{ item.title }} illustration">
-                        <picture>
-                            <source srcset="{{ item.webp }}" type="image/webp">
-                            <source srcset="{{ item.thumb }}" type="image/jpeg">
-                            <img src="{{ item.thumb }}" alt="{{ item.title }} illustration"
-                                class="img-fluid rounded shadow-sm" loading="lazy" width="400" height="400">
-                        </picture>
-                        <div class="portfolio-card-overlay">
-                            <h3 class="portfolio-card-title">{{ item.title }}</h3>
-                        </div>
-                    </a>
-                </div>
-                {% endfor %}
-            </div>
-        </div>
-    </section>
-</article>
+    {% include illustration-grid.html %}

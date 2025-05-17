@@ -1,22 +1,7 @@
 ---
-layout: illustration
+layout: default
 title: Portfolio
 description: An illustration portfolio page showing work by Kieran Shalloo
 ---
 
-<div class="container-fluid">
-    <div class="row">
-        {% for item in site.data.illustrations %}
-        <div class="col-6 col-lg-3" style="padding: 0" id="portfolioframe">
-            <a href="/illustration/{{ item.slug }}">
-                <picture>
-                    <source srcset="{{ item.webp_thumb }}" type="image/webp">
-                    <source srcset="{{ item.thumb }}" type="image/jpg">
-                    <img decoding="async" class="img-fluid" loading="lazy" id="portfolioimage" src="{{ item.thumb }}"
-                        alt="{{ item.title }}">
-                </picture>
-            </a>
-        </div>
-        {% endfor %}
-    </div>
-</div>
+{% include illustration-grid.html %}

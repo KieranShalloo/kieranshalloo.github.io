@@ -33,6 +33,7 @@
     <link rel="preload" href="/text.css" as="style">
     <link rel="stylesheet" type="text/css" href="/webstyle.css">
     <link rel="stylesheet" type="text/css" href="/text.css">
+    <link rel="stylesheet" href="{{ site.baseurl }}/webstyle.css">
 
     <!-- Defer non-critical scripts -->
     <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js" defer></script>
@@ -50,8 +51,8 @@
 
 <body>
     {% include nav.html %}
-
-    {{ content }}
+    <main role="main">
+        {{ content }}</main>
     {% include footer.html %}
 </body>
 
