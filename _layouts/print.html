@@ -1,30 +1,17 @@
-<!-- _layouts/print.html -->
----
-layout: default
----
-
+{% raw %}
+{% layout default %}
 <div class="containerfluid">
     <div class="container">
         <div style="padding-top:5em" class="row">
-
-            <!-- Left Column -->
             <div class="col-md-4">
                 {{ content }}
             </div>
-
-            <!-- Right Column -->
             <div class="col-md-8">
-                <div class="p-3">
-                    <img src="/images/printmaking/deer/ondesk.jpg" alt="Forest Print Desk View" class="img-fluid">
-                </div>
-                <div class="p-3">
-                    <img src="/images/printmaking/deer/webinframe.jpg" alt="Forest Print Framed" class="img-fluid">
-                </div>
-                <div class="p-3">
-                    <img src="/images/printmaking/deer/ondesk2.jpg" alt="Forest Print Desk View 2" class="img-fluid">
-                </div>
+                <div class="p-3"><img src="/images/printmaking/deer/ondesk.jpg" class="img-fluid"></div>
+                <div class="p-3"><img src="/images/printmaking/deer/webinframe.jpg" class="img-fluid"></div>
+                <div class="p-3"><img src="/images/printmaking/deer/ondesk2.jpg" class="img-fluid"></div>
             </div>
-
         </div>
     </div>
 </div>
+{% endraw %}

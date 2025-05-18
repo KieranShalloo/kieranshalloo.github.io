@@ -8,3 +8,6 @@ collections:
   illustrations:
     output: true
     permalink: /illustration/:name
+
+baseurl: "" # leave empty for root of domain
+url: "https://kieranshalloodesign.com"

@@ -29,11 +29,15 @@
     </noscript>
 
     <!-- CSS (combined/minified in production) -->
-    <link rel="preload" href="/webstyle.css" as="style">
-    <link rel="preload" href="/text.css" as="style">
-    <link rel="stylesheet" type="text/css" href="/webstyle.css">
-    <link rel="stylesheet" type="text/css" href="/text.css">
+    <link rel="preload" href="{{ " /webstyle.css" | relative_url }}" as="style">
+    <link rel="preload" href="{{ " /text.css" | relative_url }}" as="style">
+
+
     <link rel="stylesheet" href="{{ site.baseurl }}/webstyle.css">
+    <link rel="stylesheet" href="{{ " /webstyle.css" | relative_url }}">
+    <link rel="stylesheet" href="{{ " /text.css" | relative_url }}">
+
+
 
     <!-- Defer non-critical scripts -->
     <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js" defer></script>
