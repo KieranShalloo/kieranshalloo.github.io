@@ -72,6 +72,7 @@ body {
 				position: absolute;
 				bottom: 0;
 				left: 1rem;
+				color: var(--accent);
 				right: 1rem;
 				height: 2px;
 				background: currentColor;
@@ -140,6 +141,11 @@ body {
 		opacity: 0.65;
 	}
 }
+
+figure.portfolio-image {
+	border: 2px solid red; /* Highlights the container */
+}
+
 /* ==================== IMAGE STYLES ==================== */
 .img-fluid {
 	width: 100%;

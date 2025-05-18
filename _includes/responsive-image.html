@@ -37,7 +37,7 @@ Parameters:
       " sizes="
         (max-width: 414px) 414px,
         (max-width: 768px) 768px,
-        (min-width: 769px) 1920px
+        (min-width: 769px) 768px
       ">
 
     <!-- WebP with responsive sources -->
@@ -48,7 +48,7 @@ Parameters:
       " sizes="
         (max-width: 414px) 414px,
         (max-width: 768px) 768px,
-        (min-width: 769px) 1920px
+        (min-width: 769px) 100vw
       ">
     {% else %}
     <!-- Single size sources -->
@@ -67,6 +67,7 @@ Parameters:
           (max-width: 768px) 768px,
           (min-width: 769px) 100vw
         " {% endif %} width="{{ img_width }}" height="auto" decoding="{{ decoding }}" loading="{{ loading }}"
-      class="img-fluid {{ include.class }}" alt="{{ include.alt | escape }}">
+      class="img-fluid {{ include.class }}" alt="{{ include.alt | escape }}"
+      onload="console.log('Loaded:', this.currentSrc, 'at', window.innerWidth, 'px')">
   </picture>
 </figure>
