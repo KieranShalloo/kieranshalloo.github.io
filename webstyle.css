@@ -142,10 +142,6 @@ body {
 	}
 }
 
-figure.portfolio-image {
-	border: 2px solid red; /* Highlights the container */
-}
-
 /* ==================== IMAGE STYLES ==================== */
 .img-fluid {
 	width: 100%;
@@ -216,13 +212,18 @@ figure.portfolio-image {
 }
 
 /* ==================== HEADER IMAGES ==================== */
-[class$="header"],
+.scrubbingscrolling {
+	background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8)),
+		url("/images/channel4/1920/jpg/scrubbingscolling.jpg");
+}
+
+/* [class$="header"],
 [class$="scrolling"] {
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
 	background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8));
-}
+} */
 
 /* 414px headers */
 .singstarheader {

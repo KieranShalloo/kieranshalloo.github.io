@@ -67,7 +67,6 @@ Parameters:
           (max-width: 768px) 768px,
           (min-width: 769px) 100vw
         " {% endif %} width="{{ img_width }}" height="auto" decoding="{{ decoding }}" loading="{{ loading }}"
-      class="img-fluid {{ include.class }}" alt="{{ include.alt | escape }}"
-      onload="console.log('Loaded:', this.currentSrc, 'at', window.innerWidth, 'px')">
+      class="img-fluid {{ include.class }}" alt="{{ include.alt | escape }}" 'px' )">
   </picture>
 </figure>
