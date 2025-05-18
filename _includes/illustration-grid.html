@@ -1,7 +1,7 @@
 <!-- _includes/illustration-grid.html -->
 
-<!-- Navigation Row -->
-<div class="row mb-4">
+<!-- Navigation Row (commented out as in your original) -->
+<!-- <div class="row mb-4">
     <div class="col-4 text-center">
         {% if page.previous_slug %}
         <a href="/illustration/{{ page.previous_slug }}">
@@ -21,25 +21,33 @@
         </a>
         {% endif %}
     </div>
-</div>
+</div> -->
 
 <!-- Grid Row -->
 <div class="row">
     {% for item in site.data.illustrations %}
     <div class="col-6 col-lg-3 p-0 portfolio-frame">
-        <a href="/illustration/{{ item.slug }}">
+        <a href="{{ item.url }}">
             <picture>
-                <source srcset="{{ item.webp_thumb }}" type="image/webp">
-                <source srcset="{{ item.thumb }}" type="image/jpg">
-                <img decoding="async" class="img-fluid portfolio-image" loading="lazy" src="{{ item.thumb }}"
-                    alt="{{ item.title }}">
+                <!-- Modern formats first -->
+                <source srcset="{{ item.thumb.avif }}" type="image/avif">
+                <source srcset="{{ item.thumb.webp }}" type="image/webp">
+                <!-- Fallback -->
+                <source srcset="{{ item.thumb.jpg }}" type="image/jpeg">
+                <img decoding="async" class="img-fluid portfolio-image" loading="lazy" src="{{ item.thumb.jpg }}"
+                    alt="{{ item.thumb.alt }}" width="400"
+                    height="{{ 400 | divided_by: item.aspect_ratio | split: ':' | first | times: item.aspect_ratio | split: ':' | last }}">
             </picture>
+            <!-- Optional: Add title overlay if desired -->
+            <div class="portfolio-overlay">
+                <div class="portfolio-title">{{ item.title }}</div>
+            </div>
         </a>
     </div>
     {% endfor %}
 </div>
 
 <!-- Repeat Navigation at Bottom -->
-<div class="row mt-4">
-    <!-- Same navigation as above -->
+<!-- <div class="row mt-4"> -->
+<!-- Same navigation as above -->
 </div>
