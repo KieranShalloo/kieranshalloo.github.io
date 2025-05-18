@@ -481,9 +481,9 @@
   height: 1800
   aspect_ratio: "4:3"
 
-- title: "Gemma"
-  slug: "gemma"
-  url: "/illustration/gemma/"
+- title: "The Matriarch"
+  slug: "matriarch"
+  url: "/illustration/matriarch/"
   description: "Illustration of Gemma Teller Morrow from Sons of Anarchy"
   image:
     jpg: "/images/illustration/gemma.jpg"

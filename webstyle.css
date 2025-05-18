@@ -552,7 +552,7 @@ ul.social-network {
 		width: 42px;
 		height: 42px;
 		border-radius: 50%;
-		background-color: var(--dark);
+		background-color: var(--light);
 		font-size: 1.25rem;
 		transition: background-color 0.3s ease, transform 0.3s ease;
 
@@ -561,21 +561,25 @@ ul.social-network {
 		}
 
 		i {
-			color: var(--light);
+			color: var(--dark);
 			transition: color 0.3s ease;
 		}
 
-		&.icoInstagram:hover i {
-			background-color: #e4405f;
-			color: #fff;
+		&.icoTwitch:hover i {
+			/* background-color: #e4405f; */
+			color: #9146ff;
+		}
+		&.icoYoutube:hover i {
+			/* background-color: #e4405f; */
+			color: #e1002d;
 		}
 		&.icoLinkedin:hover i {
-			background-color: #007bb7;
-			color: #fff;
+			/* background-color: #007bb7; */
+			color: #007bb7;
 		}
-		/&.icoBsky:hover i {
-			background-color: #007bb7;
-			color: #fff;
+		&.icoBsky:hover i {
+			/* background-color: #007bb7; */
+			color: #0a7aff;
 		}
 	}
 }
