@@ -444,14 +444,14 @@
   url: "/illustration/theworldsend/"
   description: "Illustration inspired by the Edgar Wright film The World's End"
   image:
-    jpg: "/images/illustration/theworldsend.jpg"
-    webp: "/images/illustration/theworldsend.webp"
-    avif: "/images/illustration/theworldsend.avif"
-    alt: "Gary King from The World's End"
+    jpg: "/images/illustration/worldsend.jpg"
+    webp: "/images/illustration/worldsend.webp"
+    avif: "/images/illustration/worldsend.avif"
+    alt: "The World's End"
   thumb:
-    jpg: "/images/illustration/thumbs/twe-thumb.jpg"
-    webp: "/images/illustration/thumbs/twe-thumb.webp"
-    avif: "/images/illustration/thumbs/twe-thumb.avif"
+    jpg: "/images/illustration/thumbs/worldsend-thumb.jpg"
+    webp: "/images/illustration/thumbs/worldsend-thumb.webp"
+    avif: "/images/illustration/thumbs/worldsend-thumb.avif"
     alt: "Thumbnail of The World's End illustration"
   date: 2023-07-22
   categories: ["movies", "comedy"]

@@ -22,7 +22,7 @@ h3 {
 	line-height: 1.23;
 	text-align: left;
 	font-weight: 200;
-	color: "var(--light)";
+	color: var(--light);
 }
 
 h4 {
