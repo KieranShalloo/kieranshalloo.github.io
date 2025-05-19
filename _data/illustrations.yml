@@ -3,9 +3,9 @@
   url: "/illustration/danielbryan/"
   description: "A commissioned illustration showing the WWE wrestler Daniel Bryan celebrating his victory at WrestleMania XXX."
   image:
-    jpg: "/images/illustration/Danielbryan.jpg"
-    webp: "/images/illustration/Danielbryan.webp"
-    avif: "/images/illustration/Danielbryan.avif"
+    jpg: "/images/illustration/danielbryan.jpg"
+    webp: "/images/illustration/danielbryan.webp"
+    avif: "/images/illustration/danielbryan.avif"
     alt: "Daniel Bryan celebrating at WrestleMania XXX"
   thumb:
     jpg: "/images/illustration/thumbs/danielbryan-thumb.jpg"
