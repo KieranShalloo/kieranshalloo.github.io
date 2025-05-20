@@ -114,13 +114,14 @@ body {
 	transition: all 0.15s ease-in-out;
 
 	/* Custom accent colors */
-	color: var(--accent);
+	/* color: var(--accent); */
 	background-color: transparent;
 	border: 1px solid var(--accent);
 
 	/* Hover state */
 	&:hover {
 		color: var(--dark);
+		/* font-weight: 600; */
 		background-color: var(--accent);
 		border-color: var(--accent);
 	}
