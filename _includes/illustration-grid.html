@@ -1,27 +1,4 @@
-<!-- _includes/illustration-grid.html -->
 
-<!-- Navigation Row (commented out as in your original) -->
-<!-- <div class="row mb-4">
-    <div class="col-4 text-center">
-        {% if page.previous_slug %}
-        <a href="/illustration/{{ page.previous_slug }}">
-            <i class="bi bi-arrow-left-circle dark" style="font-size: 24px;"></i>
-        </a>
-        {% endif %}
-    </div>
-    <div class="col-4 text-center">
-        <a href="/illustration/">
-            <i class="bi bi-grid-fill dark" style="font-size: 24px;"></i>
-        </a>
-    </div>
-    <div class="col-4 text-center">
-        {% if page.next_slug %}
-        <a href="/illustration/{{ page.next_slug }}">
-            <i class="bi bi-arrow-right-circle dark" style="font-size: 24px;"></i>
-        </a>
-        {% endif %}
-    </div>
-</div> -->
 
 <!-- Grid Row -->
 <div class="row pb-0">
@@ -39,15 +16,13 @@
                     height="{{ 400 | divided_by: item.aspect_ratio | split: ':' | first | times: item.aspect_ratio | split: ':' | last }}">
             </picture>
             <!-- Optional: Add title overlay if desired -->
-            <div class="portfolio-overlay">
+            <!-- <div class="portfolio-overlay">
                 <div class="portfolio-title">{{ item.title }}</div>
-            </div>
+            </div> -->
         </a>
     </div>
     {% endfor %}
 </div>
 
-<!-- Repeat Navigation at Bottom -->
-<!-- <div class="row mt-4"> -->
-<!-- Same navigation as above -->
+
 </div>
