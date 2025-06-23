@@ -1,524 +1,90 @@
-- title: "Trainline"
-  slug: "danielbryan"
-  url: "/illustration/danielbryan/"
+- title: "Google Trainline"
+  slug: "googletrains"
+  url: "/portfolio/googletrain/"
   description: "A commissioned illustration showing the WWE wrestler Daniel Bryan celebrating his victory at WrestleMania XXX."
   image:
-    jpg: "/images/illustration/danielbryan.jpg"
-    webp: "/images/illustration/danielbryan.webp"
-    avif: "/images/illustration/danielbryan.avif"
+    jpg: "/images/home/trainlineheader768.jpg"
+    webp: "/images/home/trainlineheader768.webp"
+    avif: "/images/home/trainlineheader768.avif"
     alt: "Daniel Bryan celebrating at WrestleMania XXX"
-  thumb:
-    jpg: "/images/illustration/thumbs/danielbryan-thumb.jpg"
-    webp: "/images/illustration/thumbs/danielbryan-thumb.webp"
-    avif: "/images/illustration/thumbs/danielbryan-thumb.avif"
-    alt: "Thumbnail of Daniel Bryan illustration"
-  date: 2023-05-15
-  categories: ["wrestling", "sports"]
-  tags: ["WWE", "WrestleMania", "commission"]
   width: 1920
   height: 1080
   aspect_ratio: "16:9"
 
-- title: "Star Wars Light Side"
-  slug: "starwarslightside"
-  url: "/illustration/starwarslightside/"
-  description: "Illustration depicting heroes from the Star Wars universe"
+- title: "WWE"
+  slug: "wwe"
+  url: "/portfolio/wwe/"
+  description: "A commissioned illustration showing the WWE wrestler Daniel Bryan celebrating his victory at WrestleMania XXX."
   image:
-    jpg: "/images/illustration/starwarslightside.jpg"
-    webp: "/images/illustration/starwarslightside.webp"
-    avif: "/images/illustration/starwarslightside.avif"
-    alt: "Star Wars light side characters"
-  thumb:
-    jpg: "/images/illustration/thumbs/starwarslightside-thumb.jpg"
-    webp: "/images/illustration/thumbs/starwarslightside-thumb.webp"
-    avif: "/images/illustration/thumbs/starwarslightside-thumb.avif"
-    alt: "Thumbnail of Star Wars light side illustration"
-  date: 2023-04-10
-  categories: ["sci-fi", "movies"]
-  tags: ["Star Wars", "Jedi", "Rebels"]
-  width: 2400
-  height: 1350
+    jpg: "/images/home/wweheader768.jpg"
+    webp: "/images/home/wweheader768.webp"
+    avif: "/images/home/wweheader768.avif"
+    alt: "Daniel Bryan celebrating at WrestleMania XXX"
+  width: 1920
+  height: 1080
   aspect_ratio: "16:9"
 
-- title: "Nightmare Before Christmas"
-  slug: "nightmare-before-christmas"
-  url: "/illustration/nightmare-before-christmas/"
-  description: "Halloween meets Christmas in this Tim Burton inspired illustration"
+- title: "Trainline"
+  slug: "trainline"
+  url: "/portfolio/trainline/"
+  description: "A commissioned illustration showing the WWE wrestler Daniel Bryan celebrating his victory at WrestleMania XXX."
   image:
-    jpg: "/images/illustration/nightmare-before-christmas.jpg"
-    webp: "/images/illustration/nightmare-before-christmas.webp"
-    avif: "/images/illustration/nightmare-before-christmas.avif"
-    alt: "Jack Skellington from Nightmare Before Christmas"
-  thumb:
-    jpg: "/images/illustration/thumbs/nightmare-thumb.jpg"
-    webp: "/images/illustration/thumbs/nightmare-thumb.webp"
-    avif: "/images/illustration/thumbs/nightmare-thumb.avif"
-    alt: "Thumbnail of Nightmare Before Christmas illustration"
-  date: 2023-10-31
-  categories: ["animation", "holiday"]
-  tags: ["Tim Burton", "Halloween", "Christmas"]
-  width: 2000
-  height: 2500
-  aspect_ratio: "4:5"
-
-- title: "Star Wars Dark Side"
-  slug: "starwarsdarkside"
-  url: "/illustration/starwarsdarkside/"
-  description: "Illustration of iconic villains from the Star Wars universe"
-  image:
-    jpg: "/images/illustration/starwarsdarkside.jpg"
-    webp: "/images/illustration/starwarsdarkside.webp"
-    avif: "/images/illustration/starwarsdarkside.avif"
-    alt: "Star Wars dark side characters"
-  thumb:
-    jpg: "/images/illustration/thumbs/starwarsdarkside-thumb.jpg"
-    webp: "/images/illustration/thumbs/starwarsdarkside-thumb.webp"
-    avif: "/images/illustration/thumbs/starwarsdarkside-thumb.avif"
-    alt: "Thumbnail of Star Wars dark side illustration"
-  date: 2023-04-12
-  categories: ["sci-fi", "movies"]
-  tags: ["Star Wars", "Sith", "Empire"]
-  width: 2400
-  height: 1350
+    jpg: "/images/home/engagementheader768.jpg"
+    webp: "/images/home/engagementheader768.webp"
+    avif: "/images/home/engagementheader768.avif"
+    alt: "Daniel Bryan celebrating at WrestleMania XXX"
+  width: 1920
+  height: 1080
   aspect_ratio: "16:9"
 
-- title: "Kubo"
-  slug: "kubo"
-  url: "/illustration/kubo/"
-  description: "Character illustration from the animated film Kubo and the Two Strings"
+- title: "Trainline"
+  slug: "trainline"
+  url: "/portfolio/trainline/"
+  description: "A commissioned illustration showing the WWE wrestler Daniel Bryan celebrating his victory at WrestleMania XXX."
   image:
-    jpg: "/images/illustration/kubo.jpg"
-    webp: "/images/illustration/kubo.webp"
-    avif: "/images/illustration/kubo.avif"
-    alt: "Kubo character from Kubo and the Two Strings"
-  thumb:
-    jpg: "/images/illustration/thumbs/kubo-thumb.jpg"
-    webp: "/images/illustration/thumbs/kubo-thumb.webp"
-    avif: "/images/illustration/thumbs/kubo-thumb.avif"
-    alt: "Thumbnail of Kubo illustration"
-  date: 2023-03-22
-  categories: ["animation", "fantasy"]
-  tags: ["Laika", "Stop Motion", "Adventure"]
-  width: 1800
-  height: 2400
-  aspect_ratio: "3:4"
-
-- title: "Darth Maul"
-  slug: "darthmaul"
-  url: "/illustration/darthmaul/"
-  description: "Menacing illustration of the Sith Lord Darth Maul"
-  image:
-    jpg: "/images/illustration/darthmaul.jpg"
-    webp: "/images/illustration/darthmaul.webp"
-    avif: "/images/illustration/darthmaul.avif"
-    alt: "Darth Maul with double-bladed lightsaber"
-  thumb:
-    jpg: "/images/illustration/thumbs/maul-thumb.jpg"
-    webp: "/images/illustration/thumbs/maul-thumb.webp"
-    avif: "/images/illustration/thumbs/maul-thumb.avif"
-    alt: "Thumbnail of Darth Maul illustration"
-  date: 2023-05-04
-  categories: ["sci-fi", "movies"]
-  tags: ["Star Wars", "Sith", "Phantom Menace"]
-  width: 1600
-  height: 2000
-  aspect_ratio: "4:5"
-
-- title: "Tig"
-  slug: "tig"
-  url: "/illustration/tig/"
-  description: "Illustration of Tig Trager from Sons of Anarchy"
-  image:
-    jpg: "/images/illustration/tig.jpg"
-    webp: "/images/illustration/tig.webp"
-    avif: "/images/illustration/tig.avif"
-    alt: "Tig Trager from Sons of Anarchy"
-  thumb:
-    jpg: "/images/illustration/thumbs/tig-thumb.jpg"
-    webp: "/images/illustration/thumbs/tig-thumb.webp"
-    avif: "/images/illustration/thumbs/tig-thumb.avif"
-    alt: "Thumbnail of Tig illustration"
-  date: 2023-06-18
-  categories: ["television", "drama"]
-  tags: ["SOA", "Biker", "Outlaws"]
-  width: 1500
-  height: 1800
-  aspect_ratio: "5:6"
-
-- title: "Fallout"
-  slug: "fallout"
-  url: "/illustration/fallout/"
-  description: "Post-apocalyptic illustration inspired by the Fallout game series"
-  image:
-    jpg: "/images/illustration/fallout.jpg"
-    webp: "/images/illustration/fallout.webp"
-    avif: "/images/illustration/fallout.avif"
-    alt: "Vault Boy from Fallout series"
-  thumb:
-    jpg: "/images/illustration/thumbs/fallout-thumb.jpg"
-    webp: "/images/illustration/thumbs/fallout-thumb.webp"
-    avif: "/images/illustration/thumbs/fallout-thumb.avif"
-    alt: "Thumbnail of Fallout illustration"
-  date: 2023-07-05
-  categories: ["gaming", "sci-fi"]
-  tags: ["Bethesda", "Post-Apocalyptic", "RPG"]
-  width: 2100
-  height: 1575
-  aspect_ratio: "4:3"
-
-- title: "Gremlins"
-  slug: "gremlins"
-  url: "/illustration/gremlins/"
-  description: "Illustration of the mischievous creatures from Gremlins"
-  image:
-    jpg: "/images/illustration/gremlins.jpg"
-    webp: "/images/illustration/gremlins.webp"
-    avif: "/images/illustration/gremlins.avif"
-    alt: "Gremlin creature from the movie"
-  thumb:
-    jpg: "/images/illustration/thumbs/gremlins-thumb.jpg"
-    webp: "/images/illustration/thumbs/gremlins-thumb.webp"
-    avif: "/images/illustration/thumbs/gremlins-thumb.avif"
-    alt: "Thumbnail of Gremlins illustration"
-  date: 2023-12-15
-  categories: ["movies", "horror-comedy"]
-  tags: ["80s", "Creature", "Holiday"]
-  width: 2200
-  height: 1650
-  aspect_ratio: "4:3"
-
-- title: "Archer"
-  slug: "archer"
-  url: "/illustration/archer/"
-  description: "Illustration of Sterling Archer from the animated series Archer"
-  image:
-    jpg: "/images/illustration/archer.jpg"
-    webp: "/images/illustration/archer.webp"
-    avif: "/images/illustration/archer.avif"
-    alt: "Sterling Archer in his signature pose"
-  thumb:
-    jpg: "/images/illustration/thumbs/archer-thumb.jpg"
-    webp: "/images/illustration/thumbs/archer-thumb.webp"
-    avif: "/images/illustration/thumbs/archer-thumb.avif"
-    alt: "Thumbnail of Archer illustration"
-  date: 2023-02-14
-  categories: ["animation", "comedy"]
-  tags: ["FX", "Spy", "Adult Animation"]
-  width: 1700
-  height: 2200
-  aspect_ratio: "17:22"
-
-- title: "Finding Nemo"
-  slug: "finding-nemo"
-  url: "/illustration/finding-nemo/"
-  description: "Colorful underwater illustration featuring characters from Finding Nemo"
-  image:
-    jpg: "/images/illustration/finding-nemo.jpg"
-    webp: "/images/illustration/finding-nemo.webp"
-    avif: "/images/illustration/finding-nemo.avif"
-    alt: "Nemo and Dory swimming together"
-  thumb:
-    jpg: "/images/illustration/thumbs/nemo-thumb.jpg"
-    webp: "/images/illustration/thumbs/nemo-thumb.webp"
-    avif: "/images/illustration/thumbs/nemo-thumb.avif"
-    alt: "Thumbnail of Finding Nemo illustration"
-  date: 2023-06-10
-  categories: ["animation", "family"]
-  tags: ["Pixar", "Ocean", "Adventure"]
-  width: 2500
-  height: 1667
-  aspect_ratio: "3:2"
-
-- title: "Rey"
-  slug: "rey"
-  url: "/illustration/rey/"
-  description: "Illustration of Rey from the Star Wars sequel trilogy"
-  image:
-    jpg: "/images/illustration/rey.jpg"
-    webp: "/images/illustration/rey.webp"
-    avif: "/images/illustration/rey.avif"
-    alt: "Rey with her yellow lightsaber"
-  thumb:
-    jpg: "/images/illustration/thumbs/rey-thumb.jpg"
-    webp: "/images/illustration/thumbs/rey-thumb.webp"
-    avif: "/images/illustration/thumbs/rey-thumb.avif"
-    alt: "Thumbnail of Rey illustration"
-  date: 2023-04-15
-  categories: ["sci-fi", "movies"]
-  tags: ["Star Wars", "Jedi", "Sequel Trilogy"]
-  width: 1800
-  height: 2400
-  aspect_ratio: "3:4"
-
-- title: "Hulk Hogan"
-  slug: "hulkhogan"
-  url: "/illustration/hulkhogan/"
-  description: "Illustration of wrestling legend Hulk Hogan in his prime"
-  image:
-    jpg: "/images/illustration/hulkhogan.jpg"
-    webp: "/images/illustration/hulkhogan.webp"
-    avif: "/images/illustration/hulkhogan.avif"
-    alt: "Hulk Hogan flexing his muscles"
-  thumb:
-    jpg: "/images/illustration/thumbs/hulk-thumb.jpg"
-    webp: "/images/illustration/thumbs/hulk-thumb.webp"
-    avif: "/images/illustration/thumbs/hulk-thumb.avif"
-    alt: "Thumbnail of Hulk Hogan illustration"
-  date: 2023-05-20
-  categories: ["wrestling", "sports"]
-  tags: ["WWF", "80s", "Icon"]
-  width: 1900
-  height: 2400
-  aspect_ratio: "19:24"
-
-- title: "Jax"
-  slug: "jax"
-  url: "/illustration/jax/"
-  description: "Illustration of Jax Teller from Sons of Anarchy"
-  image:
-    jpg: "/images/illustration/jax.jpg"
-    webp: "/images/illustration/jax.webp"
-    avif: "/images/illustration/jax.avif"
-    alt: "Jax Teller on his motorcycle"
-  thumb:
-    jpg: "/images/illustration/thumbs/jax-thumb.jpg"
-    webp: "/images/illustration/thumbs/jax-thumb.webp"
-    avif: "/images/illustration/thumbs/jax-thumb.avif"
-    alt: "Thumbnail of Jax illustration"
-  date: 2023-06-15
-  categories: ["television", "drama"]
-  tags: ["SOA", "Biker", "Outlaws"]
-  width: 1600
-  height: 2000
-  aspect_ratio: "4:5"
-
-- title: "Landspeeder"
-  slug: "landspeeder"
-  url: "/illustration/landspeeder/"
-  description: "Illustration of Luke Skywalker's landspeeder from Star Wars"
-  image:
-    jpg: "/images/illustration/landspeeder.jpg"
-    webp: "/images/illustration/landspeeder.webp"
-    avif: "/images/illustration/landspeeder.avif"
-    alt: "Luke's landspeeder on Tatooine"
-  thumb:
-    jpg: "/images/illustration/thumbs/speeder-thumb.jpg"
-    webp: "/images/illustration/thumbs/speeder-thumb.webp"
-    avif: "/images/illustration/thumbs/speeder-thumb.avif"
-    alt: "Thumbnail of landspeeder illustration"
-  date: 2023-04-18
-  categories: ["sci-fi", "movies"]
-  tags: ["Star Wars", "Vehicle", "Tatooine"]
-  width: 2500
-  height: 1406
+    jpg: "/images/home/singstarheader768.jpg"
+    webp: "/images/home/singstarheader768.webp"
+    avif: "/images/home/singstarheader768.avif"
+    alt: "Daniel Bryan celebrating at WrestleMania XXX"
+  width: 1920
+  height: 1080
   aspect_ratio: "16:9"
 
-- title: "Deadpool"
-  slug: "deadpool"
-  url: "/illustration/deadpool/"
-  description: "Illustration of the Merc with a Mouth, Deadpool"
+- title: "Book of Spells"
+  slug: "bookofspells"
+  url: "/portfolio/bookofspells/"
+  description: "A commissioned illustration showing the WWE wrestler Daniel Bryan celebrating his victory at WrestleMania XXX."
   image:
-    jpg: "/images/illustration/deadpool.jpg"
-    webp: "/images/illustration/deadpool.webp"
-    avif: "/images/illustration/deadpool.avif"
-    alt: "Deadpool in his signature pose"
-  thumb:
-    jpg: "/images/illustration/thumbs/deadpool-thumb.jpg"
-    webp: "/images/illustration/thumbs/deadpool-thumb.webp"
-    avif: "/images/illustration/thumbs/deadpool-thumb.avif"
-    alt: "Thumbnail of Deadpool illustration"
-  date: 2023-03-10
-  categories: ["comics", "action"]
-  tags: ["Marvel", "Antihero", "Fourth Wall"]
-  width: 1800
-  height: 2700
-  aspect_ratio: "2:3"
-
-- title: "Lego Movie"
-  slug: "legomovie"
-  url: "/illustration/legomovie/"
-  description: "Illustration of characters from The Lego Movie"
-  image:
-    jpg: "/images/illustration/legomovie.jpg"
-    webp: "/images/illustration/legomovie.webp"
-    avif: "/images/illustration/legomovie.avif"
-    alt: "Emmet and Wyldstyle from The Lego Movie"
-  thumb:
-    jpg: "/images/illustration/thumbs/lego-thumb.jpg"
-    webp: "/images/illustration/thumbs/lego-thumb.webp"
-    avif: "/images/illustration/thumbs/lego-thumb.avif"
-    alt: "Thumbnail of Lego Movie illustration"
-  date: 2023-02-28
-  categories: ["animation", "family"]
-  tags: ["LEGO", "Everything is Awesome", "Stop Motion"]
-  width: 2200
-  height: 1650
-  aspect_ratio: "4:3"
-
-- title: "Spiderman"
-  slug: "spiderman"
-  url: "/illustration/spiderman/"
-  description: "Dynamic illustration of Spiderman in mid-swing"
-  image:
-    jpg: "/images/illustration/spiderman.jpg"
-    webp: "/images/illustration/spiderman.webp"
-    avif: "/images/illustration/spiderman.avif"
-    alt: "Spiderman swinging between buildings"
-  thumb:
-    jpg: "/images/illustration/thumbs/spiderman-thumb.jpg"
-    webp: "/images/illustration/thumbs/spiderman-thumb.webp"
-    avif: "/images/illustration/thumbs/spiderman-thumb.avif"
-    alt: "Thumbnail of Spiderman illustration"
-  date: 2023-07-15
-  categories: ["comics", "action"]
-  tags: ["Marvel", "Superhero", "New York"]
-  width: 2100
-  height: 1575
-  aspect_ratio: "4:3"
-
-- title: "Terminator"
-  slug: "terminator"
-  url: "/illustration/terminator/"
-  description: "Illustration of the T-800 Terminator from the iconic film series"
-  image:
-    jpg: "/images/illustration/terminator.jpg"
-    webp: "/images/illustration/terminator.webp"
-    avif: "/images/illustration/terminator.avif"
-    alt: "Terminator with glowing red eye"
-  thumb:
-    jpg: "/images/illustration/thumbs/terminator-thumb.jpg"
-    webp: "/images/illustration/thumbs/terminator-thumb.webp"
-    avif: "/images/illustration/thumbs/terminator-thumb.avif"
-    alt: "Thumbnail of Terminator illustration"
-  date: 2023-10-10
-  categories: ["sci-fi", "action"]
-  tags: ["Arnold", "Cyberdyne", "I'll Be Back"]
-  width: 2000
-  height: 2500
-  aspect_ratio: "4:5"
-
-- title: "Dixon Brothers"
-  slug: "dixonbrothers"
-  url: "/illustration/dixonbrothers/"
-  description: "Illustration of Daryl and Merle Dixon from The Walking Dead"
-  image:
-    jpg: "/images/illustration/dixonbrothers.jpg"
-    webp: "/images/illustration/dixonbrothers.webp"
-    avif: "/images/illustration/dixonbrothers.avif"
-    alt: "Daryl and Merle Dixon together"
-  thumb:
-    jpg: "/images/illustration/thumbs/daryldixon-thumb.jpg"
-    webp: "/images/illustration/thumbs/daryldixon-thumb.webp"
-    avif: "/images/illustration/thumbs/daryldixon-thumb.avif"
-    alt: "Thumbnail of Dixon Brothers illustration"
-  date: 2023-09-05
-  categories: ["television", "horror"]
-  tags: ["Walking Dead", "Zombies", "Survival"]
-  width: 1800
-  height: 2400
-  aspect_ratio: "3:4"
-
-- title: "Game of Thrones"
-  slug: "game-of-thrones"
-  url: "/illustration/game-of-thrones/"
-  description: "Illustration featuring iconic characters from Game of Thrones"
-  image:
-    jpg: "/images/illustration/gameofthrones.jpg"
-    webp: "/images/illustration/gameofthrones.webp"
-    avif: "/images/illustration/gameofthrones.avif"
-    alt: "Multiple Game of Thrones characters together"
-  thumb:
-    jpg: "/images/illustration/thumbs/gameofthrones-thumb.jpg"
-    webp: "/images/illustration/thumbs/gameofthrones-thumb.webp"
-    avif: "/images/illustration/thumbs/gameofthrones-thumb.avif"
-    alt: "Thumbnail of Game of Thrones illustration"
-  date: 2023-08-20
-  categories: ["television", "fantasy"]
-  tags: ["HBO", "Dragons", "Winter is Coming"]
-  width: 2500
-  height: 1406
+    jpg: "/images/home/BOSheader768.jpg"
+    webp: "/images/home/BOSheader768.webp"
+    avif: "/images/home/BOSheader768.avif"
+    alt: "Daniel Bryan celebrating at WrestleMania XXX"
+  width: 1920
+  height: 1080
   aspect_ratio: "16:9"
 
-- title: "The World's End"
-  slug: "theworldsend"
-  url: "/illustration/theworldsend/"
-  description: "Illustration inspired by the Edgar Wright film The World's End"
+- title: "Book of Spells"
+  slug: "bookofspells"
+  url: "/portfolio/bookofspells/"
+  description: "A commissioned illustration showing the WWE wrestler Daniel Bryan celebrating his victory at WrestleMania XXX."
   image:
-    jpg: "/images/illustration/worldsend.jpg"
-    webp: "/images/illustration/worldsend.webp"
-    avif: "/images/illustration/worldsend.avif"
-    alt: "The World's End"
-  thumb:
-    jpg: "/images/illustration/thumbs/worldsend-thumb.jpg"
-    webp: "/images/illustration/thumbs/worldsend-thumb.webp"
-    avif: "/images/illustration/thumbs/worldsend-thumb.avif"
-    alt: "Thumbnail of The World's End illustration"
-  date: 2023-07-22
-  categories: ["movies", "comedy"]
-  tags: ["Cornetto Trilogy", "Simon Pegg", "Aliens"]
-  width: 2000
-  height: 1500
-  aspect_ratio: "4:3"
+    jpg: "/images/home/BOSheader768.jpg"
+    webp: "/images/home/BOSheader768.webp"
+    avif: "/images/home/BOSheader768.avif"
+    alt: "Daniel Bryan celebrating at WrestleMania XXX"
+  width: 1920
+  height: 1080
+  aspect_ratio: "16:9"
 
-- title: "Teenage Mutant Ninja Turtles"
-  slug: "turtles"
-  url: "/illustration/turtles/"
-  description: "Illustration of all four Ninja Turtles in action"
+- title: "Book of Spells"
+  slug: "bookofspells"
+  url: "/portfolio/bookofspells/"
+  description: "A commissioned illustration showing the WWE wrestler Daniel Bryan celebrating his victory at WrestleMania XXX."
   image:
-    jpg: "/images/illustration/turtles.jpg"
-    webp: "/images/illustration/turtles.webp"
-    avif: "/images/illustration/turtles.avif"
-    alt: "Leonardo, Michelangelo, Donatello and Raphael together"
-  thumb:
-    jpg: "/images/illustration/thumbs/turtles-thumb.jpg"
-    webp: "/images/illustration/thumbs/turtles-thumb.webp"
-    avif: "/images/illustration/thumbs/turtles-thumb.avif"
-    alt: "Thumbnail of Ninja Turtles illustration"
-  date: 2023-05-15
-  categories: ["animation", "action"]
-  tags: ["TMNT", "80s", "Pizza"]
-  width: 2400
-  height: 1800
-  aspect_ratio: "4:3"
-
-- title: "The Matriarch"
-  slug: "matriarch"
-  url: "/illustration/matriarch/"
-  description: "Illustration of Gemma Teller Morrow from Sons of Anarchy"
-  image:
-    jpg: "/images/illustration/gemma.jpg"
-    webp: "/images/illustration/gemma.webp"
-    avif: "/images/illustration/gemma.avif"
-    alt: "Gemma Teller Morrow looking intense"
-  thumb:
-    jpg: "/images/illustration/thumbs/gemma-thumb.jpg"
-    webp: "/images/illustration/thumbs/gemma-thumb.webp"
-    avif: "/images/illustration/thumbs/gemma-thumb.avif"
-    alt: "Thumbnail of Gemma illustration"
-  date: 2023-06-25
-  categories: ["television", "drama"]
-  tags: ["SOA", "Biker", "Matriarch"]
-  width: 1500
-  height: 1800
-  aspect_ratio: "5:6"
-
-- title: "Rick and Morty"
-  slug: "rick-morty"
-  url: "/illustration/rick-morty/"
-  description: "Illustration of Rick and Morty in one of their interdimensional adventures"
-  image:
-    jpg: "/images/illustration/rick-morty.jpg"
-    webp: "/images/illustration/rick-morty.webp"
-    avif: "/images/illustration/rick-morty.avif"
-    alt: "Rick and Morty in portal gun pose"
-  thumb:
-    jpg: "/images/illustration/thumbs/rick-morty-thumb.jpg"
-    webp: "/images/illustration/thumbs/rick-morty-thumb.webp"
-    avif: "/images/illustration/thumbs/rick-morty-thumb.avif"
-    alt: "Thumbnail of Rick and Morty illustration"
-  date: 2023-04-01
-  categories: ["animation", "comedy"]
-  tags: ["Adult Swim", "Sci-Fi", "Wubba Lubba Dub Dub"]
-  width: 2100
-  height: 1575
-  aspect_ratio: "4:3"
+    jpg: "/images/home/BOSheader768.jpg"
+    webp: "/images/home/BOSheader768.webp"
+    avif: "/images/home/BOSheader768.avif"
+    alt: "Daniel Bryan celebrating at WrestleMania XXX"
+  width: 1920
+  height: 1080
+  aspect_ratio: "16:9"

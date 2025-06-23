@@ -402,14 +402,14 @@
   url: "/illustration/dixonbrothers/"
   description: "Illustration of Daryl and Merle Dixon from The Walking Dead"
   image:
-    jpg: "/images/illustration/dixonbrothers.jpg"
-    webp: "/images/illustration/dixonbrothers.webp"
-    avif: "/images/illustration/dixonbrothers.avif"
+    jpg: "/images/illustration/dixon.jpg"
+    webp: "/images/illustration/dixon.webp"
+    avif: "/images/illustration/dixon.avif"
     alt: "Daryl and Merle Dixon together"
   thumb:
-    jpg: "/images/illustration/thumbs/daryldixon-thumb.jpg"
-    webp: "/images/illustration/thumbs/daryldixon-thumb.webp"
-    avif: "/images/illustration/thumbs/daryldixon-thumb.avif"
+    jpg: "/images/illustration/thumbs/dixon-thumb.jpg"
+    webp: "/images/illustration/thumbs/dixon-thumb.webp"
+    avif: "/images/illustration/thumbs/dixon-thumb.avif"
     alt: "Thumbnail of Dixon Brothers illustration"
   date: 2023-09-05
   categories: ["television", "horror"]

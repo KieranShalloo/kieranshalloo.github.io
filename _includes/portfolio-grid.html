@@ -1,0 +1,41 @@
+<!-- Grid Row -->
+<div class="row pb-0">
+    {% assign design_items = site.data.design %}
+    {% if include.limit %}
+    {% assign design_items = design_items | slice: 0, include.limit %}
+    {% endif %}
+
+    {% for item in design_items %}
+    <div class="
+        {% if forloop.index <= 2 %}
+            col-6
+        {% elsif forloop.index <= 5 %}
+            col-4
+        {% else %}
+            col-3
+        {% endif %}
+        p-0 portfolio-frame">
+        <a href="{{ item.url }}">
+            <picture>
+                <source srcset="{{ item.image.avif }}" type="image/avif">
+                <source srcset="{{ item.image.webp }}" type="image/webp">
+                <source srcset="{{ item.image.jpg }}" type="image/jpeg">
+                <img decoding="async" class="img-fluid portfolio-image" loading="lazy" src="{{ item.jpg }}"
+                    alt="{{ item.image.alt }}"
+                    height="{{ 800 | divided_by: item.aspect_ratio | split: ':' | first | times: item.aspect_ratio | split: ':' | last }}">
+            </picture>
+        </a>
+    </div>
+    {% endfor %}
+</div>
+
+
+
+
+
+
+
+<!-- Optional: Add title overlay if desired -->
+<!-- <div class="portfolio-overlay">
+                                                    <div class="portfolio-title">{{ item.title }}</div>
+                                                </div> -->
