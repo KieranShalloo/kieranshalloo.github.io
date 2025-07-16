@@ -13,9 +13,10 @@
   aspect_ratio: "16:9"
 
 - title: "WWE"
+  subtitle: "Redesigining the WWE Network"
   slug: "wwe"
-  url: "/portfolio/wwe/"
-  description: "A commissioned illustration showing the WWE wrestler Daniel Bryan celebrating his victory at WrestleMania XXX."
+  url: "/portfolio/wwenetwork/"
+  description: "A showcase of WWE Network UX/UI design work"
   image:
     jpg: "/images/home/wweheader768.jpg"
     webp: "/images/home/wweheader768.webp"

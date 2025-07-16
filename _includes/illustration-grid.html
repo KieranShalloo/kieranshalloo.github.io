@@ -1,7 +1,5 @@
-
-
 <!-- Grid Row -->
-<div class="row pb-0">
+<div class="row p-0">
     {% for item in site.data.illustrations %}
     <div class="col-6 col-lg-3 p-0 portfolio-frame">
         <a href="{{ item.url }}">
@@ -12,11 +10,9 @@
                 <!-- Fallback -->
                 <source srcset="{{ item.thumb.jpg }}" type="image/jpeg">
                 <img decoding="async" class="img-fluid portfolio-image" loading="lazy" src="{{ item.thumb.jpg }}"
-                    alt="{{ item.thumb.alt }}" width="400"
-                    height="{{ 400 | divided_by: item.aspect_ratio | split: ':' | first | times: item.aspect_ratio | split: ':' | last }}">
-            </picture>
-            <!-- Optional: Add title overlay if desired -->
-            <!-- <div class="portfolio-overlay">
+                    alt="{{ item.thumb.alt }}" width="400" </picture>
+                <!-- Optional: Add title overlay if desired -->
+                <!-- <div class="portfolio-overlay">
                 <div class="portfolio-title">{{ item.title }}</div>
             </div> -->
         </a>

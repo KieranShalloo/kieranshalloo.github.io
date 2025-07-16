@@ -12,12 +12,6 @@
     webp: "/images/illustration/thumbs/danielbryan-thumb.webp"
     avif: "/images/illustration/thumbs/danielbryan-thumb.avif"
     alt: "Thumbnail of Daniel Bryan illustration"
-  date: 2023-05-15
-  categories: ["wrestling", "sports"]
-  tags: ["WWE", "WrestleMania", "commission"]
-  width: 1920
-  height: 1080
-  aspect_ratio: "16:9"
 
 - title: "Star Wars Light Side"
   slug: "starwarslightside"
@@ -33,12 +27,6 @@
     webp: "/images/illustration/thumbs/starwarslightside-thumb.webp"
     avif: "/images/illustration/thumbs/starwarslightside-thumb.avif"
     alt: "Thumbnail of Star Wars light side illustration"
-  date: 2023-04-10
-  categories: ["sci-fi", "movies"]
-  tags: ["Star Wars", "Jedi", "Rebels"]
-  width: 2400
-  height: 1350
-  aspect_ratio: "16:9"
 
 - title: "Nightmare Before Christmas"
   slug: "nightmare-before-christmas"
@@ -54,12 +42,6 @@
     webp: "/images/illustration/thumbs/nightmare-thumb.webp"
     avif: "/images/illustration/thumbs/nightmare-thumb.avif"
     alt: "Thumbnail of Nightmare Before Christmas illustration"
-  date: 2023-10-31
-  categories: ["animation", "holiday"]
-  tags: ["Tim Burton", "Halloween", "Christmas"]
-  width: 2000
-  height: 2500
-  aspect_ratio: "4:5"
 
 - title: "Star Wars Dark Side"
   slug: "starwarsdarkside"
@@ -75,12 +57,6 @@
     webp: "/images/illustration/thumbs/starwarsdarkside-thumb.webp"
     avif: "/images/illustration/thumbs/starwarsdarkside-thumb.avif"
     alt: "Thumbnail of Star Wars dark side illustration"
-  date: 2023-04-12
-  categories: ["sci-fi", "movies"]
-  tags: ["Star Wars", "Sith", "Empire"]
-  width: 2400
-  height: 1350
-  aspect_ratio: "16:9"
 
 - title: "Kubo"
   slug: "kubo"
@@ -96,12 +72,6 @@
     webp: "/images/illustration/thumbs/kubo-thumb.webp"
     avif: "/images/illustration/thumbs/kubo-thumb.avif"
     alt: "Thumbnail of Kubo illustration"
-  date: 2023-03-22
-  categories: ["animation", "fantasy"]
-  tags: ["Laika", "Stop Motion", "Adventure"]
-  width: 1800
-  height: 2400
-  aspect_ratio: "3:4"
 
 - title: "Darth Maul"
   slug: "darthmaul"
@@ -117,12 +87,6 @@
     webp: "/images/illustration/thumbs/maul-thumb.webp"
     avif: "/images/illustration/thumbs/maul-thumb.avif"
     alt: "Thumbnail of Darth Maul illustration"
-  date: 2023-05-04
-  categories: ["sci-fi", "movies"]
-  tags: ["Star Wars", "Sith", "Phantom Menace"]
-  width: 1600
-  height: 2000
-  aspect_ratio: "4:5"
 
 - title: "Tig"
   slug: "tig"
@@ -138,12 +102,6 @@
     webp: "/images/illustration/thumbs/tig-thumb.webp"
     avif: "/images/illustration/thumbs/tig-thumb.avif"
     alt: "Thumbnail of Tig illustration"
-  date: 2023-06-18
-  categories: ["television", "drama"]
-  tags: ["SOA", "Biker", "Outlaws"]
-  width: 1500
-  height: 1800
-  aspect_ratio: "5:6"
 
 - title: "Fallout"
   slug: "fallout"
@@ -159,12 +117,6 @@
     webp: "/images/illustration/thumbs/fallout-thumb.webp"
     avif: "/images/illustration/thumbs/fallout-thumb.avif"
     alt: "Thumbnail of Fallout illustration"
-  date: 2023-07-05
-  categories: ["gaming", "sci-fi"]
-  tags: ["Bethesda", "Post-Apocalyptic", "RPG"]
-  width: 2100
-  height: 1575
-  aspect_ratio: "4:3"
 
 - title: "Gremlins"
   slug: "gremlins"
@@ -180,12 +132,6 @@
     webp: "/images/illustration/thumbs/gremlins-thumb.webp"
     avif: "/images/illustration/thumbs/gremlins-thumb.avif"
     alt: "Thumbnail of Gremlins illustration"
-  date: 2023-12-15
-  categories: ["movies", "horror-comedy"]
-  tags: ["80s", "Creature", "Holiday"]
-  width: 2200
-  height: 1650
-  aspect_ratio: "4:3"
 
 - title: "Archer"
   slug: "archer"
@@ -201,12 +147,6 @@
     webp: "/images/illustration/thumbs/archer-thumb.webp"
     avif: "/images/illustration/thumbs/archer-thumb.avif"
     alt: "Thumbnail of Archer illustration"
-  date: 2023-02-14
-  categories: ["animation", "comedy"]
-  tags: ["FX", "Spy", "Adult Animation"]
-  width: 1700
-  height: 2200
-  aspect_ratio: "17:22"
 
 - title: "Finding Nemo"
   slug: "finding-nemo"
@@ -222,12 +162,6 @@
     webp: "/images/illustration/thumbs/nemo-thumb.webp"
     avif: "/images/illustration/thumbs/nemo-thumb.avif"
     alt: "Thumbnail of Finding Nemo illustration"
-  date: 2023-06-10
-  categories: ["animation", "family"]
-  tags: ["Pixar", "Ocean", "Adventure"]
-  width: 2500
-  height: 1667
-  aspect_ratio: "3:2"
 
 - title: "Rey"
   slug: "rey"
@@ -243,12 +177,6 @@
     webp: "/images/illustration/thumbs/rey-thumb.webp"
     avif: "/images/illustration/thumbs/rey-thumb.avif"
     alt: "Thumbnail of Rey illustration"
-  date: 2023-04-15
-  categories: ["sci-fi", "movies"]
-  tags: ["Star Wars", "Jedi", "Sequel Trilogy"]
-  width: 1800
-  height: 2400
-  aspect_ratio: "3:4"
 
 - title: "Hulk Hogan"
   slug: "hulkhogan"
@@ -264,12 +192,6 @@
     webp: "/images/illustration/thumbs/hulk-thumb.webp"
     avif: "/images/illustration/thumbs/hulk-thumb.avif"
     alt: "Thumbnail of Hulk Hogan illustration"
-  date: 2023-05-20
-  categories: ["wrestling", "sports"]
-  tags: ["WWF", "80s", "Icon"]
-  width: 1900
-  height: 2400
-  aspect_ratio: "19:24"
 
 - title: "Jax"
   slug: "jax"
@@ -285,12 +207,6 @@
     webp: "/images/illustration/thumbs/jax-thumb.webp"
     avif: "/images/illustration/thumbs/jax-thumb.avif"
     alt: "Thumbnail of Jax illustration"
-  date: 2023-06-15
-  categories: ["television", "drama"]
-  tags: ["SOA", "Biker", "Outlaws"]
-  width: 1600
-  height: 2000
-  aspect_ratio: "4:5"
 
 - title: "Landspeeder"
   slug: "landspeeder"
@@ -306,12 +222,6 @@
     webp: "/images/illustration/thumbs/speeder-thumb.webp"
     avif: "/images/illustration/thumbs/speeder-thumb.avif"
     alt: "Thumbnail of landspeeder illustration"
-  date: 2023-04-18
-  categories: ["sci-fi", "movies"]
-  tags: ["Star Wars", "Vehicle", "Tatooine"]
-  width: 2500
-  height: 1406
-  aspect_ratio: "16:9"
 
 - title: "Deadpool"
   slug: "deadpool"
@@ -327,12 +237,6 @@
     webp: "/images/illustration/thumbs/deadpool-thumb.webp"
     avif: "/images/illustration/thumbs/deadpool-thumb.avif"
     alt: "Thumbnail of Deadpool illustration"
-  date: 2023-03-10
-  categories: ["comics", "action"]
-  tags: ["Marvel", "Antihero", "Fourth Wall"]
-  width: 1800
-  height: 2700
-  aspect_ratio: "2:3"
 
 - title: "Lego Movie"
   slug: "legomovie"
@@ -348,12 +252,6 @@
     webp: "/images/illustration/thumbs/lego-thumb.webp"
     avif: "/images/illustration/thumbs/lego-thumb.avif"
     alt: "Thumbnail of Lego Movie illustration"
-  date: 2023-02-28
-  categories: ["animation", "family"]
-  tags: ["LEGO", "Everything is Awesome", "Stop Motion"]
-  width: 2200
-  height: 1650
-  aspect_ratio: "4:3"
 
 - title: "Spiderman"
   slug: "spiderman"
@@ -369,12 +267,6 @@
     webp: "/images/illustration/thumbs/spiderman-thumb.webp"
     avif: "/images/illustration/thumbs/spiderman-thumb.avif"
     alt: "Thumbnail of Spiderman illustration"
-  date: 2023-07-15
-  categories: ["comics", "action"]
-  tags: ["Marvel", "Superhero", "New York"]
-  width: 2100
-  height: 1575
-  aspect_ratio: "4:3"
 
 - title: "Terminator"
   slug: "terminator"
@@ -390,12 +282,6 @@
     webp: "/images/illustration/thumbs/terminator-thumb.webp"
     avif: "/images/illustration/thumbs/terminator-thumb.avif"
     alt: "Thumbnail of Terminator illustration"
-  date: 2023-10-10
-  categories: ["sci-fi", "action"]
-  tags: ["Arnold", "Cyberdyne", "I'll Be Back"]
-  width: 2000
-  height: 2500
-  aspect_ratio: "4:5"
 
 - title: "Dixon Brothers"
   slug: "dixonbrothers"
@@ -411,12 +297,6 @@
     webp: "/images/illustration/thumbs/dixon-thumb.webp"
     avif: "/images/illustration/thumbs/dixon-thumb.avif"
     alt: "Thumbnail of Dixon Brothers illustration"
-  date: 2023-09-05
-  categories: ["television", "horror"]
-  tags: ["Walking Dead", "Zombies", "Survival"]
-  width: 1800
-  height: 2400
-  aspect_ratio: "3:4"
 
 - title: "Game of Thrones"
   slug: "game-of-thrones"
@@ -432,12 +312,6 @@
     webp: "/images/illustration/thumbs/gameofthrones-thumb.webp"
     avif: "/images/illustration/thumbs/gameofthrones-thumb.avif"
     alt: "Thumbnail of Game of Thrones illustration"
-  date: 2023-08-20
-  categories: ["television", "fantasy"]
-  tags: ["HBO", "Dragons", "Winter is Coming"]
-  width: 2500
-  height: 1406
-  aspect_ratio: "16:9"
 
 - title: "The World's End"
   slug: "theworldsend"
@@ -453,12 +327,6 @@
     webp: "/images/illustration/thumbs/worldsend-thumb.webp"
     avif: "/images/illustration/thumbs/worldsend-thumb.avif"
     alt: "Thumbnail of The World's End illustration"
-  date: 2023-07-22
-  categories: ["movies", "comedy"]
-  tags: ["Cornetto Trilogy", "Simon Pegg", "Aliens"]
-  width: 2000
-  height: 1500
-  aspect_ratio: "4:3"
 
 - title: "Teenage Mutant Ninja Turtles"
   slug: "turtles"
@@ -474,12 +342,6 @@
     webp: "/images/illustration/thumbs/turtles-thumb.webp"
     avif: "/images/illustration/thumbs/turtles-thumb.avif"
     alt: "Thumbnail of Ninja Turtles illustration"
-  date: 2023-05-15
-  categories: ["animation", "action"]
-  tags: ["TMNT", "80s", "Pizza"]
-  width: 2400
-  height: 1800
-  aspect_ratio: "4:3"
 
 - title: "The Matriarch"
   slug: "matriarch"
@@ -495,12 +357,6 @@
     webp: "/images/illustration/thumbs/gemma-thumb.webp"
     avif: "/images/illustration/thumbs/gemma-thumb.avif"
     alt: "Thumbnail of Gemma illustration"
-  date: 2023-06-25
-  categories: ["television", "drama"]
-  tags: ["SOA", "Biker", "Matriarch"]
-  width: 1500
-  height: 1800
-  aspect_ratio: "5:6"
 
 - title: "Rick and Morty"
   slug: "rick-morty"
@@ -516,9 +372,3 @@
     webp: "/images/illustration/thumbs/rick-morty-thumb.webp"
     avif: "/images/illustration/thumbs/rick-morty-thumb.avif"
     alt: "Thumbnail of Rick and Morty illustration"
-  date: 2023-04-01
-  categories: ["animation", "comedy"]
-  tags: ["Adult Swim", "Sci-Fi", "Wubba Lubba Dub Dub"]
-  width: 2100
-  height: 1575
-  aspect_ratio: "4:3"
