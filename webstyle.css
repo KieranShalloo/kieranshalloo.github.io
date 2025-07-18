@@ -1,11 +1,10 @@
-/* ==================== ROOT VARIABLES ==================== */
 :root {
 	--dark: #343434;
 	--accent: #67c6b0;
 	--light: #e6e6e6;
 	--white: #ecfaff;
 
-	/* Brand colours */
+	/* brand colours */
 	--youview: #00a6ff;
 	--wwe: #d0021b;
 	--virgin: #5f2878;
@@ -31,15 +30,16 @@ body {
 	background-color: var(--light) !important;
 
 	.navbar-brand img {
+		transition: transform 0.3s ease, filter 0.3s ease; /* Ensure transition for filter */
 		width: 70px;
 		height: 70px;
-		transition: transform 0.3s ease, filter 0.3s ease;
 	}
 
 	.navbar-brand:hover img {
-		filter: invert(56%) sepia(43%) saturate(400%) hue-rotate(129deg);
+		filter: invert(56%) sepia(43%) saturate(400%) hue-rotate(129deg); /* Adjust this filter to match your desired color */
 	}
 
+	/* Mobile menu fixes */
 	.navbar-collapse {
 		@media (max-width: 767.98px) {
 			background: white;
@@ -48,6 +48,7 @@ body {
 			box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
 			border-radius: 0.25rem;
 
+			/* Fix for closing animation */
 			&.collapsing {
 				height: 0;
 				overflow: hidden;
@@ -61,6 +62,7 @@ body {
 		}
 	}
 
+	/* Nav item hover effects */
 	.nav-item {
 		margin: 0 0.25rem;
 
@@ -74,6 +76,7 @@ body {
 				position: absolute;
 				bottom: 0;
 				left: 1rem;
+				color: var(--accent);
 				right: 1rem;
 				height: 2px;
 				background: currentColor;
@@ -89,18 +92,18 @@ body {
 		}
 	}
 
+	/* Mobile toggle button adjustments */
 	.navbar-toggler {
 		border: none;
 		padding: 0.5rem;
-
 		&:focus {
 			box-shadow: none;
 		}
 	}
 }
-
-/* ==================== BUTTON STYLES ==================== */
+/* Custom accent outline button - add this to your CSS */
 .btn-outline-ksd {
+	/* Base styling */
 	display: inline-block;
 	font-weight: 400;
 	line-height: 1.5;
@@ -113,23 +116,30 @@ body {
 	font-size: 1rem;
 	border-radius: 0.25rem;
 	transition: all 0.15s ease-in-out;
+
+	/* Custom accent colors */
+	/* color: var(--accent); */
 	background-color: transparent;
 	border: 1px solid var(--accent);
 
+	/* Hover state */
 	&:hover {
 		color: var(--dark);
+		/* font-weight: 600; */
 		background-color: var(--accent);
 		border-color: var(--accent);
 	}
 
+	/* Active/focus states */
 	&:active,
 	&:focus {
 		color: var(--dark);
 		background-color: var(--accent);
 		border-color: var(--accent);
-		box-shadow: 0 0 0 0.25rem rgba(103, 198, 176, 0.5);
+		box-shadow: 0 0 0 0.25rem rgba(103, 198, 176, 0.5); /* accent with 50% opacity */
 	}
 
+	/* Disabled state */
 	&:disabled {
 		color: var(--accent);
 		background-color: transparent;
@@ -142,30 +152,37 @@ body {
 	width: 100%;
 	height: auto;
 }
+
 .logolight {
 	filter: saturate(100%) brightness(04);
 }
+
 .logogreen {
 	filter: invert(72%) sepia(55%) saturate(288%) hue-rotate(116deg)
 		brightness(87%) contrast(94%);
 }
+
 .icon {
 	background: var(--accent);
 	-webkit-mask-image: url(/logo.svg);
 	mask-image: url(/logo.svg);
 }
+
 .portfolio-frame {
 	position: relative;
 	overflow: hidden;
 }
+
 .portfolio-image {
 	width: 100%;
 	height: auto;
 	transition: transform 0.3s ease;
 }
+
 .portfolio-frame:hover .portfolio-image {
 	transform: scale(1.07);
 }
+
 .portfolio-overlay {
 	position: absolute;
 	bottom: 0;
@@ -177,9 +194,12 @@ body {
 	transform: translateY(100%);
 	transition: transform 0.3s ease;
 }
+
 .portfolio-frame:hover .portfolio-overlay {
 	transform: translateY(0);
 }
+
+/* About image effect */
 #about-image {
 	filter: saturate(0%) contrast(0%);
 	color: var(--accent);
@@ -191,12 +211,13 @@ body {
 	}
 }
 
-/* ==================== HEADERS ==================== */
+/* ==================== HEADER IMAGES ==================== */
 .scrubbingscrolling {
 	background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8)),
 		url("/images/channel4/1920/jpg/scrubbingscolling.jpg");
 }
 
+<<<<<<< HEAD
 .project-header {
 	position: relative;
 	height: 70vh;
@@ -211,26 +232,275 @@ body {
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
+=======
+/* [class$="header"],
+[class$="scrolling"] {
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8));
+} */
+
+/* 414px headers */
+.singstarheader {
+	background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)),
+		url("/images/home/singstarheader414.webp"),
+		url("/images/home/singstarheader414.jpg");
+}
+.channel4header {
+	background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)),
+		url("/images/home/4header414.webp"), url("/images/home/4header414.jpg");
+}
+.trainlineheader {
+	background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)),
+		url("/images/home/trainlineheader414.webp"),
+		url("/images/home/trainlineheader414.jpg");
+}
+.yvhelpheader {
+	background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)),
+		url("/images/home/YVhelpheader414.webp"),
+		url("/images/home/YVhelpheader414.jpg");
+}
+.C4rebrandheader {
+	background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)),
+		url("/images/home/4rebrandheader414.webp"),
+		url("/images/home/4rebrandheader414.jpg");
+}
+.vmheader {
+	background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)),
+		url("/images/home/VMheader414.webp"), url("/images/home/VMheader414.jpg");
+}
+.keyboardheader {
+	background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)),
+		url("/images/keyboard/Youview-onscreenkeyboard-hero-1920.jpg");
+}
+.wweheader {
+	background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)),
+		url("/images/home/wweheader414.webp"), url("/images/home/wweheader414.jpg");
+}
+.wwescrolling {
+	background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)),
+		url("/images/wwe/wwe-network-phone-tile-414.webp"),
+		url("/images/wwe/wwe-network-phone-tile-414.jpg");
+}
+.Sonyheader {
+	background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)),
+		url("/images/home/Sonyheader414.webp"),
+		url("/images/home/Sonyheader414.jpg");
+}
+.YVappheader {
+	background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)),
+		url("/images/home/YVappheader414.webp"),
+		url("/images/home/YVAppheader414.jpg");
+}
+.YVheader {
+	background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)),
+		url("/images/home/YVheader414.webp"), url("/images/home/YVheader414.jpg");
+}
+.Creatureheader {
+	background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)),
+		url("/images/home/Creatureheader414.webp"),
+		url("/images/home/Creatureheader414.jpg");
+}
+.Netflixheader {
+	background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)),
+		url("/images/home/Netflixheader414.webp"),
+		url("/images/home/Netflixheader414.jpg");
+}
+.YVHCheader {
+	background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)),
+		url("/images/home/Netflixheader414.webp"),
+		url("/images/home/Netflixheader414.jpg");
+}
+.bosheader {
+	background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)),
+		url("/images/home/tile-bos.webp"), url("/images/home/tile-bos.jpg");
+}
+.engagementheader {
+	background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)),
+		url("/images/home/engagementheader414.jpg");
 }
 
-/* ==================== LAYOUT ==================== */
+/* 768px headers */
+@media (min-width: 30em) {
+	.engagementheader {
+		background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)),
+			url("/images/home/engagementheader768.jpg");
+	}
+	.trainlineheader {
+		background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)),
+			url("/images/home/trainlineheader768.webp"),
+			url("/images/home/trainlineheader768.jpg");
+	}
+	.keyboardheader {
+		background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)),
+			url("/images/keyboard/Youview-onscreenkeyboard-hero-768.jpg");
+	}
+	.yvhelpheader {
+		background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)),
+			url("/images/home/YVhelpheader768.webp"),
+			url("/images/home/YVhelpheader768.jpg");
+	}
+	.vmheader {
+		background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)),
+			url("/images/home/VMheader768.webp"), url("/images/home/VMheader768.jpg");
+	}
+	.channel4header {
+		background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)),
+			url("/images/home/4header768.webp"), url("/images/home/4header768.jpg");
+	}
+	.C4rebrandheader {
+		background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)),
+			url("/images/home/4rebrandheader768.jpg");
+	}
+	.wweheader {
+		background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)),
+			url("/images/home/wweheader768.jpg");
+	}
+	.wwescrolling {
+		background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)),
+			url("/images/wwe/wwe-network-phone-tile-768.webp"),
+			url("/images/wwe/wwe-network-phone-tile-768.jpg");
+	}
+	.Sonyheader {
+		background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)),
+			url("/images/home/Sonyheader768.webp"),
+			url("/images/home/Sonyheader768.jpg");
+	}
+	.YVappheader {
+		background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)),
+			url("/images/home/YVappheader768.webp"),
+			url("/images/home/YVAppheader768.jpg");
+	}
+	.YVheader {
+		background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)),
+			url("/images/home/YVheader768.webp"), url("/images/home/YVheader768.jpg");
+	}
+	.Netflixheader {
+		background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)),
+			url("/images/home/Netflixheader768.webp"),
+			url("/images/home/Netflixheader768.jpg");
+	}
+	.Creatureheader {
+		background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)),
+			url("/images/home/Creatureheader768.webp"),
+			url("/images/home/Creatureheader768.jpg");
+	}
+	.bosheader {
+		background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)),
+			url("/images/home/tile-bos.webp"), url("/images/home/tile-bos.jpg");
+	}
+>>>>>>> parent of deb18a16 (New header style, using jekyll includes)
+}
+
+/* 1920px headers */
+@media (min-width: 62em) {
+	.engagementheader {
+		background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)),
+			url("/images/home/engagementheader1920.jpg");
+	}
+	.dancestarheader {
+		background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)),
+			url("/images/home/dancestarheader1920.webp"),
+			url("/images/home/dancestarheader1920.jpg");
+	}
+	.singstarheader {
+		background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)),
+			url("/images/home/singstarheader1920.webp"),
+			url("/images/home/singstarheader1920.jpg");
+	}
+	.trainlineheader {
+		background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)),
+			url("/images/home/trainlineheader1920.jpg");
+	}
+	.keyboardheader {
+		background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)),
+			url("/images/keyboard/Youview-onscreenkeyboard-hero-1920.jpg");
+	}
+	.bopheader {
+		background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)),
+			url("/images/home/bopheader1920.jpg");
+	}
+	.vmheader {
+		background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)),
+			url("/images/home/VMheader1920.webp"),
+			url("/images/home/VMheader1920.jpg");
+	}
+	.yvhelpheader {
+		background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)),
+			url("/images/home/YVhelpheader1920.webp"),
+			url("/images/home/YVhelpheader1920.jpg");
+	}
+	.channel4header {
+		background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)),
+			url("/images/home/4header1920.webp"), url("/images/home/4header1920.jpg");
+	}
+	.C4rebrandheader {
+		background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)),
+			url("/images/home/4rebrandheader1920.jpg");
+	}
+	.wweheader {
+		background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)),
+			url("/images/home/wweheader1920.webp"),
+			url("/images/home/wweheader1920.jpg");
+	}
+	.wwescrolling {
+		background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)),
+			url("/images/wwe/wwe-network-phone-tile-1920.webp"),
+			url("/images/wwe/wwe-network-phone-tile-1920.jpg");
+	}
+	.Sonyheader {
+		background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)),
+			url("/images/home/Sonyheader1920.webp"),
+			url("/images/home/Sonyheader1920.jpg");
+	}
+	.YVappheader {
+		background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)),
+			url("/images/home/YVappheader1920.webp"),
+			url("/images/home/YVAppheader1920.jpg");
+	}
+	.YVheader {
+		background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)),
+			url("/images/home/YVheader1920.webp"),
+			url("/images/home/YVheader1920.jpg");
+	}
+	.Netflixheader {
+		background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)),
+			url("/images/home/Netflixheader1920.webp"),
+			url("/images/home/Netflixheader1920.jpg");
+	}
+	.Creatureheader {
+		background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)),
+			url("/images/home/Creatureheader1920.webp"),
+			url("/images/home/Creatureheader1920.jpg");
+	}
+	.bosheader {
+		background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)),
+			url("/images/home/BOSheader1920.jpg");
+	}
+}
+
+/* ==================== LAYOUT STYLES ==================== */
 .containerfluid {
 	padding: 1rem 0;
-
 	@media (min-width: 62em) {
 		padding: 2rem 0;
 	}
 }
+
 .overlaytext {
 	position: absolute;
 	top: 40%;
 	left: 50%;
 	color: var(--light);
 	transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
 	text-align: center;
-	width: 80%;
-	z-index: 10;
+	width: 80%; /* Added for better responsiveness */
+	z-index: 10; /* Ensure it appears above gradients */
 }
+
+/* Slant styles (if needed) */
 .header-slant {
 	position: relative;
 	z-index: 200;
@@ -247,17 +517,21 @@ body {
 .container {
 	padding: 1rem;
 }
+
 .row {
 	padding: 1rem 0;
 }
+
 .nopadding {
 	padding: 0 !important;
 }
+
 .fullwidthimage {
 	padding: 0 !important;
 	margin: 0 !important;
 	width: 100vw;
 }
+
 .cover {
 	width: 100vw;
 	height: 107vh;
@@ -267,7 +541,7 @@ body {
 	background-repeat: no-repeat;
 }
 
-/* ==================== FOOTER ==================== */
+/* ==================== FOOTER & SOCIAL ==================== */
 footer {
 	background-color: var(--dark);
 	padding: 2rem 0;
@@ -316,15 +590,19 @@ ul.social-network {
 		}
 
 		&.icoTwitch:hover i {
+			/* background-color: #e4405f; */
 			color: #9146ff;
 		}
 		&.icoYoutube:hover i {
+			/* background-color: #e4405f; */
 			color: #e1002d;
 		}
 		&.icoLinkedin:hover i {
+			/* background-color: #007bb7; */
 			color: #007bb7;
 		}
 		&.icoBsky:hover i {
+			/* background-color: #007bb7; */
 			color: #0a7aff;
 		}
 	}
@@ -341,16 +619,19 @@ ul.social-network {
 		transform: none;
 	}
 }
+
 .animate-pop-in {
 	animation: pop-in 0.6s cubic-bezier(0.17, 0.67, 0.83, 0.67) forwards;
 	opacity: 0;
 }
+
 .header-title {
 	animation-delay: 0.8s;
 }
 .header-subtitle {
 	animation-delay: 1s;
 }
+
 .image-animation {
 	opacity: 0;
 	transition: opacity 0.4s 0.25s ease-in-out;
@@ -379,6 +660,7 @@ ul.social-network {
 .video-container {
 	position: relative;
 	padding-bottom: 56.25%;
+	padding-top: 0;
 	height: 0;
 	overflow: hidden;
 
@@ -393,24 +675,36 @@ ul.social-network {
 	}
 }
 
-/* ==================== NAV TABS ==================== */
 .nav-tabs {
+<<<<<<< HEAD
 	--bs-nav-tabs-border-width: 2;
+=======
+	--bs-nav-tabs-border-width: 0;
+
+>>>>>>> parent of deb18a16 (New header style, using jekyll includes)
 	--bs-nav-tabs-link-active-color: var(--accent);
 }
 .nav {
 	--bs-nav-link-padding-x: 1rem;
 	--bs-nav-link-padding-y: 0.5rem;
+<<<<<<< HEAD
+=======
+	--bs-nav-link-font-weight: ;
+>>>>>>> parent of deb18a16 (New header style, using jekyll includes)
 	--bs-nav-link-color: var(--dark);
 	--bs-nav-link-hover-color: var(--accent);
 }
+
 .nav-link {
 	padding-left: 2em;
 	padding-right: 2em;
 	color: var(--dark);
 	transition: color 0.2s ease-in-out;
 }
+<<<<<<< HEAD
 .nav-tabs .nav-item.show .nav-link {
 	background-color: var(--wwe);
 	border-color: var(--wwe);
 }
+=======
+>>>>>>> parent of deb18a16 (New header style, using jekyll includes)
