@@ -2,12 +2,12 @@
 layout: default
 title: Portfolio
 
-description: A showcase of WWE Network UX/UI design work
+description: A showcase of UX/UI design work
 ---
 
 <div class="containerfluid " style="background-color: var(--accent);">
     <div class="container">
-        <div class="row" style=" height: 78vh;
+        <div class="row" style=" height: 60vh;
   align-items: center; ">
             <div class="align-items-center">
                 <div class="col-md-4 offset-md-4"> <img src="/Logotype.svg" alt="WWE logo"></div>
@@ -127,95 +127,4 @@ description: A showcase of WWE Network UX/UI design work
 </div>
 
 
-<div class="containerfluid pb-0">
-
-
-    <!-- Large Project -->
-    <div class="row">
-        <div class="col">
-            <div id="portfolioframe">
-                <a href="/portfolio/googletrain">
-                    <picture>
-                        <!-- <source srcset="/images/home/4header768.webp" type="image/webp"> -->
-                        <source srcset="/images/home/trainlineheader1920.jpg" type="image/jpeg">
-                        <img class="img-fluid lazyload" style="width: 100%;" style="width: 100%;" id="portfolioimage"
-                            src="/images/home/trainlineheader1920.jpg">
-                    </picture>
-
-                </a>
-            </div>
-            <h3 class="pt-3 text-center">Trainline x Google</h3>
-            <h5 style="color:var(--dark)" class="text-center">Helping users to their
-                destination</h5>
-
-
-        </div>
-    </div>
-</div>
-
-
-<div class="containerfluid pt-0 mx-4">
-    <!-- small Project -->
-    <div class="row">
-        <div class="col-md-6 pt-3">
-            <div id="portfolioframe">
-                <a href="/portfolio/WweNetwork/">
-                    <img class="img-fluid lazyload" style="width: 100%;" style="width: 100%;" id="portfolioimage"
-                        src="/images/home/wwehome.jpg">
-                </a>
-            </div>
-
-            <h3 class="pt-3 text-center">WWE</h3>
-            <h5 style="color:var(--dark)" class="text-center">Redesigning the On Demand WWE Network</h5>
-
-        </div>
-
-        <div class="col-md-6 pt-3">
-            <div id="portfolioframe">
-                <a href="/portfolio/4rebrand/">
-                    <picture>
-                        <!-- <source srcset="/images/home/4header768.webp" type="image/webp"> -->
-                        <source srcset="/images/home/4rebrand.jpg" type="image/jpeg">
-                        <img class="img-fluid lazyload" style="width: 100%;" style="width: 100%;" id="portfolioimage"
-                            src="/images/home/4rebrand.jpg">
-                    </picture>
-
-                </a>
-            </div>
-            <h3 class="pt-3 text-center">Channel 4</h3>
-            <h5 style="color:var(--dark)" class="text-center">United Under A Masterbrand </h5>
-
-
-        </div>
-    </div>
-    <div class="row">
-        <div class="col-md-6 pt-3">
-            <div id="portfolioframe">
-                <a href="/portfolio/visualscrubbing/">
-                    <img class="img-fluid lazyload " style="width: 100%;" style="width: 100%;" id="portfolioimage"
-                        src="/images/home/4home.jpg">
-                </a>
-            </div>
-
-            <h3 class="pt-3 text-center">Channel 4 </h3>
-            <h5 style="color:var(--dark)" class="text-center">The "Altogether Different" streaming service
-            </h5>
-
-        </div>
-
-        <div class="col-md-6 pt-3">
-
-            <div id="portfolioframe">
-                <a title="Next Gen youview portfolio " href="/portfolio/YvNextGen/">
-                    <img class="img-fluid lazyload" style="width: 100%;" style="width: 100%;" id="portfolioimage"
-                        src="/images/home/YVhome.jpg">
-                </a>
-            </div>
-
-            <h3 class="pt-3 text-center">Next Generation YouView</h3>
-            <h5 style="color:var(--dark)" class="text-center">Powering BT and TalkTalk TV Platforms</h5>
-
-
-        </div>
-    </div>
-</div>
+{% include portfolio-grid.html limit=5 %}
