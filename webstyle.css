@@ -196,11 +196,7 @@ body {
 	background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8)),
 		url("/images/channel4/1920/jpg/scrubbingscolling.jpg");
 }
-.singstarheader {
-	background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)),
-		url("/images/home/singstarheader414.webp"),
-		url("/images/home/singstarheader414.jpg");
-}
+
 .project-header {
 	position: relative;
 	height: 70vh;
@@ -208,27 +204,13 @@ body {
 	overflow: hidden;
 	background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)),
 		image-set(
+			var(--header-image-avif) type("image/avif"),
 			var(--header-image-webp) type("image/webp"),
 			var(--header-image-jpg) type("image/jpeg")
 		);
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
-	color: white;
-}
-.project--channel4 {
-	--header-image-webp: url("/images/home/4rebrandheader414.webp");
-	--header-image-jpg: url("/images/home/4rebrandheader414.jpg");
-
-	@media (min-width: 768px) {
-		--header-image-webp: url("/images/home/4rebrandheader768.webp");
-		--header-image-jpg: url("/images/home/4rebrandheader768.jpg");
-	}
-
-	@media (min-width: 1200px) {
-		--header-image-webp: url("/images/home/4rebrandheader1920.webp");
-		--header-image-jpg: url("/images/home/4rebrandheader1920.jpg");
-	}
 }
 
 /* ==================== LAYOUT ==================== */
@@ -413,14 +395,14 @@ ul.social-network {
 
 /* ==================== NAV TABS ==================== */
 .nav-tabs {
-	--bs-nav-tabs-border-width: 0;
+	--bs-nav-tabs-border-width: 2;
 	--bs-nav-tabs-link-active-color: var(--accent);
 }
 .nav {
 	--bs-nav-link-padding-x: 1rem;
 	--bs-nav-link-padding-y: 0.5rem;
-	--bs-nav-link-color: var(--wwe);
-	--bs-nav-link-hover-color: var(--white);
+	--bs-nav-link-color: var(--dark);
+	--bs-nav-link-hover-color: var(--accent);
 }
 .nav-link {
 	padding-left: 2em;
@@ -429,7 +411,6 @@ ul.social-network {
 	transition: color 0.2s ease-in-out;
 }
 .nav-tabs .nav-item.show .nav-link {
-	color: var(--youview);
 	background-color: var(--wwe);
-	border-color: var(--channel4);
+	border-color: var(--wwe);
 }
