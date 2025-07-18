@@ -41,7 +41,7 @@
   aspect_ratio: "16:9"
 
 - title: "Channel 4"
-  slug: "channel4"
+  slug: "visualscrubbing"
   url: "/portfolio/visualscrubbing/"
   description: "A commissioned illustration showing the WWE wrestler Daniel Bryan celebrating his victory at WrestleMania XXX."
   image:
@@ -69,7 +69,7 @@
 # Small
 - title: "Youview"
   slug: "youview"
-  url: "/portfolio/yvnextgen/"
+  url: "/portfolio/youview/"
   description: "A commissioned illustration showing the WWE wrestler Daniel Bryan celebrating his victory at WrestleMania XXX."
   image:
     jpg: "/images/home/YVheader768.jpg"
@@ -94,7 +94,7 @@
   aspect_ratio: "16:9"
 
 - title: "Sony Android"
-  slug: "android"
+  slug: "sonyandroid"
   url: "/portfolio/sonyandroid/"
   description: "A commissioned illustration showing the WWE wrestler Daniel Bryan celebrating his victory at WrestleMania XXX."
   image:
@@ -107,8 +107,8 @@
   aspect_ratio: "16:9"
 
 - title: "YouView Accessibility"
-  slug: "YVAccessibility"
-  url: "/portfolio/YVAccessibility/"
+  slug: "yvaccessibility"
+  url: "/portfolio/yvaccessibility/"
   description: "A commissioned illustration showing the WWE wrestler Daniel Bryan celebrating his victory at WrestleMania XXX."
   image:
     jpg: "/images/home/YVHCheader768.jpg"
@@ -134,7 +134,7 @@
 
 - title: "YouView Help"
   slug: "yvhelp"
-  url: "/portfolio/YVHelp/"
+  url: "/portfolio/yvhelp/"
   description: "A commissioned illustration showing the WWE wrestler Daniel Bryan celebrating his victory at WrestleMania XXX."
   image:
     jpg: "/images/home/YVhelpheader768.jpg"
@@ -147,7 +147,7 @@
 
 - title: "YouView app"
   slug: "yvapp"
-  url: "/portfolio/YVapp/"
+  url: "/portfolio/yvapp/"
   description: "A commissioned illustration showing the WWE wrestler Daniel Bryan celebrating his victory at WrestleMania XXX."
   image:
     jpg: "/images/home/yvappheader768.jpg"
@@ -159,8 +159,8 @@
   aspect_ratio: "16:9"
 
 - title: "Book of Potions"
-  slug: "BookofPotions"
-  url: "/portfolio/BookofPotions"
+  slug: "bookofpotions"
+  url: "/portfolio/bookofpotions"
   description: "A commissioned illustration showing the WWE wrestler Daniel Bryan celebrating his victory at WrestleMania XXX."
   image:
     jpg: "/images/home/bopheader768.jpg"
@@ -172,7 +172,7 @@
   aspect_ratio: "16:9"
 
 - title: "DanceStar Party"
-  slug: "Dancestar"
+  slug: "dancestar-party"
   url: "/portfolio/dancestar-party"
   description: "A commissioned illustration showing the WWE wrestler Daniel Bryan celebrating his victory at WrestleMania XXX."
   image:
@@ -198,7 +198,7 @@
   aspect_ratio: "16:9"
 
 - title: "SingStar"
-  slug: "SingStar"
+  slug: "singstar"
   url: "/portfolio/singstar"
   description: "A commissioned illustration showing the WWE wrestler Daniel Bryan celebrating his victory at WrestleMania XXX."
   image:
