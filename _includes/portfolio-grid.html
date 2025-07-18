@@ -22,14 +22,10 @@
                     alt="{{ item.image.alt }}"
                     height="{{ 800 | divided_by: item.aspect_ratio | split: ':' | first | times: item.aspect_ratio | split: ':' | last }}">
             </picture>
-        </a>
-    </div>
-    {% endfor %}
-</div>
 
 
-<!-- Optional: Add title overlay if desired -->
-<!-- <div class="portfolio-overlay">
+            <!-- Optional: Add title overlay if desired -->
+            <!-- <div class="portfolio-overlay">
 
                 <div class="col-md-4">
                     <img style="width:100%" src="/images/about/about-c4.svg" alt="Channel 4 logo">
@@ -43,7 +39,7 @@
                     </div>
                 </div>
             </div> -->
-</a>
-</div>
-{% endfor %}
+        </a>
+    </div>
+    {% endfor %}
 </div>
