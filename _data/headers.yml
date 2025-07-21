@@ -256,16 +256,16 @@ yvapp:
   sizes:
     # Complete: All formats and sizes present
     - width: 414
-      avif: "/images/home/YVappheader414.avif"
-      webp: "/images/home/YVappheader414.webp"
+      avif: "/images/home/YVAppheader414.avif"
+      webp: "/images/home/YVAppheader414.webp"
       jpg: "/images/home/YVAppheader414.jpg"
     # - width: 768
     #   avif: "/images/home/YVappheader768.avif"
     #   webp: "/images/home/YVappheader768.webp"
     #   jpg: "/images/home/YVAppheader768.jpg"
     - width: 1920
-      avif: "/images/home/YVappheader1920.avif"
-      webp: "/images/home/YVappheader1920.webp"
+      avif: "/images/home/YVAppheader1920.avif"
+      webp: "/images/home/YVAppheader1920.webp"
       jpg: "/images/home/YVAppheader1920.jpg"
 
 youview:
@@ -277,7 +277,7 @@ youview:
     - width: 414
       avif: "/images/home/YVheader414.avif"
       webp: "/images/home/YVheader414.webp"
-      jpg: "/images/home/YV=header414.jpg"
+      jpg: "/images/home/YVheader414.jpg"
     # - width: 768
     #   avif: "/images/home/YVheader768.avif"
     #   webp: "/images/home/YVheader768.webp"
