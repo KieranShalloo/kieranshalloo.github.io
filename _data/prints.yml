@@ -1,0 +1,64 @@
+- title: "Totoro"
+  slug: "totoro"
+  url: "/traditionalprintmaking/totoro/"
+  description: "A linoprint portfolio page showing a totoro print work by Kieran Shalloo"
+  image:
+    jpg: "/images/printmaking/totoro/webinframe.jpg"
+    webp: "/images/printmaking/totoro/webinframe.webp"
+    avif: "/images/printmaking/totoro/webinframe.avif"
+    alt: "Totoro giving hugs to mai"
+  width: 1920
+  height: 1080
+  aspect_ratio: "16:9"
+
+- title: "coastline"
+  slug: "coastline"
+  url: "/traditionalprintmaking/coastline/"
+  description: "A linoprint portfolio page showing a forest print work by Kieran Shalloo"
+  image:
+    jpg: "/images/printmaking/coastline/ondesk.jpg"
+    webp: "/images/printmaking/coastline/ondesk.webp"
+    avif: "/images/printmaking/coastline/ondesk.avif"
+    alt: "Totoro giving hugs to mai"
+    width: 1920
+  height: 1080
+  aspect_ratio: "16:9"
+
+- title: "Forest"
+  slug: "forest"
+  url: "/traditionalprintmaking/forest/"
+  description: "A linoprint portfolio page showing a forest print work by Kieran Shalloo"
+  image:
+    jpg: "/images/printmaking/deer/webinframe.jpg"
+    webp: "/images/printmaking/deer/webinframe.webp"
+    avif: "/images/printmaking/deer/webinframe.avif"
+    alt: "Totoro giving hugs to mai"
+    width: 1920
+  height: 1080
+  aspect_ratio: "16:9"
+
+# - title: "panda"
+#   slug: "panda"
+#   url: "/traditionalprintmaking/panda/"
+#   description: "A linoprint portfolio page showing a panda print work by Kieran Shalloo"
+#   image:
+#     jpg: "/images/printmaking/panda/webinframe.jpg"
+#     webp: "/images/printmaking/panda/webinframe.webp"
+#     avif: "/images/printmaking/panda/webinframe.avif"
+#     alt: "Totoro giving hugs to mai"
+#     width: 1920
+#   height: 1080
+#   aspect_ratio: "16:9"
+
+- title: "lizard"
+  slug: "lizard"
+  url: "/traditionalprintmaking/lizard/"
+  description: "A linoprint portfolio page showing a forest print work by Kieran Shalloo"
+  image:
+    jpg: "/images/printmaking/lizard/ondesk.jpg"
+    webp: "/images/printmaking/lizard/ondesk.webp"
+    avif: "/images/printmaking/lizard/ondesk.avif"
+    alt: "Totoro giving hugs to mai"
+    width: 1920
+  height: 1080
+  aspect_ratio: "16:9"

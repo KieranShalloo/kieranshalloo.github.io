@@ -1,0 +1,44 @@
+---
+layout: default
+---
+
+{% comment %} Calculate previous/next slugs {% endcomment %}
+{% assign items = site.data.illustrations %}
+{% for item in items %}
+{% if item.slug == page.slug %}
+{% assign current_index = forloop.index0 %}
+{% assign previous_index = current_index | minus: 1 %}
+{% assign next_index = current_index | plus: 1 %}
+
+{% if previous_index >= 0 %}
+{% assign previous_slug = items[previous_index].slug %}
+{% assign previous_title = items[previous_index].title %}
+{% endif %}
+
+{% if next_index < items.size %} {% assign next_slug=items[next_index].slug %} {% assign
+    next_title=items[next_index].title %} {% endif %} {% endif %} {% endfor %} {% include nav.html %} <div
+    class="container mt-4">
+    <!-- Project Title and Description -->
+    <div class="row mb-4">
+        <div class="col-md-8 offset-md-2">
+            <h1>{{ page.title }}</h1>
+            {% if page.description %}
+            <p class="lead">{{ page.description }}</p>
+            {% endif %}
+        </div>
+    </div>
+
+    <!-- Featured Image -->
+    <div class="row mb-5">
+        <div class="col-md-10 offset-md-1">
+            <picture>
+                <source srcset="/images/illustration/{{ page.slug }}.webp" type="image/webp">
+                <source srcset="/images/illustration/{{ page.slug }}.jpg" type="image/jpeg">
+                <img src="/images/illustration/{{ page.slug }}.jpg" class="img-fluid rounded shadow"
+                    alt="{{ page.title }}">
+            </picture>
+        </div>
+    </div>
+    {% include illustration-nav.html %}
+
+    {% include illustration-grid.html %}

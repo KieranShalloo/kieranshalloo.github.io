@@ -1,0 +1,451 @@
+:root {
+	--dark: #343434;
+	--accent: #67c6b0;
+	--light: #e6e6e6;
+	--white: #ecfaff;
+
+	/* brand colours */
+	--youview: #00a6ff;
+	--wwe: #d0021b;
+	--virgin: #5f2878;
+	--sony: #3ddb86;
+	--creature: #49de8c;
+	--channel4: #aaeb89;
+	--trainline: #00a88f;
+	--google: #4285f4;
+}
+
+/* ==================== BASE STYLES ==================== */
+html {
+	overflow-x: hidden;
+}
+body {
+	font-family: "Outfit", sans-serif;
+	font-size: 16px;
+}
+
+/* ==================== NAVIGATION ==================== */
+.navbar {
+	transition: all 0.3s ease;
+	background-color: var(--light) !important;
+
+	.navbar-brand img {
+		transition: transform 0.3s ease, filter 0.3s ease; /* Ensure transition for filter */
+		width: 70px;
+		height: 70px;
+	}
+
+	.navbar-brand:hover img {
+		filter: invert(56%) sepia(43%) saturate(400%) hue-rotate(129deg); /* Adjust this filter to match your desired color */
+	}
+
+	/* Mobile menu fixes */
+	.navbar-collapse {
+		@media (max-width: 767.98px) {
+			background: white;
+			padding: 1rem;
+			margin-top: 0.5rem;
+			box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+			border-radius: 0.25rem;
+
+			/* Fix for closing animation */
+			&.collapsing {
+				height: 0;
+				overflow: hidden;
+				transition: height 0.35s ease;
+			}
+
+			&.show {
+				height: auto !important;
+				overflow: visible !important;
+			}
+		}
+	}
+
+	/* Nav item hover effects */
+	.nav-item {
+		margin: 0 0.25rem;
+
+		.nav-link {
+			position: relative;
+			padding: 0.5rem 1rem;
+			color: var(--dark);
+
+			&::after {
+				content: "";
+				position: absolute;
+				bottom: 0;
+				left: 1rem;
+				color: var(--accent);
+				right: 1rem;
+				height: 2px;
+				background: currentColor;
+				transform: scaleX(0);
+				transition: transform 0.3s ease;
+			}
+
+			&:hover::after,
+			&.active::after {
+				transform: scaleX(1);
+				color: var(--accent);
+			}
+		}
+	}
+
+	/* Mobile toggle button adjustments */
+	.navbar-toggler {
+		border: none;
+		padding: 0.5rem;
+		&:focus {
+			box-shadow: none;
+		}
+	}
+}
+/* Custom accent outline button - add this to your CSS */
+.btn-outline-ksd {
+	/* Base styling */
+	display: inline-block;
+	font-weight: 400;
+	line-height: 1.5;
+	text-align: center;
+	text-decoration: none;
+	vertical-align: middle;
+	cursor: pointer;
+	user-select: none;
+	padding: 0.375rem 0.75rem;
+	font-size: 1rem;
+	border-radius: 0.25rem;
+	transition: all 0.15s ease-in-out;
+
+	/* Custom accent colors */
+	/* color: var(--accent); */
+	background-color: transparent;
+	border: 1px solid var(--accent);
+
+	/* Hover state */
+	&:hover {
+		color: var(--dark);
+		/* font-weight: 600; */
+		background-color: var(--accent);
+		border-color: var(--accent);
+	}
+
+	/* Active/focus states */
+	&:active,
+	&:focus {
+		color: var(--dark);
+		background-color: var(--accent);
+		border-color: var(--accent);
+		box-shadow: 0 0 0 0.25rem rgba(103, 198, 176, 0.5); /* accent with 50% opacity */
+	}
+
+	/* Disabled state */
+	&:disabled {
+		color: var(--accent);
+		background-color: transparent;
+		opacity: 0.65;
+	}
+}
+
+/* ==================== IMAGE STYLES ==================== */
+.img-fluid {
+	width: 100%;
+	height: auto;
+}
+
+.logolight {
+	filter: saturate(100%) brightness(04);
+}
+
+.logogreen {
+	filter: invert(72%) sepia(55%) saturate(288%) hue-rotate(116deg)
+		brightness(87%) contrast(94%);
+}
+
+.icon {
+	background: var(--accent);
+	-webkit-mask-image: url(/logo.svg);
+	mask-image: url(/logo.svg);
+}
+
+.portfolio-frame {
+	position: relative;
+	overflow: hidden;
+}
+
+.portfolio-image {
+	width: 100%;
+	height: auto;
+	transition: transform 0.3s ease;
+}
+
+.portfolio-frame:hover .portfolio-image {
+	transform: scale(1.07);
+}
+
+.portfolio-overlay {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background: rgba(0, 0, 0, 0.7);
+	color: white;
+	padding: 1em;
+	transform: translateY(100%);
+	transition: transform 0.3s ease;
+}
+
+.portfolio-frame:hover .portfolio-overlay {
+	transform: translateY(0);
+}
+
+/* About image effect */
+#about-image {
+	filter: saturate(0%) contrast(0%);
+	color: var(--accent);
+
+	&:hover {
+		filter: brightness(100%) contrast(100%);
+		transition: transform 0.25s cubic-bezier(0.17, 0.67, 0.83, 0.67) 0s;
+		transform: scaleX(1.15) scaleY(1.15);
+	}
+}
+
+/* ==================== HEADER IMAGES ==================== */
+.scrubbingscrolling {
+	background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8)),
+		url("/images/channel4/1920/jpg/scrubbingscolling.jpg");
+}
+
+.project-header {
+	position: relative;
+	height: 70vh;
+	min-height: 400px;
+	overflow: hidden;
+	background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)),
+		image-set(
+			var(--header-image-avif) type("image/avif"),
+			var(--header-image-webp) type("image/webp"),
+			var(--header-image-jpg) type("image/jpeg")
+		);
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+/* ==================== LAYOUT STYLES ==================== */
+.containerfluid {
+	padding: 1rem 0;
+	@media (min-width: 62em) {
+		padding: 2rem 0;
+	}
+}
+
+.overlaytext {
+	position: absolute;
+	top: 40%;
+	left: 50%;
+	color: var(--light);
+	transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	text-align: center;
+	width: 80%; /* Added for better responsiveness */
+	z-index: 10; /* Ensure it appears above gradients */
+}
+
+/* Slant styles (if needed) */
+.header-slant {
+	position: relative;
+	z-index: 200;
+	width: 100%;
+	height: 0;
+	pointer-events: none;
+
+	&.right {
+		margin-top: calc(-5vw + 1px);
+		border-top: 5vw solid transparent;
+		border-right: 100vw solid white;
+	}
+}
+.container {
+	padding: 1rem;
+}
+
+.row {
+	padding: 1rem 0;
+}
+
+.nopadding {
+	padding: 0 !important;
+}
+
+.fullwidthimage {
+	padding: 0 !important;
+	margin: 0 !important;
+	width: 100vw;
+}
+
+.cover {
+	width: 100vw;
+	height: 107vh;
+	background-size: cover;
+	background-position: center center;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+}
+
+/* ==================== FOOTER & SOCIAL ==================== */
+footer {
+	background-color: var(--dark);
+	padding: 2rem 0;
+	color: var(--light);
+	text-align: center;
+
+	a {
+		color: var(--light);
+		font-size: 0.875rem;
+		transition: color 0.2s ease-in-out;
+		text-decoration: none;
+
+		&:hover,
+		&:focus {
+			color: var(--accent);
+		}
+	}
+}
+
+ul.social-network {
+	list-style: none;
+	padding: 0;
+	margin: 1rem 0 0;
+	display: flex;
+	justify-content: center;
+	gap: 0.5rem;
+
+	li a {
+		display: inline-flex;
+		align-items: center;
+		justify-content: center;
+		width: 42px;
+		height: 42px;
+		border-radius: 50%;
+		background-color: var(--light);
+		font-size: 1.25rem;
+		transition: background-color 0.3s ease, transform 0.3s ease;
+
+		&:hover {
+			transform: scale(1.1);
+		}
+
+		i {
+			color: var(--dark);
+			transition: color 0.3s ease;
+		}
+
+		&.icoTwitch:hover i {
+			/* background-color: #e4405f; */
+			color: #9146ff;
+		}
+		&.icoYoutube:hover i {
+			/* background-color: #e4405f; */
+			color: #e1002d;
+		}
+		&.icoLinkedin:hover i {
+			/* background-color: #007bb7; */
+			color: #007bb7;
+		}
+		&.icoBsky:hover i {
+			/* background-color: #007bb7; */
+			color: #0a7aff;
+		}
+	}
+}
+
+/* ==================== ANIMATIONS ==================== */
+@keyframes pop-in {
+	0% {
+		opacity: 0;
+		transform: translateY(-4rem) scale(0.8);
+	}
+	100% {
+		opacity: 1;
+		transform: none;
+	}
+}
+
+.animate-pop-in {
+	animation: pop-in 0.6s cubic-bezier(0.17, 0.67, 0.83, 0.67) forwards;
+	opacity: 0;
+}
+
+.header-title {
+	animation-delay: 0.8s;
+}
+.header-subtitle {
+	animation-delay: 1s;
+}
+
+.image-animation {
+	opacity: 0;
+	transition: opacity 0.4s 0.25s ease-in-out;
+	will-change: opacity;
+
+	&.is-visible {
+		opacity: 1;
+	}
+}
+
+/* ==================== UTILITY CLASSES ==================== */
+.dark {
+	color: var(--dark);
+}
+.bg-dark {
+	background-color: var(--dark);
+}
+.colorksd {
+	color: var(--accent);
+}
+.bg-ksd {
+	background-color: var(--accent) !important;
+}
+
+/* ==================== VIDEO ==================== */
+.video-container {
+	position: relative;
+	padding-bottom: 56.25%;
+	padding-top: 0;
+	height: 0;
+	overflow: hidden;
+
+	iframe,
+	object,
+	embed {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+	}
+}
+
+.nav-tabs {
+	--bs-nav-tabs-border-width: 2;
+	--bs-nav-tabs-link-active-color: var(--accent);
+}
+.nav {
+	--bs-nav-link-padding-x: 1rem;
+	--bs-nav-link-padding-y: 0.5rem;
+	--bs-nav-link-color: var(--dark);
+	--bs-nav-link-hover-color: var(--accent);
+}
+
+.nav-link {
+	padding-left: 2em;
+	padding-right: 2em;
+	color: var(--dark);
+	transition: color 0.2s ease-in-out;
+}
+.nav-tabs .nav-item.show .nav-link {
+	background-color: var(--wwe);
+	border-color: var(--wwe);
+}

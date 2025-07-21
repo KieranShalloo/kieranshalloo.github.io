@@ -1,0 +1,13 @@
+# _config.yml
+title: Kieran Shalloo Design Ltd
+critical_css:
+  paths: ["/", "/work/"] # Target homepage + work pages
+  ignore: [".bi-", ".btn"] # Skip icons/buttons (already fast)
+
+collections:
+  illustrations:
+    output: true
+    permalink: /illustration/:name
+
+baseurl: "" # leave empty for root of domain
+url: "https://kieranshalloodesign.com"

@@ -1,0 +1,45 @@
+<div class="row p-0">
+    {% assign design_items = site.data.design %}
+    {% if include.limit %}
+    {% assign design_items = design_items | slice: 0, include.limit %}
+    {% endif %}
+
+    {% for item in design_items %}
+    <div class="col-12 p-0 portfolio-frame
+        {% if forloop.index <= 2 %}
+          col-sm-6
+        {% elsif forloop.index <= 5 %}
+          col-sm-4
+        {% else %}
+          col-sm-3
+        {% endif %}">
+        <a href="{{ item.url }}">
+            <picture>
+                <source srcset="{{ item.image.avif }}" type="image/avif">
+                <source srcset="{{ item.image.webp }}" type="image/webp">
+                <source srcset="{{ item.image.jpg }}" type="image/jpeg">
+                <img decoding="async" class="img-fluid portfolio-image" loading="lazy" src="{{ item.jpg }}"
+                    alt="{{ item.image.alt }}"
+                    height="{{ 800 | divided_by: item.aspect_ratio | split: ':' | first | times: item.aspect_ratio | split: ':' | last }}">
+            </picture>
+
+
+            <!-- Optional: Add title overlay if desired -->
+            <!-- <div class="portfolio-overlay">
+
+                <div class="col-md-4">
+                    <img style="width:100%" src="/images/about/about-c4.svg" alt="Channel 4 logo">
+                </div>
+                <div class=" col-md-8">
+                    <div>
+                        <h2>{{ item.title }}</h2>
+                    </div>
+                    <div>
+                        <h5>{{ item.subtitle }} </h5>
+                    </div>
+                </div>
+            </div> -->
+        </a>
+    </div>
+    {% endfor %}
+</div>
