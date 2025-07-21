@@ -150,9 +150,9 @@
   url: "/portfolio/yvapp/"
   description: "A commissioned illustration showing the WWE wrestler Daniel Bryan celebrating his victory at WrestleMania XXX."
   image:
-    jpg: "/images/home/yvappheader768.jpg"
-    webp: "/images/home/yvappheader768.webp"
-    avif: "/images/home/yvappheader768.avif"
+    jpg: "/images/home/YVAppheader768.jpg"
+    webp: "/images/home/YVAppheader768.webp"
+    avif: "/images/home/YVAppheader768.avif"
     alt: "Daniel Bryan celebrating at WrestleMania XXX"
   width: 1920
   height: 1080
