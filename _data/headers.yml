@@ -232,23 +232,6 @@ wwe:
       webp: "/images/home/wweheader1920.webp"
       jpg: "/images/home/wweheader1920.jpg"
 
-wwescrolling:
-  alt: WWE Scrolling
-  sizes:
-    # Complete: All formats and sizes present
-    - width: 414
-      avif: "/images/wwe/wwe-network-phone-tile-414.avif"
-      webp: "/images/wwe/wwe-network-phone-tile-414.webp"
-      jpg: "/images/wwe/wwe-network-phone-tile-414.jpg"
-    # - width: 768
-    #   avif: "/images/wwe/wwe-network-phone-tile-768.avif"
-    #   webp: "/images/wwe/wwe-network-phone-tile-768.webp"
-    #   jpg: "/images/wwe/wwe-network-phone-tile-768.jpg"
-    - width: 1920
-      avif: "/images/wwe/wwe-network-phone-tile-1920.avif"
-      webp: "/images/wwe/wwe-network-phone-tile-1920.webp"
-      jpg: "/images/wwe/wwe-network-phone-tile-1920.jpg"
-
 yvapp:
   alt: YouView App
   title: YouView App
