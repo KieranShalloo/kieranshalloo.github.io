@@ -158,6 +158,19 @@
   height: 1080
   aspect_ratio: "16:9"
 
+- title: "Creature"
+  slug: "creature"
+
+  description: "A commissioned illustration showing the WWE wrestler Daniel Bryan celebrating his victory at WrestleMania XXX."
+  image:
+    jpg: "/images/home/creatureheader768.jpg"
+    webp: "/images/home/creatureheader768.webp"
+    avif: "/images/home/creatureheader768.avif"
+    alt: "Daniel Bryan celebrating at WrestleMania XXX"
+  width: 1920
+  height: 1080
+  aspect_ratio: "16:9"
+
 - title: "Book of Potions"
   slug: "bookofpotions"
   url: "/portfolio/bookofpotions"
