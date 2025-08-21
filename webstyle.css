@@ -218,21 +218,19 @@ body {
 }
 
 .wwescrolling {
-  background-image:
-    linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8)),
-    image-set(
-      url("/images/wwe/wwe-network-phone-tile-1920.avif") type("image/avif"),
-      url("/images/wwe/wwe-network-phone-tile-1920.webp") type("image/webp"),
-      url("/images/wwe/wwe-network-phone-tile-1920.jpg") type("image/jpeg")
-    );
-  background-attachment: fixed;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  min-height: 100vh;
-  color: #fff;
+	background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8)),
+		image-set(
+			url("/images/wwe/wwe-network-phone-tile-1920.avif") type("image/avif"),
+			url("/images/wwe/wwe-network-phone-tile-1920.webp") type("image/webp"),
+			url("/images/wwe/wwe-network-phone-tile-1920.jpg") type("image/jpeg")
+		);
+	background-attachment: fixed;
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	min-height: 100vh;
+	color: #fff;
 }
-
 
 .project-header {
 	position: relative;
@@ -279,8 +277,8 @@ body {
 	pointer-events: none;
 
 	&.right {
-		margin-top: calc(-5vw + 1px);
-		border-top: 5vw solid transparent;
+		margin-top: calc(-10vw + 1px);
+		border-top: 8vw solid transparent;
 		border-right: 100vw solid white;
 	}
 }
