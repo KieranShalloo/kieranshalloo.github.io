@@ -7,8 +7,8 @@
     webp: "/images/printmaking/totoro/webinframe.webp"
     avif: "/images/printmaking/totoro/webinframe.avif"
     alt: "Totoro giving hugs to mai"
-  width: 1920
-  height: 1080
+  width: 1200
+  height: 900
   aspect_ratio: "16:9"
 
 - title: "coastline"
@@ -20,8 +20,8 @@
     webp: "/images/printmaking/coastline/ondesk.webp"
     avif: "/images/printmaking/coastline/ondesk.avif"
     alt: "Totoro giving hugs to mai"
-    width: 1920
-  height: 1080
+    width: 1200
+  height: 900
   aspect_ratio: "16:9"
 
 - title: "Forest"
@@ -57,8 +57,8 @@
   image:
     jpg: "/images/printmaking/lizard/ondesk.jpg"
     webp: "/images/printmaking/lizard/ondesk.webp"
-    avif: "/images/printmaking/lizard/ondesk.avif"
+    # avif: "/images/printmaking/lizard/ondesk.avif"
     alt: "Totoro giving hugs to mai"
-    width: 1920
-  height: 1080
+    width: 1200
+  height: 900
   aspect_ratio: "16:9"
