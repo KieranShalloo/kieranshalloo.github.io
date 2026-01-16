@@ -60,13 +60,14 @@ Parameters:
     <img
       src="{% if use_sizes %}{{ '/images/' | append: include.name | append: '-768.jpg' }}{% else %}{{ '/images/' | append: include.name | append: '.jpg' }}{% endif %}"
       {% if use_sizes %} srcset="
-          {{ '/images/' | append: include.name | append: '-414.jpg' }} 414w,
-          {{ '/images/' | append: include.name | append: '-768.jpg' }} 768w
-        " sizes="
+  {{ '/images/' | append: include.name | append: '-414.jpg' }} 414w,
+  {{ '/images/' | append: include.name | append: '-768.jpg' }} 768w,
+  {{ '/images/' | append: include.name | append: '-1920.jpg' }} 1920w
+" sizes="
           (max-width: 414px) 414px,
           (max-width: 768px) 768px,
           (min-width: 769px) 100vw
         " {% endif %} width="{{ img_width }}" height="auto" decoding="{{ decoding }}" loading="{{ loading }}"
-      class="img-fluid {{ include.class }}" alt="{{ include.alt | escape }}" 'px' )">
+      class="img-fluid {{ include.class }}" alt="{{ include.alt | escape }}">
   </picture>
 </figure>

@@ -44,9 +44,9 @@ c4rebrand:
     - width: 1920
       jpg: "/images/home/4rebrandheader1920.jpg"
 
-channel4:
-  alt: Channel 4
-  title: Channel 4
+visualscrubbing:
+  alt: C4 Scrubbing
+  title: C4 Scrubbing
   subtitle: A new way to navigate
   sizes:
     # Complete: All formats and sizes present
@@ -62,6 +62,25 @@ channel4:
       avif: "/images/home/4header1920.avif"
       webp: "/images/home/4header1920.webp"
       jpg: "/images/home/4header1920.jpg"
+
+channel4:
+  alt: Channel 4
+  title: Channel 4
+  subtitle: A new way to navigate
+  sizes:
+    # Complete: All formats and sizes present
+    - width: 414
+      # avif: "/images/home/stpheader414.avif"
+      # webp: "/images/home/stpheader414.webp"
+      jpg: "/images/home/stpheader414.jpg"
+    # - width: 768
+    #   avif: "/images/home/4header768.avif"
+    #   webp: "/images/home/4header768.webp"
+    #   jpg: "/images/home/4header768.jpg"
+    - width: 1920
+      # avif: "/images/home/stpheader1920.avif"
+      # webp: "/images/home/stpheader1920.webp"
+      jpg: "/images/home/stpheader1920.jpg"
 
 creature:
   alt: Creature

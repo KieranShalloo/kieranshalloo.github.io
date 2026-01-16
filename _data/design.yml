@@ -1,12 +1,13 @@
 # large
-- title: "Google Trainline"
-  slug: "googletrains"
-  url: "/portfolio/googletrain/"
-  description: "A commissioned illustration showing the WWE wrestler Daniel Bryan celebrating his victory at WrestleMania XXX."
+
+- title: "Channel 4 Streaming"
+  slug: "channel4"
+  url: "/portfolio/channel4/"
+  description: "Redesign of the whole Channel 4 Streaming app."
   image:
-    jpg: "/images/home/trainlineheader768.jpg"
-    webp: "/images/home/trainlineheader768.webp"
-    avif: "/images/home/trainlineheader768.avif"
+    jpg: "/images/home/stpheader768.jpg"
+    # webp: "/images/home/stpheader768.webp"
+    # avif: "/images/home/stpheader768.avif"
     alt: "Daniel Bryan celebrating at WrestleMania XXX"
   width: 1920
   height: 1080
@@ -26,6 +27,19 @@
   height: 1080
   aspect_ratio: "16:9"
 
+- title: "Google Trainline"
+  slug: "googletrains"
+  url: "/portfolio/googletrain/"
+  description: "A commissioned illustration showing the WWE wrestler Daniel Bryan celebrating his victory at WrestleMania XXX."
+  image:
+    jpg: "/images/home/trainlineheader768.jpg"
+    webp: "/images/home/trainlineheader768.webp"
+    avif: "/images/home/trainlineheader768.avif"
+    alt: "Daniel Bryan celebrating at WrestleMania XXX"
+  width: 1920
+  height: 1080
+  aspect_ratio: "16:9"
+
 # Medium
 - title: "Trainline"
   slug: "trainline"
@@ -40,7 +54,7 @@
   height: 1080
   aspect_ratio: "16:9"
 
-- title: "Channel 4"
+- title: "Channel 4 - Visual Scrubbing"
   slug: "visualscrubbing"
   url: "/portfolio/visualscrubbing/"
   description: "A commissioned illustration showing the WWE wrestler Daniel Bryan celebrating his victory at WrestleMania XXX."
