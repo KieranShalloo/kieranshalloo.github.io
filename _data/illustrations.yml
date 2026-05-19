@@ -348,9 +348,9 @@
   url: "/illustration/matriarch/"
   description: "Illustration of Gemma Teller Morrow from Sons of Anarchy"
   image:
-    jpg: "/images/illustration/gemma.jpg"
-    webp: "/images/illustration/gemma.webp"
-    avif: "/images/illustration/gemma.avif"
+    jpg: "/images/illustration/matriarch.jpg"
+    webp: "/images/illustration/matriarch.webp"
+    avif: "/images/illustration/matriarch.avif"
     alt: "Gemma Teller Morrow looking intense"
   thumb:
     jpg: "/images/illustration/thumbs/gemma-thumb.jpg"
