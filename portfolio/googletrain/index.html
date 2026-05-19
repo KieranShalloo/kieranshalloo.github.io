@@ -68,7 +68,7 @@ description: A UI/UX portfolio page showing work for Trainline by Kieran Shalloo
     </div>
     <picture>
         <!-- <source srcset="/images/home/trainlineheader1920.webp" type="image" /> -->
-        <source srcset="/images/home/trainlineheader1920.jpg" type="image" />
+        <source srcset="/images/home/trainlineheader1920.jpg" type="image/jpeg" />
         <img decoding="async" class="img-fluid" loading="lazy" src="/images/home/trainlineheader1920.jpg"
             alt="Main image showing trainline concept design" />
     </picture>
@@ -117,7 +117,9 @@ description: A UI/UX portfolio page showing work for Trainline by Kieran Shalloo
         <source media="(max-width: 1024px)" srcset="/images/googletrains/gtrainconcepts768.jpg 768w" type="image" />
         <source media="(min-width: 1025px)" srcset="/images/googletrains/gtrainconcepts1920.jpg 1920w" type="image" />
         <img decoding="async" class="img-fluid" loading="lazy""
-              src=" /images/googletrains/gtrainconcepts1920.jpg" alt=" trainline website conceptual designs" />
+              src=" /images/googletrains/gtrainconcepts1920.jpg" alt="trainline website conceptual designs" />
+        <img decoding="async" class="img-fluid" loading="lazy" src="/images/googletrains/gtrainconcepts1920.jpg"
+            alt="trainline website conceptual designs" />
     </picture>
 
     <div class=" container">
@@ -154,7 +156,7 @@ description: A UI/UX portfolio page showing work for Trainline by Kieran Shalloo
         <!-- <source srcset="/images/googletrains/gtrainmodal.webp" type="image" /> -->
         <source srcset="/images/googletrains/gtrainmodal.jpg" type="image" />
         <img decoding="async" class=" img-fluid" src="/images/googletrains/gtrainmodal.jpg" loading="lazy"
-            alt="Mogs Christmas in a TV showing the rewind feature" />
+            alt="Modal showing Trainline's unique product features and reassurance messaging" />
     </picture>
 </div>
 </div>
@@ -162,13 +164,12 @@ description: A UI/UX portfolio page showing work for Trainline by Kieran Shalloo
 <div class=" containerfluid">
     <div class=" container">
         <div class="row">
-            <div class=" col-md-4 offset-md-1"><video style="width:100%" embed-responsive loop autoplay muted />
-                <source src="/images/googletrains/gtrain_modal.webm" type="video/webm">
-                <source src="/images/googletrains/gtrain_modal.mp4" type="video/mp4">
-                Sorry, your browser doesn't support embedded videos.
-
+            <div class=" col-md-4 offset-md-1">
+                <video style="width:100%" class="embed-responsive" loop autoplay muted>
+                    <source src="/images/googletrains/gtrain_modal.webm" type="video/webm">
+                    <source src="/images/googletrains/gtrain_modal.mp4" type="video/mp4">
+                    Sorry, your browser doesn't support embedded videos.
                 </video>
-
             </div>
             <div class="col-md-6">
                 <h3>Design Details</h3>
@@ -217,12 +218,13 @@ description: A UI/UX portfolio page showing work for Trainline by Kieran Shalloo
         <source media="(max-width: 1919px)" srcset="/images/googletrains/award-1440.webp 1440w" type="image/webp" />
         <source media="(min-width: 1920px)" srcset="/images/googletrains/award-1920.webp 1920w" type="image/webp" />
         <!-- jpg -->
-        <source media="(max-width: 414px)" srcset="//images/googletrains/award-414.jpg 414w" type="image/jpeg" />
-        <source media="(max-width: 1024px)" srcset="//images/googletrains/award-768.jpg 768w" type="image/jpeg" />
-        <source media="(max-width: 1919px)" srcset="//images/googletrains/award-1440.jpg 1440w" type="image/jpeg" />
-        <source media="(min-width: 1920px)" srcset="//images/googletrains/award-1920.jpg 1920w" type="image/jpeg" />
+        <source media="(max-width: 414px)" srcset="/images/googletrains/award-414.jpg 414w" type="image/jpeg" />
+        <source media="(max-width: 1024px)" srcset="/images/googletrains/award-768.jpg 768w" type="image/jpeg" />
+        <source media="(max-width: 1919px)" srcset="/images/googletrains/award-1440.jpg 1440w" type="image/jpeg" />
+        <source media="(min-width: 1920px)" srcset="/images/googletrains/award-1920.jpg 1920w" type="image/jpeg" />
         <!-- preference -->
-        <img decoding="async" class="img-fluid" loading="lazy" alt="Alt text goes here" />
+        <img src="/images/googletrains/award-1920.jpg" decoding="async" class="img-fluid" loading="lazy"
+            alt="Trainline tech award" />
     </picture>
     <figcaption class="figure-caption text-center">Trainline tech & product award won for the Google project.
     </figcaption>

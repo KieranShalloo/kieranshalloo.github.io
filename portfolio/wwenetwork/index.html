@@ -1,6 +1,8 @@
 ---
 layout: default
 title: WWE Network
+has_assets: true
+has_video: true
 
 ---
 
@@ -47,7 +49,8 @@ title: WWE Network
 
 {% include responsive-image.html
 name="wwe/wwe-network-screen-tile"
-sizes=true %}
+sizes=true
+aspect_ratio="16/9" %}
 
 
 
@@ -192,6 +195,7 @@ sizes=true %}
 name="wwe/wwe-network-styleguide"
 alt="WWE Styleguide"
 sizes=true
+aspect_ratio="16/9"
 caption="Styleguide
 layout"
 %}
@@ -256,7 +260,8 @@ layout"
           <source srcset="/images/wwe/wwe-network-downloading.avif 414w" type="image/avif" />
           <source srcset="/images/wwe/wwe-network-downloading.webp 414w" type="image/webp" />
           <source srcset="/images/wwe/wwe-network-downloads.jpg 414w" type="image/jpeg" />
-          <img decoding="async" class="img-fluid" loading="lazy" />
+          <img src="/images/wwe/wwe-network-downloads.jpg" decoding="async" class="img-fluid" loading="lazy"
+            alt="WWE Network downloading state" />
         </picture>
       </div>
 
@@ -267,7 +272,8 @@ layout"
           <source srcset="/images/wwe/wwe-network-downloads-414.webp 414w" type="image/webp" />
           <source srcset="/images/wwe/wwe-network-downloads-414.jpg 414w" type="image/jpeg" />
 
-          <img decoding="async" class="img-fluid" loading="lazy" />
+          <img src="/images/wwe/wwe-network-downloads-414.jpg" decoding="async" class="img-fluid" loading="lazy"
+            alt="WWE Network downloads list" />
         </picture>
       </div>
       <div class="col-md-2">
@@ -279,7 +285,9 @@ layout"
 
 {% include responsive-image.html
 name="wwe/wwe-network-downloads"
-alt="WWE Network download interface" sizes=true
+alt="WWE Network download interface"
+sizes=true
+aspect_ratio="16/9"
 caption="High-fidelity prototype showing download states"%}
 
 

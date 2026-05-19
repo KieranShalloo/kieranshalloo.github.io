@@ -4,29 +4,36 @@ title: Portfolio
 
 description: A showcase of UX/UI design work
 ---
-
-<div class="containerfluid " style="background-color: var(--accent);">
+{% include head-styles.html %}
+<section class="hero-section py-5" style="background-color: var(--accent);">
     <div class="container">
-        <div class="row" style=" height: 70vh;
-  align-items: center; ">
-            <div class="align-items-center">
-                <div class="col-md-4 offset-md-4"> <img src="/Logotype.svg"></div>
-                <div class="col-md-8 offset-md-2">
-                    <h2 style="color:var(--dark)" class="text-center">
-                        User
-                        Experience
-                        design & Illustration crafted remotely in London, England.<br><br></h3>
-                        <h5 style="color:var(--dark)" class="text-center">
-                            Over 12 years of experience, working with international clients and brands on award-winning
-                            projects.
-                            </p>
+        <div class="row min-vh-75 align-items-center justify-content-center text-center">
+            <div class="col-md-8">
+
+                <div class="mb-4">
+                    <img src="/Logotype.svg" alt="Shalloo Design Logo" width="300" height="100" fetchpriority="high">
                 </div>
+
+                <h1 class="display-6 mb-4" style="color: var(--dark);">
+                    User Experience design & Illustration crafted remotely in London, England.
+                </h1>
+
+                <p class="lead" style="color: var(--dark);">
+                    Over 12 years of experience, working with international clients and brands on award-winning
+                    projects.
+                </p>
+
             </div>
         </div>
     </div>
+</section>
 
 </div>
-<div class="header-slant right pb-5"></div>
+<section class="hero-section py-5" style="background-color: var(--accent);">
+    <div class="container">
+    </div>
+    <div class="header-slant right pb-5"></div>
+</section>
 
 
 <!-- Clients -->

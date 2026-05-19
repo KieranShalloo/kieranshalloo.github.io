@@ -56,24 +56,11 @@ description: A UI/UX portfolio page showing work for OutSystems advertising camp
 
 <!-- Image comparisons-->
 <div class="container">
-
-
-
-    <picture>
-        <source media="(max-width: 414px)" srcset="/images/creature/creature-outsystems-techDebt-screen-414.webp 414w,"
-            type="image/webp">
-        <source media="(max-width: 1024px)" srcset="/images/creature/creature-outsystems-techDebt-screen-768.webp 768w,"
-            type="image/webp">
-        <source media="(min-width: 1025px)"
-            srcset="/images/creature/creature-outsystems-techDebt-screen-1920.webp 1920w," type="image/webp">
-        <source media="(max-width: 414px)" srcset="/images/creature/creature-outsystems-techDebt-screen-414.jpg 414w,"
-            type="image/jpeg">
-        <source media="(max-width: 1024px)" srcset="/images/creature/creature-outsystems-techDebt-screen-768.jpg 768w,"
-            type="image/jpeg">
-        <source media="(min-width: 1025px)"
-            srcset="/images/creature/creature-outsystems-techDebt-screen-1920.jpg 1920w," type="image/jpeg">
-        <img decoding="async" class="img-fluid " loading="lazy">
-    </picture>
+    {% include responsive-image.html
+    name="creature/creature-outsystems-techDebt-screen"
+    alt="OutSystems Tech Debt screen comparisons"
+    sizes=true
+    aspect_ratio="16/9" %}
 </div>
 
 
@@ -164,26 +151,23 @@ description: A UI/UX portfolio page showing work for OutSystems advertising camp
 <div class="containerfluid">
     <div class="row">
         <div class="col-md-4">
-            <picture>
-                <source srcset="/images/creature/creature-outsystems-techDebt-verticalList.webp" type="image/webp">
-                <source srcset="/images/creature/creature-outsystems-techDebt-verticalList.jpg" type="image/jpeg">
-                <img decoding="async" class="shadow mt-3 img-fluid" loading="lazy" alt="YouView ">
-            </picture>
+            {% include responsive-image.html
+            name="creature/creature-outsystems-techDebt-verticalList"
+            alt="Vertical list view"
+            class="shadow mt-3" %}
         </div>
         <div class="col-md-4">
-            <picture>
-                <source srcset="/images/creature/creature-outsystems-techDebt-greenVersion.webp" type="image/webp">
-                <source srcset="/images/creature/creature-outsystems-techDebt-greenVersion.jpg" type="image/jpeg">
-                <img decoding="async" class="shadow  mt-3 img-fluid" loading="lazy" alt="YouView ">
-            </picture>
+            {% include responsive-image.html
+            name="creature/creature-outsystems-techDebt-greenVersion"
+            alt="Green version branding"
+            class="shadow mt-3" %}
         </div>
 
         <div class="col-md-4">
-            <picture>
-                <source srcset="/images/creature/creature-outsystems-techDebt-list.webp" type="image/webp">
-                <source srcset="/images/creature/creature-outsystems-techDebt-list.jpg" type="image/jpeg">
-                <img decoding="async" class="shadow mt-3 img-fluid" loading="lazy" alt="YouView ">
-            </picture>
+            {% include responsive-image.html
+            name="creature/creature-outsystems-techDebt-list"
+            alt="Standard list view"
+            class="shadow mt-3" %}
         </div>
     </div>
 </div>

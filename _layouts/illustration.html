@@ -16,8 +16,7 @@ layout: default
 {% endif %}
 
 {% if next_index < items.size %} {% assign next_slug=items[next_index].slug %} {% assign
-    next_title=items[next_index].title %} {% endif %} {% endif %} {% endfor %} {% include nav.html %} <div
-    class="container mt-4">
+    next_title=items[next_index].title %} {% endif %} {% endif %} {% endfor %} <div class="container mt-4">
     <!-- Project Title and Description -->
     <div class="row mb-4">
         <div class="col-md-8 offset-md-2">
@@ -31,12 +30,11 @@ layout: default
     <!-- Featured Image -->
     <div class="row mb-5">
         <div class="col-md-10 offset-md-1">
-            <picture>
-                <source srcset="/images/illustration/{{ page.slug }}.webp" type="image/webp">
-                <source srcset="/images/illustration/{{ page.slug }}.jpg" type="image/jpeg">
-                <img src="/images/illustration/{{ page.slug }}.jpg" class="img-fluid rounded shadow"
-                    alt="{{ page.title }}">
-            </picture>
+            {% assign img_name = 'illustration/' | append: page.slug %}
+            {% include responsive-image.html
+            name=img_name
+            alt=page.title
+            class="rounded shadow" %}
         </div>
     </div>
     {% include illustration-nav.html %}

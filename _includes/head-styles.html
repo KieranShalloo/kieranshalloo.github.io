@@ -1,0 +1,115 @@
+<!-- Critical CSS: Inlined to improve LCP and prevent FOUC -->
+<style>
+    @layer base, components, utilities;
+
+    @layer base {
+        :root {
+            color-scheme: light dark;
+            --bg-main: light-dark(#ecfaff, #121212);
+            --bg-surface: light-dark(#e6e6e6, #1e1e1e);
+            --text-main: light-dark(#343434, #ecfaff);
+            --accent: light-dark(#008568, #67c6b0);
+            --accent-decorative: #67c6b0;
+            --white: #ecfaff;
+            --dark: #343434;
+            --light: #e6e6e6;
+            --youview: #00a6ff;
+            --wwe: #d0021b;
+            --virgin: #5f2878;
+            --sony: #3ddb86;
+            --creature: #49de8c;
+            --channel4: #aaeb89;
+            --trainline: #00a88f;
+            --google: #4285f4;
+            --stp: #b672de
+        }
+
+        body {
+            font: 16px "Outfit", sans-serif;
+            background-color: var(--bg-main);
+            color: var(--text-main);
+            margin: 0;
+            overflow-x: hidden
+        }
+
+        h1 {
+            font-size: clamp(4em, 2.5rem + 6.6667vw, 6rem);
+            font-weight: 700;
+            margin-block-start: 0
+        }
+
+        h2 {
+            font-size: clamp(2rem, 1.4375rem+2.5vw, 2.75rem);
+            line-height: 1.23;
+            font-weight: 200
+        }
+
+        .container,
+        .row {
+            padding-block: 1rem
+        }
+
+        .container {
+            padding-inline: 1rem
+        }
+    }
+
+    @layer components {
+        .navbar {
+            transition: background-color .3s;
+            background: var(--bg-surface) !important
+        }
+
+        .navbar-brand img {
+            transition: transform .3s, filter .3s;
+            inline-size: 70px;
+            block-size: 70px
+        }
+
+        .navbar-collapse {
+            @container (inline-size < 768px) {
+                background: light-dark(#fff, #1e1e1e);
+                padding: 1rem;
+                margin-block-start: .5rem;
+                box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .15);
+                border-radius: .25rem
+            }
+        }
+
+        .nav-item {
+            margin-inline: .25rem
+        }
+
+        .nav-link {
+            position: relative;
+            padding: .5rem 1rem;
+            color: var(--text-main)
+        }
+
+        .navbar-toggler {
+            border: none;
+            padding: .5rem;
+            background: transparent
+        }
+
+        .project-header {
+            position: relative;
+            block-size: 70vh;
+            min-block-size: 400px;
+            overflow: hidden;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat
+        }
+    }
+</style>
+
+<!-- Preload non-critical styles -->
+<link rel="preload" href="{{ '/webstyle.css' | relative_url }}" as="style"
+    onload="this.onload=null;this.rel='stylesheet'">
+<link rel="preload" href="{{ '/text.css' | relative_url }}" as="style" onload="this.onload=null;this.rel='stylesheet'">
+
+<noscript>
+    <link rel="stylesheet" href="{{ '/webstyle.css' | relative_url }}">
+    <link rel="stylesheet" href="{{ '/text.css' | relative_url }}">
+</noscript>
