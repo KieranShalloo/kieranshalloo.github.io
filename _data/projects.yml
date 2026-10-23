@@ -34,17 +34,17 @@
     project_date: "2012"
     role: "Graphic Designer (Contract)"
 
-- id: "channel-4"
-  layout: default
-  title: "Channel 4"
-  dark_theme: false
-  description: "A showcase of Channel 4 UX/UI design work"
-  project_header_id: "channel4"
-  meta:
-    brief: "I was engaged at Channel 4 as a Principal-level Design Contractor to lead a full product redesign. My focus was on defining the visual, interaction, and motion foundations, including the creation of a tokenised motion design system. This work was intentionally aligned with the newly selected back-end technology stack and engineering partner to ensure feasibility, performance, and long-term scalability. This project is under NDA and pending launch. As a result, this case study focuses on design leadership, problem framing, stakeholder alignment and decision-making rather than post-launch metrics."
-    client: "Channel 4"
-    project_date: "2025 - 2026"
-    role: "Principle Designer (contractor)"
+# - id: "channel-4"
+#   layout: default
+#   title: "Channel 4"
+#   dark_theme: false
+#   description: "A showcase of Channel 4 UX/UI design work"
+#   project_header_id: "channel4"
+#   meta:
+#     brief: "I was engaged at Channel 4 as a Principal-level Design Contractor to lead a full product redesign. My focus was on defining the visual, interaction, and motion foundations, including the creation of a tokenised motion design system. This work was intentionally aligned with the newly selected back-end technology stack and engineering partner to ensure feasibility, performance, and long-term scalability. This project is under NDA and pending launch. As a result, this case study focuses on design leadership, problem framing, stakeholder alignment and decision-making rather than post-launch metrics."
+#     client: "Channel 4"
+#     project_date: "2025 - 2026"
+#     role: "Principle Designer (contractor)"
 
 - id: "creature"
   layout: default
