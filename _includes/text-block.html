@@ -1,0 +1,26 @@
+<section class="container-fluid portfolio-component">
+    <div class="container">
+        <div class="row">
+
+            <!-- Main Section Title -->
+            {% if include.block.main_title %}
+            <div class="col-md-8 offset-md-1">
+                <h2>{{ include.block.main_title }}</h2>
+            </div>
+            {% endif %}
+
+            <!-- Dynamic Paragraph Stream -->
+            <div class="col-md-8 offset-md-2">
+                {% for section in include.block.sections %}
+                {% if section.subtitle %}
+                <h3>{{ section.subtitle }}</h3>
+                {% endif %}
+                {% if section.text %}
+                <p>{{ section.text | newline_to_br }}</p>
+                {% endif %}
+                {% endfor %}
+            </div>
+
+        </div>
+    </div>
+</section>

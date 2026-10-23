@@ -1,0 +1,265 @@
+- id: "c4-rebrand"
+  layout: default
+  title: "4 Rebrand"
+  dark_theme: true
+  description: "A showcase of Channel 4 UX/UI design work"
+  project_header_id: "c4rebrand"
+  meta:
+    brief: "Incorporate the new Pentagram-produced Channel 4 branding across all user touchpoints in the updated TV app across all currently released platforms."
+    client: "Channel 4"
+    project_date: "2023"
+    role: "Senior Big Screen Designer (contractor)"
+
+- id: "book-of-potions"
+  layout: default
+  title: "Book of Potions"
+  dark_theme: false
+  description: "A UI/UX portfolio page showing work for Book of Potions by Kieran Shalloo"
+  project_header_id: "bookofpotion"
+  meta:
+    brief: 'I was tasked with assisting on the vision of "Book of Potions", the sequel to the Wonderbook "Book of Spells" project.'
+    client: "Sony London Studio"
+    project_date: "2013"
+    role: "Graphic Designer (Contract)"
+
+- id: "book-of-spells"
+  layout: default
+  title: "Book of Spells"
+  dark_theme: false
+  description: "A UI/UX portfolio page showing work for Book of Spells by Kieran Shalloo"
+  project_header_id: "bookofspells"
+  meta:
+    brief: "I had the pleasure of being in the team working on JK Rowling’s Harry Potter universe game for the Sony WonderBook. This augmented reality game used the Wonderbook in conjunction with both the Move controller and the PlayStation Eye to track the users movement and translate it into on screen graphics."
+    client: "Sony London Studio"
+    project_date: "2012"
+    role: "Graphic Designer (Contract)"
+
+- id: "channel-4"
+  layout: default
+  title: "Channel 4"
+  dark_theme: false
+  description: "A showcase of Channel 4 UX/UI design work"
+  project_header_id: "channel4"
+  meta:
+    brief: "I was engaged at Channel 4 as a Principal-level Design Contractor to lead a full product redesign. My focus was on defining the visual, interaction, and motion foundations, including the creation of a tokenised motion design system. This work was intentionally aligned with the newly selected back-end technology stack and engineering partner to ensure feasibility, performance, and long-term scalability. This project is under NDA and pending launch. As a result, this case study focuses on design leadership, problem framing, stakeholder alignment and decision-making rather than post-launch metrics."
+    client: "Channel 4"
+    project_date: "2025 - 2026"
+    role: "Principle Designer (contractor)"
+
+- id: "creature"
+  layout: default
+  title: "Creature"
+  dark_theme: false
+  description: "A UI/UX portfolio page showing work for OutSystems advertising campaign by Kieran Shalloo"
+  project_header_id: "creature"
+  meta:
+    brief: "I was briefed for a short term project helping to create a website which aligned with an agency provided advertising campaign."
+    agency: "Creature London"
+    client: "OutSystems"
+    project_date: "2021"
+    role: "Senior UX/UI Designer (contractor)"
+
+- id: "dance-star-party"
+  layout: default
+  title: "Dance Star Party"
+  dark_theme: false
+  description: "A UI/UX portfolio page showing work for DanceStar Party by Kieran Shalloo"
+  project_header_id: "dancestar"
+  meta:
+    brief: "As part of my contracted time at Sony London Studios i was part of the team that worked on the DanceStar Party Rhythm game. This game brought the technology of the singstar party dance game to a separate full fledged game. The goal of the game was to copy the dance moves shown on screen using the PlayStation Move controller, the closer to the shown move the more points for the user."
+    client: "Sony London Studio"
+    project_date: "2012"
+    role: "Graphic Designer (Contract)"
+
+- id: "trainline-engagement"
+  layout: default
+  title: "Engagement"
+  dark_theme: false
+  description: "A UI/UX portfolio page showing work for OutSystems advertising campaign by Kieran Shalloo"
+  project_header_id: "trainlineengagement"
+  meta:
+    brief: "Brought into the project originally as a short cover, I helped the team to progress their drive towards a engaging platform turning casual browsing users into reoccuring purchasing users"
+    client: "Trainline"
+    project_date: "2024"
+    role: "Senior UX/UI Designer (contractor)"
+
+- id: "google-trains"
+  layout: default
+  title: "Google Trains"
+  dark_theme: true
+  description: "A UI/UX portfolio page showing work for Trainline by Kieran Shalloo"
+  project_header_id: "trainline"
+  meta:
+    brief: "To create ways to reassure passengers coming to Trainline from Google, communicating the positive propositions of the product."
+    client: "Trainline"
+    project_date: "2024"
+    role: "Senior UX/UI Designer (contractor)"
+
+- id: "netflix"
+  layout: default
+  title: "Netflix"
+  dark_theme: false
+  description: "A UI/UX portfolio page showing work for Netflix advertising campaign by Kieran Shalloo"
+  project_header_id: "netflix"
+  meta:
+    brief: "I was tasked with creating a short animation to promote the arrival of the Netflix service on the YouView platform. I worked firstly with a contracted motion designer to create the initial vision although I personally took the project through from that point to final completion. There was a lot of communication from not only the internal team but also with the Netflix team to ensure that it promoted the platform. This was seen across London’s Piccadilly Circus during the peak christmas period"
+    client: "YouView & Netflix UK"
+    project_date: "2015-2016"
+    role: "Motion Graphics, Art Direction"
+
+- id: "next-gen-youview"
+  layout: default
+  title: "Next Gen"
+  dark_theme: false
+  description: "A UI/UX portfolio page showing work for YouView Rebrand by Kieran Shalloo"
+  project_header_id: "youview_nextgen"
+  meta:
+    brief: "Bring the YouView user experience into the modern day, utalizing a more cutting edge back end to incorperate the future of BT and TalkTalk TV packages for their customers"
+    client: "BT TV and TalkTalk TV"
+    project_date: "2018"
+    role: "Product Designer"
+
+- id: "press-adverts"
+  layout: default
+  title: "Press Adverts"
+  dark_theme: false
+  description: "A UI/UX portfolio page showing work for YouView advertising campaign by Kieran Shalloo"
+  project_header_id: "press_marketing"
+  meta:
+    brief: "I was tasked with creating a short animation to promote the arrival of the Netflix service on the YouView platform. I initially worked with a contracted motion designer to create the initial vision although i personally took the project through from that point to final completion. There was a lot of communication from not only the internal team but also with the Netflix team to ensure that it promoted the platform. This was seen across London’s Piccadilly Circus during the peak christmas period"
+    client: "Netflix & YouView TV Ltd"
+    project_date: "2015"
+    role: "Motion Graphics, Animation, Art Direction"
+
+- id: "singstar"
+  layout: default
+  title: "Singstar"
+  dark_theme: false
+  description: "A UI/UX portfolio page showing work for Singstar by Kieran Shalloo"
+  project_header_id: "singstar"
+  meta:
+    brief: "I collaborated with the senior design team to help conceptualise future design patterns and in-game assets, in turn taking responsibility for designing production ready components. I also worked closely with the motion graphics teams, assisting with the storyboarding of concepts and also making Lo-Fi mock ups to take further into the animatic stage."
+    client: "Sony London Studio"
+    project_date: "2012"
+    role: "Graphic Designer (Contract)"
+
+- id: "sony-android"
+  layout: default
+  title: "Sony Android"
+  dark_theme: false
+  description: "A UI/UX portfolio page showing work for Sony Android TV by Kieran Shalloo"
+  project_header_id: "sony"
+  meta:
+    brief: "Help to bring the YouView system to Android TV by Google to allow it to be the default on all Sony televisions released in the UK. Adjust the user experience to fit in with Google guidleines and to work with the restricitons of the manufacturer"
+    client: "YouView / Sony"
+    project_date: "2017 - 2018"
+    role: "Lead Product Designer"
+
+- id: "tramline"
+  layout: default
+  title: "Tramline"
+  dark_theme: true
+  description: "A UI/UX portfolio page showing work for Trainline by Kieran Shalloo"
+  project_header_id: "trainlineengagement"
+  meta:
+    brief: "Brought into the project originally as a short cover, I helped the team to progress their drive towards a engaging platform turning casual browsing users into reoccuring purchasing users"
+    client: "Trainline"
+    project_date: "2024"
+    role: "Senior UX/UI Designer (contractor)"
+
+- id: "virgin-media"
+  layout: default
+  title: "Virginmedia"
+  dark_theme: false
+  description: "A UI/UX portfolio page showing work for Virgin Media by Kieran Shalloo"
+  project_header_id: "virgin"
+  meta:
+    brief: "Creating a whole new customer-facing experience for billing and payments. Working with the business to create a new approach for users to self serve. Giving users the ability to solve issues without needing to contact call centres."
+    client: "Virgin Media"
+    project_date: "2020-2021"
+    role: "Senior UX/UI Designer (contractor)"
+
+- id: "visual-scrubbing"
+  layout: default
+  title: "Visual Scrubbing"
+  dark_theme: true
+  description: "A UI/UX portfolio page showing work for Channel 4 by Kieran Shalloo"
+  project_header_id: "visualscrubbing"
+  meta:
+    brief: "I worked with Channel4 throughout various projects, bringing my TV experience to their design team as an external contractor. I was able to bring an outside perspective to the problems of the business whilst working with the internal design teams as well as a third-party technology supplier. One brief I worked on in my time there was the introduction of the Visual Scrubbing feature."
+    client: "Channel 4"
+    project_date: "2023 - 2024"
+    role: "Senior UX/UI Designer (contractor)"
+
+- id: "wwe-network"
+  layout: default
+  title: "www"
+  dark_theme: false
+  description: "A UI/UX portfolio page showing work for WWE Network by Kieran Shalloo"
+  project_header_id: "wwe"
+  meta:
+    brief: "WWE relaunched it’s On Demand video service in Q2 of 2019. The app showcases live wrestling events as well as the whole past catalogue of WWE shows, Original content related to Sports Entertainment and short-form clips. I was brought on board this project via an agency which I had previously worked with. The WWE Network is spread across Responsive Web, Mobile and TV so my previous experience was a plus point. I worked extremely closely with the client-side through all instances of this project and took designs from concept through to support for the development of the features."
+    agency: "Massive Interactive / Deltatre"
+    client: "World Wrestling Entertainment"
+    project_date: "2020"
+    role: "Senior UX/UI Designer (contractor)"
+
+- id: "youview-retail"
+  layout: default
+  title: "You View"
+  dark_theme: false
+  description: "A UI/UX portfolio page showing work for YouView by Kieran Shalloo"
+  project_header_id: "youview"
+  meta:
+    brief: "Bring the YouView user experience into the modern day, utalizing a more cutting edge back end to incorperate the future of BT and TalkTalk TV packages for their customers"
+    client: "BT / TalkTalk"
+    project_date: "2016-2019"
+    role: "Product Designer"
+
+- id: "yv-accessibility"
+  layout: default
+  title: "Yvaccessibility"
+  dark_theme: false
+  description: "A UI/UX portfolio page showing work for YouView accessibility settings by Kieran Shalloo"
+  project_header_id: "yvcontrast"
+  meta:
+    brief: "Create an accessible version of the YouView UI, taking into account various sight-related disabilities to make the platform easy to use by all. Partly powered by the BBC, there are strict guidlines that have to be adhert too to ensure support from the BBC Trust"
+    client: "YouView TV Ltd"
+    project_date: "2018-2020"
+    role: "Product Designer"
+
+- id: "capp-mobile"
+  layout: default
+  title: "Capp"
+  dark_theme: false
+  description: "A UI/UX portfolio page showing work for YouView Mobile App by Kieran Shalloo"
+  project_header_id: "yvapp"
+  meta:
+    brief: "Design a mobile application that would allow users across the YouView ecosystem to set recordings and reminders from their phone when they are away from the home. Allow Users to be able to see and manage their existing recordings and to plan for the future"
+    client: "YouView TV Ltd"
+    project_date: "2016-2017"
+    role: "Product Designer"
+
+- id: "yv-help"
+  layout: default
+  title: "Yvhelp"
+  dark_theme: false
+  description: "A UI/UX portfolio page showing work for YouView Help by Kieran Shalloo"
+  project_header_id: "yvhelp"
+  meta:
+    brief: "Update the Help app on YouView platform to bring it more in-line with the Next Generation user experience. Ensure that the design correspond with the YouView, BT and TalkTalk support sites whilst retaining the ability for users to troubleshoot their problems. Customers who currently use the service but may have difficulty using the product due to sight-related issues. Customers who wish to have a more accessible TV service. The legacy YouView help menu was built as a way for customers to solve the problems they were facing in their own time. The depreciation of the legacy UI and the move to the Next Generation interface pushed forward the need to bring the Help App into line with the revamped service. I was chosen to lead this project working alongside a junior designer and an intern, helping to guide them towards a final product"
+    client: "YouView TV Ltd"
+    project_date: "2018-2019"
+    role: "Lead Product Designer"
+
+- id: "yv-keyboard"
+  layout: default
+  title: "Yvkeyboard"
+  dark_theme: false
+  description: "A UI/UX portfolio page showing work for YouView Keyboard Project by Kieran Shalloo"
+  project_header_id: "yvkeyboard"
+  meta:
+    brief: "Create an on-screen search capable of replacing the remote control as an input device, ensuring that it would work across all YouView devices and products"
+    client: "BT TV"
+    project_date: "2019"
+    role: "Lead Designer"

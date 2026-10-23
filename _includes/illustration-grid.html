@@ -1,24 +1,19 @@
 <!-- Grid Row -->
 <div class="row p-0">
-    {% for item in site.data.illustrations %}
+    {% for work in site.data.illustrations %}
     <div class="col-6 col-lg-3 p-0 portfolio-frame">
-        <a href="{{ item.url }}">
+        <a href="{{ work.url }}">
             <picture>
                 <!-- Modern formats first -->
-                <source srcset="{{ item.thumb.avif }}" type="image/avif">
-                <source srcset="{{ item.thumb.webp }}" type="image/webp">
+                {% if work.thumb.avif %}
+                <source srcset="{{ work.thumb.avif }}" type="image/avif">{% endif %}
+                {% if work.thumb.webp %}
+                <source srcset="{{ work.thumb.webp }}" type="image/webp">{% endif %}
                 <!-- Fallback -->
-                <source srcset="{{ item.thumb.jpg }}" type="image/jpeg">
-                <img decoding="async" class="img-fluid portfolio-image" loading="lazy" src="{{ item.thumb.jpg }}"
-                    alt="{{ item.thumb.alt }}" width="400" </picture>
-                <!-- Optional: Add title overlay if desired -->
-                <!-- <div class="portfolio-overlay">
-                <div class="portfolio-title">{{ item.title }}</div>
-            </div> -->
+                <img decoding="async" class="img-fluid portfolio-image" loading="lazy" src="{{ work.thumb.jpg }}"
+                    alt="{{ work.thumb.alt | default: work.title }}" width="400">
+            </picture>
         </a>
     </div>
     {% endfor %}
-</div>
-
-
 </div>

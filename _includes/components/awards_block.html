@@ -1,0 +1,22 @@
+<section class="container-fluid portfolio-component">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 offset-md-1 mb-4">
+                <h2 style="color: var(--project-accent);">Awards</h2>
+            </div>
+        </div>
+
+        <div class="row g-4 justify-content-center">
+            {% for award in include.block.awards %}
+            <div class="col-md-4">
+                <div class="card h-100 border-0 shadow-sm" style="background-color: var(--light);">
+                    <div class="card-body text-center p-4">
+                        <h5 class="card-title text-dark mb-2">{{ award.title }}</h5>
+                        <p class="card-text text-muted small m-0">{{ award.description }}</p>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>

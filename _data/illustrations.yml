@@ -2,11 +2,12 @@
   slug: "danielbryan"
   url: "/illustration/danielbryan/"
   description: "A commissioned illustration showing the WWE wrestler Daniel Bryan celebrating his victory at WrestleMania XXX."
-  image:
-    jpg: "/images/illustration/danielbryan.jpg"
-    webp: "/images/illustration/danielbryan.webp"
-    avif: "/images/illustration/danielbryan.avif"
-    alt: "Daniel Bryan celebrating at WrestleMania XXX"
+  dimensions: "297 x 420mm"
+  gallery:
+    - jpg: "/images/illustration/danielbryan.jpg"
+      webp: "/images/illustration/danielbryan.webp"
+      avif: "/images/illustration/danielbryan.avif"
+      alt: "Daniel Bryan celebrating at WrestleMania XXX"
   thumb:
     jpg: "/images/illustration/thumbs/danielbryan-thumb.jpg"
     webp: "/images/illustration/thumbs/danielbryan-thumb.webp"
@@ -17,11 +18,12 @@
   slug: "starwarslightside"
   url: "/illustration/starwarslightside/"
   description: "Illustration depicting heroes from the Star Wars universe"
-  image:
-    jpg: "/images/illustration/starwarslightside.jpg"
-    webp: "/images/illustration/starwarslightside.webp"
-    avif: "/images/illustration/starwarslightside.avif"
-    alt: "Star Wars light side characters"
+  dimensions: "297 x 420mm"
+  gallery:
+    - jpg: "/images/illustration/starwarslightside.jpg"
+      webp: "/images/illustration/starwarslightside.webp"
+      avif: "/images/illustration/starwarslightside.avif"
+      alt: "Star Wars light side characters"
   thumb:
     jpg: "/images/illustration/thumbs/starwarslightside-thumb.jpg"
     webp: "/images/illustration/thumbs/starwarslightside-thumb.webp"
@@ -32,11 +34,12 @@
   slug: "nightmare-before-christmas"
   url: "/illustration/nightmare-before-christmas/"
   description: "Halloween meets Christmas in this Tim Burton inspired illustration"
-  image:
-    jpg: "/images/illustration/nightmare-before-christmas.jpg"
-    webp: "/images/illustration/nightmare-before-christmas.webp"
-    avif: "/images/illustration/nightmare-before-christmas.avif"
-    alt: "Jack Skellington from Nightmare Before Christmas"
+  dimensions: "297 x 420mm"
+  gallery:
+    - jpg: "/images/illustration/nightmare-before-christmas.jpg"
+      webp: "/images/illustration/nightmare-before-christmas.webp"
+      avif: "/images/illustration/nightmare-before-christmas.avif"
+      alt: "Jack Skellington from Nightmare Before Christmas"
   thumb:
     jpg: "/images/illustration/thumbs/nightmare-thumb.jpg"
     webp: "/images/illustration/thumbs/nightmare-thumb.webp"
@@ -47,11 +50,12 @@
   slug: "starwarsdarkside"
   url: "/illustration/starwarsdarkside/"
   description: "Illustration of iconic villains from the Star Wars universe"
-  image:
-    jpg: "/images/illustration/starwarsdarkside.jpg"
-    webp: "/images/illustration/starwarsdarkside.webp"
-    avif: "/images/illustration/starwarsdarkside.avif"
-    alt: "Star Wars dark side characters"
+  dimensions: "297 x 420mm"
+  gallery:
+    - jpg: "/images/illustration/starwarsdarkside.jpg"
+      webp: "/images/illustration/starwarsdarkside.webp"
+      avif: "/images/illustration/starwarsdarkside.avif"
+      alt: "Star Wars dark side characters"
   thumb:
     jpg: "/images/illustration/thumbs/starwarsdarkside-thumb.jpg"
     webp: "/images/illustration/thumbs/starwarsdarkside-thumb.webp"
@@ -62,11 +66,12 @@
   slug: "kubo"
   url: "/illustration/kubo/"
   description: "Character illustration from the animated film Kubo and the Two Strings"
-  image:
-    jpg: "/images/illustration/kubo.jpg"
-    webp: "/images/illustration/kubo.webp"
-    avif: "/images/illustration/kubo.avif"
-    alt: "Kubo character from Kubo and the Two Strings"
+  dimensions: "297 x 420mm"
+  gallery:
+    - jpg: "/images/illustration/kubo.jpg"
+      webp: "/images/illustration/kubo.webp"
+      avif: "/images/illustration/kubo.avif"
+      alt: "Kubo character from Kubo and the Two Strings"
   thumb:
     jpg: "/images/illustration/thumbs/kubo-thumb.jpg"
     webp: "/images/illustration/thumbs/kubo-thumb.webp"
@@ -77,11 +82,12 @@
   slug: "darthmaul"
   url: "/illustration/darthmaul/"
   description: "Menacing illustration of the Sith Lord Darth Maul"
-  image:
-    jpg: "/images/illustration/darthmaul.jpg"
-    webp: "/images/illustration/darthmaul.webp"
-    avif: "/images/illustration/darthmaul.avif"
-    alt: "Darth Maul with double-bladed lightsaber"
+  dimensions: "297 x 420mm"
+  gallery:
+    - jpg: "/images/illustration/maul.jpg"
+      webp: "/images/illustration/maul.webp"
+      avif: "/images/illustration/maul.avif"
+      alt: "Darth Maul with double-bladed lightsaber"
   thumb:
     jpg: "/images/illustration/thumbs/maul-thumb.jpg"
     webp: "/images/illustration/thumbs/maul-thumb.webp"
@@ -92,11 +98,12 @@
   slug: "tig"
   url: "/illustration/tig/"
   description: "Illustration of Tig Trager from Sons of Anarchy"
-  image:
-    jpg: "/images/illustration/tig.jpg"
-    webp: "/images/illustration/tig.webp"
-    avif: "/images/illustration/tig.avif"
-    alt: "Tig Trager from Sons of Anarchy"
+  dimensions: "297 x 420mm"
+  gallery:
+    - jpg: "/images/illustration/tig.jpg"
+      webp: "/images/illustration/tig.webp"
+      avif: "/images/illustration/tig.avif"
+      alt: "Tig Trager from Sons of Anarchy"
   thumb:
     jpg: "/images/illustration/thumbs/tig-thumb.jpg"
     webp: "/images/illustration/thumbs/tig-thumb.webp"
@@ -107,11 +114,16 @@
   slug: "fallout"
   url: "/illustration/fallout/"
   description: "Post-apocalyptic illustration inspired by the Fallout game series"
-  image:
-    jpg: "/images/illustration/fallout.jpg"
-    webp: "/images/illustration/fallout.webp"
-    avif: "/images/illustration/fallout.avif"
-    alt: "Vault Boy from Fallout series"
+  dimensions: "297 x 420mm"
+  gallery:
+    - jpg: "/images/illustration/fallout.jpg"
+      webp: "/images/illustration/fallout.webp"
+      avif: "/images/illustration/fallout.avif"
+      alt: "Vault Boy from Fallout series"
+    - jpg: "/images/illustration/fallout2.jpg"
+      webp: "/images/illustration/fallout2.webp"
+      avif: "/images/illustration/fallout2.avif"
+      alt: "Vault Boy from Fallout series"
   thumb:
     jpg: "/images/illustration/thumbs/fallout-thumb.jpg"
     webp: "/images/illustration/thumbs/fallout-thumb.webp"
@@ -122,11 +134,12 @@
   slug: "gremlins"
   url: "/illustration/gremlins/"
   description: "Illustration of the mischievous creatures from Gremlins"
-  image:
-    jpg: "/images/illustration/gremlins.jpg"
-    webp: "/images/illustration/gremlins.webp"
-    avif: "/images/illustration/gremlins.avif"
-    alt: "Gremlin creature from the movie"
+  dimensions: "297 x 420mm"
+  gallery:
+    - jpg: "/images/illustration/gremlins.jpg"
+      webp: "/images/illustration/gremlins.webp"
+      avif: "/images/illustration/gremlins.avif"
+      alt: "Gremlin creature from the movie"
   thumb:
     jpg: "/images/illustration/thumbs/gremlins-thumb.jpg"
     webp: "/images/illustration/thumbs/gremlins-thumb.webp"
@@ -136,12 +149,13 @@
 - title: "Archer"
   slug: "archer"
   url: "/illustration/archer/"
-  description: "Illustration of Sterling Archer from the animated series Archer"
-  image:
-    jpg: "/images/illustration/archer.jpg"
-    webp: "/images/illustration/archer.webp"
-    avif: "/images/illustration/archer.avif"
-    alt: "Sterling Archer in his signature pose"
+  description: "New poster for the FX show Archer."
+  dimensions: "297 x 420mm"
+  gallery:
+    - jpg: "/images/illustration/archer.jpg"
+      webp: "/images/illustration/archer.webp"
+      avif: "/images/illustration/archer.avif"
+      alt: "Sterling Archer in his signature pose"
   thumb:
     jpg: "/images/illustration/thumbs/archer-thumb.jpg"
     webp: "/images/illustration/thumbs/archer-thumb.webp"
@@ -152,11 +166,16 @@
   slug: "finding-nemo"
   url: "/illustration/finding-nemo/"
   description: "Colorful underwater illustration featuring characters from Finding Nemo"
-  image:
-    jpg: "/images/illustration/finding-nemo.jpg"
-    webp: "/images/illustration/finding-nemo.webp"
-    avif: "/images/illustration/finding-nemo.avif"
-    alt: "Nemo and Dory swimming together"
+  dimensions: "297 x 420mm"
+  gallery:
+    - jpg: "/images/illustration/nemo.jpg"
+      webp: "/images/illustration/nemo.webp"
+      avif: "/images/illustration/nemo.avif"
+      alt: "Nemo and Dory swimming together"
+    - jpg: "/images/illustration/nemo2.jpg"
+      webp: "/images/illustration/nemo2.webp"
+      avif: "/images/illustration/nemo2.avif"
+      alt: "Nemo and Dory swimming together"
   thumb:
     jpg: "/images/illustration/thumbs/nemo-thumb.jpg"
     webp: "/images/illustration/thumbs/nemo-thumb.webp"
@@ -167,11 +186,12 @@
   slug: "rey"
   url: "/illustration/rey/"
   description: "Illustration of Rey from the Star Wars sequel trilogy"
-  image:
-    jpg: "/images/illustration/rey.jpg"
-    webp: "/images/illustration/rey.webp"
-    avif: "/images/illustration/rey.avif"
-    alt: "Rey with her yellow lightsaber"
+  dimensions: "297 x 420mm"
+  gallery:
+    - jpg: "/images/illustration/rey.jpg"
+      webp: "/images/illustration/rey.webp"
+      avif: "/images/illustration/rey.avif"
+      alt: "Rey with her yellow lightsaber"
   thumb:
     jpg: "/images/illustration/thumbs/rey-thumb.jpg"
     webp: "/images/illustration/thumbs/rey-thumb.webp"
@@ -182,11 +202,12 @@
   slug: "hulkhogan"
   url: "/illustration/hulkhogan/"
   description: "Illustration of wrestling legend Hulk Hogan in his prime"
-  image:
-    jpg: "/images/illustration/hulkhogan.jpg"
-    webp: "/images/illustration/hulkhogan.webp"
-    avif: "/images/illustration/hulkhogan.avif"
-    alt: "Hulk Hogan flexing his muscles"
+  dimensions: "297 x 420mm"
+  gallery:
+    - jpg: "/images/illustration/hulkhogan.jpg"
+      webp: "/images/illustration/hulkhogan.webp"
+      avif: "/images/illustration/hulkhogan.avif"
+      alt: "Hulk Hogan flexing his muscles"
   thumb:
     jpg: "/images/illustration/thumbs/hulk-thumb.jpg"
     webp: "/images/illustration/thumbs/hulk-thumb.webp"
@@ -197,11 +218,12 @@
   slug: "jax"
   url: "/illustration/jax/"
   description: "Illustration of Jax Teller from Sons of Anarchy"
-  image:
-    jpg: "/images/illustration/jax.jpg"
-    webp: "/images/illustration/jax.webp"
-    avif: "/images/illustration/jax.avif"
-    alt: "Jax Teller on his motorcycle"
+  dimensions: "297 x 420mm"
+  gallery:
+    - jpg: "/images/illustration/jax.jpg"
+      webp: "/images/illustration/jax.webp"
+      avif: "/images/illustration/jax.avif"
+      alt: "Jax Teller on his motorcycle"
   thumb:
     jpg: "/images/illustration/thumbs/jax-thumb.jpg"
     webp: "/images/illustration/thumbs/jax-thumb.webp"
@@ -212,11 +234,12 @@
   slug: "landspeeder"
   url: "/illustration/landspeeder/"
   description: "Illustration of Luke Skywalker's landspeeder from Star Wars"
-  image:
-    jpg: "/images/illustration/landspeeder.jpg"
-    webp: "/images/illustration/landspeeder.webp"
-    avif: "/images/illustration/landspeeder.avif"
-    alt: "Luke's landspeeder on Tatooine"
+  dimensions: "297 x 420mm"
+  gallery:
+    - jpg: "/images/illustration/landspeeder.jpg"
+      webp: "/images/illustration/landspeeder.webp"
+      avif: "/images/illustration/landspeeder.avif"
+      alt: "Luke's landspeeder on Tatooine"
   thumb:
     jpg: "/images/illustration/thumbs/speeder-thumb.jpg"
     webp: "/images/illustration/thumbs/speeder-thumb.webp"
@@ -227,11 +250,12 @@
   slug: "deadpool"
   url: "/illustration/deadpool/"
   description: "Illustration of the Merc with a Mouth, Deadpool"
-  image:
-    jpg: "/images/illustration/deadpool.jpg"
-    webp: "/images/illustration/deadpool.webp"
-    avif: "/images/illustration/deadpool.avif"
-    alt: "Deadpool in his signature pose"
+  dimensions: "297 x 420mm"
+  gallery:
+    - jpg: "/images/illustration/deadpool.jpg"
+      webp: "/images/illustration/deadpool.webp"
+      avif: "/images/illustration/deadpool.avif"
+      alt: "Deadpool in his signature pose"
   thumb:
     jpg: "/images/illustration/thumbs/deadpool-thumb.jpg"
     webp: "/images/illustration/thumbs/deadpool-thumb.webp"
@@ -242,11 +266,16 @@
   slug: "legomovie"
   url: "/illustration/legomovie/"
   description: "Illustration of characters from The Lego Movie"
-  image:
-    jpg: "/images/illustration/legomovie.jpg"
-    webp: "/images/illustration/legomovie.webp"
-    avif: "/images/illustration/legomovie.avif"
-    alt: "Emmet and Wyldstyle from The Lego Movie"
+  dimensions: "297 x 420mm"
+  gallery:
+    - jpg: "/images/illustration/legomovie.jpg"
+      webp: "/images/illustration/legomovie.webp"
+      avif: "/images/illustration/legomovie.avif"
+      alt: "Lego Movie illustration 1"
+    - jpg: "/images/illustration/legomovie2.jpg"
+      webp: "/images/illustration/legomovie2.webp"
+      avif: "/images/illustration/legomovie2.avif"
+      alt: "Lego Movie illustration 2"
   thumb:
     jpg: "/images/illustration/thumbs/lego-thumb.jpg"
     webp: "/images/illustration/thumbs/lego-thumb.webp"
@@ -257,11 +286,12 @@
   slug: "spiderman"
   url: "/illustration/spiderman/"
   description: "Dynamic illustration of Spiderman in mid-swing"
-  image:
-    jpg: "/images/illustration/spiderman.jpg"
-    webp: "/images/illustration/spiderman.webp"
-    avif: "/images/illustration/spiderman.avif"
-    alt: "Spiderman swinging between buildings"
+  dimensions: "297 x 420mm"
+  gallery:
+    - jpg: "/images/illustration/spiderman.jpg"
+      webp: "/images/illustration/spiderman.webp"
+      avif: "/images/illustration/spiderman.avif"
+      alt: "Spiderman swinging between buildings"
   thumb:
     jpg: "/images/illustration/thumbs/spiderman-thumb.jpg"
     webp: "/images/illustration/thumbs/spiderman-thumb.webp"
@@ -272,11 +302,12 @@
   slug: "terminator"
   url: "/illustration/terminator/"
   description: "Illustration of the T-800 Terminator from the iconic film series"
-  image:
-    jpg: "/images/illustration/terminator.jpg"
-    webp: "/images/illustration/terminator.webp"
-    avif: "/images/illustration/terminator.avif"
-    alt: "Terminator with glowing red eye"
+  dimensions: "210 x 297mm"
+  gallery:
+    - jpg: "/images/illustration/terminator.jpg"
+      webp: "/images/illustration/terminator.webp"
+      avif: "/images/illustration/terminator.avif"
+      alt: "Terminator with glowing red eye"
   thumb:
     jpg: "/images/illustration/thumbs/terminator-thumb.jpg"
     webp: "/images/illustration/thumbs/terminator-thumb.webp"
@@ -287,11 +318,12 @@
   slug: "dixonbrothers"
   url: "/illustration/dixonbrothers/"
   description: "Illustration of Daryl and Merle Dixon from The Walking Dead"
-  image:
-    jpg: "/images/illustration/dixon.jpg"
-    webp: "/images/illustration/dixon.webp"
-    avif: "/images/illustration/dixon.avif"
-    alt: "Daryl and Merle Dixon together"
+  dimensions: "297 x 420mm"
+  gallery:
+    - jpg: "/images/illustration/dixon.jpg"
+      webp: "/images/illustration/dixon.webp"
+      avif: "/images/illustration/dixon.avif"
+      alt: "Daryl and Merle Dixon together"
   thumb:
     jpg: "/images/illustration/thumbs/dixon-thumb.jpg"
     webp: "/images/illustration/thumbs/dixon-thumb.webp"
@@ -302,11 +334,12 @@
   slug: "game-of-thrones"
   url: "/illustration/game-of-thrones/"
   description: "Illustration featuring iconic characters from Game of Thrones"
-  image:
-    jpg: "/images/illustration/gameofthrones.jpg"
-    webp: "/images/illustration/gameofthrones.webp"
-    avif: "/images/illustration/gameofthrones.avif"
-    alt: "Multiple Game of Thrones characters together"
+  dimensions: "297 x 420mm"
+  gallery:
+    - jpg: "/images/illustration/gameofthrones.jpg"
+      webp: "/images/illustration/gameofthrones.webp"
+      avif: "/images/illustration/gameofthrones.avif"
+      alt: "Multiple Game of Thrones characters together"
   thumb:
     jpg: "/images/illustration/thumbs/gameofthrones-thumb.jpg"
     webp: "/images/illustration/thumbs/gameofthrones-thumb.webp"
@@ -317,11 +350,20 @@
   slug: "theworldsend"
   url: "/illustration/theworldsend/"
   description: "Illustration inspired by the Edgar Wright film The World's End"
-  image:
-    jpg: "/images/illustration/worldsend.jpg"
-    webp: "/images/illustration/worldsend.webp"
-    avif: "/images/illustration/worldsend.avif"
-    alt: "The World's End"
+  dimensions: "297 x 420mm"
+  gallery:
+    - jpg: "/images/illustration/worldsend.jpg"
+      webp: "/images/illustration/worldsend.webp"
+      avif: "/images/illustration/worldsend.avif"
+      alt: "The World's End artwork 1"
+    - jpg: "/images/illustration/worldsend2.jpg"
+      webp: "/images/illustration/worldsend2.webp"
+      avif: "/images/illustration/worldsend2.avif"
+      alt: "The World's End artwork 2"
+    - jpg: "/images/illustration/worldsend3.jpg"
+      webp: "/images/illustration/worldsend3.webp"
+      avif: "/images/illustration/worldsend3.avif"
+      alt: "The World's End artwork 3"
   thumb:
     jpg: "/images/illustration/thumbs/worldsend-thumb.jpg"
     webp: "/images/illustration/thumbs/worldsend-thumb.webp"
@@ -332,11 +374,12 @@
   slug: "turtles"
   url: "/illustration/turtles/"
   description: "Illustration of all four Ninja Turtles in action"
-  image:
-    jpg: "/images/illustration/turtles.jpg"
-    webp: "/images/illustration/turtles.webp"
-    avif: "/images/illustration/turtles.avif"
-    alt: "Leonardo, Michelangelo, Donatello and Raphael together"
+  dimensions: "297 x 420mm"
+  gallery:
+    - jpg: "/images/illustration/turtles.jpg"
+      webp: "/images/illustration/turtles.webp"
+      avif: "/images/illustration/turtles.avif"
+      alt: "Leonardo, Michelangelo, Donatello and Raphael together"
   thumb:
     jpg: "/images/illustration/thumbs/turtles-thumb.jpg"
     webp: "/images/illustration/thumbs/turtles-thumb.webp"
@@ -347,11 +390,12 @@
   slug: "matriarch"
   url: "/illustration/matriarch/"
   description: "Illustration of Gemma Teller Morrow from Sons of Anarchy"
-  image:
-    jpg: "/images/illustration/gemma.jpg"
-    webp: "/images/illustration/gemma.webp"
-    avif: "/images/illustration/gemma.avif"
-    alt: "Gemma Teller Morrow looking intense"
+  dimensions: "297 x 420mm"
+  gallery:
+    - jpg: "/images/illustration/gemma.jpg"
+      webp: "/images/illustration/gemma.webp"
+      avif: "/images/illustration/gemma.avif"
+      alt: "Gemma Teller Morrow looking intense"
   thumb:
     jpg: "/images/illustration/thumbs/gemma-thumb.jpg"
     webp: "/images/illustration/thumbs/gemma-thumb.webp"
@@ -362,11 +406,12 @@
   slug: "rick-morty"
   url: "/illustration/rick-morty/"
   description: "Illustration of Rick and Morty in one of their interdimensional adventures"
-  image:
-    jpg: "/images/illustration/rick-morty.jpg"
-    webp: "/images/illustration/rick-morty.webp"
-    avif: "/images/illustration/rick-morty.avif"
-    alt: "Rick and Morty in portal gun pose"
+  dimensions: "297 x 420mm"
+  gallery:
+    - jpg: "/images/illustration/rick-morty.jpg"
+      webp: "/images/illustration/rick-morty.webp"
+      avif: "/images/illustration/rick-morty.avif"
+      alt: "Rick and Morty in portal gun pose"
   thumb:
     jpg: "/images/illustration/thumbs/rick-morty-thumb.jpg"
     webp: "/images/illustration/thumbs/rick-morty-thumb.webp"

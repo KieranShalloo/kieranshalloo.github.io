@@ -1,0 +1,47 @@
+---
+layout: default
+---
+
+<article class="project-content-wrapper" style="--project-accent: {{ page.theme_color | default: 'var(--accent)' }};">
+
+    <!-- Header block -->
+    {% include project-header.html project=page.slug %}
+
+    <!-- Brief Meta Block -->
+    <div class="container-fluid pt-5 pb-4">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-md-6 offset-md-2">
+                    <h6 class="text-muted">Brief</h6>
+                    <p>{{ page.brief | newline_to_br }}</p>
+                </div>
+                <div class="col-md-3 offset-md-1">
+                    {% if page.meta_agency %}<h6 class="text-muted">Agency</h6>
+                    <p>{{ page.meta_agency }}</p>{% endif %}
+                    {% if page.meta_client %}<h6 class="text-muted">Client</h6>
+                    <p>{{ page.meta_client }}</p>{% endif %}
+                    {% if page.meta_date %}<h6 class="text-muted">Project Date</h6>
+                    <p>{{ page.meta_date }}</p>{% endif %}
+                    {% if page.meta_role %}<h6 class="text-muted">Role</h6>
+                    <p>{{ page.meta_role }}</p>{% endif %}
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Component Engine Loop -->
+    <div class="project-builder">
+        {% for block in page.page_sections %}
+
+        {% if block.type == "text" %}
+        {% include text-block.html block=block %}
+
+        {% elsif block.type == "media_grid" %}
+        {% include media-grid.html block=block %}
+
+        {% endif %}
+
+        {% endfor %}
+    </div>
+
+</article>

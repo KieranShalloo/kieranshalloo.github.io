@@ -2,63 +2,99 @@
   slug: "totoro"
   url: "/traditionalprintmaking/totoro/"
   description: "A linoprint portfolio page showing a totoro print work by Kieran Shalloo"
+  dimensions: "160 x 230mm"
+  edition: "30"
+  paper: "Fabriano Unica 250g"
+  price: "18.00"
+  width: 1920
+  height: 1080
+  aspect_ratio: "16:9"
+  note: >-
+    As this is a handcrafted original piece, all prints are unique and may have slight variations in tone and texture due to the handmade printing process.
   image:
     jpg: "/images/printmaking/totoro/webinframe.jpg"
     webp: "/images/printmaking/totoro/webinframe.webp"
     avif: "/images/printmaking/totoro/webinframe.avif"
     alt: "Totoro giving hugs to mai"
-  width: 1200
-  height: 900
-  aspect_ratio: "16:9"
+  gallery:
+    [
+      "/images/printmaking/totoro/webinframe.jpg",
+      "/images/printmaking/totoro/ondesk.jpg",
+      "/images/printmaking/totoro/ondesk2.jpg",
+      "/images/printmaking/totoro/ondesk3.jpg",
+    ]
 
-- title: "coastline"
+- title: "Coastline"
   slug: "coastline"
   url: "/traditionalprintmaking/coastline/"
-  description: "A linoprint portfolio page showing a forest print work by Kieran Shalloo"
+  description: "A linoprint portfolio page showing a portuguese coastline print work by Kieran Shalloo"
+  dimensions: "160 x 230mm"
+  edition: "30"
+  paper: "Canaletto Velino 125g"
+  price: "18.00"
+  width: 1920
+  height: 1080
+  aspect_ratio: "16:9"
+  note: >-
+    As this is a handcrafted original piece, all prints are unique and may have slight variations in tone and texture due to the handmade printing process.
   image:
     jpg: "/images/printmaking/coastline/ondesk.jpg"
     webp: "/images/printmaking/coastline/ondesk.webp"
     avif: "/images/printmaking/coastline/ondesk.avif"
-    alt: "Totoro giving hugs to mai"
-    width: 1200
-  height: 900
-  aspect_ratio: "16:9"
+    alt: "Portuguese coastline linocut print"
+  gallery:
+    [
+      "https://i.etsystatic.com/42185295/r/il/4a7cbf/4833159257/il_1588xN.4833159257_ru0p.jpg",
+      "https://i.etsystatic.com/42185295/r/il/ac2de5/4750540856/il_1588xN.4750540856_eg4t.jpg",
+      "https://i.etsystatic.com/42185295/r/il/97f709/4798746429/il_1588xN.4798746429_bgt2.jpg",
+    ]
 
 - title: "Forest"
   slug: "forest"
   url: "/traditionalprintmaking/forest/"
   description: "A linoprint portfolio page showing a forest print work by Kieran Shalloo"
+  dimensions: "160 x 230mm"
+  edition: "30"
+  paper: "Canaletto Velino 125g"
+  price: "18.00"
+  width: 1920
+  height: 1080
+  aspect_ratio: "16:9"
+  note: >-
+    As this is a handcrafted original piece, all prints are unique and may have slight variations in tone and texture due to the handmade printing process.
   image:
     jpg: "/images/printmaking/deer/webinframe.jpg"
     webp: "/images/printmaking/deer/webinframe.webp"
     avif: "/images/printmaking/deer/webinframe.avif"
-    alt: "Totoro giving hugs to mai"
-    width: 1920
-  height: 1080
-  aspect_ratio: "16:9"
+    alt: "Forest deer print"
+  gallery:
+    [
+      "/images/printmaking/deer/ondesk.jpg",
+      "/images/printmaking/deer/ondesk2.jpg",
+      "/images/printmaking/deer/webinframe.jpg",
+    ]
 
-# - title: "panda"
-#   slug: "panda"
-#   url: "/traditionalprintmaking/panda/"
-#   description: "A linoprint portfolio page showing a panda print work by Kieran Shalloo"
-#   image:
-#     jpg: "/images/printmaking/panda/webinframe.jpg"
-#     webp: "/images/printmaking/panda/webinframe.webp"
-#     avif: "/images/printmaking/panda/webinframe.avif"
-#     alt: "Totoro giving hugs to mai"
-#     width: 1920
-#   height: 1080
-#   aspect_ratio: "16:9"
 
-- title: "lizard"
+- title: "Lizard"
   slug: "lizard"
   url: "/traditionalprintmaking/lizard/"
-  description: "A linoprint portfolio page showing a forest print work by Kieran Shalloo"
+  description: "A linoprint portfolio page showing a lizard print work by Kieran Shalloo"
+  dimensions: "130 x 350mm"
+  edition: "30"
+  paper: "Fabriano Unica 250g"
+  price: "20.00"
+  width: 1200
+  height: 900
+  aspect_ratio: "16:9"
+  note: >-
+    As this is a handcrafted original piece, all prints are unique and may have slight variations in tone and texture due to the handmade printing process.
   image:
     jpg: "/images/printmaking/lizard/ondesk.jpg"
     webp: "/images/printmaking/lizard/ondesk.webp"
-    # avif: "/images/printmaking/lizard/ondesk.avif"
-    alt: "Totoro giving hugs to mai"
-    width: 1200
-  height: 900
-  aspect_ratio: "16:9"
+    alt: "Lizard print"
+  gallery:
+    [
+      "/images/printmaking/lizard/ondesk.jpg",
+      "/images/printmaking/lizard/closeup.jpg",
+      "/images/printmaking/lizard/inhand.jpg",
+    ]

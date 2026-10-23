@@ -1,0 +1,162 @@
+---
+layout: default
+---
+
+{% comment %} Fetch item data from either prints or illustrations array {% endcomment %}
+{% assign print_item = site.data.prints | where: "slug", page.slug | first %}
+{% assign illus_item = site.data.illustrations | where: "slug", page.slug | first %}
+{% assign item = print_item | default: illus_item %}
+
+{% comment %} Determine gallery list (page front matter first, then _data array) {% endcomment %}
+{% assign gallery_list = page.gallery | default: item.gallery %}
+
+<article class="container py-5">
+    <div class="row g-5">
+
+        <!-- Left Column: Title, Narrative & Specs -->
+        <div class="col-md-4">
+            <h2 style="color: var(--accent);">{{ page.title | default: item.title }}</h2>
+
+            <div class="artwork-description mb-4">
+                {{ content | default: page.description | default: item.description }}
+            </div>
+
+            <!-- Specifications List -->
+            <dl class="artwork-specs mb-4">
+                {% assign current_edition = page.edition | default: item.edition %}
+                {% if current_edition %}
+                <h6>Edition Size</h6>
+                <p class="text-muted mb-3">{{ current_edition }}</p>
+                {% endif %}
+
+                {% assign current_size = page.dimensions | default: item.dimensions | default: item.size %}
+                {% if current_size %}
+                <h6>Size</h6>
+                <p class="text-muted mb-3">{{ current_size }}</p>
+                {% endif %}
+
+                {% assign current_paper = page.paper | default: item.paper %}
+                {% if current_paper %}
+                <h6>Paper</h6>
+                <p class="text-muted mb-3">{{ current_paper }}</p>
+                {% endif %}
+
+                {% assign current_price = page.price | default: item.price %}
+                {% if current_price %}
+                <h6>Price</h6>
+                <p class="text-muted mb-1">£{{ current_price }}</p>
+                <p class="text-muted small mb-3">Includes postage and packaging.</p>
+                {% endif %}
+            </dl>
+
+            {% assign current_note = page.note | default: item.note %}
+            {% if current_note %}
+            <p class="small text-muted border-top pt-3 mb-4">{{ current_note }}</p>
+            {% endif %}
+
+            {% assign current_buy_link = page.buy_link | default: item.buy_link %}
+            {% if current_buy_link %}
+            <a href="{{ current_buy_link }}" class="btn btn-outline-dark d-inline-flex align-items-center gap-2">
+                <i class="bi bi-shop"></i> Buy now
+            </a>
+            {% endif %}
+        </div>
+
+        <!-- Right Column: Gallery Stack -->
+        <!-- Right Column: Gallery Stack -->
+        <div class="col-md-8">
+            <div class="d-flex flex-column gap-4">
+                {% if gallery_list %}
+                {% for img in gallery_list %}
+                <div class="artwork-frame shadow-sm rounded overflow-hidden">
+                    <picture>
+                        {% comment %} Handle object formats (AVIF / WebP / JPG) {% endcomment %}
+                        {% if img.avif %}
+                        <source srcset="{{ img.avif }}" type="image/avif">{% endif %}
+                        {% if img.webp %}
+                        <source srcset="{{ img.webp }}" type="image/webp">{% endif %}
+
+                        {% comment %} Support both object paths and string paths {% endcomment %}
+                        {% assign img_src = img.jpg | default: img %}
+                        {% assign img_alt = img.alt | default: item.title %}
+
+                        <img src="{{ img_src }}" class="img-fluid w-100" loading="lazy" alt="{{ img_alt }}">
+                    </picture>
+                </div>
+                {% endfor %}
+                {% else %}
+                <!-- Main image fallback from _data YAML if no gallery array exists -->
+                <div class="artwork-frame shadow-sm rounded overflow-hidden">
+                    <picture>
+                        {% if item.image.avif %}
+                        <source srcset="{{ item.image.avif }}" type="image/avif">{% endif %}
+                        {% if item.image.webp %}
+                        <source srcset="{{ item.image.webp }}" type="image/webp">{% endif %}
+                        <img src="{{ item.image.jpg }}" alt="{{ item.image.alt }}" class="img-fluid w-100"
+                            loading="eager">
+                    </picture>
+                </div>
+                {% endif %}
+            </div>
+        </div>
+
+    </div>
+</article>
+
+{% comment %} 1. Determine active collection array & base index URL (Illustrations only) {% endcomment %}
+{% if illus_item %}
+{% assign collection = site.data.illustrations %}
+{% assign index_url = "/illustration/" %}
+
+{% comment %} 2. Find current item's position in array {% endcomment %}
+{% for work in collection %}
+{% if work.slug == page.slug %}
+{% assign current_index = forloop.index0 %}
+{% break %}
+{% endif %}
+{% endfor %}
+
+{% comment %} 3. Calculate previous and next array indices {% endcomment %}
+{% assign prev_index = current_index | minus: 1 %}
+{% assign next_index = current_index | plus: 1 %}
+
+{% assign prev_item = collection[prev_index] %}
+{% assign next_item = collection[next_index] %}
+
+<!-- Clean Minimal Navigation Bar (Illustrations Only) -->
+<nav class="container my-5 pt-4 border-top">
+    <div class="row align-items-center text-center">
+
+        <!-- Previous Link -->
+        <div class="col-4">
+            {% if prev_index >= 0 and prev_item %}
+            <a href="{{ prev_item.url }}" class="text-dark fs-4" title="{{ prev_item.title }}"
+                aria-label="Previous Project">
+                <i class="bi bi-arrow-left-circle"></i>
+            </a>
+            {% endif %}
+        </div>
+
+        <!-- Section Index Link -->
+        <div class="col-4">
+            <a href="{{ index_url }}" class="text-dark fs-4" title="View Collection" aria-label="View Collection">
+                <i class="bi bi-grid-fill"></i>
+            </a>
+        </div>
+
+        <!-- Next Link -->
+        <div class="col-4">
+            {% if next_item %}
+            <a href="{{ next_item.url }}" class="text-dark fs-4" title="{{ next_item.title }}"
+                aria-label="Next Project">
+                <i class="bi bi-arrow-right-circle"></i>
+            </a>
+            {% endif %}
+        </div>
+
+    </div>
+</nav>
+
+<!-- Full-Bleed Grid (Illustrations Only) -->
+{% include illustration-grid.html %}
+{% endif %}

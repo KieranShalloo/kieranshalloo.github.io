@@ -1,8 +1,12 @@
+{% comment %} Derive current section directly from page.url {% endcomment %}
+{% assign url_parts = page.url | split: '/' %}
+{% assign current_section = url_parts[1] %}
+
 <nav class="navbar navbar-expand-md navbar-light bg-light shadow sticky-top p-0">
     <div class="container p-2">
         <!-- Mobile logo (hidden on desktop) -->
-        <a class="navbar-brand d-md-none" href="/">
-            <img src="/Logotype.svg" alt="Home" width="50" height="50" loading="lazy">
+        <a class="navbar-brand d-md-none" href="/" aria-label="Kieran Shalloo Design - Home">
+            <img src="/Logotype.svg" alt="Kieran Shalloo Design Logo" width="50" height="50" loading="eager">
         </a>
 
         <!-- Mobile toggle button -->
@@ -15,52 +19,45 @@
         <div class="collapse navbar-collapse justify-content-center" id="mainNavbar">
             <ul class="navbar-nav align-items-center">
 
-
                 <!-- Left side items -->
                 <li class="nav-item">
-                    <a class="nav-link {% if base_path == 'portfolio' %}active{% endif %}" href="/portfolio" {% if
-                        base_path=='portfolio' %}aria-current="page" {% endif %}>
+                    <a class="nav-link {% if current_section == 'portfolio' %}active{% endif %}" href="/portfolio/" {%
+                        if current_section=='portfolio' %}aria-current="page" {% endif %}>
                         Design Work
                     </a>
                 </li>
 
                 <li class="nav-item">
-                    <a class="nav-link {% if base_path == 'process' %}active{% endif %}" href="/process" {% if
-                        base_path=='process' %}aria-current="page" {% endif %}>
+                    <a class="nav-link {% if current_section == 'process' %}active{% endif %}" href="/process/" {% if
+                        current_section=='process' %}aria-current="page" {% endif %}>
                         Design Process
                     </a>
                 </li>
 
                 <!-- Center logo (hidden on mobile) -->
                 <li class="nav-item d-none d-md-block mx-2 mx-lg-4">
-                    <a class="navbar-brand p-0" href="/">
-                        <img src="/Logotype.svg" alt="Home" width="70" height="70" loading="lazy">
+                    <a class="navbar-brand p-0" href="/" aria-label="Kieran Shalloo Design - Home">
+                        <img src="/Logotype.svg" alt="Kieran Shalloo Design Logo" width="70" height="70"
+                            loading="eager">
                     </a>
                 </li>
 
-                <!-- Mobile home link (hidden on desktop) -->
-                <!-- <li class="nav-item d-md-none">
-                    <a class="nav-link {% if page.url == '/' %}active{% endif %}" href="/" {% if page.url=='/'
-                        %}aria-current="page" {% endif %}>
-                        Home
-                    </a>
-                </li> -->
-
                 <!-- Right side items -->
                 <li class="nav-item">
-                    <a class="nav-link {% if base_path == 'illustration' %}active{% endif %}" href="/illustration" {% if
-                        base_path=='illustration' %}aria-current="page" {% endif %}>
+                    <a class="nav-link {% if current_section == 'illustration' %}active{% endif %}"
+                        href="/illustration/" {% if current_section=='illustration' %}aria-current="page" {% endif %}>
                         Illustration
                     </a>
                 </li>
 
                 <li class="nav-item">
-                    <a class="nav-link {% if base_path == 'traditionalprintmaking' %}active{% endif %}"
-                        href="/traditionalprintmaking" {% if base_path=='traditionalprintmaking' %}aria-current="page"
-                        {% endif %}>
+                    <a class="nav-link {% if current_section == 'traditionalprintmaking' %}active{% endif %}"
+                        href="/traditionalprintmaking/" {% if current_section=='traditionalprintmaking'
+                        %}aria-current="page" {% endif %}>
                         Printmaking
                     </a>
                 </li>
+
             </ul>
         </div>
     </div>
