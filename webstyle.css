@@ -1,10 +1,13 @@
+/* ==========================================================================
+   1. DESIGN TOKENS & ATOMIC VARIABLES (2026 Standards)
+   ========================================================================== */
 :root {
 	--dark: #343434;
 	--accent: #67c6b0;
 	--light: #e6e6e6;
 	--white: #ecfaff;
 
-	/* brand colours */
+	/* Brand Colours */
 	--youview: #00a6ff;
 	--wwe: #d0021b;
 	--virgin: #5f2878;
@@ -15,23 +18,117 @@
 	--google: #4285f4;
 	--stp: #b672de;
 
-	/* ==================== 2026 ATOMIC TOKENS ==================== */
+	/* Atomic Layout & Component Tokens */
 	--portfolio-spacing-y: clamp(3rem, 6vw, 5rem);
 	--portfolio-img-radius: 8px;
 	--portfolio-img-shadow:
 		0 15px 35px rgba(0, 0, 0, 0.07), 0 1px 3px rgba(0, 0, 0, 0.04);
+
+	/* Figma Grid Integration Tokens */
+	--bs-gutter-x: 24px;
 }
 
-/* ==================== BASE STYLES ==================== */
+/* ==========================================================================
+   2. FIGMA GRID SYSTEM INTEGRATION (2026 Layout Convention)
+   ========================================================================== */
+@media (min-width: 1400px) {
+	.container,
+	.container-lg,
+	.container-md,
+	.container-sm,
+	.container-xl,
+	.container-xxl {
+		max-width: 100% !important;
+		padding-left: 200px !important;
+		padding-right: 200px !important;
+	}
+}
+
+.row {
+	--bs-gutter-x: 24px;
+}
+
+/* ==========================================================================
+   3. FLUID TYPOGRAPHY ENGINE (Outfit Font Family)
+   ========================================================================== */
 html {
 	overflow-x: hidden;
 }
+
 body {
 	font-family: "Outfit", sans-serif;
 	font-size: 16px;
+	color: var(--dark);
 }
 
-/* ==================== NAVIGATION ==================== */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+li {
+	font-family: "Outfit", sans-serif;
+}
+
+h1 {
+	font-size: clamp(4em, 2.5rem + 6.6667vw, 6rem);
+	font-weight: 700;
+}
+
+h2 {
+	font-size: clamp(2rem, 1.4375rem + 2.5vw, 2.75rem);
+	line-height: 1.23;
+	text-align: left;
+	font-weight: 200;
+}
+
+h3 {
+	font-size: clamp(1.5rem, 1.2rem + 1.6667vw, 2rem);
+	line-height: 1.23;
+	text-align: left;
+	font-weight: 200;
+}
+
+h4 {
+	font-size: clamp(1.375rem, 1.0938rem + 1.25vw, 1.75rem);
+	line-height: 2rem;
+	font-weight: 300;
+}
+
+h5 {
+	font-size: clamp(1.25rem, 1.0625rem + 0.8333vw, 1.5rem);
+	font-weight: 300;
+}
+
+h6 {
+	font-size: clamp(1rem, 1.0313rem + 0.4167vw, 1.25rem);
+	font-weight: 700;
+}
+
+p {
+	font-size: clamp(1rem, 1.0313rem + 0.4167vw, 1.25rem);
+	line-height: 1.5em;
+	font-weight: 300;
+}
+
+li {
+	font-size: 1.2rem;
+	line-height: 1.4rem;
+	font-weight: 300;
+	text-decoration: none;
+}
+
+.figure-caption {
+	font-size: 1rem;
+	line-height: 3rem;
+	font-weight: 100;
+}
+
+/* ==========================================================================
+   4. NAVIGATION
+   ========================================================================== */
 .navbar {
 	transition: all 0.3s ease;
 	background-color: var(--light) !important;
@@ -55,179 +152,39 @@ body {
 			margin-top: 0.5rem;
 			box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
 			border-radius: 0.25rem;
-
-			&.collapsing {
-				height: 0;
-				overflow: hidden;
-				transition: height 0.35s ease;
-			}
-
-			&.show {
-				height: auto !important;
-				overflow: visible !important;
-			}
 		}
 	}
 
-	.nav-item {
-		margin: 0 0.25rem;
+	.nav-link {
+		position: relative;
+		padding: 0.5rem 1rem;
+		color: var(--dark);
 
-		.nav-link {
-			position: relative;
-			padding: 0.5rem 1rem;
-			color: var(--dark);
-
-			&::after {
-				content: "";
-				position: absolute;
-				bottom: 0;
-				left: 1rem;
-				color: var(--accent);
-				right: 1rem;
-				height: 2px;
-				background: currentColor;
-				transform: scaleX(0);
-				transition: transform 0.3s ease;
-			}
-
-			&:hover::after,
-			&.active::after {
-				transform: scaleX(1);
-				color: var(--accent);
-			}
+		&::after {
+			content: "";
+			position: absolute;
+			bottom: 0;
+			left: 1rem;
+			right: 1rem;
+			height: 2px;
+			background: var(--accent);
+			transform: scaleX(0);
+			transition: transform 0.3s ease;
 		}
-	}
 
-	.navbar-toggler {
-		border: none;
-		padding: 0.5rem;
-		&:focus {
-			box-shadow: none;
+		&:hover::after,
+		&.active::after {
+			transform: scaleX(1);
 		}
 	}
 }
 
-.btn-outline-ksd {
-	display: inline-block;
-	font-weight: 400;
-	line-height: 1.5;
-	text-align: center;
-	text-decoration: none;
-	vertical-align: middle;
-	cursor: pointer;
-	user-select: none;
-	padding: 0.375rem 0.75rem;
-	font-size: 1rem;
-	border-radius: 0.25rem;
-	transition: all 0.15s ease-in-out;
-	background-color: transparent;
-	border: 1px solid var(--accent);
-
-	&:hover {
-		color: var(--dark);
-		background-color: var(--accent);
-		border-color: var(--accent);
-	}
-
-	&:active,
-	&:focus {
-		color: var(--dark);
-		background-color: var(--accent);
-		border-color: var(--accent);
-		box-shadow: 0 0 0 0.25rem rgba(103, 198, 176, 0.5);
-	}
-
-	&:disabled {
-		color: var(--accent);
-		background-color: transparent;
-		opacity: 0.65;
-	}
-}
-
-/* ==================== IMAGE STYLES ==================== */
+/* ==========================================================================
+   5. PROJECT HEADERS & MEDIA UTILITIES
+   ========================================================================== */
 .img-fluid {
 	width: 100%;
 	height: auto;
-}
-
-.logolight {
-	filter: saturate(100%) brightness(4);
-}
-
-.logogreen {
-	filter: invert(72%) sepia(55%) saturate(288%) hue-rotate(116deg)
-		brightness(87%) contrast(94%);
-}
-
-.icon {
-	background: var(--accent);
-	-webkit-mask-image: url(/logo.svg);
-	mask-image: url(/logo.svg);
-}
-
-.portfolio-frame {
-	position: relative;
-	overflow: hidden;
-}
-
-.portfolio-image {
-	width: 100%;
-	height: auto;
-	transition: transform 0.3s ease;
-}
-
-.portfolio-frame:hover .portfolio-image {
-	transform: scale(1.07);
-}
-
-.portfolio-overlay {
-	position: absolute;
-	bottom: 0;
-	left: 0;
-	right: 0;
-	background: rgba(0, 0, 0, 0.7);
-	color: white;
-	padding: 1em;
-	transform: translateY(100%);
-	transition: transform 0.3s ease;
-}
-
-.portfolio-frame:hover .portfolio-overlay {
-	transform: translateY(0);
-}
-
-#about-image {
-	filter: saturate(0%) contrast(0%);
-	color: var(--accent);
-
-	&:hover {
-		filter: brightness(100%) contrast(100%);
-		transition: transform 0.25s cubic-bezier(0.17, 0.67, 0.83, 0.67) 0s;
-		transform: scaleX(1.15) scaleY(1.15);
-	}
-}
-
-/* ==================== HEADER IMAGES ==================== */
-.scrubbingscrolling {
-	background-image:
-		linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8)),
-		url("/images/channel4/1920/jpg/scrubbingscolling.jpg");
-}
-
-.wwescrolling {
-	background-image:
-		linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8)),
-		image-set(
-			url("/images/wwe/wwe-network-phone-tile-1920.avif") type("image/avif"),
-			url("/images/wwe/wwe-network-phone-tile-1920.webp") type("image/webp"),
-			url("/images/wwe/wwe-network-phone-tile-1920.jpg") type("image/jpeg")
-		);
-	background-attachment: fixed;
-	background-size: cover;
-	background-position: center;
-	background-repeat: no-repeat;
-	min-height: 100vh;
-	color: #fff;
 }
 
 .project-header {
@@ -247,71 +204,31 @@ body {
 	background-repeat: no-repeat;
 }
 
-/* ==================== LAYOUT STYLES ==================== */
-/* Retained legacy styles cleanly for marketing index layout frameworks */
-.container-fluid {
-	padding: 1rem 0;
-	@media (min-width: 62em) {
-		padding: 2rem 0;
-	}
-}
-
-.overlaytext {
-	position: absolute;
-	top: 40%;
-	left: 50%;
-	color: var(--light);
-	transform: translate(-50%, -50%);
-	text-align: center;
-	width: 80%;
-	z-index: 10;
-}
-
-.header-slant {
+.video-container {
 	position: relative;
-	z-index: 200;
-	width: 100%;
+	padding-bottom: 56.25%;
 	height: 0;
-	pointer-events: none;
+	overflow: hidden;
 
-	&.right {
-		margin-top: calc(-10vw + 1px);
-		border-top: 8vw solid transparent;
-		border-right: 100vw solid white;
+	iframe,
+	object,
+	embed {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
 	}
 }
-.container {
-	padding: 1rem;
-}
 
-.row {
-	padding: 1rem 0;
-}
-
-.nopadding {
-	padding: 0 !important;
-}
-
-.fullwidthimage {
-	padding: 0 !important;
-	margin: 0 !important;
-	width: 100vw;
-}
-
-.cover {
-	width: 100vw;
-	height: 107vh;
-	background-size: cover;
-	background-position: center center;
-	background-attachment: fixed;
-	background-repeat: no-repeat;
-}
-
-/* ==================== FOOTER & SOCIAL ==================== */
+/* ==========================================================================
+   6. FOOTER & SOCIAL
+   ========================================================================== */
 footer {
 	background-color: var(--dark);
 	color: var(--light);
 	text-align: center;
+	padding: 3rem 0;
 
 	a {
 		color: var(--light);
@@ -319,8 +236,7 @@ footer {
 		transition: color 0.2s ease-in-out;
 		text-decoration: none;
 
-		&:hover,
-		&:focus {
+		&:hover {
 			color: var(--accent);
 		}
 	}
@@ -343,9 +259,7 @@ ul.social-network {
 		border-radius: 50%;
 		background-color: var(--light);
 		font-size: 1.25rem;
-		transition:
-			background-color 0.3s ease,
-			transform 0.3s ease;
+		transition: transform 0.3s ease;
 
 		&:hover {
 			transform: scale(1.1);
@@ -353,129 +267,18 @@ ul.social-network {
 
 		i {
 			color: var(--dark);
-			transition: color 0.3s ease;
-		}
-
-		&.icoTwitch:hover i {
-			color: #9146ff;
-		}
-		&.icoYoutube:hover i {
-			color: #e1002d;
-		}
-		&.icoLinkedin:hover i {
-			color: #007bb7;
-		}
-		&.icoBsky:hover i {
-			color: #0a7aff;
 		}
 	}
-}
-
-/* ==================== ANIMATIONS ==================== */
-@keyframes pop-in {
-	0% {
-		opacity: 0;
-		transform: translateY(-4rem) scale(0.8);
-	}
-	100% {
-		opacity: 1;
-		transform: none;
-	}
-}
-
-.animate-pop-in {
-	animation: pop-in 0.6s cubic-bezier(0.17, 0.67, 0.83, 0.67) forwards;
-	opacity: 0;
-}
-
-.header-title {
-	animation-delay: 0.8s;
-}
-.header-subtitle {
-	animation-delay: 1s;
-}
-
-.image-animation {
-	opacity: 0;
-	transition: opacity 0.4s 0.25s ease-in-out;
-	will-change: opacity;
-
-	&.is-visible {
-		opacity: 1;
-	}
-}
-
-/* ==================== UTILITY CLASSES ==================== */
-.dark {
-	color: var(--dark);
-}
-.bg-dark {
-	background-color: var(--dark);
-}
-.colorksd {
-	color: var(--accent);
-}
-.bg-ksd {
-	background-color: var(--accent) !important;
-}
-
-/* ==================== VIDEO ==================== */
-.video-container {
-	position: relative;
-	padding-bottom: 56.25%;
-	padding-top: 0;
-	height: 0;
-	overflow: hidden;
-
-	iframe,
-	object,
-	embed {
-		position: absolute;
-		top: 0;
-		left: 0;
-		width: 100%;
-		height: 100%;
-	}
-}
-
-.nav-tabs {
-	--bs-nav-tabs-border-width: 2;
-	--bs-nav-tabs-link-active-color: var(--accent);
-}
-.nav {
-	--bs-nav-link-padding-x: 1rem;
-	--bs-nav-link-padding-y: 0.5rem;
-	--bs-nav-link-color: var(--dark);
-	--bs-nav-link-hover-color: var(--accent);
-}
-
-.nav-link {
-	padding-left: 2em;
-	padding-right: 2em;
-	color: var(--dark);
-	transition: color 0.2s ease-in-out;
-}
-.nav-tabs .nav-item.show .nav-link {
-	background-color: var(--wwe);
-	border-color: var(--wwe);
-}
-.sticky-col {
-	position: sticky;
-	top: 5rem;
-	align-self: flex-start;
 }
 
 /* ==========================================================================
-   2026 ENFORCED ATOMIC DESIGN SYSTEM (NO SPECIFICITY BATTLES)
+   7. 2026 ENFORCED ATOMIC COMPONENT ENGINE (Core Decoupled Architecture)
    ========================================================================== */
-
-/* Enforces identical padding metrics on every case-study row block smoothly */
 .portfolio-component {
 	padding-block: var(--portfolio-spacing-y) !important;
 	margin-block: 0 !important;
 }
 
-/* Enforces uniform paragraph flow constraints inside text nodes cleanly */
 .portfolio-component p {
 	margin-bottom: 1.5rem;
 }
@@ -483,7 +286,7 @@ ul.social-network {
 	margin-bottom: 0;
 }
 
-/* Enforces absolute image shadows, alignment aspect bounds, and edge borders */
+/* Standardizes all media styling globally across your dynamic blocks */
 .portfolio-media-container img,
 .portfolio-media-container video {
 	display: block;
@@ -491,4 +294,43 @@ ul.social-network {
 	height: auto;
 	border-radius: var(--portfolio-img-radius);
 	box-shadow: var(--portfolio-img-shadow);
+}
+
+/* Unified Modern CSS Grid Engine for Media Grids */
+.image-grid-container {
+	display: grid;
+	gap: 24px;
+	width: 100%;
+	margin-inline: auto;
+
+	&.image-grid--2 {
+		grid-template-columns: repeat(2, minmax(0, 1fr));
+	}
+
+	&.image-grid--3 {
+		grid-template-columns: repeat(3, minmax(0, 1fr));
+	}
+}
+
+.image-grid__item {
+	position: relative;
+	min-width: 0;
+	margin: 0;
+	overflow: hidden;
+	border-radius: var(--portfolio-img-radius);
+
+	picture,
+	img {
+		display: block;
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+	}
+}
+
+@media (max-width: 767.98px) {
+	.image-grid-container {
+		grid-template-columns: minmax(0, 1fr) !important;
+		gap: 16px !important;
+	}
 }

@@ -2,6 +2,7 @@
 layout: artwork
 slug: archer
 ---
+
 <!-- Project -->
 <div class="container-fluid">
     <div class="container">
@@ -59,6 +60,7 @@ slug: archer
 
         </div>
     </div>
+
 </div>
 <!-- Grid Navigation -->
 <div class=" container ">
@@ -93,7 +95,6 @@ slug: archer
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="description" content="Kieran Shalloo Illustration: Back to the Future Poster">
 
-
     <!-- Bootstrap CSS -->
 
     <link href=" https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css " rel="stylesheet">
@@ -107,9 +108,8 @@ slug: archer
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@200;300;700&display=swap" rel="stylesheet">
 
     <link rel="preload" href="/webstyle.css" as="style">
-    <link rel="preload" href="/text.css" as="style">
     <link rel="stylesheet" type="text/css" href="/webstyle.css">
-    <link rel="stylesheet" type="text/css" href="/text.css">
+
 
 
 
@@ -129,8 +129,6 @@ slug: archer
     </script>
 
 </head>
-
-
 
 <body>
 

@@ -1,0 +1,32 @@
+{% assign col_w = include.block.width | default: 8 %}
+{% assign col_off = include.block.offset | default: 2 %}
+{% assign title_off = include.block.title_offset | default: 1 %}
+
+<section class="container-fluid portfolio-component text-block-component py-4">
+    <div class="container">
+        <div class="row">
+            {% if include.block.main_title %}
+            <div class="col-md-{{ col_w }} offset-md-{{ title_off }} mb-3">
+                <h2 style="color: var(--project-accent, inherit);">
+                    {{ include.block.main_title }}
+                </h2>
+            </div>
+            {% endif %}
+
+            {% if include.block.sections %}
+            <div class="col-md-{{ col_w }} offset-md-{{ col_off }}">
+                {% for sec in include.block.sections %}
+                {% if sec.subtitle %}
+                <h3 class="mt-4 mb-3">{{ sec.subtitle }}</h3>
+                {% endif %}
+                {% if sec.text %}
+                <div class="text-content">
+                    {{ sec.text | markdownify }}
+                </div>
+                {% endif %}
+                {% endfor %}
+            </div>
+            {% endif %}
+        </div>
+    </div>
+</section>

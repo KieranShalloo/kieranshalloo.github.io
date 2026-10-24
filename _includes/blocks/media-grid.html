@@ -1,0 +1,23 @@
+{% assign grid_max_width = include.block.width | default: "1040" %}
+{% assign columns = include.block.columns | default: include.block.items.size | default: 2 %}
+
+<div class="container-fluid portfolio-component">
+    <div class="row justify-content-center">
+        <div class="col-12" style="max-width: {{ grid_max_width }}px">
+            <div class="image-grid-container image-grid--{{ columns }}">
+                {% for item in include.block.items %}
+                <div class="image-grid__item">
+                    <div class="portfolio-media-container">
+                        {% include responsive-image.html name=item.name alt=item.alt sizes=true %}
+                    </div>
+                    {% if item.caption %}
+                    <figcaption class="figure-caption text-center mt-2">
+                        {{ item.caption }}
+                    </figcaption>
+                    {% endif %}
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</div>

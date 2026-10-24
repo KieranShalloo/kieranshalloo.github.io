@@ -2,7 +2,10 @@
 layout: default
 ---
 
-<article class="project-content-wrapper" style="--project-accent: {{ page.theme_color | default: 'var(--accent)' }};">
+{% assign project = site.data.portfolio[page.slug] %}
+
+<article class="project-content-wrapper"
+    style="--project-accent: {{ project.theme_color | default: 'var(--accent)' }};">
 
     <!-- Header block -->
     {% include project-header.html project=page.slug %}
@@ -13,17 +16,19 @@ layout: default
             <div class="row g-4">
                 <div class="col-md-6 offset-md-2">
                     <h6 class="text-muted">Brief</h6>
-                    <p>{{ page.brief | newline_to_br }}</p>
+                    <div class="project-brief-text">
+                        {{ project.brief | markdownify }}
+                    </div>
                 </div>
                 <div class="col-md-3 offset-md-1">
-                    {% if page.meta_agency %}<h6 class="text-muted">Agency</h6>
-                    <p>{{ page.meta_agency }}</p>{% endif %}
-                    {% if page.meta_client %}<h6 class="text-muted">Client</h6>
-                    <p>{{ page.meta_client }}</p>{% endif %}
-                    {% if page.meta_date %}<h6 class="text-muted">Project Date</h6>
-                    <p>{{ page.meta_date }}</p>{% endif %}
-                    {% if page.meta_role %}<h6 class="text-muted">Role</h6>
-                    <p>{{ page.meta_role }}</p>{% endif %}
+                    {% if project.meta_agency %}<h6 class="text-muted">Agency</h6>
+                    <p>{{ project.meta_agency }}</p>{% endif %}
+                    {% if project.meta_client %}<h6 class="text-muted">Client</h6>
+                    <p>{{ project.meta_client }}</p>{% endif %}
+                    {% if project.meta_date %}<h6 class="text-muted">Project Date</h6>
+                    <p>{{ project.meta_date }}</p>{% endif %}
+                    {% if project.meta_role %}<h6 class="text-muted">Role</h6>
+                    <p>{{ project.meta_role }}</p>{% endif %}
                 </div>
             </div>
         </div>
@@ -31,13 +36,22 @@ layout: default
 
     <!-- Main Component Engine Loop -->
     <div class="project-builder">
-        {% for block in page.page_sections %}
+        {% for block in project.page_sections %}
 
-        {% if block.type == "text" %}
-        {% include text-block.html block=block %}
+        {% if block.type == "text-block" %}
+        {% include blocks/text-block.html block=block %}
 
-        {% elsif block.type == "media_grid" %}
-        {% include media-grid.html block=block %}
+        {% elsif block.type == "text-details" %}
+        {% include blocks/text-details.html block=block %}
+
+        {% elsif block.type == "image" %}
+        {% include blocks/image.html block=block %}
+
+        {% elsif block.type == "media_grid" or block.type == "media-grid" %}
+        {% include blocks/media-grid.html block=block %}
+
+        {% elsif block.type == "custom_html" or block.type == "custom" %}
+        {% include blocks/custom.html block=block %}
 
         {% endif %}
 
