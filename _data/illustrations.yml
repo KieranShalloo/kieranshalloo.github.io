@@ -36,9 +36,9 @@
   description: "Halloween meets Christmas in this Tim Burton inspired illustration"
   dimensions: "297 x 420mm"
   gallery:
-    - jpg: "/images/illustration/nightmare-before-christmas.jpg"
-      webp: "/images/illustration/nightmare-before-christmas.webp"
-      avif: "/images/illustration/nightmare-before-christmas.avif"
+    - jpg: "/images/illustration/nightmare.jpg"
+      webp: "/images/illustration/nightmare.webp"
+      avif: "/images/illustration/nightmare.avif"
       alt: "Jack Skellington from Nightmare Before Christmas"
   thumb:
     jpg: "/images/illustration/thumbs/nightmare-thumb.jpg"
