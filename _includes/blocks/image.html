@@ -1,13 +1,15 @@
-{% assign img_width = include.block.width | default: "1440" %}
+{% assign is_full = include.block.full_width | default: false %}
 
-<div class="container-fluid portfolio-component">
-    <div class="row justify-content-center">
-        <div class="col-12" style="max-width: {{ img_width }}px;">
+<div
+    class="{% if is_full %}container-fluid p-0 my-5 full-bleed-block{% else %}container my-5{% endif %} portfolio-component">
+    <div class="row g-0 justify-content-center">
+        <div class="col-12">
             <div class="portfolio-media-container">
                 {% include responsive-image.html
                 name=include.block.name
+                mobile_name=include.block.mobile_name
                 alt=include.block.alt
-                sizes=true
+                class="img-fluid w-100 d-block"
                 %}
             </div>
             {% if include.block.caption %}

@@ -1,21 +1,31 @@
 {% assign loading = include.loading | default: 'lazy' %}
 {% assign decoding = include.decoding | default: 'async' %}
-{% assign use_sizes = include.sizes | default: true %}
-{% assign img_width = include.width | default: 768 %}
+{% assign base_name = include.name %}
+{% assign ext = include.ext | default: 'png' %}
 
-<figure class="{{ include.container_class | default: 'portfolio-image' }}">
+{% comment %} Set Cloudflare CDN prefixes only in production {% endcomment %}
+{% if jekyll.environment == "production" %}
+{% assign cdn_mobile = "/cdn-cgi/image/width=1179,format=auto,quality=85" %}
+{% assign cdn_desktop = "/cdn-cgi/image/width=2880,format=auto,quality=85" %}
+{% else %}
+{% assign cdn_mobile = "" %}
+{% assign cdn_desktop = "" %}
+{% endif %}
+
+<figure class="{{ include.container_class | default: 'portfolio-image m-0' }}">
   <picture>
-    <!-- WebP Source with 2-point srcset -->
-    <source type="image/webp" srcset="
-        {{ '/images/' | append: include.name | append: '-768.webp' }} 768w,
-        {{ '/images/' | append: include.name | append: '-1440.webp' }} 1440w
-      " sizes="(max-width: 768px) 768px, 1440px">
+    <!-- 1. Dedicated Mobile Crop: Loaded ONLY when mobile_name is passed in YAML -->
+    {% if include.mobile_name %}
+    <source media="(max-width: 767px)" srcset="{{ cdn_mobile }}/images/{{ include.mobile_name }}.{{ ext }}">
+    {% else %}
+    <source media="(max-width: 767px)" srcset="{{ cdn_mobile }}/images/{{ base_name }}.{{ ext }}">
+    {% endif %}
 
-    <!-- JPEG Fallback with 2-point srcset -->
-    <img src="{{ '/images/' | append: include.name | append: '-768.jpg' }}" srcset="
-        {{ '/images/' | append: include.name | append: '-768.jpg' }} 768w,
-        {{ '/images/' | append: include.name | append: '-1440.jpg' }} 1440w
-      " sizes="(max-width: 768px) 768px, 1440px" width="{{ img_width }}" decoding="{{ decoding }}"
-      loading="{{ loading }}" class="img-fluid {{ include.class }}" alt="{{ include.alt | escape }}">
+    <!-- 2. Desktop Master -->
+    <source media="(min-width: 768px)" srcset="{{ cdn_desktop }}/images/{{ base_name }}.{{ ext }}">
+
+    <!-- 3. Fallback Image Tag -->
+    <img src="{{ cdn_desktop }}/images/{{ base_name }}.{{ ext }}" alt="{{ include.alt | escape }}"
+      class="img-fluid {{ include.class }}" loading="{{ loading }}" decoding="{{ decoding }}">
   </picture>
 </figure>

@@ -23,7 +23,6 @@ page_sections:
     alt: "WWE Network Screen Tile"
 
   # 2. Redesign & Consistency Text Block
-  # Text Block 1: Main Title + Intro Paragraph (No Subtitle) + Subtitled Section
   - type: "text-block"
     main_title: "Redesign"
     sections:
@@ -102,6 +101,7 @@ page_sections:
     name: "wwe/article"
     alt: "WWE Network download interface"
     caption: "High-fidelity prototype showing download states"
+    mobile_name: "wwe/article-mobile" # <--- Ensure this key is present!
 
   - type: "text-block"
     sections:
@@ -114,4 +114,14 @@ page_sections:
     main_title: "One unified experience"
     sections:
       - text: |
-          The approach for the client was to give the end-user a unified experience across multiple devices. The base WWE app was released on 10 devices as well as the variants of this hardware and we didn’t want that to limit any
+          The approach for the client was to give the end-user a unified experience across multiple devices. The base WWE app was released on 10 devices as well as the variants of this hardware and we didn’t want that to limit any.
+
+  - type: "image"
+    name: "wwe/tileangle"
+    alt: "WWE Network Screen Tile"
+    full_width: true
+
+  - type: "image"
+    name: "wwe/tileangle"
+    alt: "WWE Network Screen Tile"
+    full_width: false
