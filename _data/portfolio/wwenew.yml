@@ -1,12 +1,12 @@
-title: "WWE Network"
-description: "Senior UX/UI design work for the award-winning WWE Network relaunch."
-theme_color: "var(--wwe)"
+title: 'WWE Network'
+description: 'Senior UX/UI design work for the award-winning WWE Network relaunch.'
+theme_color: 'var(--wwe)'
 
 # Meta & Brief Header
-meta_agency: "Massive Interactive / Deltatre"
-meta_client: "World Wrestling Entertainment"
-meta_date: "2020"
-meta_role: "Senior UX/UI Designer (contractor)"
+meta_agency: 'Massive Interactive / Deltatre'
+meta_client: 'World Wrestling Entertainment'
+meta_date: '2020'
+meta_role: 'Senior UX/UI Designer (contractor)'
 
 brief: |
   WWE relaunched its On Demand video service in Q2 of 2019. The app showcases live wrestling events as well as the whole past catalogue of WWE shows, original content related to Sports Entertainment, and short-form clips.
@@ -18,13 +18,14 @@ brief: |
 # Component Builder Engine
 page_sections:
   # 1. Hero Screen Tile Banner
-  - type: "image"
-    name: "wwe/tileangle"
-    alt: "WWE Network Screen Tile"
+  - type: 'image'
+    name: 'wwe/tileangle'
+    alt: 'WWE Network Screen Tile'
+    full_width: true
 
   # 2. Redesign & Consistency Text Block
-  - type: "text-block"
-    main_title: "Redesign"
+  - type: 'text-block'
+    main_title: 'Redesign'
     sections:
       # Section with NO subtitle
       - text: |
@@ -35,7 +36,7 @@ page_sections:
           This gave more time to focus on the conceptual design challenges rather than the repetitive smaller tasks.
 
       # Section WITH a subtitle
-      - subtitle: "Consistency"
+      - subtitle: 'Consistency'
         text: |
           The WWE Network is a streaming service which allows users to view any available content from WWE’s 70-year history. Subscribers can use the interface to invoke any event and any match from the library to watch on-demand as well as having live access to a 24-hour linear streaming channel showing curated popular content.
 
@@ -44,27 +45,27 @@ page_sections:
           When I was brought aboard the project there was a base level of the design work completed which allowed me to expand upon a base and start to explore a more creative next step for the project.
 
   # 3. Design System Pillars (Symbols, Buttons, Devices)
-  - type: "text-details"
+  - type: 'text-details'
     items:
-      - subtitle: "Symbols"
-        text: "By creating reoccurring component-based design system we could simplify the work across projects as well as devices. We ensured that the components related directly to the same components used on the developer side to keep the project simple and the naming conventions consistent."
-      - subtitle: "Buttons"
-        text: "Across the UI the buttons for the experience were recreated to be easier to use and to work across devices. By using expanding buttons we could create one component which covered every use case without remaking the design each time."
-      - subtitle: "Devices"
-        text: "With an On Demand service the primary action is usually to play content. I spent a big chunk of time trying to make the playback experience consistent across devices. The user should always be able to face a common UX experience regardless of where they are watching content."
+      - subtitle: 'Symbols'
+        text: 'By creating reoccurring component-based design system we could simplify the work across projects as well as devices. We ensured that the components related directly to the same components used on the developer side to keep the project simple and the naming conventions consistent.'
+      - subtitle: 'Buttons'
+        text: 'Across the UI the buttons for the experience were recreated to be easier to use and to work across devices. By using expanding buttons we could create one component which covered every use case without remaking the design each time.'
+      - subtitle: 'Devices'
+        text: 'With an On Demand service the primary action is usually to play content. I spent a big chunk of time trying to make the playback experience consistent across devices. The user should always be able to face a common UX experience regardless of where they are watching content.'
 
   # 4. Styleguide Overview
-  - type: "image"
-    name: "wwe/styleguide"
-    alt: "WWE Styleguide Layout"
-    caption: "Styleguide layout"
+  - type: 'image'
+    name: 'wwe/styleguide'
+    alt: 'WWE Styleguide Layout'
+    caption: 'Styleguide layout'
     full_width: true
 
   # 5. Bringing Fans Closer & Downloads Intro
-  - type: "text-block"
-    main_title: "Bringing the fans closer"
+  - type: 'text-block'
+
     sections:
-      - subtitle: "Downloads"
+      - subtitle: 'Downloads'
         text: |
           The fans are the central focus of the WWE Network redesign and there was extensive user research into exactly what the fans wanted from the service.
 
@@ -74,54 +75,47 @@ page_sections:
 
           We wanted to give users the ability to download content that they were paying for. I created an interactive prototype to showcase how that would work.
 
-  # 6. Side-by-Side Download Prototypes
-  - type: "media_grid"
-    items:
-      - name: "wwe/downloadflow"
-        alt: "Downloading state"
-        caption: "Showcasing the download function"
-      - name: "wwe/article"
-        alt: "Download list state"
-        caption: "Showcasing the download function"
-
   # 7. High-Fidelity Prototype Feature Banner
-  - type: "image"
-    name: "wwe/downloadflow"
-    alt: "WWE Network download interface"
-    caption: "High-fidelity prototype showing download states"
+  - type: 'image'
+    name: 'wwe/downloadflow'
+    alt: 'WWE Network download interface'
+    caption: 'We wanted to make it easy for users to see the progress of their downloads, this flow shows the user journey to download content'
+    full_width: true
 
   # 8. Articles, News & Clips Text
-  - type: "text-block"
+  - type: 'text-block'
     sections:
-      - subtitle: "Articles / News"
+      - subtitle: 'Articles / News'
         text: |
           We also set up the site map to allow the latest news and articles based on the WWE superstars to be integrated into the app. This allowed us to show the top information from the WWE.com homepage as well as hyperlink out to the website, which would then have some additional information and other areas of interest for the end user such as tickets and the WWE Shop for merchandise.
 
-  - type: "image"
-    name: "wwe/article"
-    alt: "WWE Network download interface"
-    caption: "High-fidelity prototype showing download states"
-    mobile_name: "wwe/article-mobile" # <--- Ensure this key is present!
+  - type: 'image'
+    name: 'wwe/article'
+    alt: 'WWE Network download interface'
+    caption: 'High-fidelity prototype showing download states'
+    mobile_name: 'wwe/article-mobile'
 
-  - type: "text-block"
+  - type: 'text-block'
     sections:
-      - subtitle: "Clips / Highlights"
+      - subtitle: 'Clips / Highlights'
         text: |
           Utilising the Player functionality allowed us to bring highlights from the latest events for the selected wrestler, allowing the user to jump directly into the match involving their favourites. This was seen as a great way for the user to interact with the huge library and opened the doors into collections and older content which could be pushed from a business perspective.
 
   # 9. One Unified Experience Dark Callout Banner
-  - type: "text-block"
-    main_title: "One unified experience"
+  - type: 'text-block'
+    main_title: 'One unified experience'
     sections:
       - text: |
           The approach for the client was to give the end-user a unified experience across multiple devices. The base WWE app was released on 10 devices as well as the variants of this hardware and we didn’t want that to limit any.
 
-  - type: "image"
-    name: "wwe/tileangle"
-    alt: "WWE Network Screen Tile"
-    full_width: true
+  - type: 'text-block'
+    sections:
+      - subtitle: 'Superstars / Favourites'
+        text: |
+          The fans are the central focus of the WWE Network redesign and there was extensive user research into exactly what the fans wanted from the service. One such factor that appeared was that the wrestlers themselves are one of the most intriguing piece of the whole product. WWE decided that a section of the app should be based on the superstars themselves, giving users clear and easy access to information about their stars as well as easy access to career-defining moments and achievements. Alongside this we also set to work on creating journies to content such as Biographies, Champions and timelines of championships as well as extended views of the WWE Superstars careers.
 
-  - type: "image"
-    name: "wwe/tileangle"
-    alt: "WWE Network Screen Tile"
-    full_width: false
+  - type: 'image'
+    name: 'wwe/tv'
+    alt: 'WWE Network download interface'
+    caption: 'High-fidelity prototype showing download states'
+    mobile_name: 'wwe/tv-mobile'

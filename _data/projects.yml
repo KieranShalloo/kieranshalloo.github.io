@@ -1,3 +1,10 @@
+- id: "which"
+  layout: default
+  title: "which"
+  dark_theme: true
+  description: "A showcase of Which? design strategy and leadership work"
+  project_header_id: "which"
+
 - id: "c4-rebrand"
   layout: default
   title: "4 Rebrand"
@@ -33,18 +40,6 @@
     client: "Sony London Studio"
     project_date: "2012"
     role: "Graphic Designer (Contract)"
-
-# - id: "channel-4"
-#   layout: default
-#   title: "Channel 4"
-#   dark_theme: false
-#   description: "A showcase of Channel 4 UX/UI design work"
-#   project_header_id: "channel4"
-#   meta:
-#     brief: "I was engaged at Channel 4 as a Principal-level Design Contractor to lead a full product redesign. My focus was on defining the visual, interaction, and motion foundations, including the creation of a tokenised motion design system. This work was intentionally aligned with the newly selected back-end technology stack and engineering partner to ensure feasibility, performance, and long-term scalability. This project is under NDA and pending launch. As a result, this case study focuses on design leadership, problem framing, stakeholder alignment and decision-making rather than post-launch metrics."
-#     client: "Channel 4"
-#     project_date: "2025 - 2026"
-#     role: "Principle Designer (contractor)"
 
 - id: "creature"
   layout: default
@@ -83,17 +78,11 @@
     project_date: "2024"
     role: "Senior UX/UI Designer (contractor)"
 
-- id: "google-trains"
+- id: "googletrain"
   layout: default
   title: "Google Trains"
-  dark_theme: true
   description: "A UI/UX portfolio page showing work for Trainline by Kieran Shalloo"
   project_header_id: "trainline"
-  meta:
-    brief: "To create ways to reassure passengers coming to Trainline from Google, communicating the positive propositions of the product."
-    client: "Trainline"
-    project_date: "2024"
-    role: "Senior UX/UI Designer (contractor)"
 
 - id: "netflix"
   layout: default
@@ -155,10 +144,9 @@
     project_date: "2017 - 2018"
     role: "Lead Product Designer"
 
-- id: "tramline"
+- id: "trainline"
   layout: default
-  title: "Tramline"
-  dark_theme: true
+  title: "Trainline"
   description: "A UI/UX portfolio page showing work for Trainline by Kieran Shalloo"
   project_header_id: "trainlineengagement"
   meta:
@@ -193,7 +181,7 @@
 
 - id: "wwe-network"
   layout: default
-  title: "www"
+  title: "wwe"
   dark_theme: false
   description: "A UI/UX portfolio page showing work for WWE Network by Kieran Shalloo"
   project_header_id: "wwe"
@@ -247,7 +235,7 @@
   description: "A UI/UX portfolio page showing work for YouView Help by Kieran Shalloo"
   project_header_id: "yvhelp"
   meta:
-    brief: "Update the Help app on YouView platform to bring it more in-line with the Next Generation user experience. Ensure that the design correspond with the YouView, BT and TalkTalk support sites whilst retaining the ability for users to troubleshoot their problems. Customers who currently use the service but may have difficulty using the product due to sight-related issues. Customers who wish to have a more accessible TV service. The legacy YouView help menu was built as a way for customers to solve the problems they were facing in their own time. The depreciation of the legacy UI and the move to the Next Generation interface pushed forward the need to bring the Help App into line with the revamped service. I was chosen to lead this project working alongside a junior designer and an intern, helping to guide them towards a final product"
+    brief: "Update the Help app on YouView platform to bring it more in-line with the Next Generation user experience. Ensure that the design correspond with the YouView, BT and TalkTalk support sites whilst retaining the ability for users to troubleshoot their problems."
     client: "YouView TV Ltd"
     project_date: "2018-2019"
     role: "Lead Product Designer"

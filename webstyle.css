@@ -1,66 +1,82 @@
 /* ==========================================================================
-   1. DESIGN TOKENS & ATOMIC VARIABLES (2026 Standards)
+1. DESIGN TOKENS & OKLCH COLOR SYSTEMS (Fully Preserved Brand Tokens)
    ========================================================================== */
 :root {
-	--dark: #343434;
-	--accent: #67c6b0;
-	--light: #e6e6e6;
-	--white: #ecfaff;
+  --dark: oklch(25% 0.01 0);
+  --accent: oklch(75% 0.15 170);
+  --light: oklch(92% 0.005 0);
+  --white: oklch(97% 0.01 220);
 
-	/* Brand Colours */
-	--youview: #00a6ff;
-	--wwe: #d0021b;
-	--virgin: #5f2878;
-	--sony: #3ddb86;
-	--creature: #49de8c;
-	--channel4: #aaeb89;
-	--trainline: #00a88f;
-	--google: #4285f4;
-	--stp: #b672de;
+  /* Brand Colours (Converted to OKLCH, 100% Variable Names Retained) */
+  --youview: oklch(72% 0.14 235);
+  --wwe: oklch(52% 0.22 25);
+  --virgin: oklch(38% 0.2 320);
+  --sony: oklch(78% 0.18 150);
+  --creature: oklch(80% 0.17 155);
+  --channel4: oklch(90% 0.18 125);
+  --trainline: oklch(65% 0.15 175);
+  --google: oklch(60% 0.2 260);
+  --stp: oklch(62% 0.19 310);
 
-	/* Atomic Layout & Component Tokens */
-	--portfolio-spacing-y: clamp(3rem, 6vw, 5rem);
-	--portfolio-img-radius: 8px;
-	--portfolio-img-shadow:
-		0 15px 35px rgba(0, 0, 0, 0.07), 0 1px 3px rgba(0, 0, 0, 0.04);
-
-	/* Figma Grid Integration Tokens */
-	--bs-gutter-x: 24px;
+  /* Atomic Layout & Component Tokens */
+  --portfolio-spacing-y: clamp(3rem, 6vw, 5rem);
+  --portfolio-img-radius: 8px;
+  --portfolio-img-shadow:
+    0 15px 35px rgba(0, 0, 0, 0.07), 0 1px 3px rgba(0, 0, 0, 0.04);
 }
 
 /* ==========================================================================
-   2. FIGMA GRID SYSTEM INTEGRATION (2026 Layout Convention)
-   ========================================================================== */
-@media (min-width: 1400px) {
-	.container,
-	.container-lg,
-	.container-md,
-	.container-sm,
-	.container-xl,
-	.container-xxl {
-		max-width: 100% !important;
-		padding-left: 200px !important;
-		padding-right: 200px !important;
-	}
-}
-
-.row {
-	--bs-gutter-x: 24px;
-}
-
-/* ==========================================================================
-   3. FLUID TYPOGRAPHY ENGINE (Outfit Font Family)
+2. LAYOUT & CONTAINER QUERIES
    ========================================================================== */
 html {
-	overflow-x: hidden;
+  overflow-x: hidden;
 }
 
 body {
-	font-family: "Outfit", sans-serif;
-	font-size: 16px;
-	color: var(--dark);
+  font-family: 'Outfit', sans-serif;
+  font-size: 16px;
+  color: var(--dark);
 }
 
+[data-bs-theme='dark'] body {
+  color: var(--light);
+}
+
+/* Enable Container Queries on Portfolio Components */
+.portfolio-component {
+  container-type: inline-size;
+  container-name: portfolio-block;
+  padding-block: var(--portfolio-spacing-y);
+  margin-block: 0;
+
+  p {
+    margin-bottom: 1.5rem;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
+@media (min-width: 1400px) {
+  .container.container,
+  .container-lg.container-lg,
+  .container-md.container-md,
+  .container-sm.container-sm,
+  .container-xl.container-xl,
+  .container-xxl.container-xxl {
+    max-width: 100%;
+    padding-left: 200px;
+    padding-right: 200px;
+  }
+}
+
+.row {
+  --bs-gutter-x: 24px;
+}
+
+/* ==========================================================================
+3. FLUID TYPOGRAPHY & HEADINGS
+   ========================================================================== */
 h1,
 h2,
 h3,
@@ -69,268 +85,260 @@ h5,
 h6,
 p,
 li {
-	font-family: "Outfit", sans-serif;
+  font-family: 'Outfit', sans-serif;
+  color: inherit;
 }
 
 h1 {
-	font-size: clamp(4em, 2.5rem + 6.6667vw, 6rem);
-	font-weight: 700;
+  font-size: clamp(4em, 2.5rem + 6.6667vw, 6rem);
+  font-weight: 700;
+  text-wrap: balance;
 }
 
 h2 {
-	font-size: clamp(2rem, 1.4375rem + 2.5vw, 2.75rem);
-	line-height: 1.23;
-	text-align: left;
-	font-weight: 200;
+  font-size: clamp(2rem, 1.4375rem + 2.5vw, 2.75rem);
+  line-height: 1.23;
+  font-weight: 200;
+  text-wrap: balance;
 }
 
 h3 {
-	font-size: clamp(1.5rem, 1.2rem + 1.6667vw, 2rem);
-	line-height: 1.23;
-	text-align: left;
-	font-weight: 200;
+  font-size: clamp(1.5rem, 1.2rem + 1.6667vw, 2rem);
+  line-height: 1.23;
+  font-weight: 200;
 }
 
 h4 {
-	font-size: clamp(1.375rem, 1.0938rem + 1.25vw, 1.75rem);
-	line-height: 2rem;
-	font-weight: 300;
+  font-size: clamp(1.375rem, 1.0938rem + 1.25vw, 1.75rem);
+  line-height: 2rem;
+  font-weight: 300;
 }
 
 h5 {
-	font-size: clamp(1.25rem, 1.0625rem + 0.8333vw, 1.5rem);
-	font-weight: 300;
+  font-size: clamp(1.25rem, 1.0625rem + 0.8333vw, 1.5rem);
+  font-weight: 300;
 }
 
 h6 {
-	font-size: clamp(1rem, 1.0313rem + 0.4167vw, 1.25rem);
-	font-weight: 700;
+  font-size: clamp(1rem, 1.0313rem + 0.4167vw, 1.25rem);
+  font-weight: 700;
 }
 
 p {
-	font-size: clamp(1rem, 1.0313rem + 0.4167vw, 1.25rem);
-	line-height: 1.5em;
-	font-weight: 300;
+  font-size: clamp(1rem, 1.0313rem + 0.4167vw, 1.25rem);
+  line-height: 1.5em;
+  font-weight: 300;
 }
 
 li {
-	font-size: 1.2rem;
-	line-height: 1.4rem;
-	font-weight: 300;
-	text-decoration: none;
+  font-size: 1.2rem;
+  line-height: 1.4rem;
+  font-weight: 300;
 }
 
 .figure-caption {
-	font-size: 1rem;
-	line-height: 3rem;
-	font-weight: 100;
+  font-size: 1rem;
+  line-height: 3rem;
+  font-weight: 100;
 }
 
 /* ==========================================================================
-   4. NAVIGATION
+4. NAVIGATION (Using Native Nesting)
    ========================================================================== */
 .navbar {
-	transition: all 0.3s ease;
-	background-color: var(--light) !important;
+  transition: all 0.3s ease;
+  background-color: var(--light);
 
-	.navbar-brand img {
-		transition:
-			transform 0.3s ease,
-			filter 0.3s ease;
-		width: 70px;
-		height: 70px;
-	}
+  .navbar-brand {
+    img {
+      transition:
+        transform 0.3s ease,
+        filter 0.3s ease;
+      width: 70px;
+      height: 70px;
+    }
 
-	.navbar-brand:hover img {
-		filter: invert(56%) sepia(43%) saturate(400%) hue-rotate(129deg);
-	}
+    &:hover img {
+      filter: invert(56%) sepia(43%) saturate(400%) hue-rotate(129deg);
+    }
+  }
 
-	.navbar-collapse {
-		@media (max-width: 767.98px) {
-			background: white;
-			padding: 1rem;
-			margin-top: 0.5rem;
-			box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
-			border-radius: 0.25rem;
-		}
-	}
+  .navbar-collapse {
+    @media (max-width: 767.98px) {
+      background: white;
+      padding: 1rem;
+      margin-top: 0.5rem;
+      box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+      border-radius: 0.25rem;
+    }
+  }
 
-	.nav-link {
-		position: relative;
-		padding: 0.5rem 1rem;
-		color: var(--dark);
+  .nav-link {
+    position: relative;
+    padding: 0.5rem 1rem;
+    color: var(--dark);
 
-		&::after {
-			content: "";
-			position: absolute;
-			bottom: 0;
-			left: 1rem;
-			right: 1rem;
-			height: 2px;
-			background: var(--accent);
-			transform: scaleX(0);
-			transition: transform 0.3s ease;
-		}
+    &::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 1rem;
+      right: 1rem;
+      height: 2px;
+      background: var(--accent);
+      transform: scaleX(0);
+      transition: transform 0.3s ease;
+    }
 
-		&:hover::after,
-		&.active::after {
-			transform: scaleX(1);
-		}
-	}
+    &:hover::after,
+    &.active::after {
+      transform: scaleX(1);
+    }
+  }
 }
 
 /* ==========================================================================
-   5. PROJECT HEADERS & MEDIA UTILITIES
+5. MEDIA & COMPONENTS (Enhanced with :has() and Container Queries)
    ========================================================================== */
 .img-fluid {
-	width: 100%;
-	height: auto;
+  width: 100%;
+  height: auto;
 }
 
 .project-header {
-	position: relative;
-	height: 70vh;
-	min-height: 400px;
-	overflow: hidden;
-	background:
-		linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)),
-		image-set(
-			var(--header-image-avif) type("image/avif"),
-			var(--header-image-webp) type("image/webp"),
-			var(--header-image-jpg) type("image/jpeg")
-		);
-	background-size: cover;
-	background-position: center;
-	background-repeat: no-repeat;
+  position: relative;
+  height: 70vh;
+  min-height: 400px;
+  overflow: hidden;
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)),
+    image-set(
+      var(--header-image-avif) type('image/avif'),
+      var(--header-image-webp) type('image/webp'),
+      var(--header-image-jpg) type('image/jpeg')
+    );
+  background-size: cover;
+  background-position: center;
 }
 
 .video-container {
-	position: relative;
-	padding-bottom: 56.25%;
-	height: 0;
-	overflow: hidden;
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
 
-	iframe,
-	object,
-	embed {
-		position: absolute;
-		top: 0;
-		left: 0;
-		width: 100%;
-		height: 100%;
-	}
+  iframe,
+  object,
+  embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
 }
 
-/* ==========================================================================
-   6. FOOTER & SOCIAL
-   ========================================================================== */
-footer {
-	background-color: var(--dark);
-	color: var(--light);
-	text-align: center;
-	padding: 3rem 0;
+.portfolio-media-container {
+  border-radius: var(--portfolio-img-radius);
+  box-shadow: var(--portfolio-img-shadow);
+  overflow: hidden;
 
-	a {
-		color: var(--light);
-		font-size: 0.875rem;
-		transition: color 0.2s ease-in-out;
-		text-decoration: none;
+  img,
+  video {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
 
-		&:hover {
-			color: var(--accent);
-		}
-	}
+  &:has(figcaption) {
+    padding-bottom: 0.5rem;
+  }
 }
 
-ul.social-network {
-	list-style: none;
-	padding: 0;
-	margin: 1rem 0 0;
-	display: flex;
-	justify-content: center;
-	gap: 0.5rem;
-
-	li a {
-		display: inline-flex;
-		align-items: center;
-		justify-content: center;
-		width: 42px;
-		height: 42px;
-		border-radius: 50%;
-		background-color: var(--light);
-		font-size: 1.25rem;
-		transition: transform 0.3s ease;
-
-		&:hover {
-			transform: scale(1.1);
-		}
-
-		i {
-			color: var(--dark);
-		}
-	}
-}
-
-/* ==========================================================================
-   7. 2026 ENFORCED ATOMIC COMPONENT ENGINE (Core Decoupled Architecture)
-   ========================================================================== */
-.portfolio-component {
-	padding-block: var(--portfolio-spacing-y) !important;
-	margin-block: 0 !important;
-}
-
-.portfolio-component p {
-	margin-bottom: 1.5rem;
-}
-.portfolio-component p:last-child {
-	margin-bottom: 0;
-}
-
-/* Standardizes all media styling globally across your dynamic blocks */
-.portfolio-media-container img,
-.portfolio-media-container video {
-	display: block;
-	width: 100%;
-	height: auto;
-	border-radius: var(--portfolio-img-radius);
-	box-shadow: var(--portfolio-img-shadow);
-}
-
-/* Unified Modern CSS Grid Engine for Media Grids */
 .image-grid-container {
-	display: grid;
-	gap: 24px;
-	width: 100%;
-	margin-inline: auto;
+  display: grid;
+  gap: 24px;
+  width: 100%;
+  margin-inline: auto;
 
-	&.image-grid--2 {
-		grid-template-columns: repeat(2, minmax(0, 1fr));
-	}
+  &.image-grid--2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
 
-	&.image-grid--3 {
-		grid-template-columns: repeat(3, minmax(0, 1fr));
-	}
+  &.image-grid--3 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
 }
 
 .image-grid__item {
-	position: relative;
-	min-width: 0;
-	margin: 0;
-	overflow: hidden;
-	border-radius: var(--portfolio-img-radius);
+  position: relative;
+  min-width: 0;
+  margin: 0;
+  overflow: hidden;
+  border-radius: var(--portfolio-img-radius);
 
-	picture,
-	img {
-		display: block;
-		width: 100%;
-		height: 100%;
-		object-fit: cover;
-	}
+  picture,
+  img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
 }
 
 @media (max-width: 767.98px) {
-	.image-grid-container {
-		grid-template-columns: minmax(0, 1fr) !important;
-		gap: 16px !important;
-	}
+  .image-grid-container {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 16px;
+  }
+}
+
+/* ==========================================================================
+6. FOOTER & SOCIAL
+   ========================================================================== */
+footer {
+  background-color: var(--dark);
+  color: var(--light);
+  text-align: center;
+  padding: 3rem 0;
+
+  a {
+    color: var(--light);
+    font-size: 0.875rem;
+    transition: color 0.2s ease-in-out;
+    text-decoration: none;
+
+    &:hover {
+      color: var(--accent);
+    }
+  }
+}
+
+ul.social-network {
+  list-style: none;
+  padding: 0;
+  margin: 1rem 0 0;
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+
+  li a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    background-color: var(--light);
+    font-size: 1.25rem;
+    transition: transform 0.3s ease;
+
+    &:hover {
+      transform: scale(1.1);
+    }
+
+    i {
+      color: var(--dark);
+    }
+  }
 }

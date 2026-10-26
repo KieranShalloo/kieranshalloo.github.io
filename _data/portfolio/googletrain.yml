@@ -1,0 +1,53 @@
+title: "Google Trains"
+description: "A UI/UX portfolio page showing work for Trainline by Kieran Shalloo"
+theme_color: "var(--google)"
+
+# Meta & Brief Header
+meta_client: "Trainline"
+meta_date: "2024"
+meta_role: "Senior UX/UI Designer (contractor)"
+
+brief: |
+  To create ways to reassure passengers coming to Trainline from Google, communicating the positive propositions of the product.
+
+page_sections:
+  - type: "text-block"
+    main_title: "Google Trains"
+    sections:
+      # Section with NO subtitle
+      - text: |
+          Google has introduced a Google train module, which allows users to search for their journeys on google rather than using the trainline service. Whilst good for the user the integration with the trainline allows users to go directly to the train search result without seeing any of the user benefits of using the Trainline platform.
+
+      - subtitle: "Approaching the problem"
+        text: |
+          With a view to get this feature live as fast as possible we had a 5 day turn around to go from a
+          concept to a design that was ready for development. I took the initiative to bring some elements of existing designs
+          and concepts already in the design system to bring this to life. With one eye on the developer resource needed for this
+          project it was all about quick wins and a scalable concept we could iterate on top of!
+
+  - type: "image"
+    name: "home/trainlineheader1920"
+    alt: "Main image showing trainline concept design"
+    full_width: true
+
+  - type: "text-block"
+    main_title: "Introduction to Google Users"
+    sections:
+      - subtitle: "Approaching the problem"
+        text: |
+          With this project needing an urgent turnaround, the first aspect was to be able to reuse some
+          design system principles but to adjust them for the users coming from the Google Trains platform. Especially targeting
+          the EU and USA customer markets.
+          This, for me, meant that we should value the journey the user has made to come to the trainline
+          above everything else.
+
+          These users had come to the Trainline product from an external third party Google search module, and as such the goal
+          was to try and sell the product features but with the key incentive was to not disrupt the
+          user's main goal. A positive
+          first exposure were essential especially in markets where the Trainline brand didn't have that
+          big brand recognition.
+
+  - type: "image"
+    name: "googletrains/gtrainconcepts1920"
+    alt: "Main image showing trainline concept design"
+    full_width: true

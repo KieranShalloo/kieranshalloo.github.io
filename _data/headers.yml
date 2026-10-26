@@ -1,328 +1,235 @@
+which:
+  alt: BOP
+  sizes:
+    - jpg: /images/home/whichheader1920.png
+      width: 414
+    - jpg: /images/home/whichheader1920.png
+      width: 1920
+  subtitle: Design Streatgy and Leadership
+  title: Which?
 bookofpotion:
   alt: BOP
-  title: Book of Potion
-  subtitle: The PlayStation Music Videogame
   sizes:
-    # WARNING: Missing AVIF/WEBP formats for all sizes
-    # WARNING: Using same image (bopheader1920.jpg) for all sizes - consider adding 414/768 variants
-    - width: 414
-      jpg: "/images/home/bopheader1920.jpg"
-    # - width: 768
-    #   jpg: "/images/home/bopheader1920.jpg"
-    - width: 1920
-      jpg: "/images/home/bopheader1920.jpg"
-
+    - jpg: /images/home/bopheader1920.jpg
+      width: 414
+    - jpg: /images/home/bopheader1920.jpg
+      width: 1920
+  subtitle: The PlayStation Music Videogame
+  title: Book of Potion
 bookofspells:
   alt: BOS
-  title: Book of Spells
-  subtitle: Augmented reality PlayStation game
   sizes:
-    # WARNING: Missing AVIF/WEBP for 1920px size
-    - width: 414
-      avif: "/images/home/tile-bos.avif"
-      webp: "/images/home/tile-bos.webp"
-      jpg: "/images/home/tile-bos.jpg"
-    # - width: 768
-    #   avif: "/images/home/tile-bos.avif"
-    #   webp: "/images/home/tile-bos.webp"
-    #   jpg: "/images/home/tile-bos.jpg"
-    - width: 1920
-      jpg: "/images/home/BOSheader1920.jpg"
-
+    - avif: /images/home/tile-bos.avif
+      jpg: /images/home/tile-bos.jpg
+      webp: /images/home/tile-bos.webp
+      width: 414
+    - jpg: /images/home/BOSheader1920.jpg
+      width: 1920
+  subtitle: Augmented reality PlayStation game
+  title: Book of Spells
 c4rebrand:
   alt: Channel 4 Rebrand
-  title: Channel 4 Rebrand
+  sizes:
+    - avif: /images/home/4rebrandheader414.avif
+      jpg: /images/home/4rebrandheader414.jpg
+      webp: /images/home/4rebrandheader414.webp
+      width: 414
+    - jpg: /images/home/4rebrandheader1920.jpg
+      width: 1920
   subtitle: Unifying the master brand across all platforms
-  sizes:
-    # WARNING: Missing AVIF/WEBP for 768/1920px sizes
-    - width: 414
-      avif: "/images/home/4rebrandheader414.avif"
-      webp: "/images/home/4rebrandheader414.webp"
-      jpg: "/images/home/4rebrandheader414.jpg"
-    # - width: 768
-    #   jpg: "/images/home/4rebrandheader768.jpg"
-    - width: 1920
-      jpg: "/images/home/4rebrandheader1920.jpg"
-
-visualscrubbing:
-  alt: C4 Scrubbing
-  title: C4 Scrubbing
-  subtitle: A new way to navigate
-  sizes:
-    # Complete: All formats and sizes present
-    - width: 414
-      avif: "/images/home/4header414.avif"
-      webp: "/images/home/4header414.webp"
-      jpg: "/images/home/4header414.jpg"
-    # - width: 768
-    #   avif: "/images/home/4header768.avif"
-    #   webp: "/images/home/4header768.webp"
-    #   jpg: "/images/home/4header768.jpg"
-    - width: 1920
-      avif: "/images/home/4header1920.avif"
-      webp: "/images/home/4header1920.webp"
-      jpg: "/images/home/4header1920.jpg"
-
+  title: Channel 4 Rebrand
 channel4:
   alt: Channel 4
-  title: Channel 4
-  subtitle: A new way to navigate
   sizes:
-    # Complete: All formats and sizes present
-    - width: 414
-      # avif: "/images/home/stpheader414.avif"
-      # webp: "/images/home/stpheader414.webp"
-      jpg: "/images/home/stpheader414.jpg"
-    # - width: 768
-    #   avif: "/images/home/4header768.avif"
-    #   webp: "/images/home/4header768.webp"
-    #   jpg: "/images/home/4header768.jpg"
-    - width: 1920
-      # avif: "/images/home/stpheader1920.avif"
-      # webp: "/images/home/stpheader1920.webp"
-      jpg: "/images/home/stpheader1920.jpg"
-
+    - jpg: /images/home/stpheader414.jpg
+      width: 414
+    - jpg: /images/home/stpheader1920.jpg
+      width: 1920
+  subtitle: A new way to navigate
+  title: Channel 4
 creature:
   alt: Creature
-  title: creature
-  subtitle: The PlayStation Music Videogame
   sizes:
-    # Complete: All formats and sizes present
-    - width: 414
-      avif: "/images/home/Creatureheader414.avif"
-      webp: "/images/home/Creatureheader414.webp"
-      jpg: "/images/home/Creatureheader414.jpg"
-    # - width: 768
-    #   avif: "/images/home/Creatureheader768.avif"
-    #   webp: "/images/home/Creatureheader768.webp"
-    #   jpg: "/images/home/Creatureheader768.jpg"
-    - width: 1920
-      avif: "/images/home/Creatureheader1920.avif"
-      webp: "/images/home/Creatureheader1920.webp"
-      jpg: "/images/home/Creatureheader1920.jpg"
-
+    - avif: /images/home/Creatureheader414.avif
+      jpg: /images/home/Creatureheader414.jpg
+      webp: /images/home/Creatureheader414.webp
+      width: 414
+    - avif: /images/home/Creatureheader1920.avif
+      jpg: /images/home/Creatureheader1920.jpg
+      webp: /images/home/Creatureheader1920.webp
+      width: 1920
+  subtitle: The PlayStation Music Videogame
+  title: creature
 dancestar:
   alt: DanceStar
-  title: DanceStar Party
-  subtitle: Competitive rhythm video-game
   sizes:
-    # WARNING: Missing 414/768px sizes
-    - width: 1920
-      avif: "/images/home/dancestarheader1920.avif"
-      webp: "/images/home/dancestarheader1920.webp"
-      jpg: "/images/home/dancestarheader1920.jpg"
-
+    - avif: /images/home/dancestarheader1920.avif
+      jpg: /images/home/dancestarheader1920.jpg
+      webp: /images/home/dancestarheader1920.webp
+      width: 1920
+  subtitle: Competitive rhythm video-game
+  title: DanceStar Party
 keyboard:
   alt: Keyboard
-  title: Singstar
-  subtitle: The PlayStation Music Videogame
   sizes:
-    # WARNING: Missing AVIF/WEBP for all sizes
-    # WARNING: 414/768px paths incorrectly point to 1920/768px filenames - verify paths
-    - width: 414
-      jpg: "/images/keyboard/Youview-onscreenkeyboard-hero-1920.jpg"
-    # - width: 768
-    #   jpg: "/images/keyboard/Youview-onscreenkeyboard-hero-768.jpg"
-    - width: 1920
-      jpg: "/images/keyboard/Youview-onscreenkeyboard-hero-1920.jpg"
-
+    - jpg: /images/keyboard/Youview-onscreenkeyboard-hero-1920.jpg
+      width: 414
+    - jpg: /images/keyboard/Youview-onscreenkeyboard-hero-1920.jpg
+      width: 1920
+  subtitle: The PlayStation Music Videogame
+  title: Singstar
 netflix:
   alt: Netflix
-  title: Netflix on YouView
-  subtitle: Christmas Advertising Campaign
   sizes:
-    # Complete: All formats and sizes present
-    - width: 414
-      avif: "/images/home/Netflixheader414.avif"
-      webp: "/images/home/Netflixheader414.webp"
-      jpg: "/images/home/Netflixheader414.jpg"
-    # - width: 768
-    #   avif: "/images/home/Netflixheader768.avif"
-    #   webp: "/images/home/Netflixheader768.webp"
-    #   jpg: "/images/home/Netflixheader768.jpg"
-    - width: 1920
-      avif: "/images/home/Netflixheader1920.avif"
-      webp: "/images/home/Netflixheader1920.webp"
-      jpg: "/images/home/Netflixheader1920.jpg"
-
+    - avif: /images/home/Netflixheader414.avif
+      jpg: /images/home/Netflixheader414.jpg
+      webp: /images/home/Netflixheader414.webp
+      width: 414
+    - avif: /images/home/Netflixheader1920.avif
+      jpg: /images/home/Netflixheader1920.jpg
+      webp: /images/home/Netflixheader1920.webp
+      width: 1920
+  subtitle: Christmas Advertising Campaign
+  title: Netflix on YouView
 singstar:
   alt: SingStar
-  title: Singstar
-  subtitle: The PlayStation Music Videogame
   sizes:
-    # Complete: All formats and sizes present
-    - width: 414
-      avif: "/images/home/singstarheader414.avif"
-      webp: "/images/home/singstarheader414.webp"
-      jpg: "/images/home/singstarheader414.jpg"
-    # - width: 768
-    #   avif: "/images/home/singstarheader768.avif"
-    #   webp: "/images/home/singstarheader768.webp"
-    #   jpg: "/images/home/singstarheader768.jpg"
-    - width: 1920
-      avif: "/images/home/singstarheader1920.avif"
-      webp: "/images/home/singstarheader1920.webp"
-      jpg: "/images/home/singstarheader1920.jpg"
-
+    - avif: /images/home/singstarheader414.avif
+      jpg: /images/home/singstarheader414.jpg
+      webp: /images/home/singstarheader414.webp
+      width: 414
+    - avif: /images/home/singstarheader1920.avif
+      jpg: /images/home/singstarheader1920.jpg
+      webp: /images/home/singstarheader1920.webp
+      width: 1920
+  subtitle: The PlayStation Music Videogame
+  title: Singstar
 sony:
   alt: Sony
-  title: Android TV
-  subtitle: Becoming the UK's default TV on Sony
   sizes:
-    # Complete: All formats and sizes present
-    - width: 414
-      avif: "/images/home/Sonyheader414.avif"
-      webp: "/images/home/Sonyheader414.webp"
-      jpg: "/images/home/Sonyheader414.jpg"
-    # - width: 768
-    #   avif: "/images/home/Sonyheader768.avif"
-    #   webp: "/images/home/Sonyheader768.webp"
-    #   jpg: "/images/home/Sonyheader768.jpg"
-    - width: 1920
-      avif: "/images/home/Sonyheader1920.avif"
-      webp: "/images/home/Sonyheader1920.webp"
-      jpg: "/images/home/Sonyheader1920.jpg"
-
+    - avif: /images/home/Sonyheader414.avif
+      jpg: /images/home/Sonyheader414.jpg
+      webp: /images/home/Sonyheader414.webp
+      width: 414
+    - avif: /images/home/Sonyheader1920.avif
+      jpg: /images/home/Sonyheader1920.jpg
+      webp: /images/home/Sonyheader1920.webp
+      width: 1920
+  subtitle: Becoming the UK's default TV on Sony
+  title: Android TV
 trainline:
   alt: Trainline
   title: Trainline x Google
   subtitle: Helping users to their destination
   sizes:
-    # Complete: All formats and sizes present
-    - width: 414
-      avif: "/images/home/trainlineheader414.avif"
-      webp: "/images/home/trainlineheader414.webp"
-      jpg: "/images/home/trainlineheader414.jpg"
-    # - width: 768
-    #   avif: "/images/home/trainlineheader768.avif"
-    #   webp: "/images/home/trainlineheader768.webp"
-    #   jpg: "/images/home/trainlineheader768.jpg"
-    - width: 1920
-      avif: "/images/home/trainlineheader1920.avif"
-      webp: "/images/home/trainlineheader1920.webp"
-      jpg: "/images/home/trainlineheader1920.jpg"
-
+    - avif: /images/home/trainlineheader414.avif
+      jpg: /images/home/trainlineheader414.jpg
+      webp: /images/home/trainlineheader414.webp
+      width: 414
+    - avif: /images/home/trainlineheader1920.avif
+      jpg: /images/home/trainlineheader1920.jpg
+      webp: /images/home/trainlineheader1920.webp
+      width: 1920
 trainlineengagement:
   alt: Engagement
-  title: Trainline
-  subtitle: Engaging the users
   sizes:
-    # WARNING: Missing AVIF/WEBP for all sizes
-    - width: 414
-      jpg: "/images/home/engagementheader414.jpg"
-    # - width: 768
-    #   jpg: "/images/home/engagementheader768.jpg"
-    - width: 1920
-      jpg: "/images/home/engagementheader1920.jpg"
-
+    - jpg: /images/home/engagementheader414.jpg
+      width: 414
+    - jpg: /images/home/engagementheader1920.jpg
+      width: 1920
+  subtitle: Engaging the users
+  title: Trainline
 virgin:
   alt: Virgin Media
-  title: Virgin Media
-  subtitle: Improving digital care
   sizes:
-    # Complete: All formats and sizes present
-    - width: 414
-      avif: "/images/home/VMheader414.avif"
-      webp: "/images/home/VMheader414.webp"
-      jpg: "/images/home/VMheader414.jpg"
-    # - width: 768
-    #   avif: "/images/home/VMheader768.avif"
-    #   webp: "/images/home/VMheader768.webp"
-    #   jpg: "/images/home/VMheader768.jpg"
-    - width: 1920
-      avif: "/images/home/VMheader1920.avif"
-      webp: "/images/home/VMheader1920.webp"
-      jpg: "/images/home/VMheader1920.jpg"
-
+    - avif: /images/home/VMheader414.avif
+      jpg: /images/home/VMheader414.jpg
+      webp: /images/home/VMheader414.webp
+      width: 414
+    - avif: /images/home/VMheader1920.avif
+      jpg: /images/home/VMheader1920.jpg
+      webp: /images/home/VMheader1920.webp
+      width: 1920
+  subtitle: Improving digital care
+  title: Virgin Media
+visualscrubbing:
+  alt: C4 Scrubbing
+  sizes:
+    - avif: /images/home/4header414.avif
+      jpg: /images/home/4header414.jpg
+      webp: /images/home/4header414.webp
+      width: 414
+    - avif: /images/home/4header1920.avif
+      jpg: /images/home/4header1920.jpg
+      webp: /images/home/4header1920.webp
+      width: 1920
+  subtitle: A new way to navigate
+  title: C4 Scrubbing
 wwe:
   alt: WWE
-  title: WWE Network
+  sizes:
+    - avif: /images/home/wweheader414.avif
+      jpg: /images/home/wweheader414.jpg
+      webp: /images/home/wweheader414.webp
+      width: 414
+    - jpg: /images/home/wweheader1920.jpg
+      webp: /images/home/wweheader1920.webp
+      width: 1920
   subtitle: Rebuilt from the ground up
-  sizes:
-    # WARNING: Missing AVIF/WEBP for 768px size
-    - width: 414
-      avif: "/images/home/wweheader414.avif"
-      webp: "/images/home/wweheader414.webp"
-      jpg: "/images/home/wweheader414.jpg"
-    # - width: 768
-    #   jpg: "/images/home/wweheader768.jpg"
-    - width: 1920
-      # avif: "/images/home/wweheader1920.avif"
-      webp: "/images/home/wweheader1920.webp"
-      jpg: "/images/home/wweheader1920.jpg"
-
-yvapp:
-  alt: YouView App
-  title: YouView App
-  subtitle: Controlling your content from your phone
-  sizes:
-    # Complete: All formats and sizes present
-    - width: 414
-      avif: "/images/home/YVAppheader414.avif"
-      webp: "/images/home/YVAppheader414.webp"
-      jpg: "/images/home/YVAppheader414.jpg"
-    # - width: 768
-    #   avif: "/images/home/YVappheader768.avif"
-    #   webp: "/images/home/YVappheader768.webp"
-    #   jpg: "/images/home/YVAppheader768.jpg"
-    - width: 1920
-      avif: "/images/home/YVAppheader1920.avif"
-      webp: "/images/home/YVAppheader1920.webp"
-      jpg: "/images/home/YVAppheader1920.jpg"
-
+  title: WWE Network
 youview:
   alt: YouView
-  title: YouView 2.0
-  subtitle: Rethink, Redesign, Rebuild
   sizes:
-    # Complete: All formats and sizes present
-    - width: 414
-      avif: "/images/home/YVheader414.avif"
-      webp: "/images/home/YVheader414.webp"
-      jpg: "/images/home/YVheader414.jpg"
-    # - width: 768
-    #   avif: "/images/home/YVheader768.avif"
-    #   webp: "/images/home/YVheader768.webp"
-    #   jpg: "/images/home/YVheader768.jpg"
-    - width: 1920
-      avif: "/images/home/YVheader1920.avif"
-      webp: "/images/home/YVheader1920.webp"
-      jpg: "/images/home/YVheader1920.jpg"
-
+    - avif: /images/home/YVheader414.avif
+      jpg: /images/home/YVheader414.jpg
+      webp: /images/home/YVheader414.webp
+      width: 414
+    - avif: /images/home/YVheader1920.avif
+      jpg: /images/home/YVheader1920.jpg
+      webp: /images/home/YVheader1920.webp
+      width: 1920
+  subtitle: Rethink, Redesign, Rebuild
+  title: YouView 2.0
+yvapp:
+  alt: YouView App
+  sizes:
+    - avif: /images/home/YVAppheader414.avif
+      jpg: /images/home/YVAppheader414.jpg
+      webp: /images/home/YVAppheader414.webp
+      width: 414
+    - avif: /images/home/YVAppheader1920.avif
+      jpg: /images/home/YVAppheader1920.jpg
+      webp: /images/home/YVAppheader1920.webp
+      width: 1920
+  subtitle: Controlling your content from your phone
+  title: YouView App
 yvcontrast:
   alt: Youview High Contrast
-  title: Youview High Contrast
-  subtitle: Accessibility mode for the partially sighted
   sizes:
-    # Complete: All formats and sizes present
-    - width: 414
-      avif: "/images/home/YVHCheader414.avif"
-      webp: "/images/home/YVHCheader414.webp"
-      jpg: "/images/home/YVHCheader414.jpg"
-    # - width: 768
-    #   avif: "/images/home/YVHCheader768.avif"
-    #   webp: "/images/home/YVHCheader768.webp"
-    #   jpg: "/images/home/YVHCheader768.jpg"
-    - width: 1920
-      avif: "/images/home/YVHCheader1920.avif"
-      webp: "/images/home/YVHCheader1920.webp"
-      jpg: "/images/home/YVHCheader1920.jpg"
-
+    - avif: /images/home/YVHCheader414.avif
+      jpg: /images/home/YVHCheader414.jpg
+      webp: /images/home/YVHCheader414.webp
+      width: 414
+    - avif: /images/home/YVHCheader1920.avif
+      jpg: /images/home/YVHCheader1920.jpg
+      webp: /images/home/YVHCheader1920.webp
+      width: 1920
+  subtitle: Accessibility mode for the partially sighted
+  title: Youview High Contrast
 yvhelp:
   alt: YouView Help
-  title: Help & Support
-  subtitle: Supporting BT and TalkTalk customers on YouView
   sizes:
-    # Complete: All formats and sizes present
-    - width: 414
-      avif: "/images/home/YVhelpheader414.avif"
-      webp: "/images/home/YVhelpheader414.webp"
-      jpg: "/images/home/YVhelpheader414.jpg"
-    # - width: 768
-    #   avif: "/images/home/YVhelpheader768.avif"
-    #   webp: "/images/home/YVhelpheader768.webp"
-    #   jpg: "/images/home/YVhelpheader768.jpg"
-    - width: 1920
-      avif: "/images/home/YVhelpheader1920.avif"
-      webp: "/images/home/YVhelpheader1920.webp"
-      jpg: "/images/home/YVhelpheader1920.jpg"
+    - avif: /images/home/YVhelpheader414.avif
+      jpg: /images/home/YVhelpheader414.jpg
+      webp: /images/home/YVhelpheader414.webp
+      width: 414
+    - avif: /images/home/YVhelpheader1920.avif
+      # avif: "/images/home/stpheader1920.avif"
+      # webp: "/images/home/stpheader1920.webp"
+      jpg: /images/home/YVhelpheader1920.jpg
+      # avif: "/images/home/wweheader1920.avif"
+      webp: /images/home/YVhelpheader1920.webp
+      width: 1920
+  subtitle: Supporting BT and TalkTalk customers on YouView
+  title: Help & Support # avif: "/images/home/stpheader414.avif"
+

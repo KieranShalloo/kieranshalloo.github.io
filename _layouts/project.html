@@ -2,13 +2,23 @@
 layout: default
 ---
 
-{% assign project = site.data.portfolio[page.slug] %}
+<!-- 1. Determine key name from folder path (e.g. portfolio/googletrain/ -> "googletrain") -->
+{% assign key = page.dir | remove_first: '/portfolio/' | remove: '/' %}
 
-<article class="project-content-wrapper"
-    style="--project-accent: {{ project.theme_color | default: 'var(--accent)' }};">
+<!-- 2. Fetch page section content from _data/portfolio/[key].yml -->
+{% assign project_content = site.data.portfolio[key] %}
 
-    <!-- Header block -->
-    {% include project-header.html project=page.slug %}
+<!-- 3. Fetch project meta & header mapping from _data/projects.yml -->
+{% assign project_meta = site.data.projects | where: "id", key | first %}
+
+<!-- 4. Theme Color Logic: Check project_content, project_meta, or page frontmatter, fallback to var(--accent) -->
+{% assign accent_color = project_content.theme_color | default: project_meta.theme_color | default: page.theme_color |
+default: 'var(--accent)' %}
+
+<article class="project-content-wrapper" style="--project-accent: {{ accent_color }};">
+
+    <!-- Pass header key down to project-header include -->
+    {% include project-header.html header_key=project_meta.project_header_id %}
 
     <!-- Brief Meta Block -->
     <div class="container-fluid pt-5 pb-4">
@@ -17,18 +27,18 @@ layout: default
                 <div class="col-md-6 offset-md-2">
                     <h6 class="text-muted">Brief</h6>
                     <div class="project-brief-text">
-                        {{ project.brief | markdownify }}
+                        {{ project_content.brief | markdownify }}
                     </div>
                 </div>
                 <div class="col-md-3 offset-md-1">
-                    {% if project.meta_agency %}<h6 class="text-muted">Agency</h6>
-                    <p>{{ project.meta_agency }}</p>{% endif %}
-                    {% if project.meta_client %}<h6 class="text-muted">Client</h6>
-                    <p>{{ project.meta_client }}</p>{% endif %}
-                    {% if project.meta_date %}<h6 class="text-muted">Project Date</h6>
-                    <p>{{ project.meta_date }}</p>{% endif %}
-                    {% if project.meta_role %}<h6 class="text-muted">Role</h6>
-                    <p>{{ project.meta_role }}</p>{% endif %}
+                    {% if project_content.meta_agency %}<h6 class="text-muted">Agency</h6>
+                    <p>{{ project_content.meta_agency }}</p>{% endif %}
+                    {% if project_content.meta_client %}<h6 class="text-muted">Client</h6>
+                    <p>{{ project_content.meta_client }}</p>{% endif %}
+                    {% if project_content.meta_date %}<h6 class="text-muted">Project Date</h6>
+                    <p>{{ project_content.meta_date }}</p>{% endif %}
+                    {% if project_content.meta_role %}<h6 class="text-muted">Role</h6>
+                    <p>{{ project_content.meta_role }}</p>{% endif %}
                 </div>
             </div>
         </div>
@@ -36,25 +46,14 @@ layout: default
 
     <!-- Main Component Engine Loop -->
     <div class="project-builder">
-        {% for block in project.page_sections %}
-
+        {% for block in project_content.page_sections %}
         {% if block.type == "text-block" %}
         {% include blocks/text-block.html block=block %}
-
         {% elsif block.type == "text-details" %}
         {% include blocks/text-details.html block=block %}
-
         {% elsif block.type == "image" %}
         {% include blocks/image.html block=block %}
-
-        {% elsif block.type == "media_grid" or block.type == "media-grid" %}
-        {% include blocks/media-grid.html block=block %}
-
-        {% elsif block.type == "custom_html" or block.type == "custom" %}
-        {% include blocks/custom.html block=block %}
-
         {% endif %}
-
         {% endfor %}
     </div>
 

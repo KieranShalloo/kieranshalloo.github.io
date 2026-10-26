@@ -1,7 +1,8 @@
 {% assign loading = include.loading | default: 'lazy' %}
 {% assign decoding = include.decoding | default: 'async' %}
 {% assign base_name = include.name %}
-{% assign ext = include.ext | default: 'png' %}
+{% assign fallback_ext = include.ext | default: 'jpg' %}
+{% assign mobile_target = include.mobile_name | default: base_name %}
 
 {% comment %} Set Cloudflare CDN prefixes only in production {% endcomment %}
 {% if jekyll.environment == "production" %}
@@ -14,18 +15,20 @@
 
 <figure class="{{ include.container_class | default: 'portfolio-image m-0' }}">
   <picture>
-    <!-- 1. Dedicated Mobile Crop: Loaded ONLY when mobile_name is passed in YAML -->
-    {% if include.mobile_name %}
-    <source media="(max-width: 767px)" srcset="{{ cdn_mobile }}/images/{{ include.mobile_name }}.{{ ext }}">
-    {% else %}
-    <source media="(max-width: 767px)" srcset="{{ cdn_mobile }}/images/{{ base_name }}.{{ ext }}">
-    {% endif %}
+    <!-- 1. Mobile WebP Source -->
+    <source media="(max-width: 767px)" srcset="{{ cdn_mobile }}/images/{{ mobile_target }}.webp" type="image/webp">
 
-    <!-- 2. Desktop Master -->
-    <source media="(min-width: 768px)" srcset="{{ cdn_desktop }}/images/{{ base_name }}.{{ ext }}">
+    <!-- 2. Mobile Fallback Source -->
+    <source media="(max-width: 767px)" srcset="{{ cdn_mobile }}/images/{{ mobile_target }}.{{ fallback_ext }}">
 
-    <!-- 3. Fallback Image Tag -->
-    <img src="{{ cdn_desktop }}/images/{{ base_name }}.{{ ext }}" alt="{{ include.alt | escape }}"
+    <!-- 3. Desktop WebP Source -->
+    <source media="(min-width: 768px)" srcset="{{ cdn_desktop }}/images/{{ base_name }}.webp" type="image/webp">
+
+    <!-- 4. Desktop Fallback Source -->
+    <source media="(min-width: 768px)" srcset="{{ cdn_desktop }}/images/{{ base_name }}.{{ fallback_ext }}">
+
+    <!-- 5. Default Fallback Image Tag -->
+    <img src="{{ cdn_desktop }}/images/{{ base_name }}.{{ fallback_ext }}" alt="{{ include.alt | escape }}"
       class="img-fluid {{ include.class }}" loading="{{ loading }}" decoding="{{ decoding }}">
   </picture>
 </figure>

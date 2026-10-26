@@ -1,17 +1,26 @@
-# large
+- title: "Which"
+  slug: "which"
+  url: "/portfolio/which/"
+  description: "Redesign of the whole Channel 4 Streaming app."
+  image:
+    jpg: "/images/home/whichheader1920.png"
+    alt: "Channel 4 relaunching their streaming service with a new design"
+  width: 1920
+  height: 1080
+  aspect_ratio: "16:9"
 
-# - title: "Channel 4 Streaming"
-#   slug: "channel4"
-#   url: "/portfolio/channel4/"
-#   description: "Redesign of the whole Channel 4 Streaming app."
-#   image:
-#     jpg: "/images/home/stpheader768.jpg"
-#     # webp: "/images/home/stpheader768.webp"
-#     # avif: "/images/home/stpheader768.avif"
-#     alt: "Channel 4 relaunching their streaming service with a new design"
-#   width: 1920
-#   height: 1080
-#   aspect_ratio: "16:9"
+- title: "Channel 4 Streaming"
+  slug: "channel4"
+  url: "/portfolio/channel4/"
+  description: "Redesign of the whole Channel 4 Streaming app."
+  image:
+    jpg: "/images/home/stpheader768.jpg"
+    # webp: "/images/home/stpheader768.webp"
+    # avif: "/images/home/stpheader768.avif"
+    alt: "Channel 4 relaunching their streaming service with a new design"
+  width: 1920
+  height: 1080
+  aspect_ratio: "16:9"
 
 - title: "WWE"
   subtitle: "Redesigining the WWE Network"
