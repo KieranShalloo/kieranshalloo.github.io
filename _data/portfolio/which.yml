@@ -11,9 +11,22 @@ meta_role: "Product Area Lead (FTC)"
 brief: |
   I was brought into the internal Which? Team as a Product Area Lead, focusing on improving the team processes and the design strategy for customer facing journeys across iOS and Android apps, as well as desktop and mobile webviewports
 
+  I work alongside a Engineering Manager and a Lead Product Manager, togterher in a traditional three-amigos work flow, aligning with each other on the roadmap and strategy for our overall area
+
 page_sections:
   # 1. Hero Screen Tile Banner
   - type: "image"
     name: "wwe/tileangle"
     alt: "WWE Network Screen Tile"
+    full_width: true
+
+  - type: "text-block"
+    main_title: "Management"
+    sections:
+      - text: |
+          Directly responsible for the design and strategic visions of  two customer facing squads whilst directly managing a small team of designers in these squads.
+
+  - type: "image"
+    name: "googletrains/gtrainconcepts1920"
+    alt: "Main image showing trainline concept design"
     full_width: true

@@ -1,56 +1,60 @@
-{% assign project_data = site.data.headers[include.header_key] %}
-{% assign xlarge = project_data.sizes | where: "width", 1920 | first %}
-{% assign medium = project_data.sizes | where: "width", 414 | first %}
+
+
+{% assign key = include.header_key | default: include.project | default: page.project_header_id %}
+{% assign project_data = site.data.headers[key] %}
+
+{% assign xlarge = nil %}
+{% assign medium = nil %}
+
+{% for size in project_data.sizes %}
+{% assign w = size.width | plus: 0 %}
+{% if w == 1920 %}
+{% assign xlarge = size %}
+{% elsif w == 414 %}
+{% assign medium = size %}
+{% endif %}
+{% endfor %}
+
+<!-- Fallback to xlarge if medium doesn't exist -->
+{% assign fallback_img = medium.jpg | default: xlarge.jpg %}
 
 <div class="project-header"
     style="position: relative; overflow: hidden; height: 70vh; min-height: 320px; display: flex; align-items: center; justify-content: center;">
 
     <!-- Background Picture Layer -->
     <picture class="hero-image" style="position: absolute; inset: 0; z-index: 0; width: 100%; height: 100%;">
-        {%- if xlarge %}
-        {%- if xlarge.avif %}
+        {% if xlarge %}
+        {% if xlarge.avif %}
         <source media="(min-width: 415px)" srcset="{{ xlarge.avif }}" type="image/avif">
-        {%- endif %}
-        {%- if xlarge.webp %}
+        {% endif %}
+        {% if xlarge.webp %}
         <source media="(min-width: 415px)" srcset="{{ xlarge.webp }}" type="image/webp">
-        {%- endif %}
+        {% endif %}
+        {% if xlarge.jpg %}
         <source media="(min-width: 415px)" srcset="{{ xlarge.jpg }}">
-        {%- endif %}
+        {% endif %}
+        {% endif %}
 
-        {%- if medium %}
-        {%- if medium.avif %}
+        {% if medium %}
+        {% if medium.avif %}
         <source srcset="{{ medium.avif }}" type="image/avif">
-        {%- endif %}
-        {%- if medium.webp %}
+        {% endif %}
+        {% if medium.webp %}
         <source srcset="{{ medium.webp }}" type="image/webp">
-        {%- endif %}
-        <img src="{{ medium.jpg }}" alt="{{ project_data.alt | default: project_data.title }}" loading="eager"
+        {% endif %}
+        {% endif %}
+
+        <img src="{{ fallback_img }}" alt="{{ project_data.alt | default: project_data.title }}" loading="eager"
             style="width: 100%; height: 100%; object-fit: cover; display: block;">
-        {%- else %}
-        <img src="{{ xlarge.jpg | default: '' }}" alt="{{ project_data.alt | default: project_data.title }}"
-            loading="eager" style="width: 100%; height: 100%; object-fit: cover; display: block;">
-        {%- endif %}
     </picture>
 
     <!-- Dark Overlay -->
-    <div class="hero-overlay" style="
-        position: absolute;
-        inset: 0;
-        background: rgba(0, 0, 0, 0.5);
-        z-index: 1;
-        pointer-events: none;
-    "></div>
+    <div class="hero-overlay"
+        style="position: absolute; inset: 0; background: rgba(0, 0, 0, 0.5); z-index: 1; pointer-events: none;"></div>
 
     <!-- Text Content -->
-    <div class="hero-content" style="
-        position: relative;
-        z-index: 2;
-        color: var(--light, #ecfaff);
-        text-align: center;
-        padding: 1rem;
-        width: 100%;
-        max-width: 900px;
-    ">
+    <div class="hero-content"
+        style="position: relative; z-index: 2; color: var(--light, #ecfaff); text-align: center; padding: 1rem; width: 100%; max-width: 900px;">
         <h1 style="text-align: center; margin-bottom: 0.5rem; color: inherit;">{{ project_data.title }}</h1>
         {% if project_data.subtitle %}
         <h3 style="text-align: center; margin-bottom: 0; color: inherit; opacity: 0.9;">{{ project_data.subtitle }}</h3>

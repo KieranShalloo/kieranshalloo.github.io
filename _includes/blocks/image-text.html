@@ -1,13 +1,26 @@
 {% assign img_position = include.block.image_position | default: 'left' %}
+{% assign has_video = include.block.video_mp4 or include.block.video_webm %}
 
 <div class="container">
     <div class="row align-items-center g-5">
-        <!-- Image Column -->
+        <!-- Media Column (Image or Video) -->
         <div class="col-12 col-md-6 {% if img_position == 'right' %}order-md-2{% endif %}">
+            {% if has_video %}
+            <video style="width: 100%; height: auto; display: block;" autoplay loop muted playsinline>
+                {% if include.block.video_webm %}
+                <source src="{{ include.block.video_webm }}" type="video/webm">
+                {% endif %}
+                {% if include.block.video_mp4 %}
+                <source src="{{ include.block.video_mp4 }}" type="video/mp4">
+                {% endif %}
+                Sorry, your browser doesn't support embedded videos.
+            </video>
+            {% else %}
             {% include responsive-image.html
             name=include.block.image_name
             alt=include.block.alt
             %}
+            {% endif %}
         </div>
 
         <!-- Text Column -->

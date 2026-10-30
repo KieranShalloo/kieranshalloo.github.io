@@ -1,12 +1,13 @@
 which:
   alt: BOP
   sizes:
-    - jpg: /images/home/whichheader1920.png
+    - jpg: /images/home/whichheader768.jpg
       width: 414
     - jpg: /images/home/whichheader1920.png
       width: 1920
   subtitle: Design Streatgy and Leadership
   title: Which?
+
 bookofpotion:
   alt: BOP
   sizes:
@@ -16,6 +17,7 @@ bookofpotion:
       width: 1920
   subtitle: The PlayStation Music Videogame
   title: Book of Potion
+
 bookofspells:
   alt: BOS
   sizes:
@@ -27,6 +29,7 @@ bookofspells:
       width: 1920
   subtitle: Augmented reality PlayStation game
   title: Book of Spells
+
 c4rebrand:
   alt: Channel 4 Rebrand
   sizes:
@@ -38,6 +41,7 @@ c4rebrand:
       width: 1920
   subtitle: Unifying the master brand across all platforms
   title: Channel 4 Rebrand
+
 channel4:
   alt: Channel 4
   sizes:
@@ -47,6 +51,7 @@ channel4:
       width: 1920
   subtitle: A new way to navigate
   title: Channel 4
+
 creature:
   alt: Creature
   sizes:
@@ -60,6 +65,7 @@ creature:
       width: 1920
   subtitle: The PlayStation Music Videogame
   title: creature
+
 dancestar:
   alt: DanceStar
   sizes:
@@ -69,6 +75,7 @@ dancestar:
       width: 1920
   subtitle: Competitive rhythm video-game
   title: DanceStar Party
+
 keyboard:
   alt: Keyboard
   sizes:
@@ -78,6 +85,7 @@ keyboard:
       width: 1920
   subtitle: The PlayStation Music Videogame
   title: Singstar
+
 netflix:
   alt: Netflix
   sizes:
@@ -91,6 +99,7 @@ netflix:
       width: 1920
   subtitle: Christmas Advertising Campaign
   title: Netflix on YouView
+
 singstar:
   alt: SingStar
   sizes:
@@ -104,6 +113,7 @@ singstar:
       width: 1920
   subtitle: The PlayStation Music Videogame
   title: Singstar
+
 sony:
   alt: Sony
   sizes:
@@ -117,6 +127,7 @@ sony:
       width: 1920
   subtitle: Becoming the UK's default TV on Sony
   title: Android TV
+
 trainline:
   alt: Trainline
   title: Trainline x Google
@@ -130,6 +141,7 @@ trainline:
       jpg: /images/home/trainlineheader1920.jpg
       webp: /images/home/trainlineheader1920.webp
       width: 1920
+
 trainlineengagement:
   alt: Engagement
   sizes:
@@ -139,6 +151,7 @@ trainlineengagement:
       width: 1920
   subtitle: Engaging the users
   title: Trainline
+
 virgin:
   alt: Virgin Media
   sizes:
@@ -152,6 +165,7 @@ virgin:
       width: 1920
   subtitle: Improving digital care
   title: Virgin Media
+
 visualscrubbing:
   alt: C4 Scrubbing
   sizes:
@@ -165,6 +179,7 @@ visualscrubbing:
       width: 1920
   subtitle: A new way to navigate
   title: C4 Scrubbing
+
 wwe:
   alt: WWE
   sizes:
@@ -177,6 +192,7 @@ wwe:
       width: 1920
   subtitle: Rebuilt from the ground up
   title: WWE Network
+
 youview:
   alt: YouView
   sizes:
@@ -190,6 +206,7 @@ youview:
       width: 1920
   subtitle: Rethink, Redesign, Rebuild
   title: YouView 2.0
+
 yvapp:
   alt: YouView App
   sizes:
@@ -203,6 +220,7 @@ yvapp:
       width: 1920
   subtitle: Controlling your content from your phone
   title: YouView App
+
 yvcontrast:
   alt: Youview High Contrast
   sizes:
@@ -216,6 +234,7 @@ yvcontrast:
       width: 1920
   subtitle: Accessibility mode for the partially sighted
   title: Youview High Contrast
+
 yvhelp:
   alt: YouView Help
   sizes:
@@ -223,13 +242,8 @@ yvhelp:
       jpg: /images/home/YVhelpheader414.jpg
       webp: /images/home/YVhelpheader414.webp
       width: 414
-    - avif: /images/home/YVhelpheader1920.avif
-      # avif: "/images/home/stpheader1920.avif"
-      # webp: "/images/home/stpheader1920.webp"
-      jpg: /images/home/YVhelpheader1920.jpg
-      # avif: "/images/home/wweheader1920.avif"
+    - jpg: /images/home/YVhelpheader1920.jpg
       webp: /images/home/YVhelpheader1920.webp
       width: 1920
   subtitle: Supporting BT and TalkTalk customers on YouView
-  title: Help & Support # avif: "/images/home/stpheader414.avif"
-
+  title: Help & Support

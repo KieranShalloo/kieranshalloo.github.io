@@ -1,0 +1,65 @@
+title: "dancestar-party"
+description: "A UI/UX portfolio page showing work for DanceStar Party by Kieran Shalloo"
+
+# Meta & Brief Header
+meta_agency: "Sony London Studio"
+meta_client: "Playstation"
+meta_date: "2012"
+meta_role: "Visual Designer (contractor)"
+
+brief: |
+  As part of my contracted time at Sony London Studios i was part of the team that worked on the
+  DanceStar Party Rhythm game. This game brought the technology of the singstar party dance game
+  to a separate full fledged game. <br><br>The goal of
+  the game was to copy the dance moves shown on screen using the PlayStation Move controller, the
+  closer to the shown move the more points for the user.
+
+# Component Builder Engine
+page_sections:
+  # 1. Hero Screen Tile Banner
+  - type: "image"
+    name: "dancestar/dancestarHero"
+    alt: "dancestar hero UI Image"
+    full_width: true
+
+  # 2. Redesign & Consistency Text Block
+  - type: "text-block"
+    main_title: "My Role"
+    sections:
+      - text: |
+          I initially worked on creating the iconography assets for use in game. This consisted of
+          working with the lead designers to transfer live video into representative icons which managed to
+          indicate the pose as well as the movement. We went through many
+          iterations of these icons, which were then tested in house to see live reactions and then
+          alterations were made based on user feedback .<br><br> I also had an opportunity to work
+          closely with the lead motion designers
+          to create abstract background concepts which were then brought into the game engine as the
+          background videos behind the dancers.
+
+  - type: "media-grid"
+    tight: false # Optional: set to true if you want tighter spacing
+    items:
+      - name: "dancestar/dance1"
+        alt: "DanceStar Image 1"
+      - name: "dancestar/dance2"
+        alt: "DanceStar Image 2"
+
+      - name: "dancestar/dance3"
+        alt: "DanceStar Image 3"
+      - name: "dancestar/dance4"
+        alt: "DanceStar Image 4"
+
+      - name: "dancestar/dance5"
+        alt: "DanceStar Image 5"
+      - name: "dancestar/dance6"
+        alt: "DanceStar Image 6"
+
+      - name: "dancestar/dance7"
+        alt: "DanceStar Image 5"
+
+      - name: "dancestar/dance8"
+        alt: "DanceStar Image 6"
+      - name: "dancestar/dance9"
+        alt: "DanceStar Image 5"
+      - name: "dancestar/dance010"
+        alt: "DanceStar Image 6"

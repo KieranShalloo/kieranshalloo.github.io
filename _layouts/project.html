@@ -45,6 +45,7 @@ default: 'var(--accent)' %}
     </div>
 
     <!-- Main Component Engine Loop -->
+    <!-- Main Component Engine Loop -->
     <div class="project-builder">
         {% for block in project_content.page_sections %}
         {% if block.type == "text-block" %}
@@ -53,6 +54,10 @@ default: 'var(--accent)' %}
         {% include blocks/text-details.html block=block %}
         {% elsif block.type == "image" %}
         {% include blocks/image.html block=block %}
+        {% elsif block.type == "media-grid" %}
+        {% include blocks/media-grid.html block=block %}
+        {% elsif block.type == "image-text" %}
+        {% include blocks/image-text.html block=block %}
         {% endif %}
         {% endfor %}
     </div>

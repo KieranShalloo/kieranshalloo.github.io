@@ -1,6 +1,5 @@
 ---
 layout: project
-slug: "which"
+slug: 'which'
 ---
 
-{% include project-header.html project="wwe" %}

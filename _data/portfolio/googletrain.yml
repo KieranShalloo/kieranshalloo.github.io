@@ -51,3 +51,46 @@ page_sections:
     name: "googletrains/gtrainconcepts1920"
     alt: "Main image showing trainline concept design"
     full_width: true
+
+  - type: "text-block"
+    sections:
+      - subtitle: "First iteration"
+        text: |
+          Adding the logic of what the user had been doing before they landed on this page, we knew that the user had to have clicked on a journey on the Google module to get to this screen. So I first brought this selected train journey to the very top of the page, ensuring it was clear and obvious that their journey was still right there for them to purchase.
+
+          Underneath the selected journey I have added the biggest change for users from the google platform. By adding a reassurance message in an easy-to-access position which promotes the product and ensures the user of the benefits of using the Trainline platform.
+
+          This clickable element will open a new modal which will be able to sell personalised benefits of the platform based on common highly rated features with positive feedback.
+
+  - type: "image"
+    name: "googletrains/gtrainmodal"
+    alt: "Main image showing trainline concept design"
+    full_width: true
+
+  - type: "image-text"
+    image_position: "left"
+    media_style: "height: 60%; object-fit: contain;"
+    video_webm: "/images/googletrains/gtrain_modal.webm"
+    video_mp4: "/images/googletrains/gtrain_modal.mp4"
+    subtitle: "Design Details"
+    text: |
+      I explored several design iterations, as shown above, before working with the design team to get the final design signed off. We tested the designs with users to ensure they met our product targets, working with an external research resource alongside Trainline’s internal research team.
+
+      As the design was intended for multiple markets, I also worked closely with the UX copywriting team to finalise the copy for each locale, and with the localisation team on any required translations. Legal and marketing then signed off the final design and copy before public release.
+
+  - type: "text-block"
+    main_title: "Results and next steps"
+    sections:
+      - text: |
+          This module had an instant effect on the conversion of users. We saw a drop in users clicking through from Google and then leaving the platform.
+
+          We also unexpectedly saw an increase of users who came from google returning directly to the Trainline platform.
+
+          As this was the first short term iteration for this product, as soon as the public saw this version I was working on the second iteration with a much stronger emphasis on the Trainline brand, starting to incorporate more rich media into the product through animations and motion design.
+
+          The teams work across the whole project was one of the winners in Trainline's Tech and Product 2024 awards.
+
+  - type: "image"
+    name: "googletrains/award-1920"
+    alt: "Main image showing trainline concept design"
+    full_width: true

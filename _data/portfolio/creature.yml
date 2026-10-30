@@ -1,0 +1,59 @@
+---
+title: "WWE Network"
+description: "A UI/UX portfolio page showing work for OutSystems advertising campaign by Kieran Shalloo"
+theme_color: "var(--creature)"
+
+# Meta & Brief Header
+meta_agency: "Creature London"
+meta_client: "Outsystems"
+meta_date: "2022"
+meta_role: "Senior UX/UI Designer (contractor)"
+
+brief: |
+  I was briefed for a short term project helping to create a website which aligned with an agency provided advertising campaign.
+
+# Component Builder Engine
+page_sections:
+  # 1. Hero Screen Tile Banner
+  - type: "image"
+    name: "creature/creature-outsystems-techDebt-screen-1920"
+    alt: "WWE Network Screen Tile"
+
+  # 2. Redesign & Consistency Text Block
+  - type: "text-block"
+    main_title: "Redesign"
+    sections:
+      # Section with NO subtitle
+      - text: |
+          The design agency Creature London brought me on board as a designer to help them with their
+          project our OutSystems who were working on a low-code platform aimed at increasing their B2B reach.
+
+
+          This project involved liaising with the third party to ensure the branding and assets of the
+          advertising campaign were front and centre to ensure consistency with the marketing message.
+
+          I created versions of the website and presented them back to the client, taking into account a
+          mobile-first approach and worked iteratively on the design based on client feedback.
+
+  # 3. Image Grid Component
+  - type: "media-grid"
+    columns: 2
+    items:
+      - name: "creature/creature-outsystems-techDebt-greenVersion"
+        alt: "OutSystems Vertical List Screenshot"
+        caption: "Initial vertical layout exploration"
+      - name: "creature/creature-outsystems-techDebt-list"
+        alt: "OutSystems List Screenshot"
+        caption: "Refined list view for mobile and desktop"
+
+  # 5. Section WITH a subtitle
+
+  - type: "text-block"
+    sections:
+      - subtitle: "Web Design"
+        text: |
+          The design agency Creature London brought me on board as a designer to help them with their
+          project our OutSystems who were working on a low-code platform aimed at increasing their B2B reach.
+
+          This project involved liaising with the third party to ensure the branding and assets of the
+          advertising campaign were front and centre to ensure consisten
