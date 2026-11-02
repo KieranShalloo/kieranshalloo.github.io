@@ -1,0 +1,12 @@
+{% assign scroller_item = site.data.scrollers[include.block.scroller_key] %}
+<div class="container-fluid fullscreen-scroller p-0 my-5"
+    style="--scroller-img: url('{{ scroller_item.image_path }}');">
+    {% if scroller_item.title %}
+    <div class="container h-100 d-flex align-items-end pb-4">
+        <div class="text-white">
+            <h3 class="fw-300 mb-0">{{ scroller_item.title }}</h3>
+            {% if scroller_item.subtitle %}<p class="mb-0 text-white-50">{{ scroller_item.subtitle }}</p>{% endif %}
+        </div>
+    </div>
+    {% endif %}
+</div>

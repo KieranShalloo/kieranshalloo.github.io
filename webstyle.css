@@ -22,7 +22,7 @@
   --spacing-standard: 5rem; /* Standard macro spacing for top-level blocks and sections (~80px) */
   --spacing-tight: 1.5rem; /* Tight micro spacing for elements grouped inside a section (~24px) */
   --portfolio-spacing-y: clamp(3rem, 6vw, 5rem);
-  --portfolio-img-radius: 8px;
+  --portfolio-img-radius: 4px;
   --portfolio-img-shadow:
     0 15px 35px rgba(0, 0, 0, 0.07), 0 1px 3px rgba(0, 0, 0, 0.04);
 }
@@ -30,16 +30,18 @@
 /* ==========================================================================
 2. LAYOUT & CONTAINER QUERIES
    ========================================================================== */
-html,
-body {
+html {
   width: 100%;
   max-width: 100%;
-  overflow-x: hidden;
-  position: relative;
   box-sizing: border-box;
 }
 
 body {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden; /* Moving overflow-x here or wrapping your page contents avoids trapping sticky elements */
+  position: relative;
+  box-sizing: border-box;
   font-family: 'Outfit', sans-serif;
   font-size: 16px;
   color: var(--dark);
@@ -140,9 +142,8 @@ p {
 }
 
 li {
-  font-size: 1.2rem;
-  line-height: 1.4rem;
-  font-weight: 300;
+  font-size: clamp(1rem, 1.0313rem + 0.4167vw, 1.25rem);
+  font-weight: 200;
 }
 
 .figure-caption {
@@ -347,6 +348,20 @@ li {
     max-width: 100vw;
     box-sizing: border-box;
   }
+}
+
+.fullscreen-scroller {
+  width: 100vw;
+  height: 50vh;
+  min-height: 400px;
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  position: relative;
+  /* Optional gradient overlay to blend nicely */
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8)), var(--scroller-img);
 }
 
 /* ==========================================================================

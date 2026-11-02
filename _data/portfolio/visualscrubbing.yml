@@ -44,13 +44,14 @@ page_sections:
         items:
           - subtitle: "Pros"
             text: |
-              * Users could preview more of the program at once
-              * Easier to recognize previously watched segments
-              * Higher density of tiles made content easier to skim
+              - Users could see more of the show they were watching
+              - Easier to recognise parts of a show you have already watched
+              - More tiles made content easier to skim
           - subtitle: "Cons"
             text: |
-              * High visual movement could introduce accessibility issues
-              * Required expensive engineering resource
+              - Possible spoilers
+              - Lots of movement could cause accessibility issues
+              - Expensive tech resource
 
   - type: "section"
     blocks:
@@ -71,12 +72,12 @@ page_sections:
         items:
           - subtitle: "Pros"
             text: |
-              * Balanced approach between information density and screen space
+              - Balanced approach between too much and too little
           - subtitle: "Cons"
             text: |
-              * Potential for visual spoilers
-              * Centered focus drifted away from natural eye tracking
-              * Demanded heavy technical implementation effort
+              - Possible spoilers
+              - The center of the screen is not where the users' eyes are focused
+              - Expensive tech resource
 
   - type: "section"
     blocks:
@@ -84,7 +85,7 @@ page_sections:
         sections:
           - subtitle: "1 Tile Version"
             text: |
-              This ultimately led us to a single-tile design that dynamically tracked the user's playhead position across the timeline, activating precisely where the user chose to scrub.
+              This led to using a one-tile design which would follow the user playhead throughout the programme. This could be invoked at the precise area the user was currently looking at when they decided they wanted to either rewind or fast forward.
 
       - type: "media-grid"
         items:
@@ -99,24 +100,146 @@ page_sections:
         items:
           - subtitle: "Pros"
             text: |
-              * Easier and faster for engineering teams to build<br>
-              * Eliminated the risk of visual spoilers<br>
-              * Served as a clean, unified focal area
+              - Easier for the tech teams to create
+              - No risk of spoilers
+              - Can be used as a focal area
           - subtitle: "Cons"
             text: |
-              * Provided less contextual preview data for navigation<br>
-              * Required continuous movement across the screen<br>
-              * Less immediately discoverable for new users
+              - Not as much to work out where in the show you were
+              - Movement across the screen
+              - Not as obvious to the user
 
-  - type: "text-block"
-    main_title: "Results and Next Steps"
-    sections:
-      - text: |
-          This module had an immediate impact on user conversion, successfully reducing drop-off rates for incoming traffic.
+  - type: "section"
+    blocks:
+      - type: "text-block"
+        sections:
+          - subtitle: "Further Explorations"
+            text: |
+              As we were testing these different versions of the feature, we were also starting to wireframe different variants of the three concepts.
 
-          As an initial release, it paved the way for a second iteration that introduced stronger brand alignment and richer media elements through motion design. The collaborative team effort across this project was recognized as a winner at the 2024 Tech and Product Awards.
+              We used this time to fully explore how the visual scrubbing tiles would look, taking time to think about placement on screen, movement opacity and position. We had some discussions about where a user would naturally be looking whilst controlling their programmes and how the visual scrubbing tiles should be placed in conjunction with the playback bar.
 
-  - type: "image"
-    name: "googletrains/award-1920"
-    alt: "Showcase graphic highlighting the award-winning design work"
-    full_width: true
+              One concern that was aired was the separation between the tile in focus and the playhead on the progress bar which could be at the far end of the screen and disconnected.
+
+      - type: "media-grid"
+        items:
+          - name: "visualscrubbing/visualScrubingwireframe9"
+            alt: "Wireframe layout displaying the 3-tile scrubbing interface"
+          - name: "visualscrubbing/visualScrubingwireframe10"
+            alt: "Alternative view of the 3-tile component during playback"
+          - name: "visualscrubbing/visualScrubingwireframe11"
+            alt: "Alternative view of the 3-tile component during playback"
+
+  - type: "fullscreen-scroller"
+    scroller_key: "visualscrubbing"
+
+  - type: "section"
+    blocks:
+      - type: "text-block"
+        sections:
+          - subtitle: "Final Designs"
+            text: |
+              After exploring these different designs we settled on the 1 tile approach for the final design. Taking the pros and cons of the different designs and the result of prototyping, the one-tile version testing the best for usability for the end user.
+
+              Once we had the final concept locked down, it was time to start looking at the design holistically, starting to ask ourselves how it would fit in with the current user experience and whether it would run alongside existing features that users have become acclimated to in a TV market.
+
+              We broke the design down into smaller elements, spending time adjusting and tweaking the layout until we got to the very final design.
+
+      - type: "media-grid"
+        full_width: true
+        items:
+          - name: "visualscrubbing/visualScrubbing1"
+            alt: "Wireframe layout displaying the 3-tile scrubbing interface"
+          - name: "visualscrubbing/visualScrubbing2"
+            alt: "Alternative view of the 3-tile component during playback"
+
+  - type: "section"
+    blocks:
+      - type: "text-block"
+        sections:
+          - subtitle: "Motion Design"
+            text: |
+              It was also here that I started to add the final animation and motion design to hand over to developers. I knew this would be the final touch to a successful feature launch. I had been creating Motion design throughout the whole conception phase so it was an easy step into the final production motion.
+
+      - type: "image"
+        name: "visualscrubbing/vsSpec"
+        alt: "Main image showing specification layout"
+
+      - type: "video"
+        poster: "/images/visualscrubbing/vsVideoPoster.jpg"
+        webm: "/images/visualscrubbing/singleTile.webm"
+        mp4: "/images/visualscrubbing/singleTile.mp4"
+        caption:
+          "Video showing the difference in the Channel 4 app before and after
+          the rebrand"
+
+  - type: "section"
+    blocks:
+      - type: "text-block"
+        main_title: "Product Scenarios and Edge Cases"
+        sections:
+          - text: |
+              Once we had approval for the one-tile approach I started working closer with the developmental and product team to flesh out certain scenarios as well as some more obscure edge cases.
+
+      - type: "text-block"
+        sections:
+          - subtitle: "Advert Breaks"
+            text: |
+              Advert breaks were a big element of the design in visual scrubbing. Certain questions were raised around feedback for the user when crossing advertisement breaks.
+
+              Would the scrubbing stop to play the advert?
+
+              How would the user know an advert break was going to be invoked after playback is started?
+
+      - type: "image"
+        name: "visualscrubbing/visualScrubingflow"
+        alt: "Flow diagram showing advert break interactions"
+
+      - type: "text-block"
+        sections:
+          - subtitle: "Back Journeys"
+            text: |
+              Back journeys are an often overlooked element of the user journey so we ensured we spent a lot of time to focus on how a user would be able to navigate throughout the journey.
+          - subtitle: "End of Playback"
+            text: |
+              Channel 4 has a feature which will allow the user to watch the next episode without any interaction needed. This feature became something we had to think about concerning visual scrubbing as suddenly we had an interaction design clash.
+
+              We had to explore user expectations when they had scrubbed to the end of a show, or also the opposite of the end user had used the rewind function to go back to the start of content.
+
+              What would be the expected behaviour and how would our interaction model relate to this?
+
+  - type: "section"
+    blocks:
+      - type: "text-block"
+        main_title: "Designing for Roku"
+        sections:
+          - text: |
+              Although we had our preferred design on the product, Roku had a version of visual scrubbing built into the product already.
+
+              This led to discussions about how we would proceed on Roku. Was the right approach to keep consistency with the rest of the designs on TV platforms, or to create less friction to release to the public? After some high-level consultation, it was decided to make the development team's life easier by using the built-in features.
+
+              This reduced resources needed as well as allowing Roku users to have a familiar pattern that they would have used on different platforms on their devices.
+
+      - type: "image"
+        name: "visualscrubbing/visualScrubingRoku1"
+        alt:
+          "Channel 4 playback interface displaying the visual rewind feature on
+          a TV screen"
+
+      - type: "image-text"
+        name: "visualscrubbing/vsrokuSpec"
+        image_position: "left"
+        text:
+          "By using existing Roku patterns, we could create an experience which
+          existing users of the platform would be familiar with, whilst ensuring
+          it matched the ethos of the design on HTML5 platforms."
+
+  - type: "section"
+    blocks:
+      - type: "text-block"
+        main_title: "Learnings"
+        sections:
+          - text: |
+              Positive user feedback accompanied the release, with customers happy that the platform has a fundamental feature with improved UX and UI. No users across the platforms noted any issues with the feature and Roku users were delighted that we followed the platform guidelines rather than using the same designs across all Channel 4 apps.
+
+              Some personal learning was for me in the design process trying to narrow down the different concepts. Being able to articulate design decisions to non-designer stakeholders and backing my opinions with data and facts. As always including the developmental team early gave us a wonderful opportunity to tweak work on the fly, especially the speed of content rewinding and fast-forwarding with each press of the remote control. With the developers building an easy customisable attribute we could test different speeds instantly. The benefit of always getting builds sent to a TV device was obvious with this project. Sometimes with Figma and After Effects, we can get too obsessed with the designs and being able to use a remote control in a hands-on testing session can reveal many more conditions that we need to design for.

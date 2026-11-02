@@ -85,6 +85,10 @@ default: 'var(--accent)' %}
             {% include blocks/media-grid.html block=sub_block %}
             {% elsif sub_block.type == "image-text" %}
             {% include blocks/image-text.html block=sub_block %}
+            {% elsif sub_block.type == "fullscreen-scroller" %}
+            {% include blocks/fullscreen-scroller.html block=sub_block %}
+            {% elsif sub_block.type == "video" %}
+            {% include blocks/video.html block=sub_block %}
             {% endif %}
             {% endfor %}
         </section>
@@ -98,6 +102,10 @@ default: 'var(--accent)' %}
         {% include blocks/media-grid.html block=block %}
         {% elsif block.type == "image-text" %}
         {% include blocks/image-text.html block=block %}
+        {% elsif block.type == "fullscreen-scroller" %}
+        {% include blocks/fullscreen-scroller.html block=block %}
+        {% elsif block.type == "video" %}
+        {% include blocks/video.html block=block %}
         {% endif %}
         {% endfor %}
     </div>

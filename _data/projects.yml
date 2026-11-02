@@ -246,13 +246,17 @@
     "A UI/UX portfolio page showing work for Channel 4 by Kieran Shalloo"
   project_header_id: "visualscrubbing"
   meta:
-    brief:
-      "I worked with Channel4 throughout various projects, bringing my TV
-      experience to their design team as an external contractor. I was able to
-      bring an outside perspective to the problems of the business whilst
-      working with the internal design teams as well as a third-party technology
-      supplier. One brief I worked on in my time there was the introduction of
-      the Visual Scrubbing feature."
+    brief: "I worked with Channel4 throughout various projects, bringing my TV
+      experience to their design team as an external contractor.
+
+
+      I was able to bring an outside perspective to the problems of the business
+      whilst working with the internal design teams as well as a third-party
+      technology supplier.
+
+
+      One brief I worked on in my time there was the introduction of the Visual
+      Scrubbing feature."
     client: "Channel 4"
     project_date: "2023 - 2024"
     role: "Senior UX/UI Designer (contractor)"
