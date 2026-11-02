@@ -27,28 +27,68 @@ default: 'var(--accent)' %}
                 <div class="col-md-6 offset-md-2">
                     <h6 class="text-muted">Brief</h6>
                     <div class="project-brief-text">
-                        {{ project_content.brief | markdownify }}
+                        {% assign display_brief = project_content.brief | default: project_meta.meta.brief %}
+                        {{ display_brief | markdownify }}
                     </div>
                 </div>
                 <div class="col-md-3 offset-md-1">
-                    {% if project_content.meta_agency %}<h6 class="text-muted">Agency</h6>
-                    <p>{{ project_content.meta_agency }}</p>{% endif %}
-                    {% if project_content.meta_client %}<h6 class="text-muted">Client</h6>
-                    <p>{{ project_content.meta_client }}</p>{% endif %}
-                    {% if project_content.meta_date %}<h6 class="text-muted">Project Date</h6>
-                    <p>{{ project_content.meta_date }}</p>{% endif %}
-                    {% if project_content.meta_role %}<h6 class="text-muted">Role</h6>
-                    <p>{{ project_content.meta_role }}</p>{% endif %}
+                    {% assign display_agency = project_content.meta_agency | default: project_meta.meta.agency %}
+                    {% if display_agency %}
+                    <h6 class="text-muted">Agency</h6>
+                    <p>{{ display_agency }}</p>
+                    {% endif %}
+
+                    {% assign display_client = project_content.meta_client | default: project_meta.meta.client %}
+                    {% if display_client %}
+                    <h6 class="text-muted">Client</h6>
+                    <p>{{ display_client }}</p>
+                    {% endif %}
+
+                    {% assign display_date = project_content.meta_date | default: project_meta.meta.project_date %}
+                    {% if display_date %}
+                    <h6 class="text-muted">Project Date</h6>
+                    <p>{{ display_date }}</p>
+                    {% endif %}
+
+                    {% assign display_role = project_content.meta_role | default: project_meta.meta.role %}
+                    {% if display_role %}
+                    <h6 class="text-muted">Role</h6>
+                    <p>{{ display_role }}</p>
+                    {% endif %}
                 </div>
             </div>
         </div>
     </div>
 
     <!-- Main Component Engine Loop -->
-    <!-- Main Component Engine Loop -->
     <div class="project-builder">
         {% for block in project_content.page_sections %}
-        {% if block.type == "text-block" %}
+        {% if block.type == "section" %}
+        <section class="portfolio-section my-5">
+            {% if block.title %}
+            <div class="container mb-4">
+                <div class="row">
+                    <div class="col-12 col-md-8 offset-md-2">
+                        <h2 class="h3 fw-bold">{{ block.title }}</h2>
+                    </div>
+                </div>
+            </div>
+            {% endif %}
+            {% for sub_block in block.blocks %}
+            {% if sub_block.type == "text-block" %}
+            {% include blocks/text-block.html block=sub_block %}
+            {% elsif sub_block.type == "text-details" %}
+            {% include blocks/text-details.html block=sub_block %}
+            {% elsif sub_block.type == "image" %}
+            {% include blocks/image.html block=sub_block %}
+            {% elsif sub_block.type == "media-grid" %}
+            {% include blocks/media-grid.html block=sub_block %}
+            {% elsif sub_block.type == "image-text" %}
+            {% include blocks/image-text.html block=sub_block %}
+            {% endif %}
+            {% endfor %}
+        </section>
+        {% elsif block.type == "text-block" %}
         {% include blocks/text-block.html block=block %}
         {% elsif block.type == "text-details" %}
         {% include blocks/text-details.html block=block %}

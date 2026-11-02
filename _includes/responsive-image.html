@@ -1,10 +1,13 @@
+{% comment %} Safely check for either name or image_name parameter {% endcomment %}
+{% assign base_name = include.name | default: include.image_name %}
+
+{% if base_name != nil and base_name != "" %}
 {% assign loading = include.loading | default: 'lazy' %}
 {% assign decoding = include.decoding | default: 'async' %}
-{% assign base_name = include.name %}
 {% assign fallback_ext = include.ext | default: 'jpg' %}
-{% assign mobile_target = include.mobile_name | default: base_name %}
 
-{% comment %} Set Cloudflare CDN prefixes only in production {% endcomment %}
+{% assign mobile_target = include.mobile_name | default: base_name | append: "-mobile" %}
+
 {% if jekyll.environment == "production" %}
 {% assign cdn_mobile = "/cdn-cgi/image/width=1179,format=auto,quality=85" %}
 {% assign cdn_desktop = "/cdn-cgi/image/width=2880,format=auto,quality=85" %}
@@ -15,20 +18,13 @@
 
 <figure class="{{ include.container_class | default: 'portfolio-image m-0' }}">
   <picture>
-    <!-- 1. Mobile WebP Source -->
-    <source media="(max-width: 767px)" srcset="{{ cdn_mobile }}/images/{{ mobile_target }}.webp" type="image/webp">
+    <!-- Mobile Source attempt (< 768px) -->
+    <source media="(max-width: 767.98px)" srcset="{{ cdn_mobile }}/images/{{ mobile_target }}.{{ fallback_ext }}">
 
-    <!-- 2. Mobile Fallback Source -->
-    <source media="(max-width: 767px)" srcset="{{ cdn_mobile }}/images/{{ mobile_target }}.{{ fallback_ext }}">
-
-    <!-- 3. Desktop WebP Source -->
-    <source media="(min-width: 768px)" srcset="{{ cdn_desktop }}/images/{{ base_name }}.webp" type="image/webp">
-
-    <!-- 4. Desktop Fallback Source -->
-    <source media="(min-width: 768px)" srcset="{{ cdn_desktop }}/images/{{ base_name }}.{{ fallback_ext }}">
-
-    <!-- 5. Default Fallback Image Tag -->
+    <!-- Desktop / Fallback Img Tag with Automatic 404 Recovery -->
     <img src="{{ cdn_desktop }}/images/{{ base_name }}.{{ fallback_ext }}" alt="{{ include.alt | escape }}"
-      class="img-fluid {{ include.class }}" loading="{{ loading }}" decoding="{{ decoding }}">
+      class="img-fluid {{ include.class }}" loading="{{ loading }}" decoding="{{ decoding }}"
+      onerror="this.parentNode.querySelectorAll('source').forEach(s => s.remove()); this.src='{{ cdn_desktop }}/images/{{ base_name }}.{{ fallback_ext }}';">
   </picture>
 </figure>
+{% endif %}

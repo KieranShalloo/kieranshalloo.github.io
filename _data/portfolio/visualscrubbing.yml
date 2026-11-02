@@ -1,0 +1,122 @@
+title: "Visual Scrubbing"
+description:
+  "A UI/UX portfolio page showing work for Channel 4 by Kieran Shalloo"
+theme_color: "var(--channel4)"
+
+page_sections:
+  - type: "text-block"
+    main_title: "Visual Scrubbing"
+    sections:
+      - text: |
+          The Channel 4 app had limited capabilities for rewinding and fast-forwarding. Customer feedback highlighted that this was especially frustrating when users were dropped into an incorrect timestamp from the continue watching area.
+
+          We wanted to create an intuitive way for users to find their desired playback position. After inspecting industry patterns, we aimed to match familiar on-screen design standards while keeping our target audience's habits in mind.
+
+  - type: "image"
+    name: "visualscrubbing/indevice"
+    alt:
+      "Channel 4 playback interface displaying the visual rewind feature on a TV
+      screen"
+    full_width: true
+
+  - type: "text-block"
+    main_title: "The Design Process"
+    sections:
+      - text: |
+          Through competitor research and user testing, we narrowed our focus down to three distinct interaction patterns for the scrubbing mechanism.
+
+  - type: "section"
+    blocks:
+      - type: "text-block"
+        sections:
+          - subtitle: "5 Tile Version"
+            text: |
+              The first concept displayed five thumbnails simultaneously as the user interacted with the progress bar. While user feedback was generally positive, a key layout conflict emerged: a central navigation menu clashed with playback when users were near the beginning or end of a program, where expectations leaned toward localized thumbnails.
+
+      - type: "media-grid"
+        items:
+          - name: "visualscrubbing/visualScrubingwireframe2"
+            alt: "Wireframe layout showing the 5-tile scrubbing interface"
+          - name: "visualscrubbing/visualScrubingwireframe3"
+            alt: "Detailed view of the 5-tile navigation layout during playback"
+
+      - type: "text-details"
+        items:
+          - subtitle: "Pros"
+            text: |
+              * Users could preview more of the program at once
+              * Easier to recognize previously watched segments
+              * Higher density of tiles made content easier to skim
+          - subtitle: "Cons"
+            text: |
+              * High visual movement could introduce accessibility issues
+              * Required expensive engineering resource
+
+  - type: "section"
+    blocks:
+      - type: "text-block"
+        sections:
+          - subtitle: "3 Tile Version"
+            text: |
+              We also explored a middle-ground approach featuring three tiles. This reduced screen clutter while offering better positional context than a single view. However, showing multiple future thumbnails introduced potential narrative spoiler risks if a scene previewed an upcoming event before the user reached it.
+
+      - type: "media-grid"
+        items:
+          - name: "visualscrubbing/visualScrubingwireframe12"
+            alt: "Wireframe layout displaying the 3-tile scrubbing interface"
+          - name: "visualscrubbing/visualScrubingwireframe13"
+            alt: "Alternative view of the 3-tile component during playback"
+
+      - type: "text-details"
+        items:
+          - subtitle: "Pros"
+            text: |
+              * Balanced approach between information density and screen space
+          - subtitle: "Cons"
+            text: |
+              * Potential for visual spoilers
+              * Centered focus drifted away from natural eye tracking
+              * Demanded heavy technical implementation effort
+
+  - type: "section"
+    blocks:
+      - type: "text-block"
+        sections:
+          - subtitle: "1 Tile Version"
+            text: |
+              This ultimately led us to a single-tile design that dynamically tracked the user's playhead position across the timeline, activating precisely where the user chose to scrub.
+
+      - type: "media-grid"
+        items:
+          - name: "visualscrubbing/visualScrubingwireframe7"
+            alt: "Wireframe layout showing the final 1-tile scrubbing interface"
+          - name: "visualscrubbing/visualScrubingwireframe8"
+            alt:
+              "Focused view of the 1-tile thumbnail following the active
+              playhead"
+
+      - type: "text-details"
+        items:
+          - subtitle: "Pros"
+            text: |
+              * Easier and faster for engineering teams to build<br>
+              * Eliminated the risk of visual spoilers<br>
+              * Served as a clean, unified focal area
+          - subtitle: "Cons"
+            text: |
+              * Provided less contextual preview data for navigation<br>
+              * Required continuous movement across the screen<br>
+              * Less immediately discoverable for new users
+
+  - type: "text-block"
+    main_title: "Results and Next Steps"
+    sections:
+      - text: |
+          This module had an immediate impact on user conversion, successfully reducing drop-off rates for incoming traffic.
+
+          As an initial release, it paved the way for a second iteration that introduced stronger brand alignment and richer media elements through motion design. The collaborative team effort across this project was recognized as a winner at the 2024 Tech and Product Awards.
+
+  - type: "image"
+    name: "googletrains/award-1920"
+    alt: "Showcase graphic highlighting the award-winning design work"
+    full_width: true

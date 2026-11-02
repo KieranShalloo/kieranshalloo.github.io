@@ -1,7 +1,7 @@
 {% assign img_position = include.block.image_position | default: 'left' %}
 {% assign has_video = include.block.video_mp4 or include.block.video_webm %}
 
-<div class="container">
+<div class="container my-5 portfolio-component">
     <div class="row align-items-center g-5">
         <!-- Media Column (Image or Video) -->
         <div class="col-12 col-md-6 {% if img_position == 'right' %}order-md-2{% endif %}">
@@ -16,10 +16,15 @@
                 Sorry, your browser doesn't support embedded videos.
             </video>
             {% else %}
-            {% include responsive-image.html
-            name=include.block.image_name
-            alt=include.block.alt
-            %}
+            <div class="portfolio-media-container">
+                {% include responsive-image.html
+                name=include.block.name
+                image_name=include.block.image_name
+                mobile_name=include.block.mobile_name
+                alt=include.block.alt
+                class="img-fluid w-100 d-block"
+                %}
+            </div>
             {% endif %}
         </div>
 

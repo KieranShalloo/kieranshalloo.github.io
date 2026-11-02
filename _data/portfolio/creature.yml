@@ -3,15 +3,6 @@ title: "WWE Network"
 description: "A UI/UX portfolio page showing work for OutSystems advertising campaign by Kieran Shalloo"
 theme_color: "var(--creature)"
 
-# Meta & Brief Header
-meta_agency: "Creature London"
-meta_client: "Outsystems"
-meta_date: "2022"
-meta_role: "Senior UX/UI Designer (contractor)"
-
-brief: |
-  I was briefed for a short term project helping to create a website which aligned with an agency provided advertising campaign.
-
 # Component Builder Engine
 page_sections:
   # 1. Hero Screen Tile Banner

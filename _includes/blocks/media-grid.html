@@ -6,10 +6,17 @@
     <div class="row justify-content-center {% if tight %}g-2{% endif %}">
         {% if items %}
         {% for item in items %}
+        {% comment %} Safely check all variations of item image properties {% endcomment %}
+        {% assign item_name = item.name | default: item.image_name | default: item.image %}
+
         <!-- col-12 for mobile stack, col-md-6 for 2-column desktop split -->
         <div class="col-12 col-md-6 {% if tight %}pt-2{% else %}pt-3{% endif %}">
             <div class="portfolio-media-container h-100">
-                {% include responsive-image.html name=item.name alt=item.alt sizes="true" %}
+                {% include responsive-image.html
+                name=item_name
+                mobile_name=item.mobile_name
+                alt=item.alt
+                %}
             </div>
             {% if item.caption %}
             <figcaption class="figure-caption text-center mt-2">

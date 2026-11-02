@@ -13,12 +13,14 @@
   --virgin: oklch(38% 0.2 320);
   --sony: oklch(78% 0.18 150);
   --creature: oklch(80% 0.17 155);
-  --channel4: oklch(90% 0.18 125);
+  --channel4: oklch(87.53% 0.158 138.83);
   --trainline: oklch(65% 0.15 175);
   --google: oklch(60% 0.2 260);
   --stp: oklch(62% 0.19 310);
 
-  /* Atomic Layout & Component Tokens */
+  /* Atomic Layout, Spacing & Component Tokens */
+  --spacing-standard: 5rem; /* Standard macro spacing for top-level blocks and sections (~80px) */
+  --spacing-tight: 1.5rem; /* Tight micro spacing for elements grouped inside a section (~24px) */
   --portfolio-spacing-y: clamp(3rem, 6vw, 5rem);
   --portfolio-img-radius: 8px;
   --portfolio-img-shadow:
@@ -180,6 +182,13 @@ li {
     }
   }
 
+  .navbar-nav {
+    /* 16px (1rem) spacing between list items */
+    .nav-item + .nav-item {
+      margin-left: 1rem;
+    }
+  }
+
   .nav-link {
     position: relative;
     padding: 0.5rem 1rem;
@@ -200,6 +209,35 @@ li {
     &:hover::after,
     &.active::after {
       transform: scaleX(1);
+    }
+  }
+}
+
+/* Light mode logo styling (Non-dark projects) */
+.navbar-light {
+  .navbar-logo {
+    opacity: 0.85;
+    transition:
+      opacity 0.2s ease,
+      filter 0.2s ease;
+  }
+  .navbar-brand:hover .navbar-logo {
+    opacity: 1;
+  }
+}
+
+/* Per-Project Dark Theme Handling (triggered by dark_theme: true) */
+[data-bs-theme='dark'] {
+  .navbar-logo {
+    filter: invert(1) brightness(200%);
+  }
+
+  .navbar-nav .nav-link {
+    color: rgba(255, 255, 255, 0.75) !important;
+
+    &:hover,
+    &:focus {
+      color: #ffffff !important;
     }
   }
 }
@@ -358,5 +396,37 @@ ul.social-network {
     i {
       color: var(--dark);
     }
+  }
+}
+
+/* ==========================================================================
+7. PORTFOLIO SECTION & SPACING RHYTHM
+   ========================================================================== */
+
+/* 1. Major parent sections use standard spacing */
+.portfolio-section {
+  margin-bottom: var(--spacing-standard);
+}
+
+/* 2. Standalone top-level blocks outside sections also use standard spacing */
+.project-builder > *:not(.portfolio-section) {
+  margin-bottom: var(--spacing-standard);
+}
+
+/* 3. ONLY elements nested directly inside a section use tight inner spacing */
+.portfolio-section > *:not(:last-child) {
+  margin-bottom: var(--spacing-tight);
+}
+
+/* Remove competing component padding so the tokens control the rhythm */
+.portfolio-section .portfolio-component {
+  padding-block: 0;
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 767.98px) {
+  :root {
+    --spacing-standard: 3rem;
+    --spacing-tight: 1rem;
   }
 }

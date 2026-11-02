@@ -1,19 +1,8 @@
-title: 'WWE Network'
-description: 'Senior UX/UI design work for the award-winning WWE Network relaunch.'
-theme_color: 'var(--wwe)'
+title: 'channel4'
+description: 'A showcase of Channel 4 UX/UI design work.'
+theme_color: 'var(--channel4)'
 
-# Meta & Brief Header
-meta_agency: 'Massive Interactive / Deltatre'
-meta_client: 'World Wrestling Entertainment'
-meta_date: '2020'
-meta_role: 'Senior UX/UI Designer (contractor)'
 
-brief: |
-  WWE relaunched its On Demand video service in Q2 of 2019. The app showcases live wrestling events as well as the whole past catalogue of WWE shows, original content related to Sports Entertainment, and short-form clips.
-
-  I was brought on board this project via an agency which I had previously worked with. The WWE Network is spread across Responsive Web, Mobile, and TV so my previous experience was a plus point.
-
-  I worked extremely closely with the client-side through all instances of this project and took designs from concept through to support for the development of the features.
 
 # Component Builder Engine
 page_sections:
