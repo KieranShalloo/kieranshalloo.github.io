@@ -1,18 +1,6 @@
 title: "dancestar-party"
 description: "A UI/UX portfolio page showing work for DanceStar Party by Kieran Shalloo"
 
-# Meta & Brief Header
-meta_agency: "Sony London Studio"
-meta_client: "Playstation"
-meta_date: "2012"
-meta_role: "Visual Designer (contractor)"
-
-brief: |
-  As part of my contracted time at Sony London Studios i was part of the team that worked on the
-  DanceStar Party Rhythm game. This game brought the technology of the singstar party dance game
-  to a separate full fledged game. <br><br>The goal of
-  the game was to copy the dance moves shown on screen using the PlayStation Move controller, the
-  closer to the shown move the more points for the user.
 
 # Component Builder Engine
 page_sections:

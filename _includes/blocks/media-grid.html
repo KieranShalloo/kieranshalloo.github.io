@@ -2,20 +2,34 @@
 {% assign tight = include.section.tight | default: include.block.tight | default: false %}
 {% assign items = include.section.items | default: include.block.items %}
 
+{% comment %} Determine grid column span: default to 2 columns (col-md-6), allow 3 columns (col-md-4) or 4 columns
+(col-md-3) {% endcomment %}
+{% assign columns = include.section.columns | default: include.block.columns | default: 2 %}
+{% if columns == 4 %}
+{% assign col_class = "col-12 col-sm-6 col-md-3" %}
+{% elsif columns == 3 %}
+{% assign col_class = "col-12 col-md-4" %}
+{% else %}
+{% assign col_class = "col-12 col-md-6" %}
+{% endif %}
+
 <div class="{% if full_width %}container-fluid px-0{% else %}container{% endif %} portfolio-component">
     <div class="row justify-content-center {% if tight %}g-2{% endif %}">
         {% if items %}
         {% for item in items %}
-        {% comment %} Safely check all variations of item image properties {% endcomment %}
         {% assign item_name = item.name | default: item.image_name | default: item.image %}
 
-        <!-- col-12 for mobile stack, col-md-6 for 2-column desktop split -->
-        <div class="col-12 col-md-6 {% if tight %}pt-2{% else %}pt-3{% endif %}">
-            <div class="portfolio-media-container h-100">
+        {% comment %} Check if item or block is marked as a mobile screen presentation {% endcomment %}
+        {% assign is_mobile = item.is_mobile | default: include.block.is_mobile | default: false %}
+
+        <div class="{{ col_class }} {% if tight %}pt-2{% else %}pt-3{% endif %}">
+            <div class="portfolio-media-container h-100 {% if is_mobile %}mobile-screen-container{% endif %}">
                 {% include responsive-image.html
                 name=item_name
                 mobile_name=item.mobile_name
                 alt=item.alt
+                ext=item.ext
+                class="img-fluid d-block mx-auto"
                 %}
             </div>
             {% if item.caption %}

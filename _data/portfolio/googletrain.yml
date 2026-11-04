@@ -2,14 +2,6 @@ title: "Google Trains"
 description: "A UI/UX portfolio page showing work for Trainline by Kieran Shalloo"
 theme_color: "var(--google)"
 
-# Meta & Brief Header
-meta_client: "Trainline"
-meta_date: "2024"
-meta_role: "Senior UX/UI Designer (contractor)"
-
-brief: |
-  To create ways to reassure passengers coming to Trainline from Google, communicating the positive propositions of the product.
-
 page_sections:
   - type: "text-block"
     main_title: "Google Trains"

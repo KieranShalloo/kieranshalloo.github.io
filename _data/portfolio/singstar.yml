@@ -1,0 +1,29 @@
+title: "Singstar"
+description:
+  "A UI/UX portfolio page showing work for DanceStar Party by Kieran Shalloo"
+
+# Component Builder Engine
+page_sections:
+  # 1. Hero Screen Tile Banner
+  - type: "image"
+    name: "singstar/singstarHero"
+    alt: "dancestar hero UI Image"
+    full_width: true
+
+  - type: "media-grid"
+    full_width: true
+    items:
+      - name: "singstar/singstarpromo"
+        alt: "DanceStar Image 1"
+      - name: "singstar/singstarMG3"
+        alt: "DanceStar Image 2"
+
+      - name: "singstar/singstar80s"
+        alt: "DanceStar Image 3"
+      - name: "singstar/singstarMG2"
+        alt: "DanceStar Image 4"
+
+      - name: "singstar/singstarMG"
+        alt: "DanceStar Image 5"
+      - name: "singstar/singstarHome"
+        alt: "DanceStar Image 6"

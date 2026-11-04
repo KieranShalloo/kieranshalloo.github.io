@@ -65,15 +65,6 @@ default: 'var(--accent)' %}
         {% for block in project_content.page_sections %}
         {% if block.type == "section" %}
         <section class="portfolio-section my-5">
-            {% if block.title %}
-            <div class="container mb-4">
-                <div class="row">
-                    <div class="col-12 col-md-8 offset-md-2">
-                        <h2 class="h3 fw-bold">{{ block.title }}</h2>
-                    </div>
-                </div>
-            </div>
-            {% endif %}
             {% for sub_block in block.blocks %}
             {% if sub_block.type == "text-block" %}
             {% include blocks/text-block.html block=sub_block %}
@@ -92,20 +83,28 @@ default: 'var(--accent)' %}
             {% endif %}
             {% endfor %}
         </section>
+
         {% elsif block.type == "text-block" %}
         {% include blocks/text-block.html block=block %}
+
         {% elsif block.type == "text-details" %}
         {% include blocks/text-details.html block=block %}
+
         {% elsif block.type == "image" %}
         {% include blocks/image.html block=block %}
+
         {% elsif block.type == "media-grid" %}
         {% include blocks/media-grid.html block=block %}
+
         {% elsif block.type == "image-text" %}
         {% include blocks/image-text.html block=block %}
+
         {% elsif block.type == "fullscreen-scroller" %}
         {% include blocks/fullscreen-scroller.html block=block %}
+
         {% elsif block.type == "video" %}
         {% include blocks/video.html block=block %}
+
         {% endif %}
         {% endfor %}
     </div>

@@ -1,2 +1,27 @@
 visualscrubbing:
   image_path: "/images/visualscrubbing/scrubbingscolling.jpg"
+
+wwe_unified_experience:
+  image_path: "/images/wwe/tileanglephone.jpg"
+  main_title: "One unified experience"
+  sections:
+    - text: The approach for the client was to give the end-user a unified
+        experience across multiple devices. The base WWE app was released on 10
+        devices as well as the variants of this hardware and we didn’t want that
+        to limit any version of the app.
+
+
+        We had to always put the different devices into our minds, working
+        closely to create bespoke platform interactions whilst retaining the
+        overall consistency of the UI. This was highly noticeable in the
+        navigation patterns as each remote control/gamepad would have its own
+        unique hardware and buttons would not always correlate.
+
+
+        We also had to really understand the hardware limitations of these
+        devices and knowing what we could or couldn't do for each platform.
+        Sometimes we had to make hard decisions to ensure that performance was
+        good enough for the user to actually control the content.
+
+virginscroller:
+  image_path: "/images/virgin/partialPayment/virginmedia-PayNow-1920.jpg"

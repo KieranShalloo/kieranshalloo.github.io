@@ -6,7 +6,11 @@
 {% assign decoding = include.decoding | default: 'async' %}
 {% assign fallback_ext = include.ext | default: 'jpg' %}
 
-{% assign mobile_target = include.mobile_name | default: base_name | append: "-mobile" %}
+{% if include.mobile_name != nil and include.mobile_name != "" %}
+{% assign mobile_target = include.mobile_name %}
+{% else %}
+{% assign mobile_target = base_name | append: "-mobile" %}
+{% endif %}
 
 {% if jekyll.environment == "production" %}
 {% assign cdn_mobile = "/cdn-cgi/image/width=1179,format=auto,quality=85" %}

@@ -352,8 +352,9 @@ li {
 
 .fullscreen-scroller {
   width: 100vw;
-  height: 50vh;
-  min-height: 400px;
+  /* Use min-height instead of fixed height so text content can expand the container */
+  min-height: 80vh;
+  height: auto;
   background-size: cover;
   background-position: center center;
   background-attachment: fixed;
@@ -444,4 +445,18 @@ ul.social-network {
     --spacing-standard: 3rem;
     --spacing-tight: 1rem;
   }
+}
+
+.portfolio-media-container.mobile-screen-container {
+  max-height: 550px; /* Adjust max height limit as needed */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.portfolio-media-container.mobile-screen-container img {
+  max-height: 550px;
+  width: auto !important; /* Prevents 100% width stretching for tall vertical images */
+  object-fit: contain;
 }

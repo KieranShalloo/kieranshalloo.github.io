@@ -1,4 +1,4 @@
 ---
 layout: project
-slug: "wwenew"
+slug: "singstar"
 ---

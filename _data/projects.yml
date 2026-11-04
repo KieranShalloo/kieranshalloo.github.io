@@ -221,10 +221,10 @@
     project_date: "2024"
     role: "Senior UX/UI Designer (contractor)"
 
-- id: "virgin-media"
+- id: "virgin"
   layout: default
-  title: "Virginmedia"
-  dark_theme: false
+  title: "Virgin media"
+
   description:
     "A UI/UX portfolio page showing work for Virgin Media by Kieran Shalloo"
   project_header_id: "virgin"
@@ -261,13 +261,13 @@
     project_date: "2023 - 2024"
     role: "Senior UX/UI Designer (contractor)"
 
-- id: "wwe-network"
+- id: "wwenetwork"
   layout: default
   title: "wwe"
   dark_theme: false
   description:
     "A UI/UX portfolio page showing work for WWE Network by Kieran Shalloo"
-  project_header_id: "wwe"
+  project_header_id: "wwenetwork"
   meta:
     brief:
       "WWE relaunched it’s On Demand video service in Q2 of 2019. The app
