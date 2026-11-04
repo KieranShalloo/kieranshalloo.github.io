@@ -111,7 +111,14 @@
   title: "Google Trains"
   description:
     "A UI/UX portfolio page showing work for Trainline by Kieran Shalloo"
-  project_header_id: "trainline"
+  project_header_id: "googletrain"
+  meta:
+    brief:
+      "To create ways to reassure passengers coming to Trainline from Google,
+      communicating the positive propositions of the product. "
+    client: "Trainline"
+    project_date: "2024"
+    role: "Lead Designer (contractor)"
 
 - id: "netflix"
   layout: default
