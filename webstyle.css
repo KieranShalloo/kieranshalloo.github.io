@@ -2,21 +2,21 @@
 1. DESIGN TOKENS & OKLCH COLOR SYSTEMS (Fully Preserved Brand Tokens)
    ========================================================================== */
 :root {
-  --dark: oklch(25% 0.01 0);
-  --accent: oklch(75% 0.15 170);
-  --light: oklch(92% 0.005 0);
-  --white: oklch(97% 0.01 220);
+  --dark: oklch(32.5% 0 89.88);
+  --accent: oklch(76.2% 0.097 176.59);
+  --light: oklch(92.49% 0 89.88);
+  --white: oklch(97.62% 0.016 221.07);
 
-  /* Brand Colours (Converted to OKLCH, 100% Variable Names Retained) */
-  --youview: oklch(72% 0.14 235);
-  --wwe: oklch(52% 0.22 25);
-  --virgin: oklch(38% 0.2 320);
-  --sony: oklch(78% 0.18 150);
-  --creature: oklch(80% 0.17 155);
-  --channel4: oklch(87.53% 0.158 138.83);
-  --trainline: oklch(65% 0.15 175);
-  --google: oklch(60% 0.2 260);
-  --stp: oklch(62% 0.19 310);
+  /* brand colours */
+  --youview: oklch(69.81% 0.171 243.77);
+  --wwe: oklch(54.02% 0.219 26.28);
+  --virgin: oklch(39.26% 0.137 313.56);
+  --sony: oklch(79.09% 0.177 154.67);
+  --creature: oklch(80.23% 0.172 154.94);
+  --channel4: oklch(87.38% 0.144 135.75);
+  --trainline: oklch(65.41% 0.121 177.03);
+  --google: oklch(63.04% 0.18 259.96);
+  --stp: oklch(66.73% 0.167 311.7);
 
   /* Atomic Layout, Spacing & Component Tokens */
   --spacing-standard: 5rem; /* Standard macro spacing for top-level blocks and sections (~80px) */
@@ -459,4 +459,42 @@ ul.social-network {
   max-height: 550px;
   width: auto !important; /* Prevents 100% width stretching for tall vertical images */
   object-fit: contain;
+}
+
+/* ==========================================================================
+   Restored About Image & Portfolio Hover Effects (Production Polished)
+   ========================================================================== */
+
+#about-image {
+  filter: saturate(0%) contrast(0%);
+  color: var(--accent);
+  transition:
+    transform 0.25s cubic-bezier(0.17, 0.67, 0.83, 0.67),
+    filter 0.25s ease;
+  will-change: transform, filter;
+
+  &:hover {
+    filter: brightness(100%) contrast(100%) saturate(100%);
+    transform: scale(1.15);
+  }
+}
+
+/* ==========================================================================
+   Exclusive Hover Grow Effect for Design & Print Grids (Desktop Only)
+   ========================================================================== */
+
+.portfolio-frame {
+  overflow: hidden; /* Contains the image scaling inside the frame boundaries */
+
+  .portfolio-image {
+    transition: transform 0.3s ease;
+    will-change: transform;
+  }
+
+  /* Target desktop devices only */
+  @media (min-width: 768px) {
+    &:hover .portfolio-image {
+      transform: scale(1.07);
+    }
+  }
 }

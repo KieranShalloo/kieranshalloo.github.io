@@ -1,3 +1,12 @@
+home:
+  title:
+    "User Experience design & Illustration crafted remotely in London, England."
+  subtitle:
+    "Over 12 years of experience, working with international clients and brands
+    on award-winning projects."
+  theme_color: "var(--accent)"
+  logotype: "/Logotype.svg"
+
 which:
   alt: BOP
   sizes:

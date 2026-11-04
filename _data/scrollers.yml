@@ -25,3 +25,6 @@ wwe_unified_experience:
 
 virginscroller:
   image_path: "/images/virgin/partialPayment/virginmedia-PayNow-1920.jpg"
+
+trainlinescroller:
+  image_path: "/images/trainline/optinmarketing-1440.jpg"

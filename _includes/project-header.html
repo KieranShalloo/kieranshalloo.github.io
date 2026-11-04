@@ -1,5 +1,3 @@
-
-
 {% assign key = include.header_key | default: include.project | default: page.project_header_id %}
 {% assign project_data = site.data.headers[key] %}
 
@@ -15,7 +13,6 @@
 {% endif %}
 {% endfor %}
 
-<!-- Fallback to xlarge if medium doesn't exist -->
 {% assign fallback_img = medium.jpg | default: xlarge.jpg %}
 
 <div class="project-header"
@@ -25,23 +22,18 @@
     <picture class="hero-image" style="position: absolute; inset: 0; z-index: 0; width: 100%; height: 100%;">
         {% if xlarge %}
         {% if xlarge.avif %}
-        <source media="(min-width: 415px)" srcset="{{ xlarge.avif }}" type="image/avif">
-        {% endif %}
+        <source media="(min-width: 415px)" srcset="{{ xlarge.avif }}" type="image/avif">{% endif %}
         {% if xlarge.webp %}
-        <source media="(min-width: 415px)" srcset="{{ xlarge.webp }}" type="image/webp">
-        {% endif %}
+        <source media="(min-width: 415px)" srcset="{{ xlarge.webp }}" type="image/webp">{% endif %}
         {% if xlarge.jpg %}
-        <source media="(min-width: 415px)" srcset="{{ xlarge.jpg }}">
-        {% endif %}
+        <source media="(min-width: 415px)" srcset="{{ xlarge.jpg }}">{% endif %}
         {% endif %}
 
         {% if medium %}
         {% if medium.avif %}
-        <source srcset="{{ medium.avif }}" type="image/avif">
-        {% endif %}
+        <source srcset="{{ medium.avif }}" type="image/avif">{% endif %}
         {% if medium.webp %}
-        <source srcset="{{ medium.webp }}" type="image/webp">
-        {% endif %}
+        <source srcset="{{ medium.webp }}" type="image/webp">{% endif %}
         {% endif %}
 
         <img src="{{ fallback_img }}" alt="{{ project_data.alt | default: project_data.title }}" loading="eager"

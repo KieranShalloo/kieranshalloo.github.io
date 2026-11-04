@@ -1,0 +1,35 @@
+description:
+  "A UI/UX portfolio page showing work for Trainline by Kieran Shalloo"
+
+page_sections:
+  - type: "image"
+    name: "trainline/webtoapp2-1920"
+    alt: "Main image showing trainline concept design"
+    full_width: true
+
+  - type: "text-block"
+    main_title: "Marketing"
+    sections:
+      - subtitle: "Push to app"
+        text: |
+          Trainline wanted to promote their app to users to move from the mobile version of the website.
+          With this in mind, we introduced certain promotional messages to the user to highlight the benefits they would receive if they used the app.
+
+ 
+          We wanted to ensure that we were promoting the content to the people who wanted to use the app, especially as the data told us there was a strong feeling across mainland Europe where users prefer to use mobile websites rather than apps.
+
+  - type: "image"
+    name: "trainline/webtoapp1-1440"
+    alt: "Main image showing trainline concept design"
+    full_width: true
+
+  - type: "text-block"
+    sections:
+      - subtitle: "Marketing preferences"
+        text: |
+          It was key to enable the users to be able to control their marketing information. When I arrived at Trainline, this was wrapped up in enabling the user to see vital user journey.
+
+          Working with multiple internal teams we created a proof of concept to split out the marketing channel messages from the journey information. Although this started as a simple idea, it escalated with information having to communicate through different databases spending on where the user signed up and which platform they chose their options on.
+
+  - type: "fullscreen-scroller"
+    scroller_key: "trainlinescroller"
