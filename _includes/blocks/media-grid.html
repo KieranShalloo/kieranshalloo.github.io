@@ -18,12 +18,11 @@
         {% if items %}
         {% for item in items %}
         {% assign item_name = item.name | default: item.image_name | default: item.image %}
-
-        {% comment %} Check if item or block is marked as a mobile screen presentation {% endcomment %}
         {% assign is_mobile = item.is_mobile | default: include.block.is_mobile | default: false %}
 
-        <div class="{{ col_class }} {% if tight %}pt-2{% else %}pt-3{% endif %}">
-            <div class="portfolio-media-container h-100 {% if is_mobile %}mobile-screen-container{% endif %}">
+        <div class="{{ col_class }} {% if tight %}pt-2{% else %}pt-3{% endif %} d-flex flex-column">
+            <!-- Media container wraps ONLY the image so shadow stays bound to the media -->
+            <div class="portfolio-media-container {% if is_mobile %}mobile-screen-container{% endif %}">
                 {% include responsive-image.html
                 name=item_name
                 mobile_name=item.mobile_name
@@ -32,6 +31,7 @@
                 class="img-fluid d-block mx-auto"
                 %}
             </div>
+
             {% if item.caption %}
             <figcaption class="figure-caption text-center mt-2">
                 {{ item.caption }}

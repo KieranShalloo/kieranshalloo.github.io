@@ -178,11 +178,12 @@
     project_date: "2012"
     role: "Graphic Designer (Contract)"
 
-- id: "sony-android"
+- id: "sonyandroid"
   title: "Sony Android"
   description:
     "A UI/UX portfolio page showing work for Sony Android TV by Kieran Shalloo"
   project_header_id: "sony"
+  theme_color: "var(--sony)"
   meta:
     brief:
       "Help to bring the YouView system to Android TV by Google to allow it to

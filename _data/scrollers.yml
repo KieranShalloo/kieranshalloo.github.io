@@ -28,3 +28,14 @@ virginscroller:
 
 trainlinescroller:
   image_path: "/images/trainline/optinmarketing-1440.jpg"
+
+sonyandroid:
+  image_path: "/images/sony/sony-hero.jpg"
+  main_title: "Subtle Design Touches"
+  sections:
+    - text:
+        There were a few sections which required reworking and alterations due
+        to the impact of delivery times with the project. We looked to create
+        bespoke versions of existing patterns that our customers had become
+        accustomed too. We create a set of design components which corresponded
+        with the development team and the Google established guidelines

@@ -158,7 +158,7 @@ page_sections:
   - type: "section"
     title: "Awards & Recognition"
     blocks:
-      - type: "text-details"
+      - type: "card-grid"
         items:
           - subtitle: "SportsPro Awards"
             text: "Platform of the Year"

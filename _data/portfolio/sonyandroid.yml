@@ -1,0 +1,139 @@
+description: "A UI/UX portfolio page showing work for YouView by Kieran Shalloo"
+
+page_sections:
+  - type: "section"
+    blocks:
+      - type: "text-block"
+        main_title: "Sony TV Interface"
+        sections:
+          - subtitle: "Bringing the YouView interface to the platform"
+            text: |
+              For this project, the YouView platform was completely rewritten in HTML5. With a technology change, we could upscale the interface to a native 1080p resolution.
+
+              A perfect opportunity for a visual refresh of icons and typography for the user. The technology change also gave us the chance to use an updated design system for the first time.
+          - subtitle: "On-Screen Keyboard"
+            text: |
+              As the navigation for the platform uses the Sony remote control, it affected the search section of the UI. This led us to create a bespoke On-screen keyboard. This was an exclusive feature for the YouView Sony project.
+
+              We had to craft this feature from scratch. The existing search user experience relies on text entry from the YouView remote. Without control of certain buttons, this couldn’t be replicated with the Sony input. As part of our design process, we shared the user testing results with the Sony team in Japan. This ensured that the feature would not interfere with the default Google search.
+
+      - type: "media-grid"
+        columns: 2
+        items:
+          - name: "sony/sony-search2"
+            alt: "Sony TV custom on-screen keyboard search UI layout"
+          - name: "sony/sony-search3"
+            alt:
+              "Sony TV search results interface showing TV programmes and movies"
+          - name: "sony/sony-search8"
+            alt: "Sony TV on-screen keyboard character selection grid view"
+          - name: "sony/sony-search5"
+            alt: "Bespoke Sony TV search predictive text suggestions view"
+          - name: "sony/sony-search7"
+            alt:
+              "Sony TV search interface displaying content options and metadata"
+          - name: "sony/sony-searchwip"
+            alt:
+              "Work-in-progress design exploration for the Sony TV search
+              feature"
+
+  - type: "section"
+    blocks:
+      - type: "text-block"
+        main_title: "Sony TV Onboarding & Setup"
+        sections:
+          - subtitle: "Set up Journeys"
+            text: |
+              We needed to have an easy clear experience from the users first interaction with the new TV service. We integrated as part of the Google setup journey. This allowed us to promote the benefits of the YouView features at the very first journey.
+          - subtitle: "Integration"
+            text: |
+              We were able to bring the YouView benefits to the user with the project. By showcasing the relationship we already had with major UK partners, we could promote unique programs now available. This new content was now available at the touch of a button for people browsing for new content.
+
+  - type: "section"
+    blocks:
+      - type: "text-block"
+        main_title: "Entry Points"
+        sections:
+          - text: |
+              With a service such as Android TV, the user has the ability to update and replace apps with their own choices. We didn't want the YouView features hidden from user's who in turn may struggle to find them again.
+
+              Our need gave us key access points for the user. These included both GUIDE & SEARCH remote control buttons as well as a Tile on the android home screen. We also benefited from the control of sections on SONY's customisable carousel.
+          - subtitle: "Android Home Screen"
+            text: |
+              The Android home screen is the central point for the whole of the SONY TV interface. It is the first and main point of interaction for the user. We created bespoke discovery flows, each ending in promotion of YouView content. This allowed us to maximise the rewards of the space permitted by Google.
+
+      - type: "image"
+        name: "sony/sony-android-home"
+        ext: "png"
+        alt:
+          "Sony Android TV home screen featuring integrated YouView discovery
+          tiles"
+
+      - type: "text-block"
+        sections:
+          - subtitle: "Integration"
+            text: |
+              We were able to bring the YouView benefits to the user with the project, highlighting the relationship YouView already had with the major UK channels, allowing their content to be deeply engrained in the Sony ecosystem, available at the touch of a button for people browsing for new content.
+          - subtitle: "Remote control buttons"
+            text: |
+              By taking ownership of buttons on the remote control it also gave the ability for even more entry points into the YouView interface. These flows had to be especially detailed as the control buttons where contextual depending on the users activity.
+          - subtitle: "Discover Section"
+            text: |
+              Sony had an intergrated section of their UI which was also used to promote content. This gave an additional section that could contain regulated content by YouView for the consumer.
+
+              By again working closely with the Sony team, we created journeys that could span across the three different sections of the platform (android, Sony, YouView).
+
+  - type: "section"
+    blocks:
+      - type: "text-block"
+        main_title: "The Process"
+        sections:
+          - subtitle: "Concepts & Feedback"
+            text: |
+              We presented our work to both senior members of our team as well as external stakeholders on a regular basis. Using a agile review process it gave the teams abroad a way to be involved in the design process and it gave the design team a set goal to accomplish. Taking feedback was a tricky process as the separate companies all had their own review process which led to a lot of time waiting for admin to pass through back into useful design feedback. A company as large as Sony has a very different process which consisted of various people and teams syncing up before answers could be given.
+
+              A perfect opportunity for a visual refresh of icons and typography for the user. The technology change also gave us the chance to use an updated design system for the first time.
+
+      - type: "fullscreen-scroller"
+        scroller_key: "sonyandroid"
+
+  - type: "section"
+    blocks:
+      - type: "text-block"
+        main_title: "Delivered Designs"
+        sections:
+          - text: |
+              The final finished design of the project brought together feedback from stakeholders in the project into an approved visual and interaction design model. The final designs and documentation was then sent over to the Sony Tokyo office where it was integrated into the final packaged TV.
+
+      - type: "media-grid"
+        columns: 2
+        items:
+          - name: "sony/sony-finalscreen1"
+            alt: "Final delivered Sony TV main guide user interface"
+            ext: "png"
+          - name: "sony/sony-finalscreen2"
+            alt: "Final delivered Sony TV content details view"
+            ext: "png"
+          - name: "sony/sony-finalscreen3"
+            alt: "Final delivered Sony TV discover interface screen"
+            ext: "png"
+          - name: "sony/sony-finalscreen4"
+            alt: "Final delivered Sony TV category browsing interface"
+            ext: "png"
+          - name: "sony/sony-finalscreen5"
+            alt: "Final delivered Sony TV programme layout overlay"
+            ext: "png"
+          - name: "sony/sony-players"
+            alt: "Integrated UK content player launcher on Sony TV"
+
+  - type: "section"
+    blocks:
+      - type: "text-block"
+        main_title: "Point of Sale Designs"
+        sections:
+          - subtitle: "In-Store promotions"
+            text: |
+              As YouView was becoming the dominant brand in the Sony TV’s we also created some point of sale content to promote the upcoming release alongside Sony. This was the biggest partnership that YouView had been involved with so a lot of time and energy was spent to ensure that there were other eyes on the outcome of the project.
+          - subtitle: "Web promotions"
+            text: |
+              This promotion work didn't just stop on the SONY side. I led the art direction for junior designers to create a campaign around the YouView social media channels to promote the arrival of the new partnership.

@@ -3,9 +3,10 @@
    ========================================================================== */
 :root {
   --dark: oklch(32.5% 0 89.88);
-  --accent: oklch(76.2% 0.097 176.59);
-  --light: oklch(92.49% 0 89.88);
-  --white: oklch(97.62% 0.016 221.07);
+  --accentnew: oklch(76.2% 0.097 176.59);
+  --accent: oklch(0.6 0.2432 0);
+  --light: oklch(0.9065 0.0121 14.96);
+  --white: oklch(0.9525 0.0033 108.96);
 
   /* brand colours */
   --youview: oklch(69.81% 0.171 243.77);
@@ -22,7 +23,7 @@
   --spacing-standard: 5rem; /* Standard macro spacing for top-level blocks and sections (~80px) */
   --spacing-tight: 1.5rem; /* Tight micro spacing for elements grouped inside a section (~24px) */
   --portfolio-spacing-y: clamp(3rem, 6vw, 5rem);
-  --portfolio-img-radius: 4px;
+  --portfolio-img-radius: 0.4em;
   --portfolio-img-shadow:
     0 15px 35px rgba(0, 0, 0, 0.07), 0 1px 3px rgba(0, 0, 0, 0.04);
 }
@@ -87,7 +88,7 @@ body {
 
 /* Card Mode Inversion Variables */
 :root {
-  --card-bg: var(--light);
+  --card-bg: var(--white);
   --card-text: var(--dark);
 }
 
@@ -159,9 +160,9 @@ li {
 }
 
 .figure-caption {
-  font-size: 1rem;
-  line-height: 3rem;
-  font-weight: 100;
+  font-size: clamp(1rem, 1.0313rem + 0.4167vw, 1.25rem);
+  line-height: 1.5em;
+  font-weight: 300;
 }
 
 /* ==========================================================================
