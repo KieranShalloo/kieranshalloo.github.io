@@ -62,8 +62,8 @@ page_sections:
           "Monitored task completion rates and key UX metrics to build
           data-backed cases for strategic design pivots."
 
-  - type: "responsive-image"
-    lottie_src: "https://assets4.lottiefiles.com/private_files/lf30_4LkewT.json"
+  - type: "image"
+    lottie_src: "http://assets4.lottiefiles.com/private_files/lf30_4LkewT.json"
     alt: "UI Design and Prototyping Animation"
 
   - type: "text-details"

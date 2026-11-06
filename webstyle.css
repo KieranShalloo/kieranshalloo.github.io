@@ -85,6 +85,18 @@ body {
   margin-left: 0;
 }
 
+/* Card Mode Inversion Variables */
+:root {
+  --card-bg: var(--light);
+  --card-text: var(--dark);
+}
+
+[data-bs-theme='dark'] body,
+.dark-mode {
+  --card-bg: var(--dark);
+  --card-text: var(--light);
+}
+
 /* ==========================================================================
 3. FLUID TYPOGRAPHY & HEADINGS
    ========================================================================== */

@@ -1,0 +1,34 @@
+{% comment %}
+Card Grid Block Component
+Accepts: block.main_title, block.columns (defaults to 3), block.items
+{% endcomment %}
+{% assign section_title = include.block.main_title %}
+{% assign card_items = include.block.items | default: include.block.card %}
+{% assign columns = include.block.columns | default: 3 %}
+
+{% comment %} Calculate Bootstrap column class based on chosen column count (3 -> col-md-4, 4 -> col-md-3) {% endcomment
+%}
+{% if columns == 4 %}
+{% assign col_class = "col-12 col-sm-6 col-lg-3" %}
+{% else %}
+{% assign col_class = "col-12 col-md-4" %}
+{% endif %}
+
+
+<div class="container">
+    {% if section_title %}
+    <div class="row">
+        <div class="col-md-8 offset-md-1 mb-4">
+            <h2 style="color: var(--project-accent);">{{ section_title }}</h2>
+        </div>
+    </div>
+    {% endif %}
+
+    <div class=" row g-4 justify-content-center">
+        {% for item in card_items %}
+        <div class="{{ col_class }}">
+            {% include blocks/card.html item=item %}
+        </div>
+        {% endfor %}
+    </div>
+</div>

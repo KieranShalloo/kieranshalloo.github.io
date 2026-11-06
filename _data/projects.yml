@@ -264,7 +264,7 @@
     project_date: "2020"
     role: "Senior UX/UI Designer (contractor)"
 
-- id: "youview-retail"
+- id: "youview"
   title: "YouView"
   theme_color: "var(--youview)"
   description:

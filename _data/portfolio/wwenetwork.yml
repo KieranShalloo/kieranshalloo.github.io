@@ -8,6 +8,7 @@ page_sections:
   # 1. Hero Screen Tile Banner
   - type: "image"
     name: "wwe/tileangle"
+    ext: jpg
     alt:
       "Angled 3D display of WWE Network interface tiles across multiple device
       screens"

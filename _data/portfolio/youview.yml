@@ -1,0 +1,121 @@
+description:
+  "A UI/UX portfolio page showing work for Trainline by Kieran Shalloo"
+
+page_sections:
+  - type: "section"
+    blocks:
+      - type: "image"
+        name: "nextgen/Youview-retail-mytv"
+        alt: "Main image showing trainline concept design"
+        full_width: true
+
+      - type: "text-block"
+        main_title: "Complete redesign"
+        sections:
+          - text: |
+              Youview was launched in 2012 and the user interface was starting to look dated when the original concept of a redesign came around. The project was worked on for a long time behind the scenes before release and is a complete rebuild from the ground up incorperating new technologies as well as a fresh design ethos.
+
+              I was at various times placed in every single area of this project whilst also retaining responsibility for leading agile teams spanning the Settings, Setup, Help and Discover areas.
+
+      - type: "text-details"
+        items:
+          - subtitle: "No box left behind"
+            text:
+              "Every set-top box that had been released was going to be able to
+              support the next generation project in some capacity ."
+          - subtitle: "Good, Better, Best"
+            text:
+              "A philosophy that different hardware could have different levels
+              of software to enable the higher end devices to have a more robust
+              feature set ."
+          - subtitle: "Powered by the cloud"
+            text:
+              "The whole project would be rewritten from Flash into the more
+              recent HTML5 to allow easy in updating the software for fast
+              iterative changes "
+
+  - type: "image"
+    name: "nextgen/Youview-inTV"
+    alt: "Main image showing trainline concept design"
+    full_width: true
+
+  - type: "section"
+    blocks:
+      - type: "text-block"
+        sections:
+          - subtitle: "Streamlined Navigation"
+            text: |
+              We reworked the navigation across all areas of the User Interface. The goal was to create easy navigation which allowed users to find the content that they were currently paying for. Feedback from previous designs showed that users had content available for free that they were just unaware they had access to.
+
+              Since the first launch of the platform Tv technology had also dramatically changed with an increase in both TV sizes and display resolution since the original launch. We retained the horizontal scroll people expected of the product but iterated on the design principles to introduce more features to users whilst retaining the ability to grow in scale and size as new features were introduced.
+
+              We worked hard to map out journeys that allowed the user to discover new content whilst also seeing the films and tv shows they love.
+
+      - type: "fullscreen-scroller"
+        scroller_key: "trainlinescroller"
+
+  - type: "section"
+    blocks:
+      - type: "text-block"
+        sections:
+          - subtitle: "Marketing Opt in / Opt out"
+            text: |
+              For different user scenarios, based on user marketing preferences, we wanted to add in a few alternative approaches to allow the user to Opt-in or Opt-out to relevant marking messages. We had to incorporate a wide array of scenarios here, as users could have chosen their marketing preferences on a different device that they were now on and not all of the Trainline databases shared this information with each other.
+
+              We also had scenarios where users had previously purchases tickets as a ‘guest’ account and we had to investigate how those choices could be brought into their account as the tickets were also brought over.
+
+              For these scenarios we put a subset of users into multivariate testing to see which option worked best, hitting Trainline targets with no diminishing returns for the end user.
+
+      - type: "image"
+        name: "trainline/optinflow-1440"
+        alt: "Main image showing trainline concept design"
+        full_width: true
+
+  - type: "section"
+    blocks:
+      - type: "text-block"
+        main_title: "CMS templates"
+        sections:
+          - text: |
+              Trainline has multiple areas on its platform where promotional content can be placed. To save development time these sections are controlled by a CMS tool. The issue with this, was a lack of a template system, with multiple sizes and styles of sections with no solid theme across them.
+
+              I took control of this as the team i worked with controlled the CMS tool, crafting documentation and guides for engineering to create a uniform visual and interactive style to ensure users can all navigate through the platforms.
+
+              This visual overhall helped Trainline to add an additional 7.5% in retention based on the internal data tool used across the buisness
+
+      - type: "image"
+        name: "trainline/optin-1440"
+        alt: "Main image showing trainline concept design"
+        full_width: true
+
+  - type: "card-grid"
+    main_title: "Results and impact"
+    columns: 3
+    items:
+      - subtitle: "Mediatel Connies Awards"
+        text: "‘International Contribution to User Experience’"
+      - title: "CSI Magazine "
+        text: "'Best interactive TV technology or application'"
+      - title: "Mediatel Connies Awards"
+        text: "Increasing growth in UK, EU and wider markets"
+
+  - type: "card-grid"
+    main_title: "Awards and Recognition"
+    columns: 3
+    items:
+      - title: "Mediatel Connies Awards"
+        text: "‘International Contribution to User Experience’"
+      - title: "CSI Magazine"
+        text: "'Best interactive TV technology or application'"
+      - title: "Mediatel Connies Awards"
+        text: "‘Best TV/Video Service Update or Launch.’"
+      - title: "TV Connect"
+        text: "‘People's Choice Award’"
+      - title: "T3 Awards"
+        text: "'Best TV Platform'"
+      - title: "TV Connect"
+        text: "‘Best Cloud-Based Video Service’"
+      - title: "National Technology Awards"
+        text: "‘TV, Film and Broadcasting Technology of the Year’"
+      - title: "DTVE Content Innovation Awards"
+        text: "‘Advanced TV Innovation of the Year’"
