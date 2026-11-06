@@ -1,5 +1,5 @@
 {% comment %}
-Unpack block/section context safely
+Unpack block/section context safely, preventing infinite include loops
 {% endcomment %}
 {% assign img_name = include.block.name | default: include.section.name | default: include.name | default:
 include.image_name %}
@@ -10,8 +10,22 @@ include.image_name %}
 include.mobile_name %}
 {% assign is_full_width = include.block.full_width | default: include.section.full_width | default: include.full_width |
 default: false %}
+{% assign lottie_source = include.block.lottie_src | default: include.section.lottie_src | default: include.lottie_src
+%}
 
-{% if img_name != nil and img_name != "" %}
+{% if lottie_source != nil and lottie_source != "" %}
+<!-- Direct Lottie Render to avoid recursive include nesting -->
+<div class="container portfolio-component my-5">
+    <div class="row justify-content-center">
+        <div class="col-12 col-md-10 col-lg-8 text-center">
+            <div class="portfolio-media-container">
+                <lottie-player src="{{ lottie_source }}" background="transparent" speed="1"
+                    style="width: 100%; height: auto;" loop autoplay></lottie-player>
+            </div>
+        </div>
+    </div>
+</div>
+{% elsif (img_name != nil and img_name != "") %}
 {% if is_full_width %}
 <div class="container-fluid px-0 portfolio-component my-5">
     <div class="row g-0 justify-content-center">

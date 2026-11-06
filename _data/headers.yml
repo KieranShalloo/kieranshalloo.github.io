@@ -6,7 +6,15 @@ home:
     on award-winning projects."
   theme_color: "var(--accent)"
   logotype: "/Logotype.svg"
+  alt: "Kieran Shalloo Portfolio"
 
+process:
+  title: "Our design process, from concept to delivery."
+  subtitle: "How we work with clients throughout the project lifecycle"
+  theme_color: "var(--accent)"
+  alt: "Design Process"
+
+  # projects
 which:
   alt: BOP
   sizes:

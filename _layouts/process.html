@@ -1,0 +1,57 @@
+---
+layout: default
+---
+{% assign process = site.data.process %}
+{% include home-hero.html header_key="process" %}
+
+<!-- Vertical Process Sections Container -->
+<div class="project-builder">
+    {% for block in process.page_sections %}
+
+    {% if block.type == "section" %}
+    <section class="portfolio-section my-5">
+        {% for sub_block in block.blocks %}
+        {% if sub_block.type == "text-details" %}
+        {% include blocks/text-details.html block=sub_block %}
+        {% elsif sub_block.type == "responsive-image" or sub_block.type == "image" %}
+        {% include responsive-image.html lottie_src=sub_block.lottie_src alt=sub_block.alt name=sub_block.name
+        ext=sub_block.ext %}
+        {% endif %}
+        {% endfor %}
+    </section>
+
+    {% elsif block.type == "text-details" %}
+    {% include blocks/text-details.html block=block %}
+
+    {% elsif block.type == "responsive-image" or block.type == "image" %}
+    <div class="container portfolio-component my-5">
+        <div class="row justify-content-center">
+            <div class="col-12 col-md-10 col-lg-8 text-center">
+                {% include responsive-image.html lottie_src=block.lottie_src alt=block.alt name=block.name ext=block.ext
+                %}
+            </div>
+        </div>
+    </div>
+
+    {% elsif block.type == "text-block" %}
+    {% include blocks/text-block.html block=block %}
+
+    {% elsif block.type == "media-grid" %}
+    {% include blocks/media-grid.html block=block %}
+
+    {% elsif block.type == "image-text" %}
+    {% include blocks/image-text.html block=block %}
+
+    {% elsif block.type == "fullscreen-scroller" %}
+    {% include blocks/fullscreen-scroller.html block=block %}
+
+    {% elsif block.type == "video" %}
+    {% include blocks/video.html block=block %}
+
+    {% endif %}
+
+    {% endfor %}
+</div>
+
+<!-- Lottie Player Web Component Script -->
+<script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>

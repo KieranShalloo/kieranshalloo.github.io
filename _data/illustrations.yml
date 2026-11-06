@@ -1,7 +1,9 @@
 - title: "Daniel Bryan"
   slug: "danielbryan"
   url: "/illustration/danielbryan/"
-  description: "A commissioned illustration showing the WWE wrestler Daniel Bryan celebrating his victory at WrestleMania XXX."
+  description:
+    "A commissioned illustration showing the WWE wrestler Daniel Bryan
+    celebrating his victory at WrestleMania XXX."
   dimensions: "297 x 420mm"
   gallery:
     - jpg: "/images/illustration/danielbryan.jpg"
@@ -33,12 +35,13 @@
 - title: "Nightmare Before Christmas"
   slug: "nightmare-before-christmas"
   url: "/illustration/nightmare-before-christmas/"
-  description: "Halloween meets Christmas in this Tim Burton inspired illustration"
+  description:
+    "Halloween meets Christmas in this Tim Burton inspired illustration"
   dimensions: "297 x 420mm"
   gallery:
-    - jpg: "/images/illustration/nightmare-before-christmas.jpg"
-      webp: "/images/illustration/nightmare-before-christmas.webp"
-      avif: "/images/illustration/nightmare-before-christmas.avif"
+    - jpg: "/images/illustration/nightmare.jpg"
+      webp: "/images/illustration/nightmare.webp"
+      avif: "/images/illustration/nightmare.avif"
       alt: "Jack Skellington from Nightmare Before Christmas"
   thumb:
     jpg: "/images/illustration/thumbs/nightmare-thumb.jpg"
@@ -65,7 +68,8 @@
 - title: "Kubo"
   slug: "kubo"
   url: "/illustration/kubo/"
-  description: "Character illustration from the animated film Kubo and the Two Strings"
+  description:
+    "Character illustration from the animated film Kubo and the Two Strings"
   dimensions: "297 x 420mm"
   gallery:
     - jpg: "/images/illustration/kubo.jpg"
@@ -113,7 +117,8 @@
 - title: "Fallout"
   slug: "fallout"
   url: "/illustration/fallout/"
-  description: "Post-apocalyptic illustration inspired by the Fallout game series"
+  description:
+    "Post-apocalyptic illustration inspired by the Fallout game series"
   dimensions: "297 x 420mm"
   gallery:
     - jpg: "/images/illustration/fallout.jpg"
@@ -165,7 +170,8 @@
 - title: "Finding Nemo"
   slug: "finding-nemo"
   url: "/illustration/finding-nemo/"
-  description: "Colorful underwater illustration featuring characters from Finding Nemo"
+  description:
+    "Colorful underwater illustration featuring characters from Finding Nemo"
   dimensions: "297 x 420mm"
   gallery:
     - jpg: "/images/illustration/nemo.jpg"
@@ -301,7 +307,8 @@
 - title: "Terminator"
   slug: "terminator"
   url: "/illustration/terminator/"
-  description: "Illustration of the T-800 Terminator from the iconic film series"
+  description:
+    "Illustration of the T-800 Terminator from the iconic film series"
   dimensions: "210 x 297mm"
   gallery:
     - jpg: "/images/illustration/terminator.jpg"
@@ -405,7 +412,8 @@
 - title: "Rick and Morty"
   slug: "rick-morty"
   url: "/illustration/rick-morty/"
-  description: "Illustration of Rick and Morty in one of their interdimensional adventures"
+  description:
+    "Illustration of Rick and Morty in one of their interdimensional adventures"
   dimensions: "297 x 420mm"
   gallery:
     - jpg: "/images/illustration/rick-morty.jpg"

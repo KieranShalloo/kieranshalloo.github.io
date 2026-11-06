@@ -1,0 +1,105 @@
+page_sections:
+  - type: "text-details"
+    main_title: "Design System & Platform Consistency"
+    columns: 3
+    items:
+      - subtitle: "Component Strategy"
+        text:
+          "Established a scalable, cross-platform design system aligned with
+          front-end token architecture to streamline velocity across multiple
+          product teams."
+      - subtitle: "Pattern Standardisation"
+        text:
+          "Refactored core interactive elements to simplify complex user flows
+          and ensure consistent interaction patterns across Web and TV
+          interfaces."
+      - subtitle: "Ecosystem Integration"
+        text:
+          "Drove feature parity and seamless UX continuity across TV, mobile,
+          and web touchpoints, maintaining brand integrity at scale."
+
+  - type: "responsive-image"
+    lottie_src: "https://assets2.lottiefiles.com/private_files/lf30_N9cStg.json"
+    alt: "UX Research and Analytics Animation"
+
+  - type: "text-details"
+    main_title: "Research & Insight Synthesis"
+    columns: 3
+    items:
+      - subtitle: "Behavioral Analytics & Tracking"
+        text:
+          "Defined quantitative tracking metrics and analyzed user patterns to
+          uncover friction points and identify high-impact roadmap
+          opportunities."
+      - subtitle: "Qualitative Discovery"
+        text:
+          "Led user interviews and usability studies to convert complex
+          qualitative data into actionable product requirements for executive
+          stakeholders."
+      - subtitle: "Market Position Strategy"
+        text:
+          "Evaluated market dynamics and competitor product architectures to
+          benchmark UX standards and defend product differentiation."
+
+  - type: "responsive-image"
+    lottie_src: "https://assets4.lottiefiles.com/private_files/lf30_xnFA9S.json"
+    alt: "Usability Testing Animation"
+
+  - type: "text-details"
+    main_title: "Validation & Continuous Testing"
+    columns: 3
+    items:
+      - subtitle: "Experimentation Strategy"
+        text:
+          "Framed hypotheses and structured A/B and targeted guerrilla testing
+          frameworks to de-risk design decisions prior to implementation."
+      - subtitle: "Iterative Architecture"
+        text:
+          "Established feedback loops combining user data and design reviews to
+          continuously steer product direction and refine features post-launch."
+      - subtitle: "Task Performance Analysis"
+        text:
+          "Monitored task completion rates and key UX metrics to build
+          data-backed cases for strategic design pivots."
+
+  - type: "responsive-image"
+    lottie_src: "https://assets4.lottiefiles.com/private_files/lf30_4LkewT.json"
+    alt: "UI Design and Prototyping Animation"
+
+  - type: "text-details"
+    main_title: "UI Design & Prototyping"
+    columns: 3
+    items:
+      - subtitle: "Interaction Design Strategy"
+        text:
+          "Spearheaded micro-interaction frameworks and motion guidelines to
+          elevate brand premiumness and clarify complex navigation."
+      - subtitle: "Rapid Prototyping"
+        text:
+          "Created interactive end-to-end prototypes to validate complex
+          architectural flows and align leadership on strategic vision."
+      - subtitle: "Design Delivery"
+        text:
+          "Delivered production-ready visual design assets and scalable layouts
+          optimized for multi-device deployment."
+
+  - type: "responsive-image"
+    lottie_src: "https://assets4.lottiefiles.com/private_files/lf30_Huk0lx.json"
+    alt: "Developer Handoff and QA Animation"
+
+  - type: "text-details"
+    main_title: "Cross-Functional Handoff & Governance"
+    columns: 3
+    items:
+      - subtitle: "Stakeholder Alignment"
+        text:
+          "Articulated design vision and UX strategy to key business partners,
+          ensuring alignment between user needs and commercial goals."
+      - subtitle: "Quality Assurance & QA"
+        text:
+          "Instituted design QA processes and acceptance criteria to maintain
+          pixel-perfect execution during engineering cycles."
+      - subtitle: "Engineering Partnership"
+        text:
+          "Partnered closely with technical leads to validate feasibility,
+          streamline component implementation, and govern live code releases."

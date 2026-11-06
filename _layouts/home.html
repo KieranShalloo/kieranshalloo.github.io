@@ -5,9 +5,9 @@ layout: default
 {% assign clients = site.data.clients %}
 
 <!-- Homepage Hero -->
-{% include home-hero.html %}
+{% include home-hero.html header_key="home" %}
 
-<div class="header-slant right pb-5"></div>
+
 
 <!-- Main Content from index.md -->
 {% if content != "" %}

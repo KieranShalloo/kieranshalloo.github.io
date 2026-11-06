@@ -1,34 +1,52 @@
-{% comment %} Safely check for either name or image_name parameter {% endcomment %}
-{% assign base_name = include.name | default: include.image_name %}
+{% comment %}
+Unpack block/section context safely, including lottie sources
+{% endcomment %}
+{% assign img_name = include.block.name | default: include.section.name | default: include.name | default:
+include.image_name %}
+{% assign img_ext = include.block.ext | default: include.section.ext | default: include.ext | default: 'jpg' %}
+{% assign img_alt = include.block.alt | default: include.section.alt | default: include.alt %}
+{% assign img_class = include.block.class | default: include.section.class | default: include.class %}
+{% assign img_mobile_name = include.block.mobile_name | default: include.section.mobile_name | default:
+include.mobile_name %}
+{% assign is_full_width = include.block.full_width | default: include.section.full_width | default: include.full_width |
+default: false %}
+{% assign lottie_source = include.block.lottie_src | default: include.section.lottie_src | default: include.lottie_src
+%}
 
-{% if base_name != nil and base_name != "" %}
-{% assign loading = include.loading | default: 'lazy' %}
-{% assign decoding = include.decoding | default: 'async' %}
-{% assign fallback_ext = include.ext | default: 'jpg' %}
-
-{% if include.mobile_name != nil and include.mobile_name != "" %}
-{% assign mobile_target = include.mobile_name %}
+{% if (img_name != nil and img_name != "") or (lottie_source != nil and lottie_source != "") %}
+{% if is_full_width %}
+<div class="container-fluid px-0 portfolio-component my-5">
+  <div class="row g-0 justify-content-center">
+    <div class="col-12">
+      {% include responsive-image.html
+      name=img_name
+      image_name=img_name
+      ext=img_ext
+      alt=img_alt
+      class=img_class
+      container_class="portfolio-image m-0"
+      mobile_name=img_mobile_name
+      lottie_src=lottie_source
+      %}
+    </div>
+  </div>
+</div>
 {% else %}
-{% assign mobile_target = base_name | append: "-mobile" %}
+<div class="container portfolio-component my-5">
+  <div class="row justify-content-center">
+    <div class="col-12 col-md-10 col-lg-8">
+      {% include responsive-image.html
+      name=img_name
+      image_name=img_name
+      ext=img_ext
+      alt=img_alt
+      class=img_class
+      container_class="portfolio-image m-0 text-center"
+      mobile_name=img_mobile_name
+      lottie_src=lottie_source
+      %}
+    </div>
+  </div>
+</div>
 {% endif %}
-
-{% if jekyll.environment == "production" %}
-{% assign cdn_mobile = "/cdn-cgi/image/width=1179,format=auto,quality=85" %}
-{% assign cdn_desktop = "/cdn-cgi/image/width=2880,format=auto,quality=85" %}
-{% else %}
-{% assign cdn_mobile = "" %}
-{% assign cdn_desktop = "" %}
-{% endif %}
-
-<figure class="{{ include.container_class | default: 'portfolio-image m-0' }}">
-  <picture>
-    <!-- Mobile Source attempt (< 768px) -->
-    <source media="(max-width: 767.98px)" srcset="{{ cdn_mobile }}/images/{{ mobile_target }}.{{ fallback_ext }}">
-
-    <!-- Desktop / Fallback Img Tag with Automatic 404 Recovery -->
-    <img src="{{ cdn_desktop }}/images/{{ base_name }}.{{ fallback_ext }}" alt="{{ include.alt | escape }}"
-      class="img-fluid {{ include.class }}" loading="{{ loading }}" decoding="{{ decoding }}"
-      onerror="this.parentNode.querySelectorAll('source').forEach(s => s.remove()); this.src='{{ cdn_desktop }}/images/{{ base_name }}.{{ fallback_ext }}';">
-  </picture>
-</figure>
 {% endif %}
