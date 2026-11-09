@@ -1,0 +1,40 @@
+title: "Youview Accessibility"
+description:
+  "A UI/UX portfolio page showing work for YouView accessibility settings by
+  Kieran Shalloo"
+
+# Component Builder Engine
+page_sections:
+  - type: "media-grid"
+    full_width: true
+    items:
+      - name: "accessibility/accessibility-guide-comparision1"
+        alt: "Current YouView guide"
+        ext: "png"
+      - name: "accessibility/accessibility-guide-comparision2"
+        alt: "High contrast YouView guide"
+        ext: "png"
+
+  - type: "text-block"
+    main_title: "Designing for multiple screens"
+    sections:
+      - text: |
+          The goal of the YouView High Contrast Mode was to enable users with a wide range of visual issues to be able to use the YouView product at the same level as people with no visual problems. As the BBC was a founding member of the YouView product, it is essential that the company followed the BBC Trust guidelines for accessibility.
+
+          With this in mind, the approach to acceptance criteria for the YouView High Contrast mode was much higher than it would be at other companies.
+
+          My experience working on the accessibility mode of the previous YouView UI made me a prime candidate to lead the project and I took it on with the goal of making a great user experience.
+
+  - type: "text-block"
+    sections:
+      - subtitle: "User Research"
+        text: |
+          We took the initial research from previous accessibility work as a starting point for this new project. In the previous YouView design, the team worked very closely with partially sighted users for a constant stream of feedback and we continued this process we moved towards the next phase of the user interface. As a team, we were also in constant communication with two of the UK’s biggest disability charities the RNIB and SCOPE to give us an insight into the challenges that people with disabilities face in day to day life.
+
+          A big part of our research came in the way of using a toolkit from the University of Cambridge which allowed the product design team to simulate mild vision loss. This toolkit consisted of glasses which replicated acuity and contrast loss. These glasses could then be stacked up on top of each other to analyse how different level of eyesight issues will affect the ability to see and interact with the product.
+
+          We also spent time conducting competitive research in both the TV industry and wider, trying to get a sense of where the competition put their focus on helping disabled customers. By looking at rivals we could see where the gap in the market stood and how we could use our expertise to create a bespoke experience that solved the brief and created the best solutions.
+
+  - type: "image"
+    name: "accessibility/accessibility-glasses"
+    alt: "University of Cambridge Inclusive design toolkit"

@@ -115,6 +115,7 @@
     "A UI/UX portfolio page showing work for Netflix advertising campaign by
     Kieran Shalloo"
   project_header_id: "netflix"
+  theme_color: "var(--wwe)"
   meta:
     brief:
       "I was tasked with creating a short animation to promote the arrival of
@@ -280,13 +281,13 @@
     project_date: "2016-2019"
     role: "Product Designer"
 
-- id: "yv-accessibility"
+- id: "yva11y"
   title: "YouView Accessibility"
-  theme_color: "var(--youview)"
+  theme_color: "var(--light)"
   description:
     "A UI/UX portfolio page showing work for YouView accessibility settings by
     Kieran Shalloo"
-  project_header_id: "yvcontrast"
+  project_header_id: "yva11y"
   meta:
     brief:
       "Create an accessible version of the YouView UI, taking into account
@@ -314,18 +315,32 @@
     project_date: "2016-2017"
     role: "Product Designer"
 
-- id: "yv-help"
+- id: "yvhelp"
   title: "YouView Help"
   theme_color: "var(--youview)"
   description:
     "A UI/UX portfolio page showing work for YouView Help by Kieran Shalloo"
   project_header_id: "yvhelp"
   meta:
-    brief:
-      "Update the Help app on the YouView platform to bring it more in line with
-      the Next Generation user experience. Ensure that the design corresponds
-      with the YouView, BT, and TalkTalk support sites whilst retaining the
-      ability for users to troubleshoot their problems."
+    brief: "Update the Help app on YouView platform to bring it more in-line
+      with the Next Generation user experience. Ensure that the design
+      correspond with the YouView, BT and TalkTalk support sites whilst
+      retaining the ability for users to troubleshoot their problems.
+
+
+      Customers who currently use the service but may have difficulty using the
+      product due to sight-related issues. Customers who wish to have a more
+      accessible TV service
+
+
+      The legacy YouView help menu was built as a way for customers to solve the
+      problems they were facing in their own time. The depreciation of the
+      legacy UI and the move to the Next Generation interface pushed forward the
+      need to bring the Help App into line with the revamped service.
+
+
+      I was chosen to lead this project working alongside a junior designer and
+      an intern, helping to guide them towards a final product "
     client: "YouView TV Ltd"
     project_date: "2018-2019"
     role: "Lead Product Designer"

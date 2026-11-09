@@ -238,7 +238,7 @@ yvapp:
   subtitle: Controlling your content from your phone
   title: YouView App
 
-yvcontrast:
+yva11y:
   alt: Youview High Contrast
   sizes:
     - avif: /images/home/YVHCheader414.avif
