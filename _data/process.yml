@@ -1,0 +1,107 @@
+page_sections:
+  - type: "section"
+    blocks:
+      - type: "image"
+        lottie_src: "https://assets2.lottiefiles.com/private_files/lf30_N9cStg.json"
+        alt: "UX Research and Analytics Animation"
+
+      - type: "text-details"
+        main_title: "Design System & Platform Consistency"
+        columns: 2
+        items:
+          - subtitle: "Analytics"
+            text:
+              "Understanding the behaviour of users allows us to find areas of
+              improvement."
+          - subtitle: "Data Tracking"
+            text:
+              "Manage trends and user behaviour over a long time, allowing us to
+              tweak and adjust to user patterns."
+          - subtitle: "User Interviews"
+            text:
+              "Identifying pain points of the existing experience with evidence
+              to present to stakeholders."
+          - subtitle: "Competitor Reviews"
+            text:
+              "Ensure to stay aware of competitors and the work they are
+              producing."
+
+  - type: "section"
+    blocks:
+      - type: "image"
+        lottie_src: "https://assets4.lottiefiles.com/private_files/lf30_xnFA9S.json"
+        alt: "Usability Testing Animation"
+
+      - type: "text-details"
+        main_title: "Usability Testing"
+        columns: 2
+        items:
+          - subtitle: "A/B Testing"
+            text:
+              "Getting users to directly test designs allows us to see any pain
+              points as early as possible."
+          - subtitle: "Guerilla Testing"
+            text:
+              "For quick design decisions, we take our testing to an informal
+              real-life setting to quickly gather feedback from customers."
+          - subtitle: "Iterative Design"
+            text:
+              "Use feedback from testing sessions to guide the design process
+              and steer projects."
+          - subtitle: "Task Based Tests"
+            text:
+              "Allow participants results to provide evidence for design
+              decisions."
+
+  - type: "section"
+    blocks:
+      - type: "image"
+        lottie_src: "https://assets4.lottiefiles.com/private_files/lf30_4LkewT.json"
+        alt: "UI Design and Prototyping Animation"
+
+      - type: "text-details"
+        main_title: "Validation & Continuous Testing"
+        columns: 2
+        items:
+          - subtitle: "Animation"
+            text:
+              "High quality After Effects animations to demonstrate
+              micro-interactions."
+          - subtitle: "Wireframes"
+            text:
+              "Mapping user journeys with wireframes to ensure great usability."
+          - subtitle: "Prototypes"
+            text:
+              "Create interactive prototypes to perfect the user journey and
+              flow of designs."
+          - subtitle: "Visual Design"
+            text:
+              "Production quality visual designs, bringing the wireframes to
+              reality."
+
+  - type: "section"
+    blocks:
+      - type: "image"
+        lottie_src: "https://assets4.lottiefiles.com/private_files/lf30_Huk0lx.json"
+        alt: "Developer Handoff and QA Animation"
+
+      - type: "text-details"
+        main_title: "Developer Handoff & Governance"
+        columns: 2
+        items:
+          - subtitle: "Presentations"
+            text:
+              "Giving feedback and updates to stakeholders about projects and
+              deliverables."
+          - subtitle: "QA"
+            text:
+              "Finding and raising bugs and issues that will negatively affect
+              the user experience."
+          - subtitle: "Developer Checks"
+            text:
+              "Working closely with development teams to ensure designs can be
+              implemented correctly."
+          - subtitle: "User Acceptance Testing"
+            text:
+              "Ensuring the live code accurately matches the Visual and
+              Interaction design."

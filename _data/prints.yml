@@ -1,7 +1,8 @@
 - title: "Totoro"
   slug: "totoro"
   url: "/traditionalprintmaking/totoro/"
-  description: "A linoprint portfolio page showing a totoro print work by Kieran Shalloo"
+  description:
+    "A linoprint portfolio page showing a totoro print work by Kieran Shalloo"
   dimensions: "160 x 230mm"
   edition: "30"
   paper: "Fabriano Unica 250g"
@@ -10,7 +11,8 @@
   height: 1080
   aspect_ratio: "16:9"
   note: >-
-    As this is a handcrafted original piece, all prints are unique and may have slight variations in tone and texture due to the handmade printing process.
+    As this is a handcrafted original piece, all prints are unique and may have
+    slight variations in tone and texture due to the handmade printing process.
   image:
     jpg: "/images/printmaking/totoro/webinframe.jpg"
     webp: "/images/printmaking/totoro/webinframe.webp"
@@ -27,7 +29,9 @@
 - title: "Coastline"
   slug: "coastline"
   url: "/traditionalprintmaking/coastline/"
-  description: "A linoprint portfolio page showing a portuguese coastline print work by Kieran Shalloo"
+  description:
+    "A linoprint portfolio page showing a portuguese coastline print work by
+    Kieran Shalloo"
   dimensions: "160 x 230mm"
   edition: "30"
   paper: "Canaletto Velino 125g"
@@ -36,7 +40,8 @@
   height: 1080
   aspect_ratio: "16:9"
   note: >-
-    As this is a handcrafted original piece, all prints are unique and may have slight variations in tone and texture due to the handmade printing process.
+    As this is a handcrafted original piece, all prints are unique and may have
+    slight variations in tone and texture due to the handmade printing process.
   image:
     jpg: "/images/printmaking/coastline/ondesk.jpg"
     webp: "/images/printmaking/coastline/ondesk.webp"
@@ -52,7 +57,8 @@
 - title: "Forest"
   slug: "forest"
   url: "/traditionalprintmaking/forest/"
-  description: "A linoprint portfolio page showing a forest print work by Kieran Shalloo"
+  description:
+    "A linoprint portfolio page showing a forest print work by Kieran Shalloo"
   dimensions: "160 x 230mm"
   edition: "30"
   paper: "Canaletto Velino 125g"
@@ -61,7 +67,8 @@
   height: 1080
   aspect_ratio: "16:9"
   note: >-
-    As this is a handcrafted original piece, all prints are unique and may have slight variations in tone and texture due to the handmade printing process.
+    As this is a handcrafted original piece, all prints are unique and may have
+    slight variations in tone and texture due to the handmade printing process.
   image:
     jpg: "/images/printmaking/deer/webinframe.jpg"
     webp: "/images/printmaking/deer/webinframe.webp"
@@ -74,11 +81,11 @@
       "/images/printmaking/deer/webinframe.jpg",
     ]
 
-
 - title: "Lizard"
   slug: "lizard"
   url: "/traditionalprintmaking/lizard/"
-  description: "A linoprint portfolio page showing a lizard print work by Kieran Shalloo"
+  description:
+    "A linoprint portfolio page showing a lizard print work by Kieran Shalloo"
   dimensions: "130 x 350mm"
   edition: "30"
   paper: "Fabriano Unica 250g"
@@ -87,7 +94,8 @@
   height: 900
   aspect_ratio: "16:9"
   note: >-
-    As this is a handcrafted original piece, all prints are unique and may have slight variations in tone and texture due to the handmade printing process.
+    As this is a handcrafted original piece, all prints are unique and may have
+    slight variations in tone and texture due to the handmade printing process.
   image:
     jpg: "/images/printmaking/lizard/ondesk.jpg"
     webp: "/images/printmaking/lizard/ondesk.webp"
@@ -97,4 +105,32 @@
       "/images/printmaking/lizard/ondesk.jpg",
       "/images/printmaking/lizard/closeup.jpg",
       "/images/printmaking/lizard/inhand.jpg",
+    ]
+
+- title: "Otter"
+  slug: "otter"
+  url: "/traditionalprintmaking/otter/"
+  description:
+    "A linoprint portfolio page showing an otter print by Kieran Shalloo"
+  dimensions: "130 x 350mm"
+  edition: "30"
+  paper: "Fabriano Unica 250g"
+  price: "20.00"
+  width: 1200
+  height: 900
+  aspect_ratio: "16:9"
+  note: >-
+    As this is a handcrafted original piece, all prints are unique and may have
+    slight variations in tone and texture due to the handmade printing process.
+  image:
+    jpg: "/images/printmaking/otter/ondesk1.png"
+    # webp: "/images/printmaking/otter/ondesk1.webp"
+    alt: "Otter print"
+  gallery:
+    [
+      "/images/printmaking/otter/ondesk2.png",
+      "/images/printmaking/otter/otter1.png",
+      "/images/printmaking/otter/otter2.png",
+      "/images/printmaking/otter/otter3.png",
+      "/images/printmaking/otter/otter4.png",
     ]

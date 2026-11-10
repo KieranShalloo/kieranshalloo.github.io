@@ -1,0 +1,18 @@
+{% assign video_item = include.block | default: include.sub_block %}
+<div class="row">
+    <div class="col-md-8 offset-md-2">
+        <div class="portfolio-media-container">
+            <video class="w-100 h-auto" loop muted playsinline preload="none" poster="{{ video_item.poster }}"
+                onclick="if (this.paused) { this.play(); } else { this.pause(); }">
+                {% if video_item.webm %}
+                <source src="{{ video_item.webm }}" type="video/webm">{% endif %}
+                {% if video_item.mp4 %}
+                <source src="{{ video_item.mp4 }}" type="video/mp4">{% endif %}
+                Your browser does not support the video tag.
+            </video>
+            {% if video_item.caption %}
+            <figcaption class="figure-caption text-center mt-2">{{ video_item.caption }}</figcaption>
+            {% endif %}
+        </div>
+    </div>
+</div>

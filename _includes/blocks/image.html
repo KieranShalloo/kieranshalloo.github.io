@@ -1,0 +1,52 @@
+{% comment %}
+Block wrapper for images and lotties. Calls responsive-image.html safely.
+{% endcomment %}
+{% assign img_name = include.block.name | default: include.section.name | default: include.name | default:
+include.image_name %}
+{% assign img_ext = include.block.ext | default: include.section.ext | default: include.ext | default: 'jpg' %}
+{% assign img_alt = include.block.alt | default: include.section.alt | default: include.alt %}
+{% assign img_class = include.block.class | default: include.section.class | default: include.class %}
+{% assign img_mobile_name = include.block.mobile_name | default: include.section.mobile_name | default:
+include.mobile_name %}
+{% assign is_full_width = include.block.full_width | default: include.section.full_width | default: include.full_width |
+default: false %}
+{% assign lottie_source = include.block.lottie_src | default: include.section.lottie_src | default: include.lottie_src
+%}
+
+{% if (img_name != nil and img_name != "") or (lottie_source != nil and lottie_source != "") %}
+{% if is_full_width %}
+<div class="container-fluid px-0 portfolio-component my-5">
+    <div class="row g-0 justify-content-center">
+        <div class="col-12">
+            {% include responsive-image.html
+            name=img_name
+            image_name=img_name
+            ext=img_ext
+            alt=img_alt
+            class=img_class
+            container_class="portfolio-image m-0"
+            mobile_name=img_mobile_name
+            lottie_src=lottie_source
+            %}
+        </div>
+    </div>
+</div>
+{% else %}
+<div class="container portfolio-component my-5">
+    <div class="row justify-content-center">
+        <div class="col-12 col-md-10 col-lg-8">
+            {% include responsive-image.html
+            name=img_name
+            image_name=img_name
+            ext=img_ext
+            alt=img_alt
+            class=img_class
+            container_class="portfolio-image m-0 text-center"
+            mobile_name=img_mobile_name
+            lottie_src=lottie_source
+            %}
+        </div>
+    </div>
+</div>
+{% endif %}
+{% endif %}

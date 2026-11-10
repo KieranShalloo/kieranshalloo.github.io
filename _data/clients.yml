@@ -1,0 +1,48 @@
+title: "Clients"
+subtitle: "A small selection of clients and projects"
+items:
+  - name: "Which?"
+    logo: "/images/about/about-which.svg"
+    desktop_only: false
+  - name: "Trainline"
+    logo: "/images/about/about-trainline.svg"
+    desktop_only: false
+  - name: "Channel 4"
+    logo: "/images/about/about-c4.svg"
+    desktop_only: false
+  - name: "Netflix"
+    logo: "/images/about/about-netflix.svg"
+    desktop_only: true
+  - name: "Sony London Studio"
+    logo: "/images/about/about-london.svg"
+    desktop_only: true
+  - name: "Android"
+    logo: "/images/about/about-android.svg"
+    desktop_only: true
+  - name: "Virgin Media"
+    logo: "/images/about/about-virgin.svg"
+    desktop_only: false
+  - name: "Sony"
+    logo: "/images/about/about-sony.svg"
+    desktop_only: false
+  - name: "WWE"
+    logo: "/images/about/about-wwe.svg"
+    desktop_only: false
+  - name: "Picturehouse"
+    logo: "/images/about/about-picturehouse.svg"
+    desktop_only: true
+  - name: "BT TV"
+    logo: "/images/about/about-bttv.svg"
+    desktop_only: true
+  - name: "YouView"
+    logo: "/images/about/about-youview.svg"
+    desktop_only: true
+  - name: "PlayStation"
+    logo: "/images/about/about-playstation.svg"
+    desktop_only: false
+  - name: "TalkTalk"
+    logo: "/images/about/about-talktalk.svg"
+    desktop_only: true
+  - name: "OutSystems"
+    logo: "/images/about/about-outsystems.svg"
+    desktop_only: true

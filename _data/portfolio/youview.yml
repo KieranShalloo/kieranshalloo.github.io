@@ -1,0 +1,266 @@
+description: "A UI/UX portfolio page showing work for YouView by Kieran Shalloo"
+
+page_sections:
+  - type: "section"
+    blocks:
+      - type: "image"
+        name: "nextgen/Youview-retail-mytv"
+        alt: "Main image showing YouView retail concept design"
+        full_width: true
+
+      - type: "text-block"
+        main_title: "Complete redesign"
+        sections:
+          - text: |
+              Youview was launched in 2012 and the user interface was starting to look dated when the original concept of a redesign came around. The project was worked on for a long time behind the scenes before release and is a complete rebuild from the ground up incorporating new technologies as well as a fresh design ethos.
+
+              I was at various times placed in every single area of this project whilst also retaining responsibility for leading agile teams spanning the Settings, Setup, Help and Discover areas.
+
+      - type: "text-details"
+        items:
+          - subtitle: "No box left behind"
+            text:
+              "Every set-top box that had been released was going to be able to
+              support the next generation project in some capacity ."
+          - subtitle: "Good, Better, Best"
+            text:
+              "A philosophy that different hardware could have different levels
+              of software to enable the higher end devices to have a more robust
+              feature set ."
+          - subtitle: "Powered by the cloud"
+            text:
+              "The whole project would be rewritten from Flash into the more
+              recent HTML5 to allow easy in updating the software for fast
+              iterative changes "
+
+      - type: "image"
+        name: "nextgen/Youview-inTV"
+        alt: "YouView in-TV concept design"
+        full_width: true
+
+  - type: "section"
+    blocks:
+      - type: "text-block"
+        sections:
+          - subtitle: "Streamlined Navigation"
+            text: |
+              We reworked the navigation across all areas of the User Interface. The goal was to create easy navigation which allowed users to find the content that they were currently paying for. Feedback from previous designs showed that users had content available for free that they were just unaware they had access to.
+
+              Since the first launch of the platform Tv technology had also dramatically changed with an increase in both TV sizes and display resolution since the original launch. We retained the horizontal scroll people expected of the product but iterated on the design principles to introduce more features to users whilst retaining the ability to grow in scale and size as new features were introduced.
+
+              We worked hard to map out journeys that allowed the user to discover new content whilst also seeing the films and tv shows they love.
+
+      - type: "media-grid"
+        columns: 2
+        items:
+          - name: "nextgen/youview-old-mainmenu-1920"
+            alt:
+              "Interface mockup showing active video content download progress
+              indicators"
+          - name: "nextgen/MainMenu-1920"
+            alt:
+              "Offline downloads library screen listing saved matches and shows"
+
+  - type: "section"
+    blocks:
+      - type: "text-block"
+        sections:
+          - subtitle: "The users first experience"
+            text: |
+              As the introduction to the service, we wanted the Set Up journeys to be an engaging way to show the benefits of the platform to the user. I worked with the Creative Director and an external agency to create a short marketing video which would play as the platform was searching for TV channels as a blank screen would not be an engaging experience.
+
+              The setup journey also consisted of a subset of educational videos, on how a user could connect the set-top box to their internet or add premium channels. Working with a freelance motion designer, a collection of animated videos were created. These had to sit harmoniously inside the UI design that we were created to reinforce the branding of the platform.
+
+      - type: "media-grid"
+        columns: 3
+        full_width: true
+        items:
+          - name: "nextgen/Youview-setup"
+            alt:
+              "Interface mockup showing active video content download progress
+              indicators"
+          - name: "nextgen/Youview-update"
+            alt:
+              "Offline downloads library screen listing saved matches and shows"
+          - name: "nextgen/Youview-video"
+            alt:
+              "Offline downloads library screen listing saved matches and shows"
+
+      - type: "image"
+        name: "nextgen/RemoteFlow-1920"
+        alt: "Remote flow interaction diagram"
+        full_width: true
+
+  - type: "section"
+    blocks:
+      - type: "text-block"
+        sections:
+          - subtitle: "BT & TalkTalk Themes"
+            text: |
+              As the project was primarily used to power the TV service by both BT and TalkTalk we also created bespoke themed interfaces for both these subsets of users, incorporating corporate iconography, branding and typography.
+
+              We wanted to ensure that existing customers of this service understood that the product in their homes was related to the billing that they paid, but we also wanted to retail the YouView branding and ecosystem.
+
+              We also had to have early previews into any branding changes both BT and TalkTalk may undertake in the future. By utilizing SVG in the main areas of the UI it allowed me to work directly with developers to tweak and adjust the branding instantly for stakeholder feedback whilst presenting.
+
+      - type: "media-grid"
+        columns: 2
+        full_width: true
+        items:
+          - name: "nextgen/BTGuide-1920"
+            alt: "BT guide interface mockup"
+          - name: "nextgen/Youview-guide-talktalkSkin"
+            alt: "TalkTalk guide interface mockup"
+
+      - type: "text-block"
+        sections:
+          - subtitle: "Visual Content"
+            text: |
+              The whole design of the product was also revamped, allowing the content available on the service to shine. The opportunity for content providers to entice new viewers with imagery dynamically catered to the platform. By basing the interface on this content imagery it also allowed people to easily find recognisable content that relates to their viewing history and interests. This content-driven approach filtered its way across the whole UI so that favourite shows & films were always recognisable further throughout navigation
+
+      - type: "image"
+        name: "nextgen/Recordings-1920"
+        alt: "YouView tile design layout"
+        full_width: true
+
+      - type: "text-block"
+        sections:
+          - text: |
+              Here you can see how the visual content improved across the device, giving users the ability to instantly recognise the content they enjoy to watch. The imagery also allowed users to see more content on the screen at one time, reducing the need to scroll through more items than necessary.
+
+              We kept the iconography the same with the change so that existing users did not have to relearn a new visual language. An extra additional benefit to using imagery was creating an easier to digest page for people with additional needs, as words were not the only way for users to learn the content
+
+      - type: "media-grid"
+        columns: 2
+        full_width: true
+        items:
+          - name: "nextgen/Youview-tiles-right"
+            alt: "YouView content tiles right view"
+            ext: "png"
+          - name: "nextgen/Youview-tiles-left"
+            alt: "YouView content tiles left view"
+            ext: "png"
+
+      - type: "image"
+        name: "nextgen/Tile-1920"
+        alt: "YouView tile design layout"
+        full_width: true
+
+      - type: "text-block"
+        sections:
+          - text: |
+              As the imagery is provided by the external third party companies, the challenge with incorporating visual assets was in the way that we present information to the end user.
+
+              There would have been no point in using programme images if the vital information was not clear. We spent a lot of time perfecting this, ending up layering gradients and visual effects to ensure legibility of text
+
+      - type: "text-block"
+        sections:
+          - subtitle: "Design System"
+            text: |
+              We created a Sketch based design system utilizing the software’s capabilities in crafting components with multiple overrides to ensure consistency across the design team and to help with a handoff to different developers, who might not always be based in the same location. This set of shared components that gave every designer on the project the ability to craft experiences following the project guidelines with the same grid, layout guidelines and design materials
+
+      - type: "image"
+        name: "nextgen/Youview-StyleGuide-1920"
+        alt: "YouView Design System and Style Guide"
+        full_width: true
+
+  - type: "section"
+    blocks:
+      - type: "text-block"
+        main_title: "Showcasing great content"
+        sections:
+          - text: |
+              YouView is powered by its stakeholders and gives its users the wide range of content available to them. From the BBC to Channel 4 and Internet-powered channels such as BT sport, it was all brought to the forefront for the user. We made sure to bring this content front and centre so the users could find the best content instantly
+
+      - type: "text-block"
+        sections:
+          - subtitle: "Consolidates all the choice"
+            text: |
+              Content is king when it relates to viewing habits so by utilising the visual approach we were given the ability to discover content a much easier practise. Imagery supplied by the content teams led to a much higher conversion rate between a user searching for a TV show and them playing the content. The streamlined navigation also gave the user the ability to play personalised content with only two button clicks from the main menu, reaffirming the ease of the interactions
+
+      - type: "image"
+        name: "nextgen/Youview-retail-players"
+        alt: "User journey flow chart depicting step-by-step navigation"
+        full_width: true
+
+      - type: "text-block"
+        sections:
+          - subtitle: "Everything is available to you in one platform"
+            text: |
+              Working with shareholders and partners we were able to integrate content from a variety of sources into the metadata of the products.
+              The advantage here for the user is that they no longer had to open a third-party platform to see the content they are paying for.
+
+              This worked across all the major partners in the interface and ensured that it was simple for a user to find all the content they pay for in one place
+              By allowing third party content on the Menu sections of the UI saw a considerable growth in users clicking on content, with great feedback in User Testing sessions. It was also noted how the tiles could in the future be customised to a user’s preferences for the content they watch
+
+      - type: "media-grid"
+        columns: 2
+        full_width: true
+        items:
+          - name: "nextgen/YVSports-1920"
+            alt: "YouView sports channel integration"
+          - name: "nextgen/Youview-watchlist"
+            alt: "YouView personal watchlist feature"
+
+      - type: "text-block"
+        sections:
+          - subtitle: "Promotes content you want to see"
+            text: |
+              The most important aspect for the user was the ability to see the content they love in the least amount of steps. The UI was redesigned to be a much more visible design, no more reading a show name when there is a big content image. This is turn makes life much easier to find your favourites
+
+  - type: "section"
+    blocks:
+      - type: "text-block"
+        main_title: "Data informed decisions"
+        sections:
+          - subtitle: "Testing, Testing, Testing"
+            text: |
+              We wanted to ensure that our own bias as designers was not affecting the project so we made use of as much user testing as possible. We ensured to test as much as possible, usually consisting of multiple variant testing, bringing actual users in house and A/B testing with live software being pushed to a subset of users.
+
+              By creating interactive prototypes using Framer, we were able to create a version of the interface that could be iteratively tweaked in front of the user for instant feedback and comments. This iterative feedback then helped to fuel the decisions made alongside the product roadmap.
+
+      - type: "media-grid"
+        columns: 2
+        full_width: true
+        items:
+          - name: "nextgen/youview-userTesting-1920"
+            alt: "User testing session image"
+            caption: "A participant undergoing the testing on the main menu"
+          - name: "nextgen/youview-framer-1920"
+            alt: "Framer interactive prototype screen"
+
+      - type: "text-block"
+        sections:
+          - subtitle: "Analytics and data"
+            text: |
+              Alongside user testing, we also utilised live anonymous user information as they used the product. This allowed us to track where users were interacting with the interface and even into specifics regarding time durations inside journeys and clicks to get to their final destinations.
+
+              This information proved invaluable into tweaking our journeys to customer expectations whilst also directing the success metrics for new features being launched
+
+  - type: "section"
+    blocks:
+      - type: "text-block"
+        main_title: "Awards"
+        sections:
+          - text: |
+              The next generation redesign of the YouView software was seen as a product worthy of recognition and I was lucky enough to be part of the team which was nominated and won a variety of awards
+
+      - type: "card-grid"
+        columns: 3
+        items:
+          - title: "Mediatel Connies Awards"
+            text: "‘International Contribution to User Experience’"
+          - title: "CSI Magazine"
+            text: "'Best interactive TV technology or application'"
+          - title: "Mediatel Connies Awards"
+            text: "‘Best TV/Video Service Update or Launch.’"
+          - title: "TV Connect"
+            text: "‘People's Choice Award’"
+          - title: "T3 Awards"
+            text: "'Best TV Platform'"
+          - title: "TV Connect"
+            text: "‘Best Cloud-Based Video Service’"
+          - title: "National Technology Awards"
+            text: "‘TV, Film and Broadcasting Technology of the Year’"
+          - title: "DTVE Content Innovation Awards"
+            text: "‘Advanced TV Innovation of the Year’"

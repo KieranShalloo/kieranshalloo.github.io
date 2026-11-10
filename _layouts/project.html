@@ -2,46 +2,119 @@
 layout: default
 ---
 
-<article class="project-content-wrapper" style="--project-accent: {{ page.theme_color | default: 'var(--accent)' }};">
+<!-- 1. Determine key name from folder path (e.g. portfolio/googletrain/ -> "googletrain") -->
+{% assign key = page.dir | remove_first: '/portfolio/' | remove: '/' %}
 
-    <!-- Header block -->
-    {% include project-header.html project=page.slug %}
+<!-- 2. Fetch page section content from _data/portfolio/[key].yml -->
+{% assign project_content = site.data.portfolio[key] %}
 
-    <!-- Brief Meta Block -->
-    <div class="container-fluid pt-5 pb-4">
-        <div class="container">
-            <div class="row g-4">
-                <div class="col-md-6 offset-md-2">
-                    <h6 class="text-muted">Brief</h6>
-                    <p>{{ page.brief | newline_to_br }}</p>
-                </div>
-                <div class="col-md-3 offset-md-1">
-                    {% if page.meta_agency %}<h6 class="text-muted">Agency</h6>
-                    <p>{{ page.meta_agency }}</p>{% endif %}
-                    {% if page.meta_client %}<h6 class="text-muted">Client</h6>
-                    <p>{{ page.meta_client }}</p>{% endif %}
-                    {% if page.meta_date %}<h6 class="text-muted">Project Date</h6>
-                    <p>{{ page.meta_date }}</p>{% endif %}
-                    {% if page.meta_role %}<h6 class="text-muted">Role</h6>
-                    <p>{{ page.meta_role }}</p>{% endif %}
+<!-- 3. Fetch project meta & header mapping from _data/projects.yml -->
+{% assign project_meta = site.data.projects | where: "id", key | first %}
+
+<!-- 4. Theme Color Logic: Check project_content, project_meta, or page frontmatter, fallback to var(--accent) -->
+{% assign accent_color = project_content.theme_color | default: project_meta.theme_color | default: page.theme_color |
+default: 'var(--accent)' %}
+
+<article class="project-content-wrapper" style="--project-accent: {{ accent_color }};">
+
+    <article class="project-content-wrapper {% if page.dark_theme %}dark-mode{% endif %}"
+        style="--project-accent: {{ accent_color }};" {% if page.dark_theme %}data-bs-theme="dark" {% endif %}>
+
+        <!-- Pass header key down to project-header include -->
+        {% include project-header.html header_key=project_meta.project_header_id %}
+
+        <!-- Brief Meta Block -->
+        <div class="container-fluid pt-5 pb-4">
+            <div class="container">
+                <div class="row g-4">
+                    <div class="col-md-6 offset-md-2">
+                        <h6 class="text-muted">Brief</h6>
+                        <div class="project-brief-text">
+                            {% assign display_brief = project_content.brief | default: project_meta.meta.brief %}
+                            {{ display_brief | markdownify }}
+                        </div>
+                    </div>
+                    <div class="col-md-3 offset-md-1">
+                        {% assign display_agency = project_content.meta_agency | default: project_meta.meta.agency %}
+                        {% if display_agency %}
+                        <h6 class="text-muted">Agency</h6>
+                        <p>{{ display_agency }}</p>
+                        {% endif %}
+
+                        {% assign display_client = project_content.meta_client | default: project_meta.meta.client %}
+                        {% if display_client %}
+                        <h6 class="text-muted">Client</h6>
+                        <p>{{ display_client }}</p>
+                        {% endif %}
+
+                        {% assign display_date = project_content.meta_date | default: project_meta.meta.project_date %}
+                        {% if display_date %}
+                        <h6 class="text-muted">Project Date</h6>
+                        <p>{{ display_date }}</p>
+                        {% endif %}
+
+                        {% assign display_role = project_content.meta_role | default: project_meta.meta.role %}
+                        {% if display_role %}
+                        <h6 class="text-muted">Role</h6>
+                        <p>{{ display_role }}</p>
+                        {% endif %}
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
 
-    <!-- Main Component Engine Loop -->
-    <div class="project-builder">
-        {% for block in page.page_sections %}
+        <!-- Main Component Engine Loop -->
+        <div class="project-builder">
+            {% for block in project_content.page_sections %}
+            {% if block.type == "section" %}
+            <section class="portfolio-section my-5">
+                {% for sub_block in block.blocks %}
+                {% if sub_block.type == "text-block" %}
+                {% include blocks/text-block.html block=sub_block %}
+                {% elsif sub_block.type == "text-details" %}
+                {% include blocks/text-details.html block=sub_block %}
+                {% elsif sub_block.type == "image" %}
+                {% include blocks/image.html block=sub_block %}
+                {% elsif sub_block.type == "media-grid" %}
+                {% include blocks/media-grid.html block=sub_block %}
+                {% elsif sub_block.type == "image-text" %}
+                {% include blocks/image-text.html block=sub_block %}
+                {% elsif sub_block.type == "fullscreen-scroller" %}
+                {% include blocks/fullscreen-scroller.html block=sub_block %}
+                {% elsif sub_block.type == "video" %}
+                {% include blocks/video.html block=sub_block %}
+                {% elsif sub_block.type == "cards" or sub_block.type == "card-grid" or sub_block.type == "results" %}
+                {% include blocks/card-grid.html block=sub_block %}
+                {% endif %}
+                {% endfor %}
+            </section>
 
-        {% if block.type == "text" %}
-        {% include text-block.html block=block %}
+            {% elsif block.type == "text-block" %}
+            {% include blocks/text-block.html block=block %}
 
-        {% elsif block.type == "media_grid" %}
-        {% include media-grid.html block=block %}
+            {% elsif block.type == "text-details" %}
+            {% include blocks/text-details.html block=block %}
 
-        {% endif %}
+            {% elsif block.type == "cards" or block.type == "card-grid" or block.type == "results" %}
+            {% include blocks/card-grid.html block=block %}
 
-        {% endfor %}
-    </div>
+            {% elsif block.type == "image" %}
+            {% include blocks/image.html block=block %}
 
-</article>
+            {% elsif block.type == "media-grid" %}
+            {% include blocks/media-grid.html block=block %}
+
+            {% elsif block.type == "image-text" %}
+            {% include blocks/image-text.html block=block %}
+
+            {% elsif block.type == "fullscreen-scroller" %}
+            {% include blocks/fullscreen-scroller.html block=block %}
+
+            {% elsif block.type == "video" %}
+            {% include blocks/video.html block=block %}
+
+            {% endif %}
+            {% endfor %}
+        </div>
+
+    </article>

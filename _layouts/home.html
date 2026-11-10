@@ -1,0 +1,36 @@
+---
+layout: default
+---
+
+{% assign clients = site.data.clients %}
+
+<!-- Homepage Hero -->
+{% include home-hero.html header_key="home" %}
+
+
+
+<!-- Main Content from index.md -->
+{% if content != "" %}
+<section class="container my-4">
+    {{ content }}
+</section>
+{% endif %}
+
+<!-- Clients Grid -->
+<section class="container my-5">
+    <h3 class="text-center">{{ clients.title }}</h3>
+    <h5 class="text-muted text-center mb-4">{{ clients.subtitle }}</h5>
+
+    <div class="row row-cols-2 row-cols-lg-5 g-4 justify-content-center align-items-center">
+        {% for client in clients.items %}
+        <div class="col text-center about-image-wrapper {% if client.desktop_only %}d-none d-lg-block{% endif %}">
+            <div id="about-image" class="p-3">
+                <img src="{{ client.logo }}" alt="{{ client.name }} logo" class="img-fluid" loading="lazy">
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</section>
+
+<!-- Portfolio Grid -->
+{% include portfolio-grid.html limit=5 %}

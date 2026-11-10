@@ -1,0 +1,82 @@
+description:
+  "A UI/UX portfolio page showing work for Trainline by Kieran Shalloo"
+
+page_sections:
+  - type: "section"
+    blocks:
+      - type: "image"
+        name: "trainline/webtoapp2-1920"
+        alt: "Main image showing trainline concept design"
+        full_width: true
+
+      - type: "text-block"
+        main_title: "Marketing"
+        sections:
+          - subtitle: "Push to app"
+            text: |
+              Trainline wanted to promote their app to users to move from the mobile version of the website. With this in mind, we introduced certain promotional messages to the user to highlight the benefits they would receive if they used the app.
+
+              We wanted to ensure that we were promoting the content to the people who wanted to use the app, especially as the data told us there was a strong feeling across mainland Europe where users prefer to use mobile websites rather than apps.
+
+      - type: "image"
+        name: "trainline/webtoapp1-1440"
+        alt: "Main image showing trainline concept design"
+        full_width: true
+
+  - type: "section"
+    blocks:
+      - type: "text-block"
+        sections:
+          - subtitle: "Marketing preferences"
+            text: |
+              It was key to enable the users to be able to control their marketing information. When I arrived at Trainline, this was wrapped up in enabling the user to see vital user journey.
+
+              Working with multiple internal teams we created a proof of concept to split out the marketing channel messages from the journey information. Although this started as a simple idea, it escalated with information having to communicate through different databases spending on where the user signed up and which platform they chose their options on.
+
+      - type: "fullscreen-scroller"
+        scroller_key: "trainlinescroller"
+
+  - type: "section"
+    blocks:
+      - type: "text-block"
+        sections:
+          - subtitle: "Marketing Opt in / Opt out"
+            text: |
+              For different user scenarios, based on user marketing preferences, we wanted to add in a few alternative approaches to allow the user to Opt-in or Opt-out to relevant marking messages. We had to incorporate a wide array of scenarios here, as users could have chosen their marketing preferences on a different device that they were now on and not all of the Trainline databases shared this information with each other.
+
+              We also had scenarios where users had previously purchases tickets as a ‘guest’ account and we had to investigate how those choices could be brought into their account as the tickets were also brought over.
+
+              For these scenarios we put a subset of users into multivariate testing to see which option worked best, hitting Trainline targets with no diminishing returns for the end user.
+
+      - type: "image"
+        name: "trainline/optinflow-1440"
+        alt: "Main image showing trainline concept design"
+        full_width: true
+
+  - type: "section"
+    blocks:
+      - type: "text-block"
+        main_title: "CMS templates"
+        sections:
+          - text: |
+              Trainline has multiple areas on its platform where promotional content can be placed. To save development time these sections are controlled by a CMS tool. The issue with this, was a lack of a template system, with multiple sizes and styles of sections with no solid theme across them.
+
+              I took control of this as the team i worked with controlled the CMS tool, crafting documentation and guides for engineering to create a uniform visual and interactive style to ensure users can all navigate through the platforms.
+
+              This visual overhall helped Trainline to add an additional 7.5% in retention based on the internal data tool used across the buisness
+
+      - type: "image"
+        name: "trainline/optin-1440"
+        alt: "Main image showing trainline concept design"
+        full_width: true
+
+  - type: "card-grid"
+    main_title: "Results and impact"
+    columns: 3
+    items:
+      - subtitle: "309% Year on Year improvement"
+        text: "Contribution to the Engagement team"
+      - title: "Exceeding Q1 & Q2 targets"
+        text: "Increasing team NTS score"
+      - title: "Increasing growth for global business"
+        text: "Increasing growth in UK, EU and wider markets"

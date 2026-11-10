@@ -1,0 +1,268 @@
+title: "YouView Help"
+description:
+  "A UI/UX portfolio page showing work for YouView Help by Kieran Shalloo"
+theme_color: "var(--youview)"
+
+# Component Builder Engine
+page_sections:
+  # 1. Problems & Goals
+  - type: "text-block"
+    main_title: "Problems & Goals"
+    sections:
+      - text: |
+          The release of the next generation YouView UI had left the help app feeling out of date and disconnected from the main user experience.
+
+          The help app, designed alongside the initial launch in 2012, was clunky, slow, and designed in a way that was no longer applicable for our needs.
+
+          Its usability was challenged, and our data showed that we were receiving more calls and social media posts regarding problems that could easily be solved with an improvement to the help app.
+
+  - type: "image"
+    name: "help/help-hero"
+    alt:
+      "YouView help application hero screen displaying redesigned user support
+      navigation on a television interface"
+    full_width: true
+
+  - type: "text-block"
+    sections:
+      - subtitle: "Goals"
+        text: |
+          The goal of the help app was to create a convenient way to solve issues a user might face. We didn't want to just reskin the existing help app; we wanted to create a great experience that would help a user in a stressful time.
+
+  - type: "text-details"
+    items:
+      - subtitle: "Create a consistent user journey matching the rest of the UI"
+      - subtitle: "Use a scalable template-based system for iterative design"
+      - subtitle: "Lower the amount of calls and support-site hits"
+
+  - type: "text-block"
+    sections:
+      - subtitle: "Role & responsibilities"
+        text: |
+          I was placed into the project as the lead designer and worked collaboratively with both a junior UX designer and an intern from the visual design team, allowing them to progress designs and involving them in every stage of the process.
+
+          In addition, other designers were involved and contributed to ensure a collaborative working environment.
+
+          I stepped away from active design on this project after achieving stakeholder buy-in, as the project transitioned into our agile backlog.
+
+  # 2. Project Kickoff
+  - type: "text-block"
+    main_title: "Project kickoff"
+    sections:
+      - subtitle: "Workshops and insights"
+        text: |
+          At the beginning of the project, the whole agile cluster was brought together for a kickoff session.
+
+          Bringing all team members together—developers, testers, and others—gave everyone an opportunity to brainstorm issues and fostered a strong sense of project ownership across the board.
+
+          We also incorporated information gathered by our viewer support team, as well as insights gained from social media, to help guide the conversation and keep us on track.
+
+          This initial kickoff opened up dialogue within the team, and before long, it evolved into a team-based user testing session. People began identifying usability edge cases that hadn't even been reported by actual users yet, allowing us to make the product even better.
+
+  - type: "text-details"
+    items:
+      - subtitle: "I can't find the right article"
+      - subtitle: "I have to open each article to see if it is the right one?"
+      - subtitle: "Why can't it just show me how to fix this?"
+
+  - type: "text-block"
+    sections:
+      - subtitle: "Reevaluating the issues"
+        text: |
+          All this work investigating user problems led the team to re-examine the initial brief.
+
+          Our insights indicated that the original brief missed the core issue: it wasn't just that the customer's journey was difficult, but that they were struggling to find relevant content in the first place. This led to frustration, prompting customers to phone support or air their grievances on social media.
+
+          We then had to ask ourselves: how can we present not just the best content, but the right content for the customer at the exact moment they need it?
+
+  # 3. Redesigning
+  - type: "text-block"
+    main_title: "Redesigning"
+    sections:
+      - subtitle: "Having the right information"
+        text: |
+          A customer doesn't always need technical details on what is wrong; sometimes they just want it fixed quickly.
+
+          We wanted to eliminate hurdles for the user and make it fast and simple for them to resolve issues and get back to watching their favourite content.
+
+          Through our initial whiteboard sessions, we established key goals for the redesigned help app:
+          - Making sure all error codes are directly linked to corresponding help articles
+          - Placing the most popular content at the forefront of the app
+          - Prioritising video guides as the primary visual format users encounter
+          - Ensuring support options are effortless to locate
+
+      - subtitle: "Concepts & User Flows"
+        text:
+          "Iterating on core user journeys to map out clear pathways from issue
+          discovery to final resolution."
+
+  - type: "media-grid"
+    columns: 2
+    items:
+      - name: "help/help-concept1"
+        alt:
+          "Initial wireframe layout exploration for the redesigned YouView help
+          dashboard"
+      - name: "help/help-concept2"
+        alt:
+          "Alternative navigation structure exploration for quick category
+          browsing"
+      - name: "help/help-concept3"
+        alt: "Wireframe mapping search queries and error code lookup flows"
+      - name: "help/help-concept4"
+        alt:
+          "Detailed layout wireframe for help articles and integrated video
+          player views"
+
+  - type: "image"
+    name: "help/help-flows"
+    alt:
+      "Comprehensive user flow diagram mapping support paths and diagnostic
+      decision trees"
+    full_width: true
+
+  - type: "image"
+    name: "help/help-flows2"
+    alt:
+      "Detailed troubleshooting flow chart illustrating step-by-step error code
+      resolution"
+    full_width: true
+
+  # 4. Prototyping & User Testing
+  - type: "text-block"
+    main_title: "Prototyping & User Testing"
+    sections:
+      - subtitle: "Interactive Prototypes"
+        text: |
+          We built interactive prototypes to test our new component structures and validate navigation patterns with real users.
+
+  - type: "media-grid"
+    columns: 2
+    items:
+      - name: "help-home-scroll"
+        ext: "gif"
+        alt:
+          "Animated prototype preview demonstrating scrolling behavior on the
+          redesigned YouView help home screen"
+      - name: "help-topic-scroll"
+        ext: "gif"
+        alt:
+          "Animated prototype preview showcasing help topic detail view and
+          embedded video playback"
+
+  # 5. 3D Art Direction
+  - type: "text-block"
+    main_title: "3D Art Direction"
+    sections:
+      - subtitle: "Visual Context & Art Direction"
+        text: |
+          Working with a group of freelance 3D artists, I led their direction for the production of images shown to the user on topic pages. I wanted to ensure that the images visually correlated with the device settings area where issues occurred, creating an intuitive mental link between the device setting and the help topic.
+
+  - type: "media-grid"
+    columns: 2
+    full_width: true
+    items:
+      - name: "help/help-3d-bg1"
+        alt:
+          "Custom 3D rendered graphic asset representing system settings support"
+      - name: "help/help-3d-bg2"
+        alt:
+          "Custom 3D illustration asset designed for network connection
+          troubleshooting topics"
+      - name: "help/help-3d-bg3"
+        alt:
+          "3D graphic element representing hardware audio and display settings"
+
+  # 6. Final Screens & Specs
+  - type: "text-block"
+    main_title: "Final Screens"
+    sections:
+      - subtitle: "Delivered UI Design"
+        text: |
+          The final delivered user interface for the YouView help application, bringing together streamlined navigation, video-first support guides, and integrated 3D artwork.
+
+  - type: "media-grid"
+    columns: 2
+    full_width: true
+    items:
+      - name: "help/help-new-home2"
+        alt: "Final delivered YouView help home screen interface layout"
+      - name: "help/help-new-topic2"
+        alt:
+          "Final delivered help topic detail screen featuring an embedded
+          support video"
+      - name: "help/help-new-topic5"
+        alt: "Final delivered troubleshooting step-by-step resolution view"
+      - name: "help/help-contact"
+        alt: "Final delivered customer support contact and phone options screen"
+
+  - type: "text-block"
+    sections:
+      - subtitle: "Detailed specs"
+        text: |
+          I created detailed documentation during this project to communicate specifications for the front-end development team as well as our test team, covering both manual and automated testing requirements. Final delivery consisted of visual design specs via Zeplin, alongside detailed user flows and journeys uploaded to product management applications to track development progress.
+
+          I also tracked development milestones through regular sign-off points entered into the production roadmap. This gave me the ability to present work-in-progress deliverables to senior management teams and incorporate feedback into the wider design cluster.
+
+  - type: "media-grid"
+    columns: 2
+    full_width: true
+    items:
+      - name: "help/help-action-panel-specs"
+        alt:
+          "Design specification layout showing UI padding, typography, and
+          component states for action panels"
+      - name: "help/help-new-action-panel-specs"
+        alt:
+          "Refined design specification sheet detailing interactive button
+          states and spacing"
+      - name: "help/help-new-error-specs"
+        alt:
+          "Technical specification view for error state handling and messaging
+          components"
+
+  - type: "text-block"
+    sections:
+      - subtitle: "ISP versions"
+        text: |
+          Like the rest of the YouView interface, there is a requirement to create ISP-specific versions of any feature to better represent shareholder brands and maintain a seamless experience for their customers. As such, we incorporated both BT and TalkTalk interface colour schemes and branding rules into the project.
+
+  - type: "media-grid"
+    columns: 2
+    full_width: true
+    items:
+      - name: "help/help-new-home-bt"
+        alt:
+          "BT-branded variant of the YouView help home screen featuring custom
+          brand accent colours"
+      - name: "help/help-new-home-tt"
+        alt:
+          "TalkTalk-branded variant of the YouView help home screen featuring
+          corresponding brand styling"
+
+  # 7. Results & Conclusions
+  - type: "text-block"
+    main_title: "Results & Conclusions"
+    sections:
+      - text: |
+          These results come from the user testing sessions with the final designs using a micxture of existing customers from all three user bases, BT TT and retail.
+
+          This coming from in house user testing means the results are skewed and as such would not be indicative of a wider release
+
+  - type: "card-grid"
+    columns: 3
+    items:
+      - text:
+          "More than 80% of participents would use the help app as thier first
+          point of call in the event of an error "
+      - text:
+          "The most hughly regarded feature was the acess to most common issues"
+      - text:
+          "The imagery relating to the settings area was also highlighted as a
+          way to quickly link areas "
+
+  - type: "text-block"
+    sections:
+      - subtitle: "Next Steps"
+        text: |
+          This project was not supposed to be the final version, it is onlyt the first version of an iterative agile process in making the help app as useful as a feature for the customer We took feedback and are ensuring the product is the best experience it can be

@@ -1,0 +1,148 @@
+title: "Youview Accessibility"
+description:
+  "A UI/UX portfolio page showing work for YouView Mobile App by Kieran Shalloo"
+theme_color: "var(--youview)"
+
+# Component Builder Engine
+page_sections:
+  - type: "text-block"
+    main_title: "Project Goal"
+    sections:
+      - text: |
+          As it expanded its reach into the UK television market, YouView wanted to give their customers a way to remotely record the TV shows and films they enjoy on the go.
+
+          A feature much requested by existing users, this app would be the first step into pushing the product to a much wider audience and being able to take the YouView experience out of the home.
+
+  - type: "text-block"
+    sections:
+      - subtitle: "User Research"
+        text: |
+          Work started with the YouView mobile app with the use of personas; we adjusted a few variables in relation to taking the product onto the small screen in the form of mobile phones and tablets.
+
+          These new personas were created with the help of external agencies who we also outsourced our initial user research to.
+
+          This company was brought in various times throughout the project to relay feedback and to help shape our vision of the product.
+
+  - type: "image"
+    name: "mobile/mobile-hero"
+    alt:
+      "High-fidelity mobile application hero screen showcasing the YouView
+      remote record interface on a smartphone"
+    full_width: true
+
+  - type: "text-block"
+    main_title: "Design Process"
+    sections:
+      - text: |
+          The first step in our thinking was how best to replicate the journeys the users had been accustomed to when using the product in the home.
+
+          We wanted a consistent pattern in both platforms whilst also taking both the Apple and Android guidelines and creating consistency with the overall branding and UI of our existing work.
+
+          The information architecture of the app was decided early, creating a strong foundation of hierarchy and a user-centred approach to delivering the right information at the right time in order to benefit our users. Working alongside the Lead Interaction Designer, we collaborated on various aspects of the app, bouncing ideas with each other and using an agile approach to the workflow, creating a dynamic working relationship leading to furthering ideas and concepts.
+
+  - type: "text-block"
+    main_title: "Content Discovery"
+    sections:
+      - text: |
+          Industry research in conjunction with user feedback told us that the discovery of new content was one of the pain points people had when using TV products. With that in mind, we created the idea of a whole area relating to discovering the content you would like to watch when you got home, allowing the user to set the recordings for the evening.
+
+          By splitting the content into relevant categories, it allowed us to highlight content first and foremost for the user whilst also having a quick shortcut to see all of the content.
+
+          The concept came from the idea of allowing the user to scroll leisurely through the content available to them at any time, with actions available on a long press of the content. I also wanted to ensure that the user wasn’t overwhelmed with choice, and so we limited the carousels to 10 items with a SEE ALL call to action. This also improved page loading on the app as the back-end service didn’t have to request so many images at once.
+
+  - type: "media-grid"
+    columns: 3
+    items:
+      - name: "mobile/mobile-discovergenre-wireframe"
+        alt:
+          "Wireframe layout showing mobile genre discovery screens and category
+          listing structures"
+      - name: "mobile/mobile-discover-wireframe"
+        alt:
+          "Wireframe layout detailing mobile content discovery and navigation
+          paths"
+      - name: "mobile/mobile-discovery"
+        ext: "gif"
+        alt:
+          "Animated prototype preview demonstrating scrolling behaviour and
+          content browsing on the mobile discovery screen"
+
+  - type: "text-block"
+    main_title: "Designing for multiple screens"
+    sections:
+      - text: |
+          As the app gained popularity inside our user base, there was a business decision to push the app further with the introduction of a tablet mode, initially with the iPad and then as the opportunity arose moving onto Android tablets.
+
+          A key point with making a project for second screen devices was using the screen estate in the correct way and when creating the application with the larger tablet form in mind we wanted to ensure that we could create a more lean-back experience. The goal was to create a bespoke experience for tablets to allow us to show more on screen at one time utilizing the bigger screen size.
+
+  - type: "image"
+    name: "mobile/mobile-tablet-wireframe"
+    ext: "gif"
+    alt:
+      "Tablet wireframe layout showing optimized multi-column UI adaptation for
+      iPad and Android tablet screens"
+    full_width: true
+
+  - type: "text-block"
+    main_title: "Design Outcomes"
+    sections:
+      - text: |
+          The final visuals for the app were constantly adjusted with each new feature and release that was available to customers so there may be some variations depending on the release version of the app available currently.
+
+  - type: "media-grid"
+    columns: 2
+    full_width: true
+    items:
+      - name: "mobile/selection"
+
+        ext: "gif"
+        alt:
+          "Animated prototype showcasing interactive selection states and
+          recording actions on mobile"
+      - name: "mobile/selection2"
+        ext: "gif"
+        alt:
+          "Animated prototype detailing secondary selection workflow and episode
+          options view"
+
+  - type: "media-grid"
+    columns: 3
+    items:
+      - name: "mobile/mobile-launch-animation-visual"
+        alt:
+          "High-fidelity visual design of the mobile app launch sequence and
+          splash screen animation"
+      - name: "mobile/mobile-guide-visual"
+        alt:
+          "High-fidelity visual design of the mobile TV guide interface and
+          channel schedule view"
+      - name: "mobile/mobile-mainmenu-visual"
+        alt:
+          "High-fidelity visual design of the mobile application main navigation
+          menu"
+      - name: "mobile/mobile-pdv-visual"
+        alt:
+          "High-fidelity visual design of the program detail view showing
+          synopsis and remote record options"
+      - name: "mobile/mobile-setup-visual"
+        alt:
+          "High-fidelity visual design of the mobile application onboarding and
+          pairing setup screen"
+      - name: "mobile/mobile-discover-visual"
+        alt:
+          "High-fidelity visual design of the final delivered content discovery
+          and recommendation screen"
+
+  - type: "card-grid"
+    main_title: "Results & Learnings"
+    columns: 3
+    items:
+      - subtitle: "Over 1,000,000 app downloads"
+        # text: "Contribution to the Engagement team"
+      - title: "78% User adoption"
+        # text: "Increasing team NTS score"
+      - title: "Pocket Lint"
+        text:
+          "YouView’s Remote Record app is a definite saviour for those days when
+          you’re stuck at work, late on public transport, or something else just
+          happens to crop up "

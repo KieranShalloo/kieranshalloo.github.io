@@ -1,0 +1,41 @@
+title: "Book of Potions"
+description: "Senior UX/UI design work for the award-winning WWE Network relaunch."
+
+
+# Component Builder Engine
+page_sections:
+  # 1. Hero Screen Tile Banner
+  - type: "image"
+    name: "bookOfPotions/bop5"
+    alt: "WWE Network Screen Tile"
+    full_width: true
+
+  # 2. Redesign & Consistency Text Block
+  - type: "text-block"
+    main_title: "Goal"
+    sections:
+      # Section with NO subtitle
+      - text: |
+          As this game was a sequel, the initial groundwork was already completed for the project. Most of my work consisted of workshops, and conceptual vision to see how the game could extend from the boundaries of the initial project.
+
+          The game was set in the Potions classroom subject so there were many sessions based around bringing the atmosphere of the classroom to the user.
+
+  - type: "media-grid"
+    tight: false # Optional: set to true if you want tighter spacing
+    items:
+      - name: "bookOfPotions/bop3"
+        alt: "DanceStar Image 1"
+      - name: "bookOfPotions/bop4"
+        alt: "DanceStar Image 2"
+      - name: "bookOfPotions/bop6"
+        alt: "DanceStar Image 3"
+      - name: "bookOfPotions/bop7"
+        alt: "DanceStar Image 4"
+      - name: "bookOfPotions/bop8"
+        alt: "DanceStar Image 5"
+      - name: "bookOfPotions/bop9"
+        alt: "DanceStar Image 6"
+      - name: "bookOfPotions/bop10"
+        alt: "DanceStar Image 5"
+      - name: "bookOfPotions/bop11"
+        alt: "DanceStar Image 6"

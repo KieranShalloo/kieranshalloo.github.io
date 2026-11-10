@@ -2,11 +2,13 @@
 {% assign url_parts = page.url | split: '/' %}
 {% assign current_section = url_parts[1] %}
 
-<nav class="navbar navbar-expand-md navbar-light bg-light shadow sticky-top p-0">
+<nav class="navbar navbar-expand-md {% if page.dark_theme %}navbar-dark bg-dark{% else %}navbar-light bg-light{% endif %} shadow sticky-top p-0"
+    {% if page.dark_theme %}data-bs-theme="dark" {% endif %}>
     <div class="container p-2">
         <!-- Mobile logo (hidden on desktop) -->
         <a class="navbar-brand d-md-none" href="/" aria-label="Kieran Shalloo Design - Home">
-            <img src="/Logotype.svg" alt="Kieran Shalloo Design Logo" width="50" height="50" loading="eager">
+            <img src="/Logotype.svg" alt="Kieran Shalloo Design Logo" width="50" height="50" loading="eager"
+                class="navbar-logo">
         </a>
 
         <!-- Mobile toggle button -->
@@ -35,10 +37,10 @@
                 </li>
 
                 <!-- Center logo (hidden on mobile) -->
-                <li class="nav-item d-none d-md-block mx-2 mx-lg-4">
+                <li class="nav-item d-none d-md-block mx-3 mx-lg-4">
                     <a class="navbar-brand p-0" href="/" aria-label="Kieran Shalloo Design - Home">
-                        <img src="/Logotype.svg" alt="Kieran Shalloo Design Logo" width="70" height="70"
-                            loading="eager">
+                        <img src="/Logotype.svg" alt="Kieran Shalloo Design Logo" width="70" height="70" loading="eager"
+                            class="navbar-logo">
                     </a>
                 </li>
 

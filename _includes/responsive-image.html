@@ -1,73 +1,39 @@
 {% comment %}
-_includes/responsive-image.html
-Universal image include supporting:
-- Multiple sizes (414, 768, 1920) with suffixes
-- Single size without suffixes
-- AVIF, WebP, and JPG formats
-- Bootstrap 5 compatibility
-
-Usage with sizes: {% include responsive-image.html name="photo" alt="Description" sizes=true %}
-Usage without sizes: {% include responsive-image.html name="photo" alt="Description" %}
-
-Parameters:
-- name: Image base name (required)
-- alt: Alt text (required)
-- sizes: Boolean to enable size suffixes (default: false)
-- class: Additional CSS classes
-- loading: lazy/eager (default: lazy)
-- decoding: async/auto/sync (default: async)
-- width: Default width (default: 768)
-- container_class: Classes for figure wrapper
+Leaf component for responsive pictures and lottie sources. Never calls itself.
 {% endcomment %}
-
+{% assign base_name = include.name | default: include.image_name %}
 {% assign loading = include.loading | default: 'lazy' %}
 {% assign decoding = include.decoding | default: 'async' %}
-{% assign use_sizes = include.sizes | default: false %}
-{% assign img_width = include.width | default: 768 %}
-{% assign container_class = include.container_class | default: 'portfolio-image' %}
+{% assign fallback_ext = include.ext | default: 'jpg' %}
 
-<figure class="{{ container_class }}">
+{% if include.mobile_name != nil and include.mobile_name != "" %}
+{% assign mobile_target = include.mobile_name %}
+{% else %}
+{% assign mobile_target = base_name | append: "-mobile" %}
+{% endif %}
+
+{% if jekyll.environment == "production" %}
+{% assign cdn_mobile = "/cdn-cgi/image/width=1179,format=auto,quality=85" %}
+{% assign cdn_desktop = "/cdn-cgi/image/width=2880,format=auto,quality=85" %}
+{% else %}
+{% assign cdn_mobile = "" %}
+{% assign cdn_desktop = "" %}
+{% endif %}
+
+{% if include.lottie_src %}
+<div class="portfolio-media-container">
+  <lottie-player src="{{ include.lottie_src }}" background="transparent" speed="1" style="width: 100%; height: auto;"
+    loop autoplay></lottie-player>
+</div>
+{% endif %}
+
+{% if base_name != nil and base_name != "" %}
+<figure class="{{ include.container_class | default: 'portfolio-image m-0' }}">
   <picture>
-    {% if use_sizes %}
-    <!-- AVIF with responsive sources -->
-    <source type="image/avif" srcset="
-        {{ '/images/' | append: include.name | append: '-414.avif' }} 414w,
-        {{ '/images/' | append: include.name | append: '-768.avif' }} 768w,
-        {{ '/images/' | append: include.name | append: '-1920.avif' }} 1920w
-      " sizes="
-        (max-width: 414px) 414px,
-        (max-width: 768px) 768px,
-        (min-width: 769px) 768px
-      ">
-
-    <!-- WebP with responsive sources -->
-    <source type="image/webp" srcset="
-        {{ '/images/' | append: include.name | append: '-414.webp' }} 414w,
-        {{ '/images/' | append: include.name | append: '-768.webp' }} 768w,
-        {{ '/images/' | append: include.name | append: '-1920.webp' }} 1920w
-      " sizes="
-        (max-width: 414px) 414px,
-        (max-width: 768px) 768px,
-        (min-width: 769px) 100vw
-      ">
-    {% else %}
-    <!-- Single size sources -->
-    <source type="image/avif" srcset="{{ '/images/' | append: include.name | append: '.avif' }}">
-    <source type="image/webp" srcset="{{ '/images/' | append: include.name | append: '.webp' }}">
-    {% endif %}
-
-    <!-- JPEG Fallback -->
-    <img
-      src="{% if use_sizes %}{{ '/images/' | append: include.name | append: '-768.jpg' }}{% else %}{{ '/images/' | append: include.name | append: '.jpg' }}{% endif %}"
-      {% if use_sizes %} srcset="
-  {{ '/images/' | append: include.name | append: '-414.jpg' }} 414w,
-  {{ '/images/' | append: include.name | append: '-768.jpg' }} 768w,
-  {{ '/images/' | append: include.name | append: '-1920.jpg' }} 1920w
-" sizes="
-          (max-width: 414px) 414px,
-          (max-width: 768px) 768px,
-          (min-width: 769px) 100vw
-        " {% endif %} width="{{ img_width }}" height="auto" decoding="{{ decoding }}" loading="{{ loading }}"
-      class="img-fluid {{ include.class }}" alt="{{ include.alt | escape }}">
+    <source media="(max-width: 767.98px)" srcset="{{ cdn_mobile }}/images/{{ mobile_target }}.{{ fallback_ext }}">
+    <img src="{{ cdn_desktop }}/images/{{ base_name }}.{{ fallback_ext }}" alt="{{ include.alt | escape }}"
+      class="img-fluid {{ include.class }}" loading="{{ loading }}" decoding="{{ decoding }}"
+      onerror="this.parentNode.querySelectorAll('source').forEach(s => s.remove()); this.src='{{ cdn_desktop }}/images/{{ base_name }}.{{ fallback_ext }}';">
   </picture>
 </figure>
+{% endif %}

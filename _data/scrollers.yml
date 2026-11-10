@@ -1,0 +1,54 @@
+visualscrubbing:
+  image_path: "/images/visualscrubbing/scrubbingscolling.jpg"
+
+wwe_unified_experience:
+  image_path: "/images/wwe/tileanglephone.jpg"
+  main_title: "One unified experience"
+  sections:
+    - text: The approach for the client was to give the end-user a unified
+        experience across multiple devices. The base WWE app was released on 10
+        devices as well as the variants of this hardware and we didn’t want that
+        to limit any version of the app.
+
+
+        We had to always put the different devices into our minds, working
+        closely to create bespoke platform interactions whilst retaining the
+        overall consistency of the UI. This was highly noticeable in the
+        navigation patterns as each remote control/gamepad would have its own
+        unique hardware and buttons would not always correlate.
+
+
+        We also had to really understand the hardware limitations of these
+        devices and knowing what we could or couldn't do for each platform.
+        Sometimes we had to make hard decisions to ensure that performance was
+        good enough for the user to actually control the content.
+
+virginscroller:
+  image_path: "/images/virgin/partialPayment/virginmedia-PayNow-1920.jpg"
+
+trainlinescroller:
+  image_path: "/images/trainline/optinmarketing-1440.jpg"
+
+sonyandroid:
+  image_path: "/images/sony/sony-hero.jpg"
+  main_title: "Subtle Design Touches"
+  sections:
+    - text:
+        There were a few sections which required reworking and alterations due
+        to the impact of delivery times with the project. We looked to create
+        bespoke versions of existing patterns that our customers had become
+        accustomed too.
+
+
+        We create a set of design components which corresponded
+        with the development team and the Google established guidelines
+
+accessibility:
+  image_path: "/accessibility/accessibility-container-background.png"
+  main_title: "Subtle Design Touches"
+  sections:
+    - text:
+        As we took the design to its later stages we wanted to ensure that the YouView UI kept its delightful little touches that made it such an attractive design in the first place for customers.
+
+
+        I ensured that these touches remained even when the user wanted the High Contrast option turned on.

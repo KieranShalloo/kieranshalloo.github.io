@@ -1,0 +1,83 @@
+title: "Netflix"
+description: "A UI/UX portfolio page showing work for Netflix by Kieran Shalloo"
+
+page_sections:
+  - type: "section"
+    blocks:
+      - type: "image"
+        name: "netflix/netflix-008"
+        alt: "Netflix YouTube Christmas advert hero visual and brand title card"
+        full_width: true
+
+      - type: "image"
+        name: "netflix/press-xmas2-1"
+        ext: "png"
+        alt:
+          "Featured key art frame from the Netflix YouTube holiday advertising
+          campaign"
+
+      - type: "image"
+        name: "netflix/press-xmas2-2"
+        ext: "png"
+        alt:
+          "Secondary promotional character visual from the Netflix Christmas
+          advert"
+
+      - type: "media-grid"
+        columns: 3
+
+        items:
+          - name: "netflix/press-xmas2-3"
+            ext: "png"
+            alt:
+              "Animated title card frame from the Netflix Christmas video
+              campaign"
+          - name: "netflix/press-xmas2-4"
+            ext: "png"
+            alt:
+
+  - type: "section"
+    blocks:
+      - type: "text-block"
+        main_title: "Motion Graphics & Campaign Assets"
+        sections:
+          - subtitle: "Holiday Campaign Storytelling"
+            text: |
+              The Netflix YouTube Christmas advert project involved crafting high-impact motion graphics and promotional media assets to drive engagement across digital and social channels during the festive holiday season.
+
+      - type: "media-grid"
+        columns: 3
+        full_width: true
+        items:
+          - name: "netflix/netflix-005"
+
+            alt:
+              "Animated title card frame from the Netflix Christmas video
+              campaign"
+          - name: "netflix/netflix-003"
+
+            alt:
+              "Promotional character artwork featured in the holiday digital
+              spot"
+          - name: "netflix/netflix-004"
+            ext: "jpg"
+            alt:
+              "Key campaign visual highlighting festive Netflix holiday content"
+          - name: "netflix/netflix-011"
+            ext: "jpg"
+            alt:
+              "Digital display banner design for the YouTube Christmas release"
+          - name: "netflix/netflix-009"
+            ext: "jpg"
+            alt:
+              "Social media promotional graphic layout for the holiday campaign"
+          - name: "netflix/netflix-012"
+            ext: "jpg"
+            alt:
+              "Character interaction frame from the Christmas commercial
+              sequence"
+          - name: "netflix/netflix-013"
+            ext: "jpg"
+            alt:
+              "End-slate branding asset for the Netflix YouTube holiday
+              advertisement"

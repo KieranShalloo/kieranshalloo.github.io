@@ -1,0 +1,55 @@
+theme_color: "var(--channel4)"
+
+page_sections:
+  # 1. Hero Screen Tile Banner
+  - type: "image"
+    name: "4rebrand/c4-rebrand-1920"
+    alt: "Channel 4 Rebrand Screen Tile"
+    full_width: true
+
+  # 2. Redesign & Consistency Text Block
+  - type: "text-block"
+    main_title: "Redesign"
+    sections:
+      - text: |
+          Channel 4’s video-on-demand service was rebranded from All4 into a single master brand under the Channel 4 name, and with that came a slew of branding changes that needed to be incorporated across the service.
+
+      - subtitle: "Visual Changes"
+        text: |
+          The main visual element change for this release was the brand colour of the app applied across the platform, from a teal and yellow two-colour theme into a single colour which is branded as Arsenic Green.
+
+          Moving to a single colour presented a myriad of challenges, especially on the TV platform where we had to use a secondary colour to not interfere with the main user focus state in multiple interaction patterns. Such patterns needed to be adjusted and remade with one single colour in place, whilst also maintaining Channel 4’s accessibility responsibilities to the end user.
+
+  - type: "media-grid"
+    tight: false
+    items:
+      - name: "4rebrand/c4-rebrand-Brand"
+        alt: "DanceStar Image 1"
+      - name: "4rebrand/c4-rebrand-Player"
+        alt: "DanceStar Image 2"
+      - name: "4rebrand/c4-rebrand-MyTV"
+        alt: "DanceStar Image 3"
+      - name: "4rebrand/c4-rebrand-search"
+        alt: "DanceStar Image 4"
+
+  - type: "text-block"
+    sections:
+      - subtitle: "Small Tweaks"
+        text: |
+          There was also a huge number of smaller tweaks that had to be made as we incorporated the new branding into the app.
+
+          Graphical elements the user relied on for situations like a new episode of their favourite brand being released and their personal progress into content had to be redesigned.
+
+      - subtitle: "Animations"
+        text: |
+          Pentagram had also produced motion design guidelines for the brand as a whole, that we have started to integrate into the platform.
+
+          Alongside the new branding was a new loading animation that was recreated and implemented as well as adjusting animation curves and timings across the application.
+
+  - type: "text-block"
+    main_title: "Working with Developers & Testing"
+    sections:
+      - text: |
+          Although this project was a big change from a design perspective, it was an even bigger change from a developmental perspective. I worked very closely with the offshore teams to create the look and feel of the new brand.
+
+          As every screen in the whole platform was changing it also led to lots of build reviews and guerilla testing to ensure that what the teams had produced matched the designs.

@@ -1,0 +1,71 @@
+title: "Book of Spells"
+description: "A UI/UX portfolio page showing work for Book of Spells by Kieran Shalloo"
+
+# Component Builder Engine
+page_sections:
+  # 1. Hero Screen Tile Banner
+  - type: "image"
+    name: "book-of-spells/boSHero"
+    alt: "Book of Spells PlayStation 3 game hero banner and branding title"
+    full_width: true
+
+  # 2. Goal Text Block
+  - type: "text-block"
+    main_title: "Goal"
+    sections:
+      - text: |
+          The game followed the user embarking on a journey through ‘Hogwarts School’ and had the user ‘learn’ the spells from the Harry Potter series which they had to recreate with the Move controller. This action was then turned into each level as the game combined a live video feed with on-screen CGI elements.
+
+  - type: "media-grid"
+    tight: false
+    items:
+      - name: "book-of-spells/bos02"
+        alt: "Book of Spells HUD showing chapter selection and spell-learning progression interface"
+      - name: "book-of-spells/bos01"
+        alt: "Book of Spells title screen and main menu typography layout"
+      - name: "book-of-spells/bos03"
+        alt: "In-game AR spellcasting HUD overlay tracking the PlayStation Move controller wand movement"
+      - name: "book-of-spells/bos04"
+        alt: "Book of Spells interactive storybook layout featuring parchment textures and chapter illustrations"
+
+  - type: "text-block"
+    sections:
+      - subtitle: "Research & Environment Design"
+        text: |
+          I was also tasked within a team of researchers to help bring to life the level environments. This part of my role consisted of taking concept designs and finding reference imagery to assist the environmental artists to create accurate assets and to allow them to build 3D models quickly and easily.
+
+  - type: "media-grid"
+    tight: false
+    items:
+      - name: "book-of-spells/bos05"
+        alt: "Environment concept art reference and level layout for the Hogwarts classroom module"
+      - name: "book-of-spells/bos06"
+        alt: "Environment design asset showing lighting, props, and spatial arrangement for level building"
+      - name: "book-of-spells/bos07"
+        alt: "Research board and environmental reference imagery used for 3D asset modeling"
+      - name: "book-of-spells/bos08"
+        alt: "In-engine environment render demonstrating the blend of live-action video feed and CGI props"
+
+  - type: "text-block"
+    sections:
+      - subtitle: "Layout and UI Design"
+        text: |
+          I worked on general UI layouts for this game, working closely with developers to produce concepts using the in-game engine. I was also closely involved with creating concepts for the typography of the game, particularly the typography of the spell names which the user was presented with when completing the task to learn the spell.
+
+  - type: "media-grid"
+    tight: false
+    items:
+      - name: "book-of-spells/bos09"
+        alt: "UI layout concept for spell recognition tracking and gesture feedback states"
+      - name: "book-of-spells/bos010"
+        alt: "Typography exploration and final rendering of spell name graphics presented to the player"
+      - name: "book-of-spells/bos011"
+        alt: "In-game menu system showing inventory items and collected spell badges"
+      - name: "book-of-spells/bos012"
+        alt: "Wireframe and early layout concepts for the book page-turning interaction model"
+      - name: "book-of-spells/bos013"
+        alt: "Heads-up display feedback element signaling successful wand trajectory matching"
+      - name: "book-of-spells/bos014"
+        alt: "UI interaction state for unlocking lore entries within the virtual grimoire"
+      - name: "book-of-spells/bos015"
+        alt: "Completed level summary screen displaying player score, rank, and achievements"

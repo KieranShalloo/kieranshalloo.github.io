@@ -1,0 +1,55 @@
+{% assign scroller_item = site.data.scrollers[include.block.scroller_key] %}
+
+{% assign col_w = include.block.width | default: 8 %}
+{% assign col_off = include.block.offset | default: 2 %}
+{% assign title_off = include.block.title_offset | default: 2 %}
+
+<div class="container-fluid fullscreen-scroller p-0 my-5 d-flex align-items-center"
+    style="--scroller-img: url('{{ scroller_item.image_path }}');">
+
+    <div class="container py-5 text-white">
+        <!-- Full Text-Block Layout (If main_title or sections exist in YAML/Data) -->
+        {% if scroller_item.main_title or scroller_item.sections or include.block.main_title or include.block.sections
+        %}
+
+        {% assign main_title = scroller_item.main_title | default: include.block.main_title %}
+        {% assign sections = scroller_item.sections | default: include.block.sections %}
+
+        <div class="row">
+            {% if main_title %}
+            <div class="col-md-{{ col_w }} offset-md-{{ title_off }} mb-3">
+                <h2 class="mb-4 text-white">
+                    {{ main_title }}
+                </h2>
+            </div>
+            {% endif %}
+
+            {% if sections %}
+            <div class="col-md-{{ col_w }} offset-md-{{ col_off }}">
+                {% for sec in sections %}
+                {% if sec.subtitle %}
+                <h3 class="mt-4 mb-3 text-white">{{ sec.subtitle }}</h3>
+                {% endif %}
+                {% if sec.text %}
+                <div class="text-content text-white-80">
+                    {{ sec.text | markdownify }}
+                </div>
+                {% endif %}
+                {% endfor %}
+            </div>
+            {% endif %}
+        </div>
+
+        <!-- Standard Scroller Layout (Fallback for simple title/subtitle overlay) -->
+        {% elsif scroller_item.title %}
+        <div class="row h-100 align-items-end pb-4">
+            <div class="col-md-{{ col_w }} offset-md-{{ col_off }}">
+                <h3 class="fw-300 mb-0">{{ scroller_item.title }}</h3>
+                {% if scroller_item.subtitle %}
+                <p class="mb-0 text-white-50">{{ scroller_item.subtitle }}</p>
+                {% endif %}
+            </div>
+        </div>
+        {% endif %}
+    </div>
+</div>
