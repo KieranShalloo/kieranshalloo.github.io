@@ -9,13 +9,20 @@ layout: default
     {% for block in process.page_sections %}
 
     {% if block.type == "section" %}
-    <section class="portfolio-section my-5">
+    <section class="portfolio-section py-5">
         {% for sub_block in block.blocks %}
         {% if sub_block.type == "text-details" %}
         {% include blocks/text-details.html block=sub_block %}
         {% elsif sub_block.type == "responsive-image" or sub_block.type == "image" %}
-        {% include responsive-image.html lottie_src=sub_block.lottie_src alt=sub_block.alt name=sub_block.name
-        ext=sub_block.ext %}
+        <div class="container portfolio-component my-4">
+            <div class="row justify-content-center">
+                <div class="col-8 col-md-6 col-lg-4 text-center">
+                    {% include responsive-image.html lottie_src=sub_block.lottie_src alt=sub_block.alt
+                    name=sub_block.name
+                    ext=sub_block.ext %}
+                </div>
+            </div>
+        </div>
         {% endif %}
         {% endfor %}
     </section>
@@ -24,9 +31,10 @@ layout: default
     {% include blocks/text-details.html block=block %}
 
     {% elsif block.type == "responsive-image" or block.type == "image" %}
+
     <div class="container portfolio-component my-5">
         <div class="row justify-content-center">
-            <div class="col-12 col-md-10 col-lg-8 text-center">
+            <div class="col-4 col-md-4 col-lg-4 text-center">
                 {% include responsive-image.html lottie_src=block.lottie_src alt=block.alt name=block.name ext=block.ext
                 %}
             </div>

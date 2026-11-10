@@ -2,6 +2,7 @@ title: "Youview Accessibility"
 description:
   "A UI/UX portfolio page showing work for YouView accessibility settings by
   Kieran Shalloo"
+theme_color: "var(--youview)"
 
 # Component Builder Engine
 page_sections:
@@ -9,10 +10,14 @@ page_sections:
     full_width: true
     items:
       - name: "accessibility/accessibility-guide-comparision1"
-        alt: "Current YouView guide"
+        alt:
+          "Side-by-side UI comparison displaying the standard YouView TV guide
+          interface"
         ext: "png"
       - name: "accessibility/accessibility-guide-comparision2"
-        alt: "High contrast YouView guide"
+        alt:
+          "High contrast YouView TV guide interface featuring high visibility
+          text and modified accent colours"
         ext: "png"
 
   - type: "text-block"
@@ -37,4 +42,105 @@ page_sections:
 
   - type: "image"
     name: "accessibility/accessibility-glasses"
-    alt: "University of Cambridge Inclusive design toolkit"
+    alt:
+      "University of Cambridge Inclusive Design Toolkit glasses used for
+      simulating visual acuity and contrast loss during UI testing"
+    full_width: true
+
+  - type: "text-block"
+    sections:
+      - subtitle: "Digital Process"
+        text: |
+          One of the main challenges in creating a UI based around accessibility is the need to remove any gradient that could obscure text. This was reported by both charities as the main reason why partially sighted users will struggle with the experience.
+
+          With this in mind we had to explore how to approach the design in regard to this, comparing the removal of the gradient with the idea of shifting it further on the screen Comparing different concepts for the tile asset Another challenge was the highlight state for the sections of the UI. After User Research and testing it led to having a few ideas, most of which consisted of a solid highlight state. These versions were then presented to both charities and a number of the user-base with eyesight issues.
+
+          Feedback taught us that solid bright highlight states were actually worse for the user as it caused a bleeding halo-like effect which did not increase visibility at all and rendered nearby text completely unreadable.
+
+  - type: "image"
+    name: "accessibility/accessibility-details"
+    alt:
+      "Detailed UI component breakdown showing high-contrast focus states, tile
+      borders, and typography adjustments"
+    full_width: true
+    ext: "png"
+
+  - type: "text-block"
+    sections:
+      - subtitle: "Concepts"
+        text: |
+          We wanted to present two concepts that worked to solve the original brief. Using the evidence and information we gathered from our user-research as well as our deep look at the competition we presented two different concepts to stakeholders. Both had gone through vigorous prototyping and testing in the team and we were looking for final feedback before we took the project into our agile backlog. The feedback we received from our concepts shaped the final stages of design and altered some of our directions as we moved into development. We were given the green light to progress with the black version of the UI and started to create assets and specifications for the developers
+
+  - type: "image"
+    name: "accessibility/accessibility-concepts"
+    alt:
+      "Side-by-side design concept exploration showcasing high-contrast dark
+      theme variants for the YouView interface"
+    full_width: true
+    ext: "png"
+
+  - type: "fullscreen-scroller"
+    scroller_key: "accessibility"
+
+  - type: "text-block"
+    sections:
+      - subtitle: "Solutions"
+        text: |
+          The final high contrast version incorporated the client feedback and we made adjustments to the highlight state to increase the contrast levels of text. Shown below is a range of the final visual design implemented by our development team, as well as a way to compare the high contrast UI with the standard version.
+
+  - type: "media-grid"
+    full_width: true
+    items:
+      - name: "accessibility/accessibility-screen1"
+        alt:
+          "Side-by-side UI comparison displaying the standard YouView TV guide
+          interface"
+        ext: "png"
+      - name: "accessibility/accessibility-screen2"
+        alt:
+          "High contrast YouView TV guide interface featuring high visibility
+          text and modified accent colours"
+        ext: "png"
+      - name: "accessibility/accessibility-screen3"
+        alt:
+          "Side-by-side UI comparison displaying the standard YouView TV guide
+          interface"
+        ext: "png"
+      - name: "accessibility/accessibility-screen4"
+        alt:
+          "High contrast YouView TV guide interface featuring high visibility
+          text and modified accent colours"
+        ext: "png"
+      - name: "accessibility/accessibility-screen5"
+        alt:
+          "Side-by-side UI comparison displaying the standard YouView TV guide
+          interface"
+        ext: "png"
+      - name: "accessibility/accessibility-screen6"
+        alt:
+          "High contrast YouView TV guide interface featuring high visibility
+          text and modified accent colours"
+        ext: "png"
+
+  - type: "card-grid"
+    columns: 3
+
+    main_title: "Industry and user feedback"
+    items:
+      - subtitle: "Customer with Aniridia"
+        text:
+          "I think the high contrast option is worth its weight in gold and will
+          be upgrading"
+      - subtitle: "OFCOM"
+        text:
+          "The YouView high contrast display, regarded by the RNIB as one of the
+          best available on the market"
+      - subtitle: "Customer with partial sight"
+        text:
+          "In terms of accessibility, (this box) has the potential to be a cut
+          above the rest"
+      - subtitle: "Steve Tyler: Head of Innovation and Development - RNIB"
+        text:
+          "A big advantage of making the accessibility features available for
+          all, allowed those who did not think of themselves as disabled to
+          enable the functionality without any fuss"

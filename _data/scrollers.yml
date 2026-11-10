@@ -37,5 +37,18 @@ sonyandroid:
         There were a few sections which required reworking and alterations due
         to the impact of delivery times with the project. We looked to create
         bespoke versions of existing patterns that our customers had become
-        accustomed too. We create a set of design components which corresponded
+        accustomed too.
+
+
+        We create a set of design components which corresponded
         with the development team and the Google established guidelines
+
+accessibility:
+  image_path: "/accessibility/accessibility-container-background.png"
+  main_title: "Subtle Design Touches"
+  sections:
+    - text:
+        As we took the design to its later stages we wanted to ensure that the YouView UI kept its delightful little touches that made it such an attractive design in the first place for customers.
+
+
+        I ensured that these touches remained even when the user wanted the High Contrast option turned on.

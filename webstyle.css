@@ -3,8 +3,7 @@
    ========================================================================== */
 :root {
   --dark: oklch(32.5% 0 89.88);
-  --accentnew: oklch(76.2% 0.097 176.59);
-  --accent: oklch(0.6 0.2432 0);
+  --accent: oklch(76.2% 0.097 176.59);
   --light: oklch(0.9065 0.0121 14.96);
   --white: oklch(0.9525 0.0033 108.96);
 
@@ -509,5 +508,12 @@ ul.social-network {
     &:hover .portfolio-image {
       transform: scale(1.07);
     }
+  }
+}
+
+.portfolio-section {
+  .portfolio-media-container {
+    box-shadow: none !important;
+    -webkit-box-shadow: none !important;
   }
 }

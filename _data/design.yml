@@ -1,26 +1,26 @@
-- title: "Which"
-  slug: "which"
-  url: "/portfolio/which/"
-  description: "Redesign of the whole Channel 4 Streaming app."
-  image:
-    jpg: "/images/home/whichheader768.jpg"
-    alt: "Channel 4 relaunching their streaming service with a new design"
-  width: 1920
-  height: 1080
-  aspect_ratio: "16:9"
+# - title: "Which"
+#   slug: "which"
+#   url: "/portfolio/which/"
+#   description: "Redesign of the whole Channel 4 Streaming app."
+#   image:
+#     jpg: "/images/home/whichheader768.jpg"
+#     alt: "Channel 4 relaunching their streaming service with a new design"
+#   width: 1920
+#   height: 1080
+#   aspect_ratio: "16:9"
 
-- title: "Channel 4 Streaming"
-  slug: "channel4"
-  url: "/portfolio/channel4/"
-  description: "Redesign of the whole Channel 4 Streaming app."
-  image:
-    jpg: "/images/home/stpheader768.jpg"
-    # webp: "/images/home/stpheader768.webp"
-    # avif: "/images/home/stpheader768.avif"
-    alt: "Channel 4 relaunching their streaming service with a new design"
-  width: 1920
-  height: 1080
-  aspect_ratio: "16:9"
+# - title: "Channel 4 Streaming"
+#   slug: "channel4"
+#   url: "/portfolio/channel4/"
+#   description: "Redesign of the whole Channel 4 Streaming app."
+#   image:
+#     jpg: "/images/home/stpheader768.jpg"
+#     # webp: "/images/home/stpheader768.webp"
+#     # avif: "/images/home/stpheader768.avif"
+#     alt: "Channel 4 relaunching their streaming service with a new design"
+#   width: 1920
+#   height: 1080
+#   aspect_ratio: "16:9"
 
 - title: "WWE"
   subtitle: "Redesigining the WWE Network"
@@ -39,7 +39,8 @@
 - title: "Google Trainline"
   slug: "googletrains"
   url: "/portfolio/googletrain/"
-  description: "Google project with Trainline complete interaction and visual design."
+  description:
+    "Google project with Trainline complete interaction and visual design."
   image:
     jpg: "/images/home/trainlineheader768.jpg"
     webp: "/images/home/trainlineheader768.webp"
@@ -53,7 +54,9 @@
 - title: "Trainline"
   slug: "trainline"
   url: "/portfolio/trainline/"
-  description: "A commissioned illustration showing the WWE wrestler Daniel Bryan celebrating his victory at WrestleMania XXX."
+  description:
+    "A commissioned illustration showing the WWE wrestler Daniel Bryan
+    celebrating his victory at WrestleMania XXX."
   image:
     jpg: "/images/home/engagementheader768.jpg"
     webp: "/images/home/engagementheader768.webp"
@@ -66,7 +69,9 @@
 - title: "Channel 4 - Visual Scrubbing"
   slug: "visualscrubbing"
   url: "/portfolio/visualscrubbing/"
-  description: "A commissioned illustration showing the WWE wrestler Daniel Bryan celebrating his victory at WrestleMania XXX."
+  description:
+    "A commissioned illustration showing the WWE wrestler Daniel Bryan
+    celebrating his victory at WrestleMania XXX."
   image:
     jpg: "/images/home/4header768.jpg"
     webp: "/images/home/4header768.webp"
@@ -79,7 +84,9 @@
 - title: "Virgin"
   slug: "virgin"
   url: "/portfolio/virgin/"
-  description: "A commissioned illustration showing the WWE wrestler Daniel Bryan celebrating his victory at WrestleMania XXX."
+  description:
+    "A commissioned illustration showing the WWE wrestler Daniel Bryan
+    celebrating his victory at WrestleMania XXX."
   image:
     jpg: "/images/home/VMheader768.jpg"
     webp: "/images/home/VMheader768.webp"
@@ -93,7 +100,9 @@
 - title: "Youview"
   slug: "youview"
   url: "/portfolio/youview/"
-  description: "A commissioned illustration showing the WWE wrestler Daniel Bryan celebrating his victory at WrestleMania XXX."
+  description:
+    "A commissioned illustration showing the WWE wrestler Daniel Bryan
+    celebrating his victory at WrestleMania XXX."
   image:
     jpg: "/images/home/YVheader768.jpg"
     webp: "/images/home/YVheader768.webp"
@@ -106,7 +115,9 @@
 - title: "4Rebrand"
   slug: "4rebrand"
   url: "/portfolio/4rebrand/"
-  description: "A commissioned illustration showing the WWE wrestler Daniel Bryan celebrating his victory at WrestleMania XXX."
+  description:
+    "A commissioned illustration showing the WWE wrestler Daniel Bryan
+    celebrating his victory at WrestleMania XXX."
   image:
     jpg: "/images/home/4rebrandheader768.jpg"
     webp: "/images/home/4rebrandheader768.webp"
@@ -119,7 +130,9 @@
 - title: "Sony Android"
   slug: "sonyandroid"
   url: "/portfolio/sonyandroid/"
-  description: "A commissioned illustration showing the WWE wrestler Daniel Bryan celebrating his victory at WrestleMania XXX."
+  description:
+    "A commissioned illustration showing the WWE wrestler Daniel Bryan
+    celebrating his victory at WrestleMania XXX."
   image:
     jpg: "/images/home/Sonyheader768.jpg"
     webp: "/images/home/Sonyheader768.webp"
@@ -131,8 +144,10 @@
 
 - title: "YouView Accessibility"
   slug: "yvaccessibility"
-  url: "/portfolio/yvaccessibility/"
-  description: "A commissioned illustration showing the WWE wrestler Daniel Bryan celebrating his victory at WrestleMania XXX."
+  url: "/portfolio/yva11y/"
+  description:
+    "A commissioned illustration showing the WWE wrestler Daniel Bryan
+    celebrating his victory at WrestleMania XXX."
   image:
     jpg: "/images/home/YVHCheader768.jpg"
     webp: "/images/home/YVHCheader768.webp"
@@ -145,7 +160,9 @@
 - title: "Netflix Christmas Advert"
   slug: "netflix"
   url: "/portfolio/netflix/"
-  description: "A commissioned illustration showing the WWE wrestler Daniel Bryan celebrating his victory at WrestleMania XXX."
+  description:
+    "A commissioned illustration showing the WWE wrestler Daniel Bryan
+    celebrating his victory at WrestleMania XXX."
   image:
     jpg: "/images/home/Netflixheader768.jpg"
     webp: "/images/home/Netflixheader768.webp"
@@ -158,7 +175,9 @@
 - title: "YouView Help"
   slug: "yvhelp"
   url: "/portfolio/yvhelp/"
-  description: "A commissioned illustration showing the WWE wrestler Daniel Bryan celebrating his victory at WrestleMania XXX."
+  description:
+    "A commissioned illustration showing the WWE wrestler Daniel Bryan
+    celebrating his victory at WrestleMania XXX."
   image:
     jpg: "/images/home/YVhelpheader768.jpg"
     webp: "/images/home/YVhelpheader768.webp"
@@ -171,7 +190,9 @@
 - title: "YouView app"
   slug: "yvapp"
   url: "/portfolio/yvapp/"
-  description: "A commissioned illustration showing the WWE wrestler Daniel Bryan celebrating his victory at WrestleMania XXX."
+  description:
+    "A commissioned illustration showing the WWE wrestler Daniel Bryan
+    celebrating his victory at WrestleMania XXX."
   image:
     jpg: "/images/home/YVAppheader768.jpg"
     webp: "/images/home/YVAppheader768.webp"
@@ -197,7 +218,9 @@
 - title: "Book of Potions"
   slug: "bookofpotions"
   url: "/portfolio/bookofpotions"
-  description: "A commissioned illustration showing the WWE wrestler Daniel Bryan celebrating his victory at WrestleMania XXX."
+  description:
+    "A commissioned illustration showing the WWE wrestler Daniel Bryan
+    celebrating his victory at WrestleMania XXX."
   image:
     jpg: "/images/home/bopheader768.jpg"
     webp: "/images/home/bopheader768.webp"
@@ -210,7 +233,9 @@
 - title: "DanceStar Party"
   slug: "dancestar-party"
   url: "/portfolio/dancestar-party"
-  description: "A commissioned illustration showing the WWE wrestler Daniel Bryan celebrating his victory at WrestleMania XXX."
+  description:
+    "A commissioned illustration showing the WWE wrestler Daniel Bryan
+    celebrating his victory at WrestleMania XXX."
   image:
     jpg: "/images/home/Dancestarheader768.jpg"
     webp: "/images/home/Dancestarheader768.webp"
@@ -223,7 +248,9 @@
 - title: "Book of Spells"
   slug: "bookofspells"
   url: "/portfolio/bookofspells"
-  description: "A commissioned illustration showing the WWE wrestler Daniel Bryan celebrating his victory at WrestleMania XXX."
+  description:
+    "A commissioned illustration showing the WWE wrestler Daniel Bryan
+    celebrating his victory at WrestleMania XXX."
   image:
     jpg: "/images/home/BOSheader768.jpg"
     webp: "/images/home/BOSheader768.webp"
@@ -236,7 +263,9 @@
 - title: "SingStar"
   slug: "singstar"
   url: "/portfolio/singstar"
-  description: "A commissioned illustration showing the WWE wrestler Daniel Bryan celebrating his victory at WrestleMania XXX."
+  description:
+    "A commissioned illustration showing the WWE wrestler Daniel Bryan
+    celebrating his victory at WrestleMania XXX."
   image:
     jpg: "/images/home/singstarheader768.jpg"
     webp: "/images/home/singstarheader768.webp"
