@@ -1,247 +1,91 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset
-      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
-            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
-<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
+  <!-- Core Landing Pages -->
+  <url>
+    <loc>https://www.kieranshalloodesign.com/</loc>
+    <lastmod>2026-11-11</lastmod>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://www.kieranshalloodesign.com/portfolio/</loc>
+    <lastmod>2026-11-11</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.kieranshalloodesign.com/process/</loc>
+    <lastmod>2026-11-11</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.kieranshalloodesign.com/illustration/</loc>
+    <lastmod>2026-11-11</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.kieranshalloodesign.com/traditionalprintmaking/</loc>
+    <lastmod>2026-11-11</lastmod>
+    <priority>0.8</priority>
+  </url>
 
-<url>
-  <loc>https://www.kieranshalloodesign.com/</loc>
-  <lastmod>2025-02-26T16:57:21+00:00</lastmod>
-  <priority>1.00</priority>
-</url>
-<url>
-  <loc>https://www.kieranshalloodesign.com/portfolio/</loc>
-  <lastmod>2025-02-26T16:57:21+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://www.kieranshalloodesign.com/process/</loc>
-  <lastmod>2025-02-26T16:57:21+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://www.kieranshalloodesign.com/illustration/</loc>
-  <lastmod>2025-02-26T16:57:21+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://www.kieranshalloodesign.com/traditionalprintmaking/</loc>
-  <lastmod>2025-02-26T16:57:22+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://www.kieranshalloodesign.com/portfolio/googletrain/</loc>
-  <lastmod>2025-02-26T16:57:21+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://www.kieranshalloodesign.com/portfolio/WweNetwork/</loc>
-  <lastmod>2025-02-26T16:57:21+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://www.kieranshalloodesign.com/portfolio/4rebrand/</loc>
-  <lastmod>2025-02-26T16:57:21+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://www.kieranshalloodesign.com/portfolio/visualscrubbing/</loc>
-  <lastmod>2025-02-26T16:57:21+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://www.kieranshalloodesign.com/portfolio/YvNextGen/</loc>
-  <lastmod>2025-02-26T16:57:21+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://www.kieranshalloodesign.com/portfolio/virgin/</loc>
-  <lastmod>2025-02-26T16:57:21+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://www.kieranshalloodesign.com/portfolio/sonyandroid/</loc>
-  <lastmod>2025-02-26T16:57:21+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://www.kieranshalloodesign.com/portfolio/yva11y/</loc>
-  <lastmod>2025-02-26T16:57:21+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://www.kieranshalloodesign.com/portfolio/netflix/</loc>
-  <lastmod>2025-02-26T16:57:21+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://www.kieranshalloodesign.com/portfolio/YvHelp/</loc>
-  <lastmod>2025-02-26T16:57:21+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://www.kieranshalloodesign.com/portfolio/YvApp/</loc>
-  <lastmod>2025-02-26T16:57:21+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://www.kieranshalloodesign.com/portfolio/bookofpotions/</loc>
-  <lastmod>2025-02-26T16:57:21+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://www.kieranshalloodesign.com/portfolio/dancestar-party/</loc>
-  <lastmod>2025-02-26T16:57:21+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://www.kieranshalloodesign.com/portfolio/bookofspells/</loc>
-  <lastmod>2025-02-26T16:57:21+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://www.kieranshalloodesign.com/portfolio/singstar/</loc>
-  <lastmod>2025-02-26T16:57:21+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://www.kieranshalloodesign.com/illustration/starwarslightside/</loc>
-  <lastmod>2025-02-26T16:57:21+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://www.kieranshalloodesign.com/illustration/nightmare-before-christmas/</loc>
-  <lastmod>2025-02-26T16:57:21+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://www.kieranshalloodesign.com/illustration/starwarsdarkside/</loc>
-  <lastmod>2025-02-26T16:57:21+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://www.kieranshalloodesign.com/illustration/kubo/</loc>
-  <lastmod>2025-02-26T16:57:21+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://www.kieranshalloodesign.com/illustration/darthmaul/</loc>
-  <lastmod>2025-02-26T16:57:21+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://www.kieranshalloodesign.com/illustration/tig/</loc>
-  <lastmod>2025-02-26T16:57:21+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://www.kieranshalloodesign.com/illustration/fallout/</loc>
-  <lastmod>2025-02-26T16:57:21+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://www.kieranshalloodesign.com/illustration/gremlins/</loc>
-  <lastmod>2025-02-26T16:57:21+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://www.kieranshalloodesign.com/illustration/archer/</loc>
-  <lastmod>2025-02-26T16:57:21+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://www.kieranshalloodesign.com/illustration/finding-nemo/</loc>
-  <lastmod>2025-02-26T16:57:21+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://www.kieranshalloodesign.com/illustration/rey/</loc>
-  <lastmod>2025-02-26T16:57:21+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://www.kieranshalloodesign.com/illustration/hulkhogan/</loc>
-  <lastmod>2025-02-26T16:57:21+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://www.kieranshalloodesign.com/illustration/jax/</loc>
-  <lastmod>2025-02-26T16:57:21+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://www.kieranshalloodesign.com/illustration/landspeeder/</loc>
-  <lastmod>2025-02-26T16:57:21+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://www.kieranshalloodesign.com/illustration/deadpool/</loc>
-  <lastmod>2025-02-26T16:57:21+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://www.kieranshalloodesign.com/illustration/legomovie/</loc>
-  <lastmod>2025-02-26T16:57:21+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://www.kieranshalloodesign.com/illustration/spiderman/</loc>
-  <lastmod>2025-02-26T16:57:21+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://www.kieranshalloodesign.com/illustration/terminator/</loc>
-  <lastmod>2025-02-26T16:57:21+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://www.kieranshalloodesign.com/illustration/dixonbrothers/</loc>
-  <lastmod>2025-02-26T16:57:21+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://www.kieranshalloodesign.com/illustration/game-of-thrones/</loc>
-  <lastmod>2025-02-26T16:57:21+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://www.kieranshalloodesign.com/illustration/theworldsend/</loc>
-  <lastmod>2025-02-26T16:57:21+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://www.kieranshalloodesign.com/illustration/turtles/</loc>
-  <lastmod>2025-02-26T16:57:21+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://www.kieranshalloodesign.com/illustration/gemma/</loc>
-  <lastmod>2025-02-26T16:57:21+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://www.kieranshalloodesign.com/illustration/rick-morty/</loc>
-  <lastmod>2025-02-26T16:57:21+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://www.kieranshalloodesign.com/traditionalprintmaking/coastline/</loc>
-  <lastmod>2025-02-26T16:57:22+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://www.kieranshalloodesign.com/traditionalprintmaking/totoro/</loc>
-  <lastmod>2025-02-26T16:57:22+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://www.kieranshalloodesign.com/traditionalprintmaking/forest/</loc>
-  <lastmod>2025-02-26T16:57:22+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
+  <!-- Portfolio Projects -->
+  <url><loc>https://www.kieranshalloodesign.com/portfolio/4rebrand/</loc></url>
+  <url><loc>https://www.kieranshalloodesign.com/portfolio/bookofpotions/</loc></url>
+  <url><loc>https://www.kieranshalloodesign.com/portfolio/bookofspells/</loc></url>
+  <url><loc>https://www.kieranshalloodesign.com/portfolio/channel4/</loc></url>
+  <url><loc>https://www.kieranshalloodesign.com/portfolio/creature/</loc></url>
+  <url><loc>https://www.kieranshalloodesign.com/portfolio/dancestar-party/</loc></url>
+  <url><loc>https://www.kieranshalloodesign.com/portfolio/engagement/</loc></url>
+  <url><loc>https://www.kieranshalloodesign.com/portfolio/googletrain/</loc></url>
+  <url><loc>https://www.kieranshalloodesign.com/portfolio/netflix/</loc></url>
+  <url><loc>https://www.kieranshalloodesign.com/portfolio/nextgeneration/</loc></url>
+  <url><loc>https://www.kieranshalloodesign.com/portfolio/singstar/</loc></url>
+  <url><loc>https://www.kieranshalloodesign.com/portfolio/sonyandroid/</loc></url>
+  <url><loc>https://www.kieranshalloodesign.com/portfolio/trainline/</loc></url>
+  <url><loc>https://www.kieranshalloodesign.com/portfolio/virgin/</loc></url>
+  <url><loc>https://www.kieranshalloodesign.com/portfolio/visualscrubbing/</loc></url>
+  <url><loc>https://www.kieranshalloodesign.com/portfolio/which/</loc></url>
+  <url><loc>https://www.kieranshalloodesign.com/portfolio/wwenetwork/</loc></url>
+  <url><loc>https://www.kieranshalloodesign.com/portfolio/youview/</loc></url>
+  <url><loc>https://www.kieranshalloodesign.com/portfolio/yva11y/</loc></url>
+  <url><loc>https://www.kieranshalloodesign.com/portfolio/yvapp/</loc></url>
+  <url><loc>https://www.kieranshalloodesign.com/portfolio/yvhelp/</loc></url>
+  <url><loc>https://www.kieranshalloodesign.com/portfolio/yvkeyboard/</loc></url>
 
+  <!-- Illustration Projects -->
+  <url><loc>https://www.kieranshalloodesign.com/illustration/archer/</loc></url>
+  <url><loc>https://www.kieranshalloodesign.com/illustration/back-to-the-future/</loc></url>
+  <url><loc>https://www.kieranshalloodesign.com/illustration/danielbryan/</loc></url>
+  <url><loc>https://www.kieranshalloodesign.com/illustration/darthmaul/</loc></url>
+  <url><loc>https://www.kieranshalloodesign.com/illustration/deadpool/</loc></url>
+  <url><loc>https://www.kieranshalloodesign.com/illustration/dixonbrothers/</loc></url>
+  <url><loc>https://www.kieranshalloodesign.com/illustration/fallout/</loc></url>
+  <url><loc>https://www.kieranshalloodesign.com/illustration/finding-nemo/</loc></url>
+  <url><loc>https://www.kieranshalloodesign.com/illustration/game-of-thrones/</loc></url>
+  <url><loc>https://www.kieranshalloodesign.com/illustration/gremlins/</loc></url>
+  <url><loc>https://www.kieranshalloodesign.com/illustration/hulkhogan/</loc></url>
+  <url><loc>https://www.kieranshalloodesign.com/illustration/jax/</loc></url>
+  <url><loc>https://www.kieranshalloodesign.com/illustration/kubo/</loc></url>
+  <url><loc>https://www.kieranshalloodesign.com/illustration/landspeeder/</loc></url>
+  <url><loc>https://www.kieranshalloodesign.com/illustration/legomovie/</loc></url>
+  <url><loc>https://www.kieranshalloodesign.com/illustration/matriarch/</loc></url>
+  <url><loc>https://www.kieranshalloodesign.com/illustration/nightmare-before-christmas/</loc></url>
+  <url><loc>https://www.kieranshalloodesign.com/illustration/rey/</loc></url>
+  <url><loc>https://www.kieranshalloodesign.com/illustration/rick-morty/</loc></url>
+  <url><loc>https://www.kieranshalloodesign.com/illustration/spiderman/</loc></url>
+  <url><loc>https://www.kieranshalloodesign.com/illustration/starwarsdarkside/</loc></url>
+  <url><loc>https://www.kieranshalloodesign.com/illustration/starwarslightside/</loc></url>
+  <url><loc>https://www.kieranshalloodesign.com/illustration/terminator/</loc></url>
+  <url><loc>https://www.kieranshalloodesign.com/illustration/theworldsend/</loc></url>
+  <url><loc>https://www.kieranshalloodesign.com/illustration/tig/</loc></url>
+  <url><loc>https://www.kieranshalloodesign.com/illustration/turtles/</loc></url>
+
+  <!-- Traditional Printmaking Projects -->
+  <url><loc>https://www.kieranshalloodesign.com/traditionalprintmaking/coastline/</loc></url>
+  <url><loc>https://www.kieranshalloodesign.com/traditionalprintmaking/forest/</loc></url>
+  <url><loc>https://www.kieranshalloodesign.com/traditionalprintmaking/lizard/</loc></url>
+  <url><loc>https://www.kieranshalloodesign.com/traditionalprintmaking/otter/</loc></url>
+  <url><loc>https://www.kieranshalloodesign.com/traditionalprintmaking/panda/</loc></url>
+  <url><loc>https://www.kieranshalloodesign.com/traditionalprintmaking/totoro/</loc></url>
 
 </urlset>
