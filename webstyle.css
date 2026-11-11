@@ -4,8 +4,7 @@
 :root {
   --dark: oklch(32.5% 0 89.88);
   --accent: oklch(76.2% 0.097 176.59);
-  --light: oklch(0.9065 0.0121 14.96);
-  --white: oklch(0.9525 0.0033 108.96);
+  --light: oklch(0.9401 0 0);
 
   /* brand colours */
   --youview: oklch(69.81% 0.171 243.77);
@@ -87,7 +86,7 @@ body {
 
 /* Card Mode Inversion Variables */
 :root {
-  --card-bg: var(--white);
+  --card-bg: var(--light);
   --card-text: var(--dark);
 }
 
@@ -165,9 +164,13 @@ li {
 }
 
 /* ==========================================================================
-4. NAVIGATION (Using Native Nesting)
+   4. NAVIGATION (Fully Consolidated & Modernized)
    ========================================================================== */
 .navbar {
+  /* Dynamic mobile drawer background & border tokens */
+  --nav-drawer-bg: var(--light);
+  --nav-drawer-border: transparent;
+
   transition: all 0.3s ease;
   background-color: var(--light);
 
@@ -187,7 +190,8 @@ li {
 
   .navbar-collapse {
     @media (max-width: 767.98px) {
-      background: white;
+      background: var(--nav-drawer-bg);
+      border: 1px solid var(--nav-drawer-border);
       padding: 1rem;
       margin-top: 0.5rem;
       box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
@@ -196,9 +200,20 @@ li {
   }
 
   .navbar-nav {
-    /* 16px (1rem) spacing between list items */
+    /* Desktop layout spacing */
     .nav-item + .nav-item {
       margin-left: 1rem;
+    }
+
+    /* Mobile drawer vertical stacking and text centering */
+    @media (max-width: 767.98px) {
+      width: 100%;
+      text-align: center;
+
+      .nav-item + .nav-item {
+        margin-left: 0;
+        margin-top: 0.5rem;
+      }
     }
   }
 
@@ -223,6 +238,16 @@ li {
     &.active::after {
       transform: scaleX(1);
     }
+
+    /* Center the active underline indicator bar on mobile */
+    @media (max-width: 767.98px) {
+      display: inline-block;
+
+      &::after {
+        left: 0;
+        right: 0;
+      }
+    }
   }
 }
 
@@ -241,20 +266,24 @@ li {
 
 /* Per-Project Dark Theme Handling (triggered by dark_theme: true) */
 [data-bs-theme='dark'] {
+  .navbar {
+    --nav-drawer-bg: var(--dark);
+    --nav-drawer-border: var(--dark);
+  }
+
   .navbar-logo {
     filter: invert(1) brightness(200%);
   }
 
   .navbar-nav .nav-link {
-    color: rgba(255, 255, 255, 0.75) !important;
+    color: var(--light);
 
     &:hover,
     &:focus {
-      color: #ffffff !important;
+      color: var(--accent);
     }
   }
 }
-
 /* ==========================================================================
 5. MEDIA & COMPONENTS (Enhanced with :has() and Container Queries)
    ========================================================================== */
@@ -511,9 +540,10 @@ ul.social-network {
   }
 }
 
+/* Clean, non-important shadow override for process section media containers */
 .portfolio-section {
   .portfolio-media-container {
-    box-shadow: none !important;
-    -webkit-box-shadow: none !important;
+    box-shadow: none;
+    -webkit-box-shadow: none;
   }
 }

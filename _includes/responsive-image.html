@@ -12,14 +12,6 @@ Leaf component for responsive pictures and lottie sources. Never calls itself.
 {% assign mobile_target = base_name | append: "-mobile" %}
 {% endif %}
 
-{% if jekyll.environment == "production" %}
-{% assign cdn_mobile = "/cdn-cgi/image/width=1179,format=auto,quality=85" %}
-{% assign cdn_desktop = "/cdn-cgi/image/width=2880,format=auto,quality=85" %}
-{% else %}
-{% assign cdn_mobile = "" %}
-{% assign cdn_desktop = "" %}
-{% endif %}
-
 {% if include.lottie_src %}
 <div class="portfolio-media-container">
   <lottie-player src="{{ include.lottie_src }}" background="transparent" speed="1" style="width: 100%; height: auto;"
@@ -30,10 +22,24 @@ Leaf component for responsive pictures and lottie sources. Never calls itself.
 {% if base_name != nil and base_name != "" %}
 <figure class="{{ include.container_class | default: 'portfolio-image m-0' }}">
   <picture>
-    <source media="(max-width: 767.98px)" srcset="{{ cdn_mobile }}/images/{{ mobile_target }}.{{ fallback_ext }}">
-    <img src="{{ cdn_desktop }}/images/{{ base_name }}.{{ fallback_ext }}" alt="{{ include.alt | escape }}"
-      class="img-fluid {{ include.class }}" loading="{{ loading }}" decoding="{{ decoding }}"
-      onerror="this.parentNode.querySelectorAll('source').forEach(s => s.remove()); this.src='{{ cdn_desktop }}/images/{{ base_name }}.{{ fallback_ext }}';">
+    <!-- 1. Mobile AVIF (Up to 405px viewports, targeting modern smartphones) -->
+    <source media="(max-width: 405px)" srcset="/images/{{ mobile_target }}.avif" type="image/avif">
+
+    <!-- 2. Mobile WebP (Up to 405px viewports) -->
+    <source media="(max-width: 405px)" srcset="/images/{{ mobile_target }}.webp" type="image/webp">
+
+    <!-- 3. Mobile Fallback [JPG/PNG] (Up to 405px viewports) -->
+    <source media="(max-width: 405px)" srcset="/images/{{ mobile_target }}.{{ fallback_ext }}">
+
+    <!-- 4. Desktop AVIF (Larger viewports) -->
+    <source srcset="/images/{{ base_name }}.avif" type="image/avif">
+
+    <!-- 5. Desktop WebP (Larger viewports) -->
+    <source srcset="/images/{{ base_name }}.webp" type="image/webp">
+
+    <!-- 6. Desktop Fallback [JPG/PNG] (Default img fallback) -->
+    <img src="/images/{{ base_name }}.{{ fallback_ext }}" alt="{{ include.alt | escape }}"
+      class="img-fluid {{ include.class }}" loading="{{ loading }}" decoding="{{ decoding }}">
   </picture>
 </figure>
 {% endif %}

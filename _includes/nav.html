@@ -5,56 +5,58 @@
 <nav class="navbar navbar-expand-md {% if page.dark_theme %}navbar-dark bg-dark{% else %}navbar-light bg-light{% endif %} shadow sticky-top p-0"
     {% if page.dark_theme %}data-bs-theme="dark" {% endif %}>
     <div class="container p-2">
-        <!-- Mobile logo (hidden on desktop) -->
+
+        <!-- Mobile logo (hidden on desktop, aria-hidden on decorative duplication if wrapped in identical label) -->
         <a class="navbar-brand d-md-none" href="/" aria-label="Kieran Shalloo Design - Home">
-            <img src="/Logotype.svg" alt="Kieran Shalloo Design Logo" width="50" height="50" loading="eager"
-                class="navbar-logo">
+            <img src="/Logotype.svg" alt="" width="50" height="50" loading="eager" class="navbar-logo"
+                aria-hidden="true">
         </a>
 
-        <!-- Mobile toggle button -->
+        <!-- Mobile toggle button with enhanced accessibility attributes -->
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar"
-            aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
+            aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation menu">
             <span class="navbar-toggler-icon"></span>
         </button>
 
         <!-- Navbar content -->
         <div class="collapse navbar-collapse justify-content-center" id="mainNavbar">
-            <ul class="navbar-nav align-items-center">
+            <ul class="navbar-nav align-items-center" role="menubar">
 
                 <!-- Left side items -->
-                <li class="nav-item">
-                    <a class="nav-link {% if current_section == 'portfolio' %}active{% endif %}" href="/portfolio/" {%
-                        if current_section=='portfolio' %}aria-current="page" {% endif %}>
+                <li class="nav-item" role="none">
+                    <a class="nav-link {% if current_section == 'portfolio' %}active{% endif %}" href="/portfolio/"
+                        role="menuitem" {% if current_section=='portfolio' %}aria-current="page" {% endif %}>
                         Design Work
                     </a>
                 </li>
 
-                <li class="nav-item">
-                    <a class="nav-link {% if current_section == 'process' %}active{% endif %}" href="/process/" {% if
-                        current_section=='process' %}aria-current="page" {% endif %}>
+                <li class="nav-item" role="none">
+                    <a class="nav-link {% if current_section == 'process' %}active{% endif %}" href="/process/"
+                        role="menuitem" {% if current_section=='process' %}aria-current="page" {% endif %}>
                         Design Process
                     </a>
                 </li>
 
-                <!-- Center logo (hidden on mobile) -->
-                <li class="nav-item d-none d-md-block mx-3 mx-lg-4">
+                <!-- Center logo (hidden on mobile, acts as anchor home) -->
+                <li class="nav-item d-none d-md-block mx-3 mx-lg-4" role="none">
                     <a class="navbar-brand p-0" href="/" aria-label="Kieran Shalloo Design - Home">
-                        <img src="/Logotype.svg" alt="Kieran Shalloo Design Logo" width="70" height="70" loading="eager"
-                            class="navbar-logo">
+                        <img src="/Logotype.svg" alt="" width="70" height="70" loading="eager" class="navbar-logo"
+                            aria-hidden="true">
                     </a>
                 </li>
 
                 <!-- Right side items -->
-                <li class="nav-item">
+                <li class="nav-item" role="none">
                     <a class="nav-link {% if current_section == 'illustration' %}active{% endif %}"
-                        href="/illustration/" {% if current_section=='illustration' %}aria-current="page" {% endif %}>
+                        href="/illustration/" role="menuitem" {% if current_section=='illustration'
+                        %}aria-current="page" {% endif %}>
                         Illustration
                     </a>
                 </li>
 
-                <li class="nav-item">
+                <li class="nav-item" role="none">
                     <a class="nav-link {% if current_section == 'traditionalprintmaking' %}active{% endif %}"
-                        href="/traditionalprintmaking/" {% if current_section=='traditionalprintmaking'
+                        href="/traditionalprintmaking/" role="menuitem" {% if current_section=='traditionalprintmaking'
                         %}aria-current="page" {% endif %}>
                         Printmaking
                     </a>
