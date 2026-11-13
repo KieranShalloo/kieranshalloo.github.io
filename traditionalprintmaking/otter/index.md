@@ -3,6 +3,8 @@ layout: artwork
 slug: otter
 ---
 
-'Meeting Totoro' is a hand-carved linocut relief print, designed and printed by hand inspired by the Studio Ghibli film 'My Neighbour Totoro'. This 160 x 230mm lino print is hand printed on Canaletto Velino paper using oil-based Cranfield "Caligo Safe Wash" relief ink in Carbazole Violet.
+The Otter, is a print inspired by my daughters obbession with the animal whilst at the zoo.
+
+She had an idea of bringing the cute Otter to our printmaking studio
 
 This print is a limited edition of 30 and is signed, numbered, and dated in pencil.

@@ -41,23 +41,7 @@
     <!-- Deferred Scripts -->
     <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js" defer></script>
 
-    <!-- Theme Initialization Script (Prevents FOUC & honors localStorage or system preference) -->
-    <script>
-        (function () {
-            const savedTheme = localStorage.getItem('theme');
-            const systemDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
 
-            // Clean conditional evaluation avoiding quote conflicts
-            {% if page.dark_theme %}
-            const pageDefault = 'dark';
-            {% else %}
-            const pageDefault = 'light';
-            {% endif %}
-
-            const theme = savedTheme || pageDefault || (systemDark ? 'dark' : 'light');
-            document.documentElement.setAttribute('data-bs-theme', theme);
-        })();
-    </script>
 
     <!-- Google Tag Manager / Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-28629869-2"></script>
