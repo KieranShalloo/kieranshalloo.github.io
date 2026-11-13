@@ -404,12 +404,13 @@ footer {
 
   a {
     color: var(--light);
-    font-size: 0.875rem;
+    font-size: 0.75em;
     transition: color 0.2s ease-in-out;
     text-decoration: none;
 
     &:hover {
       color: var(--accent);
+      font-size: 0.75em;
     }
   }
 }
@@ -430,7 +431,7 @@ ul.social-network {
     height: 42px;
     border-radius: 50%;
     background-color: var(--light);
-    font-size: 1.25rem;
+    font-size: 0.7em;
     transition: transform 0.3s ease;
 
     &:hover {
