@@ -4,6 +4,7 @@ Leaf component for responsive pictures and lottie sources. Never calls itself.
 {% assign base_name = include.name | default: include.image_name %}
 {% assign loading = include.loading | default: 'lazy' %}
 {% assign decoding = include.decoding | default: 'async' %}
+{% assign fetchpriority = include.fetchpriority | default: nil %}
 {% assign fallback_ext = include.ext | default: 'jpg' %}
 
 {% if include.mobile_name != nil and include.mobile_name != "" %}
@@ -22,7 +23,7 @@ Leaf component for responsive pictures and lottie sources. Never calls itself.
 {% if base_name != nil and base_name != "" %}
 <figure class="{{ include.container_class | default: 'portfolio-image m-0' }}">
   <picture>
-    <!-- 1. Mobile AVIF (Up to 405px viewports, targeting modern smartphones) -->
+    <!-- 1. Mobile AVIF (Up to 405px viewports) -->
     <source media="(max-width: 405px)" srcset="/images/{{ mobile_target }}.avif" type="image/avif">
 
     <!-- 2. Mobile WebP (Up to 405px viewports) -->
@@ -39,7 +40,9 @@ Leaf component for responsive pictures and lottie sources. Never calls itself.
 
     <!-- 6. Desktop Fallback [JPG/PNG] (Default img fallback) -->
     <img src="/images/{{ base_name }}.{{ fallback_ext }}" alt="{{ include.alt | escape }}"
-      class="img-fluid {{ include.class }}" loading="{{ loading }}" decoding="{{ decoding }}">
+      class="img-fluid {{ include.class }}" loading="{{ loading }}" decoding="{{ decoding }}" {% if include.width
+      %}width="{{ include.width }}" {% endif %} {% if include.height %}height="{{ include.height }}" {% endif %} {% if
+      fetchpriority %}fetchpriority="{{ fetchpriority }}" {% endif %}>
   </picture>
 </figure>
 {% endif %}

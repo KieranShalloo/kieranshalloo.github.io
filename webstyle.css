@@ -24,6 +24,23 @@
   --portfolio-img-radius: 0.4em;
   --portfolio-img-shadow:
     0 15px 35px rgba(0, 0, 0, 0.07), 0 1px 3px rgba(0, 0, 0, 0.04);
+
+  /* Map core theme colors directly to your --light and --dark tokens */
+  --bg-main: var(--light);
+  --text-main: var(--dark);
+}
+
+[data-bs-theme='dark'] {
+  --bg-main: var(--dark);
+  --text-main: var(--light);
+}
+
+body {
+  background-color: var(--bg-main);
+  color: var(--text-main);
+  transition:
+    background-color 0.2s ease,
+    color 0.2s ease;
 }
 
 /* ==========================================================================
@@ -43,11 +60,7 @@ body {
   box-sizing: border-box;
   font-family: 'Outfit', sans-serif;
   font-size: 16px;
-  color: var(--dark);
-}
-
-[data-bs-theme='dark'] body {
-  color: var(--light);
+  color: var(--text-main);
 }
 
 /* Enable Container Queries on Portfolio Components */
@@ -90,8 +103,7 @@ body {
   --card-text: var(--dark);
 }
 
-[data-bs-theme='dark'] body,
-.dark-mode {
+[data-bs-theme='dark'] {
   --card-bg: var(--dark);
   --card-text: var(--light);
 }
@@ -167,12 +179,15 @@ li {
    4. NAVIGATION (Fully Consolidated & Modernized)
    ========================================================================== */
 .navbar {
-  /* Dynamic mobile drawer background & border tokens */
-  --nav-drawer-bg: var(--light);
+  --nav-drawer-bg: var(--bg-main);
   --nav-drawer-border: transparent;
 
-  transition: all 0.3s ease;
-  background-color: var(--light);
+  transition:
+    background-color 0.2s ease,
+    color 0.2s ease,
+    all 0.3s ease;
+  background-color: var(--bg-main);
+  color: var(--text-main);
 
   .navbar-brand {
     img {
@@ -200,12 +215,10 @@ li {
   }
 
   .navbar-nav {
-    /* Desktop layout spacing */
     .nav-item + .nav-item {
       margin-left: 1rem;
     }
 
-    /* Mobile drawer vertical stacking and text centering */
     @media (max-width: 767.98px) {
       width: 100%;
       text-align: center;
@@ -220,7 +233,7 @@ li {
   .nav-link {
     position: relative;
     padding: 0.5rem 1rem;
-    color: var(--dark);
+    color: var(--text-main);
 
     &::after {
       content: '';
@@ -239,7 +252,11 @@ li {
       transform: scaleX(1);
     }
 
-    /* Center the active underline indicator bar on mobile */
+    &:hover,
+    &:focus {
+      color: var(--accent);
+    }
+
     @media (max-width: 767.98px) {
       display: inline-block;
 
@@ -249,41 +266,38 @@ li {
       }
     }
   }
-}
 
-/* Light mode logo styling (Non-dark projects) */
-.navbar-light {
-  .navbar-logo {
-    opacity: 0.85;
-    transition:
-      opacity 0.2s ease,
-      filter 0.2s ease;
+  .navbar-toggler {
+    border-color: var(--text-main);
   }
-  .navbar-brand:hover .navbar-logo {
-    opacity: 1;
+
+  .navbar-toggler-icon {
+    filter: drop-shadow(0 0 0 var(--text-main));
   }
 }
 
-/* Per-Project Dark Theme Handling (triggered by dark_theme: true) */
+.navbar-logo {
+  opacity: 0.85;
+  transition:
+    opacity 0.2s ease,
+    filter 0.2s ease;
+}
+
+.navbar-brand:hover .navbar-logo {
+  opacity: 1;
+}
+
 [data-bs-theme='dark'] {
   .navbar {
-    --nav-drawer-bg: var(--dark);
-    --nav-drawer-border: var(--dark);
+    --nav-drawer-bg: var(--bg-main);
+    --nav-drawer-border: oklch(50% 0 0 / 0.2);
   }
 
   .navbar-logo {
     filter: invert(1) brightness(200%);
   }
-
-  .navbar-nav .nav-link {
-    color: var(--light);
-
-    &:hover,
-    &:focus {
-      color: var(--accent);
-    }
-  }
 }
+
 /* ==========================================================================
 5. MEDIA & COMPONENTS (Enhanced with :has() and Container Queries)
    ========================================================================== */
@@ -379,7 +393,6 @@ li {
     gap: 16px;
   }
 
-  /* Mobile Layout Safeguards against side-scrolling */
   img,
   video,
   iframe,
@@ -393,7 +406,6 @@ li {
 
 .fullscreen-scroller {
   width: 100vw;
-  /* Use min-height instead of fixed height so text content can expand the container */
   min-height: 80vh;
   height: auto;
   background-size: cover;
@@ -401,7 +413,6 @@ li {
   background-attachment: fixed;
   background-repeat: no-repeat;
   position: relative;
-  /* Optional gradient overlay to blend nicely */
   background-image:
     linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8)), var(--scroller-img);
 }
@@ -459,28 +470,22 @@ ul.social-network {
 /* ==========================================================================
 7. PORTFOLIO SECTION & SPACING RHYTHM
    ========================================================================== */
-
-/* 1. Major parent sections use standard spacing */
 .portfolio-section {
   margin-bottom: var(--spacing-standard);
 }
 
-/* 2. Standalone top-level blocks outside sections also use standard spacing */
 .project-builder > *:not(.portfolio-section) {
   margin-bottom: var(--spacing-standard);
 }
 
-/* 3. ONLY elements nested directly inside a section use tight inner spacing */
 .portfolio-section > *:not(:last-child) {
   margin-bottom: var(--spacing-tight);
 }
 
-/* Remove competing component padding so the tokens control the rhythm */
 .portfolio-section .portfolio-component {
   padding-block: 0;
 }
 
-/* Responsive adjustments for smaller screens */
 @media (max-width: 767.98px) {
   :root {
     --spacing-standard: 3rem;
@@ -489,7 +494,7 @@ ul.social-network {
 }
 
 .portfolio-media-container.mobile-screen-container {
-  max-height: 550px; /* Adjust max height limit as needed */
+  max-height: 550px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -498,14 +503,13 @@ ul.social-network {
 
 .portfolio-media-container.mobile-screen-container img {
   max-height: 550px;
-  width: auto !important; /* Prevents 100% width stretching for tall vertical images */
+  width: auto !important;
   object-fit: contain;
 }
 
 /* ==========================================================================
-   Restored About Image & Portfolio Hover Effects (Production Polished)
+   Restored About Image & Portfolio Hover Effects
    ========================================================================== */
-
 #about-image {
   filter: saturate(0%) contrast(0%);
   color: var(--accent);
@@ -520,19 +524,14 @@ ul.social-network {
   }
 }
 
-/* ==========================================================================
-   Exclusive Hover Grow Effect for Design & Print Grids (Desktop Only)
-   ========================================================================== */
-
 .portfolio-frame {
-  overflow: hidden; /* Contains the image scaling inside the frame boundaries */
+  overflow: hidden;
 
   .portfolio-image {
     transition: transform 0.3s ease;
     will-change: transform;
   }
 
-  /* Target desktop devices only */
   @media (min-width: 768px) {
     &:hover .portfolio-image {
       transform: scale(1.07);
@@ -540,10 +539,97 @@ ul.social-network {
   }
 }
 
-/* Clean, non-important shadow override for process section media containers */
 .portfolio-section {
   .portfolio-media-container {
     box-shadow: none;
     -webkit-box-shadow: none;
   }
+}
+
+/* ==========================================================================
+   Animated Theme Switch Slider
+   ========================================================================== */
+.theme-switch-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.theme-switch {
+  position: relative;
+  display: inline-block;
+  width: 56px;
+  height: 28px;
+  margin: 0;
+}
+
+.theme-switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.theme-slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: oklch(80% 0.05 240);
+  transition: background-color 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  border-radius: 34px;
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.15);
+}
+
+.theme-slider::before {
+  position: absolute;
+  content: '';
+  height: 22px;
+  width: 22px;
+  left: 3px;
+  bottom: 3px;
+  background-color: var(--light);
+  transition:
+    transform 0.3s cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 0.3s ease;
+  border-radius: 50%;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Icons inside the switch thumb or track */
+.theme-slider .slider-icon {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 12px;
+  line-height: 1;
+  transition: opacity 0.3s ease;
+}
+
+.theme-slider .sun-icon {
+  right: 7px;
+  opacity: 1;
+}
+
+.theme-slider .moon-icon {
+  left: 7px;
+  opacity: 0;
+}
+
+/* Checked state (Dark Mode Active) */
+input:checked + .theme-slider {
+  background-color: oklch(25% 0.02 240);
+}
+
+input:checked + .theme-slider::before {
+  transform: translateX(28px);
+  background-color: oklch(20% 0.02 240);
+}
+
+input:checked + .theme-slider .sun-icon {
+  opacity: 0;
+}
+
+input:checked + .theme-slider .moon-icon {
+  opacity: 1;
 }

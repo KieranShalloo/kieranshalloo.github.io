@@ -2,17 +2,26 @@
 {% assign url_parts = page.url | split: '/' %}
 {% assign current_section = url_parts[1] %}
 
-<nav class="navbar navbar-expand-md {% if page.dark_theme %}navbar-dark bg-dark{% else %}navbar-light bg-light{% endif %} shadow sticky-top p-0"
-    {% if page.dark_theme %}data-bs-theme="dark" {% endif %}>
+<nav class="navbar navbar-expand-md shadow sticky-top p-0">
     <div class="container p-2">
+        <!-- Animated Switch Toggle -->
+        <div class="theme-switch-wrapper">
+            <label class="theme-switch" for="theme-checkbox" aria-label="Toggle dark and light mode">
+                <input type="checkbox" id="theme-checkbox">
+                <span class="theme-slider">
+                    <span class="slider-icon sun-icon">☀️</span>
+                    <span class="slider-icon moon-icon">🌙</span>
+                </span>
+            </label>
+        </div>
 
-        <!-- Mobile logo (hidden on desktop, aria-hidden on decorative duplication if wrapped in identical label) -->
+        <!-- Mobile logo -->
         <a class="navbar-brand d-md-none" href="/" aria-label="Kieran Shalloo Design - Home">
             <img src="/Logotype.svg" alt="" width="50" height="50" loading="eager" class="navbar-logo"
                 aria-hidden="true">
         </a>
 
-        <!-- Mobile toggle button with enhanced accessibility attributes -->
+        <!-- Mobile toggle button -->
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar"
             aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation menu">
             <span class="navbar-toggler-icon"></span>
@@ -37,7 +46,7 @@
                     </a>
                 </li>
 
-                <!-- Center logo (hidden on mobile, acts as anchor home) -->
+                <!-- Center logo -->
                 <li class="nav-item d-none d-md-block mx-3 mx-lg-4" role="none">
                     <a class="navbar-brand p-0" href="/" aria-label="Kieran Shalloo Design - Home">
                         <img src="/Logotype.svg" alt="" width="70" height="70" loading="eager" class="navbar-logo"
@@ -66,3 +75,24 @@
         </div>
     </div>
 </nav>
+
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const checkbox = document.getElementById('theme-checkbox');
+        const htmlEl = document.documentElement;
+
+        const updateUI = (theme) => {
+            htmlEl.setAttribute('data-bs-theme', theme);
+            checkbox.checked = (theme === 'dark');
+        };
+
+        // Sync initial state based on what the head script applied
+        updateUI(htmlEl.getAttribute('data-bs-theme') || 'light');
+
+        checkbox.addEventListener('change', () => {
+            const nextTheme = checkbox.checked ? 'dark' : 'light';
+            localStorage.setItem('theme', nextTheme);
+            updateUI(nextTheme);
+        });
+    });
+</script>

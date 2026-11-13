@@ -12,6 +12,12 @@ include.mobile_name %}
 default: false %}
 {% assign lottie_source = include.block.lottie_src | default: include.section.lottie_src | default: include.lottie_src
 %}
+{% assign img_loading = include.block.loading | default: include.section.loading | default: include.loading | default:
+'lazy' %}
+{% assign img_fetchpriority = include.block.fetchpriority | default: include.section.fetchpriority | default:
+include.fetchpriority %}
+{% assign img_width = include.block.width | default: include.section.width | default: include.width %}
+{% assign img_height = include.block.height | default: include.section.height | default: include.height %}
 
 {% if (img_name != nil and img_name != "") or (lottie_source != nil and lottie_source != "") %}
 {% if is_full_width %}
@@ -27,6 +33,10 @@ default: false %}
             container_class="portfolio-image m-0"
             mobile_name=img_mobile_name
             lottie_src=lottie_source
+            loading=img_loading
+            fetchpriority=img_fetchpriority
+            width=img_width
+            height=img_height
             %}
         </div>
     </div>
@@ -44,6 +54,10 @@ default: false %}
             container_class="portfolio-image m-0 text-center"
             mobile_name=img_mobile_name
             lottie_src=lottie_source
+            loading=img_loading
+            fetchpriority=img_fetchpriority
+            width=img_width
+            height=img_height
             %}
         </div>
     </div>
