@@ -1,7 +1,3 @@
-title: "Youview Accessibility"
-description:
-  "A UI/UX portfolio page showing work for YouView Mobile App by Kieran Shalloo"
-theme_color: "var(--youview)"
 
 # Component Builder Engine
 page_sections:

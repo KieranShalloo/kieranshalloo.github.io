@@ -1,7 +1,3 @@
-title: "virgin"
-description:
-  "A UI/UX portfolio page showing work for Virgin Media by Kieran Shalloo"
-theme_color: "var(--virgin)"
 
 # Component Builder Engine
 page_sections:

@@ -24,7 +24,7 @@ items:
     desktop_only: false
   - name: "Sony"
     logo: "/images/about/about-sony.svg"
-    desktop_only: false
+    desktop_only: true
   - name: "WWE"
     logo: "/images/about/about-wwe.svg"
     desktop_only: false

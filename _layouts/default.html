@@ -5,19 +5,28 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    {% comment %} Fetch item metadata from prints or illustrations array {% endcomment %}
-    {% assign print_item = site.data.prints | where: "slug", page.slug | first %}
-    {% assign illus_item = site.data.illustrations | where: "slug", page.slug | first %}
-    {% assign item = print_item | default: illus_item %}
+    {% comment %} 1. Determine lookup key for both portfolio folders and artwork slugs {% endcomment %}
+    {% if page.dir contains '/portfolio/' %}
+    {% assign key = page.dir | remove_first: '/portfolio/' | remove: '/' %}
+    {% else %}
+    {% assign key = page.slug %}
+    {% endif %}
 
-    {% comment %} Set meta description with proper fallback chain {% endcomment %}
-    {% assign meta_description = page.description | default: item.description | default: 'Product Design Portfolio by
-    Kieran Shalloo' %}
-    <meta name="description" content="{{ meta_description | strip_newlines | escape }}">
+    {% comment %} 2. Fetch item metadata from master projects, portfolio, prints, or illustrations data {% endcomment %}
+    {% assign project_item = site.data.projects | where: "id", key | first %}
+    {% assign portfolio_item = site.data.portfolio[key] %}
+    {% assign print_item = site.data.prints | where: "slug", key | first %}
+    {% assign illus_item = site.data.illustrations | where: "slug", key | first %}
+    {% assign item = project_item | default: portfolio_item | default: print_item | default: illus_item %}
 
-    {% comment %} Set title with proper fallback chain {% endcomment %}
-    {% assign page_title = page.title | default: item.title | default: 'Kieran Shalloo Design' %}
-    <title>{{ page_title }} | {{ site.title }}</title>
+    {% comment %} 3. Set meta description with proper fallback chain {% endcomment %}
+    {% assign meta_description = page.description | default: item.description | default: "Product Design Portfolio by
+    Kieran Shalloo" %}
+    <meta name="description" content="{{ meta_description | strip_newlines | strip_html | escape }}">
+
+    {% comment %} 4. Set title with proper fallback chain {% endcomment %}
+    {% assign page_title = page.title | default: item.title | default: "Kieran Shalloo Design" %}
+    <title>{{ page_title }} | {{ site.title | default: "Kieran Shalloo Design Ltd" }}</title>
 
     <!-- Favicon -->
     <link rel="icon" href="/Logo.svg" type="image/svg+xml">
@@ -31,10 +40,6 @@
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Outfit:wght@200;300;700&display=swap">
     </noscript>
 
-
-
-
-
     <link rel="preload" href="{{ '/assets/css/bootstrap.min.css' | relative_url }}" as="style"
         onload="this.onload=null;this.rel='stylesheet'">
     <noscript>
@@ -44,8 +49,10 @@
     <!-- Unified Local Compiled Site CSS -->
     <link rel="stylesheet" href="{{ '/webstyle.css' | relative_url }}">
 
-    <!-- Deferred Scripts -->
+    <!-- Conditional Lottie Script Loader -->
+    {% if page.lottie %}
     <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js" defer></script>
+    {% endif %}
 
     <!-- Google Tag Manager / Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-28629869-2"></script>

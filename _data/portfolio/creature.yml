@@ -1,7 +1,3 @@
----
-title: "WWE Network"
-description: "A UI/UX portfolio page showing work for OutSystems advertising campaign by Kieran Shalloo"
-theme_color: "var(--creature)"
 
 # Component Builder Engine
 page_sections:

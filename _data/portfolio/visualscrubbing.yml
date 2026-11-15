@@ -1,7 +1,3 @@
-title: "Visual Scrubbing"
-description:
-  "A UI/UX portfolio page showing work for Channel 4 by Kieran Shalloo"
-theme_color: "var(--channel4)"
 
 page_sections:
   - type: "text-block"
