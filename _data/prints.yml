@@ -13,10 +13,10 @@
   note: >-
     As this is a handcrafted original piece, all prints are unique and may have
     slight variations in tone and texture due to the handmade printing process.
-  image:
-    jpg: "/images/printmaking/totoro/webinframe.jpg"
+  thumb:
     webp: "/images/printmaking/totoro/webinframe.webp"
     avif: "/images/printmaking/totoro/webinframe.avif"
+    jpg: "/images/printmaking/totoro/webinframe.jpg"
     alt: "Totoro giving hugs to mai"
   gallery:
     [
@@ -42,10 +42,10 @@
   note: >-
     As this is a handcrafted original piece, all prints are unique and may have
     slight variations in tone and texture due to the handmade printing process.
-  image:
-    jpg: "/images/printmaking/coastline/ondesk.jpg"
-    webp: "/images/printmaking/coastline/ondesk.webp"
-    avif: "/images/printmaking/coastline/ondesk.avif"
+  thumb:
+    webp: "/images/printmaking/thumbnail/coastline-thumb.webp"
+    avif: "/images/printmaking/thumbnail/coastline-thumb.avif"
+    jpg: "/images/printmaking/thumbnail/coastline-thumb.jpg"
     alt: "Portuguese coastline linocut print"
   gallery:
     [
@@ -69,10 +69,10 @@
   note: >-
     As this is a handcrafted original piece, all prints are unique and may have
     slight variations in tone and texture due to the handmade printing process.
-  image:
-    jpg: "/images/printmaking/deer/webinframe.jpg"
-    webp: "/images/printmaking/deer/webinframe.webp"
-    avif: "/images/printmaking/deer/webinframe.avif"
+  thumb:
+    webp: "/images/printmaking/thumbnail/deer-thumb.webp"
+    avif: "/images/printmaking/thumbnail/deer-thumb.avif"
+    jpg: "/images/printmaking/thumbnail/deer-thumb.jpg"
     alt: "Forest deer print"
   gallery:
     [
@@ -96,9 +96,10 @@
   note: >-
     As this is a handcrafted original piece, all prints are unique and may have
     slight variations in tone and texture due to the handmade printing process.
-  image:
-    jpg: "/images/printmaking/lizard/ondesk.jpg"
-    webp: "/images/printmaking/lizard/ondesk.webp"
+  thumb:
+    webp: "/images/printmaking/thumbnail/lizard-thumb.webp"
+    avif: "/images/printmaking/thumbnail/lizard-thumb.avif"
+    jpg: "/images/printmaking/thumbnail/lizard-thumb.jpg"
     alt: "Lizard print"
   gallery:
     [
@@ -122,15 +123,16 @@
   note: >-
     As this is a handcrafted original piece, all prints are unique and may have
     slight variations in tone and texture due to the handmade printing process.
-  image:
-    jpg: "/images/printmaking/otter/ondesk1.png"
-    # webp: "/images/printmaking/otter/ondesk1.webp"
+  thumb:
+    webp: "/images/printmaking/thumbnail/otter-thumb.webp"
+    avif: "/images/printmaking/thumbnail/otter-thumb.avif"
+    jpg: "/images/printmaking/thumbnail/otter-thumb.jpg"
     alt: "Otter print"
   gallery:
     [
-      "/images/printmaking/otter/ondesk2.png",
-      "/images/printmaking/otter/otter1.png",
-      "/images/printmaking/otter/otter2.png",
-      "/images/printmaking/otter/otter3.png",
-      "/images/printmaking/otter/otter4.png",
+      "/images/printmaking/otter/ondesk2.jpg",
+      "/images/printmaking/otter/otter1.jpg",
+      "/images/printmaking/otter/otter2.jpg",
+      "/images/printmaking/otter/otter3.jpg",
+      "/images/printmaking/otter/otter4.jpg",
     ]

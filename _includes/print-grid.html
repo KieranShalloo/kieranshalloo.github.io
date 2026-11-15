@@ -1,19 +1,24 @@
 <!-- Grid Row -->
 <div class="row p-0">
     {% for item in site.data.prints %}
-    <div class="col-6 col-lg-3 p-0 portfolio-frame">
+    {% comment %} 1. First 3 items sit above the fold on a full-width mobile layout {% endcomment %}
+    {% if forloop.index <= 3 %} {% assign img_loading="eager" %} {% assign img_priority='fetchpriority="high"' %} {%
+        else %} {% assign img_loading="lazy" %} {% assign img_priority="" %} {% endif %} {% comment %} 2. Explicit
+        800x600 dimensions matching your asset specifications {% endcomment %} {% assign img_width=800 %} {% assign
+        img_height=600 %} <div class="col-12 col-lg-3 p-0 portfolio-frame">
         <a href="{{ item.url }}">
             <picture>
                 <!-- Modern formats first -->
-                <source srcset="{{ item.image.avif }}" type="image/avif">
-                <source srcset="{{ item.image.webp }}" type="image/webp">
-                <!-- Fallback -->
-                <source srcset="{{ item.image.jpg }}" type="image/jpeg">
-                <img decoding="async" class="img-fluid portfolio-image" loading="lazy" src="{{ item.jpg }}"
-                    alt="{{ item.image.alt }}"
-                    height="{{ 400 | divided_by: item.aspect_ratio | split: ':' | first | times: item.aspect_ratio | split: ':' | last }}">
+                {% if item.image.avif %}
+                <source srcset="{{ item.thumb.avif }}" type="image/avif">{% endif %}
+                {% if item.image.webp %}
+                <source srcset="{{ item.thumb.webp }}" type="image/webp">{% endif %}
+                <!-- Fallback image with explicit 800x600 dimensions -->
+                <img decoding="async" class="img-fluid portfolio-image" loading="{{ img_loading }}" {{ img_priority }}
+                    src="{{ item.thumb.jpg | default: item.jpg }}" alt="{{ item.image.alt | default: item.title }}"
+                    width="{{ img_width }}" height="{{ img_height }}">
             </picture>
         </a>
-    </div>
-    {% endfor %}
+</div>
+{% endfor %}
 </div>

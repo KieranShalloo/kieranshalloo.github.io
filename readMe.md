@@ -74,3 +74,22 @@ Renders structured multi-column details or specifications.
 1. Desktop Default: Store your high-resolution desktop master asset as `[name].jpg` (or `.png`).
 2. Automatic Mobile Fallback: The site automatically checks for `[name]-mobile.jpg` on screens under `768px`. If the `-mobile` file is missing, JavaScript and HTML fall back smoothly to the desktop version automatically.
 3. Cloudflare CDN: Production environments automatically optimize files through Cloudflare's edge workers (`/cdn-cgi/image/`).
+
+
+
+
+
+
+% find . -type f \( -name "*.jpg" -o -name "*.jpeg" -o -name "*.png" \) | while IFS= read -r img; do
+    base="${img%.*}"
+
+    # 1. Generate WebP if missing
+    if [ ! -f "${base}.webp" ]; then
+        cwebp -q 85 "$img" -o "${base}.webp" 2>/dev/null || echo "Skipped WebP for: $img"
+    fi
+
+    # 2. Generate AVIF if missing
+    if [ ! -f "${base}.avif" ]; then
+        avifenc -s 6 -q 60 "$img" "${base}.avif" 2>/dev/null || echo "Skipped AVIF for: $img"
+    fi
+done

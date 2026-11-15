@@ -1,6 +1,22 @@
 <!-- Grid Row -->
 <div class="row p-0">
     {% for work in site.data.illustrations %}
+    {% comment %} 1. First 8 items are above the fold on an iPhone 17 mobile viewport {% endcomment %}
+    {% if forloop.index <= 8 %}
+        {% assign img_loading = "eager" %}
+        {% assign img_priority = 'fetchpriority="high"' %}
+    {% else %}
+        {% assign img_loading = "lazy" %}
+        {% assign img_priority = "" %}
+    {% endif %}
+
+    {% comment %} 2. Calculate explicit height from aspect ratio to eliminate layout shifts {% endcomment %}
+    {% assign ratio_parts = work.aspect_ratio | default: "1:1" | split: ":" %}
+    {% assign ratio_w = ratio_parts[0] | plus: 0.0 %}
+    {% assign ratio_h = ratio_parts[1] | plus: 0.0 %}
+    {% assign img_width = 400 %}
+    {% assign img_height = img_width | divided_by: ratio_w | times: ratio_h | round %}
+
     <div class="col-6 col-lg-3 p-0 portfolio-frame">
         <a href="{{ work.url }}">
             <picture>
@@ -9,9 +25,9 @@
                 <source srcset="{{ work.thumb.avif }}" type="image/avif">{% endif %}
                 {% if work.thumb.webp %}
                 <source srcset="{{ work.thumb.webp }}" type="image/webp">{% endif %}
-                <!-- Fallback -->
-                <img decoding="async" class="img-fluid portfolio-image" loading="lazy" src="{{ work.thumb.jpg }}"
-                    alt="{{ work.thumb.alt | default: work.title }}" width="400">
+                <!-- Fallback with explicit width and calculated height -->
+                <img decoding="async" class="img-fluid portfolio-image" loading="{{ img_loading }}" {{ img_priority }} src="{{ work.thumb.jpg }}"
+                    alt="{{ work.thumb.alt | default: work.title }}" width="{{ img_width }}" height="{{ img_height }}">
             </picture>
         </a>
     </div>
