@@ -14,9 +14,9 @@
     As this is a handcrafted original piece, all prints are unique and may have
     slight variations in tone and texture due to the handmade printing process.
   thumb:
-    webp: "/images/printmaking/totoro/webinframe.webp"
-    avif: "/images/printmaking/totoro/webinframe.avif"
-    jpg: "/images/printmaking/totoro/webinframe.jpg"
+    webp: "/images/printmaking/thumbnail/totoro-thumb.webp"
+    avif: "/images/printmaking/thumbnail/totoro-thumb.avif"
+    jpg: "/images/printmaking/thumbnail/totoro-thumb.jpg"
     alt: "Totoro giving hugs to mai"
   gallery:
     [
@@ -97,7 +97,7 @@
     As this is a handcrafted original piece, all prints are unique and may have
     slight variations in tone and texture due to the handmade printing process.
   thumb:
-    webp: "/images/printmaking/thumbnail/lizard-thumb.webp"
+    webp: "thumbnail/lizard-thumb.webp"
     avif: "/images/printmaking/thumbnail/lizard-thumb.avif"
     jpg: "/images/printmaking/thumbnail/lizard-thumb.jpg"
     alt: "Lizard print"

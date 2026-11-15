@@ -8,14 +8,14 @@
         img_height=600 %} <div class="col-12 col-lg-3 p-0 portfolio-frame">
         <a href="{{ item.url }}">
             <picture>
-                <!-- Modern formats first -->
-                {% if item.image.avif %}
+                <!-- Modern formats checked against item.thumb -->
+                {% if item.thumb.avif %}
                 <source srcset="{{ item.thumb.avif }}" type="image/avif">{% endif %}
-                {% if item.image.webp %}
+                {% if item.thumb.webp %}
                 <source srcset="{{ item.thumb.webp }}" type="image/webp">{% endif %}
                 <!-- Fallback image with explicit 800x600 dimensions -->
                 <img decoding="async" class="img-fluid portfolio-image" loading="{{ img_loading }}" {{ img_priority }}
-                    src="{{ item.thumb.jpg | default: item.jpg }}" alt="{{ item.image.alt | default: item.title }}"
+                    src="{{ item.thumb.jpg | default: item.jpg }}" alt="{{ item.thumb.alt | default: item.title }}"
                     width="{{ img_width }}" height="{{ img_height }}">
             </picture>
         </a>
