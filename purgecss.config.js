@@ -19,6 +19,7 @@ module.exports = {
     'dark-mode',
     /^navbar-/,
     /^col-/,
-    /^btn-/
+    /^btn-/,
+    /data-bs-theme/  <-- Add this line to preserve Bootstrap dark theme attribute selectors
   ]
 }

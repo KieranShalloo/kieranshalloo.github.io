@@ -76,7 +76,6 @@
   width: 1920
   height: 1080
   aspect_ratio: "16:9"
-  dark_theme: true
 
 - title: "Virgin"
   slug: "virgin"

@@ -39,14 +39,18 @@ page_sections:
         items:
           - subtitle: "Pros"
             text: |
-              - Users could see more of the show they were watching
-              - Easier to recognise parts of a show you have already watched
-              - More tiles made content easier to skim
+              Users could see more of the show they were watching
+
+              Easier to recognise parts of a show you have already watched
+
+              More tiles made content easier to skim
           - subtitle: "Cons"
             text: |
-              - Possible spoilers
-              - Lots of movement could cause accessibility issues
-              - Expensive tech resource
+              Possible spoilers
+
+              Lots of movement could cause accessibility issues
+
+              Expensive tech resource
 
   - type: "section"
     blocks:
@@ -67,12 +71,14 @@ page_sections:
         items:
           - subtitle: "Pros"
             text: |
-              - Balanced approach between too much and too little
+              Balanced approach between too much and too little
           - subtitle: "Cons"
             text: |
-              - Possible spoilers
-              - The center of the screen is not where the users' eyes are focused
-              - Expensive tech resource
+              Possible spoilers
+
+              The center of the screen is not where the users' eyes are focused
+
+              Expensive tech resource
 
   - type: "section"
     blocks:
@@ -95,14 +101,18 @@ page_sections:
         items:
           - subtitle: "Pros"
             text: |
-              - Easier for the tech teams to create
-              - No risk of spoilers
-              - Can be used as a focal area
+              Easier for the tech teams to create
+
+              No risk of spoilers
+
+              Can be used as a focal area
           - subtitle: "Cons"
             text: |
-              - Not as much to work out where in the show you were
-              - Movement across the screen
-              - Not as obvious to the user
+              Not as much to work out where in the show you were
+
+              Movement across the screen
+
+              Not as obvious to the user
 
   - type: "section"
     blocks:
