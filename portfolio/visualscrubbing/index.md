@@ -1,5 +1,5 @@
 ---
 layout: project
-slug: 'visual-scrubbing'
+slug: 'visualscrubbing'
 dark_theme: true
 ---

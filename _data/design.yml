@@ -1,10 +1,10 @@
 # - title: "Which"
 #   slug: "which"
 #   url: "/portfolio/which/"
-#   description: "Redesign of the whole Channel 4 Streaming app."
+#   description: "UX/UI design work for Which?."
 #   image:
 #     jpg: "/images/home/whichheader768.jpg"
-#     alt: "Channel 4 relaunching their streaming service with a new design"
+#     alt: "Which? digital product design showcase"
 #   width: 1920
 #   height: 1080
 #   aspect_ratio: "16:9"
@@ -12,40 +12,39 @@
 # - title: "Channel 4 Streaming"
 #   slug: "channel4"
 #   url: "/portfolio/channel4/"
-#   description: "Redesign of the whole Channel 4 Streaming app."
+#   description: "Redesign of the Channel 4 Streaming app."
 #   image:
 #     jpg: "/images/home/stpheader768.jpg"
-#     # webp: "/images/home/stpheader768.webp"
-#     # avif: "/images/home/stpheader768.avif"
-#     alt: "Channel 4 relaunching their streaming service with a new design"
+#     alt: "Channel 4 Streaming app redesign"
 #   width: 1920
 #   height: 1080
 #   aspect_ratio: "16:9"
 
 - title: "WWE"
-  subtitle: "Redesigining the WWE Network"
+  subtitle: "Redesigning the WWE Network"
   slug: "wwenetwork"
   url: "/portfolio/wwenetwork/"
-  description: "A showcase of WWE Network UX/UI design work"
+  description: "A showcase of WWE Network UX/UI design work."
   image:
     jpg: "/images/home/wweheader768.jpg"
     webp: "/images/home/wweheader768.webp"
     avif: "/images/home/wweheader768.avif"
-    alt: "Daniel Bryan celebrating at WrestleMania XXX"
+    alt: "WWE Network streaming interface design"
   width: 1920
   height: 1080
   aspect_ratio: "16:9"
 
 - title: "Google Trainline"
-  slug: "googletrains"
+  slug: "googletrain"
   url: "/portfolio/googletrain/"
   description:
-    "Google project with Trainline complete interaction and visual design."
+    "Google project with Trainline featuring complete interaction and visual
+    design."
   image:
     jpg: "/images/home/trainlineheader768.jpg"
     webp: "/images/home/trainlineheader768.webp"
     avif: "/images/home/trainlineheader768.avif"
-    alt: "Daniel Bryan celebrating at WrestleMania XXX"
+    alt: "Google and Trainline collaborative interface design"
   width: 1920
   height: 1080
   aspect_ratio: "16:9"
@@ -54,14 +53,12 @@
 - title: "Trainline"
   slug: "trainline"
   url: "/portfolio/trainline/"
-  description:
-    "A commissioned illustration showing the WWE wrestler Daniel Bryan
-    celebrating his victory at WrestleMania XXX."
+  description: "Product and interaction design work for Trainline."
   image:
     jpg: "/images/home/engagementheader768.jpg"
     webp: "/images/home/engagementheader768.webp"
     avif: "/images/home/engagementheader768.avif"
-    alt: "Daniel Bryan celebrating at WrestleMania XXX"
+    alt: "Trainline mobile and web product design"
   width: 1920
   height: 1080
   aspect_ratio: "16:9"
@@ -70,44 +67,40 @@
   slug: "visualscrubbing"
   url: "/portfolio/visualscrubbing/"
   description:
-    "A commissioned illustration showing the WWE wrestler Daniel Bryan
-    celebrating his victory at WrestleMania XXX."
+    "Designing visual timeline scrubbing for Channel 4 big screen TV apps."
   image:
     jpg: "/images/home/4header768.jpg"
     webp: "/images/home/4header768.webp"
     avif: "/images/home/4header768.avif"
-    alt: "Daniel Bryan celebrating at WrestleMania XXX"
+    alt: "Channel 4 visual scrubbing interface on TV"
   width: 1920
   height: 1080
   aspect_ratio: "16:9"
+  dark_theme: true
 
 - title: "Virgin"
   slug: "virgin"
   url: "/portfolio/virgin/"
-  description:
-    "A commissioned illustration showing the WWE wrestler Daniel Bryan
-    celebrating his victory at WrestleMania XXX."
+  description: "UX and visual design work for Virgin Media."
   image:
     jpg: "/images/home/VMheader768.jpg"
     webp: "/images/home/VMheader768.webp"
     avif: "/images/home/VMheader768.avif"
-    alt: "Daniel Bryan celebrating at WrestleMania XXX"
+    alt: "Virgin Media digital interface design"
   width: 1920
   height: 1080
   aspect_ratio: "16:9"
 
 # Small
-- title: "Youview"
+- title: "YouView"
   slug: "youview"
   url: "/portfolio/youview/"
-  description:
-    "A commissioned illustration showing the WWE wrestler Daniel Bryan
-    celebrating his victory at WrestleMania XXX."
+  description: "Big screen TV user interface and experience design for YouView."
   image:
     jpg: "/images/home/YVheader768.jpg"
     webp: "/images/home/YVheader768.webp"
     avif: "/images/home/YVheader768.avif"
-    alt: "Daniel Bryan celebrating at WrestleMania XXX"
+    alt: "YouView television guide and UI design"
   width: 1920
   height: 1080
   aspect_ratio: "16:9"
@@ -116,13 +109,12 @@
   slug: "4rebrand"
   url: "/portfolio/4rebrand/"
   description:
-    "A commissioned illustration showing the WWE wrestler Daniel Bryan
-    celebrating his victory at WrestleMania XXX."
+    "Incorporating the Channel 4 rebrand across connected TV platforms."
   image:
     jpg: "/images/home/4rebrandheader768.jpg"
     webp: "/images/home/4rebrandheader768.webp"
     avif: "/images/home/4rebrandheader768.avif"
-    alt: "Daniel Bryan celebrating at WrestleMania XXX"
+    alt: "Channel 4 rebrand across TV streaming apps"
   width: 1920
   height: 1080
   aspect_ratio: "16:9"
@@ -130,29 +122,26 @@
 - title: "Sony Android"
   slug: "sonyandroid"
   url: "/portfolio/sonyandroid/"
-  description:
-    "A commissioned illustration showing the WWE wrestler Daniel Bryan
-    celebrating his victory at WrestleMania XXX."
+  description: "Android TV user interface and interaction design for Sony."
   image:
     jpg: "/images/home/Sonyheader768.jpg"
     webp: "/images/home/Sonyheader768.webp"
     avif: "/images/home/Sonyheader768.avif"
-    alt: "Daniel Bryan celebrating at WrestleMania XXX"
+    alt: "Sony Android TV interface design"
   width: 1920
   height: 1080
   aspect_ratio: "16:9"
 
 - title: "YouView Accessibility"
-  slug: "yvaccessibility"
+  slug: "yva11y"
   url: "/portfolio/yva11y/"
   description:
-    "A commissioned illustration showing the WWE wrestler Daniel Bryan
-    celebrating his victory at WrestleMania XXX."
+    "Accessible TV interface and high-contrast UI design for YouView."
   image:
     jpg: "/images/home/YVHCheader768.jpg"
     webp: "/images/home/YVHCheader768.webp"
     avif: "/images/home/YVHCheader768.avif"
-    alt: "Daniel Bryan celebrating at WrestleMania XXX"
+    alt: "YouView high-contrast accessibility interface"
   width: 1920
   height: 1080
   aspect_ratio: "16:9"
@@ -161,13 +150,13 @@
   slug: "netflix"
   url: "/portfolio/netflix/"
   description:
-    "A commissioned illustration showing the WWE wrestler Daniel Bryan
-    celebrating his victory at WrestleMania XXX."
+    "Interactive UI and screen graphics created for the Netflix Christmas
+    campaign."
   image:
     jpg: "/images/home/Netflixheader768.jpg"
     webp: "/images/home/Netflixheader768.webp"
     avif: "/images/home/Netflixheader768.avif"
-    alt: "Daniel Bryan celebrating at WrestleMania XXX"
+    alt: "Netflix Christmas campaign screen design"
   width: 1920
   height: 1080
   aspect_ratio: "16:9"
@@ -175,102 +164,97 @@
 - title: "YouView Help"
   slug: "yvhelp"
   url: "/portfolio/yvhelp/"
-  description:
-    "A commissioned illustration showing the WWE wrestler Daniel Bryan
-    celebrating his victory at WrestleMania XXX."
+  description: "In-app customer support and help experience design for YouView."
   image:
     jpg: "/images/home/YVhelpheader768.jpg"
     webp: "/images/home/YVhelpheader768.webp"
     avif: "/images/home/YVhelpheader768.avif"
-    alt: "Daniel Bryan celebrating at WrestleMania XXX"
+    alt: "YouView on-screen help interface"
   width: 1920
   height: 1080
   aspect_ratio: "16:9"
 
-- title: "YouView app"
+- title: "YouView App"
   slug: "yvapp"
   url: "/portfolio/yvapp/"
   description:
-    "A commissioned illustration showing the WWE wrestler Daniel Bryan
-    celebrating his victory at WrestleMania XXX."
+    "Companion mobile app design for remote recording and TV discovery on
+    YouView."
   image:
     jpg: "/images/home/YVAppheader768.jpg"
     webp: "/images/home/YVAppheader768.webp"
     avif: "/images/home/YVAppheader768.avif"
-    alt: "Daniel Bryan celebrating at WrestleMania XXX"
+    alt: "YouView companion mobile application"
   width: 1920
   height: 1080
   aspect_ratio: "16:9"
 
 # - title: "Creature"
 #   slug: "creature"
-
-#   description: "A commissioned illustration showing the WWE wrestler Daniel Bryan celebrating his victory at WrestleMania XXX."
+#   url: "/portfolio/creature/"
+#   description: "UI and interaction design for Creature."
 #   image:
 #     jpg: "/images/home/creatureheader768.jpg"
 #     webp: "/images/home/creatureheader768.webp"
 #     avif: "/images/home/creatureheader768.avif"
-#     alt: "Daniel Bryan celebrating at WrestleMania XXX"
+#     alt: "Creature interactive interface design"
 #   width: 1920
 #   height: 1080
 #   aspect_ratio: "16:9"
 
 - title: "Book of Potions"
   slug: "bookofpotions"
-  url: "/portfolio/bookofpotions"
+  url: "/portfolio/bookofpotions/"
   description:
-    "A commissioned illustration showing the WWE wrestler Daniel Bryan
-    celebrating his victory at WrestleMania XXX."
+    "PlayStation Wonderbook augmented reality game UI and interaction design."
   image:
     jpg: "/images/home/bopheader768.jpg"
     webp: "/images/home/bopheader768.webp"
     avif: "/images/home/bopheader768.avif"
-    alt: "Daniel Bryan celebrating at WrestleMania XXX"
+    alt: "Wonderbook: Book of Potions PlayStation game UI"
   width: 1920
   height: 1080
   aspect_ratio: "16:9"
 
 - title: "DanceStar Party"
   slug: "dancestar-party"
-  url: "/portfolio/dancestar-party"
+  url: "/portfolio/dancestar-party/"
   description:
-    "A commissioned illustration showing the WWE wrestler Daniel Bryan
-    celebrating his victory at WrestleMania XXX."
+    "PlayStation Move dance game interface and visual design for DanceStar
+    Party."
   image:
     jpg: "/images/home/Dancestarheader768.jpg"
     webp: "/images/home/Dancestarheader768.webp"
     avif: "/images/home/Dancestarheader768.avif"
-    alt: "Daniel Bryan celebrating at WrestleMania XXX"
+    alt: "DanceStar Party PlayStation game interface"
   width: 1920
   height: 1080
   aspect_ratio: "16:9"
 
 - title: "Book of Spells"
   slug: "bookofspells"
-  url: "/portfolio/bookofspells"
+  url: "/portfolio/bookofspells/"
   description:
-    "A commissioned illustration showing the WWE wrestler Daniel Bryan
-    celebrating his victory at WrestleMania XXX."
+    "PlayStation Wonderbook augmented reality UI design for Book of Spells."
   image:
     jpg: "/images/home/BOSheader768.jpg"
     webp: "/images/home/BOSheader768.webp"
     avif: "/images/home/BOSheader768.avif"
-    alt: "Daniel Bryan celebrating at WrestleMania XXX"
+    alt: "Wonderbook: Book of Spells PlayStation game UI"
   width: 1920
   height: 1080
   aspect_ratio: "16:9"
 
 - title: "SingStar"
   slug: "singstar"
-  url: "/portfolio/singstar"
+  url: "/portfolio/singstar/"
   description:
-    "A commissioned illustration showing the WWE wrestler Daniel Bryan
-    celebrating his victory at WrestleMania XXX."
+    "PlayStation music game interface and user experience design for SingStar."
   image:
     jpg: "/images/home/singstarheader768.jpg"
     webp: "/images/home/singstarheader768.webp"
     avif: "/images/home/singstarheader768.avif"
-    alt: "Daniel Bryan celebrating at WrestleMania XXX"
+    alt: "SingStar PlayStation game interface"
   width: 1920
   height: 1080
   aspect_ratio: "16:9"
