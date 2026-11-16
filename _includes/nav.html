@@ -76,23 +76,3 @@
     </div>
 </nav>
 
-<script>
-    document.addEventListener('DOMContentLoaded', () => {
-        const checkbox = document.getElementById('theme-checkbox');
-        const htmlEl = document.documentElement;
-
-        const updateUI = (theme) => {
-            htmlEl.setAttribute('data-bs-theme', theme);
-            checkbox.checked = (theme === 'dark');
-        };
-
-        // Sync initial state based on what the head script applied
-        updateUI(htmlEl.getAttribute('data-bs-theme') || 'light');
-
-        checkbox.addEventListener('change', () => {
-            const nextTheme = checkbox.checked ? 'dark' : 'light';
-            localStorage.setItem('theme', nextTheme);
-            updateUI(nextTheme);
-        });
-    });
-</script>
