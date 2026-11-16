@@ -10,16 +10,20 @@ module.exports = {
   ],
   css: ['./assets/css/bootstrap.min.css'],
   output: './assets/css/bootstrap.min.css',
-  safelist: [
-    'show',
-    'collapsing',
-    'collapsed',
-    'active',
-    'fade',
-    'dark-mode',
-    /^navbar-/,
-    /^col-/,
-    /^btn-/,
-    /data-bs-theme/ 
-  ]
+  safelist: {
+    standard: [
+      'show',
+      'collapsing',
+      'collapsed',
+      'active',
+      'fade',
+      'dark-mode',
+      /^navbar-/,
+      /^col-/,
+      /^btn-/
+    ],
+    greedy: [
+      /data-bs-theme/
+    ]
+  }
 }
