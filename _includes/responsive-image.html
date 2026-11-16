@@ -7,16 +7,10 @@ Leaf component for responsive pictures and lottie sources. Never calls itself.
 {% assign fetchpriority = include.fetchpriority | default: nil %}
 {% assign fallback_ext = include.ext | default: 'jpg' %}
 
-{% comment %} Determine mobile target or default to base_name if mobile variants aren't used for this asset {%
-endcomment %}
 {% if include.mobile_name != nil and include.mobile_name != "" %}
 {% assign mobile_target = include.mobile_name %}
-{% assign use_mobile = true %}
-{% elsif include.use_mobile == true %}
-{% assign mobile_target = base_name | append: "-mobile" %}
-{% assign use_mobile = true %}
 {% else %}
-{% assign use_mobile = false %}
+{% assign mobile_target = base_name | append: "-mobile" %}
 {% endif %}
 
 {% if include.lottie_src %}
@@ -29,7 +23,6 @@ endcomment %}
 {% if base_name != nil and base_name != "" %}
 <figure class="{{ include.container_class | default: 'portfolio-image m-0' }}">
   <picture>
-    {% if use_mobile %}
     <!-- 1. Mobile AVIF (Up to 405px viewports) -->
     <source media="(max-width: 405px)" srcset="/images/{{ mobile_target }}.avif" type="image/avif">
 
@@ -38,12 +31,11 @@ endcomment %}
 
     <!-- 3. Mobile Fallback [JPG/PNG] (Up to 405px viewports) -->
     <source media="(max-width: 405px)" srcset="/images/{{ mobile_target }}.{{ fallback_ext }}">
-    {% endif %}
 
-    <!-- 4. Desktop AVIF (Larger viewports / Default fallback) -->
+    <!-- 4. Desktop AVIF (Larger viewports) -->
     <source srcset="/images/{{ base_name }}.avif" type="image/avif">
 
-    <!-- 5. Desktop WebP (Larger viewports / Default fallback) -->
+    <!-- 5. Desktop WebP (Larger viewports) -->
     <source srcset="/images/{{ base_name }}.webp" type="image/webp">
 
     <!-- 6. Desktop Fallback [JPG/PNG] (Default img fallback) -->
