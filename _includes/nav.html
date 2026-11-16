@@ -2,17 +2,17 @@
 {% assign url_parts = page.url | split: '/' %}
 {% assign current_section = url_parts[1] %}
 
-<nav class="navbar navbar-expand-md shadow sticky-top p-0">
+<nav class="navbar navbar-expand-md {% if page.dark_theme %}navbar-dark bg-dark{% else %}navbar-light bg-light{% endif %} shadow sticky-top p-0"
+    {% if page.dark_theme %}data-bs-theme="dark" {% endif %}>
     <div class="container p-2">
 
-
-        <!-- Mobile logo -->
+        <!-- Mobile logo (hidden on desktop, aria-hidden on decorative duplication if wrapped in identical label) -->
         <a class="navbar-brand d-md-none" href="/" aria-label="Kieran Shalloo Design - Home">
             <img src="/Logotype.svg" alt="" width="50" height="50" loading="eager" class="navbar-logo"
                 aria-hidden="true">
         </a>
 
-        <!-- Mobile toggle button -->
+        <!-- Mobile toggle button with enhanced accessibility attributes -->
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar"
             aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation menu">
             <span class="navbar-toggler-icon"></span>
@@ -37,7 +37,7 @@
                     </a>
                 </li>
 
-                <!-- Center logo -->
+                <!-- Center logo (hidden on mobile, acts as anchor home) -->
                 <li class="nav-item d-none d-md-block mx-3 mx-lg-4" role="none">
                     <a class="navbar-brand p-0" href="/" aria-label="Kieran Shalloo Design - Home">
                         <img src="/Logotype.svg" alt="" width="70" height="70" loading="eager" class="navbar-logo"
@@ -66,4 +66,3 @@
         </div>
     </div>
 </nav>
-
