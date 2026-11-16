@@ -25,6 +25,34 @@
       "/images/printmaking/totoro/ondesk2.jpg",
       "/images/printmaking/totoro/ondesk3.jpg",
     ]
+- title: "Otter"
+  slug: "otter"
+  url: "/traditionalprintmaking/otter/"
+  description:
+    "A linoprint portfolio page showing an otter print by Kieran Shalloo"
+  dimensions: "130 x 350mm"
+  edition: "30"
+  paper: "Fabriano Unica 250g"
+  price: "20.00"
+  width: 1200
+  height: 900
+  aspect_ratio: "16:9"
+  note: >-
+    As this is a handcrafted original piece, all prints are unique and may have
+    slight variations in tone and texture due to the handmade printing process.
+  thumb:
+    webp: "/images/printmaking/thumbnail/otter-thumb.webp"
+    avif: "/images/printmaking/thumbnail/otter-thumb.avif"
+    jpg: "/images/printmaking/thumbnail/otter-thumb.jpg"
+    alt: "Otter print"
+  gallery:
+    [
+      "/images/printmaking/otter/ondesk2.jpg",
+      "/images/printmaking/otter/otter1.jpg",
+      "/images/printmaking/otter/otter2.jpg",
+      "/images/printmaking/otter/otter3.jpg",
+      "/images/printmaking/otter/otter4.jpg",
+    ]
 
 - title: "Coastline"
   slug: "coastline"
@@ -106,33 +134,4 @@
       "/images/printmaking/lizard/ondesk.jpg",
       "/images/printmaking/lizard/closeup.jpg",
       "/images/printmaking/lizard/inhand.jpg",
-    ]
-
-- title: "Otter"
-  slug: "otter"
-  url: "/traditionalprintmaking/otter/"
-  description:
-    "A linoprint portfolio page showing an otter print by Kieran Shalloo"
-  dimensions: "130 x 350mm"
-  edition: "30"
-  paper: "Fabriano Unica 250g"
-  price: "20.00"
-  width: 1200
-  height: 900
-  aspect_ratio: "16:9"
-  note: >-
-    As this is a handcrafted original piece, all prints are unique and may have
-    slight variations in tone and texture due to the handmade printing process.
-  thumb:
-    webp: "/images/printmaking/thumbnail/otter-thumb.webp"
-    avif: "/images/printmaking/thumbnail/otter-thumb.avif"
-    jpg: "/images/printmaking/thumbnail/otter-thumb.jpg"
-    alt: "Otter print"
-  gallery:
-    [
-      "/images/printmaking/otter/ondesk2.jpg",
-      "/images/printmaking/otter/otter1.jpg",
-      "/images/printmaking/otter/otter2.jpg",
-      "/images/printmaking/otter/otter3.jpg",
-      "/images/printmaking/otter/otter4.jpg",
     ]
