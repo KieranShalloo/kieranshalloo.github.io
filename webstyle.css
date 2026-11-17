@@ -1,12 +1,12 @@
 /* ==========================================================================
-1. DESIGN TOKENS & OKLCH COLOR SYSTEMS (Fully Preserved Brand Tokens)
+   1. DESIGN TOKENS & OKLCH COLOR SYSTEMS (Fully Preserved Brand Tokens)
    ========================================================================== */
 :root {
   --dark: oklch(32.5% 0 89.88);
   --accent: oklch(76.2% 0.097 176.59);
   --light: oklch(0.9401 0 0);
 
-  /* brand colours */
+  /* Brand Colours */
   --youview: oklch(69.81% 0.171 243.77);
   --wwe: oklch(54.02% 0.219 26.28);
   --virgin: oklch(39.26% 0.137 313.56);
@@ -18,16 +18,28 @@
   --stp: oklch(66.73% 0.167 311.7);
 
   /* Atomic Layout, Spacing & Component Tokens */
-  --spacing-standard: 5rem; /* Standard macro spacing for top-level blocks and sections (~80px) */
-  --spacing-tight: 1.5rem; /* Tight micro spacing for elements grouped inside a section (~24px) */
+  --spacing-standard: 5rem;
+  --spacing-tight: 1.5rem;
   --portfolio-spacing-y: clamp(3rem, 6vw, 5rem);
   --portfolio-img-radius: 0.4em;
   --portfolio-img-shadow:
     0 15px 35px rgba(0, 0, 0, 0.07), 0 1px 3px rgba(0, 0, 0, 0.04);
 }
 
+/* Card Mode Inversion Variables */
+:root {
+  --card-bg: var(--light);
+  --card-text: var(--dark);
+}
+
+[data-bs-theme='dark'] body,
+.dark-mode {
+  --card-bg: var(--dark);
+  --card-text: var(--light);
+}
+
 /* ==========================================================================
-2. LAYOUT & CONTAINER QUERIES
+   2. GLOBAL LAYOUT, CONTAINERS & FLUID TYPOGRAPHY
    ========================================================================== */
 html {
   width: 100%;
@@ -38,7 +50,7 @@ html {
 body {
   width: 100%;
   max-width: 100%;
-  overflow-x: hidden; /* Moving overflow-x here or wrapping your page contents avoids trapping sticky elements */
+  overflow-x: hidden;
   position: relative;
   box-sizing: border-box;
   font-family: 'Outfit', sans-serif;
@@ -48,21 +60,6 @@ body {
 
 [data-bs-theme='dark'] body {
   color: var(--light);
-}
-
-/* Enable Container Queries on Portfolio Components */
-.portfolio-component {
-  container-type: inline-size;
-  container-name: portfolio-block;
-  padding-block: var(--portfolio-spacing-y);
-  margin-block: 0;
-
-  p {
-    margin-bottom: 1.5rem;
-    &:last-child {
-      margin-bottom: 0;
-    }
-  }
 }
 
 @media (min-width: 1400px) {
@@ -84,21 +81,7 @@ body {
   margin-left: 0;
 }
 
-/* Card Mode Inversion Variables */
-:root {
-  --card-bg: var(--light);
-  --card-text: var(--dark);
-}
-
-[data-bs-theme='dark'] body,
-.dark-mode {
-  --card-bg: var(--dark);
-  --card-text: var(--light);
-}
-
-/* ==========================================================================
-3. FLUID TYPOGRAPHY & HEADINGS
-   ========================================================================== */
+/* Fluid Typography Hierarchy */
 h1,
 h2,
 h3,
@@ -164,10 +147,9 @@ li {
 }
 
 /* ==========================================================================
-   4. NAVIGATION (Fully Consolidated & Modernized)
+   3. NAVIGATION (Consolidated & Responsive Drawer)
    ========================================================================== */
 .navbar {
-  /* Dynamic mobile drawer background & border tokens */
   --nav-drawer-bg: var(--light);
   --nav-drawer-border: transparent;
 
@@ -200,12 +182,10 @@ li {
   }
 
   .navbar-nav {
-    /* Desktop layout spacing */
     .nav-item + .nav-item {
       margin-left: 1rem;
     }
 
-    /* Mobile drawer vertical stacking and text centering */
     @media (max-width: 767.98px) {
       width: 100%;
       text-align: center;
@@ -239,7 +219,6 @@ li {
       transform: scaleX(1);
     }
 
-    /* Center the active underline indicator bar on mobile */
     @media (max-width: 767.98px) {
       display: inline-block;
 
@@ -251,7 +230,6 @@ li {
   }
 }
 
-/* Light mode logo styling (Non-dark projects) */
 .navbar-light {
   .navbar-logo {
     opacity: 0.85;
@@ -264,7 +242,6 @@ li {
   }
 }
 
-/* Per-Project Dark Theme Handling (triggered by dark_theme: true) */
 [data-bs-theme='dark'] {
   .navbar {
     --nav-drawer-bg: var(--dark);
@@ -284,8 +261,54 @@ li {
     }
   }
 }
+
 /* ==========================================================================
-5. MEDIA & COMPONENTS (Enhanced with :has() and Container Queries)
+   4. SECTION RHYTHM, SPACING & LAYOUT COMPONENTS
+   ========================================================================== */
+.portfolio-component {
+  container-type: inline-size;
+  container-name: portfolio-block;
+  padding-block: var(--portfolio-spacing-y);
+  margin-block: 0;
+
+  p {
+    margin-bottom: 1.5rem;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.portfolio-section {
+  margin-bottom: var(--spacing-standard);
+
+  .portfolio-media-container {
+    box-shadow: none;
+    -webkit-box-shadow: none;
+  }
+}
+
+.project-builder > *:not(.portfolio-section) {
+  margin-bottom: var(--spacing-standard);
+}
+
+.portfolio-section > *:not(:last-child) {
+  margin-bottom: var(--spacing-tight);
+}
+
+.portfolio-section .portfolio-component {
+  padding-block: 0;
+}
+
+@media (max-width: 767.98px) {
+  :root {
+    --spacing-standard: 3rem;
+    --spacing-tight: 1rem;
+  }
+}
+
+/* ==========================================================================
+   5. MEDIA, GRIDS & HEADERS
    ========================================================================== */
 .img-fluid {
   width: 100%;
@@ -340,6 +363,20 @@ li {
   &:has(figcaption) {
     padding-bottom: 0.5rem;
   }
+
+  &.mobile-screen-container {
+    max-height: 550px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+
+    img {
+      max-height: 550px;
+      width: auto !important;
+      object-fit: contain;
+    }
+  }
 }
 
 .image-grid-container {
@@ -379,7 +416,6 @@ li {
     gap: 16px;
   }
 
-  /* Mobile Layout Safeguards against side-scrolling */
   img,
   video,
   iframe,
@@ -393,7 +429,6 @@ li {
 
 .fullscreen-scroller {
   width: 100vw;
-  /* Use min-height instead of fixed height so text content can expand the container */
   min-height: 80vh;
   height: auto;
   background-size: cover;
@@ -401,13 +436,203 @@ li {
   background-attachment: fixed;
   background-repeat: no-repeat;
   position: relative;
-  /* Optional gradient overlay to blend nicely */
   background-image:
     linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8)), var(--scroller-img);
 }
 
+#about-image {
+  filter: saturate(0%) contrast(0%);
+  color: var(--accent);
+  transition:
+    transform 0.25s cubic-bezier(0.17, 0.67, 0.83, 0.67),
+    filter 0.25s ease;
+  will-change: transform, filter;
+
+  &:hover {
+    filter: brightness(100%) contrast(100%) saturate(100%);
+    transform: scale(1.25);
+  }
+}
+
 /* ==========================================================================
-6. FOOTER & SOCIAL
+   6. PORTFOLIO GRID & INTERACTIVE HOVER / TOUCH OVERLAYS
+   ========================================================================== */
+.portfolio-frame {
+  position: relative;
+  overflow: hidden;
+  isolation: isolate;
+
+  .portfolio-image {
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: transform 3s ease-out;
+    will-change: transform;
+  }
+
+  @media (min-width: 768px) {
+    &:hover .portfolio-image {
+      transform: scale(1.25);
+    }
+  }
+}
+
+.portfolio-frame__link {
+  position: relative;
+  display: block;
+  width: 100%;
+  overflow: hidden;
+  text-decoration: none;
+
+  &:focus-visible {
+    outline: 3px solid var(--accent);
+    outline-offset: -3px;
+  }
+}
+
+.portfolio-frame__picture {
+  display: block;
+  width: 100%;
+  line-height: 0;
+}
+
+.portfolio-overlay {
+  display: none;
+}
+
+/* Desktop Hover & Keyboard Focus Behavior */
+@media (hover: hover) and (pointer: fine) {
+  .portfolio-frame .portfolio-image {
+    transform: scale(1);
+    transform-origin: center center;
+    transition: transform 0.45s cubic-bezier(0.22, 1, 0.36, 1);
+    will-change: transform;
+  }
+
+  .portfolio-overlay {
+    position: absolute;
+    inset: 0;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1.25rem;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.8);
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.35s ease;
+  }
+
+  .portfolio-overlay__logo,
+  .portfolio-overlay__title,
+  .portfolio-overlay__copy {
+    opacity: 0;
+    transform: translateY(8px) scale(0.95);
+    transition:
+      opacity 0.35s ease 0.04s,
+      transform 0.4s cubic-bezier(0.22, 1, 0.36, 1) 0.04s;
+  }
+
+  .portfolio-overlay__logo {
+    width: 100%;
+    max-width: 33.333%;
+    height: auto;
+    margin-bottom: 0.2rem;
+    filter: brightness(0) invert(1);
+  }
+
+  .portfolio-overlay__title {
+    font-size: clamp(1.375rem, 1.0938rem + 1.25vw, 1.75rem);
+    line-height: 2rem;
+    font-weight: 300;
+    display: block;
+    font-family: 'Outfit', sans-serif;
+    color: var(--light);
+    margin-bottom: 0.35rem;
+  }
+
+  .portfolio-overlay__copy {
+    font-size: clamp(1rem, 1.0313rem + 0.4167vw, 1.25rem);
+    line-height: 1.5em;
+    font-weight: 300;
+    max-width: 28ch;
+    color: var(--light);
+  }
+
+  .portfolio-frame__link:hover .portfolio-image,
+  .portfolio-frame__link:focus-visible .portfolio-image {
+    transform: scale(1.25);
+  }
+
+  .portfolio-frame__link:hover .portfolio-overlay,
+  .portfolio-frame__link:focus-visible .portfolio-overlay {
+    opacity: 1;
+  }
+
+  .portfolio-frame__link:hover .portfolio-overlay__logo,
+  .portfolio-frame__link:hover .portfolio-overlay__title,
+  .portfolio-frame__link:hover .portfolio-overlay__copy,
+  .portfolio-frame__link:focus-visible .portfolio-overlay__logo,
+  .portfolio-frame__link:focus-visible .portfolio-overlay__title,
+  .portfolio-frame__link:focus-visible .portfolio-overlay__copy {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+/* Touch-Enabled Devices: Compact top-left logo & bottom-centered title only (no description) */
+@media (hover: none) {
+  .portfolio-frame .portfolio-overlay {
+    position: absolute;
+    inset: 0;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 1.5rem 1.25rem;
+    text-align: center;
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+    background: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.4) 0%,
+      rgba(0, 0, 0, 0.75) 70%
+    );
+  }
+
+  .portfolio-frame .portfolio-image {
+    transform: none !important;
+  }
+
+  .portfolio-frame .portfolio-overlay__logo {
+    position: absolute;
+    top: 1.25rem;
+    left: 1.25rem;
+    width: auto;
+    max-width: 20%;
+    height: auto;
+    margin-bottom: 0;
+    filter: brightness(0) invert(1);
+  }
+
+  /* Keep the title visible at the bottom */
+  .portfolio-frame .portfolio-overlay__title {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+
+  /* Completely hide the descriptive body copy on touch screens to reduce noise */
+  .portfolio-frame .portfolio-overlay__copy {
+    display: none !important;
+  }
+}
+
+/* ==========================================================================
+   7. FOOTER, SOCIAL & ACCESSIBILITY REDUCED MOTION
    ========================================================================== */
 footer {
   background-color: var(--dark);
@@ -456,94 +681,18 @@ ul.social-network {
   }
 }
 
-/* ==========================================================================
-7. PORTFOLIO SECTION & SPACING RHYTHM
-   ========================================================================== */
-
-/* 1. Major parent sections use standard spacing */
-.portfolio-section {
-  margin-bottom: var(--spacing-standard);
-}
-
-/* 2. Standalone top-level blocks outside sections also use standard spacing */
-.project-builder > *:not(.portfolio-section) {
-  margin-bottom: var(--spacing-standard);
-}
-
-/* 3. ONLY elements nested directly inside a section use tight inner spacing */
-.portfolio-section > *:not(:last-child) {
-  margin-bottom: var(--spacing-tight);
-}
-
-/* Remove competing component padding so the tokens control the rhythm */
-.portfolio-section .portfolio-component {
-  padding-block: 0;
-}
-
-/* Responsive adjustments for smaller screens */
-@media (max-width: 767.98px) {
-  :root {
-    --spacing-standard: 3rem;
-    --spacing-tight: 1rem;
-  }
-}
-
-.portfolio-media-container.mobile-screen-container {
-  max-height: 550px; /* Adjust max height limit as needed */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  overflow: hidden;
-}
-
-.portfolio-media-container.mobile-screen-container img {
-  max-height: 550px;
-  width: auto !important; /* Prevents 100% width stretching for tall vertical images */
-  object-fit: contain;
-}
-
-/* ==========================================================================
-   Restored About Image & Portfolio Hover Effects (Production Polished)
-   ========================================================================== */
-
-#about-image {
-  filter: saturate(0%) contrast(0%);
-  color: var(--accent);
-  transition:
-    transform 0.25s cubic-bezier(0.17, 0.67, 0.83, 0.67),
-    filter 0.25s ease;
-  will-change: transform, filter;
-
-  &:hover {
-    filter: brightness(100%) contrast(100%) saturate(100%);
-    transform: scale(1.15);
-  }
-}
-
-/* ==========================================================================
-   Exclusive Hover Grow Effect for Design & Print Grids (Desktop Only)
-   ========================================================================== */
-
-.portfolio-frame {
-  overflow: hidden; /* Contains the image scaling inside the frame boundaries */
-
-  .portfolio-image {
-    transition: transform 0.3s ease;
-    will-change: transform;
+/* Respect OS-level reduced motion preferences */
+@media (prefers-reduced-motion: reduce) {
+  .portfolio-frame .portfolio-image,
+  .portfolio-overlay,
+  .portfolio-overlay__logo,
+  .portfolio-overlay__title,
+  .portfolio-overlay__copy {
+    transition: none !important;
   }
 
-  /* Target desktop devices only */
-  @media (min-width: 768px) {
-    &:hover .portfolio-image {
-      transform: scale(1.07);
-    }
-  }
-}
-
-/* Clean, non-important shadow override for process section media containers */
-.portfolio-section {
-  .portfolio-media-container {
-    box-shadow: none;
-    -webkit-box-shadow: none;
+  .portfolio-frame__link:hover .portfolio-image,
+  .portfolio-frame__link:focus-visible .portfolio-image {
+    transform: none !important;
   }
 }

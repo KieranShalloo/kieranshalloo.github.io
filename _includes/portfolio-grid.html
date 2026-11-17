@@ -1,30 +1,47 @@
 <div class="row p-0">
-    {% assign design_items = site.data.design %}
+    {% assign design_items = site.data.projects %}
     {% if include.limit %}
     {% assign design_items = design_items | slice: 0, include.limit %}
     {% endif %}
 
     {% for item in design_items %}
-    {% comment %} 1. Safely compute explicit dimensions to eliminate CLS {% endcomment %}
-    {% assign ratio_parts = item.aspect_ratio | default: "4:3" | split: ":" %}
-    {% assign ratio_w = ratio_parts[0] | plus: 0.0 %}
-    {% assign ratio_h = ratio_parts[1] | plus: 0.0 %}
-    {% assign img_width = 800 %}
-    {% assign img_height = img_width | divided_by: ratio_w | times: ratio_h | round %}
+    {% assign img_width = item.image.width | default: 1024 %}
+    {% assign img_height = item.image.height | default: 676 %}
 
-    {% comment %} 2. Top row (first 2 items) are always above the fold in the col-sm-6 hero split {% endcomment %}
     {% if forloop.index <= 2 %} {% assign img_loading="eager" %} {% assign img_priority='fetchpriority="high"' %} {%
         else %} {% assign img_loading="lazy" %} {% assign img_priority="" %} {% endif %} <div
         class="col-12 p-0 portfolio-frame {% if forloop.index <= 2 %}col-sm-6{% else %}col-sm-4{% endif %}">
-        <a href="{{ item.url }}">
-            <picture>
-                <source srcset="{{ item.image.avif }}" type="image/avif">
-                <source srcset="{{ item.image.webp }}" type="image/webp">
-                <source srcset="{{ item.image.jpg }}" type="image/jpeg">
-                <img decoding="async" class="img-fluid portfolio-image" loading="{{ img_loading }}" {{ img_priority }}
-                    src="{{ item.image.jpg }}" alt="{{ item.image.alt | escape }}" width="{{ img_width }}"
-                    height="{{ img_height }}">
-            </picture>
+        <a href="{{ item.url | relative_url }}" class="portfolio-frame__link"
+            aria-label="View project: {{ item.title | escape }}">
+
+            <!-- Direct desktop image call without mobile header stacks -->
+            <div class="portfolio-frame__picture">
+                <img decoding="async" class="portfolio-image" loading="{{ img_loading }}" {{ img_priority }}
+                    src="{{ item.image.desktop_jpg | default: item.image.jpg | relative_url }}"
+                    alt="{{ item.image.alt | escape }}" width="{{ img_width }}" height="{{ img_height }}">
+            </div>
+
+            <!-- Desktop Hover Overlay with Logo and Global Heading/Paragraph Tags -->
+            <div class="portfolio-overlay">
+                {% if item.logo %}
+                <img src="{{ item.logo | relative_url }}" alt="" aria-hidden="true" class="portfolio-overlay__logo"
+                    loading="lazy" decoding="async">
+                {% endif %}
+
+                <!-- Only render title heading if there is no logo -->
+                {% if item.title and item.logo == nil or item.logo == "" %}
+                <h3 class="portfolio-overlay__title text-white text-uppercase mb-2">
+                    {{ item.title }}
+                </h3>
+                {% endif %}
+
+                {% if item.subtitle %}
+                <p class="portfolio-overlay__copy text-white mb-0">
+                    {{ item.subtitle }}
+                </p>
+                {% endif %}
+            </div>
+
         </a>
 </div>
 {% endfor %}
