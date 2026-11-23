@@ -15,9 +15,10 @@
 #     width: 1024
 #     height: 676
 #     aspect_ratio: "4:3"
-#     jpg: "/images/home/whichheader768.jpg"
+#     jpg: "/images/home/whichheader414.jpg"
 #     desktop_jpg: "/images/home/whichheader1920.png"
 #   logo: "/images/about/about-which.svg"
+
 - id: "googletrain"
   title: "Google Trainline"
   slug: "googletrain"
@@ -77,6 +78,8 @@
     avif: "/images/home/wweheader414.avif"
     webp: "/images/home/wweheader414.webp"
     jpg: "/images/home/wweheader414.jpg"
+    desktop_avif: "/images/home/wweheader1920.avif"
+    desktop_webp: "/images/home/wweheader1920.webp"
     desktop_jpg: "/images/home/wweheader1920.jpg"
   logo: "/images/about/about-wwe.svg"
 
@@ -100,10 +103,14 @@
     width: 1024
     height: 676
     aspect_ratio: "4:3"
-    avif: "/images/home/engagementheader414.jpg"
-    jpg: "/images/home/engagementheader768.jpg"
+    avif: "/images/home/engagementheader414.avif"
+    webp: "/images/home/engagementheader414.webp"
+    jpg: "/images/home/engagementheader414.jpg"
+    desktop_avif: "/images/home/engagementheader1920.avif"
+    desktop_webp: "/images/home/engagementheader1920.webp"
     desktop_jpg: "/images/home/engagementheader1920.jpg"
   logo: "/images/about/about-trainline.svg"
+
 - id: "4rebrand"
   title: "4 Rebrand"
   slug: "4rebrand"
@@ -126,6 +133,8 @@
     avif: "/images/home/4rebrandheader414.avif"
     webp: "/images/home/4rebrandheader414.webp"
     jpg: "/images/home/4rebrandheader414.jpg"
+    desktop_avif: "/images/home/4rebrandheader1920.avif"
+    desktop_webp: "/images/home/4rebrandheader1920.webp"
     desktop_jpg: "/images/home/4rebrandheader1920.jpg"
   logo: "/images/about/about-c4.svg"
 
@@ -152,7 +161,7 @@
     aspect_ratio: "4:3"
     avif: "/images/home/VMheader414.avif"
     webp: "/images/home/VMheader414.webp"
-    jpg: "/images/home/VMheader768.jpg"
+    jpg: "/images/home/VMheader414.jpg"
     desktop_avif: "/images/home/VMheader1920.avif"
     desktop_webp: "/images/home/VMheader1920.webp"
     desktop_jpg: "/images/home/VMheader1920.jpg"
@@ -184,7 +193,7 @@
     aspect_ratio: "4:3"
     avif: "/images/home/4header414.avif"
     webp: "/images/home/4header414.webp"
-    jpg: "/images/home/4header768.jpg"
+    jpg: "/images/home/4header414.jpg"
     desktop_avif: "/images/home/4header1920.avif"
     desktop_webp: "/images/home/4header1920.webp"
     desktop_jpg: "/images/home/4header1920.jpg"
@@ -241,7 +250,7 @@
     aspect_ratio: "4:3"
     avif: "/images/home/Sonyheader414.avif"
     webp: "/images/home/Sonyheader414.webp"
-    jpg: "/images/home/Sonyheader768.jpg"
+    jpg: "/images/home/Sonyheader414.jpg"
     desktop_avif: "/images/home/Sonyheader1920.avif"
     desktop_webp: "/images/home/Sonyheader1920.webp"
     desktop_jpg: "/images/home/Sonyheader1920.jpg"
@@ -271,7 +280,7 @@
     aspect_ratio: "4:3"
     avif: "/images/home/YVHCheader414.avif"
     webp: "/images/home/YVHCheader414.webp"
-    jpg: "/images/home/YVHCheader768.jpg"
+    jpg: "/images/home/YVHCheader414.jpg"
     desktop_avif: "/images/home/YVHCheader1920.avif"
     desktop_webp: "/images/home/YVHCheader1920.webp"
     desktop_jpg: "/images/home/YVHCheader1920.jpg"
@@ -306,7 +315,7 @@
     aspect_ratio: "4:3"
     avif: "/images/home/Netflixheader414.avif"
     webp: "/images/home/Netflixheader414.webp"
-    jpg: "/images/home/Netflixheader768.jpg"
+    jpg: "/images/home/Netflixheader414.jpg"
     desktop_avif: "/images/home/Netflixheader1920.avif"
     desktop_webp: "/images/home/Netflixheader1920.webp"
     desktop_jpg: "/images/home/Netflixheader1920.jpg"
@@ -343,9 +352,11 @@
     aspect_ratio: "4:3"
     avif: "/images/home/YVhelpheader414.avif"
     webp: "/images/home/YVhelpheader414.webp"
-    jpg: "/images/home/YVhelpheader768.jpg"
-    desktop_jpg: "/images/home/YVhelpheader1920.jpg"
+    jpg: "/images/home/YVhelpheader414.jpg"
+    desktop_avif: "/images/home/YVhelpheader1920.avif"
     desktop_webp: "/images/home/YVhelpheader1920.webp"
+    desktop_jpg: "/images/home/YVhelpheader1920.jpg"
+
   logo: "/images/about/about-youview.svg"
 
 - id: "yvapp"
@@ -373,7 +384,7 @@
     aspect_ratio: "4:3"
     avif: "/images/home/YVAppheader414.avif"
     webp: "/images/home/YVAppheader414.webp"
-    jpg: "/images/home/YVAppheader768.jpg"
+    jpg: "/images/home/YVAppheader414.jpg"
     desktop_avif: "/images/home/YVAppheader1920.avif"
     desktop_webp: "/images/home/YVAppheader1920.webp"
     desktop_jpg: "/images/home/YVAppheader1920.jpg"
@@ -398,7 +409,11 @@
     width: 1024
     height: 676
     aspect_ratio: "4:3"
-    jpg: "/images/home/bopheader768.jpg"
+    avif: "/images/home/bopheader414.avif"
+    webp: "/images/home/bopheader414.webp"
+    jpg: "/images/home/bopheader414.jpg"
+    desktop_avif: "/images/home/bopheader1920.avif"
+    desktop_webp: "/images/home/bopheader1920.webp"
     desktop_jpg: "/images/home/bopheader1920.jpg"
   logo: "/images/about/about-london.svg"
 
@@ -426,9 +441,11 @@
     width: 1024
     height: 676
     aspect_ratio: "4:3"
+    avif: "/images/home/dancestarheader414.avif"
+    webp: "/images/home/dancestarheader414.webp"
+    jpg: "/images/home/dancestarheader414.jpg"
     desktop_avif: "/images/home/dancestarheader1920.avif"
-    webp: "/images/home/dancestarheader1920.webp"
-    jpg: "/images/home/Dancestarheader768.jpg"
+    desktop_webp: "/images/home/dancestarheader1920.webp"
     desktop_jpg: "/images/home/dancestarheader1920.jpg"
   logo: "/images/about/about-playstation.svg"
 
@@ -454,9 +471,11 @@
     width: 1024
     height: 676
     aspect_ratio: "4:3"
-    avif: "/images/home/tile-bos.avif"
-    webp: "/images/home/tile-bos.webp"
-    jpg: "/images/home/BOSheader768.jpg"
+    avif: "/images/home/BOSheader414.avif"
+    webp: "/images/home/BOSheader414.webp"
+    jpg: "/images/home/BOSheader414.jpg"
+    desktop_avif: "/images/home/BOSheader1920.avif"
+    desktop_webp: "/images/home/BOSheader1920.webp"
     desktop_jpg: "/images/home/BOSheader1920.jpg"
   logo: "/images/about/about-london.svg"
 
@@ -484,7 +503,7 @@
     aspect_ratio: "4:3"
     avif: "/images/home/singstarheader414.avif"
     webp: "/images/home/singstarheader414.webp"
-    jpg: "/images/home/singstarheader768.jpg"
+    jpg: "/images/home/singstarheader414.jpg"
     desktop_avif: "/images/home/singstarheader1920.avif"
     desktop_webp: "/images/home/singstarheader1920.webp"
     desktop_jpg: "/images/home/singstarheader1920.jpg"
