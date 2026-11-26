@@ -1,9 +1,9 @@
 home:
-  title:
-    "User Experience design & Illustration crafted remotely in London, England."
+  title: "Shaping digital experiences for real humans, not agents."
   subtitle:
-    "Over 12 years of experience, working with international clients and brands
-    on award-winning projects."
+    "Fifteen years leading digital products for global brands, alongside an
+    independent London studio focused on hand-drawn digital illustration and
+    traditional relief printmaking."
   theme_color: "var(--accent)"
   logotype: "/Logotype.svg"
   alt: "Kieran Shalloo Portfolio"
